@@ -1,5 +1,5 @@
-Integrating JAX-RS with EJB Technology and CDI
-==============================================
+## Integrating JAX-RS with EJB Technology and CDI
+
 
 [[GKNCY]][[integrating-jax-rs-with-ejb-technology-and-cdi]]
 

@@ -1,5 +1,5 @@
-Creating String-Based Queries
-=============================
+## Creating String-Based Queries
+
 
 [[GKJBQ]][[creating-string-based-queries]]
 

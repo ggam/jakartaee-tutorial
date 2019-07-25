@@ -1,5 +1,5 @@
-Basic JMS API Concepts
-======================
+## Basic JMS API Concepts
+
 
 [[BNCDX]][[basic-jms-api-concepts]]
 

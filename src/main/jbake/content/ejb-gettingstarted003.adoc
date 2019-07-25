@@ -1,5 +1,5 @@
-Modifying the Jakarta EE Application
-=================================
+## Modifying the Jakarta EE Application
+
 
 [[GIPTI]][[modifying-the-jakarta-ee-application]]
 

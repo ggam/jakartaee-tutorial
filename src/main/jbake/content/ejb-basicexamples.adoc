@@ -1,5 +1,5 @@
-Running the Enterprise Bean Examples
-====================================
+## Running the Enterprise Bean Examples
+
 
 [[GIJRB]][[running-the-enterprise-bean-examples]]
 

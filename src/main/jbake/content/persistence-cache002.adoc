@@ -1,5 +1,5 @@
-Specifying the Cache Mode Settings to Improve Performance
-=========================================================
+## Specifying the Cache Mode Settings to Improve Performance
+
 
 [[GKJJJ]][[specifying-the-cache-mode-settings-to-improve-performance]]
 

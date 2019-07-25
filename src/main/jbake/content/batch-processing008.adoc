@@ -1,5 +1,5 @@
-The webserverlog Example Application
-====================================
+## The webserverlog Example Application
+
 
 [[BCGJHEHJ]][[the-webserverlog-example-application]]
 

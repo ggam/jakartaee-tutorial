@@ -1,5 +1,5 @@
-Setting Up a Page
-=================
+## Setting Up a Page
+
 
 [[BNARB]][[setting-up-a-page]]
 

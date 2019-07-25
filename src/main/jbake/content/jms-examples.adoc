@@ -1,5 +1,5 @@
-Java Message Service Examples
-=============================
+## Java Message Service Examples
+
 
 [[BNCGV]][[java-message-service-examples]]
 

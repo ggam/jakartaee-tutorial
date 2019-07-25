@@ -1,4 +1,4 @@
-= Further Information about Ajax in JavaServer Faces Technology
+## = Further Information about Ajax in JavaServer Faces Technology
 
 
 [[GKSDK]][[further-information-about-ajax-in-javaserver-faces-technology]]

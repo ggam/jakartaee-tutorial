@@ -1,4 +1,4 @@
-= Jakarta EE Maven Archetypes in the Tutorial
+## = Jakarta EE Maven Archetypes in the Tutorial
 
 
 [[CIHBHEFF]][[jakarta-ee-maven-archetypes-in-the-tutorial]]

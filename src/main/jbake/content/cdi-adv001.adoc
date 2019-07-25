@@ -1,4 +1,4 @@
-= Packaging CDI Applications
+## = Packaging CDI Applications
 
 
 [[CACDCFDE]][[packaging-cdi-applications]]

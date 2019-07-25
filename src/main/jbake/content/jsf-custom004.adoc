@@ -1,5 +1,5 @@
-Steps for Creating a Custom Component
-=====================================
+## Steps for Creating a Custom Component
+
 
 [[BNAVT]][[steps-for-creating-a-custom-component]]
 

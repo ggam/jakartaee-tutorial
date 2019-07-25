@@ -1,5 +1,5 @@
-Registering a Custom Renderer with a Render Kit
-===============================================
+## Registering a Custom Renderer with a Render Kit
+
 
 [[BNAXH]][[registering-a-custom-renderer-with-a-render-kit]]
 

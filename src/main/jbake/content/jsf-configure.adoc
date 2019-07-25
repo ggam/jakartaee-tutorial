@@ -1,5 +1,5 @@
-Configuring JavaServer Faces Applications
-=========================================
+## Configuring JavaServer Faces Applications
+
 
 [[BNAWO]][[configuring-javaserver-faces-applications]]
 

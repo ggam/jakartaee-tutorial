@@ -1,4 +1,4 @@
-= Entity Inheritance
+## = Entity Inheritance
 
 
 [[BNBQN]][[entity-inheritance]]

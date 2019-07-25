@@ -1,4 +1,4 @@
-= Debugging Jakarta EE Applications
+## = Debugging Jakarta EE Applications
 
 
 [[BNADL]][[debugging-jakarta-ee-applications]]

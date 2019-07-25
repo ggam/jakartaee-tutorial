@@ -1,5 +1,5 @@
-The customer Example Application
-================================
+## The customer Example Application
+
 
 [[GKOIB]][[the-customer-example-application]]
 

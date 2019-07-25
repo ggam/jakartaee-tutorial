@@ -1,5 +1,5 @@
-A Simple JavaServer Faces Application
-=====================================
+## A Simple JavaServer Faces Application
+
 
 [[GJAAM]][[a-simple-javaserver-faces-application]]
 

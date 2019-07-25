@@ -1,4 +1,4 @@
-= Further Information about the Java API for JSON Binding
+## = Further Information about the Java API for JSON Binding
 
 [[further-information-about-the-java-api-for-json-binding]]
 Further Information about the Java API for JSON Binding

@@ -1,5 +1,5 @@
-Receiving an Ajax Response
-==========================
+## Receiving an Ajax Response
+
 
 [[GKDBR]][[receiving-an-ajax-response]]
 

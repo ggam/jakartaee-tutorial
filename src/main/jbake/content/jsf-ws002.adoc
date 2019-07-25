@@ -1,4 +1,4 @@
-= Configuring WebSockets
+## = Configuring WebSockets
 
 
 [[configuring-websockets]]

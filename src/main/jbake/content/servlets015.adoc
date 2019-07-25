@@ -1,4 +1,4 @@
-= The mood Example Application
+## = The mood Example Application
 
 
 [[GKCPG]][[the-mood-example-application]]

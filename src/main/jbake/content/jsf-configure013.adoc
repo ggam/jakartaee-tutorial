@@ -1,4 +1,4 @@
-= Basic Requirements of a JavaServer Faces Application
+## = Basic Requirements of a JavaServer Faces Application
 
 
 [[BNAXJ]][[basic-requirements-of-a-javaserver-faces-application]]

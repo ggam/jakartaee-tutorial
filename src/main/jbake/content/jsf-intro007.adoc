@@ -1,4 +1,4 @@
-= The Lifecycle of a JavaServer Faces Application
+## = The Lifecycle of a JavaServer Faces Application
 
 
 [[BNAQQ]][[the-lifecycle-of-a-javaserver-faces-application]]

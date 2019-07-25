@@ -1,4 +1,4 @@
-= Composite Components
+## = Composite Components
 
 
 [[GIQZR]][[composite-components]]

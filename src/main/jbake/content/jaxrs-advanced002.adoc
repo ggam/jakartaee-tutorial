@@ -1,4 +1,4 @@
-= Validating Resource Data with Bean Validation
+## = Validating Resource Data with Bean Validation
 
 
 [[BABCJEDF]][[validating-resource-data-with-bean-validation]]

@@ -1,4 +1,4 @@
-= The encoder Example: Using Alternatives
+## = The encoder Example: Using Alternatives
 
 
 [[GKHPU]][[the-encoder-example-using-alternatives]]

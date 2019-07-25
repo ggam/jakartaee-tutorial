@@ -1,5 +1,5 @@
-The decorators Example: Decorating a Bean
-=========================================
+## The decorators Example: Decorating a Bean
+
 
 [[GKPAX]][[the-decorators-example-decorating-a-bean]]
 

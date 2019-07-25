@@ -1,5 +1,5 @@
-Accessing Enterprise Beans
-==========================
+## Accessing Enterprise Beans
+
 
 [[GIPJF]][[accessing-enterprise-beans]]
 

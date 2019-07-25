@@ -1,4 +1,4 @@
-= Writing Simple JMS Applications
+## = Writing Simple JMS Applications
 
 
 [[BNCFA]][[writing-simple-jms-applications]]

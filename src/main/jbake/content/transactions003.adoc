@@ -1,5 +1,5 @@
-What Is a Transaction?
-======================
+## What Is a Transaction?
+
 
 [[BNCII]][[what-is-a-transaction]]
 

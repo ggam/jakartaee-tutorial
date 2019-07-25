@@ -1,4 +1,4 @@
-= Developing Embeddable Enterprise Bean Applications
+## = Developing Embeddable Enterprise Bean Applications
 
 
 [[GKCRR]][[developing-embeddable-enterprise-bean-applications]]

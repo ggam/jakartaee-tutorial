@@ -1,5 +1,5 @@
-Sending and Receiving Messages
-==============================
+## Sending and Receiving Messages
+
 
 [[BABFCGBJ]][[sending-and-receiving-messages]]
 

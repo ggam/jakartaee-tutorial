@@ -1,5 +1,5 @@
-Using a Second-Level Cache with Java Persistence API Applications
-=================================================================
+## Using a Second-Level Cache with Java Persistence API Applications
+
 
 [[GKJIA]][[using-a-second-level-cache-with-java-persistence-api-applications]]
 

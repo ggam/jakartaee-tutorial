@@ -1,5 +1,5 @@
-Introduction to Creating Custom Components
-==========================================
+## Introduction to Creating Custom Components
+
 
 [[A1350198]][[introduction-to-creating-custom-components]]
 

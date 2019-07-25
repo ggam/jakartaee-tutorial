@@ -1,5 +1,5 @@
-Resource Creation
-=================
+## Resource Creation
+
 
 [[GKJIQ2]][[resource-creation]]
 

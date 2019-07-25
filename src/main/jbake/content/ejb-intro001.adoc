@@ -1,4 +1,4 @@
-= What Is an Enterprise Bean?
+## = What Is an Enterprise Bean?
 
 
 [[GIPMB]][[what-is-an-enterprise-bean]]

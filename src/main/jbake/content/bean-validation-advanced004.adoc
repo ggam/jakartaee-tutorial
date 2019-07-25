@@ -1,5 +1,5 @@
-Using Method Constraints in Type Hierarchies
-============================================
+## Using Method Constraints in Type Hierarchies
+
 
 [[CIHGJBGI]][[using-method-constraints-in-type-hierarchies]]
 

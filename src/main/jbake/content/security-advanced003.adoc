@@ -1,5 +1,5 @@
-Using the JDBC Realm for User Authentication
-============================================
+## Using the JDBC Realm for User Authentication
+
 
 [[BABEJJDE]][[using-the-jdbc-realm-for-user-authentication]]
 

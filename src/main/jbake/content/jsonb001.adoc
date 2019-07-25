@@ -1,4 +1,4 @@
-= JSON Binding in the Jakarta EE Platform
+## = JSON Binding in the Jakarta EE Platform
 
 [[json-binding-in-the-jakarta-ee-platform]]
 JSON Binding in the Jakarta EE Platform

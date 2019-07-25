@@ -1,5 +1,5 @@
-Building and Deploying the Duke's Forest Case Study Application
-===============================================================
+## Building and Deploying the Duke's Forest Case Study Application
+
 
 [[GLNQP]][[building-and-deploying-the-dukes-forest-case-study-application]]
 

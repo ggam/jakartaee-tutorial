@@ -1,5 +1,5 @@
-Common Client Interface
-=======================
+## Common Client Interface
+
 
 [[GIPJU]][[common-client-interface]]
 

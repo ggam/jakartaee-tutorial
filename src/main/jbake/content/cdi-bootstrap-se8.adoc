@@ -1,4 +1,4 @@
-= Bootstrapping a CDI Container in Java SE
+## = Bootstrapping a CDI Container in Java SE
 
 
 [[bootstrapping-a-cdi-container-in-java-se]]

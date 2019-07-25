@@ -1,5 +1,5 @@
-Registering a Custom Validator
-==============================
+## Registering a Custom Validator
+
 
 [[BNAXD]][[registering-a-custom-validator]]
 

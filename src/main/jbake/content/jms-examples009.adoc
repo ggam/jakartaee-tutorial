@@ -1,4 +1,4 @@
-= Using an Entity to Join Messages from Two MDBs
+## = Using an Entity to Join Messages from Two MDBs
 
 
 [[BNCHF]][[using-an-entity-to-join-messages-from-two-mdbs]]

@@ -1,5 +1,5 @@
-Using Advanced JMS Features
-===========================
+## Using Advanced JMS Features
+
 
 [[BNCFU]][[using-advanced-jms-features]]
 

@@ -1,4 +1,4 @@
-= Configuring the CDI Container
+## = Configuring the CDI Container
 
 
 [[configuring-the-cdi-container]]

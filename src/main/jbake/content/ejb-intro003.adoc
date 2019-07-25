@@ -1,5 +1,5 @@
-What Is a Message-Driven Bean?
-==============================
+## What Is a Message-Driven Bean?
+
 
 [[GIPKO]][[what-is-a-message-driven-bean]]
 

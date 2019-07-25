@@ -1,5 +1,5 @@
-Further Information about JMS
-=============================
+## Further Information about JMS
+
 
 [[BNCGU]][[further-information-about-jms]]
 

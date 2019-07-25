@@ -1,5 +1,5 @@
-Design and Architecture of Duke's Bookstore
-===========================================
+## Design and Architecture of Duke's Bookstore
+
 
 [[GLOAW]][[design-and-architecture-of-dukes-bookstore]]
 

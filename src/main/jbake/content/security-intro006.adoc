@@ -1,4 +1,4 @@
-= Establishing a Secure Connection Using SSL
+## = Establishing a Secure Connection Using SSL
 
 [[BNBXW]][[establishing-a-secure-connection-using-ssl]]
 

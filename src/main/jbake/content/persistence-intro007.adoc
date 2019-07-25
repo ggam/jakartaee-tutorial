@@ -1,5 +1,5 @@
-Further Information about Persistence
-=====================================
+## Further Information about Persistence
+
 
 [[GKCLC]][[further-information-about-persistence]]
 

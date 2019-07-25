@@ -1,5 +1,5 @@
-Overview of the Java Persistence Query Language
-===============================================
+## Overview of the Java Persistence Query Language
+
 
 [[A1073303]][[overview-of-the-java-persistence-query-language]]
 

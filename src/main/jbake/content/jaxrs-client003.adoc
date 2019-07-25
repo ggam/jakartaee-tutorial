@@ -1,4 +1,4 @@
-= Advanced Features of the Client API
+## = Advanced Features of the Client API
 
 
 [[BABCDDGH]][[advanced-features-of-the-client-api]]

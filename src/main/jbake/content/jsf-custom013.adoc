@@ -1,4 +1,4 @@
-= Binding Component Values and Instances to Managed Bean Properties
+## = Binding Component Values and Instances to Managed Bean Properties
 
 
 [[BNATG]][[binding-component-values-and-instances-to-managed-bean-properties]]

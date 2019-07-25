@@ -1,5 +1,5 @@
-Distributed Multitiered Applications
-====================================
+## Distributed Multitiered Applications
+
 
 [[BNAAY]][[distributed-multitiered-applications]]
 

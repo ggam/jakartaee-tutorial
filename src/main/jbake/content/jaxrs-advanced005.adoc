@@ -1,5 +1,5 @@
-Conditional HTTP Requests
-=========================
+## Conditional HTTP Requests
+
 
 [[GKQDA]][[conditional-http-requests]]
 

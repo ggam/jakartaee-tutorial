@@ -1,5 +1,5 @@
-Transactions in Jakarta EE Applications
-=======================================
+## Transactions in Jakarta EE Applications
+
 
 [[GIJRG]][[transactions-in-jakarta-ee-applications]]
 

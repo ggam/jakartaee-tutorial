@@ -1,4 +1,4 @@
-= Securing Enterprise Beans
+## = Securing Enterprise Beans
 
 [[BNBYL]][[securing-enterprise-beans]]
 

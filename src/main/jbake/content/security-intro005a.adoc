@@ -1,4 +1,4 @@
-= Working with Identity Stores
+## = Working with Identity Stores
 
 [[working-with-identity-stores]]
 Working with Identity Stores

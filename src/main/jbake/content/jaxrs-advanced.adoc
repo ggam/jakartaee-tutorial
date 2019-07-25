@@ -1,5 +1,5 @@
-JAX-RS: Advanced Topics and an Example
-======================================
+## JAX-RS: Advanced Topics and an Example
+
 
 [[GJJXE]][[jax-rs-advanced-topics-and-an-example]]
 

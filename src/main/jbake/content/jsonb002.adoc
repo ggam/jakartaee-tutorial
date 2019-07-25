@@ -1,4 +1,4 @@
-= Overview of the JSON Binding API
+## = Overview of the JSON Binding API
 
 [[overview-of-the-json-binding-api]]
 Overview of the JSON Binding API

@@ -1,4 +1,4 @@
-= The jsonpstreaming Example Application
+## = The jsonpstreaming Example Application
 
 [[the-jsonpstreaming-example-application]]
 The jsonpstreaming Example Application

@@ -1,5 +1,5 @@
-The Resource Adapter Examples
-=============================
+## The Resource Adapter Examples
+
 
 [[GLODB]][[the-resource-adapter-examples]]
 

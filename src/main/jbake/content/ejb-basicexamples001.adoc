@@ -1,5 +1,5 @@
-Overview of the EJB Examples
-============================
+## Overview of the EJB Examples
+
 
 [[A1250776]][[overview-of-the-ejb-examples]]
 

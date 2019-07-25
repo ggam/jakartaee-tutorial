@@ -1,4 +1,4 @@
-= Configuring a CDI Application
+## = Configuring a CDI Application
 
 
 [[GJBNZ]][[configuring-a-cdi-application]]

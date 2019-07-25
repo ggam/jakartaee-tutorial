@@ -1,5 +1,5 @@
-Customizing Validator Messages
-==============================
+## Customizing Validator Messages
+
 
 [[GKAHI]][[customizing-validator-messages]]
 

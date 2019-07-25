@@ -1,5 +1,5 @@
-Further Information about Resource Adapters
-===========================================
+## Further Information about Resource Adapters
+
 
 [[BNCJW]][[further-information-about-resource-adapters]]
 

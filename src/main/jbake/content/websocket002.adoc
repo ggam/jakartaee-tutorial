@@ -1,5 +1,5 @@
-Creating WebSocket Applications in the Jakarta EE Platform
-==========================================================
+## Creating WebSocket Applications in the Jakarta EE Platform
+
 
 [[BABEAEFC]][[creating-websocket-applications-in-the-jakarta-ee-platform]]
 

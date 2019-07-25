@@ -1,5 +1,5 @@
-Jakarta EE Supporting Technologies
-==================================
+## Jakarta EE Supporting Technologies
+
 
 [[GIJUE]][[JEETT00134]]
 

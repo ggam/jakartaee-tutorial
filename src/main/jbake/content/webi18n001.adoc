@@ -1,5 +1,5 @@
-Java Platform Localization Classes
-==================================
+## Java Platform Localization Classes
+
 
 [[BNAXV]][[java-platform-localization-classes]]
 

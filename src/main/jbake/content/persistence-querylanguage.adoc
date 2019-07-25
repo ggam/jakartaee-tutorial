@@ -1,5 +1,5 @@
-The Java Persistence Query Language
-===================================
+## The Java Persistence Query Language
+
 
 [[BNBTG]][[the-java-persistence-query-language]]
 

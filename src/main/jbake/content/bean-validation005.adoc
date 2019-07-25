@@ -1,5 +1,5 @@
-Further Information about Bean Validation
-=========================================
+## Further Information about Bean Validation
+
 
 [[CACDECFE]][[further-information-about-bean-validation]]
 

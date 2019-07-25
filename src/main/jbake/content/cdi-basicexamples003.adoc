@@ -1,4 +1,4 @@
-= The guessnumber-cdi CDI Example
+## = The guessnumber-cdi CDI Example
 
 [[GJCXV]][[the-guessnumber-cdi-cdi-example]]
 

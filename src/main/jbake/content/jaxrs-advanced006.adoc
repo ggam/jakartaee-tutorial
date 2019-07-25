@@ -1,5 +1,5 @@
-Runtime Content Negotiation
-===========================
+## Runtime Content Negotiation
+
 
 [[GKQBQ]][[runtime-content-negotiation]]
 

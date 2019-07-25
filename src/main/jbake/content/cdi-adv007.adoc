@@ -1,4 +1,4 @@
-= Using Decorators in CDI Applications
+## = Using Decorators in CDI Applications
 
 
 [[GKHQF]][[using-decorators-in-cdi-applications]]

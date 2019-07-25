@@ -1,5 +1,5 @@
-Jakarta EE Application Model
-============================
+## Jakarta EE Application Model
+
 
 [[BNAAX]][[jakarta-ee-application-model]]
 

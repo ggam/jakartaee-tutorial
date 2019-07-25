@@ -1,5 +1,5 @@
-Running the Duke's Tutoring Case Study Application
-==================================================
+## Running the Duke's Tutoring Case Study Application
+
 
 [[GKJNN]][[running-the-dukes-tutoring-case-study-application]]
 

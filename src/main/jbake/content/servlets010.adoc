@@ -1,5 +1,5 @@
-Finalizing a Servlet
-====================
+## Finalizing a Servlet
+
 
 [[BNAGS]][[finalizing-a-servlet]]
 

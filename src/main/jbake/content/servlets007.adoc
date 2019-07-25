@@ -1,5 +1,5 @@
-Invoking Other Web Resources
-============================
+## Invoking Other Web Resources
+
 
 [[BNAGI]][[invoking-other-web-resources]]
 

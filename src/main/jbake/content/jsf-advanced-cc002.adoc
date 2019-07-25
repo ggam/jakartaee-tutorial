@@ -1,5 +1,5 @@
-Invoking a Managed Bean
-=======================
+## Invoking a Managed Bean
+
 
 [[GKHUO]][[invoking-a-managed-bean]]
 

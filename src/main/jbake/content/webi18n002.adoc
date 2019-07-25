@@ -1,5 +1,5 @@
-Providing Localized Messages and Labels
-=======================================
+## Providing Localized Messages and Labels
+
 
 [[BNAXW]][[providing-localized-messages-and-labels]]
 

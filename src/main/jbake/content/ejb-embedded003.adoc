@@ -1,5 +1,5 @@
-The standalone Example Application
-==================================
+## The standalone Example Application
+
 
 [[GKCPV]][[the-standalone-example-application]]
 

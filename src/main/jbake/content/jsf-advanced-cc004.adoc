@@ -1,4 +1,4 @@
-= The compositecomponentexample Example Application
+## = The compositecomponentexample Example Application
 
 
 [[GKHVN]][[the-compositecomponentexample-example-application]]

@@ -1,4 +1,4 @@
-= Getting the Latest Updates to the Tutorial
+## = Getting the Latest Updates to the Tutorial
 
 
 [[GIQWR]][[getting-the-latest-updates-to-the-tutorial]]

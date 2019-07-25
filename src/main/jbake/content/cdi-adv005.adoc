@@ -1,4 +1,4 @@
-= Using Events in CDI Applications
+## = Using Events in CDI Applications
 
 
 [[GKHIC]][[using-events-in-cdi-applications]]

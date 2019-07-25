@@ -1,4 +1,4 @@
-= Types Supported by JAX-WS
+## = Types Supported by JAX-WS
 
 
 [[BNAZC]][[types-supported-by-jax-ws]]

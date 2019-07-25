@@ -1,5 +1,5 @@
-Using the Client API in the JAX-RS Example Applications
-=======================================================
+## Using the Client API in the JAX-RS Example Applications
+
 
 [[BABJCIJC]][[using-the-client-api-in-the-jax-rs-example-applications]]
 

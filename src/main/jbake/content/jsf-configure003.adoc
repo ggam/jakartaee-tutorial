@@ -1,5 +1,5 @@
-Application Configuration Resource File
-=======================================
+## Application Configuration Resource File
+
 
 [[BNAWP]][[application-configuration-resource-file]]
 

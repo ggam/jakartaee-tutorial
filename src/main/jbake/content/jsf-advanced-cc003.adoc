@@ -1,4 +1,4 @@
-= Validating Composite Component Values
+## = Validating Composite Component Values
 
 
 [[GKHWO]][[validating-composite-component-values]]

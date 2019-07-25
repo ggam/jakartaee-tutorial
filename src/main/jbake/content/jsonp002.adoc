@@ -1,4 +1,4 @@
-= JSON Processing in the Jakarta EE Platform
+## = JSON Processing in the Jakarta EE Platform
 
 [[json-processing-in-the-jakarta-ee-platform]]
 JSON Processing in the Jakarta EE Platform

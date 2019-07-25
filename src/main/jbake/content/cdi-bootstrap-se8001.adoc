@@ -1,4 +1,4 @@
-= The Bootstrap API
+## = The Bootstrap API
 
 
 [[the-bootstrap-api]]

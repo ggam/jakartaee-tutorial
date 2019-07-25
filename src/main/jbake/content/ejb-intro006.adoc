@@ -1,4 +1,4 @@
-= Naming Conventions for Enterprise Beans
+## = Naming Conventions for Enterprise Beans
 
 
 [[GIPKS]][[naming-conventions-for-enterprise-beans]]

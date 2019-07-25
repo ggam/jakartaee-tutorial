@@ -1,5 +1,5 @@
-Writing More Advanced JMS Applications
-======================================
+## Writing More Advanced JMS Applications
+
 
 [[GIWFH]][[writing-more-advanced-jms-applications]]
 

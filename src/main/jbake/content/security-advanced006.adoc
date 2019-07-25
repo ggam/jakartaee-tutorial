@@ -1,4 +1,4 @@
-= Securing Enterprise Information Systems Applications
+## = Securing Enterprise Information Systems Applications
 
 [[GLIFD]][[securing-enterprise-information-systems-applications]]
 

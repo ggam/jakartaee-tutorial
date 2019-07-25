@@ -1,5 +1,5 @@
-Developing a Simple Facelets Application: The guessnumber-jsf Example Application
-=================================================================================
+## Developing a Simple Facelets Application: The guessnumber-jsf Example Application
+
 
 [[GIPOB]][[developing-a-simple-facelets-application-the-guessnumber-jsf-example-application]]
 

@@ -1,5 +1,5 @@
-Introduction to the Java Persistence API
-========================================
+## Introduction to the Java Persistence API
+
 
 [[BNBPZ]][[introduction-to-the-java-persistence-api]]
 

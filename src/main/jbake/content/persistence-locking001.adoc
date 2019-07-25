@@ -1,5 +1,5 @@
-Overview of Entity Locking and Concurrency
-==========================================
+## Overview of Entity Locking and Concurrency
+
 
 [[GKJHZ]][[overview-of-entity-locking-and-concurrency]]
 

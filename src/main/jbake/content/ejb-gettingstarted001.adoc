@@ -1,5 +1,5 @@
-Starting With Enterprise Beans
-==============================
+## Starting With Enterprise Beans
+
 
 [[A1249349]][[starting-with-enterprise-beans]]
 

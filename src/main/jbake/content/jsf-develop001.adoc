@@ -1,4 +1,4 @@
-= Managed Beans in JavaServer Faces Technology
+## = Managed Beans in JavaServer Faces Technology
 
 
 [[BNAQM]][[managed-beans-in-javaserver-faces-technology]]

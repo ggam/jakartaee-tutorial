@@ -1,4 +1,4 @@
-= Using Stereotypes in CDI Applications
+## = Using Stereotypes in CDI Applications
 
 
 [[GKHQC]][[using-stereotypes-in-cdi-applications]]

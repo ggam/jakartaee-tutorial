@@ -1,5 +1,5 @@
-Writing Managed Bean Methods
-============================
+## Writing Managed Bean Methods
+
 
 [[BNAVB]][[writing-managed-bean-methods]]
 

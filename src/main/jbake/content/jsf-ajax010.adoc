@@ -1,4 +1,4 @@
-= Loading JavaScript as a Resource
+## = Loading JavaScript as a Resource
 
 
 [[GKAAM]][[loading-javascript-as-a-resource]]

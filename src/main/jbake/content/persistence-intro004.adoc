@@ -1,5 +1,5 @@
-Managing Entities
-=================
+## Managing Entities
+
 
 [[BNBQW]][[managing-entities]]
 

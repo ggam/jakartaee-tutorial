@@ -1,5 +1,5 @@
-Using Ajax Functionality with JavaServer Faces Technology
-=========================================================
+## Using Ajax Functionality with JavaServer Faces Technology
+
 
 [[GKINL]][[using-ajax-functionality-with-javaserver-faces-technology]]
 

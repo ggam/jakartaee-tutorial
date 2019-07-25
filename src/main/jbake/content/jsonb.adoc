@@ -1,4 +1,4 @@
-= JSON Binding
+## = JSON Binding
 
 [[json-binding]]
 21 JSON Binding

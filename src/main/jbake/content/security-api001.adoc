@@ -1,4 +1,4 @@
-= About the Jakarta EE Security API
+## = About the Jakarta EE Security API
 
 [[about-the-jakarta-ee-security-api]]
 About the Jakarta EE Security API

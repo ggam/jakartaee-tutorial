@@ -1,5 +1,5 @@
-What Is a Resource Adapter?
-===========================
+## What Is a Resource Adapter?
+
 
 [[GIPGL]][[what-is-a-resource-adapter]]
 

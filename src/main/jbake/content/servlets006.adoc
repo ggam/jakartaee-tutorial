@@ -1,5 +1,5 @@
-Filtering Requests and Responses
-================================
+## Filtering Requests and Responses
+
 
 [[BNAGB]][[filtering-requests-and-responses]]
 

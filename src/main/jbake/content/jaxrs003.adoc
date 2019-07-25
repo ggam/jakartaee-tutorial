@@ -1,4 +1,4 @@
-= Example Applications for JAX-RS
+## = Example Applications for JAX-RS
 
 
 [[GIPZZ]][[example-applications-for-jax-rs]]

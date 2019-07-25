@@ -1,5 +1,5 @@
-Using a Custom Component
-========================
+## Using a Custom Component
+
 
 [[BNATT]][[using-a-custom-component]]
 

@@ -1,4 +1,4 @@
-= Using WebSockets with JavaServer Faces Technology
+## = Using WebSockets with JavaServer Faces Technology
 
 
 [[using-websockets-with-javaserver-faces-technology]]

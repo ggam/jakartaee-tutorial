@@ -1,5 +1,5 @@
-Using Named Entity Graphs
-=========================
+## Using Named Entity Graphs
+
 
 [[BABFIGEI]][[using-named-entity-graphs]]
 

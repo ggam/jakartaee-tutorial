@@ -1,5 +1,5 @@
-Delegating Rendering to a Renderer
-==================================
+## Delegating Rendering to a Renderer
+
 
 [[BNAWA]][[delegating-rendering-to-a-renderer]]
 

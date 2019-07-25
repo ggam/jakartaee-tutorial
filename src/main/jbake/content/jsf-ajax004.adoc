@@ -1,5 +1,5 @@
-Sending an Ajax Request
-=======================
+## Sending an Ajax Request
+
 
 [[GKACE]][[sending-an-ajax-request]]
 

@@ -1,4 +1,4 @@
-= Giving Beans EL Names
+## = Giving Beans EL Names
 
 
 [[GJBAK]][[giving-beans-el-names]]

@@ -1,5 +1,5 @@
-Overview of the Client API
-==========================
+## Overview of the Client API
+
 
 [[BABBIHEJ]][[overview-of-the-client-api]]
 

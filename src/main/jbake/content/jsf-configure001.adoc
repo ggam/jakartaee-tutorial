@@ -1,5 +1,5 @@
-Introduction to Configuring JavaServer Faces Applications
-=========================================================
+## Introduction to Configuring JavaServer Faces Applications
+
 
 [[A1352824]][[introduction-to-configuring-javaserver-faces-applications]]
 

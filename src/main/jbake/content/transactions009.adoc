@@ -1,5 +1,5 @@
-Further Information about Transactions
-======================================
+## Further Information about Transactions
+
 
 [[GKCMI]][[further-information-about-transactions]]
 

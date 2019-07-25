@@ -1,4 +1,4 @@
-= Understanding the Image Map Example
+## = Understanding the Image Map Example
 
 
 [[GLPCB]][[understanding-the-image-map-example]]

@@ -1,5 +1,5 @@
-Example Queries
-===============
+## Example Queries
+
 
 [[BNBTL]][[example-queries]]
 

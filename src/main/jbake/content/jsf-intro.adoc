@@ -1,5 +1,5 @@
-JavaServer Faces Technology
-===========================
+## JavaServer Faces Technology
+
 
 [[BNAPH]][[javaserver-faces-technology]]
 

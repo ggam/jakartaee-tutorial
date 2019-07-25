@@ -1,4 +1,4 @@
-= Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes
+## = Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes
 
 
 [[BABJFEAI]][[using-the-postconstruct-and-predestroy-annotations-with-cdi-managed-bean-classes]]

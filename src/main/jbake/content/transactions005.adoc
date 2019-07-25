@@ -1,5 +1,5 @@
-Bean-Managed Transactions
-=========================
+## Bean-Managed Transactions
+
 
 [[BNCIY]][[bean-managed-transactions]]
 

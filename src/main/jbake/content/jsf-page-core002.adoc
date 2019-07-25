@@ -1,4 +1,4 @@
-= Registering Listeners on Components
+## = Registering Listeners on Components
 
 
 [[BNASZ]][[registering-listeners-on-components]]

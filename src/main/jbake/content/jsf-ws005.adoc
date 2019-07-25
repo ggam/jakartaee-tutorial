@@ -1,4 +1,4 @@
-= Conditionally Connecting WebSockets
+## = Conditionally Connecting WebSockets
 
 
 [[conditionally-connecting-websockets]]

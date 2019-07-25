@@ -1,5 +1,5 @@
-Binding Converters, Listeners, and Validators to Managed Bean Properties
-========================================================================
+## Binding Converters, Listeners, and Validators to Managed Bean Properties
+
 
 [[BNATM]][[binding-converters-listeners-and-validators-to-managed-bean-properties]]
 

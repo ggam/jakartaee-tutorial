@@ -1,4 +1,4 @@
-= Beans as Injectable Objects
+## = Beans as Injectable Objects
 
 
 [[GIZKS]][[beans-as-injectable-objects]]

@@ -1,4 +1,4 @@
-= Using the Criteria API and Metamodel API to Create Basic Typesafe Queries
+## = Using the Criteria API and Metamodel API to Create Basic Typesafe Queries
 
 
 [[GJIVM]][[using-the-criteria-api-and-metamodel-api-to-create-basic-typesafe-queries]]

@@ -1,4 +1,4 @@
-= Java Message Service Concepts
+## = Java Message Service Concepts
 :description: Java message service allows applications to create, send, and receive messages.
 :keywords: jms, glassfish
 

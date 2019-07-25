@@ -1,5 +1,5 @@
-Introduction to JavaServer Faces Technology
-===========================================
+## Introduction to JavaServer Faces Technology
+
 
 [[A1073698]][[introduction-to-javaserver-faces-technology]]
 

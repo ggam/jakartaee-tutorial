@@ -1,5 +1,5 @@
-Enterprise Beans
-================
+## Enterprise Beans
+
 
 [[BNBLR]][[JEETT00130]]
 

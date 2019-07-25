@@ -1,5 +1,5 @@
-Contexts and Dependency Injection for Jakarta EE
-================================================
+## Contexts and Dependency Injection for Jakarta EE
+
 
 [[GJBNR]][[JEETT00131]]
 

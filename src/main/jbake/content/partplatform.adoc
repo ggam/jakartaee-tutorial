@@ -1,5 +1,5 @@
-Platform Basics
-===============
+## Platform Basics
+
 
 [[GFIRP2]][[JEETT1358]]
 

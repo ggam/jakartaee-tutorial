@@ -1,4 +1,4 @@
-= Examples: Securing Enterprise Beans
+## = Examples: Securing Enterprise Beans
 
 [[GKBSZ]][[examples-securing-enterprise-beans]]
 

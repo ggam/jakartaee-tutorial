@@ -1,5 +1,5 @@
-Starting and Stopping GlassFish Server
-======================================
+## Starting and Stopping GlassFish Server
+
 
 [[BNADI]][[starting-and-stopping-glassfish-server]]
 

@@ -1,4 +1,4 @@
-= Configuring Managed Beans
+## = Configuring Managed Beans
 
 
 [[BNAWQ]][[configuring-managed-beans]]

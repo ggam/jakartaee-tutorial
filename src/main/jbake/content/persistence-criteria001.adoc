@@ -1,5 +1,5 @@
-Overview of the Criteria and Metamodel APIs
-===========================================
+## Overview of the Criteria and Metamodel APIs
+
 
 [[GJRIJ]][[overview-of-the-criteria-and-metamodel-apis]]
 

@@ -1,4 +1,4 @@
-= Securing GlassFish Server
+## = Securing GlassFish Server
 
 [[BNBXI]][[securing-glassfish-server]]
 

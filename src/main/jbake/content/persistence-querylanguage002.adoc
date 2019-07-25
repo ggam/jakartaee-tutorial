@@ -1,5 +1,5 @@
-Query Language Terminology
-==========================
+## Query Language Terminology
+
 
 [[BNBTH]][[query-language-terminology]]
 

@@ -1,5 +1,5 @@
-The interceptor Example Application
-===================================
+## The interceptor Example Application
+
 
 [[GKECI]][[the-interceptor-example-application]]
 

@@ -1,5 +1,5 @@
-Registering a Custom Component
-==============================
+## Registering a Custom Component
+
 
 [[BNAXI]][[registering-a-custom-component]]
 

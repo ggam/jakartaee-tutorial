@@ -1,4 +1,4 @@
-= Adding Setter and Getter Methods
+## = Adding Setter and Getter Methods
 
 
 [[GJBBP]][[adding-setter-and-getter-methods]]

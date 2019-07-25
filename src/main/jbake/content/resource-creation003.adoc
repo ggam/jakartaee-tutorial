@@ -1,5 +1,5 @@
-Creating Resources Administratively
-===================================
+## Creating Resources Administratively
+
 
 [[CACFBGBE]][[creating-resources-administratively]]
 

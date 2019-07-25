@@ -1,5 +1,5 @@
-Design and Architecture of Duke's Tutoring
-==========================================
+## Design and Architecture of Duke's Tutoring
+
 
 [[GKAEI]][[design-and-architecture-of-dukes-tutoring]]
 

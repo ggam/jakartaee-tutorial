@@ -1,5 +1,5 @@
-Grouping Constraints
-====================
+## Grouping Constraints
+
 
 [[GKAGV]][[grouping-constraints]]
 

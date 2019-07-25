@@ -1,4 +1,4 @@
-= The Main Differences between Resource Injection and Dependency Injection
+## = The Main Differences between Resource Injection and Dependency Injection
 
 
 [[BABHFECJ]][[the-main-differences-between-resource-injection-and-dependency-injection]]

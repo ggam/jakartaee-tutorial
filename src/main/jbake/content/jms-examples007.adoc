@@ -1,5 +1,5 @@
-Receiving Messages Asynchronously Using a Message-Driven Bean
-=============================================================
+## Receiving Messages Asynchronously Using a Message-Driven Bean
+
 
 [[BNBPK]][[receiving-messages-asynchronously-using-a-message-driven-bean]]
 

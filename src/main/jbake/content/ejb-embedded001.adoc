@@ -1,5 +1,5 @@
-Overview of the Embedded Enterprise Bean Container
-==================================================
+## Overview of the Embedded Enterprise Bean Container
+
 
 [[GKFAE]][[overview-of-the-embedded-enterprise-bean-container]]
 

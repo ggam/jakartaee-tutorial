@@ -1,5 +1,5 @@
-Starting the Administration Console
-===================================
+## Starting the Administration Console
+
 
 [[BNADJ]][[starting-the-administration-console]]
 

@@ -1,4 +1,4 @@
-= Running the Built-In Database Identity Store Example
+## = Running the Built-In Database Identity Store Example
 
 
 [[running-the-built-in-database-identity-store-example]]

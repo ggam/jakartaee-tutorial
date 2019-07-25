@@ -1,4 +1,4 @@
-= Referencing a Managed Bean Method
+## = Referencing a Managed Bean Method
 
 
 [[BNATN]][[referencing-a-managed-bean-method]]

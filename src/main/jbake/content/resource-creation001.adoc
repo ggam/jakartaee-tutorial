@@ -1,5 +1,5 @@
-Resources and JNDI Naming
-=========================
+## Resources and JNDI Naming
+
 
 [[BNCJI]][[resources-and-jndi-naming]]
 

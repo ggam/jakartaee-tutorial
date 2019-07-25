@@ -1,5 +1,5 @@
-Creating and Initializing a Servlet
-===================================
+## Creating and Initializing a Servlet
+
 
 [[BNAFU]][[creating-and-initializing-a-servlet]]
 

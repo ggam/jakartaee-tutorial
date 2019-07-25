@@ -1,4 +1,4 @@
-= Further Information about the Java API for JSON Processing
+## = Further Information about the Java API for JSON Processing
 
 
 [[further-information-about-the-java-api-for-json-processing]]

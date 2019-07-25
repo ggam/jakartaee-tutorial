@@ -1,4 +1,4 @@
-= Sharing Information
+## = Sharing Information
 
 
 [[BNAFO]][[sharing-information]]

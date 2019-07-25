@@ -1,4 +1,4 @@
-=Further Information about Enterprise Beans
+## =Further Information about Enterprise Beans
 
 [[GIPLG]][[further-information-about-enterprise-beans]]
 

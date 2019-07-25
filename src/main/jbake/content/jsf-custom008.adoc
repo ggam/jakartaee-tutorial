@@ -1,5 +1,5 @@
-Handling Events for Custom Components
-=====================================
+## Handling Events for Custom Components
+
 
 [[BNAWD]][[handling-events-for-custom-components]]
 

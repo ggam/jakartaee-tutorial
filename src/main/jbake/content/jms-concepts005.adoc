@@ -1,4 +1,4 @@
-= Using the JMS API in Jakarta EE Applications
+## = Using the JMS API in Jakarta EE Applications
 
 
 [[BNCGL]][[using-the-jms-api-in-jakarta-ee-applications]]

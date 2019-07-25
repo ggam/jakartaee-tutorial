@@ -1,5 +1,5 @@
-Using Ajax with JavaServer Faces Technology
-===========================================
+## Using Ajax with JavaServer Faces Technology
+
 
 [[GKIOW]][[using-ajax-with-javaserver-faces-technology]]
 

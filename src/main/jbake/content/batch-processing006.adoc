@@ -1,5 +1,5 @@
-Submitting Jobs to the Batch Runtime
-====================================
+## Submitting Jobs to the Batch Runtime
+
 
 [[BCGCAHCB]][[submitting-jobs-to-the-batch-runtime]]
 

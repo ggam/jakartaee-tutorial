@@ -1,5 +1,5 @@
-Using NetBeans IDE to Create JMS Resources
-==========================================
+## Using NetBeans IDE to Create JMS Resources
+
 
 [[BABDFDJC]][[using-netbeans-ide-to-create-jms-resources]]
 

@@ -1,4 +1,4 @@
-= Running the jsonbbasics Example Application
+## = Running the jsonbbasics Example Application
 
 [[running-the-jsonbbasics-example-application]]
 Running the jsonbbasics Example Application

@@ -1,5 +1,5 @@
-Creating Custom Component Classes
-=================================
+## Creating Custom Component Classes
+
 
 [[BNAVU]][[creating-custom-component-classes]]
 

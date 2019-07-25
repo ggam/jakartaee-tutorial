@@ -1,5 +1,5 @@
-Registering Application Messages
-================================
+## Registering Application Messages
+
 
 [[BNAXB]][[registering-application-messages]]
 

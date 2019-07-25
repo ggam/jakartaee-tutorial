@@ -1,5 +1,5 @@
-Overview of the Resource Adapter Examples
-=========================================
+## Overview of the Resource Adapter Examples
+
 
 [[A1253757]][[overview-of-the-resource-adapter-examples]]
 

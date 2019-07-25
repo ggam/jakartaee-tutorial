@@ -1,4 +1,4 @@
-= Using Pluggable Providers
+## = Using Pluggable Providers
 
 [[using-pluggable-providers]]
 Using Pluggable Providers

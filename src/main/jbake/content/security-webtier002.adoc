@@ -1,4 +1,4 @@
-= Securing Web Applications
+## = Securing Web Applications
 
 [[GKBAA]][[securing-web-applications]]
 

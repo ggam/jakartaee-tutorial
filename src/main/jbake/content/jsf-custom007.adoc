@@ -1,5 +1,5 @@
-Implementing an Event Listener
-==============================
+## Implementing an Event Listener
+
 
 [[BNAUT]][[implementing-an-event-listener]]
 

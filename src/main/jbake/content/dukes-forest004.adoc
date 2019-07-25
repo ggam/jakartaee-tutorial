@@ -1,5 +1,5 @@
-Running the Duke's Forest Application
-=====================================
+## Running the Duke's Forest Application
+
 
 [[GLNSX]][[running-the-dukes-forest-application]]
 

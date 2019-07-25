@@ -1,4 +1,4 @@
-= The ajaxguessnumber Example Application
+## = The ajaxguessnumber Example Application
 
 
 [[GKOKB]][[the-ajaxguessnumber-example-application]]

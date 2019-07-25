@@ -1,5 +1,5 @@
-Securing Application Clients
-============================
+## Securing Application Clients
+
 
 [[GLIGC]][[securing-application-clients]]
 

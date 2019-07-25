@@ -1,5 +1,5 @@
-Overview of the Duke's Forest Case Study Example
-================================================
+## Overview of the Duke's Forest Case Study Example
+
 
 [[A1256074]][[overview-of-the-dukes-forest-case-study-example]]
 

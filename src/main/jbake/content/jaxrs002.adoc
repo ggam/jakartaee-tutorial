@@ -1,4 +1,4 @@
-= Creating a RESTful Root Resource Class
+## = Creating a RESTful Root Resource Class
 
 
 [[GILIK]][[creating-a-restful-root-resource-class]]

@@ -1,5 +1,5 @@
-A Singleton Session Bean Example: counter
-=========================================
+## A Singleton Session Bean Example: counter
+
 
 [[GIPVI]][[a-singleton-session-bean-example-counter]]
 

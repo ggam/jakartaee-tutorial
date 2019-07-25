@@ -1,5 +1,5 @@
-Using the Embedded Enterprise Bean Container
-============================================
+## Using the Embedded Enterprise Bean Container
+
 
 [[GKCQZ]][[using-the-embedded-enterprise-bean-container]]
 

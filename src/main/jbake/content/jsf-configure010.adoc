@@ -1,4 +1,4 @@
-= Configuring Navigation Rules
+## = Configuring Navigation Rules
 
 
 [[BNAXF]][[configuring-navigation-rules]]

@@ -1,5 +1,5 @@
-Tutorial Example Directory Structure
-====================================
+## Tutorial Example Directory Structure
+
 
 [[GEXAP]][[tutorial-example-directory-structure]]
 

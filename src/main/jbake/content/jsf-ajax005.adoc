@@ -1,4 +1,4 @@
-= Monitoring Events on the Client
+## = Monitoring Events on the Client
 
 
 [[GKDDF]][[monitoring-events-on-the-client]]

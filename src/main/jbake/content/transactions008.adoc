@@ -1,5 +1,5 @@
-Transactions in Web Components
-==============================
+## Transactions in Web Components
+
 
 [[BNCJG]][[transactions-in-web-components]]
 

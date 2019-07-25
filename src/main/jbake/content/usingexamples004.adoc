@@ -1,4 +1,4 @@
-= Starting and Stopping Apache Derby
+## = Starting and Stopping Apache Derby
 
 
 [[BNADK]][[starting-and-stopping-the-java-db-server]]

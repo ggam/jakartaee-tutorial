@@ -1,4 +1,4 @@
-= Authentication Mechanisms
+## = Authentication Mechanisms
 
 [[GLIEN]][[authentication-mechanisms]]
 

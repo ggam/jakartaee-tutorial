@@ -1,4 +1,4 @@
-= Using Annotations to Configure Managed Beans
+## = Using Annotations to Configure Managed Beans
 
 
 [[GIRCH]][[using-annotations-to-configure-managed-beans]]

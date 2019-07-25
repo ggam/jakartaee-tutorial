@@ -1,5 +1,5 @@
-Using JAX-RS with JAXB
-======================
+## Using JAX-RS with JAXB
+
 
 [[GKKNJ]][[using-jax-rs-with-jaxb]]
 

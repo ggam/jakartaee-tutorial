@@ -1,5 +1,5 @@
-Securing HTTP Resources
-=======================
+## Securing HTTP Resources
+
 
 [[BABGEJJJ]][[securing-http-resources]]
 

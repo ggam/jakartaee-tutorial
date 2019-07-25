@@ -1,5 +1,5 @@
-What Is a Session Bean?
-=======================
+## What Is a Session Bean?
+
 
 [[GIPJG]][[what-is-a-session-bean]]
 

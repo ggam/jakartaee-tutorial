@@ -1,4 +1,4 @@
-= Attributes of a Composite Component
+## = Attributes of a Composite Component
 
 
 [[GKHWV]][[attributes-of-a-composite-component]]

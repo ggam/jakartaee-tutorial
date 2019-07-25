@@ -1,5 +1,5 @@
-Using the Metamodel API to Model Entity Classes
-===============================================
+## Using the Metamodel API to Model Entity Classes
+
 
 [[GJIUP]][[using-the-metamodel-api-to-model-entity-classes]]
 

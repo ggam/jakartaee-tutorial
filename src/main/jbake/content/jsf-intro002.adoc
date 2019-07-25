@@ -1,5 +1,5 @@
-What Is a JavaServer Faces Application?
-=======================================
+## What Is a JavaServer Faces Application?
+
 
 [[BNAPK]][[what-is-a-javaserver-faces-application]]
 

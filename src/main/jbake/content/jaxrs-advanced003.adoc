@@ -1,5 +1,5 @@
-Subresources and Runtime Resource Resolution
-============================================
+## Subresources and Runtime Resource Resolution
+
 
 [[GKNAV]][[subresources-and-runtime-resource-resolution]]
 

@@ -1,5 +1,5 @@
-Running the Duke's Bookstore Case Study Application
-===================================================
+## Running the Duke's Bookstore Case Study Application
+
 
 [[GLPPQ]][[running-the-dukes-bookstore-case-study-application]]
 

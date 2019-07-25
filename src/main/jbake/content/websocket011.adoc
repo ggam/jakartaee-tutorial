@@ -1,5 +1,5 @@
-The dukeetf2 Example Application
-================================
+## The dukeetf2 Example Application
+
 
 [[BABGCEHE]][[the-dukeetf2-example-application]]
 

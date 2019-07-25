@@ -1,5 +1,5 @@
-The dukeetf Example Application
-===============================
+## The dukeetf Example Application
+
 
 [[BEIFAIFF]][[the-dukeetf-example-application]]
 

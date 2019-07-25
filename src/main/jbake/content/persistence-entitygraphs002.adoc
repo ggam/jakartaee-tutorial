@@ -1,5 +1,5 @@
-Entity Graph Basics
-===================
+## Entity Graph Basics
+
 
 [[BABCJBCG]][[entity-graph-basics]]
 

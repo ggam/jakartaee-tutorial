@@ -1,5 +1,5 @@
-Further Information about JAX-RS
-================================
+## Further Information about JAX-RS
+
 
 [[GILIZ]][[further-information-about-jax-rs]]
 

@@ -1,5 +1,5 @@
-Simple Use Case
-===============
+## Simple Use Case
+
 
 [[BCGHBJIG]][[simple-use-case]]
 

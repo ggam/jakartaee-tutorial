@@ -1,5 +1,5 @@
-Using Encoders and Decoders
-===========================
+## Using Encoders and Decoders
+
 
 [[BABGADFG]][[using-encoders-and-decoders]]
 

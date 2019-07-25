@@ -1,4 +1,4 @@
-= The simplegreeting CDI Example
+## = The simplegreeting CDI Example
 
 [[GJBJU]][[the-simplegreeting-cdi-example]]
 

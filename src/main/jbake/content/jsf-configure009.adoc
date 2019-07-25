@@ -1,5 +1,5 @@
-Registering a Custom Converter
-==============================
+## Registering a Custom Converter
+
 
 [[BNAXE]][[registering-a-custom-converter]]
 

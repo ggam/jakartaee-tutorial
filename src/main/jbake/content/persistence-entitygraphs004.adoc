@@ -1,5 +1,5 @@
-Using Entity Graphs in Query Operations
-=======================================
+## Using Entity Graphs in Query Operations
+
 
 [[BABGJDAJ]][[using-entity-graphs-in-query-operations]]
 

@@ -1,5 +1,5 @@
-Grouping of Components
-======================
+## Grouping of Components
+
 
 [[GKHYH]][[grouping-of-components]]
 

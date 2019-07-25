@@ -1,4 +1,4 @@
-= Using a Managed Bean in a Facelets Page
+## = Using a Managed Bean in a Facelets Page
 
 
 [[GJBBU]][[using-a-managed-bean-in-a-facelets-page]]

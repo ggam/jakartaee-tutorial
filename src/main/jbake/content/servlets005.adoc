@@ -1,5 +1,5 @@
-Writing Service Methods
-=======================
+## Writing Service Methods
+
 
 [[BNAFV]][[writing-service-methods]]
 

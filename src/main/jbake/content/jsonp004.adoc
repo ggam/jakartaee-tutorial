@@ -1,4 +1,4 @@
-= Using the Streaming API
+## = Using the Streaming API
 
 [[using-the-streaming-api]]
 Using the Streaming API

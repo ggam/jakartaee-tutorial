@@ -1,5 +1,5 @@
-Developing with JavaServer Faces Technology
-===========================================
+## Developing with JavaServer Faces Technology
+
 
 [[BNATX]][[developing-with-javaserver-faces-technology]]
 

@@ -1,5 +1,5 @@
-Using Default Validators
-========================
+## Using Default Validators
+
 
 [[GIREB]][[using-default-validators]]
 

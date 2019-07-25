@@ -1,4 +1,4 @@
-= Using Interceptors in CDI Applications
+## = Using Interceptors in CDI Applications
 
 
 [[GKHJX]][[using-interceptors-in-cdi-applications]]

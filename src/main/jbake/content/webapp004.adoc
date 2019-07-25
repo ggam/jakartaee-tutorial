@@ -1,5 +1,5 @@
-A Web Module That Uses Java Servlet Technology: The hello2 Example
-==================================================================
+## A Web Module That Uses Java Servlet Technology: The hello2 Example
+
 
 [[BNAEO]][[a-web-module-that-uses-java-servlet-technology-the-hello2-example]]
 

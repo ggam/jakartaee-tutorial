@@ -1,5 +1,5 @@
-Character Sets and Encodings
-============================
+## Character Sets and Encodings
+
 
 [[BNAYB]][[character-sets-and-encodings]]
 

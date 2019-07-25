@@ -1,5 +1,5 @@
-Deciding Which Type of Web Service to Use
-=========================================
+## Deciding Which Type of Web Service to Use
+
 
 [[GJBJI]][[deciding-which-type-of-web-service-to-use]]
 

@@ -1,5 +1,5 @@
-Date and Number Formatting
-==========================
+## Date and Number Formatting
+
 
 [[BNAYA]][[date-and-number-formatting]]
 

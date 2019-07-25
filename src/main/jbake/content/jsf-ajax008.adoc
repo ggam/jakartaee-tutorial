@@ -1,5 +1,5 @@
-Ajax Request Lifecycle
-======================
+## Ajax Request Lifecycle
+
 
 [[GKUAR]][[ajax-request-lifecycle]]
 

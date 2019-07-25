@@ -1,5 +1,5 @@
-Writing High Performance and Scalable JMS Applications
-======================================================
+## Writing High Performance and Scalable JMS Applications
+
 
 [[BABGEFHC]][[writing-high-performance-and-scalable-jms-applications]]
 

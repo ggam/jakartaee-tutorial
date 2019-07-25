@@ -1,5 +1,5 @@
-Partial Processing and Partial Rendering
-========================================
+## Partial Processing and Partial Rendering
+
 
 [[GKNOJ]][[partial-processing-and-partial-rendering]]
 

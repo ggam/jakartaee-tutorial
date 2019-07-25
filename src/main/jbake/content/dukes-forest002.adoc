@@ -1,5 +1,5 @@
-Design and Architecture of Duke's Forest
-========================================
+## Design and Architecture of Duke's Forest
+
 
 [[GLNRJ]][[design-and-architecture-of-dukes-forest]]
 

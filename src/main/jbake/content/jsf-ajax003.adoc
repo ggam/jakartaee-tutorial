@@ -1,4 +1,4 @@
-= Using Ajax with Facelets
+## = Using Ajax with Facelets
 
 
 [[GKABR]][[using-ajax-with-facelets]]

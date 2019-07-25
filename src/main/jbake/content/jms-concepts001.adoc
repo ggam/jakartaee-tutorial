@@ -1,5 +1,5 @@
-Overview of the JMS API
-=======================
+## Overview of the JMS API
+
 
 [[BNCDR]][[overview-of-the-jms-api]]
 

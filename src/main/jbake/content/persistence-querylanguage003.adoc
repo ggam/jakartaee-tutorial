@@ -1,5 +1,5 @@
-Creating Queries Using the Java Persistence Query Language
-==========================================================
+## Creating Queries Using the Java Persistence Query Language
+
 
 [[BNBRG]][[creating-queries-using-the-java-persistence-query-language]]
 

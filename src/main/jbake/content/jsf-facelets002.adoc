@@ -1,5 +1,5 @@
-The Lifecycle of a Facelets Application
-=======================================
+## The Lifecycle of a Facelets Application
+
 
 [[GIPRR]][[the-lifecycle-of-a-facelets-application]]
 

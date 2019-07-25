@@ -1,4 +1,4 @@
-= Writing Bean Properties
+## = Writing Bean Properties
 
 
 [[BNATY]][[writing-bean-properties]]

@@ -1,4 +1,4 @@
-= Using Ajax With WebSockets
+## = Using Ajax With WebSockets
 
 
 [[using-ajax-with-websockets]]

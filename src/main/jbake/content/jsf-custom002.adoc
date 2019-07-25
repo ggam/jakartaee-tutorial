@@ -1,4 +1,4 @@
-= Determining Whether You Need a Custom Component or Renderer
+## = Determining Whether You Need a Custom Component or Renderer
 
 
 [[BNAVH]][[determining-whether-you-need-a-custom-component-or-renderer]]

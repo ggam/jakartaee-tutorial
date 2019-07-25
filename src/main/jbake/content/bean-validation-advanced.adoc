@@ -1,5 +1,5 @@
-Bean Validation: Advanced Topics
-================================
+## Bean Validation: Advanced Topics
+
 
 [[GKAHP]][[bean-validation-advanced-topics]]
 

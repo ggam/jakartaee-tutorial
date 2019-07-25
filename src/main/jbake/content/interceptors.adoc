@@ -1,5 +1,5 @@
-Using Jakarta EE Interceptors
-==========================
+## Using Jakarta EE Interceptors
+
 
 [[GKEED]][[using-jakarta-ee-interceptors]]
 

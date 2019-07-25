@@ -1,4 +1,4 @@
-= Using Alternatives in CDI Applications
+## = Using Alternatives in CDI Applications
 
 
 [[GJSDF]][[using-alternatives-in-cdi-applications]]

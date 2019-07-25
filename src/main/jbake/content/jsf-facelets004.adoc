@@ -1,4 +1,4 @@
-= Using Facelets Templates
+## = Using Facelets Templates
 
 
 [[GIQXP]][[using-facelets-templates]]

@@ -1,5 +1,5 @@
-Overview of String-Based Criteria API Queries
-=============================================
+## Overview of String-Based Criteria API Queries
+
 
 [[GKJIV]][[overview-of-string-based-criteria-api-queries]]
 

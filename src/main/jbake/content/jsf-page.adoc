@@ -1,5 +1,5 @@
-Using JavaServer Faces Technology in Web Pages
-==============================================
+## Using JavaServer Faces Technology in Web Pages
+
 
 [[BNAQZ]][[using-javaserver-faces-technology-in-web-pages]]
 

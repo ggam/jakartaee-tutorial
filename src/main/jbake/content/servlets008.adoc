@@ -1,5 +1,5 @@
-Accessing the Web Context
-=========================
+## Accessing the Web Context
+
 
 [[BNAGL]][[accessing-the-web-context]]
 

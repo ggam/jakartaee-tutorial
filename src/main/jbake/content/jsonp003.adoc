@@ -1,4 +1,4 @@
-= Using the Object Model API
+## = Using the Object Model API
 
 
 [[using-the-object-model-api]]
