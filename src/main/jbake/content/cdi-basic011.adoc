@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using a Managed Bean in a Facelets Page
-next=cdi-basic012.html
-prev=cdi-basic010.html
-~~~~~~
 = Using a Managed Bean in a Facelets Page
 
 

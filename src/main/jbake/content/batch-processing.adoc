@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Batch Processing
-next=batch-processing001.html
-prev=interceptors003.html
-~~~~~~
 Batch Processing
 ================
 

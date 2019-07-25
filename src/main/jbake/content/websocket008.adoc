@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Path Parameters
-next=websocket009.html
-prev=websocket007.html
-~~~~~~
 Path Parameters
 ===============
 

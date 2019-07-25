@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of the Persistence Examples
-next=persistence-basicexamples002.html
-prev=persistence-basicexamples.html
-~~~~~~
 Overview of the Persistence Examples
 ====================================
 

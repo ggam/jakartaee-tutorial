@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Submitting Jobs to the Batch Runtime
-next=batch-processing007.html
-prev=batch-processing005.html
-~~~~~~
 Submitting Jobs to the Batch Runtime
 ====================================
 

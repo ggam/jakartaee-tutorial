@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Bean Validation
-next=bean-validation.html
-prev=webi18n004.html
-~~~~~~
 Bean Validation
 ===============
 

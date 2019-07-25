@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating and Using String-Based Criteria Queries
-next=persistence-string-queries001.html
-prev=persistence-criteria003.html
-~~~~~~
 Creating and Using String-Based Criteria Queries
 ================================================
 

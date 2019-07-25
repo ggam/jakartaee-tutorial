@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Java Platform Localization Classes
-next=webi18n002.html
-prev=webi18n.html
-~~~~~~
 Java Platform Localization Classes
 ==================================
 

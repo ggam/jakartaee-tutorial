@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The encoder Example: Using Alternatives
-next=cdi-adv-examples003.html
-prev=cdi-adv-examples001.html
-~~~~~~
 = The encoder Example: Using Alternatives
 
 

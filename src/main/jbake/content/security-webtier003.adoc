@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Programmatic Security with Web Applications
-next=security-webtier004.html
-prev=security-webtier002.html
-~~~~~~
 = Using Programmatic Security with Web Applications
 
 [[GJIIE]][[using-programmatic-security-with-web-applications]]

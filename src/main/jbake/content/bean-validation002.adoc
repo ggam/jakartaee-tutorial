@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Bean Validation Constraints
-next=bean-validation003.html
-prev=bean-validation001.html
-~~~~~~
 # Using Bean Validation Constraints
 
 

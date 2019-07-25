@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The Bootstrap API
-next=cdi-bootstrap-se8002.html
-prev=cdi-bootstrap-se8.html
-~~~~~~
 = The Bootstrap API
 
 

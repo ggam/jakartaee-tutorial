@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Delegating Rendering to a Renderer
-next=jsf-custom007.html
-prev=jsf-custom005.html
-~~~~~~
 Delegating Rendering to a Renderer
 ==================================
 

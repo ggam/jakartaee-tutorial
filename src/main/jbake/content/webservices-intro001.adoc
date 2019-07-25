@@ -1,9 +1,3 @@
-type=page
-status=published
-title=What Are Web Services?
-next=webservices-intro002.html
-prev=webservices-intro.html
-~~~~~~
 What Are Web Services?
 ======================
 

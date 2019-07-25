@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Immediate and Deferred Evaluation Syntax
-next=jsf-el003.html
-prev=jsf-el001.html
-~~~~~~
 Immediate and Deferred Evaluation Syntax
 ========================================
 

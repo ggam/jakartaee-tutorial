@@ -1,9 +1,3 @@
-type=page
-status=published
-title=About Beans
-next=cdi-basic004.html
-prev=cdi-basic002.html
-~~~~~~
 = About Beans
 
 [[GJEBJ]][[about-beans]]

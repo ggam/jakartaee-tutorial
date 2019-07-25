@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Beans as Injectable Objects
-next=cdi-basic006.html
-prev=cdi-basic004.html
-~~~~~~
 = Beans as Injectable Objects
 
 

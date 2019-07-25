@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Debugging Jakarta EE Applications
-next=partplatform.html
-prev=usingexamples007.html
-~~~~~~
 = Debugging Jakarta EE Applications
 
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=WebSocket Security Considerations
-next=jsf-ws007.html
-prev=jsf-ws005.html
-~~~~~~
 = WebSocket Security Considerations
 
 

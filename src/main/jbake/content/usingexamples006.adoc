@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Tutorial Example Directory Structure
-next=usingexamples007.html
-prev=usingexamples005.html
-~~~~~~
 Tutorial Example Directory Structure
 ====================================
 

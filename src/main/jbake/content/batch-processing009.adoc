@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The phonebilling Example Application
-next=batch-processing010.html
-prev=batch-processing008.html
-~~~~~~
 The phonebilling Example Application
 ====================================
 

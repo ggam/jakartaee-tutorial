@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The trading Example
-next=connectorexample003.html
-prev=connectorexample001.html
-~~~~~~
 = The trading Example
 
 

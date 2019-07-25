@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Securing Web Applications
-next=security-webtier003.html
-prev=security-webtier001.html
-~~~~~~
 = Securing Web Applications
 
 [[GKBAA]][[securing-web-applications]]

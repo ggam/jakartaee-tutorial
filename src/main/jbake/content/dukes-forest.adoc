@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Duke's Forest Case Study Example
-next=dukes-forest001.html
-prev=dukes-tutoring004.html
-~~~~~~
 Duke's Forest Case Study Example
 ================================
 

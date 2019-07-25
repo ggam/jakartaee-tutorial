@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Receiving an Ajax Response
-next=jsf-ajax008.html
-prev=jsf-ajax006.html
-~~~~~~
 Receiving an Ajax Response
 ==========================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Nonblocking I/O
-next=servlets014.html
-prev=servlets012.html
-~~~~~~
 = Nonblocking I/O
 
 

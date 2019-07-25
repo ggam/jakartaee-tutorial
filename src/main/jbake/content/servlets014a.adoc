@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Server Push
-next=servlets014b.html
-prev=servlets014.html
-~~~~~~
 = Server Push
 
 

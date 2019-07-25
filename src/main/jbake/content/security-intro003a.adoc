@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Pluggable Providers
-next=security-intro004.html
-prev=security-intro003.html
-~~~~~~
 = Using Pluggable Providers
 
 [[using-pluggable-providers]]

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating Custom Constraints
-next=bean-validation-advanced002.html
-prev=bean-validation-advanced.html
-~~~~~~
 # Creating Custom Constraints
 
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Database Schema Creation
-next=persistence-intro007.html
-prev=persistence-intro005.html
-~~~~~~
 = Database Schema Creation
 
 

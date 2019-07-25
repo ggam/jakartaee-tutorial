@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Injecting Objects by Using Producer Methods
-next=cdi-basic013.html
-prev=cdi-basic011.html
-~~~~~~
 = Injecting Objects by Using Producer Methods
 
 

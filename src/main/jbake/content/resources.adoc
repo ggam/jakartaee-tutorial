@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Resource Adapters and Contracts
-next=resources001.html
-prev=transactions009.html
-~~~~~~
 Resource Adapters and Contracts
 ===============================
 

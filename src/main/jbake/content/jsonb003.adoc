@@ -1,9 +1,3 @@
-type=page
-status=published
-title=JSON Binding
-next=jsonb004.html
-prev=jsonb002.html
-~~~~~~
 = Running the jsonbbasics Example Application
 
 [[running-the-jsonbbasics-example-application]]

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Adding Setter and Getter Methods
-next=cdi-basic011.html
-prev=cdi-basic009.html
-~~~~~~
 = Adding Setter and Getter Methods
 
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Securing Enterprise Information Systems Applications
-next=security-advanced007.html
-prev=security-advanced005.html
-~~~~~~
 = Securing Enterprise Information Systems Applications
 
 [[GLIFD]][[securing-enterprise-information-systems-applications]]

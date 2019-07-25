@@ -1,9 +1,3 @@
-type=page
-status=published
-title=JSON Binding
-next=jsonb002.html
-prev=jsonb.html
-~~~~~~
 = JSON Binding in the Jakarta EE Platform
 
 [[json-binding-in-the-jakarta-ee-platform]]

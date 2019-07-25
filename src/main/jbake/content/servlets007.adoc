@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Invoking Other Web Resources
-next=servlets008.html
-prev=servlets006.html
-~~~~~~
 Invoking Other Web Resources
 ============================
 

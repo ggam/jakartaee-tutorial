@@ -1,9 +1,3 @@
-type=page
-status=published
-title=What Is a Resource Adapter?
-next=resources002.html
-prev=resources.html
-~~~~~~
 What Is a Resource Adapter?
 ===========================
 

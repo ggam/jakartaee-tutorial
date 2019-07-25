@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using NetBeans IDE to Create JMS Resources
-next=partsecurity.html
-prev=jms-examples009.html
-~~~~~~
 Using NetBeans IDE to Create JMS Resources
 ==========================================
 

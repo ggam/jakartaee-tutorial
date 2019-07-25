@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of Ajax
-next=jsf-ajax002.html
-prev=jsf-ajax.html
-~~~~~~
 Overview of Ajax
 ================
 

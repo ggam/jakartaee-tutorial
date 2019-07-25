@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Further Information about WebSocket
-next=jsonp.html
-prev=websocket012.html
-~~~~~~
 Further Information about WebSocket
 ===================================
 

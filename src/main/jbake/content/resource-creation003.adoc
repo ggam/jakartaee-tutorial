@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating Resources Administratively
-next=injection.html
-prev=resource-creation002.html
-~~~~~~
 Creating Resources Administratively
 ===================================
 

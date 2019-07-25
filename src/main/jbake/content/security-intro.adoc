@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Introduction to Security in the Jakarta EE Platform
-next=security-intro001.html
-prev=partsecurity.html
-~~~~~~
 = Introduction to Security in the Jakarta EE Platform
 
 

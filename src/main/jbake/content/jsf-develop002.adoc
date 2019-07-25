@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Writing Bean Properties
-next=jsf-develop003.html
-prev=jsf-develop001.html
-~~~~~~
 = Writing Bean Properties
 
 

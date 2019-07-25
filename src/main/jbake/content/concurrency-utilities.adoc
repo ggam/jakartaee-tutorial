@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Concurrency Utilities for Jakarta EE
-next=concurrency-utilities001.html
-prev=batch-processing010.html
-~~~~~~
 = Concurrency Utilities for Jakarta EE
 
 

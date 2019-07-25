@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Jakarta EE Security: Advanced Topics
-next=security-advanced001.html
-prev=security-api005.html
-~~~~~~
 = Jakarta EE Security: Advanced Topics
 
 [[GJJWX]][[jakarta-ee-security-advanced-topics]]

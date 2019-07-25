@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Ajax With WebSockets
-next=servlets.html
-prev=jsf-ws006.html
-~~~~~~
 = Using Ajax With WebSockets
 
 

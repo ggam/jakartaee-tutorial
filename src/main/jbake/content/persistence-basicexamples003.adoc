@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The roster Application
-next=persistence-basicexamples004.html
-prev=persistence-basicexamples002.html
-~~~~~~
 The roster Application
 ======================
 

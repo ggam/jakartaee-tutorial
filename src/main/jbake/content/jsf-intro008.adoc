@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Partial Processing and Partial Rendering
-next=jsf-intro009.html
-prev=jsf-intro007.html
-~~~~~~
 Partial Processing and Partial Rendering
 ========================================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Configuring Security Using Deployment Descriptors
-next=security-advanced008.html
-prev=security-advanced006.html
-~~~~~~
 = Configuring Security Using Deployment Descriptors
 
 [[GKHRL]][[configuring-security-using-deployment-descriptors]]

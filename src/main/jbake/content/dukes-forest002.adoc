@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Design and Architecture of Duke's Forest
-next=dukes-forest003.html
-prev=dukes-forest001.html
-~~~~~~
 Design and Architecture of Duke's Forest
 ========================================
 

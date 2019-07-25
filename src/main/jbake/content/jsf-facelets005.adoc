@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Composite Components
-next=jsf-facelets006.html
-prev=jsf-facelets004.html
-~~~~~~
 = Composite Components
 
 

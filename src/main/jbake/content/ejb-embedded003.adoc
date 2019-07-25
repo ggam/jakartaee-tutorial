@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The standalone Example Application
-next=ejb-async.html
-prev=ejb-embedded002.html
-~~~~~~
 The standalone Example Application
 ==================================
 

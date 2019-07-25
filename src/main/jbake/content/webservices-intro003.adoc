@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Deciding Which Type of Web Service to Use
-next=jaxws.html
-prev=webservices-intro002.html
-~~~~~~
 Deciding Which Type of Web Service to Use
 =========================================
 

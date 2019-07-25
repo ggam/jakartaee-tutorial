@@ -1,9 +1,3 @@
-type=page
-status=published
-title=JAX-RS: Advanced Topics and an Example
-next=jaxrs-advanced001.html
-prev=jaxrs-client003.html
-~~~~~~
 JAX-RS: Advanced Topics and an Example
 ======================================
 

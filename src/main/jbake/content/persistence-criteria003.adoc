@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Criteria API and Metamodel API to Create Basic Typesafe Queries
-next=persistence-string-queries.html
-prev=persistence-criteria002.html
-~~~~~~
 = Using the Criteria API and Metamodel API to Create Basic Typesafe Queries
 
 

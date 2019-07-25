@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Conditionally Connecting WebSockets
-next=jsf-ws006.html
-prev=jsf-ws004.html
-~~~~~~
 = Conditionally Connecting WebSockets
 
 

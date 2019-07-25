@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating Queries Using the Java Persistence Query Language
-next=persistence-querylanguage004.html
-prev=persistence-querylanguage002.html
-~~~~~~
 Creating Queries Using the Java Persistence Query Language
 ==========================================================
 

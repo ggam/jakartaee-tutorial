@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Examples: Securing Web Applications
-next=security-jakartaee.html
-prev=security-webtier003.html
-~~~~~~
 = Examples: Securing Web Applications
 
 

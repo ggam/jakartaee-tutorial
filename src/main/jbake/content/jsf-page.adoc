@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using JavaServer Faces Technology in Web Pages
-next=jsf-page001.html
-prev=jsf-el008.html
-~~~~~~
 Using JavaServer Faces Technology in Web Pages
 ==============================================
 

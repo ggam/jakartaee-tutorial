@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Packaging Applications
-next=packaging002.html
-prev=packaging.html
-~~~~~~
 Packaging Applications
 ======================
 

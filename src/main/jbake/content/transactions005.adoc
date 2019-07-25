@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Bean-Managed Transactions
-next=transactions006.html
-prev=transactions004.html
-~~~~~~
 Bean-Managed Transactions
 =========================
 

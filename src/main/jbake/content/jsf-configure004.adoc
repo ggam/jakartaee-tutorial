@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Faces Flows
-next=jsf-configure005.html
-prev=jsf-configure003.html
-~~~~~~
 = Using Faces Flows
 
 

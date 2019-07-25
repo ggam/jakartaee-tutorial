@@ -1,9 +1,3 @@
-type=page
-status=published
-title=A Web Module That Uses JavaServer Faces Technology: The hello1 Example
-next=webapp004.html
-prev=webapp002.html
-~~~~~~
 = A Web Module That Uses JavaServer Faces Technology: The hello1 Example
 
 

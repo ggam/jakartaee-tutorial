@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Registering a Custom Validator
-next=jsf-configure009.html
-prev=jsf-configure007.html
-~~~~~~
 Registering a Custom Validator
 ==============================
 

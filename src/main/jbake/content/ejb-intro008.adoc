@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Further Information about Enterprise Beans
-next=ejb-gettingstarted.html
-prev=ejb-intro007.html
-~~~~~~
 =Further Information about Enterprise Beans
 
 [[GIPLG]][[further-information-about-enterprise-beans]]

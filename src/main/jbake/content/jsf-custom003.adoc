@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Understanding the Image Map Example
-next=jsf-custom004.html
-prev=jsf-custom002.html
-~~~~~~
 = Understanding the Image Map Example
 
 

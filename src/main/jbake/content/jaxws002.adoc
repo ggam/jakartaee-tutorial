@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating a Simple Web Service and Clients with JAX-WS
-next=jaxws003.html
-prev=jaxws001.html
-~~~~~~
 = Creating a Simple Web Service and Clients with JAX-WS
 
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of Web Application Security
-next=security-webtier002.html
-prev=security-webtier.html
-~~~~~~
 = Overview of Web Application Security
 
 [[BNCAT]][[overview-of-web-application-security]]

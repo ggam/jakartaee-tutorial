@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using WebSockets with JavaServer Faces Technology
-next=jsf-ws001.html
-prev=jsf-configure013.html
-~~~~~~
 = Using WebSockets with JavaServer Faces Technology
 
 

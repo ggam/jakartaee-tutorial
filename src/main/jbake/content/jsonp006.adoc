@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The jsonpmodel Example Application
-next=jsonp007.html
-prev=jsonp005.html
-~~~~~~
 = The jsonpmodel Example Application
 
 

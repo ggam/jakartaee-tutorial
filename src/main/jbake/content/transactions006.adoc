@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Transaction Timeouts
-next=transactions007.html
-prev=transactions005.html
-~~~~~~
 Transaction Timeouts
 ====================
 

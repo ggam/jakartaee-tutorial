@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Annotations to Configure Managed Beans
-next=jsf-configure003.html
-prev=jsf-configure001.html
-~~~~~~
 = Using Annotations to Configure Managed Beans
 
 

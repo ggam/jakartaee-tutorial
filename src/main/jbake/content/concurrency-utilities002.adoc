@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Main Components of the Concurrency Utilities
-next=concurrency-utilities003.html
-prev=concurrency-utilities001.html
-~~~~~~
 = Main Components of the Concurrency Utilities
 
 

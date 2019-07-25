@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Configuring the CDI Container
-next=cdi-adv-examples.html
-prev=cdi-bootstrap-se8001.html
-~~~~~~
 = Configuring the CDI Container
 
 

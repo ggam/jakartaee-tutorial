@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Specifying the Cache Mode Settings to Improve Performance
-next=partmessaging.html
-prev=persistence-cache001.html
-~~~~~~
 Specifying the Cache Mode Settings to Improve Performance
 =========================================================
 

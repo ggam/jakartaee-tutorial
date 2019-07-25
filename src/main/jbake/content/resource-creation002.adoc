@@ -1,9 +1,3 @@
-type=page
-status=published
-title=DataSource Objects and Connection Pools
-next=resource-creation003.html
-prev=resource-creation001.html
-~~~~~~
 = DataSource Objects and Connection Pools
 
 

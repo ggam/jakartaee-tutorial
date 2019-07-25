@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Registering a Custom Renderer with a Render Kit
-next=jsf-configure012.html
-prev=jsf-configure010.html
-~~~~~~
 Registering a Custom Renderer with a Render Kit
 ===============================================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=JSON in Jakarta EE RESTful Web Services
-next=jsonp006.html
-prev=jsonp004.html
-~~~~~~
 = JSON in Jakarta EE RESTful Web Services
 
 

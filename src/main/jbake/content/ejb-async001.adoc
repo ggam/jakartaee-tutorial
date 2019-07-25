@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Asynchronous Method Invocation
-next=ejb-async002.html
-prev=ejb-async.html
-~~~~~~
 Asynchronous Method Invocation
 ==============================
 

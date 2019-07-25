@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Common Client Interface
-next=resources004.html
-prev=resources002.html
-~~~~~~
 Common Client Interface
 =======================
 

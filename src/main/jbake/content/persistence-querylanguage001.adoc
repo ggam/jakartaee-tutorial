@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of the Java Persistence Query Language
-next=persistence-querylanguage002.html
-prev=persistence-querylanguage.html
-~~~~~~
 Overview of the Java Persistence Query Language
 ===============================================
 

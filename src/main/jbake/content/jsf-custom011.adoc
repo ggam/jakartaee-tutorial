@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating and Using a Custom Converter
-next=jsf-custom012.html
-prev=jsf-custom010.html
-~~~~~~
 Creating and Using a Custom Converter
 =====================================
 

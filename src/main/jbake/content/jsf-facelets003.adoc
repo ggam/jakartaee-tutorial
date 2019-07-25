@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Developing a Simple Facelets Application: The guessnumber-jsf Example Application
-next=jsf-facelets004.html
-prev=jsf-facelets002.html
-~~~~~~
 Developing a Simple Facelets Application: The guessnumber-jsf Example Application
 =================================================================================
 

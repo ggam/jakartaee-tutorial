@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Loading JavaScript as a Resource
-next=jsf-ajax011.html
-prev=jsf-ajax009.html
-~~~~~~
 = Loading JavaScript as a Resource
 
 

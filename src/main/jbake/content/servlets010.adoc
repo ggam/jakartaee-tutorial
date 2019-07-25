@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Finalizing a Servlet
-next=servlets011.html
-prev=servlets009.html
-~~~~~~
 Finalizing a Servlet
 ====================
 

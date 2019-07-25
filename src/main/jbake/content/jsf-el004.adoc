@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Operations on Collection Objects
-next=jsf-el005.html
-prev=jsf-el003.html
-~~~~~~
 Operations on Collection Objects
 ================================
 

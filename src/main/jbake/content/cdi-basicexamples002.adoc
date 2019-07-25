@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The simplegreeting CDI Example
-next=cdi-basicexamples003.html
-prev=cdi-basicexamples001.html
-~~~~~~
 = The simplegreeting CDI Example
 
 [[GJBJU]][[the-simplegreeting-cdi-example]]

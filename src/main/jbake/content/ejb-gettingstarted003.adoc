@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Modifying the Jakarta EE Application
-next=ejb-basicexamples.html
-prev=ejb-gettingstarted002.html
-~~~~~~
 Modifying the Jakarta EE Application
 =================================
 

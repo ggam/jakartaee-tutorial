@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Building RESTful Web Services with JAX-RS
-next=jaxrs001.html
-prev=jaxws005.html
-~~~~~~
 = Building RESTful Web Services with JAX-RS
 
 

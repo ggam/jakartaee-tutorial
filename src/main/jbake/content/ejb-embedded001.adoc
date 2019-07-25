@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of the Embedded Enterprise Bean Container
-next=ejb-embedded002.html
-prev=ejb-embedded.html
-~~~~~~
 Overview of the Embedded Enterprise Bean Container
 ==================================================
 

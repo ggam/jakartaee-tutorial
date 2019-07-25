@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Configuring Navigation Rules
-next=jsf-configure011.html
-prev=jsf-configure009.html
-~~~~~~
 = Configuring Navigation Rules
 
 

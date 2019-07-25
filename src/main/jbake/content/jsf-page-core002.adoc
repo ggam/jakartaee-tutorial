@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Registering Listeners on Components
-next=jsf-page-core003.html
-prev=jsf-page-core001.html
-~~~~~~
 = Registering Listeners on Components
 
 

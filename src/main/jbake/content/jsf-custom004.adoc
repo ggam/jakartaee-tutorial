@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Steps for Creating a Custom Component
-next=jsf-custom005.html
-prev=jsf-custom003.html
-~~~~~~
 Steps for Creating a Custom Component
 =====================================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Building and Running the CDI Samples
-next=cdi-basicexamples002.html
-prev=cdi-basicexamples.html
-~~~~~~
 = Building and Running the CDI Samples
 
 

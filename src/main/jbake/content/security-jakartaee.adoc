@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Getting Started Securing Enterprise Applications
-next=security-jakartaee001.html
-prev=security-webtier004.html
-~~~~~~
 = Getting Started Securing Enterprise Applications
 
 [[BNBYK]][[getting-started-securing-enterprise-applications]]

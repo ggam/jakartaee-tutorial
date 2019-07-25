@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Annotations for Field and Bean Properties of Resource Classes
-next=jaxrs-advanced002.html
-prev=jaxrs-advanced.html
-~~~~~~
 = Annotations for Field and Bean Properties of Resource Classes
 
 

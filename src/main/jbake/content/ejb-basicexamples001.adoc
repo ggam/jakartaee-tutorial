@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of the EJB Examples
-next=ejb-basicexamples002.html
-prev=ejb-basicexamples.html
-~~~~~~
 Overview of the EJB Examples
 ============================
 

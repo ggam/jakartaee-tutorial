@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Getting Started with Enterprise Beans
-next=ejb-gettingstarted001.html
-prev=ejb-intro008.html
-~~~~~~
 Getting Started with Enterprise Beans
 =====================================
 

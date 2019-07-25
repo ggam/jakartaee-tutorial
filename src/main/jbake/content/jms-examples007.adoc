@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Receiving Messages Asynchronously Using a Message-Driven Bean
-next=jms-examples008.html
-prev=jms-examples006.html
-~~~~~~
 Receiving Messages Asynchronously Using a Message-Driven Bean
 =============================================================
 

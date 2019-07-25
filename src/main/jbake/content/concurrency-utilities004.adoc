@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Concurrency and Security
-next=concurrency-utilities005.html
-prev=concurrency-utilities003.html
-~~~~~~
 = Concurrency and Security
 
 

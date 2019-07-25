@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Tutorial Examples
-next=usingexamples001.html
-prev=overview010.html
-~~~~~~
 = Using the Tutorial Examples
 
 

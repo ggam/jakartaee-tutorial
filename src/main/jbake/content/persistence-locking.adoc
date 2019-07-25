@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Controlling Concurrent Access to Entity Data with Locking
-next=persistence-locking001.html
-prev=persistence-string-queries003.html
-~~~~~~
 Controlling Concurrent Access to Entity Data with Locking
 =========================================================
 

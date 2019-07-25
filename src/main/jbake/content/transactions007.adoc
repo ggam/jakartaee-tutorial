@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Updating Multiple Databases
-next=transactions008.html
-prev=transactions006.html
-~~~~~~
 Updating Multiple Databases
 ===========================
 

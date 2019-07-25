@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Filtering Requests and Responses
-next=servlets007.html
-prev=servlets005.html
-~~~~~~
 Filtering Requests and Responses
 ================================
 

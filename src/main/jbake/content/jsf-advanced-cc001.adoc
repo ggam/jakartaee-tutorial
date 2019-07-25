@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Attributes of a Composite Component
-next=jsf-advanced-cc002.html
-prev=jsf-advanced-cc.html
-~~~~~~
 = Attributes of a Composite Component
 
 

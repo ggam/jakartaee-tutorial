@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The producermethods Example: Using a Producer Method to Choose a Bean Implementation
-next=cdi-adv-examples004.html
-prev=cdi-adv-examples002.html
-~~~~~~
 = The producermethods Example: Using a Producer Method to Choose a Bean Implementation
 
 

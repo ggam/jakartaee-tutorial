@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Navigation Model
-next=jsf-intro007.html
-prev=jsf-intro005.html
-~~~~~~
 Navigation Model
 ================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Administration Interface
-next=dukes-tutoring004.html
-prev=dukes-tutoring002.html
-~~~~~~
 Administration Interface
 ========================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of Transactions
-next=transactions002.html
-prev=transactions.html
-~~~~~~
 Overview of Transactions
 ========================
 

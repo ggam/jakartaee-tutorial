@@ -1,9 +1,3 @@
-type=page
-status=published
-title=What Is a Message-Driven Bean?
-next=ejb-intro004.html
-prev=ejb-intro002.html
-~~~~~~
 What Is a Message-Driven Bean?
 ==============================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Configurators Interfaces
-next=cdi-bootstrap-se8.html
-prev=cdi-adv009.html
-~~~~~~
 = Using the Configurators Interfaces
 
 [[using-the-configurators-interfaces]]

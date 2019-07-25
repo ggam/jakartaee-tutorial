@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Writing Managed Bean Methods
-next=jsf-ajax.html
-prev=jsf-develop002.html
-~~~~~~
 Writing Managed Bean Methods
 ============================
 

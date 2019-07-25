@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of Entity Locking and Concurrency
-next=persistence-locking002.html
-prev=persistence-locking.html
-~~~~~~
 Overview of Entity Locking and Concurrency
 ==========================================
 

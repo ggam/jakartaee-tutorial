@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of the EL
-next=jsf-el002.html
-prev=jsf-el.html
-~~~~~~
 Overview of the EL
 ==================
 

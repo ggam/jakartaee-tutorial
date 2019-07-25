@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Composite Components: Advanced Topics and an Example
-next=jsf-advanced-cc001.html
-prev=jsf-ajax012.html
-~~~~~~
 Composite Components: Advanced Topics and an Example
 ====================================================
 

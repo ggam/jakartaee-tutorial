@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Registering a Custom Converter
-next=jsf-configure010.html
-prev=jsf-configure008.html
-~~~~~~
 Registering a Custom Converter
 ==============================
 

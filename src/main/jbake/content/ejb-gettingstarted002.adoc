@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating the Enterprise Bean
-next=ejb-gettingstarted003.html
-prev=ejb-gettingstarted001.html
-~~~~~~
 Creating the Enterprise Bean
 ============================
 

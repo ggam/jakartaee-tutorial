@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Accessing REST Resources with the JAX-RS Client API
-next=jaxrs-client001.html
-prev=jaxrs004.html
-~~~~~~
 Accessing REST Resources with the JAX-RS Client API
 ===================================================
 

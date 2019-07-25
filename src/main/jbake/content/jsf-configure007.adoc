@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Default Validators
-next=jsf-configure008.html
-prev=jsf-configure006.html
-~~~~~~
 Using Default Validators
 ========================
 

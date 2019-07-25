@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Java Message Service Concepts
-next=jms-concepts001.html
-prev=partmessaging.html
-~~~~~~
 = Java Message Service Concepts
 :description: Java message service allows applications to create, send, and receive messages.
 :keywords: jms, glassfish

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Case Studies
-next=dukes-bookstore.html
-prev=concurrency-utilities007.html
-~~~~~~
 Case Studies
 ============
 

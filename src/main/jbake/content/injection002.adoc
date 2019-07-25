@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Dependency Injection
-next=injection003.html
-prev=injection001.html
-~~~~~~
 Dependency Injection
 ====================
 

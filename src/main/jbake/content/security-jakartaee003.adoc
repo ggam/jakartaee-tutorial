@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Examples: Securing Enterprise Beans
-next=security-api.html
-prev=security-jakartaee002.html
-~~~~~~
 = Examples: Securing Enterprise Beans
 
 [[GKBSZ]][[examples-securing-enterprise-beans]]

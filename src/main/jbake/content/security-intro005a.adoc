@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Working with Identity Stores
-next=security-intro006.html
-prev=security-intro005.html
-~~~~~~
 = Working with Identity Stores
 
 [[working-with-identity-stores]]

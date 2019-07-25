@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Building and Running the CDI Advanced Examples
-next=cdi-adv-examples002.html
-prev=cdi-adv-examples.html
-~~~~~~
 = Building and Running the CDI Advanced Examples
 
 

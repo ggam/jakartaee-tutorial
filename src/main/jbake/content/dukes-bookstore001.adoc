@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Design and Architecture of Duke's Bookstore
-next=dukes-bookstore002.html
-prev=dukes-bookstore.html
-~~~~~~
 Design and Architecture of Duke's Bookstore
 ===========================================
 

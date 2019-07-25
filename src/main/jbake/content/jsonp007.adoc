@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The jsonpstreaming Example Application
-next=jsonp008.html
-prev=jsonp006.html
-~~~~~~
 = The jsonpstreaming Example Application
 
 [[the-jsonpstreaming-example-application]]

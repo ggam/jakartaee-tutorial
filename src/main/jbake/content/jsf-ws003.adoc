@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the f:websocket Tag
-next=jsf-ws004.html
-prev=jsf-ws002.html
-~~~~~~
 = Using the f:websocket Tag
 
 

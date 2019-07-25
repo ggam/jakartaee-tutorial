@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Resource Adapters with Contexts and Dependency Injection for Jakarta EE (CDI)
-next=resources005.html
-prev=resources003.html
-~~~~~~
 Using Resource Adapters with Contexts and Dependency Injection for Jakarta EE (CDI)
 ===================================================================================
 

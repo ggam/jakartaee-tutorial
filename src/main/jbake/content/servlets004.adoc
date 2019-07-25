@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating and Initializing a Servlet
-next=servlets005.html
-prev=servlets003.html
-~~~~~~
 Creating and Initializing a Servlet
 ===================================
 

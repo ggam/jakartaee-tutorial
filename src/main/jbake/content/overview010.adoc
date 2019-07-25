@@ -1,9 +1,3 @@
-type=page
-status=published
-title=GlassFish Server Tools
-next=usingexamples.html
-prev=overview009.html
-~~~~~~
 = GlassFish Server Tools
 
 

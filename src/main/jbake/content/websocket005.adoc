@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Sending and Receiving Messages
-next=websocket006.html
-prev=websocket004.html
-~~~~~~
 Sending and Receiving Messages
 ==============================
 

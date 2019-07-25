@@ -1,9 +1,3 @@
-type=page
-status=published
-title=A Web Module That Uses Java Servlet Technology: The hello2 Example
-next=webapp005.html
-prev=webapp003.html
-~~~~~~
 A Web Module That Uses Java Servlet Technology: The hello2 Example
 ==================================================================
 

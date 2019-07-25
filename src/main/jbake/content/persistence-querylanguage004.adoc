@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Simplified Query Language Syntax
-next=persistence-querylanguage005.html
-prev=persistence-querylanguage003.html
-~~~~~~
 Simplified Query Language Syntax
 ================================
 

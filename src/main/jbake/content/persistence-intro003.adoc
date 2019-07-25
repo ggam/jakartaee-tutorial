@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Entity Inheritance
-next=persistence-intro004.html
-prev=persistence-intro002.html
-~~~~~~
 = Entity Inheritance
 
 

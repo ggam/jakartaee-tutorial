@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Starting the Administration Console
-next=usingexamples004.html
-prev=usingexamples002.html
-~~~~~~
 Starting the Administration Console
 ===================================
 

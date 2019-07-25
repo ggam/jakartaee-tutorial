@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Web Applications
-next=webapp002.html
-prev=webapp.html
-~~~~~~
 Web Applications
 ================
 

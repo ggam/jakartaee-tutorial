@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Sending Messages from a Session Bean to an MDB
-next=jms-examples009.html
-prev=jms-examples007.html
-~~~~~~
 = Sending Messages from a Session Bean to an MDB
 
 

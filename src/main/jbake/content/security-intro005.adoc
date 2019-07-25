@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Working with Realms, Users, Groups, and Roles
-next=security-intro005a.html
-prev=security-intro004.html
-~~~~~~
 = Working with Realms, Users, Groups, and Roles
 
 [[BNBXJ]][[working-with-realms-users-groups-and-roles]]

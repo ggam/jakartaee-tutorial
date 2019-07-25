@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Entity Graph Basics
-next=persistence-entitygraphs003.html
-prev=persistence-entitygraphs001.html
-~~~~~~
 Entity Graph Basics
 ===================
 

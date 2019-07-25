@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Application Configuration Resource File
-next=jsf-configure004.html
-prev=jsf-configure002.html
-~~~~~~
 Application Configuration Resource File
 =======================================
 

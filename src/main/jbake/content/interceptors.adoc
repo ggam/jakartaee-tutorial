@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Jakarta EE Interceptors
-next=interceptors001.html
-prev=connectorexample003.html
-~~~~~~
 Using Jakarta EE Interceptors
 ==========================
 

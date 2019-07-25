@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The async Example Application
-next=partpersist.html
-prev=ejb-async001.html
-~~~~~~
 The async Example Application
 =============================
 

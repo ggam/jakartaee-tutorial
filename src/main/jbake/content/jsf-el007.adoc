@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Examples of EL Expressions
-next=jsf-el008.html
-prev=jsf-el006.html
-~~~~~~
 = Examples of EL Expressions
 
 

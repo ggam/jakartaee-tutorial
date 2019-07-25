@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Built-In Annotation Literals
-next=cdi-adv010.html
-prev=cdi-adv008.html
-~~~~~~
 = Using the Built-In Annotation Literals
 
 [[using-the-built-in-annotation-literals]]

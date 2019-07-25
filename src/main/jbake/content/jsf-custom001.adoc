@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Introduction to Creating Custom Components
-next=jsf-custom002.html
-prev=jsf-custom.html
-~~~~~~
 Introduction to Creating Custom Components
 ==========================================
 

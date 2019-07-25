@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Packaging CDI Applications
-next=cdi-adv002.html
-prev=cdi-adv.html
-~~~~~~
 = Packaging CDI Applications
 
 

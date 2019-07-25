@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Standard Converters
-next=jsf-page-core002.html
-prev=jsf-page-core.html
-~~~~~~
 = Using the Standard Converters
 
 

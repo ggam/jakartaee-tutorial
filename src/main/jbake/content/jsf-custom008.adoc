@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Handling Events for Custom Components
-next=jsf-custom009.html
-prev=jsf-custom007.html
-~~~~~~
 Handling Events for Custom Components
 =====================================
 

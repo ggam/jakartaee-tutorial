@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Platform Basics
-next=resource-creation.html
-prev=usingexamples009.html
-~~~~~~
 Platform Basics
 ===============
 

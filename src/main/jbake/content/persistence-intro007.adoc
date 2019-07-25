@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Further Information about Persistence
-next=persistence-basicexamples.html
-prev=persistence-intro006.html
-~~~~~~
 Further Information about Persistence
 =====================================
 

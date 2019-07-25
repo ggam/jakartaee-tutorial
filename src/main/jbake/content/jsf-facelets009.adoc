@@ -1,9 +1,3 @@
-type=page
-status=published
-title=HTML5-Friendly Markup
-next=jsf-el.html
-prev=jsf-facelets008.html
-~~~~~~
 = HTML5-Friendly Markup
 
 

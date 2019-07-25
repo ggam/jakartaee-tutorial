@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Persistence
-next=persistence-intro.html
-prev=ejb-async002.html
-~~~~~~
 Persistence
 ===========
 

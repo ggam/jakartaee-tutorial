@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Further Information about Advanced Security Topics
-next=partsupporttechs.html
-prev=security-advanced007.html
-~~~~~~
 Further Information about Advanced Security Topics
 ==================================================
 

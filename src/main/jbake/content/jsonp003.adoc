@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Object Model API
-next=jsonp004.html
-prev=jsonp002.html
-~~~~~~
 = Using the Object Model API
 
 

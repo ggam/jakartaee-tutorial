@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The interceptor Example Application
-next=batch-processing.html
-prev=interceptors002.html
-~~~~~~
 The interceptor Example Application
 ===================================
 

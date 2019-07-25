@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Introduction to Contexts and Dependency Injection for Jakarta EE
-next=cdi-basic001.html
-prev=partcdi.html
-~~~~~~
 = Introduction to Contexts and Dependency Injection for Jakarta EE
 
 

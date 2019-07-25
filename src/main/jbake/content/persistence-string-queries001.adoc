@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of String-Based Criteria API Queries
-next=persistence-string-queries002.html
-prev=persistence-string-queries.html
-~~~~~~
 Overview of String-Based Criteria API Queries
 =============================================
 

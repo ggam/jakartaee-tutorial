@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Packaging Batch Applications
-next=batch-processing008.html
-prev=batch-processing006.html
-~~~~~~
 Packaging Batch Applications
 ============================
 

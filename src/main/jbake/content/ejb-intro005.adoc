@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The Contents of an Enterprise Bean
-next=ejb-intro006.html
-prev=ejb-intro004.html
-~~~~~~
 The Contents of an Enterprise Bean
 ==================================
 

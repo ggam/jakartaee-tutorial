@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Relocatable Resources
-next=jsf-facelets008.html
-prev=jsf-facelets006.html
-~~~~~~
 Relocatable Resources
 =====================
 

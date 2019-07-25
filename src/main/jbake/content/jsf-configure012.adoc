@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Registering a Custom Component
-next=jsf-configure013.html
-prev=jsf-configure011.html
-~~~~~~
 Registering a Custom Component
 ==============================
 

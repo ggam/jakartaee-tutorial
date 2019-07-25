@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Annotated Endpoints
-next=websocket005.html
-prev=websocket003.html
-~~~~~~
 = Annotated Endpoints
 
 

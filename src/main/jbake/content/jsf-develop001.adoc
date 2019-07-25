@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Managed Beans in JavaServer Faces Technology
-next=jsf-develop002.html
-prev=jsf-develop.html
-~~~~~~
 = Managed Beans in JavaServer Faces Technology
 
 

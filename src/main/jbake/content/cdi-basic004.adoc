@@ -1,9 +1,3 @@
-type=page
-status=published
-title=About CDI Managed Beans
-next=cdi-basic005.html
-prev=cdi-basic003.html
-~~~~~~
 = About CDI Managed Beans
 
 

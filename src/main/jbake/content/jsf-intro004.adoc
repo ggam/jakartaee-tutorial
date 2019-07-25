@@ -1,9 +1,3 @@
-type=page
-status=published
-title=A Simple JavaServer Faces Application
-next=jsf-intro005.html
-prev=jsf-intro003.html
-~~~~~~
 A Simple JavaServer Faces Application
 =====================================
 

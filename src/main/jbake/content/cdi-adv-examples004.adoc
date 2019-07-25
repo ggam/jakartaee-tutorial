@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The producerfields Example: Using Producer Fields to Generate Resources
-next=cdi-adv-examples005.html
-prev=cdi-adv-examples003.html
-~~~~~~
 = The producerfields Example: Using Producer Fields to Generate Resources
 
 

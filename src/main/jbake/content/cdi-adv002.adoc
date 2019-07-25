@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Alternatives in CDI Applications
-next=cdi-adv003.html
-prev=cdi-adv001.html
-~~~~~~
 = Using Alternatives in CDI Applications
 
 

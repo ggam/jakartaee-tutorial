@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The dukeetf2 Example Application
-next=websocket012.html
-prev=websocket010.html
-~~~~~~
 The dukeetf2 Example Application
 ================================
 

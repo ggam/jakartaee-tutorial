@@ -1,9 +1,3 @@
-type=page
-status=published
-title=About the Jakarta EE Security API
-next=security-api002.html
-prev=security-api.html
-~~~~~~
 = About the Jakarta EE Security API
 
 [[about-the-jakarta-ee-security-api]]

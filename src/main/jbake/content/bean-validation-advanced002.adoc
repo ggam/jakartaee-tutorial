@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Customizing Validator Messages
-next=bean-validation-advanced003.html
-prev=bean-validation-advanced001.html
-~~~~~~
 Customizing Validator Messages
 ==============================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Advanced JMS Features
-next=jms-concepts005.html
-prev=jms-concepts003.html
-~~~~~~
 Using Advanced JMS Features
 ===========================
 

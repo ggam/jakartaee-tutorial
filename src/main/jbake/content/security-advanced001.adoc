@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Working with Digital Certificates
-next=security-advanced002.html
-prev=security-advanced.html
-~~~~~~
 Working with Digital Certificates
 =================================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Running the Duke's Bookstore Case Study Application
-next=dukes-tutoring.html
-prev=dukes-bookstore002.html
-~~~~~~
 Running the Duke's Bookstore Case Study Application
 ===================================================
 

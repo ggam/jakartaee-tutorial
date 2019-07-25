@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Query Language Terminology
-next=persistence-querylanguage003.html
-prev=persistence-querylanguage001.html
-~~~~~~
 Query Language Terminology
 ==========================
 

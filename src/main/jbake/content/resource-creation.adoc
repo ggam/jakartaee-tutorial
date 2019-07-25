@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Resource Creation
-next=resource-creation001.html
-prev=partplatform.html
-~~~~~~
 Resource Creation
 =================
 

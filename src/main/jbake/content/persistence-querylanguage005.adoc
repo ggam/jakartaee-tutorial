@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Example Queries
-next=persistence-querylanguage006.html
-prev=persistence-querylanguage004.html
-~~~~~~
 Example Queries
 ===============
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The Resource Adapter Examples
-next=connectorexample001.html
-prev=resources005.html
-~~~~~~
 The Resource Adapter Examples
 =============================
 

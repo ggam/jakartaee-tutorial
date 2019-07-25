@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Asynchronous Processing
-next=servlets013.html
-prev=servlets011.html
-~~~~~~
 = Asynchronous Processing
 
 

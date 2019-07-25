@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The Jakarta EE Tutorial: Jakarta Platform, Enterprise Edition, Release 8
-next=preface.html
-prev=toc.html
-~~~~~~
 
 [[java-platform-enterprise-edition]]
 Jakarta, Enterprise Edition

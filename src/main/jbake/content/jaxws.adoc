@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Building Web Services with JAX-WS
-next=jaxws001.html
-prev=webservices-intro003.html
-~~~~~~
 Building Web Services with JAX-WS
 =================================
 

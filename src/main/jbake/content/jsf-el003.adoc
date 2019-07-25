@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Value and Method Expressions
-next=jsf-el004.html
-prev=jsf-el002.html
-~~~~~~
 = Value and Method Expressions
 
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Metamodel API to Model Entity Classes
-next=persistence-criteria003.html
-prev=persistence-criteria001.html
-~~~~~~
 Using the Metamodel API to Model Entity Classes
 ===============================================
 

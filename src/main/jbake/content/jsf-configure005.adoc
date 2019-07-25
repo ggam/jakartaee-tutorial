@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Configuring Managed Beans
-next=jsf-configure006.html
-prev=jsf-configure004.html
-~~~~~~
 = Configuring Managed Beans
 
 

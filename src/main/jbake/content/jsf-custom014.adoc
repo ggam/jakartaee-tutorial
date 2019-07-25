@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Binding Converters, Listeners, and Validators to Managed Bean Properties
-next=jsf-configure.html
-prev=jsf-custom013.html
-~~~~~~
 Binding Converters, Listeners, and Validators to Managed Bean Properties
 ========================================================================
 

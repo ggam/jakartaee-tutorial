@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Jakarta EE Application Assembly and Deployment
-next=overview008.html
-prev=overview006.html
-~~~~~~
 Jakarta EE Application Assembly and Deployment
 ==============================================
 

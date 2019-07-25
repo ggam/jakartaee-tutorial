@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Metadata Annotations
-next=resources003.html
-prev=resources001.html
-~~~~~~
 Metadata Annotations
 ====================
 

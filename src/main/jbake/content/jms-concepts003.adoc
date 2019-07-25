@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The JMS API Programming Model
-next=jms-concepts004.html
-prev=jms-concepts002.html
-~~~~~~
 = The JMS API Programming Model
 
 

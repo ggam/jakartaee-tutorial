@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications
-next=cdi-adv004.html
-prev=cdi-adv002.html
-~~~~~~
 = Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications
 
 

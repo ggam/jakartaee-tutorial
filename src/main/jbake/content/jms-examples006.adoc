@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Sending and Receiving Messages Using a Simple Web Application
-next=jms-examples007.html
-prev=jms-examples005.html
-~~~~~~
 Sending and Receiving Messages Using a Simple Web Application
 =============================================================
 

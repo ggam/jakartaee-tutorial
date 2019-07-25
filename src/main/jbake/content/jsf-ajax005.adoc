@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Monitoring Events on the Client
-next=jsf-ajax006.html
-prev=jsf-ajax004.html
-~~~~~~
 = Monitoring Events on the Client
 
 

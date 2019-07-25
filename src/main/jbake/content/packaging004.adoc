@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Packaging Resource Adapter Archives
-next=partwebtier.html
-prev=packaging003.html
-~~~~~~
 Packaging Resource Adapter Archives
 ===================================
 

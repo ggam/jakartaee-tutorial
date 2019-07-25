@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Sending an Ajax Request
-next=jsf-ajax005.html
-prev=jsf-ajax003.html
-~~~~~~
 Sending an Ajax Request
 =======================
 

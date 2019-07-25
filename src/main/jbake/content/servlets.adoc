@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Java Servlet Technology
-next=servlets001.html
-prev=jsf-ws007.html
-~~~~~~
 = Java Servlet Technology
 
 

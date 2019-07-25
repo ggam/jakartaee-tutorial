@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Naming Conventions for Enterprise Beans
-next=ejb-intro007.html
-prev=ejb-intro005.html
-~~~~~~
 = Naming Conventions for Enterprise Beans
 
 

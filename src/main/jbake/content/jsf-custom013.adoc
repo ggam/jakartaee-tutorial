@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Binding Component Values and Instances to Managed Bean Properties
-next=jsf-custom014.html
-prev=jsf-custom012.html
-~~~~~~
 = Binding Component Values and Instances to Managed Bean Properties
 
 

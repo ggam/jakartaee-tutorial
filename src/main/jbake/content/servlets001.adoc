@@ -1,9 +1,3 @@
-type=page
-status=published
-title=What Is a Servlet?
-next=servlets002.html
-prev=servlets.html
-~~~~~~
 What Is a Servlet?
 ==================
 

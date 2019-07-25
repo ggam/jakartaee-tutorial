@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The Main Differences between Resource Injection and Dependency Injection
-next=packaging.html
-prev=injection002.html
-~~~~~~
 = The Main Differences between Resource Injection and Dependency Injection
 
 

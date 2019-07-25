@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Executing String-Based Queries
-next=persistence-locking.html
-prev=persistence-string-queries002.html
-~~~~~~
 Executing String-Based Queries
 ==============================
 

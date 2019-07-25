@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using a Custom Component
-next=jsf-custom011.html
-prev=jsf-custom009.html
-~~~~~~
 Using a Custom Component
 ========================
 

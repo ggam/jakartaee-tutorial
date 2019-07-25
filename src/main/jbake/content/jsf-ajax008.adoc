@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Ajax Request Lifecycle
-next=jsf-ajax009.html
-prev=jsf-ajax007.html
-~~~~~~
 Ajax Request Lifecycle
 ======================
 

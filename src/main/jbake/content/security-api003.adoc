@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of the Identity Store Interfaces
-next=security-api004.html
-prev=security-api002.html
-~~~~~~
 = Overview of the Identity Store Interfaces
 
 [[overview-of-the-identity-store-interfaces]]

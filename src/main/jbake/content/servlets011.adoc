@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Uploading Files with Java Servlet Technology
-next=servlets012.html
-prev=servlets010.html
-~~~~~~
 Uploading Files with Java Servlet Technology
 ============================================
 

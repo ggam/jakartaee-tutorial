@@ -1,9 +1,3 @@
-type=page
-status=published
-title=What Is a Session Bean?
-next=ejb-intro003.html
-prev=ejb-intro001.html
-~~~~~~
 What Is a Session Bean?
 =======================
 

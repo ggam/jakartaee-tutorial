@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The decorators Example: Decorating a Bean
-next=partwebsvcs.html
-prev=cdi-adv-examples005.html
-~~~~~~
 The decorators Example: Decorating a Bean
 =========================================
 

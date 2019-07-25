@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of Bean Validation
-next=bean-validation002.html
-prev=bean-validation.html
-~~~~~~
 # Overview of Bean Validation
 
 

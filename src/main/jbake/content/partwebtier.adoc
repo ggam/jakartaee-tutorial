@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The Web Tier
-next=webapp.html
-prev=packaging004.html
-~~~~~~
 The Web Tier
 ============
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Java Message Service Examples
-next=jms-examples001.html
-prev=jms-concepts006.html
-~~~~~~
 Java Message Service Examples
 =============================
 

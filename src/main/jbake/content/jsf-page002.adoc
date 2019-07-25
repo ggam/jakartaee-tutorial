@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Adding Components to a Page Using HTML Tag Library Tags
-next=jsf-page003.html
-prev=jsf-page001.html
-~~~~~~
 = Adding Components to a Page Using HTML Tag Library Tags
 
 

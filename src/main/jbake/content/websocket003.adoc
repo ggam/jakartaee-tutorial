@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Programmatic Endpoints
-next=websocket004.html
-prev=websocket002.html
-~~~~~~
 Programmatic Endpoints
 ======================
 

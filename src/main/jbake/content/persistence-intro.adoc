@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Introduction to the Java Persistence API
-next=persistence-intro001.html
-prev=partpersist.html
-~~~~~~
 Introduction to the Java Persistence API
 ========================================
 

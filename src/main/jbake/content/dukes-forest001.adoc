@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of the Duke's Forest Case Study Example
-next=dukes-forest002.html
-prev=dukes-forest.html
-~~~~~~
 Overview of the Duke's Forest Case Study Example
 ================================================
 

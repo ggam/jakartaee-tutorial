@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The dukeetf Example Application
-next=servlets018.html
-prev=servlets016.html
-~~~~~~
 The dukeetf Example Application
 ===============================
 

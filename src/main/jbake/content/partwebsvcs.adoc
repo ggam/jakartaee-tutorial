@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Web Services
-next=webservices-intro.html
-prev=cdi-adv-examples006.html
-~~~~~~
 Web Services
 ============
 

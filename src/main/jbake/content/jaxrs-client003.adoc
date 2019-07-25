@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Advanced Features of the Client API
-next=jaxrs-advanced.html
-prev=jaxrs-client002.html
-~~~~~~
 = Advanced Features of the Client API
 
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Invoking a Managed Bean
-next=jsf-advanced-cc003.html
-prev=jsf-advanced-cc001.html
-~~~~~~
 Invoking a Managed Bean
 =======================
 

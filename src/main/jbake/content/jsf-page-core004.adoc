@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Referencing a Managed Bean Method
-next=jsf-develop.html
-prev=jsf-page-core003.html
-~~~~~~
 = Referencing a Managed Bean Method
 
 

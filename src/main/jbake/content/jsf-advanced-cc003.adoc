@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Validating Composite Component Values
-next=jsf-advanced-cc004.html
-prev=jsf-advanced-cc002.html
-~~~~~~
 = Validating Composite Component Values
 
 

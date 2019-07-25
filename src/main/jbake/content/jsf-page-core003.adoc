@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Standard Validators
-next=jsf-page-core004.html
-prev=jsf-page-core002.html
-~~~~~~
 = Using the Standard Validators
 
 

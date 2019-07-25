@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Further Information about JAX-WS
-next=jaxrs.html
-prev=jaxws004.html
-~~~~~~
 Further Information about JAX-WS
 ================================
 

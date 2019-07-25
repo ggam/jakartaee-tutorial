@@ -1,8 +1,3 @@
-type=page
-status=published
-title=Running the Duke's Forest Application
-prev=dukes-forest003.html
-~~~~~~
 Running the Duke's Forest Application
 =====================================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Duke's Tutoring Case Study Example
-next=dukes-tutoring001.html
-prev=dukes-bookstore003.html
-~~~~~~
 Duke's Tutoring Case Study Example
 ==================================
 

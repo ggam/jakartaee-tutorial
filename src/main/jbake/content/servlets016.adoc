@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The fileupload Example Application
-next=servlets017.html
-prev=servlets015.html
-~~~~~~
 The fileupload Example Application
 ==================================
 

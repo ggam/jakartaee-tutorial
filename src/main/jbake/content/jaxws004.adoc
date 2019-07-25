@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Web Services Interoperability and JAX-WS
-next=jaxws005.html
-prev=jaxws003.html
-~~~~~~
 Web Services Interoperability and JAX-WS
 ========================================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=About WebSockets in JSF
-next=jsf-ws002.html
-prev=jsf-ws.html
-~~~~~~
 = About WebSockets in JSF
 
 

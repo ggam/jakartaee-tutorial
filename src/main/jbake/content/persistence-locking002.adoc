@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Lock Modes
-next=persistence-entitygraphs.html
-prev=persistence-locking001.html
-~~~~~~
 = Lock Modes
 
 

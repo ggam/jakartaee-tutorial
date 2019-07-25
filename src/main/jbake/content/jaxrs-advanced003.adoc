@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Subresources and Runtime Resource Resolution
-next=jaxrs-advanced004.html
-prev=jaxrs-advanced002.html
-~~~~~~
 Subresources and Runtime Resource Resolution
 ============================================
 

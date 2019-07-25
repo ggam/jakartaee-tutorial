@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Writing High Performance and Scalable JMS Applications
-next=jms-examples006.html
-prev=jms-examples004.html
-~~~~~~
 Writing High Performance and Scalable JMS Applications
 ======================================================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Grouping of Components
-next=jsf-ajax010.html
-prev=jsf-ajax008.html
-~~~~~~
 Grouping of Components
 ======================
 

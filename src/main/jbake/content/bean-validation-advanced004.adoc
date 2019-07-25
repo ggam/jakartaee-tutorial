@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using Method Constraints in Type Hierarchies
-next=partcdi.html
-prev=bean-validation-advanced003.html
-~~~~~~
 Using Method Constraints in Type Hierarchies
 ============================================
 

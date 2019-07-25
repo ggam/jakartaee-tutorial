@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Required Software
-next=usingexamples002.html
-prev=usingexamples.html
-~~~~~~
 = Required Software
 
 

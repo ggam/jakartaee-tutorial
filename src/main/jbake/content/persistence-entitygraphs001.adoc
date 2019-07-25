@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of Using Fetch Plans and Entity Graphs
-next=persistence-entitygraphs002.html
-prev=persistence-entitygraphs.html
-~~~~~~
 Overview of Using Fetch Plans and Entity Graphs
 ===============================================
 

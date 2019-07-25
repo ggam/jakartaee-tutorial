@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Jakarta EE Supporting Technologies
-next=transactions.html
-prev=security-advanced008.html
-~~~~~~
 Jakarta EE Supporting Technologies
 ==================================
 

@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Overview of CDI
-next=cdi-basic003.html
-prev=cdi-basic001.html
-~~~~~~
 = Overview of CDI
 
 

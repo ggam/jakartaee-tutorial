@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Validating Constructors and Methods
-next=bean-validation005.html
-prev=bean-validation003.html
-~~~~~~
 # Validating Constructors and Methods
 
 

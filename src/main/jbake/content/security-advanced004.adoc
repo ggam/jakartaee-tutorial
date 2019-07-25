@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Securing HTTP Resources
-next=security-advanced005.html
-prev=security-advanced003.html
-~~~~~~
 Securing HTTP Resources
 =======================
 

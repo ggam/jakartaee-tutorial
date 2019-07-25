@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Timer Service
-next=ejb-basicexamples006.html
-prev=ejb-basicexamples004.html
-~~~~~~
 = Using the Timer Service
 
 

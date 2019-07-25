@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Web Application Lifecycle
-next=webapp003.html
-prev=webapp001.html
-~~~~~~
 Web Application Lifecycle
 =========================
 

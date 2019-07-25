@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Expression Language
-next=jsf-el001.html
-prev=jsf-facelets009.html
-~~~~~~
 Expression Language
 ===================
 

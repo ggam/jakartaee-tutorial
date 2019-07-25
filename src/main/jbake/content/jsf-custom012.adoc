@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating and Using a Custom Validator
-next=jsf-custom013.html
-prev=jsf-custom011.html
-~~~~~~
 Creating and Using a Custom Validator
 =====================================
 

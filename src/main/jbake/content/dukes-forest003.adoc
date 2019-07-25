@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Building and Deploying the Duke's Forest Case Study Application
-next=dukes-forest004.html
-prev=dukes-forest002.html
-~~~~~~
 Building and Deploying the Duke's Forest Case Study Application
 ===============================================================
 

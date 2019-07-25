@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Resources and JNDI Naming
-next=resource-creation002.html
-prev=resource-creation.html
-~~~~~~
 Resources and JNDI Naming
 =========================
 

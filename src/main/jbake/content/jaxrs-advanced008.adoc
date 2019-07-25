@@ -1,9 +1,3 @@
-type=page
-status=published
-title=The customer Example Application
-next=partentbeans.html
-prev=jaxrs-advanced007.html
-~~~~~~
 The customer Example Application
 ================================
 

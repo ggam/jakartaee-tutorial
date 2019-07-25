@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Creating Custom UI Components and Other Custom Objects
-next=jsf-custom001.html
-prev=jsf-advanced-cc004.html
-~~~~~~
 Creating Custom UI Components and Other Custom Objects
 ======================================================
 

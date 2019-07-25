@@ -1,9 +1,3 @@
-type=page
-status=published
-title=JavaServer Faces Technology
-next=jsf-intro001.html
-prev=webapp006.html
-~~~~~~
 JavaServer Faces Technology
 ===========================
 

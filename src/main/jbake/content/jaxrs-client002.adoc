@@ -1,9 +1,3 @@
-type=page
-status=published
-title=Using the Client API in the JAX-RS Example Applications
-next=jaxrs-client003.html
-prev=jaxrs-client001.html
-~~~~~~
 Using the Client API in the JAX-RS Example Applications
 =======================================================
 
