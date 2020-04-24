@@ -1,0 +1,28 @@
+name: Publish GH Pages
+on:
+  push:
+    branches: [ master ]
+jobs:
+  mvn-compile:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - uses: AdoptOpenJDK/install-jdk@v1
+      with:
+        version: '8'
+        architecture: x64
+        impl: openj9
+    - name: Maven verify
+      run: mvn verify
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: target/generated-docs # The folder the action should deploy.
