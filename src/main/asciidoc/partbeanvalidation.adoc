@@ -1,0 +1,11 @@
+== Bean Validation
+
+[[sthref1322]][[JEETT001301]]
+
+[[part-iv-bean-validation]]
+
+Part IV explores Jakarta Bean Validation.
+
+include::bean-validation/bean-validation.adoc[]
+
+include::bean-validation-advanced/bean-validation-advanced.adoc[]

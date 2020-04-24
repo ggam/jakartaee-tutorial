@@ -1,0 +1,17 @@
+== Enterprise Beans
+
+[[BNBLR]][[JEETT00130]]
+
+[[part-vii-enterprise-beans]]
+
+Part VII explores Jakarta Enterprise Beans components.
+
+include::ejb-intro/ejb-intro.adoc[]
+
+include::ejb-gettingstarted/ejb-gettingstarted.adoc[]
+
+include::ejb-basicexamples/ejb-basicexamples.adoc[]
+
+include::ejb-embedded/ejb-embedded.adoc[]
+
+include::ejb-async/ejb-async.adoc[]

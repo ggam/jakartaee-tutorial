@@ -1,0 +1,18 @@
+== Web Services
+
+[[BNAYK]][[JEETT00129]]
+
+[[part-vi-web-services]]
+
+Part VI explores web services.
+
+include::webservices-intro/webservices-intro.adoc[]
+
+include::jaxws/jaxws.adoc[]
+
+include::jaxrs/jaxrs.adoc[]
+
+include::jaxrs-client/jaxrs-client.adoc[]
+
+include::jaxrs-advanced/jaxrs-advanced.adoc[]
+
