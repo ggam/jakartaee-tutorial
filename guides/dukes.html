@@ -1,0 +1,3584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.2">
+<title>Dukes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement when using as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Dukes</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#dukes-bookstore-case-study-example">Duke&#8217;s Bookstore Case Study Example</a></li>
+<li><a href="#dukes-tutoring-case-study-example">Duke&#8217;s Tutoring Case Study Example</a></li>
+<li><a href="#dukes-forest-case-study-example">Duke&#8217;s Forest Case Study Example</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect2">
+<h3 id="dukes-bookstore-case-study-example"><a class="anchor" href="#dukes-bookstore-case-study-example"></a>Duke&#8217;s Bookstore Case Study Example</h3>
+<div class="paragraph">
+<p><a id="GLNVI"></a><a id="dukes-bookstore-case-study-example"></a></p>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Bookstore example is a simple e-commerce application that
+illustrates some of the more advanced features of Jakarta Server Faces
+technology in combination with Jakarta Contexts and Dependency Injection
+(CDI), enterprise beans, and the Jakarta Persistence. Users can
+select books from an image map, view the bookstore catalog, and purchase
+books. No security is used in this application.</p>
+</div>
+<div class="paragraph">
+<p><a id="GLOAW"></a><a id="design-and-architecture-of-dukes-bookstore"></a></p>
+</div>
+<div class="sect3">
+<h4 id="design-and-architecture-of-dukes-bookstore"><a class="anchor" href="#design-and-architecture-of-dukes-bookstore"></a>Design and Architecture of Duke&#8217;s Bookstore</h4>
+<div class="paragraph">
+<p>Duke&#8217;s Bookstore is a simple web application that uses many features of
+Jakarta Server Faces technology, in addition to other Jakarta EE features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Jakarta Server Faces technology, as well as Jakarta Contexts and Dependency
+Injection (CDI)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A set of Facelets pages, along with a template, provides the user
+interface to the application.</p>
+</li>
+<li>
+<p>CDI managed beans are associated with each of the Facelets pages.</p>
+</li>
+<li>
+<p>A custom image map component on the front page allows you to select a
+book to enter the store. Each area of the map is represented by a
+Jakarta Server Faces managed bean. Text hyperlinks are also provided for
+accessibility.</p>
+</li>
+<li>
+<p>Action listeners are registered on the image map and the text links.
+These listeners retrieve the ID value for the selected book and store it
+in the session map so it can be retrieved by the managed bean for the
+next page.</p>
+</li>
+<li>
+<p>The <code>h:dataTable</code> tag is used to render the book catalog and shopping
+cart contents dynamically.</p>
+</li>
+<li>
+<p>A custom converter is registered on the credit card field on the
+checkout page, <code>bookcashier.xhtml</code>, which also uses an <code>f:validateRegEx</code>
+tag to ensure that the input is correctly formatted.</p>
+</li>
+<li>
+<p>A value-change listener is registered on the name field on
+<code>bookcashier.xhtml</code>. This listener saves the name in a parameter so the
+following page, <code>bookreceipt.xhtml</code>, can access it.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Enterprise beans: Local, no-interface-view stateless session bean and
+singleton bean</p>
+</li>
+<li>
+<p>A Jakarta Persistence entity</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The packages of the Duke&#8217;s Bookstore application, located in the
+tut-install`/examples/case-studies/dukes-bookstore/src/main/java/jakarta/tutorial/dukesbookstore/`
+directory, are as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>components</code>: Includes the custom UI component classes, <code>MapComponent</code>
+and <code>AreaComponent</code></p>
+</li>
+<li>
+<p><code>converters</code>: Includes the custom converter class,
+<code>CreditCardConverter</code></p>
+</li>
+<li>
+<p><code>ejb</code>: Includes two enterprise beans:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A singleton bean, <code>ConfigBean</code>, that initializes the data in the
+database</p>
+</li>
+<li>
+<p>A stateless session bean, <code>BookRequestBean</code>, that contains the
+business logic to manage the entity</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>entity</code>: Includes the <code>Book</code> entity class</p>
+</li>
+<li>
+<p><code>exceptions</code>: Includes three exception classes</p>
+</li>
+<li>
+<p><code>listeners</code>: Includes the event handler and event listener classes</p>
+</li>
+<li>
+<p><code>model</code>: Includes a model JavaBeans class</p>
+</li>
+<li>
+<p><code>renderers</code>: Includes the custom renderers for the custom UI component
+classes</p>
+</li>
+<li>
+<p><code>web.managedbeans</code>: Includes the managed beans for the Facelets pages</p>
+</li>
+<li>
+<p><code>web.messages</code>: Includes the resource bundle files for localized
+messages</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLQFD"></a><a id="the-dukes-bookstore-interface"></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="the-dukes-bookstore-interface"><a class="anchor" href="#the-dukes-bookstore-interface"></a>The Duke&#8217;s Bookstore Interface</h4>
+<div class="paragraph">
+<p>This section provides additional detail regarding the components of the
+Duke&#8217;s Bookstore example and how they interact.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GLQER">The Book Jakarta Persistence Entity</a></p>
+</li>
+<li>
+<p><a href="#GLQEU">Enterprise Beans Used in Duke&#8217;s Bookstore</a></p>
+</li>
+<li>
+<p><a href="#GLQDP">Facelets Pages and Managed Beans Used in Duke&#8217;s Bookstore</a></p>
+</li>
+<li>
+<p><a href="#GLQDX">Custom Components and Other Custom Objects Used in Duke&#8217;s
+Bookstore</a></p>
+</li>
+<li>
+<p><a href="#GLQDG">Properties Files Used in Duke&#8217;s Bookstore</a></p>
+</li>
+<li>
+<p><a href="#GLQED">Deployment Descriptors Used in Duke&#8217;s Bookstore</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLQER"></a><a id="the-book-java-persistence-api-entity"></a></p>
+</div>
+<div class="sect4">
+<h5 id="the-book-java-persistence-api-entity"><a class="anchor" href="#the-book-java-persistence-api-entity"></a>The Book Java Persistence API Entity</h5>
+<div class="paragraph">
+<p>The <code>Book</code> entity, located in the <code>dukesbookstore.entity</code> package,
+encapsulates the book data stored by Duke&#8217;s Bookstore.</p>
+</div>
+<div class="paragraph">
+<p>The <code>Book</code> entity defines attributes used in the example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A book ID</p>
+</li>
+<li>
+<p>The author&#8217;s first name</p>
+</li>
+<li>
+<p>The author&#8217;s surname</p>
+</li>
+<li>
+<p>The title</p>
+</li>
+<li>
+<p>The price</p>
+</li>
+<li>
+<p>Whether the book is on sale</p>
+</li>
+<li>
+<p>The publication year</p>
+</li>
+<li>
+<p>A description of the book</p>
+</li>
+<li>
+<p>The number of copies in the inventory</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>Book</code> entity also defines a simple named query, <code>findBooks</code>.</p>
+</div>
+<div class="paragraph">
+<p><a id="GLQEU"></a><a id="enterprise-beans-used-in-dukes-bookstore"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="enterprise-beans-used-in-dukes-bookstore"><a class="anchor" href="#enterprise-beans-used-in-dukes-bookstore"></a>Enterprise Beans Used in Duke&#8217;s Bookstore</h5>
+<div class="paragraph">
+<p>Two enterprise beans located in the <code>dukesbookstore.ejb</code> package provide
+the business logic for Duke&#8217;s Bookstore.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>BookRequestBean</code> is a stateful session bean that contains the
+business methods for the application. The methods create, retrieve, and
+purchase books, and update the inventory for a book. To retrieve the
+books, the <code>getBooks</code> method calls the <code>findBooks</code> named query defined
+in the <code>Book</code> entity.</p>
+</li>
+<li>
+<p><code>ConfigBean</code> is a singleton session bean used to create the books in
+the catalog when the application is initially deployed. It calls the
+<code>createBook</code> method defined in <code>BookRequestBean</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLQDP"></a><a id="facelets-pages-and-managed-beans-used-in-dukes-bookstore"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="facelets-pages-and-managed-beans-used-in-dukes-bookstore"><a class="anchor" href="#facelets-pages-and-managed-beans-used-in-dukes-bookstore"></a>Facelets Pages and Managed Beans Used in Duke&#8217;s Bookstore</h5>
+<div class="paragraph">
+<p>The Duke&#8217;s Bookstore application uses Facelets and its templating
+features to display the user interface. The Facelets pages interact with
+a set of CDI managed beans that act as backing beans, providing the
+underlying properties and methods for the user interface. The front page
+also interacts with the custom components used by the application.</p>
+</div>
+<div class="paragraph">
+<p>The application uses the following Facelets pages, which are located in
+the <code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/webapp/</code>
+directory.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>bookstoreTemplate.xhtml</code>: The template file, which specifies a header
+used on every page as well as the style sheet used by all the pages. The
+template also retrieves the language set in the web browser.</p>
+<div class="paragraph">
+<p>Uses the <code>LocaleBean</code> managed bean.</p>
+</div>
+</li>
+<li>
+<p><code>index.xhtml</code>: Landing page, which lays out the custom map and area
+components using managed beans configured in the <code>faces-config.xml</code> file
+and allows the user to select a book and advance to the
+<code>bookstore.xhtml</code> page.</p>
+</li>
+<li>
+<p><code>bookstore.xhtml</code>: Page that allows the user to obtain details on the
+selected book or the featured book, to add either book to the shopping
+cart, and to advance to the <code>bookcatalog.xhtml</code> page.</p>
+<div class="paragraph">
+<p>Uses the <code>BookstoreBean</code> managed bean.</p>
+</div>
+</li>
+<li>
+<p><code>bookdetails.xhtml</code>: Page that shows details on a book selected from
+<code>bookstore.xhtml</code> or other pages and allows the user to add the book to
+the cart and/or advance to the <code>bookcatalog.xhtml</code> page.</p>
+<div class="paragraph">
+<p>Uses the <code>BookDetailsBean</code> managed bean.</p>
+</div>
+</li>
+<li>
+<p><code>bookcatalog.xhtml</code>: Page that displays the books in the catalog and
+allows the user to add books to the shopping cart, view the details for
+any book, view the shopping cart, empty the shopping cart, or purchase
+the books in the shopping cart.</p>
+<div class="paragraph">
+<p>Uses the <code>BookstoreBean</code>, <code>CatalogBean</code>, and <code>ShoppingCart</code> managed
+beans.</p>
+</div>
+</li>
+<li>
+<p><code>bookshowcart.xhtml</code>: Page that displays the contents of the shopping
+cart and allows the user to remove items, view the details for an item,
+empty the shopping cart, purchase the books in the shopping cart, or
+return to the catalog.</p>
+<div class="paragraph">
+<p>Uses the <code>ShowCartBean</code> and <code>ShoppingCart</code> managed beans.</p>
+</div>
+</li>
+<li>
+<p><code>bookcashier.xhtml</code>: Page that allows the user to purchase books,
+specify a shipping option, subscribe to newsletters, or join the Duke
+Fan Club with a purchase over a certain amount.</p>
+<div class="paragraph">
+<p>Uses the <code>CashierBean</code> and <code>ShoppingCart</code> managed beans.</p>
+</div>
+</li>
+<li>
+<p><code>bookreceipt.xhtml</code>: Page that confirms the user&#8217;s purchase and allows
+the user to return to the catalog page to continue shopping.</p>
+<div class="paragraph">
+<p>Uses the <code>CashierBean</code> managed bean.</p>
+</div>
+</li>
+<li>
+<p><code>bookordererror.xhtml</code>: Page rendered by <code>CashierBean</code> if the
+bookstore has no more copies of a book that was ordered.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The application uses the following managed beans, which are located in
+the
+<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/jakarta/tutorial/dukesbookstore/web/managedbeans/</code>
+directory.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>AbstractBean</code>: Contains utility methods called by other managed
+beans.</p>
+</li>
+<li>
+<p><code>BookDetailsBean</code>: Backing bean for the <code>bookdetails.xhtml</code> page.
+Specifies the name <code>details</code>.</p>
+</li>
+<li>
+<p><code>BookstoreBean</code>: Backing bean for the <code>bookstore.xhtml</code> page.
+Specifies the name <code>store</code>.</p>
+</li>
+<li>
+<p><code>CashierBean</code>: Backing bean for the <code>bookcashier.xhtml</code> and
+<code>bookreceipt.xhtml</code> pages.</p>
+</li>
+<li>
+<p><code>CatalogBean</code>: Backing bean for the <code>bookcatalog.xhtml</code> page.
+Specifies the name <code>catalog</code>.</p>
+</li>
+<li>
+<p><code>LocaleBean</code>: Managed bean that retrieves the current locale; used on
+each page.</p>
+</li>
+<li>
+<p><code>ShoppingCart</code>: Backing bean used by the <code>bookcashier.xhtml</code>,
+<code>bookcatalog.xhtml</code>, and <code>bookshowcart.xhtml</code> pages. Specifies the name
+<code>cart</code>.</p>
+</li>
+<li>
+<p><code>ShoppingCartItem</code>: Contains methods called by <code>ShoppingCart</code>,
+<code>CatalogBean</code>, and <code>ShowCartBean</code>.</p>
+</li>
+<li>
+<p><code>ShowCartBean</code>: Backing bean for the <code>bookshowcart.xhtml</code> page.
+Specifies the name <code>showcart</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLQDX"></a><a id="custom-components-and-other-custom-objects-used-in-dukes-bookstore"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="custom-components-and-other-custom-objects-used-in-dukes-bookstore"><a class="anchor" href="#custom-components-and-other-custom-objects-used-in-dukes-bookstore"></a>Custom Components and Other Custom Objects Used in Duke&#8217;s Bookstore</h5>
+<div class="paragraph">
+<p>The map and area custom components for Duke&#8217;s Bookstore, along with
+associated renderer, listener, and model classes, are defined in the
+following packages in the
+<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/jakarta/tutorial/dukesbookstore/</code>
+directory.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>components</code>: Contains the <code>MapComponent</code> and <code>AreaComponent</code> classes.
+See <a href="#BNAVU">Creating Custom Component Classes</a>.</p>
+</li>
+<li>
+<p><code>listeners</code>: Contains the <code>AreaSelectedEvent</code> class, along with other
+listener classes. See <a href="#BNAWD">Handling Events for
+Custom Components</a>.</p>
+</li>
+<li>
+<p><code>model</code>: Contains the <code>ImageArea</code> class. See
+<a href="#GLPBO">Configuring Model Data</a> for more
+information.</p>
+</li>
+<li>
+<p><code>renderers</code>: Contains the <code>MapRenderer</code> and <code>AreaRenderer</code> classes.
+See <a href="#BNAWA">Delegating Rendering to a Renderer</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The
+<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/java/dukesbookstore/</code>
+directory also contains a custom converter and other custom listeners
+not specifically tied to the custom components.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>converters</code>: Contains the <code>CreditCardConverter</code> class. See
+<a href="#BNAUS">Creating and Using a Custom Converter</a>.</p>
+</li>
+<li>
+<p><code>listeners</code>: Contains the <code>LinkBookChangeListener</code>,
+<code>MapBookChangeListener</code>, and <code>NameChanged</code> classes. See
+<a href="#BNAUT">Implementing an Event Listener</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLQDG"></a><a id="properties-files-used-in-dukes-bookstore"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="properties-files-used-in-dukes-bookstore"><a class="anchor" href="#properties-files-used-in-dukes-bookstore"></a>Properties Files Used in Duke&#8217;s Bookstore</h5>
+<div class="paragraph">
+<p>The strings used in the Duke&#8217;s Bookstore application are encapsulated
+into resource bundles to allow the display of localized strings in
+multiple locales. The properties files, located in the
+<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/jakarta/tutorial/dukesbookstore/web/messages/</code>
+directory, consist of a default file containing English strings and
+three additional files for other locales. The files are as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Messages.properties</code>: Default file, containing English strings</p>
+</li>
+<li>
+<p><code>Messages_de.properties</code>: File containing German strings</p>
+</li>
+<li>
+<p><code>Messages_es.properties</code>: File containing Spanish strings</p>
+</li>
+<li>
+<p><code>Messages_fr.properties</code>: File containing French strings</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The language setting in the user&#8217;s web browser determines which locale
+is used. The <code>html</code> tag in <code>bookstoreTemplate.xhtml</code> retrieves the
+language setting from the <code>language</code> property of <code>LocaleBean</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;html</span> <span class="attribute-name">lang</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{localeBean.language}</span><span class="delimiter">&quot;</span></span>
+<span class="attribute-name">...</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For more information about resource bundles, see
+<a href="#BNAXU">Chapter 22, "Internationalizing and Localizing
+Web Applications."</a></p>
+</div>
+<div class="paragraph">
+<p>The resource bundle is configured as follows in the <code>faces-config.xml</code>
+file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;application&gt;</span>
+    <span class="tag">&lt;resource-bundle&gt;</span>
+        <span class="tag">&lt;base-name&gt;</span>
+            jakarta.tutorial.dukesbookstore.web.messages.Messages
+        <span class="tag">&lt;/base-name&gt;</span>
+        <span class="tag">&lt;var&gt;</span>bundle<span class="tag">&lt;/var&gt;</span>
+    <span class="tag">&lt;/resource-bundle&gt;</span>
+    <span class="tag">&lt;locale-config&gt;</span>
+        <span class="tag">&lt;default-locale&gt;</span>en<span class="tag">&lt;/default-locale&gt;</span>
+        <span class="tag">&lt;supported-locale&gt;</span>de<span class="tag">&lt;/supported-locale&gt;</span>
+        <span class="tag">&lt;supported-locale&gt;</span>es<span class="tag">&lt;/supported-locale&gt;</span>
+        <span class="tag">&lt;supported-locale&gt;</span>fr<span class="tag">&lt;/supported-locale&gt;</span>
+    <span class="tag">&lt;/locale-config&gt;</span>
+<span class="tag">&lt;/application&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This configuration means that in the Facelets pages, messages are
+retrieved using the prefix <code>bundle</code> with the key found in the
+<code>Messages_`locale</code>.properties` file, as in the following example from
+the <code>index.xhtml</code> page:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;h:outputText</span> <span class="attribute-name">style</span>=<span class="string"><span class="delimiter">&quot;</span><span class="key">font-weight</span>:<span class="value">bold</span><span class="delimiter">&quot;</span></span>
+              <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{bundle.ChooseBook}</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In <code>Messages.properties</code>, the key string is defined as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">ChooseBook=Choose a <span class="predefined-type">Book</span> from our Catalog</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a id="GLQED"></a><a id="deployment-descriptors-used-in-dukes-bookstore"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="deployment-descriptors-used-in-dukes-bookstore"><a class="anchor" href="#deployment-descriptors-used-in-dukes-bookstore"></a>Deployment Descriptors Used in Duke&#8217;s Bookstore</h5>
+<div class="paragraph">
+<p>The following deployment descriptors are used in Duke&#8217;s Bookstore:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>src/main/resources/META-INF/persistence.xml</code>: The Jakarta Persistence
+configuration file</p>
+</li>
+<li>
+<p><code>src/main/webapp/WEB-INF/bookstore.taglib.xml</code>: The tag library
+descriptor file for the custom components</p>
+</li>
+<li>
+<p><code>src/main/webapp/WEB-INF/faces-config.xml</code>: The Jakarta Server Faces
+configuration file, which configures the managed beans for the map
+component as well as the resource bundles for the application</p>
+</li>
+<li>
+<p><code>src/main/webapp/WEB-INF/web.xml</code>: The web application configuration
+file</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLPPQ"></a><a id="running-the-dukes-bookstore-case-study-application"></a></p>
+</div>
+<div class="paragraph">
+<p>You can use either NetBeans IDE or Maven to build, package, deploy, and
+run the Duke&#8217;s Bookstore application.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GLPQG">To Build and Deploy Duke&#8217;s Bookstore Using NetBeans IDE</a></p>
+</li>
+<li>
+<p><a href="#GLPQN">To Build and Deploy Duke&#8217;s Bookstore Using Maven</a></p>
+</li>
+<li>
+<p><a href="#BABEHDEG">To Run Duke&#8217;s Bookstore</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLPQG"></a><a id="to-build-and-deploy-dukes-bookstore-using-netbeans-ide"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="to-build-and-deploy-dukes-bookstore-using-netbeans-ide"><a class="anchor" href="#to-build-and-deploy-dukes-bookstore-using-netbeans-ide"></a>To Build and Deploy Duke&#8217;s Bookstore Using NetBeans IDE</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="#BNADI">Starting and Stopping GlassFish
+Server</a>).</p>
+</li>
+<li>
+<p>From the File menu, choose Open Project.</p>
+</li>
+<li>
+<p>In the Open Project dialog box, navigate to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">tut-install/examples/<span class="keyword">case</span>-studies</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Select the <code>dukes-bookstore</code> folder.</p>
+</li>
+<li>
+<p>Click Open Project.</p>
+</li>
+<li>
+<p>In the Projects tab, right-click the <code>dukes-bookstore</code> project and
+select Build.</p>
+<div class="paragraph">
+<p>This will build, package, and deploy Duke&#8217;s Bookstore to GlassFish
+Server.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="GLPQN"></a><a id="to-build-and-deploy-dukes-bookstore-using-maven"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="to-build-and-deploy-dukes-bookstore-using-maven"><a class="anchor" href="#to-build-and-deploy-dukes-bookstore-using-maven"></a>To Build and Deploy Duke&#8217;s Bookstore Using Maven</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="#BNADI">Starting and Stopping GlassFish
+Server</a>), as well as the database server (see
+<a href="#BNADK">Starting and Stopping Apache Derby</a>).</p>
+</li>
+<li>
+<p>In a terminal window, go to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">tut-install/examples/<span class="keyword">case</span>-studies/dukes-bookstore/</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">mvn install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command builds the application and packages it in a WAR file in the
+<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/target/</code> directory.
+It then deploys the application to GlassFish Server.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="BABEHDEG"></a><a id="to-run-dukes-bookstore"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="to-run-dukes-bookstore"><a class="anchor" href="#to-run-dukes-bookstore"></a>To Run Duke&#8217;s Bookstore</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In a web browser, enter the following URL:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">http:<span class="comment">//localhost:8080/dukes-bookstore/</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>On the Duke&#8217;s Bookstore main page, click a book in the graphic, or
+click one of the links at the bottom of the page.</p>
+</li>
+<li>
+<p>Use the pages in the application to view and purchase books.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="dukes-tutoring-case-study-example"><a class="anchor" href="#dukes-tutoring-case-study-example"></a>Duke&#8217;s Tutoring Case Study Example</h3>
+<div class="paragraph">
+<p><a id="GKAEE"></a><a id="dukes-tutoring-case-study-example"></a></p>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Tutoring example application is a tracking system for a
+tutoring center for students. Students can be checked in and out and can
+visit the park. The tutoring center can track attendance and status
+updates and can store contact information for guardians and students.
+Administrators can maintain the tutoring center system.</p>
+</div>
+<div class="paragraph">
+<p><a id="GKAEI"></a><a id="design-and-architecture-of-dukes-tutoring"></a></p>
+</div>
+<div class="sect3">
+<h4 id="design-and-architecture-of-dukes-tutoring"><a class="anchor" href="#design-and-architecture-of-dukes-tutoring"></a>Design and Architecture of Duke&#8217;s Tutoring</h4>
+<div class="paragraph">
+<p>Duke&#8217;s Tutoring is a web application that incorporates several Jakarta EE
+technologies. It exposes both a main interface (for students, guardians,
+and tutoring center staff) and an administration interface (for staff to
+maintain the system). The business logic for both interfaces is provided
+by enterprise beans. The enterprise beans use the Jakarta Persistence
+to create and store the application&#8217;s data in the database.
+<a href="#CHDDJDCH">Figure 61-1</a> illustrates the architecture of the
+application.</p>
+</div>
+<div id="CHDDJDCH" class="paragraph">
+<div class="title"><strong>Figure 61-1 Architecture of the Duke&#8217;s Tutoring Example Application</strong></div>
+<p><span class="image"><img src="data:image/png;base64," alt="Architecture diagram of the Duke&#8217;s Tutoring example application. Two clients access the main interface and the admin interface deployed in the web container. These interfaces communicate with enterprise beans deployed in the Jakarta Enterprise Beans container. The enterprise beans communicate with the database."></span></p>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Tutoring application is organized into two main projects: the
+<code>dukes-tutoring-common</code> library and the <code>dukes-tutoring-war</code> web
+application. The <code>dukes-tutoring-common</code> library project contains the
+entity classes and helper classes used by the <code>dukes-tutoring-war</code> web
+application, and <code>dukes-tutoring-common</code> is packaged and deployed with
+<code>dukes-tutoring-war</code>. The library JAR file is useful for allowing the
+entity classes and helper classes to be reused by other applications,
+such as a JavaFX client application.</p>
+</div>
+<div class="paragraph">
+<p>Duke&#8217;s Tutoring uses the following Jakarta EE platform features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Jakarta Persistence entities</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A custom Jakarta Bean Validation annotation, <code>@Email</code>, for validating email
+addresses</p>
+</li>
+<li>
+<p>A standard <code>jta-data-source</code> definition that will create the JDBC
+resource on deployment</p>
+</li>
+<li>
+<p>A standard property in the <code>persistence.xml</code> deployment descriptor to
+automatically and portably create and delete the tables in the
+<code>jta-data-source</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Enterprise beans</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Local, no-interface view session and singleton beans</p>
+</li>
+<li>
+<p>Jakarta RESTful Web Services resources in a session bean</p>
+</li>
+<li>
+<p>Jakarta EE security constraints on the administrative interface business
+methods</p>
+</li>
+<li>
+<p>All enterprise beans packaged within the WAR</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>WebSocket</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A WebSocket server endpoint that automatically publishes the status
+of students to client endpoints</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Jakarta Contexts and Dependency Injection</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A CDI event that is fired when the status of a student changes</p>
+</li>
+<li>
+<p>Handler methods for updating the application once the status event is
+fired</p>
+</li>
+<li>
+<p>CDI managed beans for Facelets pages</p>
+</li>
+<li>
+<p>Bean Validation annotations in the CDI managed beans</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Jakarta Server Faces technology, using Facelets for the web front end</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Templating</p>
+</li>
+<li>
+<p>Composite components</p>
+</li>
+<li>
+<p>A custom formatter, <code>PhoneNumberFormatter</code></p>
+</li>
+<li>
+<p>Security constraints on the administrative interface</p>
+</li>
+<li>
+<p>Ajax-enabled Facelets components</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Tutoring application has two main user interfaces, both
+packaged within a single WAR file:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The main interface, for students, guardians, and staff</p>
+</li>
+<li>
+<p>The administrative interface used by the staff to manage the students
+and guardians, and to generate attendance reports</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKAFH"></a><a id="main-interface"></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="main-interface"><a class="anchor" href="#main-interface"></a>Main Interface</h4>
+<div class="paragraph">
+<p>The main interface allows students and staff to check students in and
+out, and record when students are outside at the playground.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GKAFJ">Jakarta Persistence Entities Used in the Main Interface</a></p>
+</li>
+<li>
+<p><a href="#GKAFC">Enterprise Beans Used in the Main Interface</a></p>
+</li>
+<li>
+<p><a href="#BCGHHCDA">WebSocket Endpoint Used in the Main Interface</a></p>
+</li>
+<li>
+<p><a href="#GKAET">Facelets Files Used in the Main Interface</a></p>
+</li>
+<li>
+<p><a href="#GKADH">Helper Classes Used in the Main Interface</a></p>
+</li>
+<li>
+<p><a href="#GKADA">Properties Files</a></p>
+</li>
+<li>
+<p><a href="#GKAEV">Deployment Descriptors Used in Duke&#8217;s Tutoring</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKAFJ"></a><a id="java-persistence-api-entities-used-in-the-main-interface"></a></p>
+</div>
+<div class="sect4">
+<h5 id="java-persistence-api-entities-used-in-the-main-interface"><a class="anchor" href="#java-persistence-api-entities-used-in-the-main-interface"></a>Java Persistence API Entities Used in the Main Interface</h5>
+<div class="paragraph">
+<p>The following entities used in the main interface encapsulate data
+stored and manipulated by Duke&#8217;s Tutoring, and are located in the
+<code>dukestutoring.entity</code> package in the <code>dukes-tutoring-common</code> project.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Person</code>: The <code>Person</code> entity defines attributes common to students
+and guardians tracked by the application. These attributes are the
+person&#8217;s name and contact information, including phone numbers and email
+address. This entity has two subclasses, <code>Student</code> and <code>Guardian</code>.</p>
+</li>
+<li>
+<p><code>PersonDetails</code>: The <code>PersonDetails</code> entity is used to store
+additional data common to all people, such as attributes like pictures
+and the person&#8217;s birthday, which aren&#8217;t included in the <code>Person</code> entity
+for performance reasons.</p>
+</li>
+<li>
+<p><code>Student</code> and <code>Guardian</code>: The <code>Student</code> entity stores attributes
+specific to the students who come to tutoring. This includes information
+like the student&#8217;s grade level and school. The <code>Guardian</code> entity&#8217;s
+attributes are specific to the parents or guardians of a <code>Student</code>.
+Students and guardians have a many-to-many relationship. That is, a
+student may have one or more guardians, and a guardian may have one or
+more students.</p>
+</li>
+<li>
+<p><code>Address</code>: The <code>Address</code> entity represents a mailing address and is
+associated with <code>Person</code> entities. Addresses and people have a
+many-to-one relationship. That is, one person may have many addresses.</p>
+</li>
+<li>
+<p><code>TutoringSession</code>: The <code>TutoringSession</code> entity represents a
+particular day at the tutoring center. A particular tutoring session
+tracks which students attended that day, and which students went to the
+park.</p>
+</li>
+<li>
+<p><code>StatusEntry</code>: The <code>StatusEntry</code> entity, which logs when a student&#8217;s
+status changes, is associated with the <code>TutoringSession</code> entity.
+Students' statuses change when they check in to a tutoring session, when
+they go to the park, and when they check out. The status entry allows
+the tutoring center staff to track exactly which students attended a
+tutoring session, when they checked in and out, which students went to
+the park while they were at the tutoring center, and when they went to
+and came back from the park.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For information on creating Jakarta Persistence entities, see
+<a href="#BNBPZ">Chapter 40, "Introduction to the Jakarta
+Persistence."</a> For information on validating entity data, see
+<a href="#GKAHQ">Validating Persistent Fields and
+Properties</a> and <a href="#GKAHP">Chapter 24,
+"Jakarta Bean Validation: Advanced Topics."</a></p>
+</div>
+<div class="paragraph">
+<p><a id="GKAFC"></a><a id="enterprise-beans-used-in-the-main-interface"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="enterprise-beans-used-in-the-main-interface"><a class="anchor" href="#enterprise-beans-used-in-the-main-interface"></a>Enterprise Beans Used in the Main Interface</h5>
+<div class="paragraph">
+<p>The following enterprise beans used in the main interface provide the
+business logic for Duke&#8217;s Tutoring, and are located in the
+<code>dukestutoring.ejb</code> package in the <code>dukes-tutoring-war</code> project:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>ConfigBean</code> is a singleton session bean used to create the default
+students when the application is initially deployed, and to create an
+automatic enterprise bean timer that creates tutoring session entities every
+weekday.</p>
+</li>
+<li>
+<p><code>RequestBean</code> is a stateless session bean containing the business
+methods for the main interface. The bean also has business methods for
+retrieving lists of students. These business methods use strongly typed
+Criteria API queries to retrieve data from the database. <code>RequestBean</code>
+also injects a CDI event instance, <code>StatusEvent</code>. This event is fired
+from the business methods when the status of a student changes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For information on creating and using enterprise beans, see
+<a href="#BNBLR">Enterprise Beans</a>. For information on
+creating strongly typed Criteria API queries, see
+<a href="#GJITV">Chapter 43, "Using the Criteria API
+to Create Queries."</a> For information on CDI events, see
+<a href="#GKHIC">Using Events in CDI Applications</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="BCGHHCDA"></a><a id="websocket-endpoint-used-in-the-main-interface"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="websocket-endpoint-used-in-the-main-interface"><a class="anchor" href="#websocket-endpoint-used-in-the-main-interface"></a>WebSocket Endpoint Used in the Main Interface</h5>
+<div class="paragraph">
+<p>The <code>jakarta.tutorial.dukestutoring.web.websocket.StatusEndpoint</code> class is
+a WebSocket server endpoint that returns students and their status to
+client endpoints. The <code>StatusEndpoint.updateStatus</code> method is a CDI
+observer method for the <code>StatusEvent</code> event. When a student&#8217;s status
+changes in the main interface, a <code>StatusEvent</code> is fired. The
+<code>updateStatus</code> observer method is called by the container, and pushes
+out the status change to all the client endpoints registered with
+<code>StatusEndpoint</code>.</p>
+</div>
+<div class="paragraph">
+<p>The <code>index.xhtml</code> Jakarta Server Faces page contains JavaScript code to
+connect to the WebSocket endpoint. The <code>onMessage</code> method on this page
+clicks a Jakarta Server Faces button, which makes an Ajax request to refresh
+the table that shows the current status of the students.</p>
+</div>
+<div class="paragraph">
+<p>For more information on WebSocket endpoints, see
+<a href="#GKJIQ5">Chapter 19, "Jakarta WebSocket."</a> For
+information on CDI events, see <a href="#GKHIC">Using Events in
+CDI Applications</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="GKAET"></a><a id="facelets-files-used-in-the-main-interface"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="facelets-files-used-in-the-main-interface"><a class="anchor" href="#facelets-files-used-in-the-main-interface"></a>Facelets Files Used in the Main Interface</h5>
+<div class="paragraph">
+<p>The Duke&#8217;s Tutoring application uses Facelets to display the user
+interface, making extensive use of the templating features of Facelets.
+Facelets, the default display technology for Jakarta Server Faces
+technology, consists of XHTML files located in the
+<code><em>tut-install</em>/examples/case-studies/dukes-tutoring-war/src/main/webapp/</code>
+directory.</p>
+</div>
+<div class="paragraph">
+<p>The following Facelets files are used in the main interface:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>template.xhtml</code>: Template file for the main interface</p>
+</li>
+<li>
+<p><code>error.xhtml</code>: Error file if something goes wrong</p>
+</li>
+<li>
+<p><code>index.xhtml</code>: Landing page for the main interface</p>
+</li>
+<li>
+<p><code>park.xhtml</code>: Page showing who is currently at the park</p>
+</li>
+<li>
+<p><code>current.xhtml</code>: Page showing who is currently in today&#8217;s tutoring
+session</p>
+</li>
+<li>
+<p><code>statusEntries.xhtml</code>: Page showing the detailed status entry log for
+today&#8217;s session</p>
+</li>
+<li>
+<p><code>resources/components/allStudentsTable.xhtml</code>: A composite component
+for a table displaying all active students</p>
+</li>
+<li>
+<p><code>resources/components/allInactiveStudentsTable.xhtml</code>: A composite
+component for a table displaying all inactive students</p>
+</li>
+<li>
+<p><code>resources/components/currentSessionTable.xhtml</code>: A composite
+component for a table displaying all students in today&#8217;s session</p>
+</li>
+<li>
+<p><code>resources/components/parkTable.xhtml</code>: A composite component for a
+table displaying all students currently at the park</p>
+</li>
+<li>
+<p><code>WEB-INF/includes/mainNav.xhtml</code>: XHTML fragment for the main
+interface&#8217;s navigation bar</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For information on using Facelets, see
+<a href="#GIEPX">Chapter 8, "Introduction to Facelets."</a></p>
+</div>
+<div class="paragraph">
+<p><a id="GKADH"></a><a id="helper-classes-used-in-the-main-interface"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="helper-classes-used-in-the-main-interface"><a class="anchor" href="#helper-classes-used-in-the-main-interface"></a>Helper Classes Used in the Main Interface</h5>
+<div class="paragraph">
+<p>The following helper classes, found in the <code>dukes-tutoring-common</code>
+project&#8217;s <code>dukestutoring.util</code> package, are used in the main interface.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>CalendarUtil</code>: A class that provides a method to strip the
+unnecessary time data from <code>java.util.Calendar</code> instances.</p>
+</li>
+<li>
+<p><code>Email</code>: A custom Bean Validation annotation class for validating
+email addresses in the <code>Person</code> entity.</p>
+</li>
+<li>
+<p><code>StatusType</code>: An enumerated type defining the different statuses that
+a student can have. Possible values are <code>IN</code>, <code>OUT</code>, and <code>PARK</code>.
+<code>StatusType</code> is used throughout the application, including in the
+<code>StatusEntry</code> entity, and throughout the main interface. <code>StatusType</code>
+also defines a <code>toString</code> method that returns a localized translation of
+the status based on the locale.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKADA"></a><a id="properties-files"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="properties-files"><a class="anchor" href="#properties-files"></a>Properties Files</h5>
+<div class="paragraph">
+<p>The strings used in the main interface are encapsulated into resource
+bundles to allow the display of localized strings in multiple locales.
+Each of the properties files has locale-specific files appended with
+locale codes, containing the translated strings for each locale. For
+example, <code>Messages_es.properties</code> contains the localized strings for
+Spanish locales.</p>
+</div>
+<div class="paragraph">
+<p>The <code>dukes-tutoring-common</code> project has the following resource bundle
+under <code>src/main/resources/</code>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>jakarta.tutorial/dukestutoring/util/StatusMessages.properties</code>: Strings
+for each of the status types defined in the <code>StatusType</code> enumerated type
+for the default locale. Each supported locale has a property file of the
+form <code>StatusMessages_`locale prefix</code>.properties` containing the
+localized strings. For example, the strings for Spanish-speaking locales
+are located in <code>StatusMessages_es.properties</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>dukes-tutoring-war</code> project has the following resource bundles
+under <code>src/main/resources/</code>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>ValidationMessages.properties</code>: Strings for the default locale used
+by the Bean Validation runtime to display validation messages. This file
+must be named <code>ValidationMessages.properties</code> and located in the default
+package as required by the Bean Validation specification. Each supported
+locale has a property file of the form <code>ValidationMessages_`locale
+prefix</code>.properties` containing the localized strings. For example, the
+strings for German-speaking locales are located in
+<code>ValidationMessages_de.properties</code>.</p>
+</li>
+<li>
+<p><code>jakarta.tutorial/dukestutoring/web/messages/Messages.properties</code>:
+Strings for the default locale for the main and administration Facelets
+interface. Each supported locale has a property file of the form
+<code>Messages_`locale prefix</code>.properties` containing the localized strings.
+For example, the strings for simplified Chinese-speaking locales are
+located in <code>Messages_zh.properties</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For information on localizing web applications, see
+<a href="#BNAXB">Registering Application Messages</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="GKAEV"></a><a id="deployment-descriptors-used-in-dukes-tutoring"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="deployment-descriptors-used-in-dukes-tutoring"><a class="anchor" href="#deployment-descriptors-used-in-dukes-tutoring"></a>Deployment Descriptors Used in Duke&#8217;s Tutoring</h5>
+<div class="paragraph">
+<p>Duke&#8217;s Tutoring uses these deployment descriptors in the
+<code>src/main/webapp/WEB-INF</code> directory of the <code>dukes-tutoring-war</code> project:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>faces-config.xml</code>: The Jakarta Server Faces configuration file</p>
+</li>
+<li>
+<p><code>glassfish-web.xml</code>: The configuration file specific to GlassFish
+Server, which defines security role mapping</p>
+</li>
+<li>
+<p><code>web.xml</code>: The web application configuration file</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Duke&#8217;s Tutoring also uses the following deployment descriptor in the
+<code>src/main/resources/META-INF</code> directory of the <code>dukes-tutoring-common</code>
+project:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>persistence.xml</code>: The Jakarta Persistence configuration file</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>No enterprise bean deployment descriptor is used in Duke&#8217;s Tutoring.
+Annotations in the enterprise bean class files are used for the
+configuration of enterprise beans in this application.</p>
+</div>
+<div class="paragraph">
+<p><a id="GKAFW"></a><a id="administration-interface"></a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="administration-interface"><a class="anchor" href="#administration-interface"></a>Administration Interface</h4>
+<div class="paragraph">
+<p>The administration interface of Duke&#8217;s Tutoring is used by the tutoring
+center staff to manage the data employed by the main interface: the
+students, the students' guardians, and the addresses. The administration
+interface uses many of the same components as the main interface.
+Additional components that are only used in the administration interface
+are described here.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GKAEN">Enterprise Beans Used in the Administration Interface</a></p>
+</li>
+<li>
+<p><a href="#GKACB">Facelets Files Used in the Administration Interface</a></p>
+</li>
+<li>
+<p><a href="#BCGHIDEG">CDI Managed Beans Used in the Administration Interface</a></p>
+</li>
+<li>
+<p><a href="#BCGFFFCA">Helper Classes Used in the Administration Interface</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKAEN"></a><a id="enterprise-beans-used-in-the-administration-interface"></a></p>
+</div>
+<div class="sect4">
+<h5 id="enterprise-beans-used-in-the-administration-interface"><a class="anchor" href="#enterprise-beans-used-in-the-administration-interface"></a>Enterprise Beans Used in the Administration Interface</h5>
+<div class="paragraph">
+<p>The following enterprise bean, in the <code>dukestutoring.ejb</code> package of the
+<code>dukes-tutoring-war</code> project, is used in the administration interface.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>AdminBean</code>: A stateless session bean for all the business logic used
+in the administration interface. Calls security methods to allow
+invocation of the business methods only by authorized users.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKACB"></a><a id="facelets-files-used-in-the-administration-interface"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="facelets-files-used-in-the-administration-interface"><a class="anchor" href="#facelets-files-used-in-the-administration-interface"></a>Facelets Files Used in the Administration Interface</h5>
+<div class="paragraph">
+<p>The following Facelets files, under <code>src/main/webapp/</code>, are used in the
+administration interface:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>admin/adminTemplate.xhtml</code>: Template for the administration interface</p>
+</li>
+<li>
+<p><code>admin/index.xhtml</code>: Landing page for the administration interface</p>
+</li>
+<li>
+<p><code>login.xhtml</code>: Login page for the security-constrained administration
+interface</p>
+</li>
+<li>
+<p><code>loginError.xhtml</code>: Page displayed if there are errors authenticating
+the administration user</p>
+</li>
+<li>
+<p><code>admin/address</code> directory: Pages that allow you to create, edit, and
+delete <code>Address</code> entities</p>
+</li>
+<li>
+<p><code>admin/guardian</code> directory: Pages that allow you to create, edit, and
+delete <code>Guardian</code> entities</p>
+</li>
+<li>
+<p><code>admin/student</code> directory: Pages that allow you to create, edit, and
+delete <code>Student</code> entities</p>
+</li>
+<li>
+<p><code>resources/components/formLogin.xhtml</code>: Composite component for a
+login form using Jakarta EE security</p>
+</li>
+<li>
+<p><code>WEB-INF/includes/adminNav.xhtml</code>: XHTML fragment for the
+administration interface&#8217;s navigation bar</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="BCGHIDEG"></a><a id="cdi-managed-beans-used-in-the-administration-interface"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="cdi-managed-beans-used-in-the-administration-interface"><a class="anchor" href="#cdi-managed-beans-used-in-the-administration-interface"></a>CDI Managed Beans Used in the Administration Interface</h5>
+<div class="paragraph">
+<p>The CDI managed beans used in the administration interface are located
+in the <code>dukestutoring.web</code> package in the <code>dukes-tutoring-war</code> project.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>StudentBean.java</code>: A managed bean for the Facelets pages used to
+create and edit students. The first and last names have Bean Validation
+annotations that require the fields to be filled in. The phone numbers
+have Bean Validation annotations to ensure that the submitted data is
+well-formed.</p>
+</li>
+<li>
+<p><code>GuardianBean.java</code>: A managed bean for the Facelets pages used to
+create guardians for and assign guardians to students. The first and
+last names have Bean Validation annotations that require the fields to
+be filled in. The phone numbers have Bean Validation annotations to
+ensure that the submitted data is well-formed.</p>
+</li>
+<li>
+<p><code>AddressBean.java</code>: A managed bean for the Facelets pages used to
+create addresses for students. The street, city, province, and postal
+code attributes have Bean Validation annotations that require the fields
+to be filled in, and the postal code attribute has an additional
+annotation to ensure that the data is properly formed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="BCGFFFCA"></a><a id="helper-classes-used-in-the-administration-interface"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="helper-classes-used-in-the-administration-interface"><a class="anchor" href="#helper-classes-used-in-the-administration-interface"></a>Helper Classes Used in the Administration Interface</h5>
+<div class="paragraph">
+<p>The following helper classes, found in the <code>dukes-tutoring-war</code>
+project&#8217;s <code>dukestutoring.web.util</code> package, are used in the
+administration interface.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>EntityConverter</code>: A parent class to <code>StudentConverter</code> and
+<code>GuardianConverter</code> that defines a cache to store the entity classes
+when converting the entities for use in Jakarta Server Faces user interface
+components. The cache helps increase performance. The cache is stored in
+the Jakarta Server Faces context.</p>
+</li>
+<li>
+<p><code>StudentConverter</code>: A Jakarta Server Faces converter for the <code>Student</code>
+entity class. This class contains methods to convert <code>Student</code> instances
+to strings and back again, so they can be used in the user interface
+components of the application.</p>
+</li>
+<li>
+<p><code>GuardianConverter</code>: Similar to <code>StudentConverter</code>, this class is a
+converter for the <code>Guardian</code> entity class.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKJNN"></a><a id="running-the-dukes-tutoring-case-study-application"></a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="running-the-dukes-tutoring-case-study-application"><a class="anchor" href="#running-the-dukes-tutoring-case-study-application"></a>Running the Duke&#8217;s Tutoring Case Study Application</h4>
+<div class="paragraph">
+<p>This section describes how to build, package, deploy, and run the Duke&#8217;s
+Tutoring application.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GKJOA">Running Duke&#8217;s Tutoring</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKJOA"></a><a id="running-dukes-tutoring"></a></p>
+</div>
+<div class="sect4">
+<h5 id="running-dukes-tutoring"><a class="anchor" href="#running-dukes-tutoring"></a>Running Duke&#8217;s Tutoring</h5>
+<div class="paragraph">
+<p>You can use either NetBeans IDE or Maven to build, package, deploy, and
+run Duke&#8217;s Tutoring.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GKJNR">To Build and Deploy Duke&#8217;s Tutoring Using NetBeans IDE</a></p>
+</li>
+<li>
+<p><a href="#GKJOG">To Build and Deploy Duke&#8217;s Tutoring Using Maven</a></p>
+</li>
+<li>
+<p><a href="#GKJOC">Using Duke&#8217;s Tutoring</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKJNR"></a><a id="to-build-and-deploy-dukes-tutoring-using-netbeans-ide"></a></p>
+</div>
+<div class="sect5">
+<h6 id="to-build-and-deploy-dukes-tutoring-using-netbeans-ide"><a class="anchor" href="#to-build-and-deploy-dukes-tutoring-using-netbeans-ide"></a>To Build and Deploy Duke&#8217;s Tutoring Using NetBeans IDE</h6>
+<div class="paragraph">
+<p>Before You Begin</p>
+</div>
+<div class="paragraph">
+<p>You must have already configured GlassFish Server as a Jakarta EE server in
+NetBeans IDE, as described in <a href="#GIQZL">To Add
+GlassFish Server as a Server Using NetBeans IDE</a>.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="#BNADI">Starting and Stopping GlassFish
+Server</a>).</p>
+</li>
+<li>
+<p>If the database server is not already running, start it as described
+in <a href="#BNADK">Starting and Stopping Apache Derby</a>.</p>
+</li>
+<li>
+<p>From the File menu, choose Open Project.</p>
+</li>
+<li>
+<p>In the Open Project dialog box, navigate to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">tut-install/examples/<span class="keyword">case</span>-studies</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Select the <code>dukes-tutoring</code> folder.</p>
+</li>
+<li>
+<p>Select the Open Required Projects check box and click Open Project.</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Note:</p>
+</div>
+<div class="paragraph">
+<p>The first time you open Duke&#8217;s Tutoring in NetBeans, you will see error
+glyphs in the Projects tab. This is expected, as the metamodel files
+used by the enterprise beans for Criteria API queries have not yet been
+generated.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>In the Projects tab, right-click the <code>dukes-tutoring</code> project and
+select Build.</p>
+<div class="paragraph">
+<p>This command creates a JDBC security realm named tutoringRealm, builds
+and packages the <code>dukes-tutoring-common</code> and <code>dukes-tutoring-war</code>
+projects, and deploys <code>dukes-tutoring-war</code> to GlassFish Server, starting
+Derby and GlassFish Server if they have not already been
+started.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="GKJOG"></a><a id="to-build-and-deploy-dukes-tutoring-using-maven"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="to-build-and-deploy-dukes-tutoring-using-maven"><a class="anchor" href="#to-build-and-deploy-dukes-tutoring-using-maven"></a>To Build and Deploy Duke&#8217;s Tutoring Using Maven</h6>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has started (see
+<a href="#BNADI">Starting and Stopping GlassFish
+Server</a>).</p>
+</li>
+<li>
+<p>If the database server is not already running, start it as described
+in <a href="#BNADK">Starting and Stopping Apache Derby</a>.</p>
+</li>
+<li>
+<p>In a terminal window, go to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">tut-install/examples/<span class="keyword">case</span>-studies/dukes-tutoring/</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">mvn install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command creates a JDBC security realm named tutoringRealm, builds
+and packages the <code>dukes-tutoring-common</code> and <code>dukes-tutoring-war</code>
+projects, and deploys <code>dukes-tutoring-war</code> to GlassFish Server.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="GKJOC"></a><a id="using-dukes-tutoring"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="using-dukes-tutoring"><a class="anchor" href="#using-dukes-tutoring"></a>Using Duke&#8217;s Tutoring</h6>
+<div class="paragraph">
+<p>Once Duke&#8217;s Tutoring is running on GlassFish Server, use the main
+interface to experiment with checking students in and out or sending
+them to the park.</p>
+</div>
+<div class="paragraph">
+<p>To Use the Main Interface of Duke&#8217;s Tutoring</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In a web browser, open the main interface at the following URL:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">http:<span class="comment">//localhost:8080/dukes-tutoring-war/</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the main interface to check students in and out, and to log when
+the students go to the park.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To Use the Administration Interface of Duke&#8217;s Tutoring</p>
+</div>
+<div class="paragraph">
+<p>Follow these instructions to log in to the administration interface of
+Duke&#8217;s Tutoring and add new students, guardians, and addresses.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>From the main interface, open the administration interface by
+clicking Administration main page in the left menu.</p>
+<div class="paragraph">
+<p>This redirects you to the login page at the following URL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">http:<span class="comment">//localhost:8080/dukes-tutoring-war/admin/index.xhtml</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>On the login page, enter <code>admin@example.com</code> in the User name field,
+and enter <code>jakartaee</code> in the Password field.</p>
+</li>
+<li>
+<p>Use the administration interface to add or modify students, add
+guardians, or add addresses.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>To add a new student, click Create new student in the left menu, fill
+in the fields (two are required) in the form that opens, and click
+Submit. The Email, Home phone, and Mobile phone fields have formatting
+requirements enforced by HTML5 pass-through or by Bean Validation
+constraints.</p>
+</li>
+<li>
+<p>To modify a student, click Edit next to the student&#8217;s name, modify the
+fields in the form that opens, and click Submit. To edit another
+student, choose the student from the drop-down menu at the top of the
+page and click Change student.</p>
+</li>
+<li>
+<p>To remove a student, click Remove next to the student&#8217;s name, then
+click Confirm in the page that appears. This action removes the student
+from the tutoring session but does not remove the student from the
+database. To add the student to the tutoring session again, click
+Activate student in the left menu, then click Activate next to the
+student&#8217;s name in the page that appears.</p>
+</li>
+<li>
+<p>To add a guardian for a student, click Add guardian next to the
+student&#8217;s name. The page that appears shows the student&#8217;s name, the
+available guardians, and the current guardians for the student, if any.
+To add an existing guardian for that student, select the guardian from
+the list and click Add guardian. To create a new guardian for the
+student, fill in the fields and click Submit. To remove a guardian from
+a student, select one of the student&#8217;s current guardians from the list
+and click Remove guardian.</p>
+</li>
+<li>
+<p>To add an address for a student, click Add address next to the
+student&#8217;s name. In the page that appears, fill in the appropriate fields
+in the form that appears, and click Submit. Four fields are required.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The administration interface is not fully implemented. It is not
+possible to edit a guardian or to view or edit an address, although
+Facelets pages exist for these features. The application also makes no
+use of the properties in the <code>PersonDetails</code> entity. Feel free to modify
+the application to add these features.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="dukes-forest-case-study-example"><a class="anchor" href="#dukes-forest-case-study-example"></a>Duke&#8217;s Forest Case Study Example</h3>
+<div class="paragraph">
+<p><a id="GLNPW"></a><a id="dukes-forest-case-study-example"></a></p>
+</div>
+<div class="paragraph">
+<p>This chapter describes Duke&#8217;s Forest, a simple e-commerce application
+that contains several web applications and illustrates the use of
+multiple Jakarta EE APIs.</p>
+</div>
+<div class="paragraph">
+<p><a id="A1256074"></a><a id="overview-of-the-dukes-forest-case-study-example"></a></p>
+</div>
+<div class="sect3">
+<h4 id="overview-of-the-dukes-forest-case-study-example"><a class="anchor" href="#overview-of-the-dukes-forest-case-study-example"></a>Overview of the Duke&#8217;s Forest Case Study Example</h4>
+<div class="paragraph">
+<p>Duke&#8217;s Forest is a simple e-commerce application that contains several
+web applications and illustrates the use of the following Jakarta EE
+APIs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Jakarta Server Faces technology, including Ajax</p>
+</li>
+<li>
+<p>Jakarta Contexts and Dependency Injection (CDI)</p>
+</li>
+<li>
+<p>Jakarta RESTful Web Services</p>
+</li>
+<li>
+<p>Jakarta Persistence</p>
+</li>
+<li>
+<p>Jakarta Bean Validation</p>
+</li>
+<li>
+<p>Jakarta Enterprise Beans technology</p>
+</li>
+<li>
+<p>Jakarta Messaging</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The application consists of the following projects.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Duke&#8217;s Store: A web application that has a product catalog, customer
+self-registration, and a shopping cart. It also has an administration
+interface for product, category, and user management. The project name
+is <code>dukes-store</code>.</p>
+</li>
+<li>
+<p>Duke&#8217;s Shipment: A web application that provides an interface for
+order shipment management. The project name is <code>dukes-shipment</code>.</p>
+</li>
+<li>
+<p>Duke&#8217;s Payment: A web service application that has a RESTful web
+service for order payment. The project name is <code>dukes-payment</code>.</p>
+</li>
+<li>
+<p>Duke&#8217;s Resources: A simple Java archive project that contains all
+resources used by the web projects. It includes messages, CSS style
+sheets, images, JavaScript files, and Jakarta Server Faces composite
+components. The project name is <code>dukes-resources</code>.</p>
+</li>
+<li>
+<p>Entities: A simple Java archive project that contains all Jakarta Persistence
+entities. This project is shared among other projects that use the
+entities. The project name is <code>entities</code>.</p>
+</li>
+<li>
+<p>Events: A simple Java archive project that contains a POJO class that
+is used as a CDI event. The project name is <code>events</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLNRJ"></a><a id="design-and-architecture-of-dukes-forest"></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="design-and-architecture-of-dukes-forest"><a class="anchor" href="#design-and-architecture-of-dukes-forest"></a>Design and Architecture of Duke&#8217;s Forest</h4>
+<div class="paragraph">
+<p>Duke&#8217;s Forest is a complex application consisting of three main projects
+and three subprojects. <a href="#GLNVM">Figure 62-1</a> shows the architecture
+of the three main projects that you will deploy: Duke&#8217;s Store, Duke&#8217;s
+Shipment, and Duke&#8217;s Payment. It also shows how Duke&#8217;s Store makes use
+of the Events and Entities projects.</p>
+</div>
+<div id="GLNVM" class="paragraph">
+<div class="title"><strong>Figure 62-1 Architecture of the Duke&#8217;s Forest Example Application</strong></div>
+<p><span class="image"><img src="data:image/png;base64," alt="This figure shows the architecture of the main Duke&#8217;s Forest projects and how they use the Events and Entities projects."></span></p>
+</div>
+<div class="paragraph">
+<p>Duke&#8217;s Forest uses the following Jakarta EE platform features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Jakarta Persistence entities</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Bean Validation annotations on the entities for verifying data</p>
+</li>
+<li>
+<p>XML annotations for Jakarta XML binding serialization</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Web services</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A Jakarta REST web service for payment, with security constraints</p>
+</li>
+<li>
+<p>A Jakarta REST web service based on Jakarta Enterprise Beans</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Enterprise beans</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Local session beans</p>
+</li>
+<li>
+<p>All enterprise beans packaged within the WAR</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Jakarta Contexts and Dependency Injection (CDI)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>CDI annotations for Jakarta Server Faces components</p>
+</li>
+<li>
+<p>A CDI managed bean used as a shopping cart, with conversation scoping</p>
+</li>
+<li>
+<p>Qualifiers</p>
+</li>
+<li>
+<p>Events and event handlers</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Servlets</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A servlet for dynamic image presentation</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Jakarta Server Faces technology, using Facelets for the web front end</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Templating</p>
+</li>
+<li>
+<p>Composite components</p>
+</li>
+<li>
+<p>File upload</p>
+</li>
+<li>
+<p>Resources packaged in a JAR file so they can be found in the
+classpath</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Security</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Jakarta EE security constraints on the administrative interface business
+methods (enterprise beans)</p>
+</li>
+<li>
+<p>Security constraints for customers and administrators (web
+components)</p>
+</li>
+<li>
+<p>Single Sign-On (SSO) to propagate an authenticated user identity from
+Duke&#8217;s Store to Duke&#8217;s Shipment</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Forest application has two main user interfaces, both
+packaged within the Duke&#8217;s Store WAR file:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The main interface, for customers and guests</p>
+</li>
+<li>
+<p>The administrative interface used to perform back office operations,
+such as adding new items to the catalog</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Shipment application also has a user interface, accessible to
+administrators.</p>
+</div>
+<div class="paragraph">
+<p><a href="#CIHCHCAA">Figure 62-2</a> shows how the web applications and the web
+service interact.</p>
+</div>
+<div id="CIHCHCAA" class="paragraph">
+<div class="title"><strong>Figure 62-2 Interactions between Duke&#8217;s Forest Components</strong></div>
+<p><span class="image"><img src="data:image/png;base64," alt="This figure shows the interactions between the Duke&#8217;s Store and Duke&#8217;s Shipment projects (using REST and HTTP), and between the Duke&#8217;s Store and Duke&#8217;s Payment projects (using REST and HTTP)."></span></p>
+</div>
+<div class="paragraph">
+<p>As illustrated in <a href="#CIHCHCAA">Figure 62-2</a>, the customer interacts
+with the main interface of Duke&#8217;s Store, while the administrator
+interacts with the administration interface. Both interfaces access a
+façade consisting of managed beans and stateless session beans, which in
+turn interact with the entities that represent database tables. The
+façade also interacts with web services APIs that access the Duke&#8217;s
+Payment web service. When the payment for an order is approved, Duke&#8217;s
+Store sends the order to a Jakarta Messaging queue. The administrator also interacts
+with the interface of Duke&#8217;s Shipment, which can be accessed either
+directly through Duke&#8217;s Shipment or from the administration interface of
+Duke&#8217;s Store by means of a web service. When the administrator approves
+an order for shipping, Duke&#8217;s Shipment consumes the order from the Jakarta Messaging
+queue.</p>
+</div>
+<div class="paragraph">
+<p>The most fundamental building blocks of the application are the Events
+and Entities projects, which are bundled into Duke&#8217;s Store and Duke&#8217;s
+Shipment along with the Duke&#8217;s Resources project.</p>
+</div>
+<div class="paragraph">
+<p><a id="CIHHJEGA"></a><a id="the-events-project"></a></p>
+</div>
+<div class="sect4">
+<h5 id="the-events-project"><a class="anchor" href="#the-events-project"></a>The events Project</h5>
+<div class="paragraph">
+<p>Events are one of the core components of Duke&#8217;s Forest. The <code>events</code>
+project, included in all three of the main projects, is the most simple
+project of the application. It has only one class, <code>OrderEvent</code>, but
+this class is responsible for most of the messages between objects in
+the application.</p>
+</div>
+<div class="paragraph">
+<p>The application can send messages based on events to different
+components and react to them based on the qualification of the event.
+The application supports the following qualifiers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>@LoggedIn</code>: For authenticated users</p>
+</li>
+<li>
+<p><code>@New</code>: When a new order is created by the shopping cart</p>
+</li>
+<li>
+<p><code>@Paid</code>: When an order is paid for and ready for shipment</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following code snippet from the <code>PaymentHandler</code> class of Duke&#8217;s
+Store shows how the <code>@Paid</code> event is handled:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Inject</span> <span class="annotation">@Paid</span> <span class="predefined-type">Event</span>&lt;OrderEvent&gt; eventManager;
+
+...
+public <span class="type">void</span> onNewOrder(<span class="annotation">@Observes</span> <span class="annotation">@New</span> OrderEvent event) {
+
+    <span class="keyword">if</span> (processPayment(event)) {
+        orderBean.setOrderStatus(event.getOrderID(),
+                <span class="predefined-type">String</span>.valueOf(OrderBean.Status.PENDING_PAYMENT.getStatus()));
+        logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Payment Approved</span><span class="delimiter">&quot;</span></span>);
+        eventManager.fire(event);
+    } <span class="keyword">else</span> {
+        orderBean.setOrderStatus(event.getOrderID(),
+                <span class="predefined-type">String</span>.valueOf(OrderBean.Status.CANCELLED_PAYMENT.getStatus()));
+        logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Payment Denied</span><span class="delimiter">&quot;</span></span>);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To enable users to add more events to the project easily or update an
+event class with more fields for a new client, this component is a
+separate project within the application.</p>
+</div>
+<div class="paragraph">
+<p><a id="CIHFCIAC"></a><a id="the-entities-project"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="the-entities-project"><a class="anchor" href="#the-entities-project"></a>The entities Project</h5>
+<div class="paragraph">
+<p>The <code>entities</code> project is a Jakarta Persistence project used by
+both Duke&#8217;s Store and Duke&#8217;s Shipment. It is generated from the database
+schema shown in <a href="#GLNXD">Figure 62-3</a> and is also used as a base for
+the entities consumed and produced by the web services through Jakarta XML Binding.
+Each entity has validation rules based on business requirements,
+specified using Jakarta Bean Validation.</p>
+</div>
+<div id="GLNXD" class="paragraph">
+<div class="title"><strong>Figure 62-3 Duke&#8217;s Forest Database Tables and Their Relationships</strong></div>
+<p><span class="image"><img src="data:image/png;base64," alt="This figure shows the database tables in Duke&#8217;s Forest and their relationships."></span></p>
+</div>
+<div class="paragraph">
+<p>The database schema contains eight tables:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>PERSON</code>, which has a one-to-many relationship with <code>PERSON_GROUPS</code>
+and <code>CUSTOMER_ORDER</code></p>
+</li>
+<li>
+<p><code>GROUPS</code>, which has a one-to-many relationship with <code>PERSON_GROUPS</code></p>
+</li>
+<li>
+<p><code>PERSON_GROUPS</code>, which has a many-to-one relationship with <code>PERSON</code>
+and <code>GROUPS</code> (it is the join table between those two tables)</p>
+</li>
+<li>
+<p><code>PRODUCT</code>, which has a many-to-one relationship with <code>CATEGORY</code> and a
+one-to-many relationship with <code>ORDER_DETAIL</code></p>
+</li>
+<li>
+<p><code>CATEGORY</code>, which has a one-to-many relationship with <code>PRODUCT</code></p>
+</li>
+<li>
+<p><code>CUSTOMER_ORDER</code>, which has a one-to-many relationship with
+<code>ORDER_DETAIL</code> and a many-to-one relationship with <code>PERSON</code> and
+<code>ORDER_STATUS</code></p>
+</li>
+<li>
+<p><code>ORDER_DETAIL</code>, which has a many-to-one relationship with <code>PRODUCT</code>
+and <code>CUSTOMER_ORDER</code> (it is the join table between those two tables)</p>
+</li>
+<li>
+<p><code>ORDER_STATUS</code>, which has a one-to-many relationship with
+<code>CUSTOMER_ORDER</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The entity classes that correspond to these tables are as follows.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Person</code>, which defines attributes common to customers and
+administrators. These attributes are the person&#8217;s name and contact
+information, including street and email addresses. The email address has
+a Bean Validation annotation to ensure that the submitted data is
+well-formed. The generated table for the <code>Person</code> entity also has a
+<code>DTYPE</code> field that represents the discriminator column. Its value
+identifies the subclass (<code>Customer</code> or <code>Administrator</code>) to which the
+person belongs.</p>
+</li>
+<li>
+<p><code>Customer</code>, a specialization of <code>Person</code> with a specific field for
+<code>CustomerOrder</code> objects.</p>
+</li>
+<li>
+<p><code>Administrator</code>, a specialization of <code>Person</code> with fields for
+administration privileges.</p>
+</li>
+<li>
+<p><code>Groups</code>, which represents the group (<code>USERS</code> or <code>ADMINS</code>) to which
+the user belongs.</p>
+</li>
+<li>
+<p><code>Product</code>, which defines attributes for products. These attributes
+include name, price, description, associated image, and category.</p>
+</li>
+<li>
+<p><code>Category</code>, which defines attributes for product categories. These
+attributes include a name and a set of tags.</p>
+</li>
+<li>
+<p><code>CustomerOrder</code>, which defines attributes for orders placed by
+customers. These attributes include an amount and a date, along with id
+values for the customer and the order detail.</p>
+</li>
+<li>
+<p><code>OrderDetail</code>, which defines attributes for the order detail. These
+attributes include a quantity and id values for the product and the
+customer.</p>
+</li>
+<li>
+<p><code>OrderStatus</code>, which defines a status attribute for each order.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref301"></a><a id="the-dukes-payment-project"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="the-dukes-payment-project"><a class="anchor" href="#the-dukes-payment-project"></a>The dukes-payment Project</h5>
+<div class="paragraph">
+<p>The <code>dukes-payment</code> project is a web project that holds a simple Payment
+web service. Since this is an example application, it does not obtain
+any real credit information or even customer status to validate the
+payment. For now, the only rule imposed by the payment system is to deny
+all orders above $1,000. This application illustrates a common scenario
+where a third-party payment service is used to validate credit cards or
+bank payments.</p>
+</div>
+<div class="paragraph">
+<p>The project uses HTTP Basic Authentication and JAAS (Java Authentication
+and Authorization Service) to authenticate a customer to a Jakarta REST web
+service. The implementation itself exposes a simple method,
+<code>processPayment</code>, which receives an <code>OrderEvent</code> to evaluate and approve
+or deny the order payment. The method is called from the checkout
+process of Duke&#8217;s Store.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref302"></a><a id="the-dukes-resources-project"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="the-dukes-resources-project"><a class="anchor" href="#the-dukes-resources-project"></a>The dukes-resources Project</h5>
+<div class="paragraph">
+<p>The <code>dukes-resources</code> project contains a number of files used by both
+Duke&#8217;s Store and Duke&#8217;s Shipment, bundled into a JAR file placed in the
+classpath. The resources are in the <code>src/main/resources</code> directory:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>META-INF/resources/css</code>: Two style sheets, <code>default.css</code> and
+<code>jsfcrud.css</code></p>
+</li>
+<li>
+<p><code>META-INF/resources/img</code>: Images used by the projects</p>
+</li>
+<li>
+<p><code>META-INF/resources/js</code>: A JavaScript file, <code>util.js</code></p>
+</li>
+<li>
+<p><code>META-INF/resources/util</code>: Composite components used by the projects</p>
+</li>
+<li>
+<p><code>bundles/Bundle.properties</code>: Application messages in English</p>
+</li>
+<li>
+<p><code>bundles/Bundle_es.properties</code>: Application messages in Spanish</p>
+</li>
+<li>
+<p><code>ValidationMessages.properties</code>: Bean Validation messages in English</p>
+</li>
+<li>
+<p><code>ValidationMessages_es.properties</code>: Bean Validation messages in
+Spanish</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref303"></a><a id="the-dukes-store-project"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="the-dukes-store-project"><a class="anchor" href="#the-dukes-store-project"></a>The Duke&#8217;s Store Project</h5>
+<div class="paragraph">
+<p>Duke&#8217;s Store, a web application, is the core application of Duke&#8217;s
+Forest. It is responsible for the main store interface for customers as
+well as the administration interface.</p>
+</div>
+<div class="paragraph">
+<p>The main interface of Duke&#8217;s Store allows the user to perform the
+following tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Browsing the product catalog</p>
+</li>
+<li>
+<p>Signing up as a new customer</p>
+</li>
+<li>
+<p>Adding products to the shopping cart</p>
+</li>
+<li>
+<p>Checking out</p>
+</li>
+<li>
+<p>Viewing order status</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The administration interface of Duke&#8217;s Store allows administrators to
+perform the following tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Product maintenance (create, edit, update, delete)</p>
+</li>
+<li>
+<p>Category maintenance (create, edit, update, delete)</p>
+</li>
+<li>
+<p>Customer maintenance (create, edit, update, delete)</p>
+</li>
+<li>
+<p>Group maintenance (create, edit, update, delete)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The project also uses stateless session beans as façades for
+interactions with the Jakarta Persistence entities described in <a href="#CIHFCIAC">The
+entities Project</a>, and CDI managed beans as controllers for interactions
+with Facelets pages. The project thus follows the MVC
+(Model-View-Controller) pattern and applies the same pattern to all
+entities and pages, as in the following example.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>AbstractFacade</code> is an abstract class that receives a <code>Type&lt;T&gt;</code> and
+implements the common operations (CRUD) for this type, where <code>&lt;T&gt;</code> is a
+JPA entity.</p>
+</li>
+<li>
+<p><code>ProductBean</code> is a stateless session bean that extends
+<code>AbstractFacade</code>, applying <code>Product</code> as <code>Type&lt;T&gt;</code>, and injects the
+<code>PersistenceContext</code> for the <code>EntityManager</code>. This bean implements any
+custom methods needed to interact with the <code>Product</code> entity or to call a
+custom query.</p>
+</li>
+<li>
+<p><code>ProductController</code> is a CDI managed bean that interacts with the
+necessary enterprise beans and Facelets pages to control the way the
+data will be displayed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code>ProductBean</code> begins as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Stateless</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">ProductBean</span> <span class="directive">extends</span> AbstractFacade&lt;Product&gt; {
+    <span class="directive">private</span> <span class="directive">static</span> <span class="directive">final</span> <span class="predefined-type">Logger</span> logger =
+        <span class="predefined-type">Logger</span>.getLogger(ProductBean.class.getCanonicalName());
+
+    <span class="annotation">@PersistenceContext</span>(unitName=<span class="string"><span class="delimiter">&quot;</span><span class="content">forestPU</span><span class="delimiter">&quot;</span></span>)
+    <span class="directive">private</span> EntityManager em;
+
+    <span class="annotation">@Override</span>
+    <span class="directive">protected</span> EntityManager getEntityManager() {
+        <span class="keyword">return</span> em;
+    }
+    ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a id="sthref304"></a><a id="enterprise-beans-used-in-dukes-store"></a></p>
+</div>
+<div class="sect5">
+<h6 id="enterprise-beans-used-in-dukes-store"><a class="anchor" href="#enterprise-beans-used-in-dukes-store"></a>Enterprise Beans Used in Duke&#8217;s Store</h6>
+<div class="paragraph">
+<p>The enterprise beans used in Duke&#8217;s Store provide the business logic for
+the application and are located in the <code>com.forest.ejb</code> package. All are
+stateless session beans.</p>
+</div>
+<div class="paragraph">
+<p><code>AbstractFacade</code> is not an enterprise bean but an abstract class that
+implements common operations for <code>Type&lt;T&gt;</code>, where <code>&lt;T&gt;</code> is a JPA entity.</p>
+</div>
+<div class="paragraph">
+<p>Most of the other beans extend <code>AbstractFacade</code>, inject the
+<code>PersistenceContext</code>, and implement any needed custom methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>AdministratorBean</code></p>
+</li>
+<li>
+<p><code>CategoryBean</code></p>
+</li>
+<li>
+<p><code>EventDispatcherBean</code></p>
+</li>
+<li>
+<p><code>GroupsBean</code></p>
+</li>
+<li>
+<p><code>OrderBean</code></p>
+</li>
+<li>
+<p><code>OrderDetailBean</code></p>
+</li>
+<li>
+<p><code>OrderJMSManager</code></p>
+</li>
+<li>
+<p><code>OrderStatusBean</code></p>
+</li>
+<li>
+<p><code>ProductBean</code></p>
+</li>
+<li>
+<p><code>ShoppingCart</code></p>
+</li>
+<li>
+<p><code>UserBean</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>ShoppingCart</code> class, although it is in the <code>ejb</code> package, is a CDI
+managed bean with conversation scope, which means that the request
+information will persist across multiple requests. Also, <code>ShoppingCart</code>
+is responsible for starting the event chain for customer orders, which
+invokes the RESTful web service in <code>dukes-payment</code> and publishes an
+order to the Jakarta Messaging queue for shipping approval if the payment is
+successful.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref305"></a><a id="facelets-files-used-in-the-main-interface-of-dukes-store"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="facelets-files-used-in-the-main-interface-of-dukes-store"><a class="anchor" href="#facelets-files-used-in-the-main-interface-of-dukes-store"></a>Facelets Files Used in the Main Interface of Duke&#8217;s Store</h6>
+<div class="paragraph">
+<p>Like the other case study examples, Duke&#8217;s Store uses Facelets to
+display the user interface. The main interface uses a large number of
+Facelets pages to display different areas. The pages are grouped into
+directories based on which module they handle.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>template.xhtml</code>: Template file, used for both main and administration
+interfaces. It first performs a browser check to verify that the user&#8217;s
+browser supports HTML 5, which is required for Duke&#8217;s Forest. It divides
+the screen into several areas and specifies the client page for each
+area.</p>
+</li>
+<li>
+<p><code>topbar.xhtml</code>: Page for the login area at the top of the screen.</p>
+</li>
+<li>
+<p><code>top.xhtml</code>: Page for the title area.</p>
+</li>
+<li>
+<p><code>left.xhtml</code>: Page for the left sidebar.</p>
+</li>
+<li>
+<p><code>index.xhtml</code>: Page for the main screen content.</p>
+</li>
+<li>
+<p><code>login.xhtml</code>: Login page specified in <code>web.xml</code>. The main login
+interface is provided in <code>topbar.xhtml</code>, but this page appears if there
+is a login error.</p>
+</li>
+<li>
+<p><code>admin</code> directory: Pages related to the administration interface,
+described in <a href="#CIHHDHIH">Facelets Files Used in the Administration
+Interface of Duke&#8217;s Store</a>.</p>
+</li>
+<li>
+<p><code>customer</code> directory: Pages related to customers (<code>Create.xhtml</code>,
+<code>Edit.xhtml</code>, <code>List.xhtml</code>, <code>Profile.xhtml</code>, <code>View.xhtml</code>).</p>
+</li>
+<li>
+<p><code>order</code> directory: Pages related to orders (<code>Create.xhtml</code>,
+<code>List.xhtml</code>, <code>MyOrders.xhtml</code>, <code>View.xhtml</code>).</p>
+</li>
+<li>
+<p><code>orderDetail</code> directory: Popup page allowing users to view details of
+an order (<code>View_popup.xhtml</code>).</p>
+</li>
+<li>
+<p><code>product</code> directory: Pages related to products (<code>List.xhtml</code>,
+<code>ListCategory.xhtml</code>, <code>View.xhtml</code>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="CIHHDHIH"></a><a id="facelets-files-used-in-the-administration-interface-of-dukes-store"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="facelets-files-used-in-the-administration-interface-of-dukes-store"><a class="anchor" href="#facelets-files-used-in-the-administration-interface-of-dukes-store"></a>Facelets Files Used in the Administration Interface of Duke&#8217;s Store</h6>
+<div class="paragraph">
+<p>The Facelets pages for the administration interface of Duke&#8217;s Store are
+found in the <code>web/admin</code> directory:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>administrator</code> directory: Pages related to administrator management
+(<code>Create.xhtml</code>, <code>Edit.xhtml</code>, <code>List.xhtm`l, `View.xhtml</code>)</p>
+</li>
+<li>
+<p><code>category</code> directory: Pages related to product category management
+(<code>Create.xhtml</code>, <code>Edit.xhtml</code>, <code>List.xhtml</code>, <code>View.xhtml</code>)</p>
+</li>
+<li>
+<p><code>customer</code> directory: Pages related to customer management
+(<code>Create.xhtml</code>, <code>Edit.xhtml</code>, <code>List.xhtml</code>, <code>Profile.xhtml</code>,
+<code>View.xhtml</code>)</p>
+</li>
+<li>
+<p><code>groups</code> directory: Pages related to group management (<code>Create.xhtml</code>,
+<code>Edit.xhtml</code>, <code>List.xhtml</code>, <code>View.xhtml</code>)</p>
+</li>
+<li>
+<p><code>order</code> directory: Pages related to order management (<code>Create.xhtml</code>,
+<code>Edit.xhtml</code>, <code>List.xhtml</code>, <code>View.xhtml</code>)</p>
+</li>
+<li>
+<p><code>orderDetail</code> directory: Popup page allowing the administrator to view
+details of an order (<code>View_popup.xhtml</code>)</p>
+</li>
+<li>
+<p><code>product</code> directory: Pages related to product management
+(<code>Confirm.xhtm`l, `Create.xhtml</code>, <code>Edit.xhtml</code>, <code>List.xhtml</code>,
+<code>View.xhtml</code>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref306"></a><a id="managed-beans-used-in-dukes-store"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="managed-beans-used-in-dukes-store"><a class="anchor" href="#managed-beans-used-in-dukes-store"></a>Managed Beans Used in Duke&#8217;s Store</h6>
+<div class="paragraph">
+<p>Duke&#8217;s Store uses the following CDI managed beans, which correspond to
+the enterprise beans. The beans are in the <code>com.forest.web</code> package:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>AdministratorController</code></p>
+</li>
+<li>
+<p><code>CategoryController</code></p>
+</li>
+<li>
+<p><code>CustomerController</code></p>
+</li>
+<li>
+<p><code>CustomerOrderController</code></p>
+</li>
+<li>
+<p><code>GroupsController</code></p>
+</li>
+<li>
+<p><code>OrderDetailController</code></p>
+</li>
+<li>
+<p><code>OrderStatusController</code></p>
+</li>
+<li>
+<p><code>ProductController</code></p>
+</li>
+<li>
+<p><code>UserController</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref307"></a><a id="helper-classes-used-in-dukes-store"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="helper-classes-used-in-dukes-store"><a class="anchor" href="#helper-classes-used-in-dukes-store"></a>Helper Classes Used in Duke&#8217;s Store</h6>
+<div class="paragraph">
+<p>The CDI managed beans in the main interface of Duke&#8217;s Store use the
+following helper classes, found in the <code>com.forest.web.util</code> package:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>AbstractPaginationHelper</code>: An abstract class with methods used by the
+managed beans</p>
+</li>
+<li>
+<p><code>ImageServlet</code>: A servlet class that retrieves the image content from
+the database and displays it</p>
+</li>
+<li>
+<p><code>JsfUtil</code>: Class used for Jakarta Server Faces operations, such as queuing
+messages on a <code>FacesContext</code> instance</p>
+</li>
+<li>
+<p><code>MD5Util</code>: Class used by the <code>CustomerController</code> managed bean to
+generate an encrypted password for a user</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="CIHEBAFD"></a><a id="qualifiers-used-in-dukes-store"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="qualifiers-used-in-dukes-store"><a class="anchor" href="#qualifiers-used-in-dukes-store"></a>Qualifiers Used in Duke&#8217;s Store</h6>
+<div class="paragraph">
+<p>Duke&#8217;s Store defines the following qualifiers in the
+<code>com.forest.qualifiers</code> package:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>@LoggedIn</code>: Qualifies a user as having logged in</p>
+</li>
+<li>
+<p><code>@New</code>: Qualifies an order as new</p>
+</li>
+<li>
+<p><code>@Paid</code>: Qualifies an order as paid</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref308"></a><a id="event-handlers-used-in-dukes-store"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="event-handlers-used-in-dukes-store"><a class="anchor" href="#event-handlers-used-in-dukes-store"></a>Event Handlers Used in Duke&#8217;s Store</h6>
+<div class="paragraph">
+<p>Duke&#8217;s Store defines event handlers related to the <code>OrderEvent</code> class
+packaged in the <code>events</code> project (see <a href="#CIHHJEGA">The events
+Project</a>). The event handlers are in the <code>com.forest.handlers</code> package.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>IOrderHandler</code>: The <code>IOrderHandler</code> interface defines a method,
+<code>onNewOrder</code>, implemented by the two handler classes.</p>
+</li>
+<li>
+<p><code>PaymentHandler</code>: The <code>ShoppingCart</code> bean fires an <code>OrderEvent</code>
+qualified as <code>@New</code>. The <code>onNewOrder</code> method of <code>PaymentHandler</code>
+observes these events and, when it intercepts them, processes the
+payment using the Duke&#8217;s Payment web service. After a successful
+response from the web service, <code>PaymentHandler</code> fires the <code>OrderEvent</code>
+again, this time qualified as <code>@Paid</code>.</p>
+</li>
+<li>
+<p><code>DeliveryHandler</code>: The <code>onNewOrder</code> method of <code>DeliveryHandler</code>
+observes <code>OrderEvent</code> objects qualified as <code>@Paid</code> (orders paid and
+ready for delivery) and modifies the order status to <code>PENDING_SHIPMENT</code>.
+When an administrator accesses Duke&#8217;s Shipment, it will call the Order
+Service, a RESTful web service, and ask for all orders in the database
+that are ready for delivery.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref309"></a><a id="deployment-descriptors-used-in-dukes-store"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="deployment-descriptors-used-in-dukes-store"><a class="anchor" href="#deployment-descriptors-used-in-dukes-store"></a>Deployment Descriptors Used in Duke&#8217;s Store</h6>
+<div class="paragraph">
+<p>Duke&#8217;s Store uses the following deployment descriptors, located in the
+<code>web/WEB-INF</code> directory:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>faces-config.xml</code>: The Jakarta Server Faces configuration file</p>
+</li>
+<li>
+<p><code>glassfish-web.xml</code>: The configuration file specific to GlassFish
+Server</p>
+</li>
+<li>
+<p><code>web.xml</code>: The web application configuration file</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref310"></a><a id="the-dukes-shipment-project"></a></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="the-dukes-shipment-project"><a class="anchor" href="#the-dukes-shipment-project"></a>The Duke&#8217;s Shipment Project</h5>
+<div class="paragraph">
+<p>Duke&#8217;s Shipment is a web application with a login page, a main Facelets
+page, and some other objects. This application, which is accessible only
+to administrators, consumes orders from a Jakarta Messaging queue and calls the
+RESTful web service exposed by Duke&#8217;s Store to update the order status.
+The main page of Duke&#8217;s Shipment shows a list of orders pending shipping
+approval and a list of shipped orders. The administrator can approve or
+deny orders for shipping. If approved, the order is shipped, and it
+appears under the Shipped heading. If denied, the order disappears from
+the page, and on the customer&#8217;s Orders list it appears as cancelled.</p>
+</div>
+<div class="paragraph">
+<p>There is also a gear icon on the Pending list that makes an Ajax call to
+the Order Service to refresh the list without refreshing the page. The
+code looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">&lt;h:commandLink&gt;
+    &lt;h:graphicImage library=<span class="string"><span class="delimiter">&quot;</span><span class="content">img</span><span class="delimiter">&quot;</span></span> title=<span class="string"><span class="delimiter">&quot;</span><span class="content">Check for new orders</span><span class="delimiter">&quot;</span></span>
+                    style=<span class="string"><span class="delimiter">&quot;</span><span class="content">border:0px</span><span class="delimiter">&quot;</span></span> name=<span class="string"><span class="delimiter">&quot;</span><span class="content">refresh.png</span><span class="delimiter">&quot;</span></span>/&gt;
+    &lt;f:ajax execute=<span class="string"><span class="delimiter">&quot;</span><span class="content">@form</span><span class="delimiter">&quot;</span></span> render=<span class="string"><span class="delimiter">&quot;</span><span class="content">@form</span><span class="delimiter">&quot;</span></span> /&gt;
+&lt;/h:commandLink&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a id="sthref311"></a><a id="enterprise-beans-used-in-dukes-shipment"></a></p>
+</div>
+<div class="sect5">
+<h6 id="enterprise-beans-used-in-dukes-shipment"><a class="anchor" href="#enterprise-beans-used-in-dukes-shipment"></a>Enterprise Beans Used in Duke&#8217;s Shipment</h6>
+<div class="paragraph">
+<p>The <code>UserBean</code> stateless session bean used in Duke&#8217;s Shipment provides
+the business logic for the application and is located in the
+<code>com.forest.shipment.session</code> package.</p>
+</div>
+<div class="paragraph">
+<p>Like Duke&#8217;s Store, Duke&#8217;s Shipment uses the <code>AbstractFacade</code> class. This
+class is not an enterprise bean but an abstract class that implements
+common operations for <code>Type&lt;T&gt;</code>, where <code>&lt;T&gt;</code> is a Jakarta Persistence entity.</p>
+</div>
+<div class="paragraph">
+<p>The <code>OrderBrowser</code> stateless session bean, located in the
+<code>com.forest.shipment.ejb</code> package, has one method that browses the Jakarta Messaging
+order queue and another that consumes an order message after the
+administrator approves or denies the order for shipment.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref312"></a><a id="facelets-files-used-in-dukes-shipment"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="facelets-files-used-in-dukes-shipment"><a class="anchor" href="#facelets-files-used-in-dukes-shipment"></a>Facelets Files Used in Duke&#8217;s Shipment</h6>
+<div class="paragraph">
+<p>Duke&#8217;s Shipment has only one page, so it has many fewer Facelets files
+than Duke&#8217;s Store.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>template.xhtml</code>: The template file, like the one in Duke&#8217;s Store,
+first performs a browser check to verify that the user&#8217;s browser
+supports HTML 5, which is required for Duke&#8217;s Forest. It divides the
+screen into areas and specifies the client page for each area.</p>
+</li>
+<li>
+<p><code>topbar.xhtml</code>: Page for the login area at the top of the screen.</p>
+</li>
+<li>
+<p><code>top.xhtml</code>: Page for the title area.</p>
+</li>
+<li>
+<p><code>index.xhtml</code>: Page for the initial main screen content.</p>
+</li>
+<li>
+<p><code>login.xhtml</code>: Login page specified in <code>web.xml</code>. The main login
+interface is provided in <code>topbar.xhtml</code>, but this page appears if there
+is a login error.</p>
+</li>
+<li>
+<p><code>admin/index.xhtml</code>: Page for the main screen content after
+authentication.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref313"></a><a id="managed-beans-used-in-dukes-shipment"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="managed-beans-used-in-dukes-shipment"><a class="anchor" href="#managed-beans-used-in-dukes-shipment"></a>Managed Beans Used in Duke&#8217;s Shipment</h6>
+<div class="paragraph">
+<p>Duke&#8217;s Shipment uses the following CDI managed beans, in the
+<code>com.forest.shipment</code> package:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>web.ShippingBean</code>: Managed bean that acts as a client to the Order
+Service</p>
+</li>
+<li>
+<p><code>web.UserController</code>: Managed bean that corresponds to the <code>UserBean</code>
+session bean</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref314"></a><a id="helper-class-used-in-dukes-shipment"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="helper-class-used-in-dukes-shipment"><a class="anchor" href="#helper-class-used-in-dukes-shipment"></a>Helper Class Used in Duke&#8217;s Shipment</h6>
+<div class="paragraph">
+<p>The Duke&#8217;s Shipment managed beans use only one helper class, found in
+the <code>com.forest.shipment.web.util</code> package:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>JsfUtil</code>: Class used for Jakarta Server Faces operations, such as queuing
+messages on a <code>FacesContext</code> instance</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="sthref315"></a><a id="qualifier-used-in-dukes-shipment"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="qualifier-used-in-dukes-shipment"><a class="anchor" href="#qualifier-used-in-dukes-shipment"></a>Qualifier Used in Duke&#8217;s Shipment</h6>
+<div class="paragraph">
+<p>Duke&#8217;s Shipment includes the <code>@LoggedIn</code> qualifier described in
+<a href="#CIHEBAFD">Qualifiers Used in Duke&#8217;s Store</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref316"></a><a id="deployment-descriptors-used-in-dukes-shipment"></a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="deployment-descriptors-used-in-dukes-shipment"><a class="anchor" href="#deployment-descriptors-used-in-dukes-shipment"></a>Deployment Descriptors Used in Duke&#8217;s Shipment</h6>
+<div class="paragraph">
+<p>Duke&#8217;s Shipment uses the following deployment descriptors:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>faces-config.xml</code>: The Jakarta Server Faces configuration file</p>
+</li>
+<li>
+<p><code>glassfish-web.xml</code>: The configuration file specific to GlassFish
+Server</p>
+</li>
+<li>
+<p><code>web.xml</code>: The web application configuration file</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GLNQP"></a><a id="building-and-deploying-the-dukes-forest-case-study-application"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="building-and-deploying-the-dukes-forest-case-study-application"><a class="anchor" href="#building-and-deploying-the-dukes-forest-case-study-application"></a>Building and Deploying the Duke&#8217;s Forest Case Study Application</h4>
+<div class="paragraph">
+<p>You can use NetBeans IDE or Maven to build and deploy Duke&#8217;s Forest.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#CHDJDIFH">To Build and Deploy the Duke&#8217;s Forest Application Using
+NetBeans IDE</a></p>
+</li>
+<li>
+<p><a href="#CHDEJHBJ">To Build and Deploy the Duke&#8217;s Forest Application Using
+Maven</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="CHDJDIFH"></a><a id="to-build-and-deploy-the-dukes-forest-application-using-netbeans-ide"></a></p>
+</div>
+<div class="sect4">
+<h5 id="to-build-and-deploy-the-dukes-forest-application-using-netbeans-ide"><a class="anchor" href="#to-build-and-deploy-the-dukes-forest-application-using-netbeans-ide"></a>To Build and Deploy the Duke&#8217;s Forest Application Using NetBeans IDE</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="#BNADI">Starting and Stopping GlassFish
+Server</a>), as well as the database server (see
+<a href="#BNADK">Starting and Stopping Apache Derby</a>).</p>
+</li>
+<li>
+<p>From the File menu, choose Open Project.</p>
+</li>
+<li>
+<p>In the Open Project dialog box, navigate to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">tut-install/examples/<span class="keyword">case</span>-studies</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Select the <code>dukes-forest</code> folder.</p>
+</li>
+<li>
+<p>Select the Open Required Projects check box and click Open Project.</p>
+</li>
+<li>
+<p>Right-click the <code>dukes-forest</code> folder and select Build.</p>
+<div class="paragraph">
+<p>This task configures the server, creates and populates the database,
+builds all the subprojects, assembles them into JAR and WAR files, and
+deploys the <code>dukes-payment</code>, <code>dukes-store,</code> and <code>dukes-shipment</code>
+applications.</p>
+</div>
+<div class="paragraph">
+<p>To configure the server, this task creates a JDBC security realm named
+jdbcRealm, enables default principal-to-role mapping, and enables single
+sign-on (SSO) for the HTTP Service.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="CHDEJHBJ"></a><a id="to-build-and-deploy-the-dukes-forest-application-using-maven"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="to-build-and-deploy-the-dukes-forest-application-using-maven"><a class="anchor" href="#to-build-and-deploy-the-dukes-forest-application-using-maven"></a>To Build and Deploy the Duke&#8217;s Forest Application Using Maven</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make sure that GlassFish Server has been started (see
+<a href="#BNADI">Starting and Stopping GlassFish
+Server</a>), as well as the database server (see
+<a href="#BNADK">Starting and Stopping Apache Derby</a>).</p>
+</li>
+<li>
+<p>In a terminal window, go to:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">tut-install/examples/<span class="keyword">case</span>-studies/dukes-forest/</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Enter the following command to configure the server, create and
+populate the database, build all the subprojects, assemble them into JAR
+and WAR files, and deploy the <code>dukes-payment</code>, <code>dukes-store,</code> and
+<code>dukes-shipment</code> applications:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">mvn install</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To configure the server, this task creates a JDBC security realm named
+jdbcRealm, enables default principal-to-role mapping, and enables single
+sign-on (SSO) for the HTTP Service.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="GLNSX"></a><a id="running-the-dukes-forest-application"></a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="running-the-dukes-forest-application"><a class="anchor" href="#running-the-dukes-forest-application"></a>Running the Duke&#8217;s Forest Application</h4>
+<div class="paragraph">
+<p>Running the Duke&#8217;s Forest application involves several tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Registering as a customer of Duke&#8217;s Store</p>
+</li>
+<li>
+<p>As a customer, purchasing products</p>
+</li>
+<li>
+<p>As an administrator, approving or denying shipment of a product</p>
+</li>
+<li>
+<p>As an administrator, creating a new product, customer, group, or
+category</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#CHDBDEHH">To Register as a Duke&#8217;s Store Customer</a></p>
+</li>
+<li>
+<p><a href="#CHDCEJIC">To Purchase Products</a></p>
+</li>
+<li>
+<p><a href="#CHDICAIJ">To Approve Shipment of a Product</a></p>
+</li>
+<li>
+<p><a href="#CHDIFEGC">To Create a New Product</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="CHDBDEHH"></a><a id="to-register-as-a-dukes-store-customer"></a></p>
+</div>
+<div class="sect4">
+<h5 id="to-register-as-a-dukes-store-customer"><a class="anchor" href="#to-register-as-a-dukes-store-customer"></a>To Register as a Duke&#8217;s Store Customer</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In a web browser, enter the following URL:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">http:<span class="comment">//localhost:8080/dukes-store</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Duke&#8217;s Forest - Store page opens.</p>
+</div>
+</li>
+<li>
+<p>Click Sign Up at the top of the page.</p>
+</li>
+<li>
+<p>Fill in the form fields, then click Save.</p>
+<div class="paragraph">
+<p>All fields are required, and the Password value must be at least 7
+characters in length.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="CHDCEJIC"></a><a id="to-purchase-products"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="to-purchase-products"><a class="anchor" href="#to-purchase-products"></a>To Purchase Products</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To log in as the user you created, or as one of two users already in
+the database, enter the user name and password and click Log In.</p>
+<div class="paragraph">
+<p>The preexisting users have the user names <code>jack@example.com</code> and
+<code>robert@example.com</code>, and they both have the same password, <code>1234</code>.</p>
+</div>
+</li>
+<li>
+<p>Click Products in the left sidebar.</p>
+</li>
+<li>
+<p>On the page that appears, click one of the categories (Plants, Food,
+Services, or Tools).</p>
+</li>
+<li>
+<p>Choose a product and click Add to Cart.</p>
+<div class="paragraph">
+<p>You can order only one of any one product, but you can order multiple
+different products in multiple categories. The products and a running
+total appear in the Shopping Cart in the left sidebar.</p>
+</div>
+</li>
+<li>
+<p>When you have finished choosing products, click Checkout.</p>
+<div class="paragraph">
+<p>A message appears: "Your order is being processed. Check the Orders page
+to see the status of your order."</p>
+</div>
+</li>
+<li>
+<p>Click Orders in the left sidebar to verify your order.</p>
+<div class="paragraph">
+<p>If the total of the order exceeds $1,000, the status of the order is
+"Order cancelled," because the Payment web service denies orders over
+that limit. Otherwise, the status is "Ready to ship."</p>
+</div>
+</li>
+<li>
+<p>When you have finished placing orders, click Logout at the top of
+the page.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="CHDICAIJ"></a><a id="to-approve-shipment-of-a-product"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="to-approve-shipment-of-a-product"><a class="anchor" href="#to-approve-shipment-of-a-product"></a>To Approve Shipment of a Product</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Log in to Duke&#8217;s Store as an administrator.</p>
+<div class="paragraph">
+<p>Your user name is <code>admin@example.com</code>, and your password is <code>1234</code>.</p>
+</div>
+<div class="paragraph">
+<p>The main administration page allows you to view categories, customers,
+administrators, groups, products, and orders, and to create new objects
+of all types except orders.</p>
+</div>
+</li>
+<li>
+<p>At the bottom of the page, click Approve Shipment.</p>
+<div class="paragraph">
+<p>This action takes you to Duke&#8217;s Shipment, retaining your administrator
+login.</p>
+</div>
+</li>
+<li>
+<p>On the Pending list, click Approve to approve an order and move it
+to the Shipped area of the page.</p>
+<div class="paragraph">
+<p>If you click Deny, the order disappears from the page. If you log in to
+Duke&#8217;s Store again as the customer, it will appear in the Orders list as
+"Order cancelled."</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To return to Duke&#8217;s Store from Duke&#8217;s Shipment, click Return to Duke&#8217;s
+Store.</p>
+</div>
+<div class="paragraph">
+<p><a id="CHDIFEGC"></a><a id="to-create-a-new-product"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="to-create-a-new-product"><a class="anchor" href="#to-create-a-new-product"></a>To Create a New Product</h5>
+<div class="paragraph">
+<p>You can create other kinds of objects as well as products. Creating
+products is more complex than the other creation processes, so it is
+described here.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Log in to Duke&#8217;s Store as an administrator.</p>
+</li>
+<li>
+<p>On the main administration page, click Create New Product.</p>
+</li>
+<li>
+<p>Enter values in the Name, Price, and Description fields.</p>
+</li>
+<li>
+<p>Select a category, then click Next.</p>
+</li>
+<li>
+<p>On the Upload the Product Image page, click Browse to locate an
+image on your file system using a file chooser.</p>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>On the next page, view the product fields, then click Done.</p>
+</li>
+<li>
+<p>Click Products in the left sidebar, then click the category to
+verify that the product has been added.</p>
+</li>
+<li>
+<p>Click Administration at the top of the page to return to the main
+administration page, or click Logout to log out.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-04-26 15:32:37 UTC
+</div>
+</div>
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.code{padding:0 0 0 .75em}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
+</body>
+</html>

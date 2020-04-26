@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.2">
+<title>Bean Validation</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement when using as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Bean Validation</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#introduction-to-jakarta-bean-validation">Introduction to Jakarta Bean Validation</a></li>
+<li><a href="#bean-validation-advanced-topics">Bean Validation: Advanced Topics</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect2">
+<h3 id="introduction-to-jakarta-bean-validation"><a class="anchor" href="#introduction-to-jakarta-bean-validation"></a>Introduction to Jakarta Bean Validation</h3>
+<div class="paragraph">
+<p><a id="CHDGJIIA"></a><a id="introduction-to-bean-validation"></a></p>
+</div>
+<div class="paragraph">
+<p>This chapter describes Jakarta Bean Validation available as part of the Jakarta EE platform and the facility for validating objects, object members,
+methods, and constructors.</p>
+</div>
+<div class="paragraph">
+<p><a id="A1101988"></a><a id="overview-of-bean-validation"></a></p>
+</div>
+<div class="sect3">
+<h4 id="overview-of-jakarta-bean-validation"><a class="anchor" href="#overview-of-jakarta-bean-validation"></a>Overview of Jakarta Bean Validation</h4>
+<div class="paragraph">
+<p>Validating input received from the user to maintain data integrity is an
+important part of application logic. Validation of data can take place
+at different layers in even the simplest of applications, as shown in
+<a href="#GIPOB">Developing a Simple Facelets Application:
+The guessnumber-jsf Example Application</a>. The <code>guessnumber-jsf</code> example
+application validates the user input (in the <code>h:inputText</code> tag) for
+numerical data at the presentation layer and for a valid range of
+numbers at the business layer.</p>
+</div>
+<div class="paragraph">
+<p>Jakarta Bean Validation provides a
+facility for validating objects, object members, methods, and
+constructors. In Jakarta EE environments, Jakarta Bean Validation integrates with
+Jakarta EE containers and services to allow developers to easily define and
+enforce validation constraints. Jakarta Bean Validation is available as part of
+the Jakarta EE platform.</p>
+</div>
+<div class="paragraph">
+<p><a id="GIRCZ"></a><a id="using-bean-validation-constraints"></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="using-jakarta-bean-validation-constraints"><a class="anchor" href="#using-jakarta-bean-validation-constraints"></a>Using Jakarta Bean Validation Constraints</h4>
+<div class="paragraph">
+<p>The Jakarta Bean Validation model is supported by constraints in the form of
+annotations placed on a field, method, or class of a JavaBeans
+component, such as a managed bean.</p>
+</div>
+<div class="paragraph">
+<p>Constraints can be built in or user defined. User-defined constraints
+are called custom constraints. Several built-in constraints are
+available in the <code>javax.validation.constraints</code> package.
+<a href="#GKAGK">Table 23-1</a> lists all the built-in constraints. See
+<a href="#GKFGX">Creating Custom Constraints</a>
+for information on creating custom constraints.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref121"></a><a id="GKAGK"></a></p>
+</div>
+<div class="paragraph">
+<p>Table 23-1 Built-In Jakarta Bean Validation Constraints</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 99%;">
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 59.5959%;">
+<col style="width: 18.1819%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Constraint</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Example</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@AssertFalse</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be <code>false</code>.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@AssertFalse</span>
+<span class="type">boolean</span> isUnsupported;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@AssertTrue</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be <code>true</code>.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@AssertTrue</span>
+<span class="type">boolean</span> isActive;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DecimalMax</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a decimal
+value lower than or equal to the number in the value element.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@DecimalMax</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">30.00</span><span class="delimiter">&quot;</span></span>)
+<span class="predefined-type">BigDecimal</span> discount;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DecimalMin</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a decimal
+value greater than or equal to the number in the value element.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@DecimalMin</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">5.00</span><span class="delimiter">&quot;</span></span>)
+<span class="predefined-type">BigDecimal</span> discount;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Digits</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a number within a
+specified range. The <code>integer</code> element specifies the maximum integral
+digits for the number, and the <code>fraction</code> element specifies the maximum
+fractional digits for the number.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Digits</span>(integer=<span class="integer">6</span>, fraction=<span class="integer">2</span>)
+<span class="predefined-type">BigDecimal</span> price;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Email</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a valid email address.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Email</span>
+<span class="predefined-type">String</span> emailaddress;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Future</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a date in the
+future.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Future</span>
+<span class="predefined-type">Date</span> eventDate;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@FutureOrPresent</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TThe value of the field or property must be a date or time in present or future.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@FutureOrPresent</span>
+<span class="predefined-type">Time</span> travelTime;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Max</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be an integer value
+lower than or equal to the number in the value element.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Max</span>(<span class="integer">10</span>)
+<span class="type">int</span> quantity;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Min</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be an integer value
+greater than or equal to the number in the value element.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Min</span>(<span class="integer">5</span>)
+<span class="type">int</span> quantity;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Negative</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a negative number.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Negative</span>
+<span class="type">int</span> basementFloor;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@NegativeOrZero</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be negative or zero.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@NegativeOrZero</span>
+<span class="type">int</span> debtValue;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@NotBlank</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must contain atleast one non-white space character.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@NotBlank</span>
+<span class="predefined-type">String</span> message;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@NotEmpty</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must not be empty. The length of the characters or array, and the size of a collection or map are evaluated.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@NotEmpty</span>
+<span class="predefined-type">String</span> message;;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@NotNull</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must not be null.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@NotNull</span>
+<span class="predefined-type">String</span> username;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be null.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Null</span>
+<span class="predefined-type">String</span> unusedString;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Past</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a date in the past.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Past</span>
+<span class="predefined-type">Date</span> birthday;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@PastOrPresent</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a date or time in the past or present.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@PastOrPresent</span>
+<span class="predefined-type">Date</span> travelDate;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Pattern</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must match the regular
+expression defined in the <code>regexp</code> element.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Pattern</span>(regexp=<span class="string"><span class="delimiter">&quot;</span><span class="char">\\</span><span class="content">(</span><span class="char">\\</span><span class="content">d{3}</span><span class="char">\\</span><span class="content">)</span><span class="char">\\</span><span class="content">d{3}-</span><span class="char">\\</span><span class="content">d{4}</span><span class="delimiter">&quot;</span></span>)
+<span class="predefined-type">String</span> phoneNumber;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Positive</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a positive number.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Positive</span>
+<span class="predefined-type">BigDecimal</span> area;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@PositiveOrZero</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the field or property must be a positive number or zero. .</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@PositiveOrZero</span>
+<span class="type">int</span> totalGoals;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Size</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The size of the field or property is evaluated and must match
+the specified boundaries. If the field or property is a <code>String</code>, the
+size of the string is evaluated. If the field or property is a
+<code>Collection</code>, the size of the <code>Collection</code> is evaluated. If the field or
+property is a <code>Map</code>, the size of the <code>Map</code> is evaluated. If the field or
+property is an array, the size of the array is evaluated. Use one of the
+optional <code>max</code> or <code>min</code> elements to specify the boundaries.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Size</span>(min=<span class="integer">2</span>, max=<span class="integer">240</span>)
+<span class="predefined-type">String</span> briefMessage;</code></pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>In the following example, a constraint is placed on a field using the
+built-in <code>@NotNull</code> constraint:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Name</span> {
+    <span class="annotation">@NotNull</span>
+    <span class="directive">private</span> <span class="predefined-type">String</span> firstname;
+
+    <span class="annotation">@NotNull</span>
+    <span class="directive">private</span> <span class="predefined-type">String</span> lastname;
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also place more than one constraint on a single JavaBeans
+component object. For example, you can place an additional constraint
+for size of field on the <code>firstname</code> and the <code>lastname</code> fields:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Name</span> {
+    <span class="annotation">@NotNull</span>
+    <span class="annotation">@Size</span>(min=<span class="integer">1</span>, max=<span class="integer">16</span>)
+    <span class="directive">private</span> <span class="predefined-type">String</span> firstname;
+
+    <span class="annotation">@NotNull</span>
+    <span class="annotation">@Size</span>(min=<span class="integer">1</span>, max=<span class="integer">16</span>)
+    <span class="directive">private</span> <span class="predefined-type">String</span> lastname;
+    ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following example shows a method with a user-defined constraint that
+checks user-defined constraint that checks for a predefined phone number pattern, such as a country specific phone number:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@USPhoneNumber</span>
+<span class="directive">public</span> <span class="predefined-type">String</span> getPhone() {
+    <span class="keyword">return</span> phone;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For a built-in constraint, a default implementation is available. A
+user-defined or custom constraint needs a validation implementation. In
+the preceding example, the <code>@USPhoneNumber</code> custom constraint needs an
+implementation class.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="repeating-annotations"><a class="anchor" href="#repeating-annotations"></a>Repeating Annotations</h4>
+<div id="repeating_annotations" class="paragraph">
+<p>In Bean Validation 2.0, you can specify the same constraint several times on a validation target using repeating annotation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Account</span> {
+
+    <span class="annotation">@Max</span> (value = <span class="integer">2000</span>, groups = Default.class, message = <span class="string"><span class="delimiter">&quot;</span><span class="content">max.value</span><span class="delimiter">&quot;</span></span>)
+    <span class="annotation">@Max</span> (value = <span class="integer">5000</span>, groups = GoldCustomer.class, message = <span class="string"><span class="delimiter">&quot;</span><span class="content">max.value</span><span class="delimiter">&quot;</span></span>)
+    <span class="directive">private</span> <span class="type">long</span> withdrawalAmount;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All in-built constraints from <code>javax .validation.constraints</code> package support repeatable annotations. Similarly, custom constraints can use <code>@Repeatable</code> annotation. In the following sample, depending on whether the group is <code>PeakHour</code> or <code>NonPeakHour</code>, the car instance is validated as either two passengers or three passengers based car, and then listed as eligible in the car pool lane:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="comment">/**
+ * Validate whether a car is eligible for car pool lane
+ */</span>
+<span class="annotation">@Documented</span>
+<span class="annotation">@Constraint</span>(validatedBy = CarPoolValidator.class)
+<span class="annotation">@Target</span>({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER, TYPE_USE })
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="annotation">@Repeatable</span>(<span class="predefined-type">List</span>.class)
+<span class="directive">public</span> <span class="annotation">@interface</span> CarPool {
+
+    <span class="predefined-type">String</span> message() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">{CarPool.message}</span><span class="delimiter">&quot;</span></span>;
+
+    <span class="predefined-type">Class</span>&lt;?&gt;<span class="type">[]</span> groups() <span class="keyword">default</span> {};
+
+    <span class="type">int</span> value();
+
+    <span class="predefined-type">Class</span>&lt;? <span class="directive">extends</span> Payload&gt;<span class="type">[]</span> payload() <span class="keyword">default</span> {};
+
+    <span class="comment">/**
+     * Defines several @CarPool annotations on the same element
+     * @see (@link CarPool}
+     */</span>
+    <span class="annotation">@Target</span>({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER, TYPE_USE })
+    <span class="annotation">@Retention</span>(RUNTIME)
+    <span class="annotation">@Documented</span>
+    <span class="annotation">@interface</span> <span class="predefined-type">List</span> {
+        CarPool<span class="type">[]</span> value();
+    }
+}
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Car</span>{
+
+  <span class="directive">private</span> <span class="predefined-type">String</span> registrationNumber;
+
+  <span class="annotation">@CarPool</span>(value = <span class="integer">2</span>, group = NonPeakHour.class)
+  <span class="annotation">@CarPool</span>(value = <span class="integer">3</span>, group = {Default.class, PeakHour.class})
+  <span class="directive">private</span> <span class="type">int</span> totalPassengers;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Any validation failures are gracefully handled and can be displayed by
+the <code>h:messages</code> tag.</p>
+</div>
+<div class="paragraph">
+<p>Any managed bean that contains Bean Validation annotations automatically
+gets validation constraints placed on the fields on a Jakarta Server Faces
+application&#8217;s web pages.</p>
+</div>
+<div class="paragraph">
+<p>For more information on using validation constraints, see the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GKAHP">Chapter 24, "Jakarta Bean Validation:
+Advanced Topics"</a></p>
+</li>
+<li>
+<p><a href="#BABCJEDF">Validating Resource Data with Jakarta Bean
+Validation</a></p>
+</li>
+<li>
+<p><a href="#GKAHQ">Validating Persistent Fields and
+Properties</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKCRG"></a><a id="validating-null-and-empty-strings"></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="validating-null-and-empty-strings"><a class="anchor" href="#validating-null-and-empty-strings"></a>Validating Null and Empty Strings</h4>
+<div class="paragraph">
+<p>The Java programming language distinguishes between null and empty
+strings. An empty string is a string instance of zero length, whereas a
+null string has no value at all.</p>
+</div>
+<div class="paragraph">
+<p>An empty string is represented as <code>""</code>. It is a character sequence of
+zero characters. A null string is represented by <code>null</code>. It can be
+described as the absence of a string instance.</p>
+</div>
+<div class="paragraph">
+<p>Managed bean elements represented as a Jakarta Server Faces text component
+such as <code>inputText</code> are initialized with the value of the empty string
+by the Jakarta Server Faces implementation. Validating these strings can be
+an issue when user input for such fields is not required. Consider the
+following example, in which the string <code>testString</code> is a bean variable
+that will be set using input entered by the user. In this case, the user
+input for the field is not required.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">if</span> (testString==<span class="predefined-constant">null</span>) {
+    doSomething();
+} <span class="keyword">else</span> {
+    doAnotherThing();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By default, the <code>doAnotherThing</code> method is called even when the user
+enters no data, because the <code>testString</code> element has been initialized
+with the value of an empty string.</p>
+</div>
+<div class="paragraph">
+<p>In order for the Bean Validation model to work as intended, you must set
+the context parameter
+<code>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</code> to <code>true</code>
+in the web deployment descriptor file, <code>web.xml</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;context-param&gt;</span>
+    <span class="tag">&lt;param-name&gt;</span>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL<span class="tag">&lt;/param-name&gt;</span>
+    <span class="tag">&lt;param-value&gt;</span>true<span class="tag">&lt;/param-value&gt;</span>
+<span class="tag">&lt;/context-param&gt;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This parameter enables the Jakarta Server Faces implementation to treat
+empty strings as null.</p>
+</div>
+<div class="paragraph">
+<p>Suppose, on the other hand, that you have a <code>@NotNull</code> constraint on an
+element, meaning that input is required. In this case, an empty string
+will pass this validation constraint. However, if you set the context
+parameter <code>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</code>
+to <code>true</code>, the value of the managed bean attribute is passed to the Jakarta Bean
+Validation runtime as a null value, causing the <code>@NotNull</code> constraint to
+fail.</p>
+</div>
+<div class="paragraph">
+<p><a id="CACJIBEJ"></a><a id="validating-constructors-and-methods"></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="validating-constructors-and-methods"><a class="anchor" href="#validating-constructors-and-methods"></a>Validating Constructors and Methods</h4>
+<div class="paragraph">
+<p>Jakarta Bean Validation constraints may be placed on the parameters of nonstatic
+methods and constructors and on the return values of nonstatic methods.
+Static methods and constructors will not be validated.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Employee</span> {
+...
+  public Employee (<span class="annotation">@NotNull</span> <span class="predefined-type">String</span> name) { ... }
+
+  <span class="directive">public</span> <span class="type">void</span> setSalary(
+      <span class="annotation">@NotNull</span>
+      <span class="annotation">@Digits</span>(integer=<span class="integer">6</span>, fraction=<span class="integer">2</span>) <span class="predefined-type">BigDecimal</span> salary,
+      <span class="annotation">@NotNull</span>
+      <span class="annotation">@ValidCurrency</span>
+      <span class="predefined-type">String</span> currencyType) {
+    ...
+  }
+...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the <code>Employee</code> class has a constructor constraint
+requiring a name and has two sets of method parameter constraints. The
+amount of the salary for the employee must not be null, cannot be
+greater than six digits to the left of the decimal point, and cannot
+have more than two digits to the right of the decimal place. The
+currency type must not be null and is validated using a custom
+constraint.</p>
+</div>
+<div class="paragraph">
+<p>If you add method constraints to classes in an object hierarchy, special
+care must be taken to avoid unintended behavior by subtypes. See
+<a href="#CIHGJBGI">Using Method Constraints
+in Type Hierarchies</a> for more information.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref122"></a><a id="cross-parameter-constraints"></a></p>
+</div>
+<div class="sect4">
+<h5 id="cross-parameter-constraints"><a class="anchor" href="#cross-parameter-constraints"></a>Cross-Parameter Constraints</h5>
+<div class="paragraph">
+<p>Constraints that apply to multiple parameters are called cross-parameter
+constraints, and may be applied at the method or constructor level.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@ConsistentPhoneParameters</span>
+<span class="annotation">@NotNull</span>
+<span class="directive">public</span> Employee (<span class="predefined-type">String</span> name, <span class="predefined-type">String</span> officePhone, <span class="predefined-type">String</span> mobilePhone) {
+  ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, a custom cross-parameter constraint,
+<code>@ConsistentPhoneParameters</code>, validates that the format of the phone
+numbers passed into the constructor match. The <code>@NotNull</code> constraint
+applies to all the parameters in the constructor.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Tip:</p>
+</div>
+<div class="paragraph">
+<p>Cross-parameter constraint annotations are applied directly to the
+method or constructor. Return value constraints are also applied
+directly to the method or constructor. To avoid confusion as to where
+the constraint applies, parameter or return value, choose a name for any
+custom constraints that identifies where the constraint applies. For
+instance, the preceding example applies a custom constraint,
+<code>@ConsistentPhoneParameters</code>, that indicates that it applies to the
+parameters of the method or constructor.</p>
+</div>
+<div class="paragraph">
+<p>When you create a custom constraint that applies to both method
+parameters and return values, the <code>validationAppliesTo</code> element of the
+constraint annotation may be set to <code>ConstraintTarget.RETURN_VALUE</code> or
+<code>ConstraintTarget.PARAMETERS</code> to explicitly set the target of the
+validation constraint.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="validating-type-arguments-of-parameterized-types"><a class="anchor" href="#validating-type-arguments-of-parameterized-types"></a>Validating Type Arguments of Parameterized Types</h4>
+<div id="validating_type_arguments_of_parameterized_types" class="paragraph">
+<p>In Jakarta Bean Validation 2.0, you can apply constraints to the type arguments of parameterized types. For example: <code>List&lt;@NotNull Long&gt; numbers;</code>
+Constraints can be applied to elements of container types such as <code>List</code>, <code>Map</code>, <code>Optional</code>, and others.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="predefined-type">List</span>&lt;<span class="annotation">@Email</span> <span class="predefined-type">String</span>&gt; emails;
+<span class="directive">public</span> <span class="predefined-type">Map</span>&lt;<span class="annotation">@NotNull</span> <span class="predefined-type">String</span>, <span class="annotation">@USPhoneNumber</span> <span class="predefined-type">String</span>&gt; getAddressesByType() { }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this sample, <code>@Email</code> is an in-built constraint supported by Bean Validation, and <code>@USPhoneNumber</code> is a user-defined constraint. See <a href="#GKAIA">Using the Built-In Constraints to Make a New Constraint</a>.</p>
+</div>
+<div class="paragraph">
+<p><code>@USPhoneNumber</code> has <code>ElementType.TYPE_USE</code> as one of its <code>@Target</code>, and therefore it is possible to use <code>@USPhoneNumber</code> constraint for validating type arguments of parameterized types.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref123"></a><a id="identifying-parameter-constraint-violations"></a></p>
+</div>
+<div class="sect4">
+<h5 id="identifying-parameter-constraint-violations"><a class="anchor" href="#identifying-parameter-constraint-violations"></a>Identifying Parameter Constraint Violations</h5>
+<div class="paragraph">
+<p>If a <code>ConstraintViolationException</code> occurs during a method call, the
+Bean Validation runtime returns a parameter index to identify which
+parameter caused the constraint violation. The parameter index is in the
+form `arg`PARAMETER_INDEX, where PARAMETER_INDEX is an integer that
+starts at 0 for the first parameter of the method or constructor.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref124"></a><a id="adding-constraints-to-method-return-values"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="adding-constraints-to-method-return-values"><a class="anchor" href="#adding-constraints-to-method-return-values"></a>Adding Constraints to Method Return Values</h5>
+<div class="paragraph">
+<p>To validate the return value for a method, you can apply constraints
+directly to the method or constructor declaration.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@NotNull</span>
+<span class="directive">public</span> Employee getEmployee() { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cross-parameter constraints are also applied at the method level. Custom
+constraints that could be applied to both the return value and the
+method parameters have an ambiguous constraint target. To avoid this
+ambiguity, add a <code>validationAppliesTo</code> element to the constraint
+annotation definition with the default set to either
+<code>ConstraintTarget.RETURN_VALUE</code> or <code>ConstraintTarget.PARAMETERS</code> to
+explicitly set the target of the validation constraint.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Manager</span>(validationAppliesTo=ConstraintTarget.RETURN_VALUE)
+<span class="directive">public</span> Employee getManager(Employee employee) { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="#CIHCICAI">Removing Ambiguity in
+Constraint Targets</a> for more information.</p>
+</div>
+<div class="paragraph">
+<p><a id="CACDECFE"></a><a id="further-information-about-bean-validation"></a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="further-information-about-jakarta-bean-validation"><a class="anchor" href="#further-information-about-jakarta-bean-validation"></a>Further Information about Jakarta Bean Validation</h4>
+<div class="paragraph">
+<p>For more information on Jakarta Bean Validation, see</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Jakarta Bean Validation 2.0 Specification:</p>
+<div class="paragraph">
+<p><code><a href="https://jakarta.ee/specifications/bean-validation/2.0/" class="bare">https://jakarta.ee/specifications/bean-validation/2.0/</a></code></p>
+</div>
+</li>
+<li>
+<p>Bean Validation Specification website:</p>
+<div class="paragraph">
+<p><code><a href="http://beanvalidation.org/" class="bare">http://beanvalidation.org/</a></code></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bean-validation-advanced-topics"><a class="anchor" href="#bean-validation-advanced-topics"></a>Bean Validation: Advanced Topics</h3>
+<div class="paragraph">
+<p><a id="GKAHP"></a><a id="bean-validation-advanced-topics"></a></p>
+</div>
+<div class="paragraph">
+<p>This chapter describes how to create custom constraints, custom
+validator messages, and constraint groups using the Java API for
+JavaBeans Validation (Bean Validation).</p>
+</div>
+<div class="paragraph">
+<p><a id="GKFGX"></a><a id="creating-custom-constraints"></a></p>
+</div>
+<div class="sect3">
+<h4 id="creating-custom-constraints"><a class="anchor" href="#creating-custom-constraints"></a>Creating Custom Constraints</h4>
+<div class="paragraph">
+<p>Jakarta Bean Validation defines annotations, interfaces, and classes to allow
+developers to create custom constraints.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GKAIA">Using the Built-In Constraints to Make a New Constraint</a></p>
+</li>
+<li>
+<p><a href="#CIHCICAI">Removing Ambiguity in Constraint Targets</a></p>
+</li>
+<li>
+<p><a href="#implementing-temporal-constraints-using-clockprovider">Implementing Temporal Constraints Using ClockProvider</a></p>
+</li>
+<li>
+<p><a href="#custom-constraints">Custom Constraints</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKAIA"></a><a id="using-the-built-in-constraints-to-make-a-new-constraint"></a></p>
+</div>
+<div class="sect4">
+<h5 id="using-the-built-in-constraints-to-make-a-new-constraint"><a class="anchor" href="#using-the-built-in-constraints-to-make-a-new-constraint"></a>Using the Built-In Constraints to Make a New Constraint</h5>
+<div class="paragraph">
+<p>Jakarta Bean Validation includes several built-in constraints that can be
+combined to create new, reusable constraints. This can simplify
+constraint definition by allowing developers to define a custom
+constraint made up of several built-in constraints that may then be
+applied to component attributes with a single annotation.</p>
+</div>
+<div id="GKAJU" class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Pattern</span>.List({
+  <span class="comment">/* A number of format “+1-NNN-NNN-NNNN” */</span>
+<span class="annotation">@Pattern</span>(regexp = <span class="error">“</span><span class="error">\</span><span class="error">\</span>+<span class="integer">1</span>-<span class="error">\</span><span class="error">\</span>d{<span class="integer">3</span>}-<span class="error">\</span><span class="error">\</span>d{<span class="integer">3</span>}-<span class="error">\</span><span class="error">\</span>d{<span class="integer">4</span>})
+
+<span class="annotation">@Constraint</span>(validatedBy = {})
+<span class="annotation">@Documented</span>
+<span class="annotation">@Target</span>({<span class="predefined-type">ElementType</span>.METHOD,
+    <span class="predefined-type">ElementType</span>.FIELD,
+    <span class="predefined-type">ElementType</span>.ANNOTATION_TYPE,
+    <span class="predefined-type">ElementType</span>.CONSTRUCTOR,
+    <span class="predefined-type">ElementType</span>.PARAMETER
+    <span class="predefined-type">ElementType</span>.Type_Use})
+<span class="annotation">@Retention</span>(<span class="predefined-type">RetentionPolicy</span>.RUNTIME)
+<span class="annotation">@Repeatable</span>(<span class="predefined-type">List</span>.class)
+<span class="directive">public</span> <span class="annotation">@interface</span> USPhoneNumber {
+
+<span class="predefined-type">String</span> message() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">Not a valid US Phone Number</span><span class="delimiter">&quot;</span></span>;
+
+<span class="predefined-type">Class</span>&lt;?&gt;<span class="type">[]</span> groups() <span class="keyword">default</span> {};
+
+<span class="predefined-type">Class</span>&lt;? <span class="directive">extends</span> Payload&gt;<span class="type">[]</span> payload() <span class="keyword">default</span> {};
+
+
+  <span class="annotation">@Target</span>({<span class="predefined-type">ElementType</span>.METHOD,
+     <span class="predefined-type">ElementType</span>.FIELD,
+     <span class="predefined-type">ElementType</span>.ANNOTATION_TYPE,
+     <span class="predefined-type">ElementType</span>.CONSTRUCTOR,
+     <span class="predefined-type">ElementType</span>.PARAMETER
+     <span class="predefined-type">ElementType</span>.Type_Use })
+<span class="annotation">@Retention</span>(<span class="predefined-type">RetentionPolicy</span>.RUNTIME)
+<span class="annotation">@Documented</span>
+<span class="annotation">@interface</span> <span class="predefined-type">List</span> {
+USPhoneNumber<span class="type">[]</span> value();
+
+}
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also implement a <code>Constraint Validator</code> to validate the constraint <code>@USPhoneNumber</code>. For more information about using <code>Constraint Validator</code>, see <code>javax.validation.ConstraintValidator</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@USPhoneNumber</span>
+<span class="directive">protected</span> <span class="predefined-type">String</span> phone;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a id="CIHCICAI"></a><a id="removing-ambiguity-in-constraint-targets"></a></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="removing-ambiguity-in-constraint-targets"><a class="anchor" href="#removing-ambiguity-in-constraint-targets"></a>Removing Ambiguity in Constraint Targets</h5>
+<div class="paragraph">
+<p>Custom constraints that can be applied to both return values and method
+parameters require a <code>validationAppliesTo</code> element to identify the
+target of the constraint.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@Constraint</span>(validatedBy=MyConstraintValidator.class)
+<span class="annotation">@Target</span>({ METHOD, FIELD, TYPE, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
+<span class="annotation">@Retention</span>(RUNTIME)
+<span class="directive">public</span> <span class="annotation">@interface</span> MyConstraint {
+  <span class="predefined-type">String</span> message() <span class="keyword">default</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">{com.example.constraint.MyConstraint.message}</span><span class="delimiter">&quot;</span></span>;
+  <span class="predefined-type">Class</span>&lt;?&gt;<span class="type">[]</span> groups() <span class="keyword">default</span> {};
+  ConstraintTarget validationAppliesTo() <span class="keyword">default</span> ConstraintTarget.PARAMETERS;
+...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This constraint sets the <code>validationAppliesTo</code> target by default to the
+method parameters.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@MyConstraint</span>(validationAppliesTo=ConstraintTarget.RETURN_TYPE)
+<span class="directive">public</span> <span class="predefined-type">String</span> doSomething(<span class="predefined-type">String</span> param1, <span class="predefined-type">String</span> param2) { ... }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the preceding example, the target is set to the return value of the
+method.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="implementing-temporal-constraints-using-clockprovider"><a class="anchor" href="#implementing-temporal-constraints-using-clockprovider"></a>Implementing Temporal Constraints Using ClockProvider</h4>
+<div class="paragraph">
+<p>In Jakarta Bean Validation 2.0, a Clock instance is available for validator implementations to validate any temporal date or time based constraints.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">ValidatorFactory validatorFactory = Validation.
+        buildDefaultValidatorFactory();
+ClockProvider clockProvider = validatorFactory.getClockProvider();
+java.time.Clock Clock = clockProvider.getClock();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also register a custom <code>ClockProvider</code> with a <code>ValidatorFactory</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="comment">//Register a custom clock provider implementation with validator factory</span>
+ValidatorFactory factory = Validation
+       .byDefaultProvider().configure()
+          .clockProvider( <span class="keyword">new</span> CustomClockProvider() )
+          .buildValidatorFactory();
+
+<span class="comment">//Retrieve and use the custom Clock Provider and Clock in the Validator implementation</span>
+<span class="directive">public</span> <span class="type">class</span> <span class="class">CustomConstraintValidator</span> <span class="directive">implements</span> ConstraintValidator&lt;CustomConstraint, <span class="predefined-type">Object</span>&gt; {
+
+    <span class="directive">public</span> <span class="type">boolean</span> isValid(<span class="predefined-type">Object</span> value, ConstraintValidatorContext context){
+        java.time.Clock clock = context.getClockProvider().getClock();
+        ...
+        ...
+
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See ClockProvider in <code><a href="https://jakarta.ee/specifications/platform/8/apidocs/" class="bare">https://jakarta.ee/specifications/platform/8/apidocs/</a></code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="custom-constraints"><a class="anchor" href="#custom-constraints"></a>Custom Constraints</h4>
+<div class="paragraph">
+<p>Consider an employee in a firm located in U.S.A. When you register the phone number of an employee or modify the phone number, the phone number needs to be validated to ensure that the phone number conforms to US phone number pattern.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Employee</span> <span class="directive">extends</span> Person {
+
+  <span class="annotation">@USPhoneNumber</span>
+  <span class="directive">protected</span> <span class="predefined-type">String</span> phone;
+
+  <span class="directive">public</span> Employee(<span class="predefined-type">String</span> name, <span class="predefined-type">String</span> phone, <span class="type">int</span> age){
+    <span class="local-variable">super</span>(name, age);
+    <span class="local-variable">this</span>.phone = phone;
+  }
+
+  <span class="directive">public</span> <span class="predefined-type">String</span> getPhone() {
+    <span class="keyword">return</span> phone;
+  }
+
+  <span class="directive">public</span> <span class="type">void</span> setPhone(<span class="predefined-type">String</span> phone) {
+    <span class="local-variable">this</span>.phone = phone;
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The constraint definition <code>@USPhoneNumber</code> is define in the sample listed under <a href="#GKAIA">Using the Built-In Constraints to Make a New Constraint</a>.
+In the sample, another constraint <code>@Pattern</code> is used to validate the phone number.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="using-in-built-value-extractors-in-custom-containers"><a class="anchor" href="#using-in-built-value-extractors-in-custom-containers"></a>Using In-Built Value Extractors in Custom Containers</h4>
+<div class="paragraph">
+<p>Cascading validation:</p>
+</div>
+<div class="paragraph">
+<p>Bean Validation supports cascading validation for various entities. You can specify <code>@Valid</code> on a member of the object that is validated to ensure that the member is also validated in a cascading fashion. You can validate type arguments, for example, parameterized types and its members if the members have the specified <code>@Valid</code> annotation.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Department</span> {
+    <span class="directive">private</span> <span class="predefined-type">List</span>&lt;<span class="annotation">@Valid</span> Employee&gt; employeesList;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By specifying <code>@Valid</code> on a parameterized type, when an instance of <code>Department</code> is validated, all elements such as <code>Employee</code> in the <code>employeesList</code> are also validated. In this example, each employee&#8217;s "phone" is  validated against the constraint <code>@USPhoneNumber</code>.</p>
+</div>
+<div class="paragraph">
+<p>For more information see <code><a href="https://jakarta.ee/specifications/platform/8/apidocs/" class="bare">https://jakarta.ee/specifications/platform/8/apidocs/</a></code></p>
+</div>
+<div class="paragraph">
+<p>Value Extractor:</p>
+</div>
+<div class="paragraph">
+<p>While validating the object or the object graph, it may be necessary to validate the constraints in the parameterized types of a container as well. To validate the elements of the container, the validator must extract the values of these elements in the container. For example, in order to validate the element values of <code>List</code> against one or more constraints such as <code>List&lt;@NotOnVacation Employee&gt;</code> or to apply cascading validation to <code>List&lt;@Valid Employee&gt;</code>, you need a value extractor for the container <code>List</code>.</p>
+</div>
+<div class="paragraph">
+<p>Jakarta Bean validation provides in-built value extractors for most commonly used container types such as List, Iterable, and others. However, it is also possible to implement and register value-extractor implementations for custom container types or override the in-built value-extractor implementations.</p>
+</div>
+<div class="paragraph">
+<p>Consider a Statistics Calculator for a group of 'Person' entity and 'Employee' is one of the sub-type of the entity 'Person'.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">StatsCalculator</span>&lt;T <span class="directive">extends</span> Person&gt; {
+
+  <span class="comment">/* Cascading validation as well as @NotNull constraint */</span>
+  <span class="directive">private</span> <span class="predefined-type">List</span>&lt;<span class="annotation">@NotNull</span> <span class="annotation">@Valid</span> T&gt; members = <span class="keyword">new</span> <span class="predefined-type">ArrayList</span>&lt;T&gt;();
+
+
+  <span class="directive">public</span> <span class="type">void</span> addMember(T member) {
+    members.add(member);
+  }
+
+  <span class="directive">public</span> <span class="type">boolean</span> removeMember(T member) {
+    <span class="keyword">return</span> members.remove(member);
+  }
+
+  <span class="directive">public</span> <span class="type">int</span> getAverageAge() {
+
+    <span class="keyword">if</span> (members.size() == <span class="integer">0</span>)
+      <span class="keyword">return</span> <span class="integer">0</span>;
+
+    <span class="type">short</span> sum = <span class="integer">0</span>;
+    <span class="keyword">for</span> (T member : members) {
+      <span class="keyword">if</span>(member != <span class="predefined-constant">null</span>) {
+        sum += member.getAge();
+      }
+    }
+    <span class="keyword">return</span> sum / members.size();
+  }
+
+  <span class="directive">public</span> <span class="type">int</span> getOldest() {
+    <span class="type">int</span> oldest = -<span class="integer">1</span>;
+
+    <span class="keyword">for</span> (T member : members) {
+      <span class="keyword">if</span>(member != <span class="predefined-constant">null</span>) {
+        <span class="keyword">if</span> (member.getAge() &gt; oldest) {
+          oldest = member.getAge();
+        }
+      }
+    }
+    <span class="keyword">return</span> oldest;
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When the <code>StatsCalculator</code> is validated, the "members" field is also validated. The in-built value extractor for <code>List</code> is used to extract the values of <code>List</code> to validate the elements in <code>List</code>. In the case of an employee based List, each "Employee” element is validated. For example, an employee’s "phone" is validated using the <code>@USPhoneNumber</code> constraint.</p>
+</div>
+<div class="paragraph">
+<p>In the following example, let us consider a <code>StatisticsPrinter</code> that prints the statistics or displays the statistics on screen.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">StatisticsPrinter</span> {
+    <span class="directive">private</span> StatsCalculator&lt;<span class="annotation">@Valid</span> Employee&gt; calculator;
+
+    <span class="directive">public</span> StatisticsPrinter(StatsCalculator&lt;Employee&gt; statsCalculator){
+      <span class="local-variable">this</span>.calculator = statsCalculator;
+    }
+
+    <span class="directive">public</span> <span class="type">void</span> displayStatistics(){
+      <span class="comment">//Use StatsCalculator, get stats, format and display them.</span>
+    }
+
+    <span class="directive">public</span> <span class="type">void</span> printStatistics(){
+      <span class="comment">//Use StatsCalculator, get stats, format and print them.</span>
+    }
+
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The container <code>StatisticsPrinter</code> uses <code>StatisticsCalculator</code>. When <code>StatisticsPrinter</code> is validated, the <code>StatisticsCalculator</code> is also validated by using the cascading validation such as <code>@Valid</code> annotation. However, in order to retrieve the values of <code>StatsCalculator</code> container type, a value extractor is required. An implementation of <code>ValueExtractor</code> for <code>StatsCalculator</code> is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">ExtractorForStatsCalculator</span> <span class="directive">implements</span> ValueExtractor&lt;StatsCalculator&lt;<span class="annotation">@ExtractedValue</span> ?&gt;&gt;{
+
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> extractValues(StatsCalculator&lt;<span class="annotation">@ExtractedValue</span> ?&gt; statsCalculator,
+        ValueReceiver valueReceiver) {
+        <span class="comment">/* Simple value retrieval is done here.
+           It is possible to adapt or unwrap the value if required.*/</span>
+      valueReceiver.value(<span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;extracted value&gt;</span><span class="delimiter">&quot;</span></span>, statsCalculator);
+    }
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>There are multiple mechanisms to register the <code>ValueExtractor</code> with Jakarta Bean Validation. See, “Registering ValueExtractor” implementations section in the Jakarta Bean Validation specification <code><a href="http://www.jcp.org/en/jsr/detail?id=380" class="bare">http://www.jcp.org/en/jsr/detail?id=380</a></code>. One of the mechanisms is to register the value extractor with Jakarta Bean Validation Context.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java">ValidatorFactory validatorFactory = Validation
+        .buildDefaultValidatorFactory();
+
+    ValidatorContext context = validatorFactory.
+        usingContext()
+        .addValueExtractor(<span class="keyword">new</span> ExtractorForStatsCalculator());
+
+
+    <span class="predefined-type">Validator</span> validator = context.getValidator();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Using this validator, <code>StatsisticsPrinter</code> is validated in the following sequence of operations:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>StatisticsPrinter</code> is validated.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>The members of <code>StatisticsPrinter</code> that need cascading validation are validated.</p>
+</li>
+<li>
+<p>For container types, value extractor is determined. In the case of <code>StatsCalculator</code>, <code>ExtractorForStatsCalculator</code> is found and then values are retrieved for validation.</p>
+</li>
+<li>
+<p><code>StatsCalculator</code> and its members such as <code>List</code> are validated.</p>
+</li>
+<li>
+<p>In-built <code>ValueExtractor</code> for <code>java.util.List</code> is  used to retrieve the values of elements of the list and the validated. In this case, Employee and the field "phone" that is annotated with <code>@USPhoneNumber</code> constraint is validated.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a id="GKAHI"></a><a id="customizing-validator-messages"></a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="customizing-validator-messages"><a class="anchor" href="#customizing-validator-messages"></a>Customizing Validator Messages</h4>
+<div class="paragraph">
+<p>Jakarta Bean Validation includes a resource bundle of default messages for the
+built-in constraints. These messages can be customized and can be
+localized for non-English-speaking locales.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are addressed here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GKAGY">The ValidationMessages Resource Bundle</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a id="GKAGY"></a><a id="the-validationmessages-resource-bundle"></a></p>
+</div>
+<div class="sect4">
+<h5 id="the-validationmessages-resource-bundle"><a class="anchor" href="#the-validationmessages-resource-bundle"></a>The ValidationMessages Resource Bundle</h5>
+<div class="paragraph">
+<p>The <code>ValidationMessages</code> resource bundle and the locale variants of this
+resource bundle contain strings that override the default validation
+messages. The <code>ValidationMessages</code> resource bundle is typically a
+properties file, <code>ValidationMessages.properties</code>, in the default package
+of an application.</p>
+</div>
+<div class="paragraph">
+<p><a id="GKAIQ"></a><a id="localizing-validation-messages"></a></p>
+</div>
+<div class="sect5">
+<h6 id="localizing-validation-messages"><a class="anchor" href="#localizing-validation-messages"></a>Localizing Validation Messages</h6>
+<div class="paragraph">
+<p>Locale variants of <code>ValidationMessages.properties</code> are added by
+appending an underscore and the locale prefix to the base name of the
+file. For example, the Spanish locale variant resource bundle would be
+<code>ValidationMessages_es.properties</code>.</p>
+</div>
+<div class="paragraph">
+<p><a id="GKAGV"></a><a id="grouping-constraints"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="grouping-constraints"><a class="anchor" href="#grouping-constraints"></a>Grouping Constraints</h4>
+<div class="paragraph">
+<p>Constraints may be added to one or more groups. Constraint groups are
+used to create subsets of constraints so that only certain constraints
+will be validated for a particular object. By default, all constraints
+are included in the <code>Default</code> constraint group.</p>
+</div>
+<div class="paragraph">
+<p>Constraint groups are represented by interfaces.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">interface</span> <span class="class">Employee</span> {}
+
+<span class="directive">public</span> <span class="type">interface</span> <span class="class">Contractor</span> {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Constraint groups can inherit from other groups.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">interface</span> <span class="class">Manager</span> <span class="directive">extends</span> Employee {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When a constraint is added to an element, the constraint declares the
+groups to which that constraint belongs by specifying the class name of
+the group interface name in the <code>groups</code> element of the constraint.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@NotNull</span>(groups=Employee.class)
+Phone workPhone;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Multiple groups can be declared by surrounding the groups with braces
+(<code>{</code> and <code>}</code>) and separating the groups' class names with commas.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@NotNull</span>(groups={ Employee.class, Contractor.class })
+Phone workPhone;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If a group inherits from another group, validating that group results in
+validating all constraints declared as part of the supergroup. For
+example, validating the <code>Manager</code> group results in the <code>workPhone</code> field
+being validated, because <code>Employee</code> is a superinterface of <code>Manager</code>.</p>
+</div>
+<div class="paragraph">
+<p><a id="GKAGU"></a><a id="customizing-group-validation-order"></a></p>
+</div>
+<div class="sect4">
+<h5 id="customizing-group-validation-order"><a class="anchor" href="#customizing-group-validation-order"></a>Customizing Group Validation Order</h5>
+<div class="paragraph">
+<p>By default, constraint groups are validated in no particular order.
+There are cases in which some groups should be validated before others.
+For example, in a particular class, basic data should be validated
+before more advanced data.</p>
+</div>
+<div class="paragraph">
+<p>To set the validation order for a group, add a
+<code>javax.validation.GroupSequence</code> annotation to the interface definition,
+listing the order in which the validation should occur.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="annotation">@GroupSequence</span>({Default.class, ExpensiveValidationGroup.class})
+<span class="directive">public</span> <span class="type">interface</span> <span class="class">FullValidationGroup</span> {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When validating <code>FullValidationGroup</code>, first the <code>Default</code> group is
+validated. If all the data passes validation, then the
+<code>ExpensiveValidationGroup</code> group is validated. If a constraint is part
+of both the <code>Default</code> and the <code>ExpensiveValidationGroup</code> groups, the
+constraint is validated as part of the <code>Default</code> group and will not be
+validated on the subsequent <code>ExpensiveValidationGroup</code> pass.</p>
+</div>
+<div class="paragraph">
+<p><a id="CIHGJBGI"></a><a id="using-method-constraints-in-type-hierarchies"></a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="using-method-constraints-in-type-hierarchies"><a class="anchor" href="#using-method-constraints-in-type-hierarchies"></a>Using Method Constraints in Type Hierarchies</h4>
+<div class="paragraph">
+<p>If you add validation constraints to objects in an inheritance
+hierarchy, take special care to avoid unintended errors when using
+subtypes.</p>
+</div>
+<div class="paragraph">
+<p>For a given type, subtypes should be able to be substituted without
+encountering errors. For example, if you have a <code>Person</code> class and an
+<code>Employee</code> subclass that extends <code>Person</code>, you should be able to use
+<code>Employee</code> instances wherever you might use <code>Person</code> instances. If
+<code>Employee</code> overrides a method in <code>Person</code> by adding method parameter
+constraints, code that works correctly with <code>Person</code> objects may throw
+validation exceptions with <code>Employee</code> objects.</p>
+</div>
+<div class="paragraph">
+<p>The following code shows an incorrect use of method parameter
+constraints within a class hierarchy:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Person</span> {
+...
+  public <span class="type">void</span> setPhone(<span class="predefined-type">String</span> phone) { ... }
+}
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Employee</span> <span class="directive">extends</span> Person {
+...
+  <span class="annotation">@Override</span>
+  <span class="directive">public</span> <span class="type">void</span> setPhone(<span class="annotation">@Verified</span> <span class="predefined-type">String</span> phone) { ... }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By adding the <code>@Verified</code> constraint to <code>Employee.setPhone</code>, parameters
+that were valid with <code>Person.setPhone</code> will not be valid with
+<code>Employee.setPhone</code>. This is called strengthening the preconditions
+(that is, the method parameters) of a subtype&#8217;s method. You may not
+strengthen the preconditions of subtype method calls.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, the return values from method calls should not be weakened in
+subtypes. The following code shows an incorrect use of constraints on
+method return values in a class hierarchy:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">class</span> <span class="class">Person</span> {
+...
+  <span class="annotation">@Verified</span>
+  <span class="directive">public</span> USPhoneNumber getPhone() { ... }
+}
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">Employee</span> <span class="directive">extends</span> Person {
+...
+  <span class="annotation">@Override</span>
+  <span class="directive">public</span> USPhoneNumber getPhone() { ... }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the <code>Employee.getPhone</code> method removes the <code>@Verified</code>
+constraint on the return value. Return values that would be not pass
+validation when calling <code>Person.getEmail</code> are allowed when calling
+<code>Employee.getPhone</code>. This is called weakening the postconditions (that
+is, return values) of a subtype. You may not weaken the postconditions
+of a subtype method call.</p>
+</div>
+<div class="paragraph">
+<p>If your type hierarchy strengthens the preconditions or weakens the
+postconditions of subtype method calls, a
+<code>javax.validation.ConstraintDeclarationException</code> will be thrown by the
+Jakarta Bean Validation runtime.</p>
+</div>
+<div class="paragraph">
+<p>Classes that implement several interfaces that each have the same method
+signature, known as parallel types, need to be aware of the constraints
+applied to the interfaces that they implement to avoid strengthening the
+preconditions. For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="type">interface</span> <span class="class">PaymentService</span> {
+  <span class="type">void</span> processOrder(Order order, <span class="type">double</span> amount);
+...
+}
+
+<span class="directive">public</span> <span class="type">interface</span> <span class="class">CreditCardPaymentService</span> {
+  <span class="type">void</span> processOrder(<span class="annotation">@NotNull</span> Order order, <span class="annotation">@NotNull</span> <span class="type">double</span> amount);
+...
+}
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyPaymentService</span> <span class="directive">implements</span> PaymentService,
+        CreditCardPaymentService {
+
+  <span class="annotation">@Override</span>
+  <span class="directive">public</span> <span class="type">void</span> processOrder(Order order, <span class="type">double</span> amount) { ... }
+...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this case, <code>MyPaymentService</code> has the constraints from the
+<code>processOrder</code> method in <code>CreditCardPaymentService</code>, but client code
+that calls <code>PaymentService.processOrder</code> doesn&#8217;t expect these
+constraints. This is another example of strengthening the preconditions
+of a subtype and will result in a <code>ConstraintDeclarationException</code>.</p>
+</div>
+<div class="paragraph">
+<p><a id="sthref125"></a><a id="rules-for-using-method-constraints-in-type-hierarchies"></a></p>
+</div>
+<div class="sect4">
+<h5 id="rules-for-using-method-constraints-in-type-hierarchies"><a class="anchor" href="#rules-for-using-method-constraints-in-type-hierarchies"></a>Rules for Using Method Constraints in Type Hierarchies</h5>
+<div class="paragraph">
+<p>The following rules define how method validation constraints should be
+used in type hierarchies.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Do not add method parameter constraints to overridden or implemented
+methods in a subtype.</p>
+</li>
+<li>
+<p>Do not add method parameter constraints to overridden or implemented
+methods in a subtype that was originally declared in several parallel
+types.</p>
+</li>
+<li>
+<p>You may add return value constraints to an overridden or implemented
+method in a subtype.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-04-26 15:32:37 UTC
+</div>
+</div>
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.code{padding:0 0 0 .75em}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
+</body>
+</html>
