@@ -438,17 +438,40 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>WebSocket</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#websocket">WebSocket</a></li>
+<li><a href="#jakarta-websocket">Jakarta WebSocket</a>
 <ul class="sectlevel2">
-<li><a href="#jakarta-websocket">Jakarta WebSocket</a></li>
+<li><a href="#introduction-to-websocket">Introduction to WebSocket</a></li>
+<li><a href="#creating-websocket-applications-in-the-jakarta-ee-platform">Creating WebSocket Applications in the Jakarta EE Platform</a></li>
+<li><a href="#programmatic-endpoints">Programmatic Endpoints</a></li>
+<li><a href="#annotated-endpoints">Annotated Endpoints</a></li>
+<li><a href="#sending-and-receiving-messages">Sending and Receiving Messages</a></li>
+<li><a href="#maintaining-client-state">Maintaining Client State</a></li>
+<li><a href="#using-encoders-and-decoders">Using Encoders and Decoders</a></li>
+<li><a href="#path-parameters">Path Parameters</a></li>
+<li><a href="#handling-errors">Handling Errors</a></li>
+<li><a href="#specifying-an-endpoint-configurator-class">Specifying an Endpoint Configurator Class</a></li>
+<li><a href="#the-dukeetf2-example-application">The dukeetf2 Example Application</a></li>
+<li><a href="#the-websocketbot-example-application">The websocketbot Example Application</a></li>
+<li><a href="#further-information-about-websocket">Further Information about WebSocket</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect2">
-<h3 id="jakarta-websocket"><a class="anchor" href="#jakarta-websocket"></a>Jakarta WebSocket</h3>
+<div class="sect1">
+<h2 id="websocket"><a class="anchor" href="#websocket"></a>WebSocket</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="jakarta-websocket"><a class="anchor" href="#jakarta-websocket"></a>Jakarta WebSocket</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><a id="GKJIQ5"></a><a id="java-api-for-websocket"></a></p>
 </div>
@@ -461,8 +484,8 @@ two peers over the TCP protocol.</p>
 <div class="paragraph">
 <p><a id="BABDABHF"></a><a id="introduction-to-websocket"></a></p>
 </div>
-<div class="sect3">
-<h4 id="introduction-to-websocket"><a class="anchor" href="#introduction-to-websocket"></a>Introduction to WebSocket</h4>
+<div class="sect2">
+<h3 id="introduction-to-websocket"><a class="anchor" href="#introduction-to-websocket"></a>Introduction to WebSocket</h3>
 <div class="paragraph">
 <p>In the traditional request-response model used in HTTP, the client
 requests resources, and the server provides responses. The exchange is
@@ -559,8 +582,8 @@ received messages, and closed connections).</p>
 <p><a id="BABEAEFC"></a><a id="creating-websocket-applications-in-the-jakarta-ee-platform"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="creating-websocket-applications-in-the-jakarta-ee-platform"><a class="anchor" href="#creating-websocket-applications-in-the-jakarta-ee-platform"></a>Creating WebSocket Applications in the Jakarta EE Platform</h4>
+<div class="sect2">
+<h3 id="creating-websocket-applications-in-the-jakarta-ee-platform"><a class="anchor" href="#creating-websocket-applications-in-the-jakarta-ee-platform"></a>Creating WebSocket Applications in the Jakarta EE Platform</h3>
 <div class="paragraph">
 <p>The Jakarta EE platform includes Jakarta WebSocket,
 which enables you to create, configure, and deploy WebSocket endpoints
@@ -615,8 +638,8 @@ a programmatic endpoint, but it focuses on annotated endpoints.</p>
 <div class="paragraph">
 <p><a id="sthref114"></a><a id="creating-and-deploying-a-websocket-endpoint"></a></p>
 </div>
-<div class="sect4">
-<h5 id="creating-and-deploying-a-websocket-endpoint"><a class="anchor" href="#creating-and-deploying-a-websocket-endpoint"></a>Creating and Deploying a WebSocket Endpoint</h5>
+<div class="sect3">
+<h4 id="creating-and-deploying-a-websocket-endpoint"><a class="anchor" href="#creating-and-deploying-a-websocket-endpoint"></a>Creating and Deploying a WebSocket Endpoint</h4>
 <div class="paragraph">
 <p>The process for creating and deploying a WebSocket endpoint:</p>
 </div>
@@ -666,8 +689,8 @@ code of an endpoint instance at any given time.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="programmatic-endpoints"><a class="anchor" href="#programmatic-endpoints"></a>Programmatic Endpoints</h4>
+<div class="sect2">
+<h3 id="programmatic-endpoints"><a class="anchor" href="#programmatic-endpoints"></a>Programmatic Endpoints</h3>
 <div class="paragraph">
 <p>The following example shows how to create an endpoint by extending the
 <code>Endpoint</code> class:</p>
@@ -725,8 +748,8 @@ Jakarta EE application:</p>
 <p><a id="BABFEBGA"></a><a id="annotated-endpoints"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="annotated-endpoints"><a class="anchor" href="#annotated-endpoints"></a>Annotated Endpoints</h4>
+<div class="sect2">
+<h3 id="annotated-endpoints"><a class="anchor" href="#annotated-endpoints"></a>Annotated Endpoints</h3>
 <div class="paragraph">
 <p>The following example shows how to create the same endpoint from
 <a href="#BABGJEIG">Programmatic Endpoints</a> using annotations
@@ -828,8 +851,8 @@ parameters are allowed in each case.</p>
 <p><a id="BABFCGBJ"></a><a id="sending-and-receiving-messages"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sending-and-receiving-messages"><a class="anchor" href="#sending-and-receiving-messages"></a>Sending and Receiving Messages</h4>
+<div class="sect2">
+<h3 id="sending-and-receiving-messages"><a class="anchor" href="#sending-and-receiving-messages"></a>Sending and Receiving Messages</h3>
 <div class="paragraph">
 <p>WebSocket endpoints can send and receive text and binary messages. In
 addition, they can also send ping frames and receive pong frames. This
@@ -853,8 +876,8 @@ interfaces to send messages to the connected peer and how to use the
 <div class="paragraph">
 <p><a id="CIHEHFCB"></a><a id="sending-messages"></a></p>
 </div>
-<div class="sect4">
-<h5 id="sending-messages"><a class="anchor" href="#sending-messages"></a>Sending Messages</h5>
+<div class="sect3">
+<h4 id="sending-messages"><a class="anchor" href="#sending-messages"></a>Sending Messages</h4>
 <div class="paragraph">
 <p>Follow these steps to send messages in an endpoint.</p>
 </div>
@@ -930,8 +953,8 @@ message.</p>
 <div class="paragraph">
 <p><a id="BABIFBCG"></a><a id="sending-messages-to-all-peers-connected-to-an-endpoint"></a></p>
 </div>
-<div class="sect5">
-<h6 id="sending-messages-to-all-peers-connected-to-an-endpoint"><a class="anchor" href="#sending-messages-to-all-peers-connected-to-an-endpoint"></a>Sending Messages to All Peers Connected to an Endpoint</h6>
+<div class="sect4">
+<h5 id="sending-messages-to-all-peers-connected-to-an-endpoint"><a class="anchor" href="#sending-messages-to-all-peers-connected-to-an-endpoint"></a>Sending Messages to All Peers Connected to an Endpoint</h5>
 <div class="paragraph">
 <p>Each instance of an endpoint class is associated with one and only one
 connection and peer; however, there are cases in which an endpoint
@@ -962,8 +985,8 @@ all connected peers:</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="receiving-messages"><a class="anchor" href="#receiving-messages"></a>Receiving Messages</h5>
+<div class="sect3">
+<h4 id="receiving-messages"><a class="anchor" href="#receiving-messages"></a>Receiving Messages</h4>
 <div class="paragraph">
 <p>The <code>OnMessage</code> annotation designates methods that handle incoming
 messages. You can have at most three methods annotated with <code>@OnMessage</code>
@@ -996,8 +1019,8 @@ three types of messages:</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="maintaining-client-state"><a class="anchor" href="#maintaining-client-state"></a>Maintaining Client State</h4>
+<div class="sect2">
+<h3 id="maintaining-client-state"><a class="anchor" href="#maintaining-client-state"></a>Maintaining Client State</h3>
 <div class="paragraph">
 <p>Because the container creates an instance of the endpoint class for
 every connection, you can define and use instance variables to store
@@ -1035,8 +1058,8 @@ thread-safe access to them.</p>
 <p><a id="BABGADFG"></a><a id="using-encoders-and-decoders"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="using-encoders-and-decoders"><a class="anchor" href="#using-encoders-and-decoders"></a>Using Encoders and Decoders</h4>
+<div class="sect2">
+<h3 id="using-encoders-and-decoders"><a class="anchor" href="#using-encoders-and-decoders"></a>Using Encoders and Decoders</h3>
 <div class="paragraph">
 <p>Jakarta WebSocket provides support for converting between
 WebSocket messages and custom Java types using encoders and decoders. An
@@ -1069,8 +1092,8 @@ into Java Objects</a></p>
 <div class="paragraph">
 <p><a id="CIHBIGBI"></a><a id="implementing-encoders-to-convert-java-objects-into-websocket-messages"></a></p>
 </div>
-<div class="sect4">
-<h5 id="implementing-encoders-to-convert-java-objects-into-websocket-messages"><a class="anchor" href="#implementing-encoders-to-convert-java-objects-into-websocket-messages"></a>Implementing Encoders to Convert Java Objects into WebSocket Messages</h5>
+<div class="sect3">
+<h4 id="implementing-encoders-to-convert-java-objects-into-websocket-messages"><a class="anchor" href="#implementing-encoders-to-convert-java-objects-into-websocket-messages"></a>Implementing Encoders to Convert Java Objects into WebSocket Messages</h4>
 <div class="paragraph">
 <p>The procedure to implement and use encoders in endpoints follows.</p>
 </div>
@@ -1162,8 +1185,8 @@ instance at any given time.</p>
 <p><a id="CIHGDJFG"></a><a id="implementing-decoders-to-convert-websocket-messages-into-java-objects"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="implementing-decoders-to-convert-websocket-messages-into-java-objects"><a class="anchor" href="#implementing-decoders-to-convert-websocket-messages-into-java-objects"></a>Implementing Decoders to Convert WebSocket Messages into Java Objects</h5>
+<div class="sect3">
+<h4 id="implementing-decoders-to-convert-websocket-messages-into-java-objects"><a class="anchor" href="#implementing-decoders-to-convert-websocket-messages-into-java-objects"></a>Implementing Decoders to Convert WebSocket Messages into Java Objects</h4>
 <div class="paragraph">
 <p>The procedure to implement and use decoders in endpoints follows.</p>
 </div>
@@ -1285,8 +1308,8 @@ code of a decoder instance at any given time.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="path-parameters"><a class="anchor" href="#path-parameters"></a>Path Parameters</h4>
+<div class="sect2">
+<h3 id="path-parameters"><a class="anchor" href="#path-parameters"></a>Path Parameters</h3>
 <div class="paragraph">
 <p>The <code>ServerEndpoint</code> annotation enables you to use URI templates to
 specify parts of an endpoint deployment URI as application parameters.
@@ -1340,8 +1363,8 @@ primitive types, or the corresponding wrapper types.</p>
 <p><a id="BABDEJHB"></a><a id="handling-errors"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="handling-errors"><a class="anchor" href="#handling-errors"></a>Handling Errors</h4>
+<div class="sect2">
+<h3 id="handling-errors"><a class="anchor" href="#handling-errors"></a>Handling Errors</h3>
 <div class="paragraph">
 <p>To designate a method that handles errors in an annotated WebSocket
 endpoint, decorate it with <code>@OnError</code>:</p>
@@ -1368,8 +1391,8 @@ messages.</p>
 <p><a id="BABJAIGH"></a><a id="specifying-an-endpoint-configurator-class"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="specifying-an-endpoint-configurator-class"><a class="anchor" href="#specifying-an-endpoint-configurator-class"></a>Specifying an Endpoint Configurator Class</h4>
+<div class="sect2">
+<h3 id="specifying-an-endpoint-configurator-class"><a class="anchor" href="#specifying-an-endpoint-configurator-class"></a>Specifying an Endpoint Configurator Class</h3>
 <div class="paragraph">
 <p>Jakarta WebSocket enables you to configure how the container
 creates server endpoint instances. You can provide custom endpoint
@@ -1456,8 +1479,8 @@ for the <code>ServerEndpointConfig.Configurator</code> class.</p>
 <p><a id="BABGCEHE"></a><a id="the-dukeetf2-example-application"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="the-dukeetf2-example-application"><a class="anchor" href="#the-dukeetf2-example-application"></a>The dukeetf2 Example Application</h4>
+<div class="sect2">
+<h3 id="the-dukeetf2-example-application"><a class="anchor" href="#the-dukeetf2-example-application"></a>The dukeetf2 Example Application</h3>
 <div class="paragraph">
 <p>The <code>dukeetf2</code> example application, located in the
 tut-install`/examples/web/websocket/dukeetf2/` directory, demonstrates
@@ -1481,8 +1504,8 @@ price and trading volume of an electronically traded fund (ETF).</p>
 <div class="paragraph">
 <p><a id="CIHJHJCD"></a><a id="architecture-of-the-dukeetf2-sample-application"></a></p>
 </div>
-<div class="sect4">
-<h5 id="architecture-of-the-dukeetf2-sample-application"><a class="anchor" href="#architecture-of-the-dukeetf2-sample-application"></a>Architecture of the dukeetf2 Sample Application</h5>
+<div class="sect3">
+<h4 id="architecture-of-the-dukeetf2-sample-application"><a class="anchor" href="#architecture-of-the-dukeetf2-sample-application"></a>Architecture of the dukeetf2 Sample Application</h4>
 <div class="paragraph">
 <p>The <code>dukeetf2</code> example application consists of a WebSocket endpoint, an
 enterprise bean, and an HTML page.</p>
@@ -1507,8 +1530,8 @@ information without reloading the page.</p>
 <div class="paragraph">
 <p><a id="sthref116"></a><a id="the-endpoint"></a></p>
 </div>
-<div class="sect5">
-<h6 id="the-endpoint"><a class="anchor" href="#the-endpoint"></a>The Endpoint</h6>
+<div class="sect4">
+<h5 id="the-endpoint"><a class="anchor" href="#the-endpoint"></a>The Endpoint</h5>
 <div class="paragraph">
 <p>The WebSocket endpoint is implemented in the <code>ETFEndpoint</code> class, which
 stores all connected sessions in a queue and provides a method that the
@@ -1576,8 +1599,8 @@ from the queue:</p>
 <p><a id="sthref117"></a><a id="the-enterprise-bean"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-enterprise-bean"><a class="anchor" href="#the-enterprise-bean"></a>The Enterprise Bean</h6>
+<div class="sect4">
+<h5 id="the-enterprise-bean"><a class="anchor" href="#the-enterprise-bean"></a>The Enterprise Bean</h5>
 <div class="paragraph">
 <p>The enterprise bean uses the timer service to generate new price and
 volume information every second:</p>
@@ -1623,8 +1646,8 @@ service.</p>
 <p><a id="CIHHIEFH"></a><a id="the-html-page"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-html-page"><a class="anchor" href="#the-html-page"></a>The HTML Page</h6>
+<div class="sect4">
+<h5 id="the-html-page"><a class="anchor" href="#the-html-page"></a>The HTML Page</h5>
 <div class="paragraph">
 <p>The HTML page consists of a table and some JavaScript code. The table
 contains two fields referenced from JavaScript code:</p>
@@ -1676,8 +1699,8 @@ used in HTML5 web client development.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="running-the-dukeetf2-example-application"><a class="anchor" href="#running-the-dukeetf2-example-application"></a>Running the dukeetf2 Example Application</h5>
+<div class="sect3">
+<h4 id="running-the-dukeetf2-example-application"><a class="anchor" href="#running-the-dukeetf2-example-application"></a>Running the dukeetf2 Example Application</h4>
 <div class="paragraph">
 <p>This section describes how to run the <code>dukeetf2</code> example application
 using NetBeans IDE and from the command line.</p>
@@ -1699,8 +1722,8 @@ IDE</a></p>
 <div class="paragraph">
 <p><a id="CIHEBIAH"></a><a id="to-run-the-dukeetf2-example-application-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-dukeetf2-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-dukeetf2-example-application-using-netbeans-ide"></a>To Run the dukeetf2 Example Application Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-run-the-dukeetf2-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-dukeetf2-example-application-using-netbeans-ide"></a>To Run the dukeetf2 Example Application Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1749,8 +1772,8 @@ both pages get price and volume updates simultaneously.</p>
 <p><a id="CIHDJCGJ"></a><a id="to-run-the-dukeetf2-example-application-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-dukeetf2-example-application-using-maven"><a class="anchor" href="#to-run-the-dukeetf2-example-application-using-maven"></a>To Run the dukeetf2 Example Application Using Maven</h6>
+<div class="sect4">
+<h5 id="to-run-the-dukeetf2-example-application-using-maven"><a class="anchor" href="#to-run-the-dukeetf2-example-application-using-maven"></a>To Run the dukeetf2 Example Application Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1794,8 +1817,8 @@ both pages get price and volume updates simultaneously.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="the-websocketbot-example-application"><a class="anchor" href="#the-websocketbot-example-application"></a>The websocketbot Example Application</h4>
+<div class="sect2">
+<h3 id="the-websocketbot-example-application"><a class="anchor" href="#the-websocketbot-example-application"></a>The websocketbot Example Application</h3>
 <div class="paragraph">
 <p>The <code>websocketbot</code> example application, located in the
 tut-install`/examples/web/websocket/websocketbot/` directory,
@@ -1820,8 +1843,8 @@ always available in the chat room.</p>
 <div class="paragraph">
 <p><a id="CIHICIDE"></a><a id="architecture-of-the-websocketbot-example-application"></a></p>
 </div>
-<div class="sect4">
-<h5 id="architecture-of-the-websocketbot-example-application"><a class="anchor" href="#architecture-of-the-websocketbot-example-application"></a>Architecture of the websocketbot Example Application</h5>
+<div class="sect3">
+<h4 id="architecture-of-the-websocketbot-example-application"><a class="anchor" href="#architecture-of-the-websocketbot-example-application"></a>Architecture of the websocketbot Example Application</h4>
 <div class="paragraph">
 <p>The <code>websocketbot</code> example application consists of the following
 elements:</p>
@@ -1862,8 +1885,8 @@ chat room</p>
 <div class="paragraph">
 <p><a id="CIHDAEHF"></a><a id="the-cdi-bean"></a></p>
 </div>
-<div class="sect5">
-<h6 id="the-cdi-bean"><a class="anchor" href="#the-cdi-bean"></a>The CDI Bean</h6>
+<div class="sect4">
+<h5 id="the-cdi-bean"><a class="anchor" href="#the-cdi-bean"></a>The CDI Bean</h5>
 <div class="paragraph">
 <p>The CDI bean (<code>BotBean</code>) is a Java class that contains the <code>respond</code>
 method. This method compares the incoming chat message with a set of
@@ -1881,8 +1904,8 @@ predefined questions and returns a chat response.</p>
 <p><a id="CIHJJJHG"></a><a id="the-websocket-endpoint"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-websocket-endpoint"><a class="anchor" href="#the-websocket-endpoint"></a>The WebSocket Endpoint</h6>
+<div class="sect4">
+<h5 id="the-websocket-endpoint"><a class="anchor" href="#the-websocket-endpoint"></a>The WebSocket Endpoint</h5>
 <div class="paragraph">
 <p>The WebSocket endpoint (<code>BotEndpoint</code>) is an annotated endpoint that
 performs the following functions:</p>
@@ -2023,8 +2046,8 @@ service and Concurrency Utilities for Jakarta EE.</p>
 <p><a id="CIHFDGHG"></a><a id="the-application-messages"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-application-messages"><a class="anchor" href="#the-application-messages"></a>The Application Messages</h6>
+<div class="sect4">
+<h5 id="the-application-messages"><a class="anchor" href="#the-application-messages"></a>The Application Messages</h5>
 <div class="paragraph">
 <p>The classes that represent application messages (<code>Message</code>,
 <code>ChatMessage</code>, <code>InfoMessage</code>, <code>JoinMessage</code>, and <code>UsersMessage</code>) contain
@@ -2045,8 +2068,8 @@ only properties and getter and setter methods. For example, the
 <p><a id="CIHGHHBD"></a><a id="the-encoder-classes"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-encoder-classes"><a class="anchor" href="#the-encoder-classes"></a>The Encoder Classes</h6>
+<div class="sect4">
+<h5 id="the-encoder-classes"><a class="anchor" href="#the-encoder-classes"></a>The Encoder Classes</h5>
 <div class="paragraph">
 <p>The encoder classes convert application message objects into JSON text
 using the Java API for JSON Processing. For example, the
@@ -2079,8 +2102,8 @@ Processing</a> for more information on the Java API for JSON Processing.</p>
 <p><a id="CIHHFICG"></a><a id="the-message-decoder"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-message-decoder"><a class="anchor" href="#the-message-decoder"></a>The Message Decoder</h6>
+<div class="sect4">
+<h5 id="the-message-decoder"><a class="anchor" href="#the-message-decoder"></a>The Message Decoder</h5>
 <div class="paragraph">
 <p>The message decoder (<code>MessageDecoder</code>) class converts WebSocket text
 messages into application messages by parsing JSON text. It is
@@ -2136,8 +2159,8 @@ implemented as follows:</p>
 <p><a id="CIHGDBGF"></a><a id="the-html-page"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-html-page-2"><a class="anchor" href="#the-html-page-2"></a>The HTML Page</h6>
+<div class="sect4">
+<h5 id="the-html-page-2"><a class="anchor" href="#the-html-page-2"></a>The HTML Page</h5>
 <div class="paragraph">
 <p>The HTML page (<code>index.html</code>) contains a field for the user name. After
 the user types a name and clicks Join, three text areas are available:
@@ -2156,8 +2179,8 @@ client development with HTML5.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="running-the-websocketbot-example-application"><a class="anchor" href="#running-the-websocketbot-example-application"></a>Running the websocketbot Example Application</h5>
+<div class="sect3">
+<h4 id="running-the-websocketbot-example-application"><a class="anchor" href="#running-the-websocketbot-example-application"></a>Running the websocketbot Example Application</h4>
 <div class="paragraph">
 <p>This section describes how to run the <code>websocketbot</code> example application
 using NetBeans IDE and from the command line.</p>
@@ -2183,8 +2206,8 @@ Maven</a></p>
 <div class="paragraph">
 <p><a id="CIHFDDGE"></a><a id="to-run-the-websocketbot-example-application-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-websocketbot-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-websocketbot-example-application-using-netbeans-ide"></a>To Run the websocketbot Example Application Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-run-the-websocketbot-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-websocketbot-example-application-using-netbeans-ide"></a>To Run the websocketbot Example Application Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2233,8 +2256,8 @@ more information.</p>
 <p><a id="CIHEDEHB"></a><a id="to-run-the-websocketbot-example-application-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-websocketbot-example-application-using-maven"><a class="anchor" href="#to-run-the-websocketbot-example-application-using-maven"></a>To Run the websocketbot Example Application Using Maven</h6>
+<div class="sect4">
+<h5 id="to-run-the-websocketbot-example-application-using-maven"><a class="anchor" href="#to-run-the-websocketbot-example-application-using-maven"></a>To Run the websocketbot Example Application Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2276,8 +2299,8 @@ more information.</p>
 <p><a id="BABDDAAG"></a><a id="to-test-the-websocketbot-example-application"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-test-the-websocketbot-example-application"><a class="anchor" href="#to-test-the-websocketbot-example-application"></a>To Test the websocketbot Example Application</h6>
+<div class="sect4">
+<h5 id="to-test-the-websocketbot-example-application"><a class="anchor" href="#to-test-the-websocketbot-example-application"></a>To Test the websocketbot Example Application</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2326,8 +2349,8 @@ other.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="further-information-about-websocket"><a class="anchor" href="#further-information-about-websocket"></a>Further Information about WebSocket</h4>
+<div class="sect2">
+<h3 id="further-information-about-websocket"><a class="anchor" href="#further-information-about-websocket"></a>Further Information about WebSocket</h3>
 <div class="paragraph">
 <p>For more information on WebSocket in Jakarta EE, see the Jakarta WebSocket specification:</p>
 </div>
@@ -2337,9 +2360,10 @@ other.</p>
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 15:37:21 UTC
+Last updated 2020-04-26 18:34:55 UTC
 </div>
 </div>
 <style>

@@ -438,17 +438,34 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Concurrency</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#concurrency">Concurrency</a></li>
+<li><a href="#jakarta-concurrency">Jakarta Concurrency</a>
 <ul class="sectlevel2">
-<li><a href="#jakarta-concurrency">Jakarta Concurrency</a></li>
+<li><a href="#concurrency-basics">Concurrency Basics</a></li>
+<li><a href="#main-components-of-the-concurrency-utilities">Main Components of the Concurrency Utilities</a></li>
+<li><a href="#concurrency-and-transactions">Concurrency and Transactions</a></li>
+<li><a href="#concurrency-and-security">Concurrency and Security</a></li>
+<li><a href="#the-jobs-concurrency-example">The jobs Concurrency Example</a></li>
+<li><a href="#the-taskcreator-concurrency-example">The taskcreator Concurrency Example</a></li>
+<li><a href="#further-information-about-jakarta-concurrency">Further Information about Jakarta Concurrency</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect2">
-<h3 id="jakarta-concurrency"><a class="anchor" href="#jakarta-concurrency"></a>Jakarta Concurrency</h3>
+<div class="sect1">
+<h2 id="concurrency"><a class="anchor" href="#concurrency"></a>Concurrency</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="jakarta-concurrency"><a class="anchor" href="#jakarta-concurrency"></a>Jakarta Concurrency</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><a id="GKJIQ8"></a><a id="concurrency-utilities-for-jakarta-ee"></a></p>
 </div>
@@ -458,8 +475,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><a id="CIHDFGGG"></a><a id="concurrency-basics"></a></p>
 </div>
-<div class="sect3">
-<h4 id="concurrency-basics"><a class="anchor" href="#concurrency-basics"></a>Concurrency Basics</h4>
+<div class="sect2">
+<h3 id="concurrency-basics"><a class="anchor" href="#concurrency-basics"></a>Concurrency Basics</h3>
 <div class="paragraph">
 <p>Concurrency is the concept of executing two or more tasks at the same
 time (in parallel). Tasks may include methods (functions), parts of a
@@ -476,8 +493,8 @@ concurrency was provided by the <code>java.util.concurrent</code> package.</p>
 <div class="paragraph">
 <p><a id="sthref293"></a><a id="threads-and-processes"></a></p>
 </div>
-<div class="sect4">
-<h5 id="threads-and-processes"><a class="anchor" href="#threads-and-processes"></a>Threads and Processes</h5>
+<div class="sect3">
+<h4 id="threads-and-processes"><a class="anchor" href="#threads-and-processes"></a>Threads and Processes</h4>
 <div class="paragraph">
 <p>The two main concurrency concepts are processes and threads.</p>
 </div>
@@ -531,8 +548,8 @@ problems. These situations include the following:</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="main-components-of-the-concurrency-utilities"><a class="anchor" href="#main-components-of-the-concurrency-utilities"></a>Main Components of the Concurrency Utilities</h4>
+<div class="sect2">
+<h3 id="main-components-of-the-concurrency-utilities"><a class="anchor" href="#main-components-of-the-concurrency-utilities"></a>Main Components of the Concurrency Utilities</h3>
 <div class="paragraph">
 <p>Concurrent resources are managed objects that provide concurrency
 capabilities to Jakarta EE applications. In GlassFish Server, you configure
@@ -587,8 +604,8 @@ example, set specific/proprietary properties to these objects.</p>
 <p><a id="CIHIDBDG"></a><a id="concurrency-and-transactions"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="concurrency-and-transactions"><a class="anchor" href="#concurrency-and-transactions"></a>Concurrency and Transactions</h4>
+<div class="sect2">
+<h3 id="concurrency-and-transactions"><a class="anchor" href="#concurrency-and-transactions"></a>Concurrency and Transactions</h3>
 <div class="paragraph">
 <p>The most basic operations for transactions are commit and rollback, but,
 in a distributed environment with concurrent processing, it can be
@@ -643,8 +660,8 @@ bean and a database:</p>
 <p><a id="CIHCACAA"></a><a id="concurrency-and-security"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="concurrency-and-security"><a class="anchor" href="#concurrency-and-security"></a>Concurrency and Security</h4>
+<div class="sect2">
+<h3 id="concurrency-and-security"><a class="anchor" href="#concurrency-and-security"></a>Concurrency and Security</h3>
 <div class="paragraph">
 <p>Jakarta Concurrency defers most security decisions to the
 application server implementation. If, however, the container supports a
@@ -657,8 +674,8 @@ security principal.</p>
 <p><a id="CIHCGGEG"></a><a id="the-jobs-concurrency-example"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="the-jobs-concurrency-example"><a class="anchor" href="#the-jobs-concurrency-example"></a>The jobs Concurrency Example</h4>
+<div class="sect2">
+<h3 id="the-jobs-concurrency-example"><a class="anchor" href="#the-jobs-concurrency-example"></a>The jobs Concurrency Example</h3>
 <div class="paragraph">
 <p>This section describes a very basic example that shows how to use some
 of the basic concurrency features in an enterprise application.
@@ -705,8 +722,8 @@ Managed Executor Services, one for each type of request.</p>
 <div class="paragraph">
 <p><a id="sthref294"></a><a id="running-the-jobs-example"></a></p>
 </div>
-<div class="sect4">
-<h5 id="running-the-jobs-example"><a class="anchor" href="#running-the-jobs-example"></a>Running the jobs Example</h5>
+<div class="sect3">
+<h4 id="running-the-jobs-example"><a class="anchor" href="#running-the-jobs-example"></a>Running the jobs Example</h4>
 <div class="paragraph">
 <p>After configuring GlassFish Server by adding two Managed Executor
 Services, you can use either NetBeans IDE or Maven to build, package,
@@ -742,8 +759,8 @@ Priority</a></p>
 <div class="paragraph">
 <p><a id="CHDCIBBD"></a><a id="to-configure-glassfish-server-for-the-basic-concurrency-example"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-configure-glassfish-server-for-the-basic-concurrency-example"><a class="anchor" href="#to-configure-glassfish-server-for-the-basic-concurrency-example"></a>To Configure GlassFish Server for the Basic Concurrency Example</h6>
+<div class="sect4">
+<h5 id="to-configure-glassfish-server-for-the-basic-concurrency-example"><a class="anchor" href="#to-configure-glassfish-server-for-the-basic-concurrency-example"></a>To Configure GlassFish Server for the Basic Concurrency Example</h5>
 <div class="paragraph">
 <p>To configure GlassFish Server, follow these steps.</p>
 </div>
@@ -822,8 +839,8 @@ values for other settings):</p>
 <p><a id="CHDFBAHJ"></a><a id="to-build-package-and-deploy-the-jobs-example-using-netbeans-ide"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-build-package-and-deploy-the-jobs-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-jobs-example-using-netbeans-ide"></a>To Build, Package, and Deploy the jobs Example Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-build-package-and-deploy-the-jobs-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-jobs-example-using-netbeans-ide"></a>To Build, Package, and Deploy the jobs Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -861,8 +878,8 @@ Build.</p>
 <p><a id="CHDECFFF"></a><a id="to-build-package-and-deploy-the-jobs-example-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-build-package-and-deploy-the-jobs-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-jobs-example-using-maven"></a>To Build, Package, and Deploy the jobs Example Using Maven</h6>
+<div class="sect4">
+<h5 id="to-build-package-and-deploy-the-jobs-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-jobs-example-using-maven"></a>To Build, Package, and Deploy the jobs Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -892,8 +909,8 @@ Server</a>).</p>
 <p><a id="CHDFHHAF"></a><a id="to-run-the-jobs-example-and-submit-jobs-with-low-priority"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-jobs-example-and-submit-jobs-with-low-priority"><a class="anchor" href="#to-run-the-jobs-example-and-submit-jobs-with-low-priority"></a>To Run the jobs Example and Submit Jobs with Low Priority</h6>
+<div class="sect4">
+<h5 id="to-run-the-jobs-example-and-submit-jobs-with-low-priority"><a class="anchor" href="#to-run-the-jobs-example-and-submit-jobs-with-low-priority"></a>To Run the jobs Example and Submit Jobs with Low Priority</h5>
 <div class="paragraph">
 <p>To run the example as a user who submits jobs with low priority, follow
 these steps:</p>
@@ -961,8 +978,8 @@ INFO:   Task finished LOW-<span class="integer">1</span></code></pre>
 <p><a id="CHDHEABJ"></a><a id="to-run-the-jobs-example-and-submit-jobs-with-high-priority"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-jobs-example-and-submit-jobs-with-high-priority"><a class="anchor" href="#to-run-the-jobs-example-and-submit-jobs-with-high-priority"></a>To Run the jobs Example and Submit Jobs with High Priority</h6>
+<div class="sect4">
+<h5 id="to-run-the-jobs-example-and-submit-jobs-with-high-priority"><a class="anchor" href="#to-run-the-jobs-example-and-submit-jobs-with-high-priority"></a>To Run the jobs Example and Submit Jobs with High Priority</h5>
 <div class="paragraph">
 <p>To run the example as a user who submits jobs with high priority, follow
 these steps:</p>
@@ -1052,8 +1069,8 @@ INFO:   Task finished HIGH-<span class="integer">3</span></code></pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="the-taskcreator-concurrency-example"><a class="anchor" href="#the-taskcreator-concurrency-example"></a>The taskcreator Concurrency Example</h4>
+<div class="sect2">
+<h3 id="the-taskcreator-concurrency-example"><a class="anchor" href="#the-taskcreator-concurrency-example"></a>The taskcreator Concurrency Example</h3>
 <div class="paragraph">
 <p>The <code>taskcreator</code> example demonstrates how to use Jakarta Concurrency
 to run tasks immediately, periodically, or after a fixed
@@ -1105,7 +1122,7 @@ example.</p>
 </div>
 <div id="CIHHACFF" class="paragraph">
 <div class="title"><strong>Figure 59-1 Architecture of the taskcreator Example</strong></div>
-<p><span class="image"><img src="data:image/png;base64," alt="The figure shows the architecture of the taskcreator example. The Jakarta Server Faces page invokes methods on a CDI-managed bean, which submits task initiation requests to an enterprise bean. The enterprise bean uses a WebSocket endpoint to indicate to clients that an updated task execution log is available."></span></p>
+<p><span class="image"><img src="data:image/png;base64,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" alt="The figure shows the architecture of the taskcreator example. The Jakarta Server Faces page invokes methods on a CDI-managed bean, which submits task initiation requests to an enterprise bean. The enterprise bean uses a WebSocket endpoint to indicate to clients that an updated task execution log is available."></span></p>
 </div>
 <div class="paragraph">
 <p>The <code>TaskEJB</code> class obtains the default executor service objects from
@@ -1152,8 +1169,8 @@ object, so that the user can cancel the task at any time.</p>
 <div class="paragraph">
 <p><a id="sthref296"></a><a id="running-the-taskcreator-example"></a></p>
 </div>
-<div class="sect4">
-<h5 id="running-the-taskcreator-example"><a class="anchor" href="#running-the-taskcreator-example"></a>Running the taskcreator Example</h5>
+<div class="sect3">
+<h4 id="running-the-taskcreator-example"><a class="anchor" href="#running-the-taskcreator-example"></a>Running the taskcreator Example</h4>
 <div class="paragraph">
 <p>This section describes how to build, package, deploy, and run the
 <code>taskcreator</code> example using NetBeans IDE or Maven.</p>
@@ -1179,8 +1196,8 @@ Using Maven</a></p>
 <div class="paragraph">
 <p><a id="CHDCCJHB"></a><a id="to-build-package-and-deploy-the-taskcreator-example-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-build-package-and-deploy-the-taskcreator-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-taskcreator-example-using-netbeans-ide"></a>To Build, Package, and Deploy the taskcreator Example Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-build-package-and-deploy-the-taskcreator-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-taskcreator-example-using-netbeans-ide"></a>To Build, Package, and Deploy the taskcreator Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1218,8 +1235,8 @@ select Build.</p>
 <p><a id="CHDHJBDD"></a><a id="to-build-package-and-deploy-the-taskcreator-example-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-build-package-and-deploy-the-taskcreator-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-taskcreator-example-using-maven"></a>To Build, Package, and Deploy the taskcreator Example Using Maven</h6>
+<div class="sect4">
+<h5 id="to-build-package-and-deploy-the-taskcreator-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-taskcreator-example-using-maven"></a>To Build, Package, and Deploy the taskcreator Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1249,8 +1266,8 @@ Server</a>).</p>
 <p><a id="CHDBJGID"></a><a id="to-run-the-taskcreator-example"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-taskcreator-example"><a class="anchor" href="#to-run-the-taskcreator-example"></a>To Run the taskcreator Example</h6>
+<div class="sect4">
+<h5 id="to-run-the-taskcreator-example"><a class="anchor" href="#to-run-the-taskcreator-example"></a>To Run the taskcreator Example</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1313,8 +1330,8 @@ select it from the form and click Cancel Task.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="further-information-about-jakarta-concurrency"><a class="anchor" href="#further-information-about-jakarta-concurrency"></a>Further Information about Jakarta Concurrency</h4>
+<div class="sect2">
+<h3 id="further-information-about-jakarta-concurrency"><a class="anchor" href="#further-information-about-jakarta-concurrency"></a>Further Information about Jakarta Concurrency</h3>
 <div class="paragraph">
 <p>For more information about concurrency, see</p>
 </div>
@@ -1343,9 +1360,10 @@ select it from the form and click Cancel Task.</p>
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 15:37:21 UTC
+Last updated 2020-04-26 18:34:55 UTC
 </div>
 </div>
 <style>

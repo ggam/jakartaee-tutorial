@@ -438,17 +438,47 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Servlets</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#servlets">Servlets</a></li>
+<li><a href="#jakarta-servlet-technology">Jakarta Servlet Technology</a>
 <ul class="sectlevel2">
-<li><a href="#jakarta-servlet-technology">Jakarta Servlet Technology</a></li>
+<li><a href="#what-is-a-servlet">What Is a Servlet?</a></li>
+<li><a href="#servlet-lifecycle">Servlet Lifecycle</a></li>
+<li><a href="#sharing-information">Sharing Information</a></li>
+<li><a href="#creating-and-initializing-a-servlet">Creating and Initializing a Servlet</a></li>
+<li><a href="#writing-service-methods">Writing Service Methods</a></li>
+<li><a href="#filtering-requests-and-responses">Filtering Requests and Responses</a></li>
+<li><a href="#invoking-other-web-resources">Invoking Other Web Resources</a></li>
+<li><a href="#accessing-the-web-context">Accessing the Web Context</a></li>
+<li><a href="#maintaining-client-state">Maintaining Client State</a></li>
+<li><a href="#finalizing-a-servlet">Finalizing a Servlet</a></li>
+<li><a href="#uploading-files-with-jakarta-servlet-technology">Uploading Files with Jakarta Servlet Technology</a></li>
+<li><a href="#asynchronous-processing">Asynchronous Processing</a></li>
+<li><a href="#nonblocking-io">Nonblocking I/O</a></li>
+<li><a href="#server-push">Server Push</a></li>
+<li><a href="#protocol-upgrade-processing">Protocol Upgrade Processing</a></li>
+<li><a href="#http-trailer">HTTP Trailer</a></li>
+<li><a href="#the-mood-example-application">The mood Example Application</a></li>
+<li><a href="#the-fileupload-example-application">The fileupload Example Application</a></li>
+<li><a href="#the-dukeetf-example-application">The dukeetf Example Application</a></li>
+<li><a href="#further-information-about-jakarta-servlet-technology">Further Information about Jakarta Servlet Technology</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect2">
-<h3 id="jakarta-servlet-technology"><a class="anchor" href="#jakarta-servlet-technology"></a>Jakarta Servlet Technology</h3>
+<div class="sect1">
+<h2 id="servlets"><a class="anchor" href="#servlets"></a>Servlets</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="jakarta-servlet-technology"><a class="anchor" href="#jakarta-servlet-technology"></a>Jakarta Servlet Technology</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><a id="BNAFD"></a><a id="java-servlet-technology"></a></p>
 </div>
@@ -459,8 +489,8 @@ applications using a request-response programming model.</p>
 <div class="paragraph">
 <p><a id="BNAFE"></a><a id="what-is-a-servlet"></a></p>
 </div>
-<div class="sect3">
-<h4 id="what-is-a-servlet"><a class="anchor" href="#what-is-a-servlet"></a>What Is a Servlet?</h4>
+<div class="sect2">
+<h3 id="what-is-a-servlet"><a class="anchor" href="#what-is-a-servlet"></a>What Is a Servlet?</h3>
 <div class="paragraph">
 <p>A servlet is a Java programming language class used to extend the
 capabilities of servers that host applications accessed by means of a
@@ -482,8 +512,8 @@ services.</p>
 <p><a id="BNAFI"></a><a id="servlet-lifecycle"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="servlet-lifecycle"><a class="anchor" href="#servlet-lifecycle"></a>Servlet Lifecycle</h4>
+<div class="sect2">
+<h3 id="servlet-lifecycle"><a class="anchor" href="#servlet-lifecycle"></a>Servlet Lifecycle</h3>
 <div class="paragraph">
 <p>The lifecycle of a servlet is controlled by the container in which the
 servlet has been deployed. When a request is mapped to a servlet, the
@@ -516,8 +546,8 @@ by calling the servlet&#8217;s <code>destroy</code> method. For more information
 <div class="paragraph">
 <p><a id="BNAFJ"></a><a id="handling-servlet-lifecycle-events"></a></p>
 </div>
-<div class="sect4">
-<h5 id="handling-servlet-lifecycle-events"><a class="anchor" href="#handling-servlet-lifecycle-events"></a>Handling Servlet Lifecycle Events</h5>
+<div class="sect3">
+<h4 id="handling-servlet-lifecycle-events"><a class="anchor" href="#handling-servlet-lifecycle-events"></a>Handling Servlet Lifecycle Events</h4>
 <div class="paragraph">
 <p>You can monitor and react to events in a servlet&#8217;s lifecycle by defining
 listener objects whose methods get invoked when lifecycle events occur.
@@ -527,8 +557,8 @@ class.</p>
 <div class="paragraph">
 <p><a id="BNAFK"></a><a id="defining-the-listener-class"></a></p>
 </div>
-<div class="sect5">
-<h6 id="defining-the-listener-class"><a class="anchor" href="#defining-the-listener-class"></a>Defining the Listener Class</h6>
+<div class="sect4">
+<h5 id="defining-the-listener-class"><a class="anchor" href="#defining-the-listener-class"></a>Defining the Listener Class</h5>
 <div class="paragraph">
 <p>You define a listener class as an implementation of a listener
 interface. <a href="#BNAFL">Table 18-1</a> lists the events that can be
@@ -632,8 +662,8 @@ implements two of these interfaces:</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="handling-servlet-errors"><a class="anchor" href="#handling-servlet-errors"></a>Handling Servlet Errors</h5>
+<div class="sect3">
+<h4 id="handling-servlet-errors"><a class="anchor" href="#handling-servlet-errors"></a>Handling Servlet Errors</h4>
 <div class="paragraph">
 <p>Any number of exceptions can occur when a servlet executes. When an
 exception occurs, the web container generates a default page containing
@@ -653,8 +683,8 @@ error page for a given exception.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sharing-information"><a class="anchor" href="#sharing-information"></a>Sharing Information</h4>
+<div class="sect2">
+<h3 id="sharing-information"><a class="anchor" href="#sharing-information"></a>Sharing Information</h3>
 <div class="paragraph">
 <p>Web components, like most objects, usually work with other objects to
 accomplish their tasks. Web components can do so by doing the following.</p>
@@ -680,8 +710,8 @@ in <a href="#BNAGI">Invoking Other Web Resources</a>.</p>
 <div class="paragraph">
 <p><a id="BNAFP"></a><a id="using-scope-objects"></a></p>
 </div>
-<div class="sect4">
-<h5 id="using-scope-objects"><a class="anchor" href="#using-scope-objects"></a>Using Scope Objects</h5>
+<div class="sect3">
+<h4 id="using-scope-objects"><a class="anchor" href="#using-scope-objects"></a>Using Scope Objects</h4>
 <div class="paragraph">
 <p>Collaborating web components share information by means of objects that
 are maintained as attributes of four scope objects. You access these
@@ -738,8 +768,8 @@ object.</p></td>
 <p><a id="BNAFS"></a><a id="controlling-concurrent-access-to-shared-resources"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="controlling-concurrent-access-to-shared-resources"><a class="anchor" href="#controlling-concurrent-access-to-shared-resources"></a>Controlling Concurrent Access to Shared Resources</h5>
+<div class="sect3">
+<h4 id="controlling-concurrent-access-to-shared-resources"><a class="anchor" href="#controlling-concurrent-access-to-shared-resources"></a>Controlling Concurrent Access to Shared Resources</h4>
 <div class="paragraph">
 <p>In a multithreaded server, shared resources can be accessed
 concurrently. In addition to scope object attributes, shared resources
@@ -784,8 +814,8 @@ the synchronization techniques described in the Threads lesson at
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="creating-and-initializing-a-servlet"><a class="anchor" href="#creating-and-initializing-a-servlet"></a>Creating and Initializing a Servlet</h4>
+<div class="sect2">
+<h3 id="creating-and-initializing-a-servlet"><a class="anchor" href="#creating-and-initializing-a-servlet"></a>Creating and Initializing a Servlet</h3>
 <div class="paragraph">
 <p>Use the <code>@WebServlet</code> annotation to define a servlet component in a web
 application. This annotation is specified on a class and contains
@@ -832,8 +862,8 @@ available to all components of a web application.</p>
 <p><a id="BNAFV"></a><a id="writing-service-methods"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="writing-service-methods"><a class="anchor" href="#writing-service-methods"></a>Writing Service Methods</h4>
+<div class="sect2">
+<h3 id="writing-service-methods"><a class="anchor" href="#writing-service-methods"></a>Writing Service Methods</h3>
 <div class="paragraph">
 <p>The service provided by a servlet is implemented in the <code>service</code> method
 of a <code>GenericServlet</code>, in the <code>do`Method methods (where Method can take
@@ -871,8 +901,8 @@ describe how to get information from requests and generate responses.</p>
 <div class="paragraph">
 <p><a id="BNAFW"></a><a id="getting-information-from-requests"></a></p>
 </div>
-<div class="sect4">
-<h5 id="getting-information-from-requests"><a class="anchor" href="#getting-information-from-requests"></a>Getting Information from Requests</h5>
+<div class="sect3">
+<h4 id="getting-information-from-requests"><a class="anchor" href="#getting-information-from-requests"></a>Getting Information from Requests</h4>
 <div class="paragraph">
 <p>A request contains data passed between a client and the servlet. All
 requests implement the <code>ServletRequest</code> interface. This interface
@@ -961,8 +991,8 @@ method is submitted.</p>
 <p><a id="BNAFZ"></a><a id="constructing-responses"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="constructing-responses"><a class="anchor" href="#constructing-responses"></a>Constructing Responses</h5>
+<div class="sect3">
+<h4 id="constructing-responses"><a class="anchor" href="#constructing-responses"></a>Constructing Responses</h4>
 <div class="paragraph">
 <p>A response contains data passed between a server and the client. All
 responses implement the <code>ServletResponse</code> interface. This interface
@@ -1025,8 +1055,8 @@ Tracking</a>).</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="filtering-requests-and-responses"><a class="anchor" href="#filtering-requests-and-responses"></a>Filtering Requests and Responses</h4>
+<div class="sect2">
+<h3 id="filtering-requests-and-responses"><a class="anchor" href="#filtering-requests-and-responses"></a>Filtering Requests and Responses</h3>
 <div class="paragraph">
 <p>A filter is an object that can transform the header and content (or
 both) of a request or response. Filters differ from web components in
@@ -1072,8 +1102,8 @@ when a web container loads the component.</p>
 <div class="paragraph">
 <p><a id="BNAGC"></a><a id="programming-filters"></a></p>
 </div>
-<div class="sect4">
-<h5 id="programming-filters"><a class="anchor" href="#programming-filters"></a>Programming Filters</h5>
+<div class="sect3">
+<h4 id="programming-filters"><a class="anchor" href="#programming-filters"></a>Programming Filters</h4>
 <div class="paragraph">
 <p>The filtering API is defined by the <code>Filter</code>, <code>FilterChain</code>, and
 <code>FilterConfig</code> interfaces in the <code>javax.servlet</code> package. You define a
@@ -1151,8 +1181,8 @@ filter, you retrieve them from the <code>FilterConfig</code> object passed to
 <p><a id="BNAGD"></a><a id="programming-customized-requests-and-responses"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="programming-customized-requests-and-responses"><a class="anchor" href="#programming-customized-requests-and-responses"></a>Programming Customized Requests and Responses</h5>
+<div class="sect3">
+<h4 id="programming-customized-requests-and-responses"><a class="anchor" href="#programming-customized-requests-and-responses"></a>Programming Customized Requests and Responses</h4>
 <div class="paragraph">
 <p>There are many ways for a filter to modify a request or a response. For
 example, a filter can add an attribute to the request or can insert data
@@ -1182,8 +1212,8 @@ extends either <code>ServletResponseWrapper</code> or <code>HttpServletResponseW
 <p><a id="BNAGF"></a><a id="specifying-filter-mappings"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="specifying-filter-mappings"><a class="anchor" href="#specifying-filter-mappings"></a>Specifying Filter Mappings</h5>
+<div class="sect3">
+<h4 id="specifying-filter-mappings"><a class="anchor" href="#specifying-filter-mappings"></a>Specifying Filter Mappings</h4>
 <div class="paragraph">
 <p>A web container uses filter mappings to decide how to apply filters to
 web resources. A filter mapping matches a filter to a web component by
@@ -1206,7 +1236,7 @@ to servlets S1 and S2.</p>
 </div>
 <div id="BNAGH" class="paragraph">
 <div class="title"><strong>Figure 18-1 Filter-to-Servlet Mapping</strong></div>
-<p><span class="image"><img src="data:image/png;base64," alt="Diagram of filter-to-servlet mapping with filters F1-F3 and servlets S1-S3. F1 filters S1-S3, then F2 filters S2, then F3 filters S1 and S2."></span></p>
+<p><span class="image"><img src="data:image/png;base64,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" alt="Diagram of filter-to-servlet mapping with filters F1-F3 and servlets S1-S3. F1 filters S1-S3, then F2 filters S2, then F3 filters S1 and S2."></span></p>
 </div>
 <div class="paragraph">
 <p>Recall that a filter chain is one of the objects passed to the
@@ -1227,8 +1257,8 @@ F1&#8217;s <code>doFilter</code> method.</p>
 <div class="paragraph">
 <p><a id="GJSLC"></a><a id="to-specify-filter-mappings-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-specify-filter-mappings-using-netbeans-ide"><a class="anchor" href="#to-specify-filter-mappings-using-netbeans-ide"></a>To Specify Filter Mappings Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-specify-filter-mappings-using-netbeans-ide"><a class="anchor" href="#to-specify-filter-mappings-using-netbeans-ide"></a>To Specify Filter Mappings Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1318,8 +1348,8 @@ F1&#8217;s <code>doFilter</code> method.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="invoking-other-web-resources"><a class="anchor" href="#invoking-other-web-resources"></a>Invoking Other Web Resources</h4>
+<div class="sect2">
+<h3 id="invoking-other-web-resources"><a class="anchor" href="#invoking-other-web-resources"></a>Invoking Other Web Resources</h3>
 <div class="paragraph">
 <p>Web components can invoke other web resources both indirectly and
 directly. A web component indirectly invokes another web resource by
@@ -1344,8 +1374,8 @@ null. Your servlet should be prepared to deal with this condition.</p>
 <div class="paragraph">
 <p><a id="BNAGJ"></a><a id="including-other-resources-in-the-response"></a></p>
 </div>
-<div class="sect4">
-<h5 id="including-other-resources-in-the-response"><a class="anchor" href="#including-other-resources-in-the-response"></a>Including Other Resources in the Response</h5>
+<div class="sect3">
+<h4 id="including-other-resources-in-the-response"><a class="anchor" href="#including-other-resources-in-the-response"></a>Including Other Resources in the Response</h4>
 <div class="paragraph">
 <p>It is often useful to include another web resource, such as banner
 content or copyright information, in the response returned from a web
@@ -1381,8 +1411,8 @@ affects the headers of the response.</p>
 <p><a id="BNAGK"></a><a id="transferring-control-to-another-web-component"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="transferring-control-to-another-web-component"><a class="anchor" href="#transferring-control-to-another-web-component"></a>Transferring Control to Another Web Component</h5>
+<div class="sect3">
+<h4 id="transferring-control-to-another-web-component"><a class="anchor" href="#transferring-control-to-another-web-component"></a>Transferring Control to Another Web Component</h4>
 <div class="paragraph">
 <p>In some applications, you might want to have one web component do
 preliminary processing of a request and have another component generate
@@ -1416,8 +1446,8 @@ cannot use this method; doing so throws an <code>IllegalStateException</code>.</
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="accessing-the-web-context"><a class="anchor" href="#accessing-the-web-context"></a>Accessing the Web Context</h4>
+<div class="sect2">
+<h3 id="accessing-the-web-context"><a class="anchor" href="#accessing-the-web-context"></a>Accessing the Web Context</h3>
 <div class="paragraph">
 <p>The context in which web components execute is an object that implements
 the <code>ServletContext</code> interface. You retrieve the web context by using
@@ -1450,8 +1480,8 @@ incremented value of the counter is recorded in the log.</p>
 <p><a id="BNAGM"></a><a id="maintaining-client-state"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="maintaining-client-state"><a class="anchor" href="#maintaining-client-state"></a>Maintaining Client State</h4>
+<div class="sect2">
+<h3 id="maintaining-client-state"><a class="anchor" href="#maintaining-client-state"></a>Maintaining Client State</h3>
 <div class="paragraph">
 <p>Many applications require that a series of requests from a client be
 associated with one another. For example, a web application can save the
@@ -1464,8 +1494,8 @@ several mechanisms for implementing sessions.</p>
 <div class="paragraph">
 <p><a id="BNAGN"></a><a id="accessing-a-session"></a></p>
 </div>
-<div class="sect4">
-<h5 id="accessing-a-session"><a class="anchor" href="#accessing-a-session"></a>Accessing a Session</h5>
+<div class="sect3">
+<h4 id="accessing-a-session"><a class="anchor" href="#accessing-a-session"></a>Accessing a Session</h4>
 <div class="paragraph">
 <p>Sessions are represented by an <code>HttpSession</code> object. You access a
 session by calling the <code>getSession</code> method of a request object. This
@@ -1476,8 +1506,8 @@ the request does not have a session, this method creates one.</p>
 <p><a id="BNAGO"></a><a id="associating-objects-with-a-session"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="associating-objects-with-a-session"><a class="anchor" href="#associating-objects-with-a-session"></a>Associating Objects with a Session</h5>
+<div class="sect3">
+<h4 id="associating-objects-with-a-session"><a class="anchor" href="#associating-objects-with-a-session"></a>Associating Objects with a Session</h4>
 <div class="paragraph">
 <p>You can associate object-valued attributes with a session by name. Such
 attributes are accessible by any web component that belongs to the same
@@ -1510,8 +1540,8 @@ storage. To receive this notification, your object must implement the
 <p><a id="BNAGQ"></a><a id="session-management"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="session-management"><a class="anchor" href="#session-management"></a>Session Management</h5>
+<div class="sect3">
+<h4 id="session-management"><a class="anchor" href="#session-management"></a>Session Management</h4>
 <div class="paragraph">
 <p>Because an HTTP client has no way to signal that it no longer needs a
 session, each session has an associated timeout so that its resources
@@ -1535,8 +1565,8 @@ and remove any session data.</p>
 <div class="paragraph">
 <p><a id="sthref100"></a><a id="to-set-the-timeout-period-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-set-the-timeout-period-using-netbeans-ide"><a class="anchor" href="#to-set-the-timeout-period-using-netbeans-ide"></a>To Set the Timeout Period Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-set-the-timeout-period-using-netbeans-ide"><a class="anchor" href="#to-set-the-timeout-period-using-netbeans-ide"></a>To Set the Timeout Period Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>To set the timeout period in the deployment descriptor using NetBeans
 IDE, follow these steps.</p>
@@ -1573,8 +1603,8 @@ must pass before the session times out.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="session-tracking"><a class="anchor" href="#session-tracking"></a>Session Tracking</h5>
+<div class="sect3">
+<h4 id="session-tracking"><a class="anchor" href="#session-tracking"></a>Session Tracking</h4>
 <div class="paragraph">
 <p>To associate a session with a user, a web container can use several
 methods, all of which involve passing an identifier between the client
@@ -1595,8 +1625,8 @@ otherwise, the method returns the URL unchanged.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="finalizing-a-servlet"><a class="anchor" href="#finalizing-a-servlet"></a>Finalizing a Servlet</h4>
+<div class="sect2">
+<h3 id="finalizing-a-servlet"><a class="anchor" href="#finalizing-a-servlet"></a>Finalizing a Servlet</h3>
 <div class="paragraph">
 <p>The web container may determine that a servlet should be removed from
 service (for example, when a container wants to reclaim memory resources
@@ -1637,8 +1667,8 @@ and, if necessary, stop working, clean up, and return.</p>
 <div class="paragraph">
 <p><a id="BNAGT"></a><a id="tracking-service-requests"></a></p>
 </div>
-<div class="sect4">
-<h5 id="tracking-service-requests"><a class="anchor" href="#tracking-service-requests"></a>Tracking Service Requests</h5>
+<div class="sect3">
+<h4 id="tracking-service-requests"><a class="anchor" href="#tracking-service-requests"></a>Tracking Service Requests</h4>
 <div class="paragraph">
 <p>To track service requests:</p>
 </div>
@@ -1698,8 +1728,8 @@ method:</p>
 <p><a id="BNAGU"></a><a id="notifying-methods-to-shut-down"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="notifying-methods-to-shut-down"><a class="anchor" href="#notifying-methods-to-shut-down"></a>Notifying Methods to Shut Down</h5>
+<div class="sect3">
+<h4 id="notifying-methods-to-shut-down"><a class="anchor" href="#notifying-methods-to-shut-down"></a>Notifying Methods to Shut Down</h4>
 <div class="paragraph">
 <p>To ensure a clean shutdown, your <code>destroy</code> method should not release any
 shared resources until all the service requests have completed:</p>
@@ -1760,8 +1790,8 @@ a clean shutdown:</p>
 <p><a id="BNAGV"></a><a id="creating-polite-long-running-methods"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="creating-polite-long-running-methods"><a class="anchor" href="#creating-polite-long-running-methods"></a>Creating Polite Long-Running Methods</h5>
+<div class="sect3">
+<h4 id="creating-polite-long-running-methods"><a class="anchor" href="#creating-polite-long-running-methods"></a>Creating Polite Long-Running Methods</h4>
 <div class="paragraph">
 <p>The final step in providing a clean shutdown is to make any long-running
 methods behave politely. Methods that might run for a long time should
@@ -1788,8 +1818,8 @@ interrupt their work, if necessary:</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="uploading-files-with-jakarta-servlet-technology"><a class="anchor" href="#uploading-files-with-jakarta-servlet-technology"></a>Uploading Files with Jakarta Servlet Technology</h4>
+<div class="sect2">
+<h3 id="uploading-files-with-jakarta-servlet-technology"><a class="anchor" href="#uploading-files-with-jakarta-servlet-technology"></a>Uploading Files with Jakarta Servlet Technology</h3>
 <div class="paragraph">
 <p>Supporting file uploads is a very basic and common requirement for many
 web applications. In prior versions of the Servlet specification,
@@ -1812,8 +1842,8 @@ a given <code>multipart/form-data</code> request by calling the
 <div class="paragraph">
 <p><a id="sthref101"></a><a id="the-multipartconfig-annotation"></a></p>
 </div>
-<div class="sect4">
-<h5 id="the-multipartconfig-annotation"><a class="anchor" href="#the-multipartconfig-annotation"></a>The @MultipartConfig Annotation</h5>
+<div class="sect3">
+<h4 id="the-multipartconfig-annotation"><a class="anchor" href="#the-multipartconfig-annotation"></a>The @MultipartConfig Annotation</h4>
 <div class="paragraph">
 <p>The <code>@MultipartConfig</code> annotation supports the following optional
 attributes.</p>
@@ -1875,8 +1905,8 @@ file:</p>
 <p><a id="sthref102"></a><a id="the-getparts-and-getpart-methods"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="the-getparts-and-getpart-methods"><a class="anchor" href="#the-getparts-and-getpart-methods"></a>The getParts and getPart Methods</h5>
+<div class="sect3">
+<h4 id="the-getparts-and-getpart-methods"><a class="anchor" href="#the-getparts-and-getpart-methods"></a>The getParts and getPart Methods</h4>
 <div class="paragraph">
 <p>The Servlet specification supports two additional <code>HttpServletRequest</code>
 methods:</p>
@@ -1933,8 +1963,8 @@ example, in the location specified by the Destination field in the form.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="asynchronous-processing"><a class="anchor" href="#asynchronous-processing"></a>Asynchronous Processing</h4>
+<div class="sect2">
+<h3 id="asynchronous-processing"><a class="anchor" href="#asynchronous-processing"></a>Asynchronous Processing</h3>
 <div class="paragraph">
 <p>Web containers in application servers normally use a server thread per
 client request. Under heavy load conditions, containers need a large
@@ -1973,8 +2003,8 @@ with the request immediately to the container.</p>
 <div class="paragraph">
 <p><a id="sthref103"></a><a id="asynchronous-processing-in-servlets"></a></p>
 </div>
-<div class="sect4">
-<h5 id="asynchronous-processing-in-servlets"><a class="anchor" href="#asynchronous-processing-in-servlets"></a>Asynchronous Processing in Servlets</h5>
+<div class="sect3">
+<h4 id="asynchronous-processing-in-servlets"><a class="anchor" href="#asynchronous-processing-in-servlets"></a>Asynchronous Processing in Servlets</h4>
 <div class="paragraph">
 <p>Jakarta EE provides asynchronous processing support for servlets and
 filters. If a servlet or a filter reaches a potentially blocking
@@ -2098,8 +2128,8 @@ the blocking operation completes.</p>
 <p><a id="sthref105"></a><a id="waiting-for-a-resource"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="waiting-for-a-resource"><a class="anchor" href="#waiting-for-a-resource"></a>Waiting for a Resource</h5>
+<div class="sect3">
+<h4 id="waiting-for-a-resource"><a class="anchor" href="#waiting-for-a-resource"></a>Waiting for a Resource</h4>
 <div class="paragraph">
 <p>This section demonstrates how to use the functionality provided by the
 <code>AsyncContext</code> class for the following use case:</p>
@@ -2202,8 +2232,8 @@ request is processed in the asynchronous context.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="nonblocking-io"><a class="anchor" href="#nonblocking-io"></a>Nonblocking I/O</h4>
+<div class="sect2">
+<h3 id="nonblocking-io"><a class="anchor" href="#nonblocking-io"></a>Nonblocking I/O</h3>
 <div class="paragraph">
 <p>Web containers in application servers normally use a server thread per
 client request. To develop scalable web applications, you must ensure
@@ -2371,8 +2401,8 @@ error.</p></td>
 <div class="paragraph">
 <p><a id="sthref109"></a><a id="reading-a-large-http-post-request-using-nonblocking-io"></a></p>
 </div>
-<div class="sect4">
-<h5 id="reading-a-large-http-post-request-using-nonblocking-io"><a class="anchor" href="#reading-a-large-http-post-request-using-nonblocking-io"></a>Reading a Large HTTP POST Request Using Nonblocking I/O</h5>
+<div class="sect3">
+<h4 id="reading-a-large-http-post-request-using-nonblocking-io"><a class="anchor" href="#reading-a-large-http-post-request-using-nonblocking-io"></a>Reading a Large HTTP POST Request Using Nonblocking I/O</h4>
 <div class="paragraph">
 <p>The code in this section shows how to read a large HTTP POST request
 inside a servlet by putting the request in asynchronous mode (as
@@ -2431,8 +2461,8 @@ finishes reading the request.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="server-push"><a class="anchor" href="#server-push"></a>Server Push</h4>
+<div class="sect2">
+<h3 id="server-push"><a class="anchor" href="#server-push"></a>Server Push</h3>
 <div class="paragraph">
 <p>Server push is the ability of the server to anticipate what will be
 needed by the client in advance of the client&#8217;s request. It lets the server
@@ -2463,8 +2493,8 @@ edit the builder as desired, then call <code>push()</code>. See the
 <p><a id="BEIJHCDJ"></a><a id="protocol-upgrade-processing"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="protocol-upgrade-processing"><a class="anchor" href="#protocol-upgrade-processing"></a>Protocol Upgrade Processing</h4>
+<div class="sect2">
+<h3 id="protocol-upgrade-processing"><a class="anchor" href="#protocol-upgrade-processing"></a>Protocol Upgrade Processing</h3>
 <div class="paragraph">
 <p>In HTTP/1.1, clients can request to switch to a different protocol on
 the current connection by using the <code>Upgrade</code> header field. If the
@@ -2635,8 +2665,8 @@ protocol. See the Servlet 4.0 specification at
 upgrade support.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="http-trailer"><a class="anchor" href="#http-trailer"></a>HTTP Trailer</h4>
+<div class="sect2">
+<h3 id="http-trailer"><a class="anchor" href="#http-trailer"></a>HTTP Trailer</h3>
 <div class="paragraph">
 <p>HTTP trailer is a collection of a special type of HTTP headers that comes
 after the response body. The trailer response header allows the sender to
@@ -2676,8 +2706,8 @@ and <code>setTrailerFields()</code> in <code>HttpServletResponse</code>.</p>
 <p><a id="GKCPG"></a><a id="the-mood-example-application"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="the-mood-example-application"><a class="anchor" href="#the-mood-example-application"></a>The mood Example Application</h4>
+<div class="sect2">
+<h3 id="the-mood-example-application"><a class="anchor" href="#the-mood-example-application"></a>The mood Example Application</h3>
 <div class="paragraph">
 <p>The <code>mood</code> example application, located in the
 tut-install`/examples/web/servlet/mood/` directory, is a simple example
@@ -2702,8 +2732,8 @@ servlet, a listener, and a filter.</p>
 <div class="paragraph">
 <p><a id="CHDEBFCB"></a><a id="components-of-the-mood-example-application"></a></p>
 </div>
-<div class="sect4">
-<h5 id="components-of-the-mood-example-application"><a class="anchor" href="#components-of-the-mood-example-application"></a>Components of the mood Example Application</h5>
+<div class="sect3">
+<h4 id="components-of-the-mood-example-application"><a class="anchor" href="#components-of-the-mood-example-application"></a>Components of the mood Example Application</h4>
 <div class="paragraph">
 <p>The <code>mood</code> example application is comprised of three components:
 <code>mood.web.MoodServlet</code>, <code>mood.web.TimeOfDayFilter</code>, and
@@ -2747,8 +2777,8 @@ entries appear in the server log.</p>
 <p><a id="GKCOJ"></a><a id="running-the-mood-example"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="running-the-mood-example"><a class="anchor" href="#running-the-mood-example"></a>Running the mood Example</h5>
+<div class="sect3">
+<h4 id="running-the-mood-example"><a class="anchor" href="#running-the-mood-example"></a>Running the mood Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>mood</code> example.</p>
@@ -2769,8 +2799,8 @@ run the <code>mood</code> example.</p>
 <div class="paragraph">
 <p><a id="GKCOB"></a><a id="to-run-the-mood-example-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-mood-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-mood-example-using-netbeans-ide"></a>To Run the mood Example Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-run-the-mood-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-mood-example-using-netbeans-ide"></a>To Run the mood Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2820,8 +2850,8 @@ string describing Duke&#8217;s mood, and an illustrative graphic.</p>
 <p><a id="GKCPJ"></a><a id="to-run-the-mood-example-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-mood-example-using-maven"><a class="anchor" href="#to-run-the-mood-example-using-maven"></a>To Run the mood Example Using Maven</h6>
+<div class="sect4">
+<h5 id="to-run-the-mood-example-using-maven"><a class="anchor" href="#to-run-the-mood-example-using-maven"></a>To Run the mood Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2868,8 +2898,8 @@ string describing Duke&#8217;s mood, and an illustrative graphic.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="the-fileupload-example-application"><a class="anchor" href="#the-fileupload-example-application"></a>The fileupload Example Application</h4>
+<div class="sect2">
+<h3 id="the-fileupload-example-application"><a class="anchor" href="#the-fileupload-example-application"></a>The fileupload Example Application</h3>
 <div class="paragraph">
 <p>The <code>fileupload</code> example, located in the
 tut-install`/examples/web/servlet/fileupload/` directory, illustrates
@@ -2928,8 +2958,8 @@ data that results from the download or use of content.</p>
 <div class="paragraph">
 <p><a id="CHDFGBGI"></a><a id="architecture-of-the-fileupload-example-application"></a></p>
 </div>
-<div class="sect4">
-<h5 id="architecture-of-the-fileupload-example-application"><a class="anchor" href="#architecture-of-the-fileupload-example-application"></a>Architecture of the fileupload Example Application</h5>
+<div class="sect3">
+<h4 id="architecture-of-the-fileupload-example-application"><a class="anchor" href="#architecture-of-the-fileupload-example-application"></a>Architecture of the fileupload Example Application</h4>
 <div class="paragraph">
 <p>The <code>fileupload</code> example application consists of a single servlet and an
 HTML form that makes a file upload request to the servlet.</p>
@@ -3121,8 +3151,8 @@ reasons why a file would not be found. The <code>processRequest</code> and
 <p><a id="CHDIHJCI"></a><a id="running-the-fileupload-example"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="running-the-fileupload-example"><a class="anchor" href="#running-the-fileupload-example"></a>Running the fileupload Example</h5>
+<div class="sect3">
+<h4 id="running-the-fileupload-example"><a class="anchor" href="#running-the-fileupload-example"></a>Running the fileupload Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>fileupload</code> example.</p>
@@ -3148,8 +3178,8 @@ Using Maven</a></p>
 <div class="paragraph">
 <p><a id="CHDGDJCI"></a><a id="to-build-package-and-deploy-the-fileupload-example-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-build-package-and-deploy-the-fileupload-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-fileupload-example-using-netbeans-ide"></a>To Build, Package, and Deploy the fileupload Example Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-build-package-and-deploy-the-fileupload-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-fileupload-example-using-netbeans-ide"></a>To Build, Package, and Deploy the fileupload Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3184,8 +3214,8 @@ Build.</p>
 <p><a id="CHDCFADG"></a><a id="to-build-package-and-deploy-the-fileupload-example-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-build-package-and-deploy-the-fileupload-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-fileupload-example-using-maven"></a>To Build, Package, and Deploy the fileupload Example Using Maven</h6>
+<div class="sect4">
+<h5 id="to-build-package-and-deploy-the-fileupload-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-fileupload-example-using-maven"></a>To Build, Package, and Deploy the fileupload Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3215,8 +3245,8 @@ Server</a>).</p>
 <p><a id="CHDDDAAJ"></a><a id="to-run-the-fileupload-example"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-fileupload-example"><a class="anchor" href="#to-run-the-fileupload-example"></a>To Run the fileupload Example</h6>
+<div class="sect4">
+<h5 id="to-run-the-fileupload-example"><a class="anchor" href="#to-run-the-fileupload-example"></a>To Run the fileupload Example</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3266,8 +3296,8 @@ verify that the uploaded file is present.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="the-dukeetf-example-application"><a class="anchor" href="#the-dukeetf-example-application"></a>The dukeetf Example Application</h4>
+<div class="sect2">
+<h3 id="the-dukeetf-example-application"><a class="anchor" href="#the-dukeetf-example-application"></a>The dukeetf Example Application</h3>
 <div class="paragraph">
 <p>The <code>dukeetf</code> example application, located in the
 tut-install`/examples/web/dukeetf/` directory, demonstrates how to use
@@ -3291,8 +3321,8 @@ on the price and trading volume of an electronically traded fund (ETF).</p>
 <div class="paragraph">
 <p><a id="CHDBBEDA"></a><a id="architecture-of-the-dukeetf-example-application"></a></p>
 </div>
-<div class="sect4">
-<h5 id="architecture-of-the-dukeetf-example-application"><a class="anchor" href="#architecture-of-the-dukeetf-example-application"></a>Architecture of the dukeetf Example Application</h5>
+<div class="sect3">
+<h4 id="architecture-of-the-dukeetf-example-application"><a class="anchor" href="#architecture-of-the-dukeetf-example-application"></a>Architecture of the dukeetf Example Application</h4>
 <div class="paragraph">
 <p>The <code>dukeetf</code> example application consists of a servlet, an enterprise
 bean, and an HTML page.</p>
@@ -3330,8 +3360,8 @@ the connection open until new data becomes available.</p>
 <div class="paragraph">
 <p><a id="sthref111"></a><a id="the-servlet"></a></p>
 </div>
-<div class="sect5">
-<h6 id="the-servlet"><a class="anchor" href="#the-servlet"></a>The Servlet</h6>
+<div class="sect4">
+<h5 id="the-servlet"><a class="anchor" href="#the-servlet"></a>The Servlet</h5>
 <div class="paragraph">
 <p>The <code>DukeETFServlet</code> class uses asynchronous processing:</p>
 </div>
@@ -3417,8 +3447,8 @@ method. The service method is the following:</p>
 <p><a id="sthref112"></a><a id="the-enterprise-bean"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-enterprise-bean"><a class="anchor" href="#the-enterprise-bean"></a>The Enterprise Bean</h6>
+<div class="sect4">
+<h5 id="the-enterprise-bean"><a class="anchor" href="#the-enterprise-bean"></a>The Enterprise Bean</h5>
 <div class="paragraph">
 <p>The <code>PriceVolumeBean</code> class is an enterprise bean that uses the timer
 service from the container to update the price and volume information
@@ -3467,8 +3497,8 @@ Bean Examples"</a> for more information on the timer service.</p>
 <p><a id="sthref113"></a><a id="the-html-page"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="the-html-page"><a class="anchor" href="#the-html-page"></a>The HTML Page</h6>
+<div class="sect4">
+<h5 id="the-html-page"><a class="anchor" href="#the-html-page"></a>The HTML Page</h5>
 <div class="paragraph">
 <p>The HTML page consists of a table and some JavaScript code. The table
 contains two fields referenced from JavaScript code:</p>
@@ -3534,8 +3564,8 @@ endpoint.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="running-the-dukeetf-example-application"><a class="anchor" href="#running-the-dukeetf-example-application"></a>Running the dukeetf Example Application</h5>
+<div class="sect3">
+<h4 id="running-the-dukeetf-example-application"><a class="anchor" href="#running-the-dukeetf-example-application"></a>Running the dukeetf Example Application</h4>
 <div class="paragraph">
 <p>This section describes how to run the <code>dukeetf</code> example application
 using NetBeans IDE and from the command line.</p>
@@ -3557,8 +3587,8 @@ IDE</a></p>
 <div class="paragraph">
 <p><a id="CHDCGCJD"></a><a id="to-run-the-dukeetf-example-application-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-dukeetf-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-dukeetf-example-application-using-netbeans-ide"></a>To Run the dukeetf Example Application Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-run-the-dukeetf-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-dukeetf-example-application-using-netbeans-ide"></a>To Run the dukeetf Example Application Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3607,8 +3637,8 @@ price and volume updates simultaneously.</p>
 <p><a id="CHDHHAFG"></a><a id="to-run-the-dukeetf-example-application-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-dukeetf-example-application-using-maven"><a class="anchor" href="#to-run-the-dukeetf-example-application-using-maven"></a>To Run the dukeetf Example Application Using Maven</h6>
+<div class="sect4">
+<h5 id="to-run-the-dukeetf-example-application-using-maven"><a class="anchor" href="#to-run-the-dukeetf-example-application-using-maven"></a>To Run the dukeetf Example Application Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3652,8 +3682,8 @@ price and volume updates simultaneously.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="further-information-about-jakarta-servlet-technology"><a class="anchor" href="#further-information-about-jakarta-servlet-technology"></a>Further Information about Jakarta Servlet Technology</h4>
+<div class="sect2">
+<h3 id="further-information-about-jakarta-servlet-technology"><a class="anchor" href="#further-information-about-jakarta-servlet-technology"></a>Further Information about Jakarta Servlet Technology</h3>
 <div class="paragraph">
 <p>For more information on Jakarta Servlet technology, see the Jakarta Servlet
 4.0 specification at <code><a href="https://jakarta.ee/specifications/servlet/4.0" class="bare">https://jakarta.ee/specifications/servlet/4.0</a></code>.</p>
@@ -3661,9 +3691,10 @@ price and volume updates simultaneously.</p>
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 15:37:21 UTC
+Last updated 2020-04-26 18:34:55 UTC
 </div>
 </div>
 <style>

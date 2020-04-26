@@ -438,17 +438,33 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Web Application</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#web-application">Web Application</a></li>
+<li><a href="#getting-started-with-web-applications">Getting Started with Web Applications</a>
 <ul class="sectlevel2">
-<li><a href="#getting-started-with-web-applications">Getting Started with Web Applications</a></li>
+<li><a href="#web-applications">Web Applications</a></li>
+<li><a href="#web-application-lifecycle">Web Application Lifecycle</a></li>
+<li><a href="#a-web-module-that-uses-jakarta-server-faces-technology-the-hello1-example">A Web Module That Uses Jakarta Server Faces Technology: The hello1 Example</a></li>
+<li><a href="#a-web-module-that-uses-jakarta-servlet-technology-the-hello2-example">A Web Module That Uses Jakarta Servlet Technology: The hello2 Example</a></li>
+<li><a href="#configuring-web-applications">Configuring Web Applications</a></li>
+<li><a href="#further-information-about-web-applications">Further Information about Web Applications</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect2">
-<h3 id="getting-started-with-web-applications"><a class="anchor" href="#getting-started-with-web-applications"></a>Getting Started with Web Applications</h3>
+<div class="sect1">
+<h2 id="web-application"><a class="anchor" href="#web-application"></a>Web Application</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="getting-started-with-web-applications"><a class="anchor" href="#getting-started-with-web-applications"></a>Getting Started with Web Applications</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><a id="BNADR"></a><a id="getting-started-with-web-applications"></a></p>
 </div>
@@ -459,8 +475,8 @@ Faces technology and/or Java Servlet technology.</p>
 <div class="paragraph">
 <p><a id="GEYSJ"></a><a id="web-applications"></a></p>
 </div>
-<div class="sect3">
-<h4 id="web-applications"><a class="anchor" href="#web-applications"></a>Web Applications</h4>
+<div class="sect2">
+<h3 id="web-applications"><a class="anchor" href="#web-applications"></a>Web Applications</h3>
 <div class="paragraph">
 <p>A web application is a dynamic extension of a web or application server.
 Web applications are of the following types:</p>
@@ -505,7 +521,7 @@ HTTP response and returns it to the client.</p>
 </div>
 <div id="BNADS" class="paragraph">
 <div class="title"><strong>Figure 6-1 Jakarta Web Application Request Handling</strong></div>
-<p><span class="image"><img src="data:image/png;base64," alt="Diagram of web application request handling. Clients and servlets communicate using HttpServletRequest and HttpServletResponse."></span></p>
+<p><span class="image"><img src="data:image/png;base64,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" alt="Diagram of web application request handling. Clients and servlets communicate using HttpServletRequest and HttpServletResponse."></span></p>
 </div>
 <div class="paragraph">
 <p>Servlets are Java programming language classes that dynamically process
@@ -548,8 +564,8 @@ commonly used configuration parameters.</p>
 <p><a id="BNADU"></a><a id="web-application-lifecycle"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="web-application-lifecycle"><a class="anchor" href="#web-application-lifecycle"></a>Web Application Lifecycle</h4>
+<div class="sect2">
+<h3 id="web-application-lifecycle"><a class="anchor" href="#web-application-lifecycle"></a>Web Application Lifecycle</h3>
 <div class="paragraph">
 <p>A web application consists of web components; static resource files,
 such as images and cascading style sheets (CSS); and helper classes and
@@ -619,8 +635,8 @@ components.</p>
 <p><a id="BNADX"></a><a id="a-web-module-that-uses-javaserver-faces-technology-the-hello1-example"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="a-web-module-that-uses-jakarta-server-faces-technology-the-hello1-example"><a class="anchor" href="#a-web-module-that-uses-jakarta-server-faces-technology-the-hello1-example"></a>A Web Module That Uses Jakarta Server Faces Technology: The hello1 Example</h4>
+<div class="sect2">
+<h3 id="a-web-module-that-uses-jakarta-server-faces-technology-the-hello1-example"><a class="anchor" href="#a-web-module-that-uses-jakarta-server-faces-technology-the-hello1-example"></a>A Web Module That Uses Jakarta Server Faces Technology: The hello1 Example</h3>
 <div class="paragraph">
 <p>The <code>hello1</code> application is a web module that uses Jakarta Server Faces
 technology to display a greeting and response. You can use a text editor
@@ -655,8 +671,8 @@ to view the application files, or you can use NetBeans IDE.</p>
 <div class="paragraph">
 <p><a id="GJWTV"></a><a id="to-view-the-hello1-web-module-using-netbeans-ide"></a></p>
 </div>
-<div class="sect4">
-<h5 id="to-view-the-hello1-web-module-using-netbeans-ide"><a class="anchor" href="#to-view-the-hello1-web-module-using-netbeans-ide"></a>To View the hello1 Web Module Using NetBeans IDE</h5>
+<div class="sect3">
+<h4 id="to-view-the-hello1-web-module-using-netbeans-ide"><a class="anchor" href="#to-view-the-hello1-web-module-using-netbeans-ide"></a>To View the hello1 Web Module Using NetBeans IDE</h4>
 <div class="paragraph">
 <p>To view the <code>hello1</code> web module using NetBeans IDE:</p>
 </div>
@@ -885,8 +901,8 @@ page:</p>
 <div class="paragraph">
 <p><a id="GLQLK"></a><a id="introduction-to-scopes"></a></p>
 </div>
-<div class="sect5">
-<h6 id="introduction-to-scopes"><a class="anchor" href="#introduction-to-scopes"></a>Introduction to Scopes</h6>
+<div class="sect4">
+<h5 id="introduction-to-scopes"><a class="anchor" href="#introduction-to-scopes"></a>Introduction to Scopes</h5>
 <div class="paragraph">
 <p>In the <code>Hello.java</code> class, the annotations <code>javax.inject.Named</code> and
 <code>javax.enterprise.context.RequestScoped</code> identify the class as a managed
@@ -926,8 +942,8 @@ all users' interactions with a web application.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="packaging-and-deploying-the-hello1-web-module"><a class="anchor" href="#packaging-and-deploying-the-hello1-web-module"></a>Packaging and Deploying the hello1 Web Module</h5>
+<div class="sect3">
+<h4 id="packaging-and-deploying-the-hello1-web-module"><a class="anchor" href="#packaging-and-deploying-the-hello1-web-module"></a>Packaging and Deploying the hello1 Web Module</h4>
 <div class="paragraph">
 <p>A web module must be packaged into a WAR in certain deployment scenarios
 and whenever you want to distribute the web module. You can package a
@@ -961,8 +977,8 @@ packaging and deploying.</p>
 <div class="paragraph">
 <p><a id="GJRGN"></a><a id="to-build-and-package-the-hello1-web-module-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-build-and-package-the-hello1-web-module-using-netbeans-ide"><a class="anchor" href="#to-build-and-package-the-hello1-web-module-using-netbeans-ide"></a>To Build and Package the hello1 Web Module Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-build-and-package-the-hello1-web-module-using-netbeans-ide"><a class="anchor" href="#to-build-and-package-the-hello1-web-module-using-netbeans-ide"></a>To Build and Package the hello1 Web Module Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>To build and package the <code>hello1</code> web module using NetBeans IDE:</p>
 </div>
@@ -1000,8 +1016,8 @@ Build. This command deploys the project to the server.</p>
 <p><a id="GJRKN"></a><a id="to-build-and-package-the-hello1-web-module-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-build-and-package-the-hello1-web-module-using-maven"><a class="anchor" href="#to-build-and-package-the-hello1-web-module-using-maven"></a>To Build and Package the hello1 Web Module Using Maven</h6>
+<div class="sect4">
+<h5 id="to-build-and-package-the-hello1-web-module-using-maven"><a class="anchor" href="#to-build-and-package-the-hello1-web-module-using-maven"></a>To Build and Package the hello1 Web Module Using Maven</h5>
 <div class="paragraph">
 <p>To build and package the <code>hello1</code> web module using Maven:</p>
 </div>
@@ -1040,8 +1056,8 @@ project to the server.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="viewing-deployed-web-modules"><a class="anchor" href="#viewing-deployed-web-modules"></a>Viewing Deployed Web Modules</h5>
+<div class="sect3">
+<h4 id="viewing-deployed-web-modules"><a class="anchor" href="#viewing-deployed-web-modules"></a>Viewing Deployed Web Modules</h4>
 <div class="paragraph">
 <p>GlassFish Server provides two ways to view the deployed web modules: the
 Administration Console and the <code>asadmin</code> command. You can also use
@@ -1050,8 +1066,8 @@ NetBeans IDE to view deployed modules.</p>
 <div class="paragraph">
 <p><a id="GJSGR"></a><a id="to-view-deployed-web-modules-using-the-administration-console"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-view-deployed-web-modules-using-the-administration-console"><a class="anchor" href="#to-view-deployed-web-modules-using-the-administration-console"></a>To View Deployed Web Modules Using the Administration Console</h6>
+<div class="sect4">
+<h5 id="to-view-deployed-web-modules-using-the-administration-console"><a class="anchor" href="#to-view-deployed-web-modules-using-the-administration-console"></a>To View Deployed Web Modules Using the Administration Console</h5>
 <div class="paragraph">
 <p>To view deployed web modules using the Administration Console:</p>
 </div>
@@ -1072,8 +1088,8 @@ NetBeans IDE to view deployed modules.</p>
 <p><a id="GJSEW"></a><a id="to-view-deployed-web-modules-using-the-asadmin-command"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-view-deployed-web-modules-using-the-asadmin-command"><a class="anchor" href="#to-view-deployed-web-modules-using-the-asadmin-command"></a>To View Deployed Web Modules Using the asadmin Command</h6>
+<div class="sect4">
+<h5 id="to-view-deployed-web-modules-using-the-asadmin-command"><a class="anchor" href="#to-view-deployed-web-modules-using-the-asadmin-command"></a>To View Deployed Web Modules Using the asadmin Command</h5>
 <div class="paragraph">
 <p>Enter the following command:</p>
 </div>
@@ -1086,8 +1102,8 @@ NetBeans IDE to view deployed modules.</p>
 <p><a id="sthref24"></a><a id="to-view-deployed-web-modules-using-netbeans-ide"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-view-deployed-web-modules-using-netbeans-ide"><a class="anchor" href="#to-view-deployed-web-modules-using-netbeans-ide"></a>To View Deployed Web Modules Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-view-deployed-web-modules-using-netbeans-ide"><a class="anchor" href="#to-view-deployed-web-modules-using-netbeans-ide"></a>To View Deployed Web Modules Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>To view deployed web modules using NetBeans IDE:</p>
 </div>
@@ -1107,8 +1123,8 @@ GlassFish Server node.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="running-the-deployed-hello1-web-module"><a class="anchor" href="#running-the-deployed-hello1-web-module"></a>Running the Deployed hello1 Web Module</h5>
+<div class="sect3">
+<h4 id="running-the-deployed-hello1-web-module"><a class="anchor" href="#running-the-deployed-hello1-web-module"></a>Running the Deployed hello1 Web Module</h4>
 <div class="paragraph">
 <p>Now that the web module is deployed, you can view it by opening the
 application in a web browser. By default, the application is deployed to
@@ -1143,8 +1159,8 @@ again.</p>
 <div class="paragraph">
 <p><a id="BNAEM"></a><a id="dynamic-reloading-of-deployed-modules"></a></p>
 </div>
-<div class="sect5">
-<h6 id="dynamic-reloading-of-deployed-modules"><a class="anchor" href="#dynamic-reloading-of-deployed-modules"></a>Dynamic Reloading of Deployed Modules</h6>
+<div class="sect4">
+<h5 id="dynamic-reloading-of-deployed-modules"><a class="anchor" href="#dynamic-reloading-of-deployed-modules"></a>Dynamic Reloading of Deployed Modules</h5>
 <div class="paragraph">
 <p>If dynamic reloading is enabled, you do not have to redeploy an
 application or module when you change its code or deployment
@@ -1170,8 +1186,8 @@ that time become invalid, and the client must restart the session.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="undeploying-the-hello1-web-module"><a class="anchor" href="#undeploying-the-hello1-web-module"></a>Undeploying the hello1 Web Module</h5>
+<div class="sect3">
+<h4 id="undeploying-the-hello1-web-module"><a class="anchor" href="#undeploying-the-hello1-web-module"></a>Undeploying the hello1 Web Module</h4>
 <div class="paragraph">
 <p>You can undeploy web modules and other types of enterprise applications
 by using either NetBeans IDE or Maven.</p>
@@ -1179,8 +1195,8 @@ by using either NetBeans IDE or Maven.</p>
 <div class="paragraph">
 <p><a id="GJSEJ"></a><a id="to-undeploy-the-hello1-web-module-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-undeploy-the-hello1-web-module-using-netbeans-ide"><a class="anchor" href="#to-undeploy-the-hello1-web-module-using-netbeans-ide"></a>To Undeploy the hello1 Web Module Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-undeploy-the-hello1-web-module-using-netbeans-ide"><a class="anchor" href="#to-undeploy-the-hello1-web-module-using-netbeans-ide"></a>To Undeploy the hello1 Web Module Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>To undeploy the <code>hello1</code> web module using NetBeans IDE:</p>
 </div>
@@ -1206,8 +1222,8 @@ Projects tab, right-click the project, and select Clean.</p>
 <p><a id="GJSHH"></a><a id="to-undeploy-the-hello1-web-module-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-undeploy-the-hello1-web-module-using-maven"><a class="anchor" href="#to-undeploy-the-hello1-web-module-using-maven"></a>To Undeploy the hello1 Web Module Using Maven</h6>
+<div class="sect4">
+<h5 id="to-undeploy-the-hello1-web-module-using-maven"><a class="anchor" href="#to-undeploy-the-hello1-web-module-using-maven"></a>To Undeploy the hello1 Web Module Using Maven</h5>
 <div class="paragraph">
 <p>To undeploy the <code>hello1</code> web module using Maven:</p>
 </div>
@@ -1246,8 +1262,8 @@ following command:</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="a-web-module-that-uses-jakarta-servlet-technology-the-hello2-example"><a class="anchor" href="#a-web-module-that-uses-jakarta-servlet-technology-the-hello2-example"></a>A Web Module That Uses Jakarta Servlet Technology: The hello2 Example</h4>
+<div class="sect2">
+<h3 id="a-web-module-that-uses-jakarta-servlet-technology-the-hello2-example"><a class="anchor" href="#a-web-module-that-uses-jakarta-servlet-technology-the-hello2-example"></a>A Web Module That Uses Jakarta Servlet Technology: The hello2 Example</h3>
 <div class="paragraph">
 <p>The <code>hello2</code> application is a web module that uses Jakarta Servlet
 technology to display a greeting and response. You can use a text editor
@@ -1276,8 +1292,8 @@ to view the application files, or you can use NetBeans IDE.</p>
 <div class="paragraph">
 <p><a id="BNAEP"></a><a id="mapping-urls-to-web-components"></a></p>
 </div>
-<div class="sect4">
-<h5 id="mapping-urls-to-web-components"><a class="anchor" href="#mapping-urls-to-web-components"></a>Mapping URLs to Web Components</h5>
+<div class="sect3">
+<h4 id="mapping-urls-to-web-components"><a class="anchor" href="#mapping-urls-to-web-components"></a>Mapping URLs to Web Components</h4>
 <div class="paragraph">
 <p>When it receives a request, the web container must determine which web
 component should handle the request. The web container does so by
@@ -1321,8 +1337,8 @@ the URL pattern.</p>
 <p><a id="GJWWG"></a><a id="examining-the-hello2-web-module"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="examining-the-hello2-web-module"><a class="anchor" href="#examining-the-hello2-web-module"></a>Examining the hello2 Web Module</h5>
+<div class="sect3">
+<h4 id="examining-the-hello2-web-module"><a class="anchor" href="#examining-the-hello2-web-module"></a>Examining the hello2 Web Module</h4>
 <div class="paragraph">
 <p>The <code>hello2</code> application behaves almost identically to the <code>hello1</code>
 application, but it is implemented using Jakarta Servlet technology instead
@@ -1332,8 +1348,8 @@ application files, or you can use NetBeans IDE.</p>
 <div class="paragraph">
 <p><a id="GJWWA"></a><a id="to-view-the-hello2-web-module-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-view-the-hello2-web-module-using-netbeans-ide"><a class="anchor" href="#to-view-the-hello2-web-module-using-netbeans-ide"></a>To View the hello2 Web Module Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-view-the-hello2-web-module-using-netbeans-ide"><a class="anchor" href="#to-view-the-hello2-web-module-using-netbeans-ide"></a>To View the hello2 Web Module Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>To view the <code>hello2</code> web module using NetBeans IDE:</p>
 </div>
@@ -1448,8 +1464,8 @@ root:</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="running-the-hello2-example"><a class="anchor" href="#running-the-hello2-example"></a>Running the hello2 Example</h5>
+<div class="sect3">
+<h4 id="running-the-hello2-example"><a class="anchor" href="#running-the-hello2-example"></a>Running the hello2 Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>hello2</code> example.</p>
@@ -1470,8 +1486,8 @@ run the <code>hello2</code> example.</p>
 <div class="paragraph">
 <p><a id="GJSED"></a><a id="to-run-the-hello2-example-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-hello2-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-hello2-example-using-netbeans-ide"></a>To Run the hello2 Example Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-run-the-hello2-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-hello2-example-using-netbeans-ide"></a>To Run the hello2 Example Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>To run the <code>hello2</code> example using NetBeans IDE:</p>
 </div>
@@ -1525,8 +1541,8 @@ greeting, not on a separate page.</p>
 <p><a id="GJSHX"></a><a id="to-run-the-hello2-example-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-run-the-hello2-example-using-maven"><a class="anchor" href="#to-run-the-hello2-example-using-maven"></a>To Run the hello2 Example Using Maven</h6>
+<div class="sect4">
+<h5 id="to-run-the-hello2-example-using-maven"><a class="anchor" href="#to-run-the-hello2-example-using-maven"></a>To Run the hello2 Example Using Maven</h5>
 <div class="paragraph">
 <p>To run the <code>hello2</code> example using Maven:</p>
 </div>
@@ -1581,8 +1597,8 @@ greeting, not on a separate page.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="configuring-web-applications"><a class="anchor" href="#configuring-web-applications"></a>Configuring Web Applications</h4>
+<div class="sect2">
+<h3 id="configuring-web-applications"><a class="anchor" href="#configuring-web-applications"></a>Configuring Web Applications</h3>
 <div class="paragraph">
 <p>This section describes the following tasks involved with configuring web
 applications:</p>
@@ -1606,8 +1622,8 @@ applications:</p>
 <div class="paragraph">
 <p><a id="BNAES"></a><a id="setting-context-parameters"></a></p>
 </div>
-<div class="sect4">
-<h5 id="setting-context-parameters"><a class="anchor" href="#setting-context-parameters"></a>Setting Context Parameters</h5>
+<div class="sect3">
+<h4 id="setting-context-parameters"><a class="anchor" href="#setting-context-parameters"></a>Setting Context Parameters</h4>
 <div class="paragraph">
 <p>The web components in a web module share an object that represents their
 application context. You can pass context parameters to the context, or
@@ -1619,8 +1635,8 @@ Initializing a Servlet</a>.</p>
 <div class="paragraph">
 <p><a id="GJSFJ"></a><a id="to-add-a-context-parameter-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-add-a-context-parameter-using-netbeans-ide"><a class="anchor" href="#to-add-a-context-parameter-using-netbeans-ide"></a>To Add a Context Parameter Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-add-a-context-parameter-using-netbeans-ide"><a class="anchor" href="#to-add-a-context-parameter-using-netbeans-ide"></a>To Add a Context Parameter Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>These steps apply generally to web applications but do not apply
 specifically to the examples in this chapter.</p>
@@ -1672,8 +1688,8 @@ context object.</p>
 <p><a id="GKIHH"></a><a id="to-create-a-web.xml-file-using-netbeans-ide"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-create-a-web-xml-file-using-netbeans-ide"><a class="anchor" href="#to-create-a-web-xml-file-using-netbeans-ide"></a>To Create a web.xml File Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-create-a-web-xml-file-using-netbeans-ide"><a class="anchor" href="#to-create-a-web-xml-file-using-netbeans-ide"></a>To Create a web.xml File Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>To create a <code>web.xml</code> file using NetBeans IDE:</p>
 </div>
@@ -1702,8 +1718,8 @@ Standard Deployment Descriptor under File Types.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="declaring-welcome-files"><a class="anchor" href="#declaring-welcome-files"></a>Declaring Welcome Files</h5>
+<div class="sect3">
+<h4 id="declaring-welcome-files"><a class="anchor" href="#declaring-welcome-files"></a>Declaring Welcome Files</h4>
 <div class="paragraph">
 <p>The welcome files mechanism allows you to specify a list of files that
 the web container can append to a request for a URL (called a valid
@@ -1752,8 +1768,8 @@ pattern <code>/greeting</code>.</p>
 <p><a id="GKBKW"></a><a id="mapping-errors-to-error-screens"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="mapping-errors-to-error-screens"><a class="anchor" href="#mapping-errors-to-error-screens"></a>Mapping Errors to Error Screens</h5>
+<div class="sect3">
+<h4 id="mapping-errors-to-error-screens"><a class="anchor" href="#mapping-errors-to-error-screens"></a>Mapping Errors to Error Screens</h4>
 <div class="paragraph">
 <p>When an error occurs during execution of a web application, you can have
 the application display a specific error screen according to the type of
@@ -1770,8 +1786,8 @@ error page to open. This error page can be the same for any number of
 <div class="paragraph">
 <p><a id="BNAET"></a><a id="to-set-up-error-mapping-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-set-up-error-mapping-using-netbeans-ide"><a class="anchor" href="#to-set-up-error-mapping-using-netbeans-ide"></a>To Set Up Error Mapping Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-set-up-error-mapping-using-netbeans-ide"><a class="anchor" href="#to-set-up-error-mapping-using-netbeans-ide"></a>To Set Up Error Mapping Using NetBeans IDE</h5>
 <div class="paragraph">
 <p>These steps apply generally to web applications but do not apply
 specifically to the examples in this chapter.</p>
@@ -1837,8 +1853,8 @@ throwable errors and exceptions, enter <code>java.lang.Throwable</code>.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="declaring-resource-references"><a class="anchor" href="#declaring-resource-references"></a>Declaring Resource References</h5>
+<div class="sect3">
+<h4 id="declaring-resource-references"><a class="anchor" href="#declaring-resource-references"></a>Declaring Resource References</h4>
 <div class="paragraph">
 <p>If your web component uses such objects as enterprise beans, data
 sources, or web services, you use Jakarta EE annotations to inject these
@@ -1929,8 +1945,8 @@ for more information on resources.</p>
 <div class="paragraph">
 <p><a id="BNAEW"></a><a id="declaring-a-reference-to-a-resource"></a></p>
 </div>
-<div class="sect5">
-<h6 id="declaring-a-reference-to-a-resource"><a class="anchor" href="#declaring-a-reference-to-a-resource"></a>Declaring a Reference to a Resource</h6>
+<div class="sect4">
+<h5 id="declaring-a-reference-to-a-resource"><a class="anchor" href="#declaring-a-reference-to-a-resource"></a>Declaring a Reference to a Resource</h5>
 <div class="paragraph">
 <p>The <code>@Resource</code> annotation is used to declare a reference to a resource,
 such as a data source, an enterprise bean, or an environment entry.</p>
@@ -1992,8 +2008,8 @@ Jakarta Persistence in web applications.</p>
 <p><a id="BNAEX"></a><a id="declaring-a-reference-to-a-web-service"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="declaring-a-reference-to-a-web-service"><a class="anchor" href="#declaring-a-reference-to-a-web-service"></a>Declaring a Reference to a Web Service</h6>
+<div class="sect4">
+<h5 id="declaring-a-reference-to-a-web-service"><a class="anchor" href="#declaring-a-reference-to-a-web-service"></a>Declaring a Reference to a Web Service</h5>
 <div class="paragraph">
 <p>The <code>@WebServiceRef</code> annotation provides a reference to a web service.
 The following example shows uses the <code>@WebServiceRef</code> annotation to
@@ -2017,8 +2033,8 @@ public <span class="type">class</span> <span class="class">ResponseServlet</span
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="further-information-about-web-applications"><a class="anchor" href="#further-information-about-web-applications"></a>Further Information about Web Applications</h4>
+<div class="sect2">
+<h3 id="further-information-about-web-applications"><a class="anchor" href="#further-information-about-web-applications"></a>Further Information about Web Applications</h3>
 <div class="paragraph">
 <p>For more information on web applications, see</p>
 </div>
@@ -2041,9 +2057,10 @@ public <span class="type">class</span> <span class="class">ResponseServlet</span
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 15:37:21 UTC
+Last updated 2020-04-26 18:34:55 UTC
 </div>
 </div>
 <style>

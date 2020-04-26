@@ -438,17 +438,32 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>SOAP Web Services</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#soap-web-services">SOAP Web Services</a></li>
+<li><a href="#building-web-services-with-jax-ws">Building Web Services with JAX-WS</a>
 <ul class="sectlevel2">
-<li><a href="#building-web-services-with-jax-ws">Building Web Services with JAX-WS</a></li>
+<li><a href="#overview-of-java-api-for-xml-web-services">Overview of Java API for XML Web Services</a></li>
+<li><a href="#creating-a-simple-web-service-and-clients-with-jax-ws">Creating a Simple Web Service and Clients with JAX-WS</a></li>
+<li><a href="#types-supported-by-jax-ws">Types Supported by JAX-WS</a></li>
+<li><a href="#web-services-interoperability-and-jax-ws">Web Services Interoperability and JAX-WS</a></li>
+<li><a href="#further-information-about-jax-ws">Further Information about JAX-WS</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect2">
-<h3 id="building-web-services-with-jax-ws"><a class="anchor" href="#building-web-services-with-jax-ws"></a>Building Web Services with JAX-WS</h3>
+<div class="sect1">
+<h2 id="soap-web-services"><a class="anchor" href="#soap-web-services"></a>SOAP Web Services</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="building-web-services-with-jax-ws"><a class="anchor" href="#building-web-services-with-jax-ws"></a>Building Web Services with JAX-WS</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><a id="BNAYL"></a><a id="building-web-services-with-jax-ws"></a></p>
 </div>
@@ -461,8 +476,8 @@ Remote Procedure Call–oriented (RPC-oriented) web services.</p>
 <div class="paragraph">
 <p><a id="A1250966"></a><a id="overview-of-java-api-for-xml-web-services"></a></p>
 </div>
-<div class="sect3">
-<h4 id="overview-of-java-api-for-xml-web-services"><a class="anchor" href="#overview-of-java-api-for-xml-web-services"></a>Overview of Java API for XML Web Services</h4>
+<div class="sect2">
+<h3 id="overview-of-java-api-for-xml-web-services"><a class="anchor" href="#overview-of-java-api-for-xml-web-services"></a>Overview of Java API for XML Web Services</h3>
 <div class="paragraph">
 <p>In JAX-WS, a web service operation invocation is represented by an
 XML-based protocol, such as SOAP. The SOAP specification defines the
@@ -513,8 +528,8 @@ with a nondefault port setting.</p>
 <p><a id="BNAYN"></a><a id="creating-a-simple-web-service-and-clients-with-jax-ws"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="creating-a-simple-web-service-and-clients-with-jax-ws"><a class="anchor" href="#creating-a-simple-web-service-and-clients-with-jax-ws"></a>Creating a Simple Web Service and Clients with JAX-WS</h4>
+<div class="sect2">
+<h3 id="creating-a-simple-web-service-and-clients-with-jax-ws"><a class="anchor" href="#creating-a-simple-web-service-and-clients-with-jax-ws"></a>Creating a Simple Web Service and Clients with JAX-WS</h3>
 <div class="paragraph">
 <p>This section shows how to build and deploy a simple web service and two
 clients: an application client and a web client. The source code for the
@@ -529,7 +544,7 @@ communication between a web service and a client.</p>
 </div>
 <div id="BNAYO" class="paragraph">
 <div class="title"><strong>Figure 31-1 Communication between a JAX-WS Web Service and a Client</strong></div>
-<p><span class="image"><img src="data:image/png;base64," alt="Diagram showing a client and web service communicating through a SOAP message."></span></p>
+<p><span class="image"><img src="data:image/png;base64,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" alt="Diagram showing a client and web service communicating through a SOAP message."></span></p>
 </div>
 <div class="paragraph">
 <p>The starting point for developing a JAX-WS web service is a Java class
@@ -552,8 +567,8 @@ available in the endpoint implementation class.</p>
 <div class="paragraph">
 <p><a id="sthref133"></a><a id="basic-steps-for-creating-a-web-service-and-client"></a></p>
 </div>
-<div class="sect4">
-<h5 id="basic-steps-for-creating-a-web-service-and-client"><a class="anchor" href="#basic-steps-for-creating-a-web-service-and-client"></a>Basic Steps for Creating a Web Service and Client</h5>
+<div class="sect3">
+<h4 id="basic-steps-for-creating-a-web-service-and-client"><a class="anchor" href="#basic-steps-for-creating-a-web-service-and-client"></a>Basic Steps for Creating a Web Service and Client</h4>
 <div class="paragraph">
 <p>The basic steps for creating a web service and client are as follows.</p>
 </div>
@@ -599,8 +614,8 @@ the <code>wsimport</code> task for you.</p>
 <p><a id="BNAYP"></a><a id="requirements-of-a-jax-ws-endpoint"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="requirements-of-a-jax-ws-endpoint"><a class="anchor" href="#requirements-of-a-jax-ws-endpoint"></a>Requirements of a JAX-WS Endpoint</h5>
+<div class="sect3">
+<h4 id="requirements-of-a-jax-ws-endpoint"><a class="anchor" href="#requirements-of-a-jax-ws-endpoint"></a>Requirements of a JAX-WS Endpoint</h4>
 <div class="paragraph">
 <p>JAX-WS endpoints must follow these requirements.</p>
 </div>
@@ -659,8 +674,8 @@ is removed from operation.</p>
 <p><a id="BNAYQ"></a><a id="coding-the-service-endpoint-implementation-class"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="coding-the-service-endpoint-implementation-class"><a class="anchor" href="#coding-the-service-endpoint-implementation-class"></a>Coding the Service Endpoint Implementation Class</h5>
+<div class="sect3">
+<h4 id="coding-the-service-endpoint-implementation-class"><a class="anchor" href="#coding-the-service-endpoint-implementation-class"></a>Coding the Service Endpoint Implementation Class</h4>
 <div class="paragraph">
 <p>In this example, the implementation class, <code>Hello</code>, is annotated as a
 web service endpoint using the <code>@WebService</code> annotation. <code>Hello</code>
@@ -695,8 +710,8 @@ class also must define a default, public, no-argument constructor.</p>
 <p><a id="BNAYR"></a><a id="building-packaging-and-deploying-the-service"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="building-packaging-and-deploying-the-service"><a class="anchor" href="#building-packaging-and-deploying-the-service"></a>Building, Packaging, and Deploying the Service</h5>
+<div class="sect3">
+<h4 id="building-packaging-and-deploying-the-service"><a class="anchor" href="#building-packaging-and-deploying-the-service"></a>Building, Packaging, and Deploying the Service</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, and deploy
 the <code>helloservice-war</code> application.</p>
@@ -718,8 +733,8 @@ IDE</a></p>
 <div class="paragraph">
 <p><a id="BNAYS"></a><a id="to-build-package-and-deploy-the-service-using-netbeans-ide"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-build-package-and-deploy-the-service-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-service-using-netbeans-ide"></a>To Build, Package, and Deploy the Service Using NetBeans IDE</h6>
+<div class="sect4">
+<h5 id="to-build-package-and-deploy-the-service-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-service-using-netbeans-ide"></a>To Build, Package, and Deploy the Service Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -771,8 +786,8 @@ service.</p>
 <p><a id="BNAYT"></a><a id="to-build-package-and-deploy-the-service-using-maven"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="to-build-package-and-deploy-the-service-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-service-using-maven"></a>To Build, Package, and Deploy the Service Using Maven</h6>
+<div class="sect4">
+<h5 id="to-build-package-and-deploy-the-service-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-service-using-maven"></a>To Build, Package, and Deploy the Service Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -817,8 +832,8 @@ service.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="testing-the-methods-of-a-web-service-endpoint"><a class="anchor" href="#testing-the-methods-of-a-web-service-endpoint"></a>Testing the Methods of a Web Service Endpoint</h5>
+<div class="sect3">
+<h4 id="testing-the-methods-of-a-web-service-endpoint"><a class="anchor" href="#testing-the-methods-of-a-web-service-endpoint"></a>Testing the Methods of a Web Service Endpoint</h4>
 <div class="paragraph">
 <p>GlassFish Server allows you to test the methods of a web service
 endpoint.</p>
@@ -836,8 +851,8 @@ endpoint.</p>
 <div class="paragraph">
 <p><a id="BNAYW"></a><a id="to-test-the-service-without-a-client"></a></p>
 </div>
-<div class="sect5">
-<h6 id="to-test-the-service-without-a-client"><a class="anchor" href="#to-test-the-service-without-a-client"></a>To Test the Service without a Client</h6>
+<div class="sect4">
+<h5 id="to-test-the-service-without-a-client"><a class="anchor" href="#to-test-the-service-without-a-client"></a>To Test the Service without a Client</h5>
 <div class="paragraph">
 <p>To test the <code>sayHello</code> method of <code>HelloService</code>, follow these steps.</p>
 </div>
@@ -872,8 +887,8 @@ method.</p>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="a-simple-jax-ws-application-client"><a class="anchor" href="#a-simple-jax-ws-application-client"></a>A Simple JAX-WS Application Client</h5>
+<div class="sect3">
+<h4 id="a-simple-jax-ws-application-client"><a class="anchor" href="#a-simple-jax-ws-application-client"></a>A Simple JAX-WS Application Client</h4>
 <div class="paragraph">
 <p>The <code>HelloAppClient</code> class is a stand-alone application client that
 accesses the <code>sayHello</code> method of <code>HelloService</code>. This call is made
@@ -897,8 +912,8 @@ goal, which generates JAX-WS portable artifacts based on a WSDL file.</p>
 <div class="paragraph">
 <p><a id="BNAYY"></a><a id="coding-the-application-client"></a></p>
 </div>
-<div class="sect5">
-<h6 id="coding-the-application-client"><a class="anchor" href="#coding-the-application-client"></a>Coding the Application Client</h6>
+<div class="sect4">
+<h5 id="coding-the-application-client"><a class="anchor" href="#coding-the-application-client"></a>Coding the Application Client</h5>
 <div class="paragraph">
 <p>When invoking the remote methods on the port, the client performs these
 steps.</p>
@@ -981,8 +996,8 @@ directory:</p>
 <p><a id="BNAYZ"></a><a id="running-the-application-client"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="running-the-application-client"><a class="anchor" href="#running-the-application-client"></a>Running the Application Client</h6>
+<div class="sect4">
+<h5 id="running-the-application-client"><a class="anchor" href="#running-the-application-client"></a>Running the Application Client</h5>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>hello-appclient</code> application. To build the client, you must
@@ -1002,10 +1017,8 @@ first have deployed <code>helloservice-war</code>, as described in
 <div class="paragraph">
 <p><a id="CIHBGFGA"></a><a id="to-run-the-application-client-using-netbeans-ide"></a></p>
 </div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="to-run-the-application-client-using-netbeans-ide"><a class="anchor" href="#to-run-the-application-client-using-netbeans-ide"></a>To Run the Application Client Using NetBeans IDE</h5>
+<div class="sect5">
+<h6 id="to-run-the-application-client-using-netbeans-ide"><a class="anchor" href="#to-run-the-application-client-using-netbeans-ide"></a>To Run the Application Client Using NetBeans IDE</h6>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1046,8 +1059,8 @@ Hello, world.</code></pre>
 <p><a id="sthref134"></a><a id="to-run-the-application-client-using-maven"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="to-run-the-application-client-using-maven"><a class="anchor" href="#to-run-the-application-client-using-maven"></a>To Run the Application Client Using Maven</h5>
+<div class="sect5">
+<h6 id="to-run-the-application-client-using-maven"><a class="anchor" href="#to-run-the-application-client-using-maven"></a>To Run the Application Client Using Maven</h6>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1082,8 +1095,10 @@ Hello, world.</code></pre>
 <p><a id="GJYGB"></a><a id="a-simple-jax-ws-web-client"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="a-simple-jax-ws-web-client"><a class="anchor" href="#a-simple-jax-ws-web-client"></a>A Simple JAX-WS Web Client</h5>
+</div>
+</div>
+<div class="sect3">
+<h4 id="a-simple-jax-ws-web-client"><a class="anchor" href="#a-simple-jax-ws-web-client"></a>A Simple JAX-WS Web Client</h4>
 <div class="paragraph">
 <p><code>HelloServlet</code> is a servlet that, like the Java client, calls the
 <code>sayHello</code> method of the web service. Like the application client, it
@@ -1105,8 +1120,8 @@ makes this call through a port.</p>
 <div class="paragraph">
 <p><a id="GJYFL"></a><a id="coding-the-servlet"></a></p>
 </div>
-<div class="sect5">
-<h6 id="coding-the-servlet"><a class="anchor" href="#coding-the-servlet"></a>Coding the Servlet</h6>
+<div class="sect4">
+<h5 id="coding-the-servlet"><a class="anchor" href="#coding-the-servlet"></a>Coding the Servlet</h5>
 <div class="paragraph">
 <p>To invoke the method on the port, the client performs these steps.</p>
 </div>
@@ -1226,8 +1241,8 @@ directory.</p>
 <p><a id="GJYGE"></a><a id="running-the-web-client"></a></p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="running-the-web-client"><a class="anchor" href="#running-the-web-client"></a>Running the Web Client</h6>
+<div class="sect4">
+<h5 id="running-the-web-client"><a class="anchor" href="#running-the-web-client"></a>Running the Web Client</h5>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>hello-webclient</code> application. To build the client, you must
@@ -1250,10 +1265,8 @@ first have deployed <code>helloservice-war</code>, as described in
 <div class="paragraph">
 <p><a id="CIHHFFEC"></a><a id="to-run-the-web-client-using-netbeans-ide"></a></p>
 </div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="to-run-the-web-client-using-netbeans-ide"><a class="anchor" href="#to-run-the-web-client-using-netbeans-ide"></a>To Run the Web Client Using NetBeans IDE</h5>
+<div class="sect5">
+<h6 id="to-run-the-web-client-using-netbeans-ide"><a class="anchor" href="#to-run-the-web-client-using-netbeans-ide"></a>To Run the Web Client Using NetBeans IDE</h6>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1299,8 +1312,8 @@ directory, and deploys it to GlassFish Server.</p>
 <p><a id="CIHHDCEH"></a><a id="to-run-the-web-client-using-maven"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="to-run-the-web-client-using-maven"><a class="anchor" href="#to-run-the-web-client-using-maven"></a>To Run the Web Client Using Maven</h5>
+<div class="sect5">
+<h6 id="to-run-the-web-client-using-maven"><a class="anchor" href="#to-run-the-web-client-using-maven"></a>To Run the Web Client Using Maven</h6>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1342,8 +1355,10 @@ application into a WAR file, <code>hello-webclient.war</code>, located in the
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="types-supported-by-jax-ws"><a class="anchor" href="#types-supported-by-jax-ws"></a>Types Supported by JAX-WS</h4>
+</div>
+</div>
+<div class="sect2">
+<h3 id="types-supported-by-jax-ws"><a class="anchor" href="#types-supported-by-jax-ws"></a>Types Supported by JAX-WS</h3>
 <div class="paragraph">
 <p>JAX-WS delegates the mapping of Java programming language types to and
 from XML definitions to JAXB. Application developers don&#8217;t need to know
@@ -1368,8 +1383,8 @@ Java-to-schema data type bindings:</p>
 <div class="paragraph">
 <p><a id="BNAZT"></a><a id="schema-to-java-mapping"></a></p>
 </div>
-<div class="sect4">
-<h5 id="schema-to-java-mapping"><a class="anchor" href="#schema-to-java-mapping"></a>Schema-to-Java Mapping</h5>
+<div class="sect3">
+<h4 id="schema-to-java-mapping"><a class="anchor" href="#schema-to-java-mapping"></a>Schema-to-Java Mapping</h4>
 <div class="paragraph">
 <p>The Java language provides a richer set of data types than XML schema.
 <a href="#BNAZU">Table 31-1</a> lists the mapping of XML data types to Java data
@@ -1493,8 +1508,8 @@ types in JAXB.</p>
 <p><a id="BNAZW"></a><a id="java-to-schema-mapping"></a></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="java-to-schema-mapping"><a class="anchor" href="#java-to-schema-mapping"></a>Java-to-Schema Mapping</h5>
+<div class="sect3">
+<h4 id="java-to-schema-mapping"><a class="anchor" href="#java-to-schema-mapping"></a>Java-to-Schema Mapping</h4>
 <div class="paragraph">
 <p><a href="#BNAZX">Table 31-2</a> shows the default mapping of Java classes to XML
 data types.</p>
@@ -1578,8 +1593,8 @@ data types.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="web-services-interoperability-and-jax-ws"><a class="anchor" href="#web-services-interoperability-and-jax-ws"></a>Web Services Interoperability and JAX-WS</h4>
+<div class="sect2">
+<h3 id="web-services-interoperability-and-jax-ws"><a class="anchor" href="#web-services-interoperability-and-jax-ws"></a>Web Services Interoperability and JAX-WS</h3>
 <div class="paragraph">
 <p>JAX-WS supports the Web Services Interoperability (WS-I) Basic Profile
 Version 1.1. The WS-I Basic Profile is a document that clarifies the
@@ -1596,8 +1611,8 @@ dynamic proxies, and the Dynamic Invocation Interface (DII).</p>
 <p><a id="BNAZE"></a><a id="further-information-about-jax-ws"></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="further-information-about-jax-ws"><a class="anchor" href="#further-information-about-jax-ws"></a>Further Information about JAX-WS</h4>
+<div class="sect2">
+<h3 id="further-information-about-jax-ws"><a class="anchor" href="#further-information-about-jax-ws"></a>Further Information about JAX-WS</h3>
 <div class="paragraph">
 <p>For more information about JAX-WS and related technologies, see</p>
 </div>
@@ -1638,9 +1653,10 @@ dynamic proxies, and the Dynamic Invocation Interface (DII).</p>
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 15:37:21 UTC
+Last updated 2020-04-26 18:34:55 UTC
 </div>
 </div>
 <style>
