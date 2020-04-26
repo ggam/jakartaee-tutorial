@@ -434,33 +434,32 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book toc2 toc-left">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>Bean Validation</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#bean-validation">Bean Validation</a></li>
-<li><a href="#introduction-to-jakarta-bean-validation">Introduction to Jakarta Bean Validation</a>
+<li><a href="#_introduction_to_jakarta_bean_validation">1. Introduction to Jakarta Bean Validation</a>
 <ul class="sectlevel2">
-<li><a href="#overview-of-jakarta-bean-validation">Overview of Jakarta Bean Validation</a></li>
-<li><a href="#using-jakarta-bean-validation-constraints">Using Jakarta Bean Validation Constraints</a></li>
-<li><a href="#repeating-annotations">Repeating Annotations</a></li>
-<li><a href="#validating-null-and-empty-strings">Validating Null and Empty Strings</a></li>
-<li><a href="#validating-constructors-and-methods">Validating Constructors and Methods</a></li>
-<li><a href="#further-information-about-jakarta-bean-validation">Further Information about Jakarta Bean Validation</a></li>
+<li><a href="#_overview_of_jakarta_bean_validation">1.1. Overview of Jakarta Bean Validation</a></li>
+<li><a href="#_using_jakarta_bean_validation_constraints">1.2. Using Jakarta Bean Validation Constraints</a></li>
+<li><a href="#_repeating_annotations">1.3. Repeating Annotations</a></li>
+<li><a href="#_validating_null_and_empty_strings">1.4. Validating Null and Empty Strings</a></li>
+<li><a href="#_validating_constructors_and_methods">1.5. Validating Constructors and Methods</a></li>
+<li><a href="#_further_information_about_jakarta_bean_validation">1.6. Further Information about Jakarta Bean Validation</a></li>
 </ul>
 </li>
-<li><a href="#bean-validation-advanced-topics">Bean Validation: Advanced Topics</a>
+<li><a href="#_bean_validation_advanced_topics">2. Bean Validation: Advanced Topics</a>
 <ul class="sectlevel2">
-<li><a href="#creating-custom-constraints">Creating Custom Constraints</a></li>
-<li><a href="#implementing-temporal-constraints-using-clockprovider">Implementing Temporal Constraints Using ClockProvider</a></li>
-<li><a href="#custom-constraints">Custom Constraints</a></li>
-<li><a href="#using-in-built-value-extractors-in-custom-containers">Using In-Built Value Extractors in Custom Containers</a></li>
-<li><a href="#customizing-validator-messages">Customizing Validator Messages</a></li>
-<li><a href="#grouping-constraints">Grouping Constraints</a></li>
-<li><a href="#using-method-constraints-in-type-hierarchies">Using Method Constraints in Type Hierarchies</a></li>
+<li><a href="#_creating_custom_constraints">2.1. Creating Custom Constraints</a></li>
+<li><a href="#implementing-temporal-constraints-using-clockprovider">2.2. Implementing Temporal Constraints Using ClockProvider</a></li>
+<li><a href="#custom-constraints">2.3. Custom Constraints</a></li>
+<li><a href="#using-in-built-value-extractors-in-custom-containers">2.4. Using In-Built Value Extractors in Custom Containers</a></li>
+<li><a href="#_customizing_validator_messages">2.5. Customizing Validator Messages</a></li>
+<li><a href="#_grouping_constraints">2.6. Grouping Constraints</a></li>
+<li><a href="#_using_method_constraints_in_type_hierarchies">2.7. Using Method Constraints in Type Hierarchies</a></li>
 </ul>
 </li>
 </ul>
@@ -468,13 +467,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="bean-validation"><a class="anchor" href="#bean-validation"></a>Bean Validation</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="introduction-to-jakarta-bean-validation"><a class="anchor" href="#introduction-to-jakarta-bean-validation"></a>Introduction to Jakarta Bean Validation</h2>
+<h2 id="_introduction_to_jakarta_bean_validation">1. Introduction to Jakarta Bean Validation</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="CHDGJIIA"></a><a id="introduction-to-bean-validation"></a></p>
@@ -487,7 +480,7 @@ methods, and constructors.</p>
 <p><a id="A1101988"></a><a id="overview-of-bean-validation"></a></p>
 </div>
 <div class="sect2">
-<h3 id="overview-of-jakarta-bean-validation"><a class="anchor" href="#overview-of-jakarta-bean-validation"></a>Overview of Jakarta Bean Validation</h3>
+<h3 id="_overview_of_jakarta_bean_validation">1.1. Overview of Jakarta Bean Validation</h3>
 <div class="paragraph">
 <p>Validating input received from the user to maintain data integrity is an
 important part of application logic. Validation of data can take place
@@ -511,7 +504,7 @@ the Jakarta EE platform.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-jakarta-bean-validation-constraints"><a class="anchor" href="#using-jakarta-bean-validation-constraints"></a>Using Jakarta Bean Validation Constraints</h3>
+<h3 id="_using_jakarta_bean_validation_constraints">1.2. Using Jakarta Bean Validation Constraints</h3>
 <div class="paragraph">
 <p>The Jakarta Bean Validation model is supported by constraints in the form of
 annotations placed on a field, method, or class of a JavaBeans
@@ -835,7 +828,7 @@ implementation class.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="repeating-annotations"><a class="anchor" href="#repeating-annotations"></a>Repeating Annotations</h3>
+<h3 id="_repeating_annotations">1.3. Repeating Annotations</h3>
 <div id="repeating_annotations" class="paragraph">
 <p>In Bean Validation 2.0, you can specify the same constraint several times on a validation target using repeating annotation:</p>
 </div>
@@ -926,7 +919,7 @@ Properties</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="validating-null-and-empty-strings"><a class="anchor" href="#validating-null-and-empty-strings"></a>Validating Null and Empty Strings</h3>
+<h3 id="_validating_null_and_empty_strings">1.4. Validating Null and Empty Strings</h3>
 <div class="paragraph">
 <p>The Java programming language distinguishes between null and empty
 strings. An empty string is a string instance of zero length, whereas a
@@ -992,7 +985,7 @@ fail.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="validating-constructors-and-methods"><a class="anchor" href="#validating-constructors-and-methods"></a>Validating Constructors and Methods</h3>
+<h3 id="_validating_constructors_and_methods">1.5. Validating Constructors and Methods</h3>
 <div class="paragraph">
 <p>Jakarta Bean Validation constraints may be placed on the parameters of nonstatic
 methods and constructors and on the return values of nonstatic methods.
@@ -1035,7 +1028,7 @@ in Type Hierarchies</a> for more information.</p>
 <p><a id="sthref122"></a><a id="cross-parameter-constraints"></a></p>
 </div>
 <div class="sect3">
-<h4 id="cross-parameter-constraints"><a class="anchor" href="#cross-parameter-constraints"></a>Cross-Parameter Constraints</h4>
+<h4 id="_cross_parameter_constraints">1.5.1. Cross-Parameter Constraints</h4>
 <div class="paragraph">
 <p>Constraints that apply to multiple parameters are called cross-parameter
 constraints, and may be applied at the method or constructor level.</p>
@@ -1085,7 +1078,7 @@ validation constraint.</p>
 </tbody>
 </table>
 <div class="sect4">
-<h5 id="validating-type-arguments-of-parameterized-types"><a class="anchor" href="#validating-type-arguments-of-parameterized-types"></a>Validating Type Arguments of Parameterized Types</h5>
+<h5 id="_validating_type_arguments_of_parameterized_types">Validating Type Arguments of Parameterized Types</h5>
 <div id="validating_type_arguments_of_parameterized_types" class="paragraph">
 <p>In Jakarta Bean Validation 2.0, you can apply constraints to the type arguments of parameterized types. For example: <code>List&lt;@NotNull Long&gt; numbers;</code>
 Constraints can be applied to elements of container types such as <code>List</code>, <code>Map</code>, <code>Optional</code>, and others.</p>
@@ -1108,7 +1101,7 @@ Constraints can be applied to elements of container types such as <code>List</co
 </div>
 </div>
 <div class="sect3">
-<h4 id="identifying-parameter-constraint-violations"><a class="anchor" href="#identifying-parameter-constraint-violations"></a>Identifying Parameter Constraint Violations</h4>
+<h4 id="_identifying_parameter_constraint_violations">1.5.2. Identifying Parameter Constraint Violations</h4>
 <div class="paragraph">
 <p>If a <code>ConstraintViolationException</code> occurs during a method call, the
 Bean Validation runtime returns a parameter index to identify which
@@ -1121,7 +1114,7 @@ starts at 0 for the first parameter of the method or constructor.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="adding-constraints-to-method-return-values"><a class="anchor" href="#adding-constraints-to-method-return-values"></a>Adding Constraints to Method Return Values</h4>
+<h4 id="_adding_constraints_to_method_return_values">1.5.3. Adding Constraints to Method Return Values</h4>
 <div class="paragraph">
 <p>To validate the return value for a method, you can apply constraints
 directly to the method or constructor declaration.</p>
@@ -1157,7 +1150,7 @@ Constraint Targets</a> for more information.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="further-information-about-jakarta-bean-validation"><a class="anchor" href="#further-information-about-jakarta-bean-validation"></a>Further Information about Jakarta Bean Validation</h3>
+<h3 id="_further_information_about_jakarta_bean_validation">1.6. Further Information about Jakarta Bean Validation</h3>
 <div class="paragraph">
 <p>For more information on Jakarta Bean Validation, see</p>
 </div>
@@ -1181,7 +1174,7 @@ Constraint Targets</a> for more information.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="bean-validation-advanced-topics"><a class="anchor" href="#bean-validation-advanced-topics"></a>Bean Validation: Advanced Topics</h2>
+<h2 id="_bean_validation_advanced_topics">2. Bean Validation: Advanced Topics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GKAHP"></a><a id="bean-validation-advanced-topics"></a></p>
@@ -1195,7 +1188,7 @@ JavaBeans Validation (Bean Validation).</p>
 <p><a id="GKFGX"></a><a id="creating-custom-constraints"></a></p>
 </div>
 <div class="sect2">
-<h3 id="creating-custom-constraints"><a class="anchor" href="#creating-custom-constraints"></a>Creating Custom Constraints</h3>
+<h3 id="_creating_custom_constraints">2.1. Creating Custom Constraints</h3>
 <div class="paragraph">
 <p>Jakarta Bean Validation defines annotations, interfaces, and classes to allow
 developers to create custom constraints.</p>
@@ -1223,7 +1216,7 @@ developers to create custom constraints.</p>
 <p><a id="GKAIA"></a><a id="using-the-built-in-constraints-to-make-a-new-constraint"></a></p>
 </div>
 <div class="sect3">
-<h4 id="using-the-built-in-constraints-to-make-a-new-constraint"><a class="anchor" href="#using-the-built-in-constraints-to-make-a-new-constraint"></a>Using the Built-In Constraints to Make a New Constraint</h4>
+<h4 id="_using_the_built_in_constraints_to_make_a_new_constraint">2.1.1. Using the Built-In Constraints to Make a New Constraint</h4>
 <div class="paragraph">
 <p>Jakarta Bean Validation includes several built-in constraints that can be
 combined to create new, reusable constraints. This can simplify
@@ -1286,7 +1279,7 @@ USPhoneNumber<span class="type">[]</span> value();
 </div>
 </div>
 <div class="sect3">
-<h4 id="removing-ambiguity-in-constraint-targets"><a class="anchor" href="#removing-ambiguity-in-constraint-targets"></a>Removing Ambiguity in Constraint Targets</h4>
+<h4 id="_removing_ambiguity_in_constraint_targets">2.1.2. Removing Ambiguity in Constraint Targets</h4>
 <div class="paragraph">
 <p>Custom constraints that can be applied to both return values and method
 parameters require a <code>validationAppliesTo</code> element to identify the
@@ -1322,7 +1315,7 @@ method.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="implementing-temporal-constraints-using-clockprovider"><a class="anchor" href="#implementing-temporal-constraints-using-clockprovider"></a>Implementing Temporal Constraints Using ClockProvider</h3>
+<h3 id="implementing-temporal-constraints-using-clockprovider">2.2. Implementing Temporal Constraints Using ClockProvider</h3>
 <div class="paragraph">
 <p>In Jakarta Bean Validation 2.0, a Clock instance is available for validator implementations to validate any temporal date or time based constraints.</p>
 </div>
@@ -1362,7 +1355,7 @@ ValidatorFactory factory = Validation
 </div>
 </div>
 <div class="sect2">
-<h3 id="custom-constraints"><a class="anchor" href="#custom-constraints"></a>Custom Constraints</h3>
+<h3 id="custom-constraints">2.3. Custom Constraints</h3>
 <div class="paragraph">
 <p>Consider an employee in a firm located in U.S.A. When you register the phone number of an employee or modify the phone number, the phone number needs to be validated to ensure that the phone number conforms to US phone number pattern.</p>
 </div>
@@ -1393,7 +1386,7 @@ In the sample, another constraint <code>@Pattern</code> is used to validate the 
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-in-built-value-extractors-in-custom-containers"><a class="anchor" href="#using-in-built-value-extractors-in-custom-containers"></a>Using In-Built Value Extractors in Custom Containers</h3>
+<h3 id="using-in-built-value-extractors-in-custom-containers">2.4. Using In-Built Value Extractors in Custom Containers</h3>
 <div class="paragraph">
 <p>Cascading validation:</p>
 </div>
@@ -1559,7 +1552,7 @@ In the sample, another constraint <code>@Pattern</code> is used to validate the 
 </div>
 </div>
 <div class="sect2">
-<h3 id="customizing-validator-messages"><a class="anchor" href="#customizing-validator-messages"></a>Customizing Validator Messages</h3>
+<h3 id="_customizing_validator_messages">2.5. Customizing Validator Messages</h3>
 <div class="paragraph">
 <p>Jakarta Bean Validation includes a resource bundle of default messages for the
 built-in constraints. These messages can be customized and can be
@@ -1579,7 +1572,7 @@ localized for non-English-speaking locales.</p>
 <p><a id="GKAGY"></a><a id="the-validationmessages-resource-bundle"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-validationmessages-resource-bundle"><a class="anchor" href="#the-validationmessages-resource-bundle"></a>The ValidationMessages Resource Bundle</h4>
+<h4 id="_the_validationmessages_resource_bundle">2.5.1. The ValidationMessages Resource Bundle</h4>
 <div class="paragraph">
 <p>The <code>ValidationMessages</code> resource bundle and the locale variants of this
 resource bundle contain strings that override the default validation
@@ -1591,7 +1584,7 @@ of an application.</p>
 <p><a id="GKAIQ"></a><a id="localizing-validation-messages"></a></p>
 </div>
 <div class="sect4">
-<h5 id="localizing-validation-messages"><a class="anchor" href="#localizing-validation-messages"></a>Localizing Validation Messages</h5>
+<h5 id="_localizing_validation_messages">Localizing Validation Messages</h5>
 <div class="paragraph">
 <p>Locale variants of <code>ValidationMessages.properties</code> are added by
 appending an underscore and the locale prefix to the base name of the
@@ -1605,7 +1598,7 @@ file. For example, the Spanish locale variant resource bundle would be
 </div>
 </div>
 <div class="sect2">
-<h3 id="grouping-constraints"><a class="anchor" href="#grouping-constraints"></a>Grouping Constraints</h3>
+<h3 id="_grouping_constraints">2.6. Grouping Constraints</h3>
 <div class="paragraph">
 <p>Constraints may be added to one or more groups. Constraint groups are
 used to create subsets of constraints so that only certain constraints
@@ -1661,7 +1654,7 @@ being validated, because <code>Employee</code> is a superinterface of <code>Mana
 <p><a id="GKAGU"></a><a id="customizing-group-validation-order"></a></p>
 </div>
 <div class="sect3">
-<h4 id="customizing-group-validation-order"><a class="anchor" href="#customizing-group-validation-order"></a>Customizing Group Validation Order</h4>
+<h4 id="_customizing_group_validation_order">2.6.1. Customizing Group Validation Order</h4>
 <div class="paragraph">
 <p>By default, constraint groups are validated in no particular order.
 There are cases in which some groups should be validated before others.
@@ -1693,7 +1686,7 @@ validated on the subsequent <code>ExpensiveValidationGroup</code> pass.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-method-constraints-in-type-hierarchies"><a class="anchor" href="#using-method-constraints-in-type-hierarchies"></a>Using Method Constraints in Type Hierarchies</h3>
+<h3 id="_using_method_constraints_in_type_hierarchies">2.7. Using Method Constraints in Type Hierarchies</h3>
 <div class="paragraph">
 <p>If you add validation constraints to objects in an inheritance
 hierarchy, take special care to avoid unintended errors when using
@@ -1805,7 +1798,7 @@ of a subtype and will result in a <code>ConstraintDeclarationException</code>.</
 <p><a id="sthref125"></a><a id="rules-for-using-method-constraints-in-type-hierarchies"></a></p>
 </div>
 <div class="sect3">
-<h4 id="rules-for-using-method-constraints-in-type-hierarchies"><a class="anchor" href="#rules-for-using-method-constraints-in-type-hierarchies"></a>Rules for Using Method Constraints in Type Hierarchies</h4>
+<h4 id="_rules_for_using_method_constraints_in_type_hierarchies">2.7.1. Rules for Using Method Constraints in Type Hierarchies</h4>
 <div class="paragraph">
 <p>The following rules define how method validation constraints should be
 used in type hierarchies.</p>
@@ -1834,7 +1827,7 @@ method in a subtype.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 18:34:55 UTC
+Last updated 2020-04-26 19:19:24 UTC
 </div>
 </div>
 <style>

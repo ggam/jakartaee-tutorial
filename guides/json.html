@@ -434,32 +434,31 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book toc2 toc-left">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>JSON Support</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#json-support">JSON Support</a></li>
-<li><a href="#json-processing">JSON Processing</a>
+<li><a href="#json-processing">1. JSON Processing</a>
 <ul class="sectlevel2">
-<li><a href="#introduction-to-json">Introduction to JSON</a></li>
-<li><a href="#json-processing-in-the-jakarta-ee-platform">JSON Processing in the Jakarta EE Platform</a></li>
-<li><a href="#using-the-object-model-api">Using the Object Model API</a></li>
-<li><a href="#using-the-streaming-api">Using the Streaming API</a></li>
-<li><a href="#json-in-jakarta-ee-restful-web-services">JSON in Jakarta EE RESTful Web Services</a></li>
-<li><a href="#the-jsonpmodel-example-application">The jsonpmodel Example Application</a></li>
-<li><a href="#the-jsonpstreaming-example-application">The jsonpstreaming Example Application</a></li>
-<li><a href="#further-information-about-the-java-api-for-json-processing">Further Information about the Jakarta JSON Processing</a></li>
+<li><a href="#introduction-to-json">1.1. Introduction to JSON</a></li>
+<li><a href="#json-processing-in-the-jakarta-ee-platform">1.2. JSON Processing in the Jakarta EE Platform</a></li>
+<li><a href="#using-the-object-model-api">1.3. Using the Object Model API</a></li>
+<li><a href="#using-the-streaming-api">1.4. Using the Streaming API</a></li>
+<li><a href="#json-in-jakarta-ee-restful-web-services">1.5. JSON in Jakarta EE RESTful Web Services</a></li>
+<li><a href="#the-jsonpmodel-example-application">1.6. The jsonpmodel Example Application</a></li>
+<li><a href="#the-jsonpstreaming-example-application">1.7. The jsonpstreaming Example Application</a></li>
+<li><a href="#further-information-about-the-java-api-for-json-processing">1.8. Further Information about the Jakarta JSON Processing</a></li>
 </ul>
 </li>
-<li><a href="#json-binding">JSON Binding</a>
+<li><a href="#json-binding">2. JSON Binding</a>
 <ul class="sectlevel2">
-<li><a href="#json-binding-in-the-jakarta-ee-platform">JSON Binding in the Jakarta EE Platform</a></li>
-<li><a href="#overview-of-the-json-binding-api">Overview of the JSON Binding API</a></li>
-<li><a href="#running-the-jsonbbasics-example-application">Running the jsonbbasics Example Application</a></li>
-<li><a href="#further-information-about-the-java-api-for-json-binding">Further Information about the Jakarta JSON Binding</a></li>
+<li><a href="#json-binding-in-the-jakarta-ee-platform">2.1. JSON Binding in the Jakarta EE Platform</a></li>
+<li><a href="#overview-of-the-json-binding-api">2.2. Overview of the JSON Binding API</a></li>
+<li><a href="#running-the-jsonbbasics-example-application">2.3. Running the jsonbbasics Example Application</a></li>
+<li><a href="#further-information-about-the-java-api-for-json-binding">2.4. Further Information about the Jakarta JSON Binding</a></li>
 </ul>
 </li>
 </ul>
@@ -467,13 +466,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="json-support"><a class="anchor" href="#json-support"></a>JSON Support</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="json-processing"><a class="anchor" href="#json-processing"></a>JSON Processing</h2>
+<h2 id="json-processing">1. JSON Processing</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This chapter describes Jakarta JSON Processing.
@@ -483,7 +476,7 @@ API to parse, transform, and query JSON data using the object model or the
 streaming model.</p>
 </div>
 <div class="sect2">
-<h3 id="introduction-to-json"><a class="anchor" href="#introduction-to-json"></a>Introduction to JSON</h3>
+<h3 id="introduction-to-json">1.1. Introduction to JSON</h3>
 <div class="paragraph">
 <p>JSON is a text-based data exchange format derived from JavaScript that
 is used in web services and other connected applications. The following
@@ -508,7 +501,7 @@ parse JSON.</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="json-syntax"><a class="anchor" href="#json-syntax"></a>JSON Syntax</h4>
+<h4 id="json-syntax">1.1.1. JSON Syntax</h4>
 <div class="paragraph">
 <p>JSON defines only two data structures: objects and arrays. An object is
 a set of name-value pairs, and an array is a list of values. JSON
@@ -562,7 +555,7 @@ a tree-like structure.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="uses-of-json"><a class="anchor" href="#uses-of-json"></a>Uses of JSON</h4>
+<h4 id="uses-of-json">1.1.2. Uses of JSON</h4>
 <div class="paragraph">
 <p>JSON is often used as a common format to serialize and deserialize data
 in applications that communicate with each other over the Internet.
@@ -589,7 +582,7 @@ JSON data.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="generating-and-parsing-json-data"><a class="anchor" href="#generating-and-parsing-json-data"></a>Generating and Parsing JSON Data</h4>
+<h4 id="generating-and-parsing-json-data">1.1.3. Generating and Parsing JSON Data</h4>
 <div class="paragraph">
 <p>For generating and parsing JSON data, there are two programming models,
 which are similar to those used for XML documents.</p>
@@ -626,7 +619,7 @@ by Jakarta JSON Processing.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="json-processing-in-the-jakarta-ee-platform"><a class="anchor" href="#json-processing-in-the-jakarta-ee-platform"></a>JSON Processing in the Jakarta EE Platform</h3>
+<h3 id="json-processing-in-the-jakarta-ee-platform">1.2. JSON Processing in the Jakarta EE Platform</h3>
 <div class="paragraph">
 <p>Jakarta EE includes support for the Jakarta JSON Processing spec, which provides an API to parse,
 transform, and query JSON data using the object model or the streaming
@@ -766,7 +759,7 @@ from a stream or from an object model.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="using-the-object-model-api"><a class="anchor" href="#using-the-object-model-api"></a>Using the Object Model API</h3>
+<h3 id="using-the-object-model-api">1.3. Using the Object Model API</h3>
 <div class="paragraph">
 <p>This section describes four use cases of the object model API: creating
 an object model from JSON data, creating an object model from
@@ -793,7 +786,7 @@ model to a stream.</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="creating-an-object-model-from-json-data"><a class="anchor" href="#creating-an-object-model-from-json-data"></a>Creating an Object Model from JSON Data</h4>
+<h4 id="creating-an-object-model-from-json-data">1.3.1. Creating an Object Model from JSON Data</h4>
 <div class="paragraph">
 <p>The following code demonstrates how to create an object model from JSON
 data in a text file:</p>
@@ -818,7 +811,7 @@ to write it to a stream as JSON data.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="creating-an-object-model-from-application-code"><a class="anchor" href="#creating-an-object-model-from-application-code"></a>Creating an Object Model from Application Code</h4>
+<h4 id="creating-an-object-model-from-application-code">1.3.2. Creating an Object Model from Application Code</h4>
 <div class="paragraph">
 <p>The following code demonstrates how to create an object model from
 application code:</p>
@@ -879,7 +872,7 @@ the corresponding <code>add</code> method, as shown in this example.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="navigating-an-object-model"><a class="anchor" href="#navigating-an-object-model"></a>Navigating an Object Model</h4>
+<h4 id="navigating-an-object-model">1.3.3. Navigating an Object Model</h4>
 <div class="paragraph">
 <p>The following code demonstrates a simple approach to navigating an
 object model:</p>
@@ -979,7 +972,7 @@ OBJECT
 </div>
 </div>
 <div class="sect3">
-<h4 id="writing-an-object-model-to-a-stream"><a class="anchor" href="#writing-an-object-model-to-a-stream"></a>Writing an Object Model to a Stream</h4>
+<h4 id="writing-an-object-model-to-a-stream">1.3.4. Writing an Object Model to a Stream</h4>
 <div class="paragraph">
 <p>The object models created in <a href="#BABBHEBA">Creating an Object Model
 from JSON Data</a> and <a href="#BABIGIAF">Creating an Object Model from
@@ -1023,7 +1016,7 @@ automatically:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-the-streaming-api"><a class="anchor" href="#using-the-streaming-api"></a>Using the Streaming API</h3>
+<h3 id="using-the-streaming-api">1.4. Using the Streaming API</h3>
 <div class="paragraph">
 <p>This section describes two use cases of the streaming API.</p>
 </div>
@@ -1041,7 +1034,7 @@ automatically:</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="reading-json-data-using-a-parser"><a class="anchor" href="#reading-json-data-using-a-parser"></a>Reading JSON Data Using a Parser</h4>
+<h4 id="reading-json-data-using-a-parser">1.4.1. Reading JSON Data Using a Parser</h4>
 <div class="paragraph">
 <p>The streaming API is the most efficient approach for parsing JSON text.
 The following code demonstrates how to create a <code>JsonParser</code> object and
@@ -1151,7 +1144,7 @@ END_OBJECT</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="writing-json-data-using-a-generator"><a class="anchor" href="#writing-json-data-using-a-generator"></a>Writing JSON Data Using a Generator</h4>
+<h4 id="writing-json-data-using-a-generator">1.4.2. Writing JSON Data Using a Generator</h4>
 <div class="paragraph">
 <p>The following code demonstrates how to write JSON data to a file using
 the streaming API:</p>
@@ -1193,7 +1186,7 @@ method closes the underlying writer or output stream.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="json-in-jakarta-ee-restful-web-services"><a class="anchor" href="#json-in-jakarta-ee-restful-web-services"></a>JSON in Jakarta EE RESTful Web Services</h3>
+<h3 id="json-in-jakarta-ee-restful-web-services">1.5. JSON in Jakarta EE RESTful Web Services</h3>
 <div class="paragraph">
 <p>This section explains how the Jakarta JSON Processing is related to
 other Jakarta EE packages that provide JSON support for RESTful web
@@ -1217,7 +1210,7 @@ included with the Jakarta EE 8 SDK.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-jsonpmodel-example-application"><a class="anchor" href="#the-jsonpmodel-example-application"></a>The jsonpmodel Example Application</h3>
+<h3 id="the-jsonpmodel-example-application">1.6. The jsonpmodel Example Application</h3>
 <div class="paragraph">
 <p>This section describes how to build and run the <code>jsonpmodel</code> example
 application. This example is a web application that demonstrates how to
@@ -1242,7 +1235,7 @@ tut-install`/examples/web/jsonp/jsonpmodel` directory.</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="components-of-the-jsonpmodel-example-application"><a class="anchor" href="#components-of-the-jsonpmodel-example-application"></a>Components of the jsonpmodel Example Application</h4>
+<h4 id="components-of-the-jsonpmodel-example-application">1.6.1. Components of the jsonpmodel Example Application</h4>
 <div class="paragraph">
 <p>The <code>jsonpmodel</code> example application contains the following files.</p>
 </div>
@@ -1285,7 +1278,7 @@ example in <a href="#BABJHEHG">Navigating an Object Model</a>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-jsonpmodel-example-application"><a class="anchor" href="#running-the-jsonpmodel-example-application"></a>Running the jsonpmodel Example Application</h4>
+<h4 id="running-the-jsonpmodel-example-application">1.6.2. Running the jsonpmodel Example Application</h4>
 <div class="paragraph">
 <p>This section describes how to run the <code>jsonpmodel</code> example application
 using NetBeans IDE and from the command line.</p>
@@ -1305,7 +1298,7 @@ NetBeans IDE</a></p>
 </ul>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-jsonpmodel-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-jsonpmodel-example-application-using-netbeans-ide"></a>To Run the jsonpmodel Example Application Using NetBeans IDE</h5>
+<h5 id="to-run-the-jsonpmodel-example-application-using-netbeans-ide">To Run the jsonpmodel Example Application Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1357,7 +1350,7 @@ nodes of the object model tree.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-jsonpmodel-example-application-using-maven"><a class="anchor" href="#to-run-the-jsonpmodel-example-application-using-maven"></a>To Run the jsonpmodel Example Application Using Maven</h5>
+<h5 id="to-run-the-jsonpmodel-example-application-using-maven">To Run the jsonpmodel Example Application Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1404,7 +1397,7 @@ nodes of the object model tree.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-jsonpstreaming-example-application"><a class="anchor" href="#the-jsonpstreaming-example-application"></a>The jsonpstreaming Example Application</h3>
+<h3 id="the-jsonpstreaming-example-application">1.7. The jsonpstreaming Example Application</h3>
 <div class="paragraph">
 <p>This section describes how to build and run the <code>jsonpstreaming</code> example
 application. This example is a web application that demonstrates how to
@@ -1429,7 +1422,7 @@ tut-install`/examples/web/jsonp/jsonpstreaming` directory.</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="components-of-the-jsonpstreaming-example-application"><a class="anchor" href="#components-of-the-jsonpstreaming-example-application"></a>Components of the jsonpstreaming Example Application</h4>
+<h4 id="components-of-the-jsonpstreaming-example-application">1.7.1. Components of the jsonpstreaming Example Application</h4>
 <div class="paragraph">
 <p>The <code>jsonpstreaming</code> example application contains the following files.</p>
 </div>
@@ -1470,7 +1463,7 @@ Parser</a>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-jsonpstreaming-example-application"><a class="anchor" href="#running-the-jsonpstreaming-example-application"></a>Running the jsonpstreaming Example Application</h4>
+<h4 id="running-the-jsonpstreaming-example-application">1.7.2. Running the jsonpstreaming Example Application</h4>
 <div class="paragraph">
 <p>This section describes how to run the <code>jsonpstreaming</code> example
 application using NetBeans IDE and from the command line.</p>
@@ -1491,7 +1484,7 @@ Maven</a></p>
 </ul>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-jsonpstreaming-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-jsonpstreaming-example-application-using-netbeans-ide"></a>To Run the jsonpstreaming Example Application Using NetBeans IDE</h5>
+<h5 id="to-run-the-jsonpstreaming-example-application-using-netbeans-ide">To Run the jsonpstreaming Example Application Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1543,7 +1536,7 @@ lists the parser events for the JSON data in the text file.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-jsonpstreaming-example-application-using-maven"><a class="anchor" href="#to-run-the-jsonpstreaming-example-application-using-maven"></a>To Run the jsonpstreaming Example Application Using Maven</h5>
+<h5 id="to-run-the-jsonpstreaming-example-application-using-maven">To Run the jsonpstreaming Example Application Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1590,7 +1583,7 @@ lists the parser events for the JSON data in the text file.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="further-information-about-the-java-api-for-json-processing"><a class="anchor" href="#further-information-about-the-java-api-for-json-processing"></a>Further Information about the Jakarta JSON Processing</h3>
+<h3 id="further-information-about-the-java-api-for-json-processing">1.8. Further Information about the Jakarta JSON Processing</h3>
 <div class="paragraph">
 <p>For more information on JSON processing in Jakarta EE, see the Jakarta JSON Processing specification:</p>
 </div>
@@ -1601,7 +1594,7 @@ lists the parser events for the JSON data in the text file.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="json-binding"><a class="anchor" href="#json-binding"></a>JSON Binding</h2>
+<h2 id="json-binding">2. JSON Binding</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This chapter describes the Jakarta JSON Binding. JSON is a data exchange format widely used
@@ -1618,7 +1611,7 @@ You can learn more about Yasson at <a href="https://projects.eclipse.org/project
 <p>The following topics are addressed here:</p>
 </div>
 <div class="sect2">
-<h3 id="json-binding-in-the-jakarta-ee-platform"><a class="anchor" href="#json-binding-in-the-jakarta-ee-platform"></a>JSON Binding in the Jakarta EE Platform</h3>
+<h3 id="json-binding-in-the-jakarta-ee-platform">2.1. JSON Binding in the Jakarta EE Platform</h3>
 <div class="paragraph">
 <p>Jakarta EE includes support for the Jakarta JSON Binding spec, which provides an API that can serialize
 Java objects to JSON documents and deserialize JSON documents to Java objects.
@@ -1747,7 +1740,7 @@ overriding the default scope and field access behavior.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="overview-of-the-json-binding-api"><a class="anchor" href="#overview-of-the-json-binding-api"></a>Overview of the JSON Binding API</h3>
+<h3 id="overview-of-the-json-binding-api">2.2. Overview of the JSON Binding API</h3>
 <div class="paragraph">
 <p>This section provides basic instructions for using the Jakarta JSON Binding client API. The instructions provide a
 basis for understanding the <a href="jsonb003.html">jsonbbasics Example Application</a>.
@@ -1774,7 +1767,7 @@ User Guide.</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="creating-a-jasonb-instance"><a class="anchor" href="#creating-a-jasonb-instance"></a>Creating a jasonb Instance</h4>
+<h4 id="creating-a-jasonb-instance">2.2.1. Creating a jasonb Instance</h4>
 <div class="paragraph">
 <p>A <code>jsonb</code> instance provides access to methods for binding objects to JSON.
 A single <code>jsonb</code> instance is required for most applications. A <code>jsonb</code> instance
@@ -1788,7 +1781,7 @@ to the JSON Binding API. For example:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-the-default-mapping"><a class="anchor" href="#using-the-default-mapping"></a>Using the Default Mapping</h4>
+<h4 id="using-the-default-mapping">2.2.2. Using the Default Mapping</h4>
 <div class="paragraph">
 <p>Jakarta JSON Binding provides default mappings for serializing and deserializing basic Java and Java SE types as well
 Java date and time classes. To use the default mappings and mapping behavior, create a josnb instance
@@ -1813,7 +1806,7 @@ person = jsonb.fromJson(<span class="string"><span class="delimiter">&quot;</spa
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-customizations"><a class="anchor" href="#using-customizations"></a>Using Customizations</h4>
+<h4 id="using-customizations">2.2.3. Using Customizations</h4>
 <div class="paragraph">
 <p>Jakarta JSON Binding supports many ways to customize the default mapping behavior. For runtime
 customizations, a <code>JsonbConfig</code> configuration object is used when creating the <code>jsonbinstance</code>. The <code>JsonbConfig</code>
@@ -1834,7 +1827,7 @@ Jsonb jsonb = JsonbBuilder.create(config);</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-annotations"><a class="anchor" href="#using-annotations"></a>Using Annotations</h4>
+<h4 id="using-annotations">2.2.4. Using Annotations</h4>
 <div class="paragraph">
 <p>Jakarta JSON Binding includes many annotations that can be used at compile time to customize the default mapping behavior.
 The following example uses the <code>@JsonbProperty</code> annotation to change the <code>name</code> field to <code>person-name</code> when
@@ -1861,7 +1854,7 @@ the object is serialized to JSON.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="running-the-jsonbbasics-example-application"><a class="anchor" href="#running-the-jsonbbasics-example-application"></a>Running the jsonbbasics Example Application</h3>
+<h3 id="running-the-jsonbbasics-example-application">2.3. Running the jsonbbasics Example Application</h3>
 <div class="paragraph">
 <p>This section describes how to build and run the <code>jsonbbasics</code> example
 application. This example is a web application that demonstrates how to
@@ -1886,7 +1879,7 @@ object.</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="components-of-the-jsonbbasics-example-application"><a class="anchor" href="#components-of-the-jsonbbasics-example-application"></a>Components of the jsonbbasics Example Application</h4>
+<h4 id="components-of-the-jsonbbasics-example-application">2.3.1. Components of the jsonbbasics Example Application</h4>
 <div class="paragraph">
 <p>The <code>jsonbbasics</code> example application contains the following files.</p>
 </div>
@@ -1912,7 +1905,7 @@ object.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-jsonbbasics-example-application-2"><a class="anchor" href="#running-the-jsonbbasics-example-application-2"></a>Running the jsonbbasics Example Application</h4>
+<h4 id="running-the-jsonbbasics-example-application-2">2.3.2. Running the jsonbbasics Example Application</h4>
 <div class="paragraph">
 <p>This section describes how to run the <code>jsonbbasics</code> example application
 from the command line using Maven.</p>
@@ -1960,7 +1953,7 @@ from the command line using Maven.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="further-information-about-the-java-api-for-json-binding"><a class="anchor" href="#further-information-about-the-java-api-for-json-binding"></a>Further Information about the Jakarta JSON Binding</h3>
+<h3 id="further-information-about-the-java-api-for-json-binding">2.4. Further Information about the Jakarta JSON Binding</h3>
 <div class="paragraph">
 <p>For more information on Jakarta JSON Binding, see:</p>
 </div>
@@ -1983,7 +1976,7 @@ from the command line using Maven.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 18:34:55 UTC
+Last updated 2020-04-26 19:19:24 UTC
 </div>
 </div>
 <style>

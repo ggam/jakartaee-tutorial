@@ -434,46 +434,45 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book toc2 toc-left">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>REST Web Services</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#rest-web-services">REST Web Services</a></li>
-<li><a href="#introduction-to-web-services">Introduction to Web Services</a>
+<li><a href="#_introduction_to_web_services">1. Introduction to Web Services</a>
 <ul class="sectlevel2">
-<li><a href="#what-are-web-services">What Are Web Services?</a></li>
-<li><a href="#types-of-web-services">Types of Web Services</a></li>
-<li><a href="#deciding-which-type-of-web-service-to-use">Deciding Which Type of Web Service to Use</a></li>
+<li><a href="#_what_are_web_services">1.1. What Are Web Services?</a></li>
+<li><a href="#_types_of_web_services">1.2. Types of Web Services</a></li>
+<li><a href="#_deciding_which_type_of_web_service_to_use">1.3. Deciding Which Type of Web Service to Use</a></li>
 </ul>
 </li>
-<li><a href="#building-restful-web-services-with-jakarta-rest">Building RESTful Web Services with Jakarta REST</a>
+<li><a href="#_building_restful_web_services_with_jakarta_rest">2. Building RESTful Web Services with Jakarta REST</a>
 <ul class="sectlevel2">
-<li><a href="#what-are-restful-web-services">What Are RESTful Web Services?</a></li>
-<li><a href="#creating-a-restful-root-resource-class">Creating a RESTful Root Resource Class</a></li>
-<li><a href="#example-applications-for-jakarta-rest">Example Applications for Jakarta REST</a></li>
-<li><a href="#further-information-about-jakarta-rest">Further Information about Jakarta REST</a></li>
+<li><a href="#_what_are_restful_web_services">2.1. What Are RESTful Web Services?</a></li>
+<li><a href="#_creating_a_restful_root_resource_class">2.2. Creating a RESTful Root Resource Class</a></li>
+<li><a href="#_example_applications_for_jakarta_rest">2.3. Example Applications for Jakarta REST</a></li>
+<li><a href="#_further_information_about_jakarta_rest">2.4. Further Information about Jakarta REST</a></li>
 </ul>
 </li>
-<li><a href="#accessing-rest-resources-with-the-jakarta-rest-client-api">Accessing REST Resources with the Jakarta REST Client API</a>
+<li><a href="#_accessing_rest_resources_with_the_jakarta_rest_client_api">3. Accessing REST Resources with the Jakarta REST Client API</a>
 <ul class="sectlevel2">
-<li><a href="#overview-of-the-client-api">Overview of the Client API</a></li>
-<li><a href="#using-the-client-api-in-the-jakarta-rest-example-applications">Using the Client API in the Jakarta REST Example Applications</a></li>
-<li><a href="#advanced-features-of-the-client-api">Advanced Features of the Client API</a></li>
+<li><a href="#_overview_of_the_client_api">3.1. Overview of the Client API</a></li>
+<li><a href="#_using_the_client_api_in_the_jakarta_rest_example_applications">3.2. Using the Client API in the Jakarta REST Example Applications</a></li>
+<li><a href="#_advanced_features_of_the_client_api">3.3. Advanced Features of the Client API</a></li>
 </ul>
 </li>
-<li><a href="#jakarta-rest-advanced-topics-and-an-example">Jakarta REST: Advanced Topics and an Example</a>
+<li><a href="#_jakarta_rest_advanced_topics_and_an_example">4. Jakarta REST: Advanced Topics and an Example</a>
 <ul class="sectlevel2">
-<li><a href="#annotations-for-field-and-bean-properties-of-resource-classes">Annotations for Field and Bean Properties of Resource Classes</a></li>
-<li><a href="#validating-resource-data-with-bean-validation">Validating Resource Data with Bean Validation</a></li>
-<li><a href="#subresources-and-runtime-resource-resolution">Subresources and Runtime Resource Resolution</a></li>
-<li><a href="#integrating-jakarta-rest-with-jakarta-enterprise-beans-technology-and-cdi">Integrating Jakarta REST with Jakarta Enterprise Beans Technology and CDI</a></li>
-<li><a href="#conditional-http-requests">Conditional HTTP Requests</a></li>
-<li><a href="#runtime-content-negotiation">Runtime Content Negotiation</a></li>
-<li><a href="#using-jakarta-rest-with-jakarta-xml-binding">Using Jakarta REST with Jakarta XML Binding</a></li>
-<li><a href="#the-customer-example-application">The customer Example Application</a></li>
+<li><a href="#_annotations_for_field_and_bean_properties_of_resource_classes">4.1. Annotations for Field and Bean Properties of Resource Classes</a></li>
+<li><a href="#_validating_resource_data_with_bean_validation">4.2. Validating Resource Data with Bean Validation</a></li>
+<li><a href="#_subresources_and_runtime_resource_resolution">4.3. Subresources and Runtime Resource Resolution</a></li>
+<li><a href="#_integrating_jakarta_rest_with_jakarta_enterprise_beans_technology_and_cdi">4.4. Integrating Jakarta REST with Jakarta Enterprise Beans Technology and CDI</a></li>
+<li><a href="#_conditional_http_requests">4.5. Conditional HTTP Requests</a></li>
+<li><a href="#_runtime_content_negotiation">4.6. Runtime Content Negotiation</a></li>
+<li><a href="#_using_jakarta_rest_with_jakarta_xml_binding">4.7. Using Jakarta REST with Jakarta XML Binding</a></li>
+<li><a href="#_the_customer_example_application">4.8. The customer Example Application</a></li>
 </ul>
 </li>
 </ul>
@@ -481,13 +480,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="rest-web-services"><a class="anchor" href="#rest-web-services"></a>REST Web Services</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="introduction-to-web-services"><a class="anchor" href="#introduction-to-web-services"></a>Introduction to Web Services</h2>
+<h2 id="_introduction_to_web_services">1. Introduction to Web Services</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GIJTI"></a><a id="introduction-to-web-services"></a></p>
@@ -501,7 +494,7 @@ Jakarta RESTful Web Services.</p>
 <p><a id="GIJVH"></a><a id="what-are-web-services"></a></p>
 </div>
 <div class="sect2">
-<h3 id="what-are-web-services"><a class="anchor" href="#what-are-web-services"></a>What Are Web Services?</h3>
+<h3 id="_what_are_web_services">1.1. What Are Web Services?</h3>
 <div class="paragraph">
 <p>Web services are client and server applications that communicate over
 the World Wide Web&#8217;s (WWW) HyperText Transfer Protocol (HTTP). As
@@ -519,7 +512,7 @@ deliver sophisticated added-value services.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="types-of-web-services"><a class="anchor" href="#types-of-web-services"></a>Types of Web Services</h3>
+<h3 id="_types_of_web_services">1.2. Types of Web Services</h3>
 <div class="paragraph">
 <p>On the conceptual level, a service is a software component provided
 through a network-accessible endpoint. The service consumer and provider
@@ -549,7 +542,7 @@ distinguished as "big" web services and "RESTful" web services.</p>
 <p><a id="GKCDG"></a><a id="big-web-services"></a></p>
 </div>
 <div class="sect3">
-<h4 id="big-web-services"><a class="anchor" href="#big-web-services"></a>"Big" Web Services</h4>
+<h4 id="_big_web_services">1.2.1. "Big" Web Services</h4>
 <div class="paragraph">
 <p>JAX-WS provides the functionality for "big" web services,
 which are described in <a href="#BNAYL">Chapter 31, "Building Web
@@ -600,7 +593,7 @@ leveraged out of the box.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="restful-web-services"><a class="anchor" href="#restful-web-services"></a>RESTful Web Services</h4>
+<h4 id="_restful_web_services">1.2.2. RESTful Web Services</h4>
 <div class="paragraph">
 <p>In Jakarta EE, Jakarta RESTful Web Services provides the functionality for Representational
 State Transfer (RESTful) web services. REST is well suited for basic, ad
@@ -683,7 +676,7 @@ both NetBeans IDE and the Maven project-management tool.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="deciding-which-type-of-web-service-to-use"><a class="anchor" href="#deciding-which-type-of-web-service-to-use"></a>Deciding Which Type of Web Service to Use</h3>
+<h3 id="_deciding_which_type_of_web_service_to_use">1.3. Deciding Which Type of Web Service to Use</h3>
 <div class="paragraph">
 <p>Basically, you want to use RESTful web services for integration over the
 web and big web services in enterprise application–integration scenarios
@@ -716,7 +709,7 @@ mash it up with other web-based services.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="building-restful-web-services-with-jakarta-rest"><a class="anchor" href="#building-restful-web-services-with-jakarta-rest"></a>Building RESTful Web Services with Jakarta REST</h2>
+<h2 id="_building_restful_web_services_with_jakarta_rest">2. Building RESTful Web Services with Jakarta REST</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GIEPU"></a><a id="building-restful-web-services-with-jax-rs"></a></p>
@@ -733,7 +726,7 @@ the Java programming language.</p>
 <p><a id="GIJQY"></a><a id="what-are-restful-web-services"></a></p>
 </div>
 <div class="sect2">
-<h3 id="what-are-restful-web-services"><a class="anchor" href="#what-are-restful-web-services"></a>What Are RESTful Web Services?</h3>
+<h3 id="_what_are_restful_web_services">2.1. What Are RESTful Web Services?</h3>
 <div class="paragraph">
 <p>RESTful web services are loosely coupled, lightweight web services that
 are particularly well suited for creating APIs for clients spread out
@@ -810,7 +803,7 @@ document for more information.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="creating-a-restful-root-resource-class"><a class="anchor" href="#creating-a-restful-root-resource-class"></a>Creating a RESTful Root Resource Class</h3>
+<h3 id="_creating_a_restful_root_resource_class">2.2. Creating a RESTful Root Resource Class</h3>
 <div class="paragraph">
 <p>Root resource classes are "plain old Java objects" (POJOs) that are
 either annotated with <code>@Path</code> or have at least one method annotated with
@@ -852,7 +845,7 @@ Responses</a></p>
 <p><a id="GILRU"></a><a id="developing-restful-web-services-with-jax-rs"></a></p>
 </div>
 <div class="sect3">
-<h4 id="developing-restful-web-services-with-jakarta-rest"><a class="anchor" href="#developing-restful-web-services-with-jakarta-rest"></a>Developing RESTful Web Services with Jakarta REST</h4>
+<h4 id="_developing_restful_web_services_with_jakarta_rest">2.2.1. Developing RESTful Web Services with Jakarta REST</h4>
 <div class="paragraph">
 <p>Jakarta REST is a Java programming language API designed to make it easy to
 develop applications that use the REST architecture.</p>
@@ -1009,7 +1002,7 @@ the URL mapping for the application. The path specified by
 </div>
 </div>
 <div class="sect3">
-<h4 id="overview-of-a-jakarta-rest-application"><a class="anchor" href="#overview-of-a-jakarta-rest-application"></a>Overview of a Jakarta REST Application</h4>
+<h4 id="_overview_of_a_jakarta_rest_application">2.2.2. Overview of a Jakarta REST Application</h4>
 <div class="paragraph">
 <p>The following code sample is a very simple example of a root resource
 class that uses Jakarta REST annotations:</p>
@@ -1099,7 +1092,7 @@ in this code example:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-path-annotation-and-uri-path-templates"><a class="anchor" href="#the-path-annotation-and-uri-path-templates"></a>The @Path Annotation and URI Path Templates</h4>
+<h4 id="_the_path_annotation_and_uri_path_templates">2.2.3. The @Path Annotation and URI Path Templates</h4>
 <div class="paragraph">
 <p>The <code>@Path</code> annotation identifies the URI path template to which the
 resource responds and is specified at the class or method level of a
@@ -1300,7 +1293,7 @@ following variable names and values are used in the examples:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="responding-to-http-methods-and-requests"><a class="anchor" href="#responding-to-http-methods-and-requests"></a>Responding to HTTP Methods and Requests</h4>
+<h4 id="_responding_to_http_methods_and_requests">2.2.4. Responding to HTTP Methods and Requests</h4>
 <div class="paragraph">
 <p>The behavior of a resource is determined by the HTTP methods (typically,
 GET, POST, PUT, or DELETE) to which the resource is responding.</p>
@@ -1323,7 +1316,7 @@ Entity Bodies</a></p>
 <p><a id="GIPXS"></a><a id="the-request-method-designator-annotations"></a></p>
 </div>
 <div class="sect4">
-<h5 id="the-request-method-designator-annotations"><a class="anchor" href="#the-request-method-designator-annotations"></a>The Request Method Designator Annotations</h5>
+<h5 id="_the_request_method_designator_annotations">The Request Method Designator Annotations</h5>
 <div class="paragraph">
 <p>Request method designator annotations are runtime annotations, defined
 by Jakarta REST, that correspond to the similarly named HTTP methods. Within a
@@ -1405,7 +1398,7 @@ the web service declares the URI for the newly created resource.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="using-entity-providers-to-map-http-response-and-request-entity-bodies"><a class="anchor" href="#using-entity-providers-to-map-http-response-and-request-entity-bodies"></a>Using Entity Providers to Map HTTP Response and Request Entity Bodies</h5>
+<h5 id="_using_entity_providers_to_map_http_response_and_request_entity_bodies">Using Entity Providers to Map HTTP Response and Request Entity Bodies</h5>
 <div class="paragraph">
 <p>Entity providers supply mapping services between representations and
 their associated Java types. The two types of entity providers are
@@ -1539,7 +1532,7 @@ media types (<code>text/xml</code>, <code>application/xml</code>, and <code>appl
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-consumes-and-produces-to-customize-requests-and-responses"><a class="anchor" href="#using-consumes-and-produces-to-customize-requests-and-responses"></a>Using @Consumes and @Produces to Customize Requests and Responses</h4>
+<h4 id="_using_consumes_and_produces_to_customize_requests_and_responses">2.2.5. Using @Consumes and @Produces to Customize Requests and Responses</h4>
 <div class="paragraph">
 <p>The information sent to a resource and then passed back to the client is
 specified as a MIME media type in the headers of an HTTP request or
@@ -1578,7 +1571,7 @@ headers.</p>
 <p><a id="GIPXF"></a><a id="the-produces-annotation"></a></p>
 </div>
 <div class="sect4">
-<h5 id="the-produces-annotation"><a class="anchor" href="#the-produces-annotation"></a>The @Produces Annotation</h5>
+<h5 id="_the_produces_annotation">The @Produces Annotation</h5>
 <div class="paragraph">
 <p>The <code>@Produces</code> annotation is used to specify the MIME media types or
 representations a resource can produce and send back to the client. If
@@ -1679,7 +1672,7 @@ for the constant field values of <code>javax.ws.rs.core.MediaType</code>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="the-consumes-annotation"><a class="anchor" href="#the-consumes-annotation"></a>The @Consumes Annotation</h5>
+<h5 id="_the_consumes_annotation">The @Consumes Annotation</h5>
 <div class="paragraph">
 <p>The <code>@Consumes</code> annotation is used to specify which MIME media types of
 representations a resource can accept, or consume, from the client. If
@@ -1768,7 +1761,7 @@ response with a status code of HTTP 204 ("No Content") will be returned.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="extracting-request-parameters"><a class="anchor" href="#extracting-request-parameters"></a>Extracting Request Parameters</h4>
+<h4 id="_extracting_request_parameters">2.2.6. Extracting Request Parameters</h4>
 <div class="paragraph">
 <p>Parameters of a resource method may be annotated with parameter-based
 annotations to extract information from a request. A previous example
@@ -2020,7 +2013,7 @@ related to the request or response.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="configuring-jakarta-rest-applications"><a class="anchor" href="#configuring-jakarta-rest-applications"></a>Configuring Jakarta REST Applications</h4>
+<h4 id="_configuring_jakarta_rest_applications">2.2.7. Configuring Jakarta REST Applications</h4>
 <div class="paragraph">
 <p>A Jakarta REST application consists of at least one resource class packaged
 within a WAR file. The base URI from which an application&#8217;s resources
@@ -2056,7 +2049,7 @@ Application</a></p>
 <p><a id="CIHFEBJF"></a><a id="configuring-a-jax-rs-application-using-a-subclass-of-application"></a></p>
 </div>
 <div class="sect4">
-<h5 id="configuring-a-jakarta-rest-application-using-a-subclass-of-application"><a class="anchor" href="#configuring-a-jakarta-rest-application-using-a-subclass-of-application"></a>Configuring a Jakarta REST Application Using a Subclass of Application</h5>
+<h5 id="_configuring_a_jakarta_rest_application_using_a_subclass_of_application">Configuring a Jakarta REST Application Using a Subclass of Application</h5>
 <div class="paragraph">
 <p>Create a subclass of <code>javax.ws.rs.core.Application</code> to manually
 configure the environment in which the REST resources defined in your
@@ -2095,7 +2088,7 @@ resource classes in the application with the Jakarta REST runtime.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="configuring-the-base-uri-in-web-xml"><a class="anchor" href="#configuring-the-base-uri-in-web-xml"></a>Configuring the Base URI in web.xml</h5>
+<h5 id="_configuring_the_base_uri_in_web_xml">Configuring the Base URI in web.xml</h5>
 <div class="paragraph">
 <p>The base URI for a Jakarta REST application can be set using a
 <code>servlet-mapping</code> tag in the <code>web.xml</code> deployment descriptor, using the
@@ -2128,7 +2121,7 @@ using an <code>Application</code> subclass.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="example-applications-for-jakarta-rest"><a class="anchor" href="#example-applications-for-jakarta-rest"></a>Example Applications for Jakarta REST</h3>
+<h3 id="_example_applications_for_jakarta_rest">2.3. Example Applications for Jakarta REST</h3>
 <div class="paragraph">
 <p>This section provides an introduction to creating, deploying, and
 running your own Jakarta REST applications. This section demonstrates the
@@ -2155,7 +2148,7 @@ web application that uses Jakarta REST annotations.</p>
 <p><a id="GIPYZ"></a><a id="creating-a-simple-restful-web-service"></a></p>
 </div>
 <div class="sect3">
-<h4 id="creating-a-simple-restful-web-service"><a class="anchor" href="#creating-a-simple-restful-web-service"></a>Creating a Simple RESTful Web Service</h4>
+<h4 id="_creating_a_simple_restful_web_service">2.3.1. Creating a Simple RESTful Web Service</h4>
 <div class="paragraph">
 <p>This section explains how to use NetBeans IDE to create a RESTful web
 service using a Maven archetype. The archetype generates a skeleton for
@@ -2180,7 +2173,7 @@ method.</p>
 <p><a id="GIQAA"></a><a id="to-create-a-restful-web-service-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-create-a-restful-web-service-using-netbeans-ide"><a class="anchor" href="#to-create-a-restful-web-service-using-netbeans-ide"></a>To Create a RESTful Web Service Using NetBeans IDE</h5>
+<h5 id="_to_create_a_restful_web_service_using_netbeans_ide">To Create a RESTful Web Service Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2273,7 +2266,7 @@ storage and relational databases.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-rsvp-example-application"><a class="anchor" href="#the-rsvp-example-application"></a>The rsvp Example Application</h4>
+<h4 id="_the_rsvp_example_application">2.3.2. The rsvp Example Application</h4>
 <div class="paragraph">
 <p>The <code>rsvp</code> example application, located in the
 <code><em>tut-install</em></code> <code>/examples/jaxrs/rsvp/</code> directory, allows invitees to an
@@ -2298,7 +2291,7 @@ are exposed in a stateless session enterprise bean.</p>
 <p><a id="GJVAW"></a><a id="components-of-the-rsvp-example-application"></a></p>
 </div>
 <div class="sect4">
-<h5 id="components-of-the-rsvp-example-application"><a class="anchor" href="#components-of-the-rsvp-example-application"></a>Components of the rsvp Example Application</h5>
+<h5 id="_components_of_the_rsvp_example_application">Components of the rsvp Example Application</h5>
 <div class="paragraph">
 <p>The three enterprise beans in the <code>rsvp</code> example application are
 <code>rsvp.ejb.ConfigBean</code>, <code>rsvp.ejb.StatusBean</code>, and
@@ -2405,7 +2398,7 @@ Application"</a>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="running-the-rsvp-example-application"><a class="anchor" href="#running-the-rsvp-example-application"></a>Running the rsvp Example Application</h5>
+<h5 id="_running_the_rsvp_example_application">Running the rsvp Example Application</h5>
 <div class="paragraph">
 <p>Both NetBeans IDE and Maven can be used to deploy and run the <code>rsvp</code>
 example application.</p>
@@ -2427,7 +2420,7 @@ example application.</p>
 <p><a id="CIHEFEHA"></a><a id="to-run-the-rsvp-example-application-using-netbeans-ide"></a></p>
 </div>
 <div class="sect5">
-<h6 id="to-run-the-rsvp-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-rsvp-example-application-using-netbeans-ide"></a>To Run the rsvp Example Application Using NetBeans IDE</h6>
+<h6 id="_to_run_the_rsvp_example_application_using_netbeans_ide">To Run the rsvp Example Application Using NetBeans IDE</h6>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2489,7 +2482,7 @@ invitees and their response statuses.</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="to-run-the-rsvp-example-application-using-maven"><a class="anchor" href="#to-run-the-rsvp-example-application-using-maven"></a>To Run the rsvp Example Application Using Maven</h6>
+<h6 id="_to_run_the_rsvp_example_application_using_maven">To Run the rsvp Example Application Using Maven</h6>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2546,7 +2539,7 @@ invitees and their response statuses.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="real-world-examples"><a class="anchor" href="#real-world-examples"></a>Real-World Examples</h4>
+<h4 id="_real_world_examples">2.3.3. Real-World Examples</h4>
 <div class="paragraph">
 <p>Most blog sites use RESTful web services. These sites involve
 downloading XML files, in RSS or Atom format, that contain lists of
@@ -2563,7 +2556,7 @@ storage service example with a RESTful interface.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="further-information-about-jakarta-rest"><a class="anchor" href="#further-information-about-jakarta-rest"></a>Further Information about Jakarta REST</h3>
+<h3 id="_further_information_about_jakarta_rest">2.4. Further Information about Jakarta REST</h3>
 <div class="paragraph">
 <p>For more information about RESTful web services and Jakarta REST, see</p>
 </div>
@@ -2599,7 +2592,7 @@ from O&#8217;Reilly Media at
 </div>
 </div>
 <div class="sect1">
-<h2 id="accessing-rest-resources-with-the-jakarta-rest-client-api"><a class="anchor" href="#accessing-rest-resources-with-the-jakarta-rest-client-api"></a>Accessing REST Resources with the Jakarta REST Client API</h2>
+<h2 id="_accessing_rest_resources_with_the_jakarta_rest_client_api">3. Accessing REST Resources with the Jakarta REST Client API</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="BABEIGIH"></a><a id="accessing-rest-resources-with-the-jax-rs-client-api"></a></p>
@@ -2619,7 +2612,7 @@ Java applications.</p>
 <p><a id="BABBIHEJ"></a><a id="overview-of-the-client-api"></a></p>
 </div>
 <div class="sect2">
-<h3 id="overview-of-the-client-api"><a class="anchor" href="#overview-of-the-client-api"></a>Overview of the Client API</h3>
+<h3 id="_overview_of_the_client_api">3.1. Overview of the Client API</h3>
 <div class="paragraph">
 <p>The Jakarta REST Client API provides a high-level API for accessing any REST
 resources, not just Jakarta REST services. The Client API is defined in the
@@ -2651,7 +2644,7 @@ resources, not just Jakarta REST services. The Client API is defined in the
 <p><a id="CHDFCABB"></a><a id="creating-a-basic-client-request-using-the-client-api"></a></p>
 </div>
 <div class="sect3">
-<h4 id="creating-a-basic-client-request-using-the-client-api"><a class="anchor" href="#creating-a-basic-client-request-using-the-client-api"></a>Creating a Basic Client Request Using the Client API</h4>
+<h4 id="_creating_a_basic_client_request_using_the_client_api">3.1.1. Creating a Basic Client Request Using the Client API</h4>
 <div class="paragraph">
 <p>The following steps are needed to access a REST resource using the
 Client API.</p>
@@ -2700,7 +2693,7 @@ of the returned entity to <code>String</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="obtaining-the-client-instance"><a class="anchor" href="#obtaining-the-client-instance"></a>Obtaining the Client Instance</h4>
+<h4 id="_obtaining_the_client_instance">3.1.2. Obtaining the Client Instance</h4>
 <div class="paragraph">
 <p>The <code>Client</code> interface defines the actions and infrastructure a REST
 client requires to consume a RESTful web service. Instances of <code>Client</code>
@@ -2733,7 +2726,7 @@ your runtime environment.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="setting-the-client-target"><a class="anchor" href="#setting-the-client-target"></a>Setting the Client Target</h4>
+<h4 id="_setting_the_client_target">3.1.3. Setting the Client Target</h4>
 <div class="paragraph">
 <p>The target of a client, the REST resource at a particular URI, is
 represented by an instance of the <code>javax.ws.rs.client.WebTarget</code>
@@ -2772,7 +2765,7 @@ appending the current target URI with the path that was passed in.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="setting-path-parameters-in-targets"><a class="anchor" href="#setting-path-parameters-in-targets"></a>Setting Path Parameters in Targets</h4>
+<h4 id="_setting_path_parameters_in_targets">3.1.4. Setting Path Parameters in Targets</h4>
 <div class="paragraph">
 <p>Path parameters in client requests can be specified as URI template
 parameters, similar to the template parameters used when defining a
@@ -2793,7 +2786,7 @@ the <code>queryParam</code> method to add another variable to pass.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="invoking-the-request"><a class="anchor" href="#invoking-the-request"></a>Invoking the Request</h4>
+<h4 id="_invoking_the_request">3.1.5. Invoking the Request</h4>
 <div class="paragraph">
 <p>After setting and applying any configuration options to the target, call
 one of the <code>WebTarget.request</code> methods to begin creating the request.
@@ -2903,7 +2896,7 @@ Client API to simplify how requests are configured and invoked.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-the-client-api-in-the-jakarta-rest-example-applications"><a class="anchor" href="#using-the-client-api-in-the-jakarta-rest-example-applications"></a>Using the Client API in the Jakarta REST Example Applications</h3>
+<h3 id="_using_the_client_api_in_the_jakarta_rest_example_applications">3.2. Using the Client API in the Jakarta REST Example Applications</h3>
 <div class="paragraph">
 <p>The <code>rsvp</code> and <code>customer</code> examples use the Client API to call Jakarta REST
 services. This section describes how each example application uses the
@@ -2926,7 +2919,7 @@ Client API.</p>
 <p><a id="BABEDFIG"></a><a id="the-client-api-in-the-rsvp-example-application"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-client-api-in-the-rsvp-example-application"><a class="anchor" href="#the-client-api-in-the-rsvp-example-application"></a>The Client API in the rsvp Example Application</h4>
+<h4 id="_the_client_api_in_the_rsvp_example_application">3.2.1. The Client API in the rsvp Example Application</h4>
 <div class="paragraph">
 <p>The <code>rsvp</code> application allows users to respond to event invitations
 using Jakarta REST resources, as explained in <a href="#the-rsvp-example-application">The rsvp Example Application</a>. The web application uses the Client
@@ -3014,7 +3007,7 @@ response. The body of the request is an XML document.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-client-api-in-the-customer-example-application"><a class="anchor" href="#the-client-api-in-the-customer-example-application"></a>The Client API in the customer Example Application</h4>
+<h4 id="_the_client_api_in_the_customer_example_application">3.2.2. The Client API in the customer Example Application</h4>
 <div class="paragraph">
 <p>The <code>customer</code> example application stores customer data in a database
 and exposes the resource as XML, as explained in
@@ -3116,7 +3109,7 @@ method is called by passing in a new instance of
 </div>
 </div>
 <div class="sect2">
-<h3 id="advanced-features-of-the-client-api"><a class="anchor" href="#advanced-features-of-the-client-api"></a>Advanced Features of the Client API</h3>
+<h3 id="_advanced_features_of_the_client_api">3.3. Advanced Features of the Client API</h3>
 <div class="paragraph">
 <p>This section describes some of the advanced features of the Jakarta REST
 Client API.</p>
@@ -3138,7 +3131,7 @@ Client API.</p>
 <p><a id="CHDGBBCC"></a><a id="configuring-the-client-request"></a></p>
 </div>
 <div class="sect3">
-<h4 id="configuring-the-client-request"><a class="anchor" href="#configuring-the-client-request"></a>Configuring the Client Request</h4>
+<h4 id="_configuring_the_client_request">3.3.1. Configuring the Client Request</h4>
 <div class="paragraph">
 <p>Additional configuration options may be added to the client request
 after it is created but before it is invoked.</p>
@@ -3163,7 +3156,7 @@ after it is created but before it is invoked.</p>
 <p><a id="CHDHAFBG"></a><a id="setting-message-headers-in-the-client-request"></a></p>
 </div>
 <div class="sect4">
-<h5 id="setting-message-headers-in-the-client-request"><a class="anchor" href="#setting-message-headers-in-the-client-request"></a>Setting Message Headers in the Client Request</h5>
+<h5 id="_setting_message_headers_in_the_client_request">Setting Message Headers in the Client Request</h5>
 <div class="paragraph">
 <p>You can set HTTP headers on the request by calling the
 <code>Invocation.Builder.header</code> method.</p>
@@ -3214,7 +3207,7 @@ myHeaders.add(<span class="string"><span class="delimiter">&quot;</span><span cl
 </div>
 </div>
 <div class="sect4">
-<h5 id="setting-cookies-in-the-client-request"><a class="anchor" href="#setting-cookies-in-the-client-request"></a>Setting Cookies in the Client Request</h5>
+<h5 id="_setting_cookies_in_the_client_request">Setting Cookies in the Client Request</h5>
 <div class="paragraph">
 <p>You can add HTTP cookies to the request by calling the
 <code>Invocation.Builder.cookie</code> method, which takes a name-value pair as
@@ -3252,7 +3245,7 @@ Cookie myCookie = <span class="keyword">new</span> Cookie(<span class="string"><
 </div>
 </div>
 <div class="sect4">
-<h5 id="adding-filters-to-the-client"><a class="anchor" href="#adding-filters-to-the-client"></a>Adding Filters to the Client</h5>
+<h5 id="_adding_filters_to_the_client">Adding Filters to the Client</h5>
 <div class="paragraph">
 <p>You can register custom filters with the client request or the response
 received from the target resource. To register filter classes when the
@@ -3340,7 +3333,7 @@ context object&#8217;s <code>abortWith</code> method, and pass in a
 </div>
 </div>
 <div class="sect3">
-<h4 id="asynchronous-invocations-in-the-client-api"><a class="anchor" href="#asynchronous-invocations-in-the-client-api"></a>Asynchronous Invocations in the Client API</h4>
+<h4 id="_asynchronous_invocations_in_the_client_api">3.3.2. Asynchronous Invocations in the Client API</h4>
 <div class="paragraph">
 <p>In networked applications, network issues can affect the perceived
 performance of the application, particularly in long-running or
@@ -3376,7 +3369,7 @@ WebTarget myResource = client.target(<span class="string"><span class="delimiter
 <p><a id="sthref140"></a><a id="using-custom-callbacks-in-asynchronous-invocations"></a></p>
 </div>
 <div class="sect4">
-<h5 id="using-custom-callbacks-in-asynchronous-invocations"><a class="anchor" href="#using-custom-callbacks-in-asynchronous-invocations"></a>Using Custom Callbacks in Asynchronous Invocations</h5>
+<h5 id="_using_custom_callbacks_in_asynchronous_invocations">Using Custom Callbacks in Asynchronous Invocations</h5>
 <div class="paragraph">
 <p>The <code>InvocationCallback</code> interface defines two methods, <code>completed</code> and
 <code>failed</code>, that are called when an asynchronous invocation either
@@ -3411,7 +3404,7 @@ WebTarget myResource = client.target(<span class="string"><span class="delimiter
 </div>
 </div>
 <div class="sect4">
-<h5 id="using-reactive-approach-in-asynchronous-invocations"><a class="anchor" href="#using-reactive-approach-in-asynchronous-invocations"></a>Using Reactive Approach in Asynchronous Invocations</h5>
+<h5 id="_using_reactive_approach_in_asynchronous_invocations">Using Reactive Approach in Asynchronous Invocations</h5>
 <div class="paragraph">
 <p>Using custom callbacks in asynchronous invocations is easy in simple
 cases and when there are many independent calls to make. In nested
@@ -3440,7 +3433,7 @@ the result is displayed. The <code>CompletionStage</code> that is returned can t
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-server-sent-events"><a class="anchor" href="#using-server-sent-events"></a>Using Server-Sent Events</h4>
+<h4 id="_using_server_sent_events">3.3.3. Using Server-Sent Events</h4>
 <div class="paragraph">
 <p>Server-sent Events (SSE) technology is used to asynchronously push
 notifications to the client over standard HTTP or HTTPS protocol.
@@ -3461,7 +3454,7 @@ send multiple events from the server.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="overview-of-the-sse-api"><a class="anchor" href="#overview-of-the-sse-api"></a>Overview of the SSE API</h4>
+<h4 id="_overview_of_the_sse_api">3.3.4. Overview of the SSE API</h4>
 <div class="paragraph">
 <p>The SSE API is defined in the <code>javax.ws.rs.sse</code> package that includes
 the interfaces <code>SseEventSink</code>, <code>SseEvent</code>, <code>Sse</code>, and <code>SseEventSource</code>.
@@ -3507,7 +3500,7 @@ details such as <code>event</code>, <code>data</code>, <code>id</code>, <code>re
 </div>
 </div>
 <div class="sect3">
-<h4 id="broadcasting-using-sse"><a class="anchor" href="#broadcasting-using-sse"></a>Broadcasting Using SSE</h4>
+<h4 id="_broadcasting_using_sse">3.3.5. Broadcasting Using SSE</h4>
 <div class="paragraph">
 <p>Broadcasting is the action of sending events to multiple clients
 simultaneously. Jakarta REST SSE API provides <code>SseBroadcaster</code> to register all
@@ -3559,7 +3552,7 @@ method is used to send an SSE event to all registered clients.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="listening-and-receiving-events"><a class="anchor" href="#listening-and-receiving-events"></a>Listening and Receiving Events</h4>
+<h4 id="_listening_and_receiving_events">3.3.6. Listening and Receiving Events</h4>
 <div class="paragraph">
 <p>Jakarta REST SSE provides the <code>SseEventSource</code> interface for the client to
 subscribe to notifications. The client can get asynchronously notified
@@ -3588,7 +3581,7 @@ an SSE connection and read some of the messages for a period:</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="jakarta-rest-advanced-topics-and-an-example"><a class="anchor" href="#jakarta-rest-advanced-topics-and-an-example"></a>Jakarta REST: Advanced Topics and an Example</h2>
+<h2 id="_jakarta_rest_advanced_topics_and_an_example">4. Jakarta REST: Advanced Topics and an Example</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GJJXE"></a><a id="jax-rs-advanced-topics-and-an-example"></a></p>
@@ -3609,7 +3602,7 @@ technology.</p>
 <p><a id="GKKRB"></a><a id="annotations-for-field-and-bean-properties-of-resource-classes"></a></p>
 </div>
 <div class="sect2">
-<h3 id="annotations-for-field-and-bean-properties-of-resource-classes"><a class="anchor" href="#annotations-for-field-and-bean-properties-of-resource-classes"></a>Annotations for Field and Bean Properties of Resource Classes</h3>
+<h3 id="_annotations_for_field_and_bean_properties_of_resource_classes">4.1. Annotations for Field and Bean Properties of Resource Classes</h3>
 <div class="paragraph">
 <p>Jakarta REST annotations for resource classes let you extract specific parts
 or values from a Uniform Resource Identifier (URI) or request header.</p>
@@ -3670,7 +3663,7 @@ content type is <code>application/x-www-form-urlencoded</code></p></td>
 <p><a id="GKKYA"></a><a id="extracting-path-parameters"></a></p>
 </div>
 <div class="sect3">
-<h4 id="extracting-path-parameters"><a class="anchor" href="#extracting-path-parameters"></a>Extracting Path Parameters</h4>
+<h4 id="_extracting_path_parameters">4.1.1. Extracting Path Parameters</h4>
 <div class="paragraph">
 <p>URI path templates are URIs with variables embedded within the URI
 syntax. The <code>@PathParam</code> annotation lets you use variable URI path
@@ -3725,7 +3718,7 @@ is returned.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="extracting-query-parameters"><a class="anchor" href="#extracting-query-parameters"></a>Extracting Query Parameters</h4>
+<h4 id="_extracting_query_parameters">4.1.2. Extracting Query Parameters</h4>
 <div class="paragraph">
 <p>Use the <code>@QueryParam</code> annotation to extract query parameters from the
 query component of the request URI.</p>
@@ -3766,7 +3759,7 @@ or zero values and define your own default values for a parameter.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="extracting-form-data"><a class="anchor" href="#extracting-form-data"></a>Extracting Form Data</h4>
+<h4 id="_extracting_form_data">4.1.3. Extracting Form Data</h4>
 <div class="paragraph">
 <p>Use the <code>@FormParam</code> annotation to extract form parameters from HTML
 forms. For example, the following form accepts the name, address, and
@@ -3817,7 +3810,7 @@ like the following:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="extracting-the-java-type-of-a-request-or-response"><a class="anchor" href="#extracting-the-java-type-of-a-request-or-response"></a>Extracting the Java Type of a Request or Response</h4>
+<h4 id="_extracting_the_java_type_of_a_request_or_response">4.1.4. Extracting the Java Type of a Request or Response</h4>
 <div class="paragraph">
 <p>The <code>javax.ws.rs.core.Context</code> annotation retrieves the Java types
 related to a request or response.</p>
@@ -3856,7 +3849,7 @@ obtain a map of header and cookie parameter names to values:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="validating-resource-data-with-bean-validation"><a class="anchor" href="#validating-resource-data-with-bean-validation"></a>Validating Resource Data with Bean Validation</h3>
+<h3 id="_validating_resource_data_with_bean_validation">4.2. Validating Resource Data with Bean Validation</h3>
 <div class="paragraph">
 <p>Jakarta REST supports Bean Validation to verify Jakarta REST resource classes.
 This support consists of:</p>
@@ -3892,7 +3885,7 @@ parameter</p>
 <p><a id="CIHJAFGI"></a><a id="using-constraint-annotations-on-resource-methods"></a></p>
 </div>
 <div class="sect3">
-<h4 id="using-constraint-annotations-on-resource-methods"><a class="anchor" href="#using-constraint-annotations-on-resource-methods"></a>Using Constraint Annotations on Resource Methods</h4>
+<h4 id="_using_constraint_annotations_on_resource_methods">4.2.1. Using Constraint Annotations on Resource Methods</h4>
 <div class="paragraph">
 <p>Bean Validation constraint annotations may be applied to parameters for
 a resource. The server will validate the parameters and either pass or
@@ -3997,7 +3990,7 @@ ensures that a user enters at least one phone number. That is, either
 </div>
 </div>
 <div class="sect3">
-<h4 id="validating-entity-data"><a class="anchor" href="#validating-entity-data"></a>Validating Entity Data</h4>
+<h4 id="_validating_entity_data">4.2.2. Validating Entity Data</h4>
 <div class="paragraph">
 <p>Classes that contain validation constraint annotations may be used in
 method parameters in a resource class. To validate these entity classes,
@@ -4093,7 +4086,7 @@ constraints defined within the entity class.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="validation-exception-handling-and-response-codes"><a class="anchor" href="#validation-exception-handling-and-response-codes"></a>Validation Exception Handling and Response Codes</h4>
+<h4 id="_validation_exception_handling_and_response_codes">4.2.3. Validation Exception Handling and Response Codes</h4>
 <div class="paragraph">
 <p>If a <code>javax.validation.ValidationException</code> or any subclass of
 <code>ValidationException</code> except <code>ConstraintValidationException</code> is thrown,
@@ -4121,7 +4114,7 @@ validating a method return type</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="subresources-and-runtime-resource-resolution"><a class="anchor" href="#subresources-and-runtime-resource-resolution"></a>Subresources and Runtime Resource Resolution</h3>
+<h3 id="_subresources_and_runtime_resource_resolution">4.3. Subresources and Runtime Resource Resolution</h3>
 <div class="paragraph">
 <p>You can use a resource class to process only a part of the URI request.
 A root resource can then implement subresources that can process the
@@ -4160,7 +4153,7 @@ corresponding resource.</p>
 <p><a id="GKLAG"></a><a id="subresource-methods"></a></p>
 </div>
 <div class="sect3">
-<h4 id="subresource-methods"><a class="anchor" href="#subresource-methods"></a>Subresource Methods</h4>
+<h4 id="_subresource_methods">4.3.1. Subresource Methods</h4>
 <div class="paragraph">
 <p>A subresource method handles an HTTP request directly. The method must
 be annotated with a request method designator, such as <code>@GET</code> or
@@ -4203,7 +4196,7 @@ request:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="subresource-locators"><a class="anchor" href="#subresource-locators"></a>Subresource Locators</h4>
+<h4 id="_subresource_locators">4.3.2. Subresource Locators</h4>
 <div class="paragraph">
 <p>A subresource locator returns an object that will handle an HTTP
 request. The method must not be annotated with a request method
@@ -4263,7 +4256,7 @@ method retrieves and returns the last name of the employee whose id is
 </div>
 </div>
 <div class="sect2">
-<h3 id="integrating-jakarta-rest-with-jakarta-enterprise-beans-technology-and-cdi"><a class="anchor" href="#integrating-jakarta-rest-with-jakarta-enterprise-beans-technology-and-cdi"></a>Integrating Jakarta REST with Jakarta Enterprise Beans Technology and CDI</h3>
+<h3 id="_integrating_jakarta_rest_with_jakarta_enterprise_beans_technology_and_cdi">4.4. Integrating Jakarta REST with Jakarta Enterprise Beans Technology and CDI</h3>
 <div class="paragraph">
 <p>Jakarta REST works with Jakarta Enterprise Beans technology and
 Jakarta Contexts and Dependency Injection (CDI).</p>
@@ -4340,7 +4333,7 @@ requires a nonprivate constructor with no parameters, and the
 </div>
 </div>
 <div class="sect2">
-<h3 id="conditional-http-requests"><a class="anchor" href="#conditional-http-requests"></a>Conditional HTTP Requests</h3>
+<h3 id="_conditional_http_requests">4.5. Conditional HTTP Requests</h3>
 <div class="paragraph">
 <p>Jakarta REST provides support for conditional <code>GET</code> and <code>PUT</code> HTTP requests.
 Conditional <code>GET</code> requests help save bandwidth by improving the
@@ -4402,7 +4395,7 @@ that may be built and returned.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="runtime-content-negotiation"><a class="anchor" href="#runtime-content-negotiation"></a>Runtime Content Negotiation</h3>
+<h3 id="_runtime_content_negotiation">4.6. Runtime Content Negotiation</h3>
 <div class="paragraph">
 <p>The <code>@Produces</code> and <code>@Consumes</code> annotations handle static content
 negotiation in Jakarta REST. These annotations specify the content preferences
@@ -4557,7 +4550,7 @@ returned.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-jakarta-rest-with-jakarta-xml-binding"><a class="anchor" href="#using-jakarta-rest-with-jakarta-xml-binding"></a>Using Jakarta REST with Jakarta XML Binding</h3>
+<h3 id="_using_jakarta_rest_with_jakarta_xml_binding">4.7. Using Jakarta REST with Jakarta XML Binding</h3>
 <div class="paragraph">
 <p>JAXB is an XML-to-Java binding
 technology that simplifies the development of web services by enabling
@@ -4667,7 +4660,7 @@ methods.</p>
 <p><a id="sthref147"></a><a id="using-java-objects-to-model-your-data"></a></p>
 </div>
 <div class="sect3">
-<h4 id="using-java-objects-to-model-your-data"><a class="anchor" href="#using-java-objects-to-model-your-data"></a>Using Java Objects to Model Your Data</h4>
+<h4 id="_using_java_objects_to_model_your_data">4.7.1. Using Java Objects to Model Your Data</h4>
 <div class="paragraph">
 <p>If you do not have an XML schema definition for the data you want to
 expose, you can model your data as Java classes, add Jakarta XML Binding annotations to
@@ -4776,7 +4769,7 @@ representation.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="starting-from-an-existing-xml-schema-definition"><a class="anchor" href="#starting-from-an-existing-xml-schema-definition"></a>Starting from an Existing XML Schema Definition</h4>
+<h4 id="_starting_from_an_existing_xml_schema_definition">4.7.2. Starting from an Existing XML Schema Definition</h4>
 <div class="paragraph">
 <p>If you already have an XML schema definition in an <code>.xsd</code> file for the
 data you want to expose, use the Jakarta XML Binding schema compiler tool. Consider
@@ -4908,7 +4901,7 @@ a <code>Product</code> object.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-json-with-jakarta-rest-and-jakarta-xml-binding"><a class="anchor" href="#using-json-with-jakarta-rest-and-jakarta-xml-binding"></a>Using JSON with Jakarta REST and Jakarta XML Binding</h4>
+<h4 id="_using_json_with_jakarta_rest_and_jakarta_xml_binding">4.7.3. Using JSON with Jakarta REST and Jakarta XML Binding</h4>
 <div class="paragraph">
 <p>Jakarta REST can automatically read and write XML using Jakarta XML Binding, but it can also
 work with JSON data. JSON is a simple text-based format for data
@@ -4988,7 +4981,7 @@ with a <code>POST</code> request:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-customer-example-application"><a class="anchor" href="#the-customer-example-application"></a>The customer Example Application</h3>
+<h3 id="_the_customer_example_application">4.8. The customer Example Application</h3>
 <div class="paragraph">
 <p>This section describes how to build and run the <code>customer</code> example
 application. This application is a RESTful web service that uses Jakarta XML Binding to
@@ -5027,7 +5020,7 @@ for basic information on building and running sample applications.</p>
 <p><a id="GKOFO"></a><a id="overview-of-the-customer-example-application"></a></p>
 </div>
 <div class="sect3">
-<h4 id="overview-of-the-customer-example-application"><a class="anchor" href="#overview-of-the-customer-example-application"></a>Overview of the customer Example Application</h4>
+<h4 id="_overview_of_the_customer_example_application">4.8.1. Overview of the customer Example Application</h4>
 <div class="paragraph">
 <p>The source files of this application are at
 <code><em>tut-install</em>/examples/jaxrs/customer/src/main/java/</code>. The application
@@ -5061,7 +5054,7 @@ entities as Java classes with Jakarta XML Binding annotations.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-customer-and-address-entity-classes"><a class="anchor" href="#the-customer-and-address-entity-classes"></a>The Customer and Address Entity Classes</h4>
+<h4 id="_the_customer_and_address_entity_classes">4.8.2. The Customer and Address Entity Classes</h4>
 <div class="paragraph">
 <p>The following class represents a customer&#8217;s address:</p>
 </div>
@@ -5205,7 +5198,7 @@ classes:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-customerservice-class"><a class="anchor" href="#the-customerservice-class"></a>The CustomerService Class</h4>
+<h4 id="_the_customerservice_class">4.8.3. The CustomerService Class</h4>
 <div class="paragraph">
 <p>The <code>CustomerService</code> class has a <code>createCustomer</code> method that creates a
 customer resource based on the <code>Customer</code> class and returns a URI for
@@ -5314,7 +5307,7 @@ the client.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-the-jakarta-rest-client-in-the-customerbean-classes"><a class="anchor" href="#using-the-jakarta-rest-client-in-the-customerbean-classes"></a>Using the Jakarta REST Client in the CustomerBean Classes</h4>
+<h4 id="_using_the_jakarta_rest_client_in_the_customerbean_classes">4.8.4. Using the Jakarta REST Client in the CustomerBean Classes</h4>
 <div class="paragraph">
 <p>Use the Jakarta REST Client API to write a client for the <code>customer</code> example
 application.</p>
@@ -5404,7 +5397,7 @@ status codes, see
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-customer-example"><a class="anchor" href="#running-the-customer-example"></a>Running the customer Example</h4>
+<h4 id="_running_the_customer_example">4.8.5. Running the customer Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>customer</code> application.</p>
@@ -5428,7 +5421,7 @@ Maven</a></p>
 <p><a id="GKQLY"></a><a id="to-build-package-and-deploy-the-customer-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-customer-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-customer-example-using-netbeans-ide"></a>To Build, Package, and Deploy the customer Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_deploy_the_customer_example_using_netbeans_ide">To Build, Package, and Deploy the customer Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5480,7 +5473,7 @@ deployed to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-customer-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-customer-example-using-maven"></a>To Build, Package, and Deploy the customer Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_customer_example_using_maven">To Build, Package, and Deploy the customer Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5530,7 +5523,7 @@ deployed to GlassFish Server.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 18:34:55 UTC
+Last updated 2020-04-26 19:19:24 UTC
 </div>
 </div>
 <style>

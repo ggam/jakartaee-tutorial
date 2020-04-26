@@ -434,54 +434,53 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book toc2 toc-left">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>Jakarta Enterprise Beans</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#jakarta-enterprise-beans">Jakarta Enterprise Beans</a></li>
-<li><a href="#enterprise-beans">Enterprise Beans</a>
+<li><a href="#_enterprise_beans">1. Enterprise Beans</a>
 <ul class="sectlevel2">
-<li><a href="#what-is-an-enterprise-bean">What Is an Enterprise Bean?</a></li>
-<li><a href="#what-is-a-session-bean">What Is a Session Bean?</a></li>
-<li><a href="#what-is-a-message-driven-bean">What Is a Message-Driven Bean?</a></li>
-<li><a href="#accessing-enterprise-beans">Accessing Enterprise Beans</a></li>
-<li><a href="#the-contents-of-an-enterprise-bean">The Contents of an Enterprise Bean</a></li>
-<li><a href="#naming-conventions-for-enterprise-beans">Naming Conventions for Enterprise Beans</a></li>
-<li><a href="#the-lifecycles-of-enterprise-beans">The Lifecycles of Enterprise Beans</a></li>
-<li><a href="#further-information-about-enterprise-beans">Further Information about Enterprise Beans</a></li>
+<li><a href="#_what_is_an_enterprise_bean">1.1. What Is an Enterprise Bean?</a></li>
+<li><a href="#_what_is_a_session_bean">1.2. What Is a Session Bean?</a></li>
+<li><a href="#_what_is_a_message_driven_bean">1.3. What Is a Message-Driven Bean?</a></li>
+<li><a href="#_accessing_enterprise_beans">1.4. Accessing Enterprise Beans</a></li>
+<li><a href="#_the_contents_of_an_enterprise_bean">1.5. The Contents of an Enterprise Bean</a></li>
+<li><a href="#_naming_conventions_for_enterprise_beans">1.6. Naming Conventions for Enterprise Beans</a></li>
+<li><a href="#_the_lifecycles_of_enterprise_beans">1.7. The Lifecycles of Enterprise Beans</a></li>
+<li><a href="#_further_information_about_enterprise_beans">1.8. Further Information about Enterprise Beans</a></li>
 </ul>
 </li>
-<li><a href="#getting-started-with-enterprise-beans">Getting Started with Enterprise Beans</a>
+<li><a href="#_getting_started_with_enterprise_beans">2. Getting Started with Enterprise Beans</a>
 <ul class="sectlevel2">
-<li><a href="#starting-with-enterprise-beans">Starting With Enterprise Beans</a></li>
-<li><a href="#creating-the-enterprise-bean">Creating the Enterprise Bean</a></li>
-<li><a href="#modifying-the-jakarta-ee-application">Modifying the Jakarta EE Application</a></li>
+<li><a href="#_starting_with_enterprise_beans">2.1. Starting With Enterprise Beans</a></li>
+<li><a href="#_creating_the_enterprise_bean">2.2. Creating the Enterprise Bean</a></li>
+<li><a href="#_modifying_the_jakarta_ee_application">2.3. Modifying the Jakarta EE Application</a></li>
 </ul>
 </li>
-<li><a href="#running-the-enterprise-bean-examples">Running the Enterprise Bean Examples</a>
+<li><a href="#_running_the_enterprise_bean_examples">3. Running the Enterprise Bean Examples</a>
 <ul class="sectlevel2">
-<li><a href="#overview-of-the-jakarta-enterprise-beans-examples">Overview of the Jakarta Enterprise Beans Examples</a></li>
-<li><a href="#the-cart-example">The cart Example</a></li>
-<li><a href="#a-singleton-session-bean-example-counter">A Singleton Session Bean Example: counter</a></li>
-<li><a href="#a-web-service-example-helloservice">A Web Service Example: helloservice</a></li>
-<li><a href="#using-the-timer-service">Using the Timer Service</a></li>
-<li><a href="#handling-exceptions">Handling Exceptions</a></li>
+<li><a href="#_overview_of_the_jakarta_enterprise_beans_examples">3.1. Overview of the Jakarta Enterprise Beans Examples</a></li>
+<li><a href="#_the_cart_example">3.2. The cart Example</a></li>
+<li><a href="#_a_singleton_session_bean_example_counter">3.3. A Singleton Session Bean Example: counter</a></li>
+<li><a href="#_a_web_service_example_helloservice">3.4. A Web Service Example: helloservice</a></li>
+<li><a href="#_using_the_timer_service">3.5. Using the Timer Service</a></li>
+<li><a href="#_handling_exceptions">3.6. Handling Exceptions</a></li>
 </ul>
 </li>
-<li><a href="#using-the-embedded-enterprise-bean-container">Using the Embedded Enterprise Bean Container</a>
+<li><a href="#_using_the_embedded_enterprise_bean_container">4. Using the Embedded Enterprise Bean Container</a>
 <ul class="sectlevel2">
-<li><a href="#overview-of-the-embedded-enterprise-bean-container">Overview of the Embedded Enterprise Bean Container</a></li>
-<li><a href="#developing-embeddable-enterprise-bean-applications">Developing Embeddable Enterprise Bean Applications</a></li>
-<li><a href="#the-standalone-example-application">The standalone Example Application</a></li>
+<li><a href="#_overview_of_the_embedded_enterprise_bean_container">4.1. Overview of the Embedded Enterprise Bean Container</a></li>
+<li><a href="#_developing_embeddable_enterprise_bean_applications">4.2. Developing Embeddable Enterprise Bean Applications</a></li>
+<li><a href="#_the_standalone_example_application">4.3. The standalone Example Application</a></li>
 </ul>
 </li>
-<li><a href="#using-asynchronous-method-invocation-in-session-beans">Using Asynchronous Method Invocation in Session Beans</a>
+<li><a href="#_using_asynchronous_method_invocation_in_session_beans">5. Using Asynchronous Method Invocation in Session Beans</a>
 <ul class="sectlevel2">
-<li><a href="#asynchronous-method-invocation">Asynchronous Method Invocation</a></li>
-<li><a href="#the-async-example-application">The async Example Application</a></li>
+<li><a href="#_asynchronous_method_invocation">5.1. Asynchronous Method Invocation</a></li>
+<li><a href="#_the_async_example_application">5.2. The async Example Application</a></li>
 </ul>
 </li>
 </ul>
@@ -489,13 +488,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="jakarta-enterprise-beans"><a class="anchor" href="#jakarta-enterprise-beans"></a>Jakarta Enterprise Beans</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="enterprise-beans"><a class="anchor" href="#enterprise-beans"></a>Enterprise Beans</h2>
+<h2 id="_enterprise_beans">1. Enterprise Beans</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GIJSZ"></a><a id="enterprise-beans"></a></p>
@@ -514,7 +507,7 @@ which form the core of transactional Jakarta EE applications.</p>
 <p><a id="GIPMB"></a><a id="what-is-an-enterprise-bean"></a></p>
 </div>
 <div class="sect2">
-<h3 id="what-is-an-enterprise-bean"><a class="anchor" href="#what-is-an-enterprise-bean"></a>What Is an Enterprise Bean?</h3>
+<h3 id="_what_is_an_enterprise_bean">1.1. What Is an Enterprise Bean?</h3>
 <div class="paragraph">
 <p>Written in the Java programming language, an enterprise bean is a
 server-side component that encapsulates the business logic of an
@@ -544,7 +537,7 @@ clients can access the inventory services provided by the application.</p>
 <p><a id="GIPLK"></a><a id="benefits-of-enterprise-beans"></a></p>
 </div>
 <div class="sect3">
-<h4 id="benefits-of-enterprise-beans"><a class="anchor" href="#benefits-of-enterprise-beans"></a>Benefits of Enterprise Beans</h4>
+<h4 id="_benefits_of_enterprise_beans">1.1.1. Benefits of Enterprise Beans</h4>
 <div class="paragraph">
 <p>For several reasons, enterprise beans simplify the development of large,
 distributed applications. First, because the Enterprise Bean container provides
@@ -572,7 +565,7 @@ Jakarta EE server.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="when-to-use-enterprise-beans"><a class="anchor" href="#when-to-use-enterprise-beans"></a>When to Use Enterprise Beans</h4>
+<h4 id="_when_to_use_enterprise_beans">1.1.2. When to Use Enterprise Beans</h4>
 <div class="paragraph">
 <p>You should consider using enterprise beans if your application has any
 of the following requirements.</p>
@@ -603,7 +596,7 @@ clients can be thin, various, and numerous.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="types-of-enterprise-beans"><a class="anchor" href="#types-of-enterprise-beans"></a>Types of Enterprise Beans</h4>
+<h4 id="_types_of_enterprise_beans">1.1.3. Types of Enterprise Beans</h4>
 <div class="paragraph">
 <p><a href="#GIPLZ">Table 35-1</a> summarizes the two types of enterprise beans.
 The following sections discuss each type in more detail.</p>
@@ -642,7 +635,7 @@ such as Jakarta Messaging</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="what-is-a-session-bean"><a class="anchor" href="#what-is-a-session-bean"></a>What Is a Session Bean?</h3>
+<h3 id="_what_is_a_session_bean">1.2. What Is a Session Bean?</h3>
 <div class="paragraph">
 <p>A session bean encapsulates business logic that can be invoked
 programmatically by a client over local, remote, or web service client
@@ -676,7 +669,7 @@ database.)</p>
 <p><a id="GIPKR"></a><a id="types-of-session-beans"></a></p>
 </div>
 <div class="sect3">
-<h4 id="types-of-session-beans"><a class="anchor" href="#types-of-session-beans"></a>Types of Session Beans</h4>
+<h4 id="_types_of_session_beans">1.2.1. Types of Session Beans</h4>
 <div class="paragraph">
 <p>Session beans are of three types: stateful, stateless, and singleton.</p>
 </div>
@@ -700,7 +693,7 @@ database.)</p>
 <p><a id="GIPNL"></a><a id="stateful-session-beans"></a></p>
 </div>
 <div class="sect4">
-<h5 id="stateful-session-beans"><a class="anchor" href="#stateful-session-beans"></a>Stateful Session Beans</h5>
+<h5 id="_stateful_session_beans">Stateful Session Beans</h5>
 <div class="paragraph">
 <p>The state of an object consists of the values of its instance variables.
 In a stateful session bean, the instance variables represent the state
@@ -726,7 +719,7 @@ need to retain the state.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="stateless-session-beans"><a class="anchor" href="#stateless-session-beans"></a>Stateless Session Beans</h5>
+<h5 id="_stateless_session_beans">Stateless Session Beans</h5>
 <div class="paragraph">
 <p>A stateless session bean does not maintain a conversational state with
 the client. When a client invokes the methods of a stateless bean, the
@@ -755,7 +748,7 @@ session bean cannot.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="singleton-session-beans"><a class="anchor" href="#singleton-session-beans"></a>Singleton Session Beans</h5>
+<h5 id="_singleton_session_beans">Singleton Session Beans</h5>
 <div class="paragraph">
 <p>A singleton session bean is instantiated once per application and exists
 for the lifecycle of the application. Singleton session beans are
@@ -788,7 +781,7 @@ application.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="when-to-use-session-beans"><a class="anchor" href="#when-to-use-session-beans"></a>When to Use Session Beans</h4>
+<h4 id="_when_to_use_session_beans">1.2.2. When to Use Session Beans</h4>
 <div class="paragraph">
 <p>Stateful session beans are appropriate if any of the following
 conditions are true.</p>
@@ -859,7 +852,7 @@ application startup and shutdown.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="what-is-a-message-driven-bean"><a class="anchor" href="#what-is-a-message-driven-bean"></a>What Is a Message-Driven Bean?</h3>
+<h3 id="_what_is_a_message_driven_bean">1.3. What Is a Message-Driven Bean?</h3>
 <div class="paragraph">
 <p>A message-driven bean is an enterprise bean that allows Jakarta EE
 applications to process messages asynchronously. This type of bean
@@ -888,7 +881,7 @@ Beans?</a></p>
 <p><a id="GIPMJ"></a><a id="what-makes-message-driven-beans-different-from-session-beans"></a></p>
 </div>
 <div class="sect3">
-<h4 id="what-makes-message-driven-beans-different-from-session-beans"><a class="anchor" href="#what-makes-message-driven-beans-different-from-session-beans"></a>What Makes Message-Driven Beans Different from Session Beans?</h4>
+<h4 id="_what_makes_message_driven_beans_different_from_session_beans">1.3.1. What Makes Message-Driven Beans Different from Session Beans?</h4>
 <div class="paragraph">
 <p>The most visible difference between message-driven beans and session
 beans is that clients do not access message-driven beans through
@@ -980,7 +973,7 @@ Message-Driven Bean</a> and <a href="#BNCIH">Chapter 54,
 </div>
 </div>
 <div class="sect3">
-<h4 id="when-to-use-message-driven-beans"><a class="anchor" href="#when-to-use-message-driven-beans"></a>When to Use Message-Driven Beans</h4>
+<h4 id="_when_to_use_message_driven_beans">1.3.2. When to Use Message-Driven Beans</h4>
 <div class="paragraph">
 <p>Session beans allow you to send Jakarta Messaging messages and to receive them
 synchronously but not asynchronously. To avoid tying up server
@@ -995,7 +988,7 @@ bean.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="accessing-enterprise-beans"><a class="anchor" href="#accessing-enterprise-beans"></a>Accessing Enterprise Beans</h3>
+<h3 id="_accessing_enterprise_beans">1.4. Accessing Enterprise Beans</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -1054,7 +1047,7 @@ interfaces.</p>
 <p><a id="GIRFL"></a><a id="using-enterprise-beans-in-clients"></a></p>
 </div>
 <div class="sect3">
-<h4 id="using-enterprise-beans-in-clients"><a class="anchor" href="#using-enterprise-beans-in-clients"></a>Using Enterprise Beans in Clients</h4>
+<h4 id="_using_enterprise_beans_in_clients">1.4.1. Using Enterprise Beans in Clients</h4>
 <div class="paragraph">
 <p>The client of an enterprise bean obtains a reference to an instance of
 an enterprise bean through either dependency injection, using Java
@@ -1078,7 +1071,7 @@ explicit lookup.</p>
 <p><a id="GIRGN"></a><a id="portable-jndi-syntax"></a></p>
 </div>
 <div class="sect4">
-<h5 id="portable-jndi-syntax"><a class="anchor" href="#portable-jndi-syntax"></a>Portable JNDI Syntax</h5>
+<h5 id="_portable_jndi_syntax">Portable JNDI Syntax</h5>
 <div class="paragraph">
 <p>Three JNDI namespaces are used for portable JNDI lookups: <code>java:global</code>,
 <code>java:module</code>, and <code>java:app</code>.</p>
@@ -1145,7 +1138,7 @@ using the <code>java:global</code> namespace is <code>java:global/myApp/MyBean</
 </div>
 </div>
 <div class="sect3">
-<h4 id="deciding-on-remote-or-local-access"><a class="anchor" href="#deciding-on-remote-or-local-access"></a>Deciding on Remote or Local Access</h4>
+<h4 id="_deciding_on_remote_or_local_access">1.4.2. Deciding on Remote or Local Access</h4>
 <div class="paragraph">
 <p>When you design a Jakarta EE application, one of the first decisions you
 make is the type of client access allowed by the enterprise beans:
@@ -1213,7 +1206,7 @@ interface cannot be both a local and a remote business interface.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="local-clients"><a class="anchor" href="#local-clients"></a>Local Clients</h4>
+<h4 id="_local_clients">1.4.3. Local Clients</h4>
 <div class="paragraph">
 <p>A local client has these characteristics.</p>
 </div>
@@ -1289,7 +1282,7 @@ specify the interface name. For example:</p>
 <p><a id="GIPSC"></a><a id="accessing-local-enterprise-beans-using-the-no-interface-view"></a></p>
 </div>
 <div class="sect4">
-<h5 id="accessing-local-enterprise-beans-using-the-no-interface-view"><a class="anchor" href="#accessing-local-enterprise-beans-using-the-no-interface-view"></a>Accessing Local Enterprise Beans Using the No-Interface View</h5>
+<h5 id="_accessing_local_enterprise_beans_using_the_no_interface_view">Accessing Local Enterprise Beans Using the No-Interface View</h5>
 <div class="paragraph">
 <p>Client access to an enterprise bean that exposes a local, no-interface
 view is accomplished through either dependency injection or JNDI lookup.</p>
@@ -1329,7 +1322,7 @@ enterprise bean that uses a no-interface view.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="accessing-local-enterprise-beans-that-implement-business-interfaces"><a class="anchor" href="#accessing-local-enterprise-beans-that-implement-business-interfaces"></a>Accessing Local Enterprise Beans That Implement Business Interfaces</h5>
+<h5 id="_accessing_local_enterprise_beans_that_implement_business_interfaces">Accessing Local Enterprise Beans That Implement Business Interfaces</h5>
 <div class="paragraph">
 <p>Client access to enterprise beans that implement local business
 interfaces is accomplished through either dependency injection or JNDI
@@ -1367,7 +1360,7 @@ interface&#8217;s <code>lookup</code> method:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="remote-clients"><a class="anchor" href="#remote-clients"></a>Remote Clients</h4>
+<h4 id="_remote_clients">1.4.4. Remote Clients</h4>
 <div class="paragraph">
 <p>A remote client of an enterprise bean has the following traits.</p>
 </div>
@@ -1429,7 +1422,7 @@ client&#8217;s view of an enterprise bean.</p>
 </div>
 <div id="GIPNO" class="paragraph">
 <div class="title"><strong>Figure 35-1 Interfaces for an Enterprise Bean with Remote Access</strong></div>
-<p><span class="image"><img src="data:image/png;base64,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" alt="Diagram showing a remote client accessing an enterprise bean&#8217;s methods through its remote interface."></span></p>
+<p><span class="image"><img src="../images/jakartaeett_dt_020.png" alt="Diagram showing a remote client accessing an enterprise bean&#8217;s methods through its remote interface."></span></p>
 </div>
 <div class="paragraph">
 <p>Client access to an enterprise bean that implements a remote business
@@ -1468,7 +1461,7 @@ interface&#8217;s <code>lookup</code> method:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="web-service-clients"><a class="anchor" href="#web-service-clients"></a>Web Service Clients</h4>
+<h4 id="_web_service_clients">1.4.5. Web Service Clients</h4>
 <div class="paragraph">
 <p>A web service client can access a Jakarta EE application in two ways.
 First, the client can access a web service created with Jakarta XML Web Services. (For
@@ -1504,7 +1497,7 @@ Example: helloservice</a>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="method-parameters-and-access"><a class="anchor" href="#method-parameters-and-access"></a>Method Parameters and Access</h4>
+<h4 id="_method_parameters_and_access">1.4.6. Method Parameters and Access</h4>
 <div class="paragraph">
 <p>The type of access affects the parameters of the bean methods that are
 called by clients. The following sections apply not only to method
@@ -1514,7 +1507,7 @@ parameters but also to method return values.</p>
 <p><a id="GIPLX"></a><a id="isolation"></a></p>
 </div>
 <div class="sect4">
-<h5 id="isolation"><a class="anchor" href="#isolation"></a>Isolation</h5>
+<h5 id="_isolation">Isolation</h5>
 <div class="paragraph">
 <p>The parameters of remote calls are more isolated than those of local
 calls. With remote calls, the client and the bean operate on different
@@ -1538,7 +1531,7 @@ of parameters than does the bean that implements the web service.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="granularity-of-accessed-data"><a class="anchor" href="#granularity-of-accessed-data"></a>Granularity of Accessed Data</h5>
+<h5 id="_granularity_of_accessed_data">Granularity of Accessed Data</h5>
 <div class="paragraph">
 <p>Because remote calls are likely to be slower than local calls, the
 parameters in remote methods should be relatively coarse-grained. A
@@ -1553,7 +1546,7 @@ the methods called by web service clients should also be coarse-grained.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-contents-of-an-enterprise-bean"><a class="anchor" href="#the-contents-of-an-enterprise-bean"></a>The Contents of an Enterprise Bean</h3>
+<h3 id="_the_contents_of_an_enterprise_bean">1.5. The Contents of an Enterprise Bean</h3>
 <div class="paragraph">
 <p>To develop an enterprise bean, you must provide the following files.</p>
 </div>
@@ -1587,7 +1580,7 @@ in WAR Modules</a> for more information.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="naming-conventions-for-enterprise-beans"><a class="anchor" href="#naming-conventions-for-enterprise-beans"></a>Naming Conventions for Enterprise Beans</h3>
+<h3 id="_naming_conventions_for_enterprise_beans">1.6. Naming Conventions for Enterprise Beans</h3>
 <div class="paragraph">
 <p>Because enterprise beans are composed of multiple parts, it&#8217;s useful to
 follow a naming convention for your applications. <a href="#GIPLL">Table
@@ -1633,7 +1626,7 @@ follow a naming convention for your applications. <a href="#GIPLL">Table
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-lifecycles-of-enterprise-beans"><a class="anchor" href="#the-lifecycles-of-enterprise-beans"></a>The Lifecycles of Enterprise Beans</h3>
+<h3 id="_the_lifecycles_of_enterprise_beans">1.7. The Lifecycles of Enterprise Beans</h3>
 <div class="paragraph">
 <p>An enterprise bean goes through various stages during its lifetime, or
 lifecycle. Each type of enterprise bean (stateful session, stateless
@@ -1669,7 +1662,7 @@ first.</p>
 <p><a id="GIPLN"></a><a id="the-lifecycle-of-a-stateful-session-bean"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-lifecycle-of-a-stateful-session-bean"><a class="anchor" href="#the-lifecycle-of-a-stateful-session-bean"></a>The Lifecycle of a Stateful Session Bean</h4>
+<h4 id="_the_lifecycle_of_a_stateful_session_bean">1.7.1. The Lifecycle of a Stateful Session Bean</h4>
 <div class="paragraph">
 <p><a href="#GIPMI">Figure 35-2</a> illustrates the stages that a stateful session
 bean passes through during its lifetime. The client initiates the
@@ -1680,7 +1673,7 @@ its business methods invoked by the client.</p>
 </div>
 <div id="GIPMI" class="paragraph">
 <div class="title"><strong>Figure 35-2 Lifecycle of a Stateful Session Bean</strong></div>
-<p><span class="image"><img src="data:image/png;base64,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" alt="Diagram showing the lifecycle of a stateful session bean."></span></p>
+<p><span class="image"><img src="../images/jakartaeett_dt_021.png" alt="Diagram showing the lifecycle of a stateful session bean."></span></p>
 </div>
 <div class="paragraph">
 <p>While in the ready stage, the Enterprise Bean container may decide to deactivate, or
@@ -1710,7 +1703,7 @@ for more information.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-lifecycle-of-a-stateless-session-bean"><a class="anchor" href="#the-lifecycle-of-a-stateless-session-bean"></a>The Lifecycle of a Stateless Session Bean</h4>
+<h4 id="_the_lifecycle_of_a_stateless_session_bean">1.7.2. The Lifecycle of a Stateless Session Bean</h4>
 <div class="paragraph">
 <p>Because a stateless session bean is never passivated, its lifecycle has
 only two stages: nonexistent and ready for the invocation of business
@@ -1719,7 +1712,7 @@ session bean.</p>
 </div>
 <div id="GIPNI" class="paragraph">
 <div class="title"><strong>Figure 35-3 Lifecycle of a Stateless or Singleton Session Bean</strong></div>
-<p><span class="image"><img src="data:image/png;base64,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" alt="Diagram showing the lifecycle of a stateless or singleton session bean."></span></p>
+<p><span class="image"><img src="../images/jakartaeett_dt_022.png" alt="Diagram showing the lifecycle of a stateless or singleton session bean."></span></p>
 </div>
 <div class="paragraph">
 <p>The Enterprise Bean container typically creates and maintains a pool of stateless
@@ -1738,7 +1731,7 @@ for garbage collection.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-lifecycle-of-a-singleton-session-bean"><a class="anchor" href="#the-lifecycle-of-a-singleton-session-bean"></a>The Lifecycle of a Singleton Session Bean</h4>
+<h4 id="_the_lifecycle_of_a_singleton_session_bean">1.7.3. The Lifecycle of a Singleton Session Bean</h4>
 <div class="paragraph">
 <p>Like a stateless session bean, a singleton session bean is never
 passivated and has only two stages, nonexistent and ready for the
@@ -1762,14 +1755,14 @@ ready for garbage collection.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-lifecycle-of-a-message-driven-bean"><a class="anchor" href="#the-lifecycle-of-a-message-driven-bean"></a>The Lifecycle of a Message-Driven Bean</h4>
+<h4 id="_the_lifecycle_of_a_message_driven_bean">1.7.4. The Lifecycle of a Message-Driven Bean</h4>
 <div class="paragraph">
 <p><a href="#GIPLR">Figure 35-4</a> illustrates the stages in the lifecycle of a
 message-driven bean.</p>
 </div>
 <div id="GIPLR" class="paragraph">
 <div class="title"><strong>Figure 35-4 Lifecycle of a Message-Driven Bean</strong></div>
-<p><span class="image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV8AAACwCAMAAACfDp1QAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAwBQTFRF////AAAAucfVycnJbXmEqamp0dHR1tbWOTk5NTU1ZWxyTU1N2dnZCQkKSUlJW2NsvtTpdXV1XV1dKSkpPj4+fn5+BQUGjY2Nubm5JSUlqLfGwtbqwcHB/v7+8fb6lZWVtbW1eXl5hYWFRUVFrq6tQUFBkZGRuNDn9vb29Pn8vNLoVVVVxNjrFRUVGhoaxcXFgYGBERERYWFhoaGhzc3NytztsbGxts7m3un0utHobW1tnZ2d6PD34uz10uHwiYmJ3Ojz1uTxwNbq7u7umZmZDQ0NaWlp6+vrpb3TZWVlxdnsWVlZzt7ueoKJ/Pz82ubypbG9UVFRipOc6vH45u72+Pj4+vr66erqcXFx3+r00ODvpaWl8vLy1OLwhY2Uk5uk5OTkyNrsuMLK9PT0vr6+7vT5mKKr5+fn8PDwwszWiZejkqS15O724eHh3t7eLi4u2Oby7PL4MDAw4ODgxtzx5ubmzN7uICAgRUxS3NzcHh4eIiIiVFtjLCwsHBwcx9LcMzMz5O32wNXq2OXyeYeTxNPiu7u70Nvlna28aHJ7tM7m2+z8zN3u2uTrAgICSlBW2eTw4/H9t8/nVVpeo665UFZaOT5BAQEBw9frsszlQ0dKLjI1zNnl4ejvNTk9rb/R4u/5JyouDAwN5+/3Ghwd2+fztM3m4OnxGRsc2un2HSAjEBEUtcvhnKm1vdLlmaayIiQmy93tv9bsr7rFHB4gREpOr7a70+j7KSsuwdXnztzpCwsLu8/kBwgJn6at3ufvz9/vMjU2dHl9AQECExMTW1xdAwMD+Pv85Oz1BwcH9///ISIjs83l2Of1PkJGzeDyDg8PNTc6tMzh0uT26PP86PX/AQICFRcZBAQEAAABXmFlYGRnFxcYwtnvKi0wlqi5Y2ZqZWlt2ubwvs7eHBwe6O7z0Ob6Ki0vIyMj0eP1JCcpOzs7xtjoS0tLyNbkQ0NDtLq9j5OYvcbP1uXzc3d8U1VX7ff/xNfrz9bc7Pr/gIaMf4iP5Ozz2ebx2uHnzt7s/pKO5gAAHLNJREFUeNrsnQt8W+V9958nBx1JSBbRzZJAB93FSRRJ1gUTpBAHjiPVmKhxgi7BalBjDTtpJRWZTLWNjCitgHV1W2hqCmuhbkMLbQesJRvz3NI1zmZ6s9+XsTj1tnZ07+vZ87Lu1q4d3c45kmXZlmRJjh2cnN/nA7Gtc2Sdr//n9/yf/3M5ADBixIgRoytQPUizXq92YgyJjRCm7ERi3d0xpd7JwLj08qmaI8HuIKletZzBccnxGrMk2q7mtDPs7ZX3MkAusaKsuNfrRcdtcr+X4KtzP/TbIYRj9uAa5/o7HBVf1+vw3BddGWTZCywNcLQHSp2icYHosNB3xeD1i5REEFdDOJD1EUREGad/igsSEad7lotXPjnMqcyX7fYtelBs2QutEh/KKtmcypuBVodv9RYtGl38EuexvV4iyG7ZH8XChNeJ5n6q05D/725QA5YFevyYa1IC7TjwTkGbFbDNApiIAZYZJiwscDIDzSiw9hsgNwJiczARRkf4IG5WUvHLi/MUCejx+TMIxk7D/gjAWiahdBxCrUHkA8KhBjcIc7kpqFmMWI22Aw5T34XtjXDcD1wLKdgOpGIc0zeGtwxg6/lBIRvL8eUTXiIMmieiIEwQaDHfsEKFWzRyMQuYGo3qFCtgMESl4lg3DEXneWrxOF8Is/j8glKYCPKhJpppVyc81nmTWhwF0YEI+QbNHLXEzHJP8vEBfjA5bhVxcCTlcMwYO8QBlgHLplhNFsI7l1LLJhbjW2oKznO6yC9kieaoTQukow7WqNuxvwe4BFsnrDEjhOcTsmCebw/Jd6wEX67AkQCgiRPkzQPQwtWK46BL0NxtiQA0YZ+LACIhj6S7QY/Eyp8NAiVHlCRDWNXXLogLOnw5vskQIGbZ+EBcKQmDk2lVux3D3EqeAevU8Tku4MtoEIsMxGzxRb4doKXDT36ByK3NM+NA2B7APPa+lJZtNmLAy3/X5+gnm1uEAo7iHNmANdgjJElnUfwGrexivhmJkDwMctWmFgD4ihD1DVQv8j1J+q88Qv8MofnOdyS91NlOTiiBYDm+CSUI0nyt9IGeDIrR/ot18tT95C+TdagtfSC+mq8zBQehneIL2kRAZnJZSHuIeSQSiSE5LxGEVOrIuw1txOHiJnjaVoQAepKuiLon8USW9N8wpp/IYj1Er5wo4nuysUU6x2Y7Wvp4BoC5BK3mZjYiQyM0Xw8ZzCTfXoua7dTG2QW+/FBXjwEausEKvtGknI00dUpCANM2dxTH70xJvkLSDlzti3wR8bDIX3QpBNKqXUhOuRzvFsgRN6+fJ3PmP6Of06jNuZl/XIqSARxg2dg44UXyaVQufxiYB8RIqzzZHib9tzkhxxN2tMVspeNX4dC1s6UwGha70CYzm45frkzsiSYFZKMEhWAF3764Qsp2nfVaB1iqEZad6+ss+K+Z4hsMa4jlfA1y6dBi/GKAC9Ulkh+nbEEsuvyMUamBY+QX94g1XYtfIwYW1cLRQjvDK/JfzDgETWGfaTQJhRiQK+CEBsTEYYCmAz1pmEmqQXMKjjUBlEzllBycZYMLpEUgqZzNkPmDRAnwKRQfYGOOGTiqAgFhI9QAdFi6lD/M9gEi5eWf683nv1oX5d18xTBvAfo1ZC7cpsGANlOudeM3cQ2yy4g4IjNwOony/bdWXicSJLsY3m5ExS59DC5oqaXxjAhWZrAxC7LmaYYKfcdA34y0QstGdHIuE2Isy+OqiMod5FaDlCVXKtVubbkr9LVpa/idxLw5vuLvo7OsefWoqkL6hZqn1kjOCBWXl93s5AJrmRKtHTiA7xKIRCJP5xbvNSEibutmEsa0FmEYXE0KCy1abNNiN6HygatNhDHRshmEsc4Z4dU5HEEIxawNv3KEa++5aiuu4Q7Dxg7EYB4xH1zNYk+5NjCE5WLHVT9S6RBv1FAX5uLUnmlj3kjkyko1IpyNCWEk7a6drtLRrIyqWcgVFfZuMXLpg1fGZdd8Um9rtptUMJbV41cSYLbiUnc3MDuv9neMstjBIFWACAZR9WJ9jarvTLQtswxfk4Nsm00NcEBV8n2cdv/q93atGsQMJyL68XgCXXVsU9tSuu6d6QEu6F0vDp79kgKOc2W1n4QLnV5vRNUIdc5wt7WoPom2jC4bvewSyAAhnpHpxyfVpd5IqVg93NycXFX7iAxGmgXqgRJ8F5buHlzrj9vW3xXDZFPxS4c3mlDX8RFU2WCwS31OI88kA0RcnosZur7exZVhXLhfi/mazkMJqoLQ7h5FqfRvriuchv0oQGd0MBkDhARyw3EIPZ4khxcXqAEusQKjDYY8ENJVcXYKcoPA2w7PeXxemm8mOQu1wO+agB1h4JOOQBcwLmBymP+Lei0sHqTjN66DDVLMO2AwQxkQpnHAauyq4fLUiUuWCmdnY3WchZucBBERpsJAb2Pj3Qi/wBdTmw2mKUQ2o+6ZVKE8HT8jiM8L8tc/b2ILxSd7h4VRzkK4LRHlLfhcZoINDc44+Vcm0s74oEqfampLnaSNUGhNtHeZuFbHWDyc42tpVjV45QqWdVAImgdY7kk5T6RNtS5WnEbD6DnKhjCxCZFBvG8mEZWe8ysbwqCNF6jl+mKz2UsUvZm65t7gC3yCIBAH6NIORsKF8c0OarCs3WFBASbktEIP2uuMCxy+dN562ak+QHCisf5ugCgQ+6AjSgazAkcVXkBQfBNCF9kSdMrtXIJ2CS9gqyLZLN/YkOerEAIg8ejliFrR0T0fwoAK4e2HTdgS30gDNcSEsRBUS/Id02NoI+63tLDNqtps49IAxoyc+oo5+fFjf1A4IQRL48ek/yLdIGbrI+9Qs1w6Ac8imM6BcQzUq91G10CEGnyj+abCYS6EOl8xXy7PkF3yX1aG6qyHTXAiBXvDBf9V8VhJaIF2aoCTlAxCHr6SL2BNwn6SbyMBUPK/JpPLUmuOQ+gc6+drnKqzVpbnqx+0OVaNz4OImYrfTNQY7uNxnTw3kJ7lU8Gt0yqW4jdtdGN+2aSVX8Q3aW8fJz9UZ1uG5svtAYhRJw4CQtGX4ztLunpGZeKEgYznTDcBoIlKXMZzrSv5dvVrQWx/ga9SPGyv+UJ9U8Z1dwe59ZYi8YySIIKycy7CHw4TJxfnR+X4hiW0/4bNWpR3sZs3Bbrm+ltZphEEz/lvnOKbCQ1q2J0phD8Ypvj6SJsVQpQ/6HCcVWnmqDYKHRTKFSFTioWOQy07lfdf2UCYlVG3THRg+jm1rEHO43WZUjiiCizjq7AjomGWdSLHF0vCOvq9AZ1yfXiVFwP1nopL9L1ha0rHViqdXQRfn/s7+TtyA8BhOn/AZENwPgI6oYrOf5NsDATp/MGZ6AIINyabhA0a0D0iajOQN28kCSUKBEjHoAuLT5io/EE1CU14Fw+eFeosjnkq/704axlzY90ZqOuA3cB1bqgJyDwY3ybj0JN3vDNh3Ez7g/osFCYVajMBuifJe0HLracL5OOuC3B0oP4sz6cdj+LN9NyPBBpsRi93pyvqqpB++fnm+pLi+EC0/o/Um1pPEo3Pa+Vk540ano/I9Ze9U6vqrvCi08zx19n1Ssbq/USxxPrcxWkI6ZFI0Buxut3gipUyUSdgrH29VNgintbtcKi0rVdyRdjdXl93Wxta/+9GtfZ2od4PrmiFtPWcpc4EAKOqsrRMHT4aSXoZclWqLxGp2XwX9Ay3qqVfqNWCVSKGWg0S1TgFLJLyM9BqkD9Vm0PwsgyzmpTl1XJ0J+MOtYqnrv7Yk8kgA6xGBRPVH6uRMRsK1CyZpupu7TxDq44mLnmyyiPHWQytOsQarzJ8BQyrupSuboaTCGFQbWAA85nw3dAAZtx3QwP4pJjhVLc43WseIu1kMNUt1drTIBM4g6lu4Wt24lgehtI65Fmr8eKxGUjrEHuNwliQwzBaddMjLVqBRCKZ92jUa65OE1du4WQqhucyRbRcboglp2e0ouoWwaCo8limqvKchkQ3g7RI1vlVuz9YXYOyCoWckxXr7EEuw7QIJae9VKkgYOyvUL/lViqduxl7WLJd00K5QkygSRytyyB4EYZrThiScVcYZIhNldlVBquYQSQZsIthKKk8oTbgMmFlGZYLbnkbAzaPd+21RCxxicm7BABtToeEqT2sGy8A6vRqwN2KcZcJehj7rYx3oaqpjc0lJqa6z0MIWxj7rSREUOXkJWGJnXJ4Q7DcSpk+E8OW8tB0tdNNMcHqSZDdZgjLHK7XMnBJuTqrnv1BJFcvbW09V26EQmpl4FJJVPVTGzFVCYcQLKz8yc07aT17086d20vrI8t1xx133FCkpypq+5EtxTdTOnt9Z/vO5XRoEDe8588KKArX+/Vf0v/+cm/+VNl7nnjiiZtuuvXW/DuQp5EH79p15513vv/977/55ptf+f277nr99dfvuWfv3ve973233377I4986J3Tp0/v27d795EjR24j9fDDd9/9pS/t2XP48OH777//d0jdSGrHjTt2/MXDn9pKePWukrmD/gM33UrR+cgNT5FcSCivkETuIXGQLN45vW83ReFhisBh6uqpS9+x46n8udoN40v9li3G11W6cWOV5Xs7zXc3xfeDd+f55gCv4ntr9XwfqY7vlotfVOSvlu9dpfkevn/x5l3ie0sdfN9bku+eAt9CAP/lVuJr1GNr8t1FYqGYvE7xyPEtGMSepQC+8ZebwJcEfNtW4isos1kbxffWMnw/dHqZARcArxW/u0rw3VuC7xGa7wcXDeL+ZQZx45biGyyXnBXxfYrme/MS30feu8h3MYBz118DXxrwEt/bl/juXsV3ZQBvJb7ypsAafO+4YYnvcgOmAzjnwDkAq/j+H2ozga9d+zer+NIBvHcb/NGn9/7btuFvvkDxfWf38WeO37b7yKPX0nsQvPydPSTfw5+XvgjoAP6HX3Rgl5evapgejemANVSt3OX6bqwPPJHj+8ChkWkIx0597HeL+VIB/Ob5+/674BCUVvN967q/+7trRj75wB1l+I4cfeH2bfC+j1MJ2nuPHIPf/vTu2x59cuTeo0eP3vefdPz+5ZmmN6i3v/ET42KQa0aPXDa+JhyAeKIWvm3lZi+RfHMN3AMf/d6Jxw4emD7wTysMYveb53/9FSqFKJjkDSv5fh1e80fbb73mrYM7Pzx9/roH7vzDVxvOP/mPr/10bPpvn91L8f3q2X/+Icn3hYMW+PSfHodw5thzJN8vv0HeGnuO97/8xr9OXjB+/42jDfDiQ53TkEMD3ky+aD+c0YMuTlIBhaATUhvBsBpJvkoFVBAAVcAOHDiTsLEVxHRwTIoB4diwaLgH6FMw4a+WL3z2gTv/eOTUa9s+PPziS3uPfeGthmvft+/YHPwwPGp7+jtv/nT0K7RLHj5cmu/293zv8ete/MCJrz7+1IMvHiX/eWn6vsde/fnHKb6/eflHnyb5fqz/kwf/9um/+jb8zZv7aL6UAX/lFxNHLwwe/2n6VxNN/zIvOWx4+fAO2oU3jy87ZXd6znqJdH+zcYzoTIxoATBkGgm22IMsCJwZkbJfS4g9bNl++VSHUwbxZrMKXYB+pUKISOhnj5RLH3J8b83zvfOVD7x19B+/8MxnTpn/54s/Onho+BvPzZz6l1Pw14+PfOLNsz/7bzqR2lOa787tXx++bvKaB/7wZ3/92ujRH7/2uPne6ce/8fZLdPyeuA8eOj58731jxz90ouGhf50m/eHIoxco+z1/6o1ffXbY8ud7LqR/BZ884zz2ecofNpmvg0OAwJTQ2d8CImavw26Y97P7hakeB2kUfIWKa9DLI7G5i6xuazfLiWqhXygKALQxIGzzAactvGb85viOUte7/+23zz/2+tvnrv/NwW8ceuvAZ+DxI8fO/frY8LcPDp+hTJhCvIwvBTgfv/DxoY/euf3xsdemp6n27sdPjsHRE//39Xu2Td/7p5/82jeHDj1+9q9eIM33OOm/+448+uQo6b+/OP7ml87AqR2/vTC3Qzoy/TXZ4QLf3ZvFF3NLSEatPHWKDWIkX5PM1tPJdVt6HHQLHGb3Q+gCiBjCNqCmdj8L5Pj6hLnX1+JLG8QDHx2m/BeeOEpxHrrmwBj8FjxwCD6679ONB2777viFL3+HSqUoxCX57rz1p43Xj9Dxux1ec/CxEw8+e+2PX3p18uN33bMN3vvC2y/OjRTHL8X355T/3nb3J/4d/vzY5y+kjh/Ycew/vnzsJ2Jw/+byLcTvYI7vAl/Cs2gRc0+rLooiUnsWBDXQYfSHZcOdaS2I7PdrTX7QNxpwmZQo4sHX4PtEni/pD7v+eOS6b5w/dPD6B7dN/OyV58YOHD/3mU89dO7A7l+f3f/vXyGTVRpxEd+cQXw9nz9sf5D239d+9MxLJ16eun76wGOvfivH94d33Qsnaf/9/0//17HhQ4X4PXrv7jOjPxN89/M/UZw55z72k+//9sLgb3fQeeC+TfffmRxfHdZMRmXQRlgVMlSUmE2r+LJJtYSHGG2spB0RQX3nrJHyX5bC7eywrMH3Ftogdub5jl734y+/evC6hrdHH3zp1PSf/3Dq6TOn4IHTD00MP3Rbrj/78MOr+cLh702T+e/2P6Pzh13PfnZ66Avbdh1oHP7iwb2/e8+24ev/be8/X2j45g8/81X49B8ceegZ27HnFvPf73/7q0+/cWbkk7/4/g7pKEwee+MM5OYy4X2bnj+I2SCs8DpEIG7R+fH+IJCZoU0f9DTCs24sMg8nZFj0LBQm+n3ZszANcdA0Cc3qSuWHJb5/c2ia5Pv/vvXFt5/9E3j2xOuHGuCpZ6b/4O2p6c/C+/7+ue+++ve5ggGpVXzpCiWVRH+EqhmXqUCsLkEs9pHznbi7c2WIw/k0ezP51pwizzej9v6inIHV6ivPlzaInfkuXFEfLtfJIHHse/Tg0H2njyziKM23dIXnleIe8iLfohplnu/DOWffU0T43cyXEE3AWXlRyMZdZesPz9+SzyCWajx0kacI8O5DQ6c+lY83UncU+P7eLaUr7IUe3OoSD11jXx3AKwEfPvxu5rtaBrwS38UaZSGA6SpwAXBh0CGHpATfZRWep/J8yxtE4f3yfJcA04RpxPef3kp8NepyfH/weyUCOOcQBcC0ZZJEcoiX+D6/wiBoA15RAl5pEEsBXOQQKwGT2lp85U2+cnyLAviOVQ6xtzBuRhGmoOzbV57vmgZRKoALgD+4jPDhdx7ZUsPHeBm+n/sB3cItBnDBIYojmGLyoXdyiE+fLuJb2YAXDaJ0AJcGTBOma0lbi6+x9COAKL4lAng54DxhCjEJ+b1LfD/3gx88/zwZxFQY06DpWM6lazsL4/65Ef/Fkf5du2j8d+YsJKebF/UKqd/P6a6nbt9KfP2lH+ZN8v0cSfj5W3J3+k0FOHkwdyzDktMiX9mFazdQ1x3YWpv5GEs+PFBfO6Of3LjiPeKAERnAknXu+d2DlukDupjVLZSypvXtrWeVlnmBY2ZWv9E5cNO6Hi9adgURHOIxcOlOXJXP2Sy5cTXmKbOsC4HwfCsDlypLJKqYAqzUpFwlXyi3CoAFIWQcIgc4XRkwrm83D0PYVzr6y9kONHMg4xD5CK74sGMiNEYGY+nnRFpd5Zq3ZGcT4YgwcGktdFRs5FrPlgtfbbktNppAUMdwXepRpMsvkI0JPO6hMou8Ky3wZjbfKVKw3AJvwiXWg/BAabwVt+BxqRmsRerrMKx+kCnqGqQjt8z65E5pBeNGmAXIy3VSOMAzLm1JhGc1mY7miqlFW8XdJZkVnKu9VtY+wJG0S9suGpIcoXqtxLgyQZecAVraKqJVPSMbk7sqvo54mJ2r1yXTGpvPMhnEuoSn1jiA2QJiXVpzA0o2s8HceiRecw92EbPIu35Z135uiJzZ4LN+tVeRfjFb+NWtbkkVB7W6GFB1ylPV1uopJoDrDN9UVYepmACuS5irytE1JoDrC99qn/DE7BG+YclDThLmCS61C5FUfahVwuCqWfM17FzvcTNltBrlrsVUmceb1qpgMlLL4cwDOGsUj1XbHc88QLY2d6j1oWOxFPN49A1zB0pqZqZU9ZKoaz/HI2O4VakmTR0nYekoQ64qRefrymZ7U8yCjGoUT/XWd6IyE2DoramAru71MCoT041bUzpj3adiQiHDby1E69lUHTMxgCtLuL5bHGtn1sRtIF4KcDNDcePwkjIxEVxOmkvR/mMmDUNy4/AygDcYLwk4tOBjcK6EwpFess4BJuPGGKLLiwc62aXse2VTCNOVKxKSusTjD31iN0O1IBn3kpe+MBGvhwFLK8xxbcTNzEoxi4uoQNMn9BvzznGDiAnhMM+wYWVxrHWj/nRbRvoEayMb+l4Rh30V02VzXBudqCIZe/hqtYaO5CZMfMRYYiFxFdLtCU2xNqcPgGktwqutoesRils3r4eFtXJF/KuILr8jw9rc/iuWXZhjXR1VnwBLLMhehupATCMer3Vo2m+nnjWQLN77AzcNQ9jQtsLS2eNrzpDFOXxlR5yzujCial+aV0CkgkBYyxOeVsJtHhdrLldxC4uOJ8bVtUySwAWJCCo3KIouODw/H3G29huW83SuvcgmqOArJer06iZdZeha+oO24BGzps7oC6hF/e3Ry1rYwpTSzJRUWe10bFxH1eojjQ5tSqLycaAtS/bmqYluvQ1K4JgZCuGgRwcTRARCkTBtuOhtbTyvxdgNKOi1UBWruAImI4AQDQ21+cM03/m0GDZhPuEY5BFkyzsJ20CnAbPC/KgWoXCT9wf154wtwAkNFhbPW6AWaBVdQN2Yu2dQQ6khRr9SOsWVKt8NVcOII8TlemROf5V8/SaF0g7H3R2SrFbB9tF8iX5W2KLVz8qBZy5quhjQ2IJxKEEd/TJ3PxpWyIGVmq0Vn/MgXF7YnlZ27mfjOb4zrNaRCDLrQBQeoEw5HDb9eIdMsTjpI27z8idaqK+4AkQFw5H+uaz2PI7sJ4BQh5MfSKWAuhUfnEBkHi435Hg3VWQxpSrETUp4WqnMGi0tJXnH4x2U/84gGI8LvP195PcOjObbkzYZ5wEIGXD7jCOKYvxUV1+KAO0GDLQvhEW6eAePbE2V6W4QN8aUcr7KluebcAEgGG9WI+q0ICJow0Crtb0BFh5bTvIN2uJ02o6gMpLvfgfGbwhjqSb+YAvZHR0hP45Mmf+EVplUKJAkuSGVErw7FclGHRppaWnRnP8ibD/AeU0gQqEezvP1pnUu6nsugXMgNAT6aL5+LgsAq6KrdyqUoS45m6ZuaVwEG1Mwz5fyX4eOxYEzwyb1LN1wuiEsPMetwBeobdBC8h3tBuyGIDDyQoO4XzhJ/srGNm3uAzZpHNFsBGxl5fwX0Hx79+vZiEqZ84d4gzGUYbPdRrnKFzDasrGi+NVRniyJ5PmyW3ipCOhJonm+QuCTaO0ZArgvOrkhAJrUPLuqQbaSLz4nxbptBb5IGlIZCu4QQ+i6cvLMYr5EQoTKZtQ+On+wCEDE5laLXc02IZulUMbMRB+ZQrAtpP9aSd8YphdF8/td0XSb3cJC7VDTJ877r2o2KBc3y0YFWHZWrxrVj+vCdksXavQv45seR9qgA9mf4ws4MF8KRE37r5y1Jv6O3IQ2n0cKQFQMJ0IgsJj/+rTDUNSFySZhgxB4baYQh0yzjFT+QEJI5VJmtw3yunATtIV4ZreAyn95/f2NKuDlQIMJxkCoEWqAox3EzE26ZE8u/w300/6gNMMQN6VPnQReM8lXliyUqQj+VT62iEV4hlr3tcIQV4UaSSBu0TBzDgoBJjHXXu1wVJpVzrZkmI3IGDFaS/8rwADVE0lVCd6cWgAAAABJRU5ErkJggg==" alt="Diagram showing the lifecycle of a message-driven bean."></span></p>
+<p><span class="image"><img src="../images/jakartaeett_dt_023.png" alt="Diagram showing the lifecycle of a message-driven bean."></span></p>
 </div>
 <div class="paragraph">
 <p>The Enterprise Bean container usually creates a pool of message-driven bean
@@ -1801,7 +1794,7 @@ collection.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="further-information-about-enterprise-beans"><a class="anchor" href="#further-information-about-enterprise-beans"></a>Further Information about Enterprise Beans</h3>
+<h3 id="_further_information_about_enterprise_beans">1.8. Further Information about Enterprise Beans</h3>
 <div class="paragraph">
 <p>For more information on Jakarta Enterprise Beans technology, see the Jakarta Enterprise Beans 3.2 specification:</p>
 </div>
@@ -1813,7 +1806,7 @@ collection.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="getting-started-with-enterprise-beans"><a class="anchor" href="#getting-started-with-enterprise-beans"></a>Getting Started with Enterprise Beans</h2>
+<h2 id="_getting_started_with_enterprise_beans">2. Getting Started with Enterprise Beans</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GIJRE"></a><a id="getting-started-with-enterprise-beans"></a></p>
@@ -1830,7 +1823,7 @@ web client.</p>
 <p><a id="A1249349"></a><a id="starting-with-enterprise-beans"></a></p>
 </div>
 <div class="sect2">
-<h3 id="starting-with-enterprise-beans"><a class="anchor" href="#starting-with-enterprise-beans"></a>Starting With Enterprise Beans</h3>
+<h3 id="_starting_with_enterprise_beans">2.1. Starting With Enterprise Beans</h3>
 <div class="paragraph">
 <p>Here&#8217;s an overview of the steps you&#8217;ll follow:</p>
 </div>
@@ -1887,7 +1880,7 @@ Application</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="creating-the-enterprise-bean"><a class="anchor" href="#creating-the-enterprise-bean"></a>Creating the Enterprise Bean</h3>
+<h3 id="_creating_the_enterprise_bean">2.2. Creating the Enterprise Bean</h3>
 <div class="paragraph">
 <p>The enterprise bean in our example is a stateless session bean called
 <code>ConverterBean</code>. The source code for <code>ConverterBean</code> is in the
@@ -1910,7 +1903,7 @@ Application</a></p>
 <p><a id="GIPSX"></a><a id="coding-the-enterprise-bean-class"></a></p>
 </div>
 <div class="sect3">
-<h4 id="coding-the-enterprise-bean-class"><a class="anchor" href="#coding-the-enterprise-bean-class"></a>Coding the Enterprise Bean Class</h4>
+<h4 id="_coding_the_enterprise_bean_class">2.2.1. Coding the Enterprise Bean Class</h4>
 <div class="paragraph">
 <p>The enterprise bean class for this example is called <code>ConverterBean</code>.
 This class implements two business methods: <code>dollarToYen</code> and
@@ -1954,7 +1947,7 @@ stateless session bean.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="creating-the-converter-web-client"><a class="anchor" href="#creating-the-converter-web-client"></a>Creating the converter Web Client</h4>
+<h4 id="_creating_the_converter_web_client">2.2.2. Creating the converter Web Client</h4>
 <div class="paragraph">
 <p>The web client is contained in the following servlet class under the
 <code><em>tut-install</em>/examples/ejb/converter/src/main/java/</code> directory:</p>
@@ -2019,7 +2012,7 @@ try {
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-converter-example"><a class="anchor" href="#running-the-converter-example"></a>Running the converter Example</h4>
+<h4 id="_running_the_converter_example">2.2.3. Running the converter Example</h4>
 <div class="paragraph">
 <p>Now you are ready to compile the enterprise bean class
 (<code>ConverterBean.java</code>) and the servlet class (<code>ConverterServlet.java</code>)
@@ -2044,7 +2037,7 @@ example.</p>
 <p><a id="GIPUM"></a><a id="to-run-the-converter-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-converter-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-converter-example-using-netbeans-ide"></a>To Run the converter Example Using NetBeans IDE</h5>
+<h5 id="_to_run_the_converter_example_using_netbeans_ide">To Run the converter Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2095,7 +2088,7 @@ click Submit.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-converter-example-using-maven"><a class="anchor" href="#to-run-the-converter-example-using-maven"></a>To Run the converter Example Using Maven</h5>
+<h5 id="_to_run_the_converter_example_using_maven">To Run the converter Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2149,7 +2142,7 @@ click Submit.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="modifying-the-jakarta-ee-application"><a class="anchor" href="#modifying-the-jakarta-ee-application"></a>Modifying the Jakarta EE Application</h3>
+<h3 id="_modifying_the_jakarta_ee_application">2.3. Modifying the Jakarta EE Application</h3>
 <div class="paragraph">
 <p>GlassFish Server supports iterative development. Whenever you make a
 change to a Jakarta EE application, you must redeploy the application.</p>
@@ -2158,7 +2151,7 @@ change to a Jakarta EE application, you must redeploy the application.</p>
 <p><a id="GIPUK"></a><a id="to-modify-a-class-file"></a></p>
 </div>
 <div class="sect3">
-<h4 id="to-modify-a-class-file"><a class="anchor" href="#to-modify-a-class-file"></a>To Modify a Class File</h4>
+<h4 id="_to_modify_a_class_file">2.3.1. To Modify a Class File</h4>
 <div class="paragraph">
 <p>To modify a class file in an enterprise bean, you change the source
 code, recompile it, and redeploy the application. For example, to update
@@ -2216,7 +2209,7 @@ tut-install`/examples/ejb/converter/` directory.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="running-the-enterprise-bean-examples"><a class="anchor" href="#running-the-enterprise-bean-examples"></a>Running the Enterprise Bean Examples</h2>
+<h2 id="_running_the_enterprise_bean_examples">3. Running the Enterprise Bean Examples</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GIJRB"></a><a id="running-the-enterprise-bean-examples"></a></p>
@@ -2231,7 +2224,7 @@ components running in the same server.</p>
 <p><a id="A1250776"></a><a id="overview-of-the-ejb-examples"></a></p>
 </div>
 <div class="sect2">
-<h3 id="overview-of-the-jakarta-enterprise-beans-examples"><a class="anchor" href="#overview-of-the-jakarta-enterprise-beans-examples"></a>Overview of the Jakarta Enterprise Beans Examples</h3>
+<h3 id="_overview_of_the_jakarta_enterprise_beans_examples">3.1. Overview of the Jakarta Enterprise Beans Examples</h3>
 <div class="paragraph">
 <p>In <a href="#GIJRE">Chapter 36, "Getting Started with
 Enterprise Beans"</a>, you built a stateless session bean named
@@ -2261,7 +2254,7 @@ service</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-cart-example"><a class="anchor" href="#the-cart-example"></a>The cart Example</h3>
+<h3 id="_the_cart_example">3.2. The cart Example</h3>
 <div class="paragraph">
 <p>The <code>cart</code> example represents a shopping cart in an online bookstore and
 uses a stateful session bean to manage the operations of the shopping
@@ -2295,7 +2288,7 @@ section <a href="#BNBOJ">Helper Classes</a>.</p>
 <p><a id="BNBOE"></a><a id="the-business-interface"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-business-interface"><a class="anchor" href="#the-business-interface"></a>The Business Interface</h4>
+<h4 id="_the_business_interface">3.2.1. The Business Interface</h4>
 <div class="paragraph">
 <p>The <code>Cart</code> business interface is a plain Java interface that defines all
 the business methods implemented in the bean class. If the bean class
@@ -2351,7 +2344,7 @@ determining whether the bean class implements more than one interface:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="session-bean-class"><a class="anchor" href="#session-bean-class"></a>Session Bean Class</h4>
+<h4 id="_session_bean_class">3.2.2. Session Bean Class</h4>
 <div class="paragraph">
 <p>The session bean class for this example is called <code>CartBean</code>. Like any
 stateful session bean, the <code>CartBean</code> class must meet the following
@@ -2467,7 +2460,7 @@ practice to implement the bean&#8217;s business interface.</p>
 <p><a id="BNBOG"></a><a id="lifecycle-callback-methods"></a></p>
 </div>
 <div class="sect4">
-<h5 id="lifecycle-callback-methods"><a class="anchor" href="#lifecycle-callback-methods"></a>Lifecycle Callback Methods</h5>
+<h5 id="_lifecycle_callback_methods">Lifecycle Callback Methods</h5>
 <div class="paragraph">
 <p>A method in the bean class may be declared as a lifecycle callback
 method by annotating the method with the following annotations.</p>
@@ -2506,7 +2499,7 @@ environment and saves it to secondary storage.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="business-methods"><a class="anchor" href="#business-methods"></a>Business Methods</h5>
+<h5 id="_business_methods">Business Methods</h5>
 <div class="paragraph">
 <p>The primary purpose of a session bean is to run business tasks for the
 client. The client invokes business methods on the object reference it
@@ -2602,7 +2595,7 @@ of the business method.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-remove-method"><a class="anchor" href="#the-remove-method"></a>The @Remove Method</h4>
+<h4 id="_the_remove_method">3.2.3. The @Remove Method</h4>
 <div class="paragraph">
 <p>Business methods annotated with <code>javax.ejb.Remove</code> in the stateful
 session bean class can be invoked by enterprise bean clients to remove
@@ -2626,7 +2619,7 @@ the bean instance. The container will remove the enterprise bean after a
 </div>
 </div>
 <div class="sect3">
-<h4 id="helper-classes"><a class="anchor" href="#helper-classes"></a>Helper Classes</h4>
+<h4 id="_helper_classes">3.2.4. Helper Classes</h4>
 <div class="paragraph">
 <p>The <code>CartBean</code> session bean has two helper classes: <code>BookException</code> and
 <code>IdVerifier</code>. The <code>BookException</code> is thrown by the <code>removeBook</code> method,
@@ -2642,7 +2635,7 @@ a library JAR used by the application client and the EJB JAR.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-cart-example"><a class="anchor" href="#running-the-cart-example"></a>Running the cart Example</h4>
+<h4 id="_running_the_cart_example">3.2.5. Running the cart Example</h4>
 <div class="paragraph">
 <p>Now you are ready to compile the remote interface (<code>Cart.java</code>), the
 enterprise bean class (<code>CartBean.java</code>), the client class
@@ -2670,7 +2663,7 @@ run the <code>cart</code> application.</p>
 <p><a id="BNBOL"></a><a id="to-run-the-cart-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-cart-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-cart-example-using-netbeans-ide"></a>To Run the cart Example Using NetBeans IDE</h5>
+<h5 id="_to_run_the_cart_example_using_netbeans_ide">To Run the cart Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2728,7 +2721,7 @@ Caught a BookException: <span class="string"><span class="delimiter">&quot;</spa
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-cart-example-using-maven"><a class="anchor" href="#to-run-the-cart-example-using-maven"></a>To Run the cart Example Using Maven</h5>
+<h5 id="_to_run_the_cart_example_using_maven">To Run the cart Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2799,7 +2792,7 @@ Caught a BookException: <span class="string"><span class="delimiter">&quot;</spa
 </div>
 </div>
 <div class="sect2">
-<h3 id="a-singleton-session-bean-example-counter"><a class="anchor" href="#a-singleton-session-bean-example-counter"></a>A Singleton Session Bean Example: counter</h3>
+<h3 id="_a_singleton_session_bean_example_counter">3.3. A Singleton Session Bean Example: counter</h3>
 <div class="paragraph">
 <p>The <code>counter</code> example demonstrates how to create a singleton session
 bean.</p>
@@ -2824,7 +2817,7 @@ bean.</p>
 <p><a id="GIPVC"></a><a id="creating-a-singleton-session-bean"></a></p>
 </div>
 <div class="sect3">
-<h4 id="creating-a-singleton-session-bean"><a class="anchor" href="#creating-a-singleton-session-bean"></a>Creating a Singleton Session Bean</h4>
+<h4 id="_creating_a_singleton_session_bean">3.3.1. Creating a Singleton Session Bean</h4>
 <div class="paragraph">
 <p>The <code>javax.ejb.Singleton</code> annotation is used to specify that the
 enterprise bean implementation class is a singleton session bean:</p>
@@ -2839,7 +2832,7 @@ enterprise bean implementation class is a singleton session bean:</p>
 <p><a id="GIPPQ"></a><a id="initializing-singleton-session-beans"></a></p>
 </div>
 <div class="sect4">
-<h5 id="initializing-singleton-session-beans"><a class="anchor" href="#initializing-singleton-session-beans"></a>Initializing Singleton Session Beans</h5>
+<h5 id="_initializing_singleton_session_beans">Initializing Singleton Session Beans</h5>
 <div class="paragraph">
 <p>The Enterprise Bean container is responsible for determining when to initialize a
 singleton session bean instance unless the singleton session bean
@@ -2933,7 +2926,7 @@ following order: <code>SecondaryBean</code>, <code>PrimaryBean</code>, <code>Ter
 </div>
 </div>
 <div class="sect4">
-<h5 id="managing-concurrent-access-in-a-singleton-session-bean"><a class="anchor" href="#managing-concurrent-access-in-a-singleton-session-bean"></a>Managing Concurrent Access in a Singleton Session Bean</h5>
+<h5 id="_managing_concurrent_access_in_a_singleton_session_bean">Managing Concurrent Access in a Singleton Session Bean</h5>
 <div class="paragraph">
 <p>Singleton session beans are designed for concurrent access, situations
 in which many clients need to access a single instance of a session bean
@@ -3137,7 +3130,7 @@ specify bean-managed concurrency:</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="handling-errors-in-a-singleton-session-bean"><a class="anchor" href="#handling-errors-in-a-singleton-session-bean"></a>Handling Errors in a Singleton Session Bean</h5>
+<h5 id="_handling_errors_in_a_singleton_session_bean">Handling Errors in a Singleton Session Bean</h5>
 <div class="paragraph">
 <p>If a singleton session bean encounters an error when initialized by the
 Enterprise Bean container, that singleton instance will be destroyed.</p>
@@ -3154,7 +3147,7 @@ singleton instance is used throughout the application lifecycle.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-architecture-of-the-counter-example"><a class="anchor" href="#the-architecture-of-the-counter-example"></a>The Architecture of the counter Example</h4>
+<h4 id="_the_architecture_of_the_counter_example">3.3.2. The Architecture of the counter Example</h4>
 <div class="paragraph">
 <p>The <code>counter</code> example consists of a singleton session bean,
 <code>CounterBean</code>, and a JavaServer Faces Facelets web front end.</p>
@@ -3294,7 +3287,7 @@ managed bean. Here is the content of <code>index.xhtml</code>:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-counter-example"><a class="anchor" href="#running-the-counter-example"></a>Running the counter Example</h4>
+<h4 id="_running_the_counter_example">3.3.3. Running the counter Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>counter</code> example.</p>
@@ -3319,7 +3312,7 @@ run the <code>counter</code> example.</p>
 <p><a id="GIPXT"></a><a id="to-run-the-counter-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-counter-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-counter-example-using-netbeans-ide"></a>To Run the counter Example Using NetBeans IDE</h5>
+<h5 id="_to_run_the_counter_example_using_netbeans_ide">To Run the counter Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3362,7 +3355,7 @@ displays the number of hits.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-counter-example-using-maven"><a class="anchor" href="#to-run-the-counter-example-using-maven"></a>To Run the counter Example Using Maven</h5>
+<h5 id="_to_run_the_counter_example_using_maven">To Run the counter Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3409,7 +3402,7 @@ Server</a>).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="a-web-service-example-helloservice"><a class="anchor" href="#a-web-service-example-helloservice"></a>A Web Service Example: helloservice</h3>
+<h3 id="_a_web_service_example_helloservice">3.4. A Web Service Example: helloservice</h3>
 <div class="paragraph">
 <p>This example demonstrates a simple web service that generates a response
 based on information received from the client. <code>HelloServiceBean</code> is a
@@ -3437,7 +3430,7 @@ method matches the <code>sayHello</code> method invoked by the client described 
 <p><a id="BNBOS"></a><a id="the-web-service-endpoint-implementation-class"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-web-service-endpoint-implementation-class"><a class="anchor" href="#the-web-service-endpoint-implementation-class"></a>The Web Service Endpoint Implementation Class</h4>
+<h4 id="_the_web_service_endpoint_implementation_class">3.4.1. The Web Service Endpoint Implementation Class</h4>
 <div class="paragraph">
 <p><code>HelloServiceBean</code> is the endpoint implementation class, typically the
 primary programming artifact for enterprise bean web service endpoints.
@@ -3503,7 +3496,7 @@ is removed from operation.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="stateless-session-bean-implementation-class"><a class="anchor" href="#stateless-session-bean-implementation-class"></a>Stateless Session Bean Implementation Class</h4>
+<h4 id="_stateless_session_bean_implementation_class">3.4.2. Stateless Session Bean Implementation Class</h4>
 <div class="paragraph">
 <p>The <code>HelloServiceBean</code> class implements the <code>sayHello</code> method, which is
 annotated <code>@WebMethod</code>. The source code for the <code>HelloServiceBean</code> class
@@ -3536,7 +3529,7 @@ is as follows:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-helloservice-example"><a class="anchor" href="#running-the-helloservice-example"></a>Running the helloservice Example</h4>
+<h4 id="_running_the_helloservice_example">3.4.3. Running the helloservice Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, and deploy
 the <code>helloservice</code> example. You can then use the Administration Console
@@ -3564,7 +3557,7 @@ Using Maven</a></p>
 <p><a id="BNBOV"></a><a id="to-build-package-and-deploy-the-helloservice-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-helloservice-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-helloservice-example-using-netbeans-ide"></a>To Build, Package, and Deploy the helloservice Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_deploy_the_helloservice_example_using_netbeans_ide">To Build, Package, and Deploy the helloservice Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3605,7 +3598,7 @@ this EAR file to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-helloservice-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-helloservice-example-using-maven"></a>To Build, Package, and Deploy the helloservice Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_helloservice_example_using_maven">To Build, Package, and Deploy the helloservice Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -3646,7 +3639,7 @@ required for web service invocation, including the WSDL file.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-test-the-service-without-a-client"><a class="anchor" href="#to-test-the-service-without-a-client"></a>To Test the Service without a Client</h5>
+<h5 id="_to_test_the_service_without_a_client">To Test the Service without a Client</h5>
 <div class="paragraph">
 <p>The GlassFish Server Administration Console allows you to test the
 methods of a web service endpoint. To test the <code>sayHello</code> method of
@@ -3704,7 +3697,7 @@ see the response from the endpoint.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-the-timer-service"><a class="anchor" href="#using-the-timer-service"></a>Using the Timer Service</h3>
+<h3 id="_using_the_timer_service">3.5. Using the Timer Service</h3>
 <div class="paragraph">
 <p>Applications that model business work flows often rely on timed
 notifications. The timer service of the enterprise bean container
@@ -3727,7 +3720,7 @@ contains a method annotated with the <code>javax.ejb.Schedule</code> or
 <p><a id="GIQLK"></a><a id="creating-calendar-based-timer-expressions"></a></p>
 </div>
 <div class="sect3">
-<h4 id="creating-calendar-based-timer-expressions"><a class="anchor" href="#creating-calendar-based-timer-expressions"></a>Creating Calendar-Based Timer Expressions</h4>
+<h4 id="_creating_calendar_based_timer_expressions">3.5.1. Creating Calendar-Based Timer Expressions</h4>
 <div class="paragraph">
 <p>Timers can be set according to a calendar-based schedule, expressed
 using a syntax similar to the UNIX <code>cron</code> utility. Both programmatic and
@@ -3838,7 +3831,7 @@ of the month). For example: <code>dayOfMonth="–3"</code>.</p>
 <p><a id="GIQMX"></a><a id="specifying-multiple-values-in-calendar-expressions"></a></p>
 </div>
 <div class="sect4">
-<h5 id="specifying-multiple-values-in-calendar-expressions"><a class="anchor" href="#specifying-multiple-values-in-calendar-expressions"></a>Specifying Multiple Values in Calendar Expressions</h5>
+<h5 id="_specifying_multiple_values_in_calendar_expressions">Specifying Multiple Values in Calendar Expressions</h5>
 <div class="paragraph">
 <p>You can specify multiple values in calendar expressions, as described in
 the following sections.</p>
@@ -3985,7 +3978,7 @@ equivalent to setting <code>x</code> to <code>0</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="programmatic-timers"><a class="anchor" href="#programmatic-timers"></a>Programmatic Timers</h4>
+<h4 id="_programmatic_timers">3.5.2. Programmatic Timers</h4>
 <div class="paragraph">
 <p>When a programmatic timer expires (goes off), the container calls the
 method annotated <code>@Timeout</code> in the bean&#8217;s implementation class. The
@@ -3996,7 +3989,7 @@ event.</p>
 <p><a id="BNBOZ"></a><a id="the-timeout-method"></a></p>
 </div>
 <div class="sect4">
-<h5 id="the-timeout-method"><a class="anchor" href="#the-timeout-method"></a>The @Timeout Method</h5>
+<h5 id="_the_timeout_method">The @Timeout Method</h5>
 <div class="paragraph">
 <p>Methods annotated <code>@Timeout</code> in the enterprise bean class must return
 <code>void</code> and optionally take a <code>javax.ejb.Timer</code> object as the only
@@ -4015,7 +4008,7 @@ parameter. They may not throw application exceptions:</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="creating-programmatic-timers"><a class="anchor" href="#creating-programmatic-timers"></a>Creating Programmatic Timers</h5>
+<h5 id="_creating_programmatic_timers">Creating Programmatic Timers</h5>
 <div class="paragraph">
 <p>To create a timer, the bean invokes one of the <code>create</code> methods of the
 <code>TimerService</code> interface. These methods allow single-action, interval,
@@ -4117,7 +4110,7 @@ hours, days, or longer durations.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="automatic-timers"><a class="anchor" href="#automatic-timers"></a>Automatic Timers</h4>
+<h4 id="_automatic_timers">3.5.3. Automatic Timers</h4>
 <div class="paragraph">
 <p>Automatic timers are created by the Enterprise Bean container when an enterprise
 bean that contains methods annotated with the <code>@Schedule</code> or
@@ -4192,7 +4185,7 @@ sets a timer to expire every Friday at 11:00 p.m.:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="canceling-and-saving-timers"><a class="anchor" href="#canceling-and-saving-timers"></a>Canceling and Saving Timers</h4>
+<h4 id="_canceling_and_saving_timers">3.5.4. Canceling and Saving Timers</h4>
 <div class="paragraph">
 <p>Timers can be cancelled by the following events.</p>
 </div>
@@ -4228,7 +4221,7 @@ restriction.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="getting-timer-information"><a class="anchor" href="#getting-timer-information"></a>Getting Timer Information</h4>
+<h4 id="_getting_timer_information">3.5.5. Getting Timer Information</h4>
 <div class="paragraph">
 <p>In addition to defining the <code>cancel</code> and <code>getHandle</code> methods, the
 <code>Timer</code> interface defines methods for obtaining information about
@@ -4257,7 +4250,7 @@ collection of <code>Timer</code> objects.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="transactions-and-timers"><a class="anchor" href="#transactions-and-timers"></a>Transactions and Timers</h4>
+<h4 id="_transactions_and_timers">3.5.6. Transactions and Timers</h4>
 <div class="paragraph">
 <p>An enterprise bean usually creates a timer within a transaction. If this
 transaction is rolled back, the timer creation also is rolled back.
@@ -4278,7 +4271,7 @@ method at least one more time.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-timersession-example"><a class="anchor" href="#the-timersession-example"></a>The timersession Example</h4>
+<h4 id="_the_timersession_example">3.5.7. The timersession Example</h4>
 <div class="paragraph">
 <p>The source code for this example is in the
 <code><em>tut-install</em>/examples/ejb/timersession/src/main/java/</code> directory.</p>
@@ -4445,7 +4438,7 @@ to virtual machine constraints.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-timersession-example"><a class="anchor" href="#running-the-timersession-example"></a>Running the timersession Example</h4>
+<h4 id="_running_the_timersession_example">3.5.8. Running the timersession Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>timersession</code> example.</p>
@@ -4471,7 +4464,7 @@ Using Maven</a></p>
 <p><a id="GIQNI"></a><a id="to-run-the-timersession-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-timersession-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-timersession-example-using-netbeans-ide"></a>To Run the timersession Example Using NetBeans IDE</h5>
+<h5 id="_to_run_the_timersession_example_using_netbeans_ide">To Run the timersession Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4512,7 +4505,7 @@ client.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-timersession-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-timersession-example-using-maven"></a>To Build, Package, and Deploy the timersession Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_timersession_example_using_maven">To Build, Package, and Deploy the timersession Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4548,7 +4541,7 @@ deploys this WAR file to your GlassFish Server instance.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-web-client"><a class="anchor" href="#to-run-the-web-client"></a>To Run the Web Client</h5>
+<h5 id="_to_run_the_web_client">To Run the Web Client</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4582,7 +4575,7 @@ timeouts.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="handling-exceptions"><a class="anchor" href="#handling-exceptions"></a>Handling Exceptions</h3>
+<h3 id="_handling_exceptions">3.6. Handling Exceptions</h3>
 <div class="paragraph">
 <p>The exceptions thrown by enterprise beans fall into two categories:
 system and application.</p>
@@ -4618,7 +4611,7 @@ transaction.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="using-the-embedded-enterprise-bean-container"><a class="anchor" href="#using-the-embedded-enterprise-bean-container"></a>Using the Embedded Enterprise Bean Container</h2>
+<h2 id="_using_the_embedded_enterprise_bean_container">4. Using the Embedded Enterprise Bean Container</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GKCQZ"></a><a id="using-the-embedded-enterprise-bean-container"></a></p>
@@ -4632,7 +4625,7 @@ environment, outside of a Jakarta EE server.</p>
 <p><a id="GKFAE"></a><a id="overview-of-the-embedded-enterprise-bean-container"></a></p>
 </div>
 <div class="sect2">
-<h3 id="overview-of-the-embedded-enterprise-bean-container"><a class="anchor" href="#overview-of-the-embedded-enterprise-bean-container"></a>Overview of the Embedded Enterprise Bean Container</h3>
+<h3 id="_overview_of_the_embedded_enterprise_bean_container">4.1. Overview of the Embedded Enterprise Bean Container</h3>
 <div class="paragraph">
 <p>The embedded enterprise bean container is used to access enterprise bean
 components from client code executed in a Java SE environment. The
@@ -4653,7 +4646,7 @@ reused in both standalone and networked applications.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="developing-embeddable-enterprise-bean-applications"><a class="anchor" href="#developing-embeddable-enterprise-bean-applications"></a>Developing Embeddable Enterprise Bean Applications</h3>
+<h3 id="_developing_embeddable_enterprise_bean_applications">4.2. Developing Embeddable Enterprise Bean Applications</h3>
 <div class="paragraph">
 <p>All embeddable enterprise bean containers support the features listed in
 <a href="#GKCQC">Table 38-1</a>.</p>
@@ -4712,7 +4705,7 @@ service endpoints, or remote business interfaces.</p>
 <p><a id="GKCQI"></a><a id="running-embedded-applications"></a></p>
 </div>
 <div class="sect3">
-<h4 id="running-embedded-applications"><a class="anchor" href="#running-embedded-applications"></a>Running Embedded Applications</h4>
+<h4 id="_running_embedded_applications">4.2.1. Running Embedded Applications</h4>
 <div class="paragraph">
 <p>The embedded container, the enterprise bean components, and the client
 all are executed in the same virtual machine using the same classpath.
@@ -4742,7 +4735,7 @@ embedded container is <code>glassfish-embedded-all.jar</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="creating-the-enterprise-bean-container"><a class="anchor" href="#creating-the-enterprise-bean-container"></a>Creating the Enterprise Bean Container</h4>
+<h4 id="_creating_the_enterprise_bean_container">4.2.2. Creating the Enterprise Bean Container</h4>
 <div class="paragraph">
 <p>The <code>javax.ejb.embedded.EJBContainer</code> abstract class represents an
 instance of the enterprise bean container and includes factory methods
@@ -4789,7 +4782,7 @@ EJBContainer ec = EJBContainer.createEJBContainer(props);</code></pre>
 <p><a id="GKCRP"></a><a id="explicitly-specifying-enterprise-bean-modules-to-be-initialized"></a></p>
 </div>
 <div class="sect4">
-<h5 id="explicitly-specifying-enterprise-bean-modules-to-be-initialized"><a class="anchor" href="#explicitly-specifying-enterprise-bean-modules-to-be-initialized"></a>Explicitly Specifying Enterprise Bean Modules to Be Initialized</h5>
+<h5 id="_explicitly_specifying_enterprise_bean_modules_to_be_initialized">Explicitly Specifying Enterprise Bean Modules to Be Initialized</h5>
 <div class="paragraph">
 <p>Developers can specify exactly which enterprise bean modules the
 embedded container will initialize. To explicitly specify the enterprise
@@ -4835,7 +4828,7 @@ EJBContainer ec = EJBContainer.createEJBContainer(props);</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="looking-up-session-bean-references"><a class="anchor" href="#looking-up-session-bean-references"></a>Looking Up Session Bean References</h4>
+<h4 id="_looking_up_session_bean_references">4.2.3. Looking Up Session Bean References</h4>
 <div class="paragraph">
 <p>To look up session bean references in an application using the embedded
 container:</p>
@@ -4875,7 +4868,7 @@ bean with a no-interface view, use the following code:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="shutting-down-the-enterprise-bean-container"><a class="anchor" href="#shutting-down-the-enterprise-bean-container"></a>Shutting Down the Enterprise Bean Container</h4>
+<h4 id="_shutting_down_the_enterprise_bean_container">4.2.4. Shutting Down the Enterprise Bean Container</h4>
 <div class="paragraph">
 <p>To shut down the embedded container:</p>
 </div>
@@ -4907,7 +4900,7 @@ application.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-standalone-example-application"><a class="anchor" href="#the-standalone-example-application"></a>The standalone Example Application</h3>
+<h3 id="_the_standalone_example_application">4.3. The standalone Example Application</h3>
 <div class="paragraph">
 <p>The <code>standalone</code> example application demonstrates how to create an
 instance of the embedded enterprise bean container in a JUnit test class
@@ -4934,7 +4927,7 @@ IDE</a></p>
 <p><a id="BEIDAJAC"></a><a id="overview-of-the-standalone-example-application"></a></p>
 </div>
 <div class="sect3">
-<h4 id="overview-of-the-standalone-example-application"><a class="anchor" href="#overview-of-the-standalone-example-application"></a>Overview of the standalone Example Application</h4>
+<h4 id="_overview_of_the_standalone_example_application">4.3.1. Overview of the standalone Example Application</h4>
 <div class="paragraph">
 <p>Testing the business methods of an enterprise bean in a unit test allows
 developers to exercise the business logic of an application separately
@@ -5023,7 +5016,7 @@ have run, closes the embedded container instance:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="to-run-the-standalone-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-standalone-example-application-using-netbeans-ide"></a>To Run the standalone Example Application Using NetBeans IDE</h4>
+<h4 id="_to_run_the_standalone_example_application_using_netbeans_ide">4.3.2. To Run the standalone Example Application Using NetBeans IDE</h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5059,7 +5052,7 @@ tab shows the progress of the test and the output log.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="to-run-the-standalone-example-application-using-maven"><a class="anchor" href="#to-run-the-standalone-example-application-using-maven"></a>To Run the standalone Example Application Using Maven</h4>
+<h4 id="_to_run_the_standalone_example_application_using_maven">4.3.3. To Run the standalone Example Application Using Maven</h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5094,7 +5087,7 @@ executes the JUnit test class <code>StandaloneBeanTest</code>.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="using-asynchronous-method-invocation-in-session-beans"><a class="anchor" href="#using-asynchronous-method-invocation-in-session-beans"></a>Using Asynchronous Method Invocation in Session Beans</h2>
+<h2 id="_using_asynchronous_method_invocation_in_session_beans">5. Using Asynchronous Method Invocation in Session Beans</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GKIDZ"></a><a id="using-asynchronous-method-invocation-in-session-beans"></a></p>
@@ -5107,7 +5100,7 @@ session beans and call them from enterprise bean clients.</p>
 <p><a id="GKKQG"></a><a id="asynchronous-method-invocation"></a></p>
 </div>
 <div class="sect2">
-<h3 id="asynchronous-method-invocation"><a class="anchor" href="#asynchronous-method-invocation"></a>Asynchronous Method Invocation</h3>
+<h3 id="_asynchronous_method_invocation">5.1. Asynchronous Method Invocation</h3>
 <div class="paragraph">
 <p>Session beans can implement asynchronous methods, business methods where
 control is returned to the client by the enterprise bean container
@@ -5136,7 +5129,7 @@ the invocation.</p>
 <p><a id="GKIFJ"></a><a id="creating-an-asynchronous-business-method"></a></p>
 </div>
 <div class="sect3">
-<h4 id="creating-an-asynchronous-business-method"><a class="anchor" href="#creating-an-asynchronous-business-method"></a>Creating an Asynchronous Business Method</h4>
+<h4 id="_creating_an_asynchronous_business_method">5.1.1. Creating an Asynchronous Business Method</h4>
 <div class="paragraph">
 <p>Annotate a business method with <code>javax.ejb.Asynchronous</code> to mark that
 method as an asynchronous method, or apply <code>@Asynchronous</code> at the class
@@ -5203,7 +5196,7 @@ that the invocation be cancelled by calling the
 </div>
 </div>
 <div class="sect3">
-<h4 id="calling-asynchronous-methods-from-enterprise-bean-clients"><a class="anchor" href="#calling-asynchronous-methods-from-enterprise-bean-clients"></a>Calling Asynchronous Methods from Enterprise Bean Clients</h4>
+<h4 id="calling-asynchronous-methods-from-enterprise-bean-clients">5.1.2. Calling Asynchronous Methods from Enterprise Bean Clients</h4>
 <div class="paragraph">
 <p>Session bean clients call asynchronous methods just like
 non-asynchronous business methods. If the asynchronous method returns a
@@ -5214,7 +5207,7 @@ whether any exceptions were thrown during processing, and check whether
 the invocation was cancelled.</p>
 </div>
 <div class="sect4">
-<h5 id="retrieving-the-final-result-from-an-asynchronous-method-invocation"><a class="anchor" href="#retrieving-the-final-result-from-an-asynchronous-method-invocation"></a>Retrieving the Final Result from an Asynchronous Method Invocation</h5>
+<h5 id="retrieving-the-final-result-from-an-asynchronous-method-invocation">Retrieving the Final Result from an Asynchronous Method Invocation</h5>
 <div class="paragraph">
 <p>The client may retrieve the result using one of the <code>Future&lt;V&gt;.get</code>
 methods. If processing hasn&#8217;t been completed by the session bean
@@ -5245,7 +5238,7 @@ timeout value.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="cancelling-an-asynchronous-method-invocation"><a class="anchor" href="#cancelling-an-asynchronous-method-invocation"></a>Cancelling an Asynchronous Method Invocation</h5>
+<h5 id="cancelling-an-asynchronous-method-invocation">Cancelling an Asynchronous Method Invocation</h5>
 <div class="paragraph">
 <p>Call the <code>cancel(boolean mayInterruptIfRunning)</code> method on the
 <code>Future&lt;V&gt;</code> instance to attempt to cancel the method invocation. The
@@ -5270,7 +5263,7 @@ returns <code>true</code> if the invocation was cancelled.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="checking-the-status-of-an-asynchronous-method-invocation"><a class="anchor" href="#checking-the-status-of-an-asynchronous-method-invocation"></a>Checking the Status of an Asynchronous Method Invocation</h5>
+<h5 id="checking-the-status-of-an-asynchronous-method-invocation">Checking the Status of an Asynchronous Method Invocation</h5>
 <div class="paragraph">
 <p>The <code>Future&lt;V&gt;.isDone</code> method returns <code>true</code> if the session bean
 instance completed processing the method invocation. The <code>isDone</code> method
@@ -5285,7 +5278,7 @@ only whether the session bean has completed processing the invocation.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-async-example-application"><a class="anchor" href="#the-async-example-application"></a>The async Example Application</h3>
+<h3 id="_the_async_example_application">5.2. The async Example Application</h3>
 <div class="paragraph">
 <p>The <code>async</code> example demonstrates how to define an asynchronous business
 method on a session bean and call it from a web client. This example
@@ -5315,7 +5308,7 @@ module.</p>
 <p><a id="GKIQJ"></a><a id="architecture-of-the-async-war-module"></a></p>
 </div>
 <div class="sect3">
-<h4 id="architecture-of-the-async-war-module"><a class="anchor" href="#architecture-of-the-async-war-module"></a>Architecture of the async-war Module</h4>
+<h4 id="_architecture_of_the_async_war_module">5.2.1. Architecture of the async-war Module</h4>
 <div class="paragraph">
 <p>The <code>async-war</code> module consists of a single stateless session bean,
 <code>MailerBean</code>, and a Jakarta Server Faces web application front end that uses
@@ -5391,7 +5384,7 @@ Facelets view.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-async-example"><a class="anchor" href="#running-the-async-example"></a>Running the async Example</h4>
+<h4 id="running-the-async-example">5.2.2. Running the async Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>async</code> example.</p>
@@ -5410,7 +5403,7 @@ run the <code>async</code> example.</p>
 </ul>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-async-example-application-using-netbeans-ide"><a class="anchor" href="#to-run-the-async-example-application-using-netbeans-ide"></a>To Run the async Example Application Using NetBeans IDE</h5>
+<h5 id="to-run-the-async-example-application-using-netbeans-ide">To Run the async Example Application Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5484,7 +5477,7 @@ run the <code>async</code> example.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-async-example-application-using-maven"><a class="anchor" href="#to-run-the-async-example-application-using-maven"></a>To Run the async Example Application Using Maven</h5>
+<h5 id="to-run-the-async-example-application-using-maven">To Run the async Example Application Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5584,7 +5577,7 @@ which you issued the command to start the STMP server simulator.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 18:34:55 UTC
+Last updated 2020-04-26 19:19:24 UTC
 </div>
 </div>
 <style>

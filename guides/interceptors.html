@@ -434,19 +434,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book toc2 toc-left">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>Interceptors</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#interceptors">Interceptors</a></li>
-<li><a href="#using-jakarta-ee-interceptors">Using Jakarta EE Interceptors</a>
+<li><a href="#_using_jakarta_ee_interceptors">1. Using Jakarta EE Interceptors</a>
 <ul class="sectlevel2">
-<li><a href="#overview-of-interceptors">Overview of Interceptors</a></li>
-<li><a href="#using-interceptors">Using Interceptors</a></li>
-<li><a href="#the-interceptor-example-application">The interceptor Example Application</a></li>
+<li><a href="#_overview_of_interceptors">1.1. Overview of Interceptors</a></li>
+<li><a href="#_using_interceptors">1.2. Using Interceptors</a></li>
+<li><a href="#_the_interceptor_example_application">1.3. The interceptor Example Application</a></li>
 </ul>
 </li>
 </ul>
@@ -454,13 +453,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="interceptors"><a class="anchor" href="#interceptors"></a>Interceptors</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="using-jakarta-ee-interceptors"><a class="anchor" href="#using-jakarta-ee-interceptors"></a>Using Jakarta EE Interceptors</h2>
+<h2 id="_using_jakarta_ee_interceptors">1. Using Jakarta EE Interceptors</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GKEED"></a><a id="using-jakarta-ee-interceptors"></a></p>
@@ -474,7 +467,7 @@ class.</p>
 <p><a id="GKIGQ"></a><a id="overview-of-interceptors"></a></p>
 </div>
 <div class="sect2">
-<h3 id="overview-of-interceptors"><a class="anchor" href="#overview-of-interceptors"></a>Overview of Interceptors</h3>
+<h3 id="_overview_of_interceptors">1.1. Overview of Interceptors</h3>
 <div class="paragraph">
 <p>Interceptors are used in conjunction with Jakarta EE managed classes to
 allow developers to invoke interceptor methods on an associated target
@@ -567,7 +560,7 @@ method for pre-destroy lifecycle events</p></td>
 <p><a id="GKECK"></a><a id="interceptor-classes"></a></p>
 </div>
 <div class="sect3">
-<h4 id="interceptor-classes"><a class="anchor" href="#interceptor-classes"></a>Interceptor Classes</h4>
+<h4 id="_interceptor_classes">1.1.1. Interceptor Classes</h4>
 <div class="paragraph">
 <p>Interceptor classes may be designated with the optional
 <code>javax.interceptor.Interceptor</code> annotation, but interceptor classes are
@@ -592,7 +585,7 @@ the naming context of the associated target class, and before any
 </div>
 </div>
 <div class="sect3">
-<h4 id="interceptor-lifecycle"><a class="anchor" href="#interceptor-lifecycle"></a>Interceptor Lifecycle</h4>
+<h4 id="_interceptor_lifecycle">1.1.2. Interceptor Lifecycle</h4>
 <div class="paragraph">
 <p>Interceptor classes have the same lifecycle as their associated target
 class. When a target class instance is created, an interceptor class
@@ -609,7 +602,7 @@ target class and interceptor class instances are destroyed.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="interceptors-and-cdi"><a class="anchor" href="#interceptors-and-cdi"></a>Interceptors and CDI</h4>
+<h4 id="_interceptors_and_cdi">1.1.3. Interceptors and CDI</h4>
 <div class="paragraph">
 <p>Jakarta Contexts and Dependency Injection (CDI) builds on the basic
 functionality of Jakarta EE interceptors. For information on CDI
@@ -622,7 +615,7 @@ interceptors, including a discussion of interceptor binding types, see
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-interceptors"><a class="anchor" href="#using-interceptors"></a>Using Interceptors</h3>
+<h3 id="_using_interceptors">1.2. Using Interceptors</h3>
 <div class="paragraph">
 <p>To define an interceptor, use one of the interceptor metadata
 annotations listed in <a href="#GKECC">Table 57-1</a> within
@@ -674,7 +667,7 @@ following code declares interceptors at the class level:</p>
 <p><a id="GKECY"></a><a id="intercepting-method-invocations"></a></p>
 </div>
 <div class="sect3">
-<h4 id="intercepting-method-invocations"><a class="anchor" href="#intercepting-method-invocations"></a>Intercepting Method Invocations</h4>
+<h4 id="_intercepting_method_invocations">1.2.1. Intercepting Method Invocations</h4>
 <div class="paragraph">
 <p>Use the <code>@AroundInvoke</code> annotation to designate interceptor methods for
 managed object methods. Only one around-invoke interceptor method per
@@ -716,7 +709,7 @@ catch and suppress exceptions, and then recover by calling the
 <p><a id="GKHMH"></a><a id="using-multiple-method-interceptors"></a></p>
 </div>
 <div class="sect4">
-<h5 id="using-multiple-method-interceptors"><a class="anchor" href="#using-multiple-method-interceptors"></a>Using Multiple Method Interceptors</h5>
+<h5 id="_using_multiple_method_interceptors">Using Multiple Method Interceptors</h5>
 <div class="paragraph">
 <p>Use the <code>@Interceptors</code> annotation to declare multiple interceptors for
 a target method or class:</p>
@@ -781,7 +774,7 @@ in the target class.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="accessing-target-method-parameters-from-an-interceptor-class"><a class="anchor" href="#accessing-target-method-parameters-from-an-interceptor-class"></a>Accessing Target Method Parameters from an Interceptor Class</h5>
+<h5 id="_accessing_target_method_parameters_from_an_interceptor_class">Accessing Target Method Parameters from an Interceptor Class</h5>
 <div class="paragraph">
 <p>You can use the <code>InvocationContext</code> instance passed to each
 around-invoke method to access and modify the parameters of the target
@@ -810,7 +803,7 @@ methods, respectively.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="intercepting-lifecycle-callback-events"><a class="anchor" href="#intercepting-lifecycle-callback-events"></a>Intercepting Lifecycle Callback Events</h4>
+<h4 id="_intercepting_lifecycle_callback_events">1.2.2. Intercepting Lifecycle Callback Events</h4>
 <div class="paragraph">
 <p>Interceptors for lifecycle callback events (around-construct,
 post-construct, and pre-destroy) may be defined in the target class or
@@ -875,7 +868,7 @@ event (post-create and pre-destroy) is allowed per class.</p>
 <p><a id="sthref254"></a><a id="using-aroundconstruct-interceptor-methods"></a></p>
 </div>
 <div class="sect4">
-<h5 id="using-aroundconstruct-interceptor-methods"><a class="anchor" href="#using-aroundconstruct-interceptor-methods"></a>Using AroundConstruct Interceptor Methods</h5>
+<h5 id="_using_aroundconstruct_interceptor_methods">Using AroundConstruct Interceptor Methods</h5>
 <div class="paragraph">
 <p><code>@AroundConstruct</code> methods are interposed on the invocation of the
 target class&#8217;s constructor. Methods decorated with <code>@AroundConstruct</code>
@@ -924,7 +917,7 @@ call <code>Invocation.proceed</code>, the target instance will not be created.</
 </div>
 </div>
 <div class="sect4">
-<h5 id="using-multiple-lifecycle-callback-interceptors"><a class="anchor" href="#using-multiple-lifecycle-callback-interceptors"></a>Using Multiple Lifecycle Callback Interceptors</h5>
+<h5 id="_using_multiple_lifecycle_callback_interceptors">Using Multiple Lifecycle Callback Interceptors</h5>
 <div class="paragraph">
 <p>You can define multiple lifecycle interceptors for a target class by
 specifying the interceptor classes in the <code>@Interceptors</code> annotation:</p>
@@ -947,7 +940,7 @@ sharable across different lifecycle events.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="intercepting-timeout-events"><a class="anchor" href="#intercepting-timeout-events"></a>Intercepting Timeout Events</h4>
+<h4 id="_intercepting_timeout_events">1.2.3. Intercepting Timeout Events</h4>
 <div class="paragraph">
 <p>You can define interceptors for Enterprise Bean timer service timeout methods by
 using the <code>@AroundTimeout</code> annotation on methods in the target class or
@@ -989,7 +982,7 @@ target timeout method through the <code>InvocationContext</code> instance&#8217;
 <p><a id="GKHLA"></a><a id="using-multiple-timeout-interceptors"></a></p>
 </div>
 <div class="sect4">
-<h5 id="using-multiple-timeout-interceptors"><a class="anchor" href="#using-multiple-timeout-interceptors"></a>Using Multiple Timeout Interceptors</h5>
+<h5 id="_using_multiple_timeout_interceptors">Using Multiple Timeout Interceptors</h5>
 <div class="paragraph">
 <p>You can define multiple timeout interceptors for a given target class by
 specifying the interceptor classes containing <code>@AroundTimeout</code>
@@ -1027,7 +1020,7 @@ finally the <code>last</code> method defined in the target class.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="binding-interceptors-to-components"><a class="anchor" href="#binding-interceptors-to-components"></a>Binding Interceptors to Components</h4>
+<h4 id="_binding_interceptors_to_components">1.2.4. Binding Interceptors to Components</h4>
 <div class="paragraph">
 <p>Interceptor binding types are annotations that may be applied to
 components to associate them with a particular interceptor. Interceptor
@@ -1065,7 +1058,7 @@ binding types:</p>
 <p><a id="sthref256"></a><a id="declaring-the-interceptor-bindings-on-an-interceptor-class"></a></p>
 </div>
 <div class="sect4">
-<h5 id="declaring-the-interceptor-bindings-on-an-interceptor-class"><a class="anchor" href="#declaring-the-interceptor-bindings-on-an-interceptor-class"></a>Declaring the Interceptor Bindings on an Interceptor Class</h5>
+<h5 id="_declaring_the_interceptor_bindings_on_an_interceptor_class">Declaring the Interceptor Bindings on an Interceptor Class</h5>
 <div class="paragraph">
 <p>Annotate the interceptor class with the interceptor binding type and
 <code>@Interceptor</code> to associate the interceptor binding with the interceptor
@@ -1096,7 +1089,7 @@ declare interceptor binding types with <code>Target(TYPE)</code>, or in the case
 </div>
 </div>
 <div class="sect4">
-<h5 id="binding-a-component-to-an-interceptor"><a class="anchor" href="#binding-a-component-to-an-interceptor"></a>Binding a Component to an Interceptor</h5>
+<h5 id="_binding_a_component_to_an_interceptor">Binding a Component to an Interceptor</h5>
 <div class="paragraph">
 <p>Add the interceptor binding type annotation to the target component&#8217;s
 class, method, or constructor. Interceptor binding types are applied
@@ -1125,7 +1118,7 @@ it, it must not be <code>final</code>, and the component class cannot be <code>f
 </div>
 </div>
 <div class="sect3">
-<h4 id="ordering-interceptors"><a class="anchor" href="#ordering-interceptors"></a>Ordering Interceptors</h4>
+<h4 id="_ordering_interceptors">1.2.5. Ordering Interceptors</h4>
 <div class="paragraph">
 <p>The order in which multiple interceptors are invoked is determined by
 the following rules.</p>
@@ -1277,7 +1270,7 @@ application-defined interceptor:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-interceptor-example-application"><a class="anchor" href="#the-interceptor-example-application"></a>The interceptor Example Application</h3>
+<h3 id="_the_interceptor_example_application">1.3. The interceptor Example Application</h3>
 <div class="paragraph">
 <p>The <code>interceptor</code> example demonstrates how to use an interceptor class,
 containing an <code>@AroundInvoke</code> interceptor method, with a stateless
@@ -1340,7 +1333,7 @@ displays the final name.</p>
 <p><a id="sthref260"></a><a id="running-the-interceptor-example"></a></p>
 </div>
 <div class="sect3">
-<h4 id="running-the-interceptor-example"><a class="anchor" href="#running-the-interceptor-example"></a>Running the interceptor Example</h4>
+<h4 id="_running_the_interceptor_example">1.3.1. Running the interceptor Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>interceptor</code> example.</p>
@@ -1362,7 +1355,7 @@ run the <code>interceptor</code> example.</p>
 <p><a id="GKEDF"></a><a id="to-run-the-interceptor-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-interceptor-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-interceptor-example-using-netbeans-ide"></a>To Run the interceptor Example Using NetBeans IDE</h5>
+<h5 id="_to_run_the_interceptor_example_using_netbeans_ide">To Run the interceptor Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1411,7 +1404,7 @@ defined in the <code>HelloInterceptor</code> class.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-interceptor-example-using-maven"><a class="anchor" href="#to-run-the-interceptor-example-using-maven"></a>To Run the interceptor Example Using Maven</h5>
+<h5 id="_to_run_the_interceptor_example_using_maven">To Run the interceptor Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1466,7 +1459,7 @@ defined in the <code>HelloInterceptor</code> class.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 18:34:55 UTC
+Last updated 2020-04-26 19:19:24 UTC
 </div>
 </div>
 <style>

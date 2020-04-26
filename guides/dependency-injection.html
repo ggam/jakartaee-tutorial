@@ -434,74 +434,73 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="book toc2 toc-left">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>Dependency Injection</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#dependency-injection">Dependency Injection</a></li>
-<li><a href="#injection">Injection</a>
+<li><a href="#_injection">1. Injection</a>
 <ul class="sectlevel2">
-<li><a href="#resource-injection">Resource Injection</a></li>
-<li><a href="#dependency-injection-2">Dependency Injection</a></li>
-<li><a href="#the-main-differences-between-resource-injection-and-dependency-injection">The Main Differences between Resource Injection and Dependency Injection</a></li>
+<li><a href="#_resource_injection">1.1. Resource Injection</a></li>
+<li><a href="#_dependency_injection">1.2. Dependency Injection</a></li>
+<li><a href="#_the_main_differences_between_resource_injection_and_dependency_injection">1.3. The Main Differences between Resource Injection and Dependency Injection</a></li>
 </ul>
 </li>
-<li><a href="#introduction-to-jakarta-contexts-and-dependency-injection">Introduction to Jakarta Contexts and Dependency Injection</a>
+<li><a href="#_introduction_to_jakarta_contexts_and_dependency_injection">2. Introduction to Jakarta Contexts and Dependency Injection</a>
 <ul class="sectlevel2">
-<li><a href="#getting-started">Getting Started</a></li>
-<li><a href="#overview-of-cdi">Overview of CDI</a></li>
-<li><a href="#about-beans">About Beans</a></li>
-<li><a href="#about-cdi-managed-beans">About CDI Managed Beans</a></li>
-<li><a href="#beans-as-injectable-objects">Beans as Injectable Objects</a></li>
-<li><a href="#using-qualifiers">Using Qualifiers</a></li>
-<li><a href="#injecting-beans">Injecting Beans</a></li>
-<li><a href="#using-scopes">Using Scopes</a></li>
-<li><a href="#giving-beans-el-names">Giving Beans EL Names</a></li>
-<li><a href="#adding-setter-and-getter-methods">Adding Setter and Getter Methods</a></li>
-<li><a href="#using-a-managed-bean-in-a-facelets-page">Using a Managed Bean in a Facelets Page</a></li>
-<li><a href="#injecting-objects-by-using-producer-methods">Injecting Objects by Using Producer Methods</a></li>
-<li><a href="#configuring-a-cdi-application">Configuring a CDI Application</a></li>
-<li><a href="#using-the-postconstruct-and-predestroy-annotations-with-cdi-managed-bean-classes">Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes</a></li>
-<li><a href="#further-information-about-cdi">Further Information about CDI</a></li>
+<li><a href="#_getting_started">2.1. Getting Started</a></li>
+<li><a href="#_overview_of_cdi">2.2. Overview of CDI</a></li>
+<li><a href="#_about_beans">2.3. About Beans</a></li>
+<li><a href="#_about_cdi_managed_beans">2.4. About CDI Managed Beans</a></li>
+<li><a href="#_beans_as_injectable_objects">2.5. Beans as Injectable Objects</a></li>
+<li><a href="#_using_qualifiers">2.6. Using Qualifiers</a></li>
+<li><a href="#_injecting_beans">2.7. Injecting Beans</a></li>
+<li><a href="#_using_scopes">2.8. Using Scopes</a></li>
+<li><a href="#_giving_beans_el_names">2.9. Giving Beans EL Names</a></li>
+<li><a href="#_adding_setter_and_getter_methods">2.10. Adding Setter and Getter Methods</a></li>
+<li><a href="#_using_a_managed_bean_in_a_facelets_page">2.11. Using a Managed Bean in a Facelets Page</a></li>
+<li><a href="#_injecting_objects_by_using_producer_methods">2.12. Injecting Objects by Using Producer Methods</a></li>
+<li><a href="#_configuring_a_cdi_application">2.13. Configuring a CDI Application</a></li>
+<li><a href="#_using_the_postconstruct_and_predestroy_annotations_with_cdi_managed_bean_classes">2.14. Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes</a></li>
+<li><a href="#_further_information_about_cdi">2.15. Further Information about CDI</a></li>
 </ul>
 </li>
-<li><a href="#running-the-basic-contexts-and-dependency-injection-examples">Running the Basic Contexts and Dependency Injection Examples</a>
+<li><a href="#_running_the_basic_contexts_and_dependency_injection_examples">3. Running the Basic Contexts and Dependency Injection Examples</a>
 <ul class="sectlevel2">
-<li><a href="#building-and-running-the-cdi-samples">Building and Running the CDI Samples</a></li>
-<li><a href="#the-simplegreeting-cdi-example">The simplegreeting CDI Example</a></li>
-<li><a href="#the-guessnumber-cdi-cdi-example">The guessnumber-cdi CDI Example</a></li>
+<li><a href="#_building_and_running_the_cdi_samples">3.1. Building and Running the CDI Samples</a></li>
+<li><a href="#_the_simplegreeting_cdi_example">3.2. The simplegreeting CDI Example</a></li>
+<li><a href="#_the_guessnumber_cdi_cdi_example">3.3. The guessnumber-cdi CDI Example</a></li>
 </ul>
 </li>
-<li><a href="#jakarta-contexts-and-dependency-injection-advanced-topics">Jakarta Contexts and Dependency Injection: Advanced Topics</a>
+<li><a href="#_jakarta_contexts_and_dependency_injection_advanced_topics">4. Jakarta Contexts and Dependency Injection: Advanced Topics</a>
 <ul class="sectlevel2">
-<li><a href="#packaging-cdi-applications">Packaging CDI Applications</a></li>
-<li><a href="#using-alternatives-in-cdi-applications">Using Alternatives in CDI Applications</a></li>
-<li><a href="#using-producer-methods-producer-fields-and-disposer-methods-in-cdi-applications">Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications</a></li>
-<li><a href="#using-predefined-beans-in-cdi-applications">Using Predefined Beans in CDI Applications</a></li>
-<li><a href="#using-events-in-cdi-applications">Using Events in CDI Applications</a></li>
-<li><a href="#using-interceptors-in-cdi-applications">Using Interceptors in CDI Applications</a></li>
-<li><a href="#using-decorators-in-cdi-applications">Using Decorators in CDI Applications</a></li>
-<li><a href="#using-stereotypes-in-cdi-applications">Using Stereotypes in CDI Applications</a></li>
-<li><a href="#using-the-built-in-annotation-literals">Using the Built-In Annotation Literals</a></li>
-<li><a href="#using-the-configurators-interfaces">Using the Configurators Interfaces</a></li>
+<li><a href="#_packaging_cdi_applications">4.1. Packaging CDI Applications</a></li>
+<li><a href="#_using_alternatives_in_cdi_applications">4.2. Using Alternatives in CDI Applications</a></li>
+<li><a href="#_using_producer_methods_producer_fields_and_disposer_methods_in_cdi_applications">4.3. Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications</a></li>
+<li><a href="#_using_predefined_beans_in_cdi_applications">4.4. Using Predefined Beans in CDI Applications</a></li>
+<li><a href="#_using_events_in_cdi_applications">4.5. Using Events in CDI Applications</a></li>
+<li><a href="#_using_interceptors_in_cdi_applications">4.6. Using Interceptors in CDI Applications</a></li>
+<li><a href="#_using_decorators_in_cdi_applications">4.7. Using Decorators in CDI Applications</a></li>
+<li><a href="#_using_stereotypes_in_cdi_applications">4.8. Using Stereotypes in CDI Applications</a></li>
+<li><a href="#using-the-built-in-annotation-literals">4.9. Using the Built-In Annotation Literals</a></li>
+<li><a href="#using-the-configurators-interfaces">4.10. Using the Configurators Interfaces</a></li>
 </ul>
 </li>
-<li><a href="#bootstrapping-a-cdi-container-in-java-se">Bootstrapping a CDI Container in Java SE</a>
+<li><a href="#bootstrapping-a-cdi-container-in-java-se">5. Bootstrapping a CDI Container in Java SE</a>
 <ul class="sectlevel2">
-<li><a href="#the-bootstrap-api">The Bootstrap API</a></li>
+<li><a href="#the-bootstrap-api">5.1. The Bootstrap API</a></li>
 </ul>
 </li>
-<li><a href="#running-the-advanced-contexts-and-dependency-injection-examples">Running the Advanced Contexts and Dependency Injection Examples</a>
+<li><a href="#_running_the_advanced_contexts_and_dependency_injection_examples">6. Running the Advanced Contexts and Dependency Injection Examples</a>
 <ul class="sectlevel2">
-<li><a href="#building-and-running-the-cdi-advanced-examples">Building and Running the CDI Advanced Examples</a></li>
-<li><a href="#the-encoder-example-using-alternatives">The encoder Example: Using Alternatives</a></li>
-<li><a href="#the-producermethods-example-using-a-producer-method-to-choose-a-bean-implementation">The producermethods Example: Using a Producer Method to Choose a Bean Implementation</a></li>
-<li><a href="#the-producerfields-example-using-producer-fields-to-generate-resources">The producerfields Example: Using Producer Fields to Generate Resources</a></li>
-<li><a href="#the-billpayment-example-using-events-and-interceptors">The billpayment Example: Using Events and Interceptors</a></li>
-<li><a href="#the-decorators-example-decorating-a-bean">The decorators Example: Decorating a Bean</a></li>
+<li><a href="#_building_and_running_the_cdi_advanced_examples">6.1. Building and Running the CDI Advanced Examples</a></li>
+<li><a href="#_the_encoder_example_using_alternatives">6.2. The encoder Example: Using Alternatives</a></li>
+<li><a href="#_the_producermethods_example_using_a_producer_method_to_choose_a_bean_implementation">6.3. The producermethods Example: Using a Producer Method to Choose a Bean Implementation</a></li>
+<li><a href="#_the_producerfields_example_using_producer_fields_to_generate_resources">6.4. The producerfields Example: Using Producer Fields to Generate Resources</a></li>
+<li><a href="#_the_billpayment_example_using_events_and_interceptors">6.5. The billpayment Example: Using Events and Interceptors</a></li>
+<li><a href="#_the_decorators_example_decorating_a_bean">6.6. The decorators Example: Decorating a Bean</a></li>
 </ul>
 </li>
 </ul>
@@ -509,13 +508,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="dependency-injection"><a class="anchor" href="#dependency-injection"></a>Dependency Injection</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="injection"><a class="anchor" href="#injection"></a>Injection</h2>
+<h2 id="_injection">1. Injection</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GKJIQ3"></a><a id="injection"></a></p>
@@ -538,7 +531,7 @@ your code and decouples it from the implementations of its dependencies.</p>
 <p><a id="BABHDCAI"></a><a id="resource-injection"></a></p>
 </div>
 <div class="sect2">
-<h3 id="resource-injection"><a class="anchor" href="#resource-injection"></a>Resource Injection</h3>
+<h3 id="_resource_injection">1.1. Resource Injection</h3>
 <div class="paragraph">
 <p>Resource injection enables you to inject any resource available in the
 JNDI namespace into any container-managed object, such as a servlet, an
@@ -598,7 +591,7 @@ errors if the types of the object and its reference do not match.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="dependency-injection-2"><a class="anchor" href="#dependency-injection-2"></a>Dependency Injection</h3>
+<h3 id="_dependency_injection">1.2. Dependency Injection</h3>
 <div class="paragraph">
 <p>Dependency injection enables you to turn regular Java classes into
 managed objects and to inject them into any other managed object. Using
@@ -655,7 +648,7 @@ Injection spec.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-main-differences-between-resource-injection-and-dependency-injection"><a class="anchor" href="#the-main-differences-between-resource-injection-and-dependency-injection"></a>The Main Differences between Resource Injection and Dependency Injection</h3>
+<h3 id="_the_main_differences_between_resource_injection_and_dependency_injection">1.3. The Main Differences between Resource Injection and Dependency Injection</h3>
 <div class="paragraph">
 <p><a href="#BABCEJEE">Table 4-1</a> lists the main differences between resource
 injection and dependency injection.</p>
@@ -704,7 +697,7 @@ Regular Classes Directly</strong></p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="introduction-to-jakarta-contexts-and-dependency-injection"><a class="anchor" href="#introduction-to-jakarta-contexts-and-dependency-injection"></a>Introduction to Jakarta Contexts and Dependency Injection</h2>
+<h2 id="_introduction_to_jakarta_contexts_and_dependency_injection">2. Introduction to Jakarta Contexts and Dependency Injection</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GIWHB"></a><a id="introduction-to-contexts-and-dependency-injection-for-jakarta-ee"></a></p>
@@ -719,7 +712,7 @@ platform.</p>
 <p><a id="BABJDJGA"></a><a id="getting-started"></a></p>
 </div>
 <div class="sect2">
-<h3 id="getting-started"><a class="anchor" href="#getting-started"></a>Getting Started</h3>
+<h3 id="_getting_started">2.1. Getting Started</h3>
 <div class="paragraph">
 <p>Contexts and Dependency Injection (CDI) enables your objects to have
 their dependencies provided to them automatically, instead of creating
@@ -840,7 +833,7 @@ for Jakarta EE: Advanced Topics"</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="overview-of-cdi"><a class="anchor" href="#overview-of-cdi"></a>Overview of CDI</h3>
+<h3 id="_overview_of_cdi">2.2. Overview of CDI</h3>
 <div class="paragraph">
 <p>CDI is a set of services that, used together, make it easy for
 developers to use enterprise beans along with Jakarta Server Faces
@@ -966,7 +959,7 @@ understand the dependency structure at development time</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="about-beans"><a class="anchor" href="#about-beans"></a>About Beans</h3>
+<h3 id="_about_beans">2.3. About Beans</h3>
 <div class="paragraph">
 <p>CDI redefines the concept of a bean beyond its use in other Java
 technologies, such as the JavaBeans and Jakarta Enterprise Beans
@@ -1034,7 +1027,7 @@ be identical to their corresponding wrapper types in <code>java.lang</code>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="about-cdi-managed-beans"><a class="anchor" href="#about-cdi-managed-beans"></a>About CDI Managed Beans</h3>
+<h3 id="_about_cdi_managed_beans">2.4. About CDI Managed Beans</h3>
 <div class="paragraph">
 <p>A managed bean is implemented by a Java class, which is called its bean
 class. A top-level Java class is a managed bean if it is defined to be a
@@ -1079,7 +1072,7 @@ managed bean.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="beans-as-injectable-objects"><a class="anchor" href="#beans-as-injectable-objects"></a>Beans as Injectable Objects</h3>
+<h3 id="_beans_as_injectable_objects">2.5. Beans as Injectable Objects</h3>
 <div class="paragraph">
 <p>The concept of injection has been part of Java technology for some time.
 Since the Java EE 5 platform was introduced, annotations have made it
@@ -1145,7 +1138,7 @@ make a bean accessible to the EL.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-qualifiers"><a class="anchor" href="#using-qualifiers"></a>Using Qualifiers</h3>
+<h3 id="_using_qualifiers">2.6. Using Qualifiers</h3>
 <div class="paragraph">
 <p>You can use qualifiers to provide various implementations of a
 particular bean type. A qualifier is an annotation that you apply to a
@@ -1222,7 +1215,7 @@ as follows:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="injecting-beans"><a class="anchor" href="#injecting-beans"></a>Injecting Beans</h3>
+<h3 id="_injecting_beans">2.7. Injecting Beans</h3>
 <div class="paragraph">
 <p>To use the beans you create, you inject them into yet another
 bean that can then be used by an application, such as a Jakarta Server Faces
@@ -1272,7 +1265,7 @@ see the package <a href="https://jakarta.ee/specifications/faces/2.3/apidocs/">j
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-scopes"><a class="anchor" href="#using-scopes"></a>Using Scopes</h3>
+<h3 id="_using_scopes">2.8. Using Scopes</h3>
 <div class="paragraph">
 <p>For a web application to use a bean that injects another bean class, the
 bean needs to be able to hold state over the duration of the user&#8217;s
@@ -1416,7 +1409,7 @@ serializable.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="giving-beans-el-names"><a class="anchor" href="#giving-beans-el-names"></a>Giving Beans EL Names</h3>
+<h3 id="_giving_beans_el_names">2.9. Giving Beans EL Names</h3>
 <div class="paragraph">
 <p>To make a bean accessible through the EL, use the <code>@Named</code> built-in qualifier:</p>
 </div>
@@ -1458,7 +1451,7 @@ nondefault name:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="adding-setter-and-getter-methods"><a class="anchor" href="#adding-setter-and-getter-methods"></a>Adding Setter and Getter Methods</h3>
+<h3 id="_adding_setter_and_getter_methods">2.10. Adding Setter and Getter Methods</h3>
 <div class="paragraph">
 <p>To make the state of the managed bean accessible, add setter and getter methods for that state. The <code>createSalutation</code> method calls the bean&#8217;s <code>greet</code> method, and the
 <code>getSalutation</code> method retrieves the result.</p>
@@ -1507,7 +1500,7 @@ complete. The final code looks like this:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-a-managed-bean-in-a-facelets-page"><a class="anchor" href="#using-a-managed-bean-in-a-facelets-page"></a>Using a Managed Bean in a Facelets Page</h3>
+<h3 id="_using_a_managed_bean_in_a_facelets_page">2.11. Using a Managed Bean in a Facelets Page</h3>
 <div class="paragraph">
 <p>To use the managed bean in a Facelets page, create a form that uses user interface elements to call its methods and to display their results. The following example provides a button that asks the user to type a name, retrieves the salutation, and then displays the text in a paragraph below the button:</p>
 </div>
@@ -1527,7 +1520,7 @@ complete. The final code looks like this:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="injecting-objects-by-using-producer-methods"><a class="anchor" href="#injecting-objects-by-using-producer-methods"></a>Injecting Objects by Using Producer Methods</h3>
+<h3 id="_injecting_objects_by_using_producer_methods">2.12. Injecting Objects by Using Producer Methods</h3>
 <div class="paragraph">
 <p>Producer methods provide a way to inject objects that are not beans,
 objects whose values may vary at runtime, and objects that require
@@ -1596,7 +1589,7 @@ contextual instance of the object:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="configuring-a-cdi-application"><a class="anchor" href="#configuring-a-cdi-application"></a>Configuring a CDI Application</h3>
+<h3 id="_configuring_a_cdi_application">2.13. Configuring a CDI Application</h3>
 <div class="paragraph">
 <p>When your beans are annotated with a scope type, the server recognizes
 the application as a bean archive and no additional configuration is
@@ -1623,7 +1616,7 @@ files, the <code>beans.xml</code> deployment descriptor, if present, must be in 
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-the-postconstruct-and-predestroy-annotations-with-cdi-managed-bean-classes"><a class="anchor" href="#using-the-postconstruct-and-predestroy-annotations-with-cdi-managed-bean-classes"></a>Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes</h3>
+<h3 id="_using_the_postconstruct_and_predestroy_annotations_with_cdi_managed_bean_classes">2.14. Using the @PostConstruct and @PreDestroy Annotations with CDI Managed Bean Classes</h3>
 <div class="paragraph">
 <p>CDI managed bean classes and their superclasses support the annotations
 for initializing and for preparing for the destruction of a bean. These
@@ -1648,7 +1641,7 @@ the @PreDestroy Annotation</a></p>
 <p><a id="CIHEHHCH"></a><a id="to-initialize-a-managed-bean-using-the-postconstruct-annotation"></a></p>
 </div>
 <div class="sect3">
-<h4 id="to-initialize-a-managed-bean-using-the-postconstruct-annotation"><a class="anchor" href="#to-initialize-a-managed-bean-using-the-postconstruct-annotation"></a>To Initialize a Managed Bean Using the @PostConstruct Annotation</h4>
+<h4 id="_to_initialize_a_managed_bean_using_the_postconstruct_annotation">2.14.1. To Initialize a Managed Bean Using the @PostConstruct Annotation</h4>
 <div class="paragraph">
 <p>Initializing a managed bean specifies the lifecycle callback method that
 the CDI framework should call after dependency injection but before the
@@ -1710,7 +1703,7 @@ uses <code>@PostConstruct</code> to annotate a method that resets all bean field
 </div>
 </div>
 <div class="sect3">
-<h4 id="to-prepare-for-the-destruction-of-a-managed-bean-using-the-predestroy-annotation"><a class="anchor" href="#to-prepare-for-the-destruction-of-a-managed-bean-using-the-predestroy-annotation"></a>To Prepare for the Destruction of a Managed Bean Using the @PreDestroy Annotation</h4>
+<h4 id="_to_prepare_for_the_destruction_of_a_managed_bean_using_the_predestroy_annotation">2.14.2. To Prepare for the Destruction of a Managed Bean Using the @PreDestroy Annotation</h4>
 <div class="paragraph">
 <p>Preparing for the destruction of a managed bean specifies the lifecycle
 call back method that signals that an application component is about to
@@ -1741,7 +1734,7 @@ destroyed, such as releasing a resource that the bean has been holding.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="further-information-about-cdi"><a class="anchor" href="#further-information-about-cdi"></a>Further Information about CDI</h3>
+<h3 id="_further_information_about_cdi">2.15. Further Information about CDI</h3>
 <div class="paragraph">
 <p>For more information about CDI, see</p>
 </div>
@@ -1777,7 +1770,7 @@ destroyed, such as releasing a resource that the bean has been holding.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="running-the-basic-contexts-and-dependency-injection-examples"><a class="anchor" href="#running-the-basic-contexts-and-dependency-injection-examples"></a>Running the Basic Contexts and Dependency Injection Examples</h2>
+<h2 id="_running_the_basic_contexts_and_dependency_injection_examples">3. Running the Basic Contexts and Dependency Injection Examples</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GJBLS"></a><a id="running-the-basic-contexts-and-dependency-injection-examples"></a></p>
@@ -1790,7 +1783,7 @@ that use CDI.</p>
 <p><a id="A1250045"></a><a id="building-and-running-the-cdi-samples"></a></p>
 </div>
 <div class="sect2">
-<h3 id="building-and-running-the-cdi-samples"><a class="anchor" href="#building-and-running-the-cdi-samples"></a>Building and Running the CDI Samples</h3>
+<h3 id="_building_and_running_the_cdi_samples">3.1. Building and Running the CDI Samples</h3>
 <div class="paragraph">
 <p>The examples are in the <code><em>tut-install</em>/examples/cdi/</code> directory.</p>
 </div>
@@ -1834,7 +1827,7 @@ the examples.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-simplegreeting-cdi-example"><a class="anchor" href="#the-simplegreeting-cdi-example"></a>The simplegreeting CDI Example</h3>
+<h3 id="_the_simplegreeting_cdi_example">3.2. The simplegreeting CDI Example</h3>
 <div class="paragraph">
 <p>The <code>simplegreeting</code> example illustrates some of the most basic features
 of CDI: scopes, qualifiers, bean injection, and accessing a managed bean
@@ -1863,7 +1856,7 @@ files, a Facelets page and template, and configuration files.</p>
 <p><a id="GJCQS"></a><a id="the-simplegreeting-source-files"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-simplegreeting-source-files"><a class="anchor" href="#the-simplegreeting-source-files"></a>The simplegreeting Source Files</h4>
+<h4 id="_the_simplegreeting_source_files">3.2.1. The simplegreeting Source Files</h4>
 <div class="paragraph">
 <p>The four source files for the <code>simplegreeting</code> example are:</p>
 </div>
@@ -1895,7 +1888,7 @@ directory.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-facelets-template-and-page"><a class="anchor" href="#the-facelets-template-and-page"></a>The Facelets Template and Page</h4>
+<h4 id="_the_facelets_template_and_page">3.2.2. The Facelets Template and Page</h4>
 <div class="paragraph">
 <p>To use the managed bean in a simple Facelets application:</p>
 </div>
@@ -2010,7 +2003,7 @@ following location:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-simplegreeting-example"><a class="anchor" href="#running-the-simplegreeting-example"></a>Running the simplegreeting Example</h4>
+<h4 id="_running_the_simplegreeting_example">3.2.3. Running the simplegreeting Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>simplegreeting</code> application.</p>
@@ -2037,7 +2030,7 @@ Using Maven</a></p>
 <p><a id="GJCXP"></a><a id="to-build-package-and-run-the-simplegreeting-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-run-the-simplegreeting-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-run-the-simplegreeting-example-using-netbeans-ide"></a>To Build, Package, and Run the simplegreeting Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_run_the_simplegreeting_example_using_netbeans_ide">To Build, Package, and Run the simplegreeting Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2107,7 +2100,7 @@ deploys it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-simplegreeting-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-simplegreeting-example-using-maven"></a>To Build, Package, and Deploy the simplegreeting Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_simplegreeting_example_using_maven">To Build, Package, and Deploy the simplegreeting Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2143,7 +2136,7 @@ deploys it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-simplegreeting-example"><a class="anchor" href="#to-run-the-simplegreeting-example"></a>To Run the simplegreeting Example</h5>
+<h5 id="_to_run_the_simplegreeting_example">To Run the simplegreeting Example</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2193,7 +2186,7 @@ file, then the following text string appears below the button:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-guessnumber-cdi-cdi-example"><a class="anchor" href="#the-guessnumber-cdi-cdi-example"></a>The guessnumber-cdi CDI Example</h3>
+<h3 id="_the_guessnumber_cdi_cdi_example">3.3. The guessnumber-cdi CDI Example</h3>
 <div class="paragraph">
 <p>The <code>guessnumber-cdi</code> example, somewhat more complex than the
 <code>simplegreeting</code> example, illustrates the use of producer methods and of
@@ -2229,7 +2222,7 @@ the same as those used for the <code>simplegreeting</code> example.</p>
 <p><a id="GJDJU"></a><a id="the-guessnumber-cdi-source-files"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-guessnumber-cdi-source-files"><a class="anchor" href="#the-guessnumber-cdi-source-files"></a>The guessnumber-cdi Source Files</h4>
+<h4 id="_the_guessnumber_cdi_source_files">3.3.1. The guessnumber-cdi Source Files</h4>
 <div class="paragraph">
 <p>The four source files for the <code>guessnumber-cdi</code> example are:</p>
 </div>
@@ -2258,7 +2251,7 @@ directory.</p>
 <p><a id="GJDJP"></a><a id="the-maxnumber-and-random-qualifier-interfaces"></a></p>
 </div>
 <div class="sect4">
-<h5 id="the-maxnumber-and-random-qualifier-interfaces"><a class="anchor" href="#the-maxnumber-and-random-qualifier-interfaces"></a>The @MaxNumber and @Random Qualifier Interfaces</h5>
+<h5 id="_the_maxnumber_and_random_qualifier_interfaces">The @MaxNumber and @Random Qualifier Interfaces</h5>
 <div class="paragraph">
 <p>The <code>@MaxNumber</code> qualifier interface is defined as follows:</p>
 </div>
@@ -2314,7 +2307,7 @@ directory.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="the-generator-managed-bean"><a class="anchor" href="#the-generator-managed-bean"></a>The Generator Managed Bean</h5>
+<h5 id="_the_generator_managed_bean">The Generator Managed Bean</h5>
 <div class="paragraph">
 <p>The <code>Generator</code> managed bean contains the two producer methods for the
 application. The bean has the <code>@ApplicationScoped</code> annotation to specify
@@ -2359,7 +2352,7 @@ the application:</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="the-usernumberbean-managed-bean"><a class="anchor" href="#the-usernumberbean-managed-bean"></a>The UserNumberBean Managed Bean</h5>
+<h5 id="_the_usernumberbean_managed_bean">The UserNumberBean Managed Bean</h5>
 <div class="paragraph">
 <p>The <code>UserNumberBean</code> managed bean, the managed bean for the Jakarta Server
 Faces application, provides the basic logic for the game. This bean does
@@ -2506,7 +2499,7 @@ user&#8217;s input is correct</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-facelets-page"><a class="anchor" href="#the-facelets-page"></a>The Facelets Page</h4>
+<h4 id="_the_facelets_page">3.3.2. The Facelets Page</h4>
 <div class="paragraph">
 <p>This example uses the same template that the <code>simplegreeting</code> example
 uses. The <code>index.xhtml</code> file, however, is more complex.</p>
@@ -2584,7 +2577,7 @@ guess is valid is <code>userNumberBean.validateNumberRange</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-guessnumber-cdi-example"><a class="anchor" href="#running-the-guessnumber-cdi-example"></a>Running the guessnumber-cdi Example</h4>
+<h4 id="_running_the_guessnumber_cdi_example">3.3.3. Running the guessnumber-cdi Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>guessnumber-cdi</code> application.</p>
@@ -2611,7 +2604,7 @@ Using Maven</a></p>
 <p><a id="GJDPS"></a><a id="to-build-package-and-deploy-the-guessnumber-cdi-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-guessnumber-cdi-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-guessnumber-cdi-example-using-netbeans-ide"></a>To Build, Package, and Deploy the guessnumber-cdi Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_deploy_the_guessnumber_cdi_example_using_netbeans_ide">To Build, Package, and Deploy the guessnumber-cdi Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2652,7 +2645,7 @@ deploys it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-guessnumber-cdi-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-guessnumber-cdi-example-using-maven"></a>To Build, Package, and Deploy the guessnumber-cdi Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_guessnumber_cdi_example_using_maven">To Build, Package, and Deploy the guessnumber-cdi Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2688,7 +2681,7 @@ deploys it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-guessnumber-example"><a class="anchor" href="#to-run-the-guessnumber-example"></a>To Run the guessnumber Example</h5>
+<h5 id="_to_run_the_guessnumber_example">To Run the guessnumber Example</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2729,7 +2722,7 @@ guesses.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="jakarta-contexts-and-dependency-injection-advanced-topics"><a class="anchor" href="#jakarta-contexts-and-dependency-injection-advanced-topics"></a>Jakarta Contexts and Dependency Injection: Advanced Topics</h2>
+<h2 id="_jakarta_contexts_and_dependency_injection_advanced_topics">4. Jakarta Contexts and Dependency Injection: Advanced Topics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GJEHI"></a><a id="contexts-and-dependency-injection-for-jakarta-ee-advanced-topics"></a></p>
@@ -2745,7 +2738,7 @@ of CDI</a>.</p>
 <p><a id="CACDCFDE"></a><a id="packaging-cdi-applications"></a></p>
 </div>
 <div class="sect2">
-<h3 id="packaging-cdi-applications"><a class="anchor" href="#packaging-cdi-applications"></a>Packaging CDI Applications</h3>
+<h3 id="_packaging_cdi_applications">4.1. Packaging CDI Applications</h3>
 <div class="paragraph">
 <p>When you deploy a Jakarta EE application, CDI looks for beans inside bean
 archives. A bean archive is any module that contains beans that the CDI
@@ -2795,7 +2788,7 @@ files, the <code>beans.xml</code> deployment descriptor, if present, must be in 
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-alternatives-in-cdi-applications"><a class="anchor" href="#using-alternatives-in-cdi-applications"></a>Using Alternatives in CDI Applications</h3>
+<h3 id="_using_alternatives_in_cdi_applications">4.2. Using Alternatives in CDI Applications</h3>
 <div class="paragraph">
 <p>When you have more than one version of a bean that you use for different
 purposes, you can choose between them during the development phase by
@@ -2908,7 +2901,7 @@ alternative beans that implement the same interface are annotated with
 <p><a id="GKHPO"></a><a id="using-specialization"></a></p>
 </div>
 <div class="sect3">
-<h4 id="using-specialization"><a class="anchor" href="#using-specialization"></a>Using Specialization</h4>
+<h4 id="_using_specialization">4.2.1. Using Specialization</h4>
 <div class="paragraph">
 <p>Specialization has a function similar to that of alternatives in that it
 allows you to substitute one bean for another. However, you might want
@@ -2988,7 +2981,7 @@ name, if it has one.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-producer-methods-producer-fields-and-disposer-methods-in-cdi-applications"><a class="anchor" href="#using-producer-methods-producer-fields-and-disposer-methods-in-cdi-applications"></a>Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications</h3>
+<h3 id="_using_producer_methods_producer_fields_and_disposer_methods_in_cdi_applications">4.3. Using Producer Methods, Producer Fields, and Disposer Methods in CDI Applications</h3>
 <div class="paragraph">
 <p>A producer method generates an object that can then be injected.
 Typically, you use producer methods in the following situations:</p>
@@ -3028,7 +3021,7 @@ service references.</p>
 <p><a id="sthref127"></a><a id="using-producer-methods"></a></p>
 </div>
 <div class="sect3">
-<h4 id="using-producer-methods"><a class="anchor" href="#using-producer-methods"></a>Using Producer Methods</h4>
+<h4 id="_using_producer_methods">4.3.1. Using Producer Methods</h4>
 <div class="paragraph">
 <p>A producer method can allow you to select a bean implementation at
 runtime instead of at development time or deployment time. For example,
@@ -3079,7 +3072,7 @@ dependency.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-producer-fields-to-generate-resources"><a class="anchor" href="#using-producer-fields-to-generate-resources"></a>Using Producer Fields to Generate Resources</h4>
+<h4 id="_using_producer_fields_to_generate_resources">4.3.2. Using Producer Fields to Generate Resources</h4>
 <div class="paragraph">
 <p>A common use of a producer field is to generate an object such as a JDBC
 <code>DataSource</code> or a Jakarta Persistence <code>EntityManager</code> (see
@@ -3125,7 +3118,7 @@ the object wherever in the application you need it.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-a-disposer-method"><a class="anchor" href="#using-a-disposer-method"></a>Using a Disposer Method</h4>
+<h4 id="_using_a_disposer_method">4.3.3. Using a Disposer Method</h4>
 <div class="paragraph">
 <p>You can use a producer method or a producer field to generate an object
 that needs to be removed when its work is completed. If you do, you need
@@ -3151,7 +3144,7 @@ the object produced by the producer field.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-predefined-beans-in-cdi-applications"><a class="anchor" href="#using-predefined-beans-in-cdi-applications"></a>Using Predefined Beans in CDI Applications</h3>
+<h3 id="_using_predefined_beans_in_cdi_applications">4.4. Using Predefined Beans in CDI Applications</h3>
 <div class="paragraph">
 <p>Jakarta EE provides predefined beans that implement the following
 interfaces.</p>
@@ -3297,7 +3290,7 @@ public <span class="type">class</span> <span class="class">TransactionServlet</s
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-events-in-cdi-applications"><a class="anchor" href="#using-events-in-cdi-applications"></a>Using Events in CDI Applications</h3>
+<h3 id="_using_events_in_cdi_applications">4.5. Using Events in CDI Applications</h3>
 <div class="paragraph">
 <p>Events allow beans to communicate without any compile-time dependency.
 One bean can define an event, another bean can fire the event, and yet
@@ -3305,7 +3298,7 @@ another bean can handle the event. In addition, events can be fired asynchronous
 and even in separate tiers of the application.</p>
 </div>
 <div class="sect3">
-<h4 id="defining-events"><a class="anchor" href="#defining-events"></a>Defining Events</h4>
+<h4 id="defining-events">4.5.1. Defining Events</h4>
 <div class="paragraph">
 <p>An event consists of the following:</p>
 </div>
@@ -3344,7 +3337,7 @@ of <code>PaymentEvent</code>. Every event also has the default qualifier <code>@
 </div>
 </div>
 <div class="sect3">
-<h4 id="using-observer-methods-to-handle-events"><a class="anchor" href="#using-observer-methods-to-handle-events"></a>Using Observer Methods to Handle Events</h4>
+<h4 id="_using_observer_methods_to_handle_events">4.5.2. Using Observer Methods to Handle Events</h4>
 <div class="paragraph">
 <p>An event handler uses an observer method to consume events.</p>
 </div>
@@ -3376,7 +3369,7 @@ defines two observer methods, one for each type of <code>PaymentEvent</code>:</p
 </div>
 </div>
 <div class="sect4">
-<h5 id="conditional-and-transactional-observer-methods"><a class="anchor" href="#conditional-and-transactional-observer-methods"></a>Conditional and Transactional Observer Methods</h5>
+<h5 id="conditional-and-transactional-observer-methods">Conditional and Transactional Observer Methods</h5>
 <div class="paragraph">
 <p>Observer methods can also be conditional or transactional:</p>
 </div>
@@ -3436,7 +3429,7 @@ called.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="observer-method-ordering"><a class="anchor" href="#observer-method-ordering"></a>Observer Method Ordering</h5>
+<h5 id="observer-method-ordering">Observer Method Ordering</h5>
 <div class="paragraph">
 <p>Before a certain observer event notification is generated, the container determines the order in which observer methods for that event are invoked. Observer method order is established through the declaration of the <code>@Priority</code> annotation on an event parameter of an observer method, as in the following example:</p>
 </div>
@@ -3464,12 +3457,12 @@ called.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="firing-events"><a class="anchor" href="#firing-events"></a>Firing Events</h4>
+<h4 id="_firing_events">4.5.3. Firing Events</h4>
 <div class="paragraph">
 <p>Beans fire events by implementing an instance of the <code>javax.enterprise.event.Event</code> interface. Events can be fired synchronously or asynchronously.</p>
 </div>
 <div class="sect4">
-<h5 id="firing-events-synchronously"><a class="anchor" href="#firing-events-synchronously"></a>Firing Events Synchronously</h5>
+<h5 id="firing-events-synchronously">Firing Events Synchronously</h5>
 <div class="paragraph">
 <p>To activate an event synchronously, call the <code>javax.enterprise.event.Event.fire</code>
 method. This method fires an event and notifies any observer methods.</p>
@@ -3524,7 +3517,7 @@ payload. The fired event is then consumed by the observer methods.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="firing-events-asynchronously"><a class="anchor" href="#firing-events-asynchronously"></a>Firing Events Asynchronously</h5>
+<h5 id="firing-events-asynchronously">Firing Events Asynchronously</h5>
 <div class="paragraph">
 <p>To activate an event asynchronously, call the <code>javax.enterprise.event.Event.fireAsync</code> method. This method calls all resolved asynchronous observers in one or more different threads.</p>
 </div>
@@ -3551,7 +3544,7 @@ payload. The fired event is then consumed by the observer methods.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-interceptors-in-cdi-applications"><a class="anchor" href="#using-interceptors-in-cdi-applications"></a>Using Interceptors in CDI Applications</h3>
+<h3 id="_using_interceptors_in_cdi_applications">4.6. Using Interceptors in CDI Applications</h3>
 <div class="paragraph">
 <p>An interceptor is a class used to interpose in method invocations or
 lifecycle events that occur in an associated target class. The
@@ -3689,7 +3682,7 @@ need to specify the interceptor in the <code>beans.xml</code> file when you use 
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-decorators-in-cdi-applications"><a class="anchor" href="#using-decorators-in-cdi-applications"></a>Using Decorators in CDI Applications</h3>
+<h3 id="_using_decorators_in_cdi_applications">4.7. Using Decorators in CDI Applications</h3>
 <div class="paragraph">
 <p>A decorator is a Java class that is annotated
 <code>javax.decorator.Decorator</code> and that has a corresponding <code>decorators</code>
@@ -3793,7 +3786,7 @@ annotation.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-stereotypes-in-cdi-applications"><a class="anchor" href="#using-stereotypes-in-cdi-applications"></a>Using Stereotypes in CDI Applications</h3>
+<h3 id="_using_stereotypes_in_cdi_applications">4.8. Using Stereotypes in CDI Applications</h3>
 <div class="paragraph">
 <p>A stereotype is a kind of annotation, applied to a bean, that
 incorporates other annotations. Stereotypes can be particularly useful
@@ -3902,7 +3895,7 @@ specifies that a bean is both <code>@Named</code> and <code>@RequestScoped</code
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-the-built-in-annotation-literals"><a class="anchor" href="#using-the-built-in-annotation-literals"></a>Using the Built-In Annotation Literals</h3>
+<h3 id="using-the-built-in-annotation-literals">4.9. Using the Built-In Annotation Literals</h3>
 <div class="paragraph">
 <p>The following built-in annotations define a <code>Literal</code> static nested class, which can be used as a convenience feature for creating instances of annotations:</p>
 </div>
@@ -3960,7 +3953,7 @@ specifies that a bean is both <code>@Named</code> and <code>@RequestScoped</code
 </div>
 </div>
 <div class="sect2">
-<h3 id="using-the-configurators-interfaces"><a class="anchor" href="#using-the-configurators-interfaces"></a>Using the Configurators Interfaces</h3>
+<h3 id="using-the-configurators-interfaces">4.10. Using the Configurators Interfaces</h3>
 <div class="paragraph">
 <p>The CDI 2.0 specification defines the following Configurators interfaces, which are used for dynamically defining and modifying CDI objects:</p>
 </div>
@@ -4041,7 +4034,7 @@ specifies that a bean is both <code>@Named</code> and <code>@RequestScoped</code
 </div>
 </div>
 <div class="sect1">
-<h2 id="bootstrapping-a-cdi-container-in-java-se"><a class="anchor" href="#bootstrapping-a-cdi-container-in-java-se"></a>Bootstrapping a CDI Container in Java SE</h2>
+<h2 id="bootstrapping-a-cdi-container-in-java-se">5. Bootstrapping a CDI Container in Java SE</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This chapter explains how to use the API for bootstrapping a CDI container in Java SE. This capability allows you to run CDI applications on Java SE and obtain beans, independently of an application server or any Jakarta EE APIs.</p>
@@ -4050,7 +4043,7 @@ specifies that a bean is both <code>@Named</code> and <code>@RequestScoped</code
 <p>For more information about bootstrapping a CDI container in Java SE, see the <em>Weld Reference Guide</em> at <code><a href="http://weld.cdi-spec.org/documentation/" class="bare">http://weld.cdi-spec.org/documentation/</a></code>.</p>
 </div>
 <div class="sect2">
-<h3 id="the-bootstrap-api"><a class="anchor" href="#the-bootstrap-api"></a>The Bootstrap API</h3>
+<h3 id="the-bootstrap-api">5.1. The Bootstrap API</h3>
 <div class="paragraph">
 <p>The API for bootstrapping a CDI container in Java SE consists of the following entities:</p>
 </div>
@@ -4094,7 +4087,7 @@ specifies that a bean is both <code>@Named</code> and <code>@RequestScoped</code
 </div>
 </div>
 <div class="sect1">
-<h2 id="running-the-advanced-contexts-and-dependency-injection-examples"><a class="anchor" href="#running-the-advanced-contexts-and-dependency-injection-examples"></a>Running the Advanced Contexts and Dependency Injection Examples</h2>
+<h2 id="_running_the_advanced_contexts_and_dependency_injection_examples">6. Running the Advanced Contexts and Dependency Injection Examples</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a id="GKHRE"></a><a id="running-the-advanced-contexts-and-dependency-injection-examples"></a></p>
@@ -4107,7 +4100,7 @@ examples that use CDI.</p>
 <p><a id="A1251406"></a><a id="building-and-running-the-cdi-advanced-examples"></a></p>
 </div>
 <div class="sect2">
-<h3 id="building-and-running-the-cdi-advanced-examples"><a class="anchor" href="#building-and-running-the-cdi-advanced-examples"></a>Building and Running the CDI Advanced Examples</h3>
+<h3 id="_building_and_running_the_cdi_advanced_examples">6.1. Building and Running the CDI Advanced Examples</h3>
 <div class="paragraph">
 <p>The examples are in the <code><em>tut-install</em>/examples/cdi/</code> directory. To build
 and run the examples, you will do the following.</p>
@@ -4160,7 +4153,7 @@ a Bean</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-encoder-example-using-alternatives"><a class="anchor" href="#the-encoder-example-using-alternatives"></a>The encoder Example: Using Alternatives</h3>
+<h3 id="_the_encoder_example_using_alternatives">6.2. The encoder Example: Using Alternatives</h3>
 <div class="paragraph">
 <p>The <code>encoder</code> example shows how to use alternatives to choose between
 two beans at deployment time, as described in
@@ -4193,7 +4186,7 @@ directory.</p>
 <p><a id="GKHQA"></a><a id="the-coder-interface-and-implementations"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-coder-interface-and-implementations"><a class="anchor" href="#the-coder-interface-and-implementations"></a>The Coder Interface and Implementations</h4>
+<h4 id="_the_coder_interface_and_implementations">6.2.1. The Coder Interface and Implementations</h4>
 <div class="paragraph">
 <p>The <code>Coder</code> interface contains just one method, <code>codeString</code>, that takes
 two arguments: a string, and an integer value that specifies how the
@@ -4256,7 +4249,7 @@ used.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-encoder-facelets-page-and-managed-bean"><a class="anchor" href="#the-encoder-facelets-page-and-managed-bean"></a>The encoder Facelets Page and Managed Bean</h4>
+<h4 id="_the_encoder_facelets_page_and_managed_bean">6.2.2. The encoder Facelets Page and Managed Bean</h4>
 <div class="paragraph">
 <p>The simple Facelets page for the <code>encoder</code> example, <code>index.xhtml</code>, asks
 the user to enter the string and integer values and passes them to the
@@ -4363,7 +4356,7 @@ Facelets page:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-encoder-example"><a class="anchor" href="#running-the-encoder-example"></a>Running the encoder Example</h4>
+<h4 id="_running_the_encoder_example">6.2.3. Running the encoder Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>encoder</code> application.</p>
@@ -4372,7 +4365,7 @@ run the <code>encoder</code> application.</p>
 <p><a id="GKHOW"></a><a id="to-build-package-and-deploy-the-encoder-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-encoder-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-encoder-example-using-netbeans-ide"></a>To Build, Package, and Deploy the encoder Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_deploy_the_encoder_example_using_netbeans_ide">To Build, Package, and Deploy the encoder Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4413,7 +4406,7 @@ GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-encoder-example-using-netbeans-ide"><a class="anchor" href="#to-run-the-encoder-example-using-netbeans-ide"></a>To Run the encoder Example Using NetBeans IDE</h5>
+<h5 id="_to_run_the_encoder_example_using_netbeans_ide">To Run the encoder Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4493,7 +4486,7 @@ enter <code>Java</code> and <code>4</code>, the result is:</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-encoder-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-encoder-example-using-maven"></a>To Build, Package, and Deploy the encoder Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_encoder_example_using_maven">To Build, Package, and Deploy the encoder Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4529,7 +4522,7 @@ GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-encoder-example-using-maven"><a class="anchor" href="#to-run-the-encoder-example-using-maven"></a>To Run the encoder Example Using Maven</h5>
+<h5 id="_to_run_the_encoder_example_using_maven">To Run the encoder Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4620,7 +4613,7 @@ enter <code>Java</code> and <code>4</code>, the result is:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-producermethods-example-using-a-producer-method-to-choose-a-bean-implementation"><a class="anchor" href="#the-producermethods-example-using-a-producer-method-to-choose-a-bean-implementation"></a>The producermethods Example: Using a Producer Method to Choose a Bean Implementation</h3>
+<h3 id="_the_producermethods_example_using_a_producer_method_to_choose_a_bean_implementation">6.3. The producermethods Example: Using a Producer Method to Choose a Bean Implementation</h3>
 <div class="paragraph">
 <p>The <code>producermethods</code> example shows how to use a producer method to
 choose between two beans at runtime, as described in
@@ -4650,7 +4643,7 @@ the application to change its behavior.</p>
 <p><a id="GKHRO"></a><a id="components-of-the-producermethods-example"></a></p>
 </div>
 <div class="sect3">
-<h4 id="components-of-the-producermethods-example"><a class="anchor" href="#components-of-the-producermethods-example"></a>Components of the producermethods Example</h4>
+<h4 id="_components_of_the_producermethods_example">6.3.1. Components of the producermethods Example</h4>
 <div class="paragraph">
 <p>The components of <code>producermethods</code> are very much like those for
 <code>encoder</code>, with some significant differences.</p>
@@ -4748,7 +4741,7 @@ whose selected value is assigned to the property <code>coderBean.coderType</code
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-producermethods-example"><a class="anchor" href="#running-the-producermethods-example"></a>Running the producermethods Example</h4>
+<h4 id="_running_the_producermethods_example">6.3.2. Running the producermethods Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>producermethods</code> application.</p>
@@ -4775,7 +4768,7 @@ Using Maven</a></p>
 <p><a id="GKHPE"></a><a id="to-build-package-and-deploy-the-producermethods-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-producermethods-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-producermethods-example-using-netbeans-ide"></a>To Build, Package, and Deploy the producermethods Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_deploy_the_producermethods_example_using_netbeans_ide">To Build, Package, and Deploy the producermethods Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4816,7 +4809,7 @@ deploys it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-producermethods-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-producermethods-example-using-maven"></a>To Build, Package, and Deploy the producermethods Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_producermethods_example_using_maven">To Build, Package, and Deploy the producermethods Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4852,7 +4845,7 @@ deploys it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-producermethods-example"><a class="anchor" href="#to-run-the-producermethods-example"></a>To Run the producermethods Example</h5>
+<h5 id="_to_run_the_producermethods_example">To Run the producermethods Example</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -4881,7 +4874,7 @@ string or the input values you specified.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-producerfields-example-using-producer-fields-to-generate-resources"><a class="anchor" href="#the-producerfields-example-using-producer-fields-to-generate-resources"></a>The producerfields Example: Using Producer Fields to Generate Resources</h3>
+<h3 id="_the_producerfields_example_using_producer_fields_to_generate_resources">6.4. The producerfields Example: Using Producer Fields to Generate Resources</h3>
 <div class="paragraph">
 <p>The <code>producerfields</code> example, which allows you to create a to-do list,
 shows how to use a producer field to generate objects that can then be
@@ -4923,7 +4916,7 @@ directory.</p>
 <p><a id="GKHPP"></a><a id="the-producer-field-for-the-producerfields-example"></a></p>
 </div>
 <div class="sect3">
-<h4 id="the-producer-field-for-the-producerfields-example"><a class="anchor" href="#the-producer-field-for-the-producerfields-example"></a>The Producer Field for the producerfields Example</h4>
+<h4 id="_the_producer_field_for_the_producerfields_example">6.4.1. The Producer Field for the producerfields Example</h4>
 <div class="paragraph">
 <p>The most important component of the <code>producerfields</code> example is the
 smallest, the <code>db.UserDatabaseEntityManager</code> class, which isolates the
@@ -5020,7 +5013,7 @@ an application-managed entity manager.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-producerfields-entity-and-session-bean"><a class="anchor" href="#the-producerfields-entity-and-session-bean"></a>The producerfields Entity and Session Bean</h4>
+<h4 id="_the_producerfields_entity_and_session_bean">6.4.2. The producerfields Entity and Session Bean</h4>
 <div class="paragraph">
 <p>The <code>producerfields</code> example contains a simple entity class,
 <code>entity.ToDo</code>, and a stateful session bean, <code>ejb.RequestBean</code>, that uses
@@ -5116,7 +5109,7 @@ created so far by creating a query:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-producerfields-facelets-pages-and-managed-bean"><a class="anchor" href="#the-producerfields-facelets-pages-and-managed-bean"></a>The producerfields Facelets Pages and Managed Bean</h4>
+<h4 id="_the_producerfields_facelets_pages_and_managed_bean">6.4.3. The producerfields Facelets Pages and Managed Bean</h4>
 <div class="paragraph">
 <p>The <code>producerfields</code> example has two Facelets pages, <code>index.xhtml</code> and
 <code>todolist.xhtml</code>. The simple form on the <code>index.xhtml</code> page asks the
@@ -5245,7 +5238,7 @@ Back button returns the user to the <code>index.xhtml</code> page.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-producerfields-example"><a class="anchor" href="#running-the-producerfields-example"></a>Running the producerfields Example</h4>
+<h4 id="_running_the_producerfields_example">6.4.4. Running the producerfields Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>producerfields</code> application.</p>
@@ -5272,7 +5265,7 @@ Using Maven</a></p>
 <p><a id="GKHPB"></a><a id="to-build-package-and-deploy-the-producerfields-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-producerfields-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-producerfields-example-using-netbeans-ide"></a>To Build, Package, and Deploy the producerfields Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_deploy_the_producerfields_example_using_netbeans_ide">To Build, Package, and Deploy the producerfields Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5318,7 +5311,7 @@ deploys it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-producerfields-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-producerfields-example-using-maven"></a>To Build, Package, and Deploy the producerfields Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_producerfields_example_using_maven">To Build, Package, and Deploy the producerfields Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5359,7 +5352,7 @@ deploys it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-producerfields-example"><a class="anchor" href="#to-run-the-producerfields-example"></a>To Run the producerfields Example</h5>
+<h5 id="_to_run_the_producerfields_example">To Run the producerfields Example</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5400,7 +5393,7 @@ you created.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-billpayment-example-using-events-and-interceptors"><a class="anchor" href="#the-billpayment-example-using-events-and-interceptors"></a>The billpayment Example: Using Events and Interceptors</h3>
+<h3 id="_the_billpayment_example_using_events_and_interceptors">6.5. The billpayment Example: Using Events and Interceptors</h3>
 <div class="paragraph">
 <p>The <code>billpayment</code> example shows how to use both events and interceptors.</p>
 </div>
@@ -5438,7 +5431,7 @@ directory.</p>
 <p><a id="CHDIBGDF"></a><a id="overview-of-the-billpayment-example"></a></p>
 </div>
 <div class="sect3">
-<h4 id="overview-of-the-billpayment-example"><a class="anchor" href="#overview-of-the-billpayment-example"></a>Overview of the billpayment Example</h4>
+<h4 id="_overview_of_the_billpayment_example">6.5.1. Overview of the billpayment Example</h4>
 <div class="paragraph">
 <p>The example simulates paying an amount using a debit card or credit
 card. When the user chooses a payment method, the managed bean creates
@@ -5454,7 +5447,7 @@ two methods of another class.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-paymentevent-event-class"><a class="anchor" href="#the-paymentevent-event-class"></a>The PaymentEvent Event Class</h4>
+<h4 id="_the_paymentevent_event_class">6.5.2. The PaymentEvent Event Class</h4>
 <div class="paragraph">
 <p>The event class, <code>event.PaymentEvent</code>, is a simple bean class that
 contains a no-argument constructor. It also has a <code>toString</code> method and
@@ -5494,7 +5487,7 @@ interception of its getter and setter methods.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-paymenthandler-event-listener"><a class="anchor" href="#the-paymenthandler-event-listener"></a>The PaymentHandler Event Listener</h4>
+<h4 id="_the_paymenthandler_event_listener">6.5.3. The PaymentHandler Event Listener</h4>
 <div class="paragraph">
 <p>The event listener, <code>listener.PaymentHandler</code>, contains two observer
 methods, one for each of the two event types:</p>
@@ -5541,7 +5534,7 @@ can be intercepted.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-billpayment-facelets-pages-and-managed-bean"><a class="anchor" href="#the-billpayment-facelets-pages-and-managed-bean"></a>The billpayment Facelets Pages and Managed Bean</h4>
+<h4 id="_the_billpayment_facelets_pages_and_managed_bean">6.5.4. The billpayment Facelets Pages and Managed Bean</h4>
 <div class="paragraph">
 <p>The <code>billpayment</code> example contains two Facelets pages, <code>index.xhtml</code> and
 the very simple <code>response.xhtml</code>. The body of <code>index.xhtml</code> looks like
@@ -5714,7 +5707,7 @@ expression to display the payment method:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-loggedinterceptor-interceptor-class"><a class="anchor" href="#the-loggedinterceptor-interceptor-class"></a>The LoggedInterceptor Interceptor Class</h4>
+<h4 id="_the_loggedinterceptor_interceptor_class">6.5.5. The LoggedInterceptor Interceptor Class</h4>
 <div class="paragraph">
 <p>The interceptor class, <code>LoggedInterceptor</code>, and its interceptor binding,
 <code>Logged</code>, are both defined in the <code>interceptor</code> package. The <code>Logged</code>
@@ -5784,7 +5777,7 @@ annotated <code>@Logged</code>, so all their methods are intercepted. In
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-billpayment-example"><a class="anchor" href="#running-the-billpayment-example"></a>Running the billpayment Example</h4>
+<h4 id="_running_the_billpayment_example">6.5.6. Running the billpayment Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>billpayment</code> application.</p>
@@ -5811,7 +5804,7 @@ Using Maven</a></p>
 <p><a id="GKHQS"></a><a id="to-build-package-and-deploy-the-billpayment-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-billpayment-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-billpayment-example-using-netbeans-ide"></a>To Build, Package, and Deploy the billpayment Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_deploy_the_billpayment_example_using_netbeans_ide">To Build, Package, and Deploy the billpayment Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5852,7 +5845,7 @@ it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-billpayment-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-billpayment-example-using-maven"></a>To Build, Package, and Deploy the billpayment Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_billpayment_example_using_maven">To Build, Package, and Deploy the billpayment Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5888,7 +5881,7 @@ it to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-billpayment-example"><a class="anchor" href="#to-run-the-billpayment-example"></a>To Run the billpayment Example</h5>
+<h5 id="_to_run_the_billpayment_example">To Run the billpayment Example</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5957,7 +5950,7 @@ INFO: PaymentHandler - Debit <span class="predefined-type">Handler</span>: Debit
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-decorators-example-decorating-a-bean"><a class="anchor" href="#the-decorators-example-decorating-a-bean"></a>The decorators Example: Decorating a Bean</h3>
+<h3 id="_the_decorators_example_decorating_a_bean">6.6. The decorators Example: Decorating a Bean</h3>
 <div class="paragraph">
 <p>The <code>decorators</code> example, which is yet another variation on the
 <code>encoder</code> example, shows how to use a decorator to implement additional
@@ -5988,7 +5981,7 @@ directory.</p>
 <p><a id="CHDDDFCI"></a><a id="overview-of-the-decorators-example"></a></p>
 </div>
 <div class="sect3">
-<h4 id="overview-of-the-decorators-example"><a class="anchor" href="#overview-of-the-decorators-example"></a>Overview of the decorators Example</h4>
+<h4 id="_overview_of_the_decorators_example">6.6.1. Overview of the decorators Example</h4>
 <div class="paragraph">
 <p>Instead of having the user choose between two alternative
 implementations of an interface at deployment time or runtime, a
@@ -6005,7 +5998,7 @@ files.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="components-of-the-decorators-example"><a class="anchor" href="#components-of-the-decorators-example"></a>Components of the decorators Example</h4>
+<h4 id="_components_of_the_decorators_example">6.6.2. Components of the decorators Example</h4>
 <div class="paragraph">
 <p>The <code>decorators</code> example is very similar to the <code>encoder</code> example
 described in <a href="#GKHPU">The encoder Example:
@@ -6071,7 +6064,7 @@ classes are identical to the versions in the <code>encoder</code> example.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="running-the-decorators-example"><a class="anchor" href="#running-the-decorators-example"></a>Running the decorators Example</h4>
+<h4 id="_running_the_decorators_example">6.6.3. Running the decorators Example</h4>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>decorators</code> application.</p>
@@ -6098,7 +6091,7 @@ Maven</a></p>
 <p><a id="GKPAG"></a><a id="to-build-package-and-deploy-the-decorators-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-decorators-example-using-netbeans-ide"><a class="anchor" href="#to-build-package-and-deploy-the-decorators-example-using-netbeans-ide"></a>To Build, Package, and Deploy the decorators Example Using NetBeans IDE</h5>
+<h5 id="_to_build_package_and_deploy_the_decorators_example_using_netbeans_ide">To Build, Package, and Deploy the decorators Example Using NetBeans IDE</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -6139,7 +6132,7 @@ to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-build-package-and-deploy-the-decorators-example-using-maven"><a class="anchor" href="#to-build-package-and-deploy-the-decorators-example-using-maven"></a>To Build, Package, and Deploy the decorators Example Using Maven</h5>
+<h5 id="_to_build_package_and_deploy_the_decorators_example_using_maven">To Build, Package, and Deploy the decorators Example Using Maven</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -6175,7 +6168,7 @@ to GlassFish Server.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="to-run-the-decorators-example"><a class="anchor" href="#to-run-the-decorators-example"></a>To Run the decorators Example</h5>
+<h5 id="_to_run_the_decorators_example">To Run the decorators Example</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -6225,7 +6218,7 @@ INFO: Entering method: codeString in <span class="type">class</span> <span class
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 18:34:55 UTC
+Last updated 2020-04-26 19:19:24 UTC
 </div>
 </div>
 <style>
