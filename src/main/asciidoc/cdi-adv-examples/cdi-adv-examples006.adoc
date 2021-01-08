@@ -7,14 +7,8 @@ The `decorators` example, which is yet another variation on the
 business logic for a bean.
 
 The source files are located in the
-`_tut-install_/examples/cdi/decorators/src/main/java/jakarta/tutorial/decorators/`
+`_tut-install_/examples/cdi/decorators/src/main/java/ee/jakarta/tutorial/decorators/`
 directory.
-
-The following topics are addressed here:
-
-* link:#CHDDDFCI[Overview of the decorators Example]
-* link:#GKPAQ[Components of the decorators Example]
-* link:#GKPBK[Running the decorators Example]
 
 [[CHDDDFCI]][[overview-of-the-decorators-example]]
 
@@ -80,10 +74,10 @@ The `beans.xml` file specifies both the decorator and the interceptor:
 [source,xml]
 ----
     <decorators>
-        <class>jakarta.tutorial.decorators.CoderDecorator</class>
+        <class>ee.jakarta.tutorial.decorators.CoderDecorator</class>
     </decorators>
     <interceptors>
-        <class>jakarta.tutorial.decorators.LoggedInterceptor</class>
+        <class>ee.jakarta.tutorial.decorators.LoggedInterceptor</class>
     </interceptors>
 ----
 
@@ -93,14 +87,6 @@ The `beans.xml` file specifies both the decorator and the interceptor:
 
 You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the `decorators` application.
-
-The following topics are addressed here:
-
-* link:#GKPAG[To Build, Package, and Deploy the decorators Example Using
-NetBeans IDE]
-* link:#GKPAJ[To Build, Package, and Deploy the decorators Example Using
-Maven]
-* link:#GKPAN[To Run the decorators Example]
 
 [[GKPAG]][[to-build-package-and-deploy-the-decorators-example-using-netbeans-ide]]
 
@@ -178,6 +164,6 @@ The output from the interceptors appears:
 +
 [source,java]
 ----
-INFO: Entering method: encodeString in class jakarta.tutorial.decorators.CoderBean
-INFO: Entering method: codeString in class jakarta.tutorial.decorators.CoderImpl
+INFO: Entering method: encodeString in class ee.jakarta.tutorial.decorators.CoderBean
+INFO: Entering method: codeString in class ee.jakarta.tutorial.decorators.CoderImpl
 ----

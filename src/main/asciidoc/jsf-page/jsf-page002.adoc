@@ -568,7 +568,7 @@ Here is an example of an `h:inputText` tag:
              required="true"
              requiredMessage="#{bundle.ReqCustomerName}">
     <f:valueChangeListener
-        type="jakarta.tutorial.dukesbookstore.listeners.NameChanged" />
+        type="ee.jakarta.tutorial.dukesbookstore.listeners.NameChanged" />
  </h:inputText>
 ----
 
@@ -807,7 +807,7 @@ an example:
 ----
 <h:commandLink id="Duke" action="bookstore">
     <f:actionListener
-        type="jakarta.tutorial.dukesbookstore.listeners.LinkBookChangeListener" />
+        type="ee.jakarta.tutorial.dukesbookstore.listeners.LinkBookChangeListener" />
     <h:outputText value="#{bundle.Book201}"/>
 /h:commandLink>
 ----
@@ -940,7 +940,7 @@ Here is an example:
                  required="true"
                  requiredMessage="#{bundle.ReqCustomerName}">
          <f:valueChangeListener
-             type="jakarta.tutorial.dukesbookstore.listeners.NameChanged" />
+             type="ee.jakarta.tutorial.dukesbookstore.listeners.NameChanged" />
     </h:inputText>
     <h:message styleClass="error-message" for="name"/>
 
@@ -1321,7 +1321,7 @@ displayed as a row. Here is an example:
                      title="#{bundle.ItemQuantity}">
             <f:validateLongRange minimum="1"/>
             <f:valueChangeListener
-                type="jakarta.tutorial.dukesbookstore.listeners.QuantityChanged"/>
+                type="ee.jakarta.tutorial.dukesbookstore.listeners.QuantityChanged"/>
         </h:inputText>
     </h:column>
     <h:column>
@@ -1660,14 +1660,6 @@ link:#GIQWQ[Using View Parameters to Configure Bookmarkable URLs].
 You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the `bookmarks` example. The source code for this example is in the
 tut-install`/examples/web/jsf/bookmarks/` directory.
-
-The following topics are addressed here:
-
-* link:#CHDIEHEB[To Build, Package, and Deploy the bookmarks Example
-Using NetBeans IDE]
-* link:#CHDEFJEF[To Build, Package, and Deploy the bookmarks Example
-Using Maven]
-* link:#CHDGEBCB[To Run the bookmarks Example]
 
 [[CHDIEHEB]][[to-build-package-and-deploy-the-bookmarks-example-using-netbeans-ide]]
 

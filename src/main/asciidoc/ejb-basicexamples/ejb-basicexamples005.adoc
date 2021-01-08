@@ -513,18 +513,18 @@ Here's the source code for the `TimerSessionBean` class:
 
 [source,java]
 ----
-package jakarta.tutorial.timersession.ejb;
+package ee.jakarta.tutorial.timersession.ejb;
 
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.annotation.Resource;
-import javax.ejb.Schedule;
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
-import javax.ejb.Timeout;
-import javax.ejb.Timer;
-import javax.ejb.TimerService;
+import jakarta.annotation.Resource;
+import jakarta.ejb.Schedule;
+import jakarta.ejb.Singleton;
+import jakarta.ejb.Startup;
+import jakarta.ejb.Timeout;
+import jakarta.ejb.Timer;
+import jakarta.ejb.TimerService;
 
 @Singleton
 @Startup
@@ -610,13 +610,6 @@ to virtual machine constraints.
 
 You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the `timersession` example.
-
-The following topics are addressed here:
-
-* link:#GIQNI[To Run the timersession Example Using NetBeans IDE]
-* link:#GIQNQ[To Build, Package, and Deploy the timersession Example
-Using Maven]
-* link:#GIQOP[To Run the Web Client]
 
 [[GIQNI]][[to-run-the-timersession-example-using-netbeans-ide]]
 

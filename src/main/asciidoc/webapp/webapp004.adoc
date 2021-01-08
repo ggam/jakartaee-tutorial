@@ -9,12 +9,6 @@ to view the application files, or you can use NetBeans IDE.
 The source code for this application is in the
 `_tut-install_/examples/web/servlet/hello2/` directory.
 
-The following topics are addressed here:
-
-* link:#mapping-urls-to-web-components[Mapping URLs to Web Components]
-* link:#examining-the-hello2-web-module[Examining the hello2 Web Module]
-* link:#running-the-hello2-example[Running the hello2 Example]
-
 [[BNAEP]][[mapping-urls-to-web-components]]
 
 === Mapping URLs to Web Components
@@ -78,7 +72,7 @@ tut-install/examples/web/servlet
 ----
 3.  Select the `hello2` folder and click Open Project.
 4.  Expand the Source Packages node, then expand the
-`jakarta.tutorial.hello2` node.
+`ee.jakarta.tutorial.hello2` node.
 5.  Double-click the `GreetingServlet.java` file to view it.
 +
 This servlet overrides the `doGet` method, implementing the `GET` method
@@ -164,11 +158,6 @@ public class ResponseServlet extends HttpServlet {
 
 You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the `hello2` example.
-
-The following topics are addressed here:
-
-* link:#GJSED[To Run the hello2 Example Using NetBeans IDE]
-* link:#GJSHX[To Run the hello2 Example Using Maven]
 
 [[GJSED]][[to-run-the-hello2-example-using-netbeans-ide]]
 

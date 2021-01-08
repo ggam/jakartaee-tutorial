@@ -184,10 +184,6 @@ principal that allows its credential to be used.
 Follow these steps for managing users before you run the tutorial
 examples.
 
-The following topics are addressed here:
-
-* link:#BNBXS[To Add Users to GlassFish Server]
-
 [[BNBXS]][[to-add-users-to-glassfish-server]]
 
 ==== To Add Users to GlassFish Server
@@ -268,8 +264,8 @@ The enterprise bean would be annotated as shown in the following code:
 
 [source,java]
 ----
-import javax.annotation.security.DeclareRoles;
-import javax.annotation.security.RolesAllowed;
+import jakarta.annotation.security.DeclareRoles;
+import jakarta.annotation.security.RolesAllowed;
 ...
 @DeclareRoles({"DEPT-ADMIN", "DIRECTOR"})
 @Stateless public class PayrollBean implements Payroll {

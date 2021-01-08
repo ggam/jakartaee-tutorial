@@ -6,14 +6,6 @@ Programmatic security is used by security-aware applications when
 declarative security alone is not sufficient to express the security
 model of the application.
 
-The following topics are addressed here:
-
-* link:#authenticating-users-programmatically[Authenticating Users Programmatically]
-* link:#checking-caller-identity-programmatically[Checking Caller Identity Programmatically]
-* link:#testing-access-to-a-resource-programmatically[Testing Access to a Resource Programmatically]
-* link:#example-code-for-programmatic-security[Example Code for Programmatic Security]
-* link:#declaring-and-linking-role-references[Declaring and Linking Role References]
-
 [[GIRCJ]][[authenticating-users-programmatically]]
 
 === Authenticating Users Programmatically
@@ -64,12 +56,12 @@ package test;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.math.BigDecimal;
-import javax.ejb.EJB;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.ejb.EJB;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(name="TutorialServlet", urlPatterns={"/TutorialServlet"})
 public class TutorialServlet extends HttpServlet {
@@ -120,8 +112,8 @@ The following example code shows how to use the `authenticate` method:
 package com.example.test;
 
 import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
 
 public class TestServlet extends HttpServlet {
 
@@ -261,9 +253,9 @@ package enterprise.programmatic_login;
 
 import java.io.*;
 import java.net.*;
-import javax.annotation.security.DeclareRoles;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import jakarta.annotation.security.DeclareRoles;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
 
 @DeclareRoles("jakartaeeuser")
 public class LoginServlet extends HttpServlet {

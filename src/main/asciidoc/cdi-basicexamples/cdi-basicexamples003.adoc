@@ -15,12 +15,6 @@ The example includes four source files, a Facelets page and template,
 and configuration files. The configuration files and the template are
 the same as those used for the `simplegreeting` example.
 
-The following topics are addressed here:
-
-* link:#GJDJU[The guessnumber-cdi Source Files]
-* link:#GJDON[The Facelets Page]
-* link:#GJDPW[Running the guessnumber-cdi Example]
-
 [[GJDJU]][[the-guessnumber-cdi-source-files]]
 
 === The guessnumber-cdi Source Files
@@ -33,7 +27,7 @@ The four source files for the `guessnumber-cdi` example are:
 * The `UserNumberBean` managed bean
 
 The source files are located in the
-`_tut-install_/examples/cdi/guessnumber-cdi/src/main/java/jakarta/tutorial/guessnumber`
+`_tut-install_/examples/cdi/guessnumber-cdi/src/main/java/ee/jakarta/tutorial/guessnumber`
 directory.
 
 [[GJDJP]][[the-maxnumber-and-random-qualifier-interfaces]]
@@ -54,7 +48,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Retention;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Target;
-import javax.inject.Qualifier;
+import jakarta.inject.Qualifier;
 
 @Target({TYPE, METHOD, PARAMETER, FIELD})
 @Retention(RUNTIME)
@@ -78,7 +72,7 @@ import static java.lang.annotation.ElementType.TYPE;
 import java.lang.annotation.Retention;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Target;
-import javax.inject.Qualifier;
+import jakarta.inject.Qualifier;
 
 @Target({TYPE, METHOD, PARAMETER, FIELD})
 @Retention(RUNTIME)
@@ -102,8 +96,8 @@ the application:
 package guessnumber;
 
 import java.io.Serializable;
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.Produces;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Produces;
 
 @ApplicationScoped
 public class Generator implements Serializable {
@@ -154,15 +148,15 @@ The bean is defined as follows:
 package guessnumber;
 
 import java.io.Serializable;
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.SessionScoped;
-import javax.enterprise.inject.Instance;
-import javax.faces.application.FacesMessage;
-import javax.faces.component.UIComponent;
-import javax.faces.component.UIInput;
-import javax.faces.context.FacesContext;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.enterprise.inject.Instance;
+import jakarta.faces.application.FacesMessage;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.component.UIInput;
+import jakarta.faces.context.FacesContext;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 @Named
 @SessionScoped
@@ -339,14 +333,6 @@ guess is valid is `userNumberBean.validateNumberRange`.
 
 You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the `guessnumber-cdi` application.
-
-The following topics are addressed here:
-
-* link:#GJDPS[To Build, Package, and Deploy the guessnumber-cdi Example
-Using NetBeans IDE]
-* link:#GJDPR[To Build, Package, and Deploy the guessnumber-cdi Example
-Using Maven]
-* link:#GJDQB[To Run the guessnumber Example]
 
 [[GJDPS]][[to-build-package-and-deploy-the-guessnumber-cdi-example-using-netbeans-ide]]
 

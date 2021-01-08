@@ -25,10 +25,10 @@ the `ConverterBean` class is as follows:
 
 [source,java]
 ----
-package jakarta.tutorial.converter.ejb;
+package ee.jakarta.tutorial.converter.ejb;
 
 import java.math.BigDecimal;
-import javax.ejb.*;
+import jakarta.ejb.*;
 
 @Stateless
 public class ConverterBean {
@@ -118,11 +118,6 @@ Now you are ready to compile the enterprise bean class
 and to package the compiled classes into a WAR file. You can use either
 NetBeans IDE or Maven to build, package, deploy, and run the `converter`
 example.
-
-The following topics are addressed here:
-
-* link:#GIPUM[To Run the converter Example Using NetBeans IDE]
-* link:#GIPVQ[To Run the converter Example Using Maven]
 
 [[GIPUM]][[to-run-the-converter-example-using-netbeans-ide]]
 

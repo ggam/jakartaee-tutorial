@@ -5,17 +5,8 @@
 The `billpayment` example shows how to use both events and interceptors.
 
 The source files are located in the
-`_tut-install_/examples/cdi/billpayment/src/main/java/jakarta/tutorial/billpayment/`
+`_tut-install_/examples/cdi/billpayment/src/main/java/ee/jakarta/tutorial/billpayment/`
 directory.
-
-The following topics are addressed here:
-
-* link:#CHDIBGDF[Overview of the billpayment Example]
-* link:#GKHOK[The PaymentEvent Event Class]
-* link:#GKHRB[The PaymentHandler Event Listener]
-* link:#GKHRJ[The billpayment Facelets Pages and Managed Bean]
-* link:#GKHRQ[The LoggedInterceptor Interceptor Class]
-* link:#GKHPK[Running the billpayment Example]
 
 [[CHDIBGDF]][[overview-of-the-billpayment-example]]
 
@@ -320,7 +311,7 @@ To enable the interceptor, the `beans.xml` file defines it as follows:
 [source,xml]
 ----
 <interceptors>
-    <class>jakarta.tutorial.billpayment.interceptor.LoggedInterceptor</class>
+    <class>ee.jakarta.tutorial.billpayment.interceptor.LoggedInterceptor</class>
 </interceptors>
 ----
 
@@ -335,14 +326,6 @@ annotated `@Logged`, so all their methods are intercepted. In
 
 You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the `billpayment` application.
-
-The following topics are addressed here:
-
-* link:#GKHQS[To Build, Package, and Deploy the billpayment Example
-Using NetBeans IDE]
-* link:#GKHPX[To Build, Package, and Deploy the billpayment Example
-Using Maven]
-* link:#GKHPT[To Run the billpayment Example]
 
 [[GKHQS]][[to-build-package-and-deploy-the-billpayment-example-using-netbeans-ide]]
 

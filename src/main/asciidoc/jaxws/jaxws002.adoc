@@ -105,10 +105,10 @@ class also must define a default, public, no-argument constructor.
 
 [source,java]
 ----
-package jakarta.tutorial.helloservice;
+package ee.jakarta.tutorial.helloservice;
 
-import javax.jws.WebService;
-import javax.jws.WebMethod;
+import jakarta.jws.WebService;
+import jakarta.jws.WebMethod;
 
 @WebService
 public class Hello {
@@ -130,12 +130,6 @@ public class Hello {
 
 You can use either NetBeans IDE or Maven to build, package, and deploy
 the `helloservice-war` application.
-
-The following topics are addressed here:
-
-* link:#BNAYS[To Build, Package, and Deploy the Service Using NetBeans
-IDE]
-* link:#BNAYT[To Build, Package, and Deploy the Service Using Maven]
 
 [[BNAYS]][[to-build-package-and-deploy-the-service-using-netbeans-ide]]
 
@@ -210,10 +204,6 @@ service.
 GlassFish Server allows you to test the methods of a web service
 endpoint.
 
-The following topics are addressed here:
-
-* link:#BNAYW[To Test the Service without a Client]
-
 [[BNAYW]][[to-test-the-service-without-a-client]]
 
 ==== To Test the Service without a Client
@@ -245,11 +235,6 @@ through a port, a local object that acts as a proxy for the remote
 service. The port is created at development time by the `wsimport` Maven
 goal, which generates JAX-WS portable artifacts based on a WSDL file.
 
-The following topics are addressed here:
-
-* link:#BNAYY[Coding the Application Client]
-* link:#BNAYZ[Running the Application Client]
-
 [[BNAYY]][[coding-the-application-client]]
 
 ==== Coding the Application Client
@@ -263,8 +248,8 @@ file:
 +
 [source,java]
 ----
-import jakarta.tutorial.helloservice.endpoint.HelloService;
-import javax.xml.ws.WebServiceRef;
+import ee.jakarta.tutorial.helloservice.endpoint.HelloService;
+import jakarta.xml.ws.WebServiceRef;
 
 public class HelloAppClient {
     @WebServiceRef(wsdlLocation =
@@ -276,7 +261,7 @@ invoking `getHelloPort` on the service:
 +
 [source,java]
 ----
-jakarta.tutorial.helloservice.endpoint.Hello port = service.getHelloPort();
+ee.jakarta.tutorial.helloservice.endpoint.Hello port = service.getHelloPort();
 ----
 +
 The port implements the SEI defined by the service.
@@ -290,15 +275,15 @@ return port.sayHello(arg0);
 
 Here is the full source of `HelloAppClient.java`, which is located in
 the
-`_tut-install_/examples/jaxws/hello-appclient/src/main/java/jakarta/tutorial/hello/appclient/`
+`_tut-install_/examples/jaxws/hello-appclient/src/main/java/ee/jakarta/tutorial/hello/appclient/`
 directory:
 
 [source,java]
 ----
-package jakarta.tutorial.hello.appclient;
+package ee.jakarta.tutorial.hello.appclient;
 
-import jakarta.tutorial.helloservice.endpoint.HelloService;
-import javax.xml.ws.WebServiceRef;
+import ee.jakarta.tutorial.helloservice.endpoint.HelloService;
+import jakarta.xml.ws.WebServiceRef;
 
 public class HelloAppClient {
     @WebServiceRef(wsdlLocation =
@@ -313,7 +298,7 @@ public class HelloAppClient {
     }
 
     private static String sayHello(java.lang.String arg0) {
-        jakarta.tutorial.helloservice.endpoint.Hello port =
+        ee.jakarta.tutorial.helloservice.endpoint.Hello port =
                 service.getHelloPort();
         return port.sayHello(arg0);
     }
@@ -328,10 +313,6 @@ You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the `hello-appclient` application. To build the client, you must
 first have deployed `helloservice-war`, as described in
 link:#BNAYR[Building, Packaging, and Deploying the Service].
-
-The following topics are addressed here:
-
-* link:#CIHBGFGA[To Run the Application Client Using NetBeans IDE]
 
 [[CIHBGFGA]][[to-run-the-application-client-using-netbeans-ide]]
 
@@ -395,11 +376,6 @@ Hello, world.
 `sayHello` method of the web service. Like the application client, it
 makes this call through a port.
 
-The following topics are addressed here:
-
-* link:#GJYFL[Coding the Servlet]
-* link:#GJYGE[Running the Web Client]
-
 [[GJYFL]][[coding-the-servlet]]
 
 ==== Coding the Servlet
@@ -411,9 +387,9 @@ annotation:
 +
 [source,java]
 ----
-import jakarta.tutorial.helloservice.endpoint.HelloService;
+import ee.jakarta.tutorial.helloservice.endpoint.HelloService;
 ...
-import javax.xml.ws.WebServiceRef;
+import jakarta.xml.ws.WebServiceRef;
 ----
 2.  It defines a reference to the web service by specifying the WSDL
 location:
@@ -431,7 +407,7 @@ calls the `sayHello` method on the port:
 private HelloService service;
 ...
 private String sayHello(java.lang.String arg0) {
-    jakarta.tutorial.helloservice.endpoint.Hello port =
+    ee.jakarta.tutorial.helloservice.endpoint.Hello port =
             service.getHelloPort();
     return port.sayHello(arg0);
 }
@@ -445,22 +421,22 @@ out.println("<p>" + sayHello("world") + "</p>");
 
 The significant parts of the `HelloServlet` code follow. The code is
 located in the
-`_tut-install_/examples/jaxws/hello-webclient/src/java/jakarta/tutorial/hello/ webclient/`
+`_tut-install_/examples/jaxws/hello-webclient/src/java/ee/jakarta/tutorial/hello/ webclient/`
 directory.
 
 [source,java]
 ----
-package jakarta.tutorial.hello.webclient;
+package ee.jakarta.tutorial.hello.webclient;
 
-import jakarta.tutorial.helloservice.endpoint.HelloService;
+import ee.jakarta.tutorial.helloservice.endpoint.HelloService;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.xml.ws.WebServiceRef;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.xml.ws.WebServiceRef;
 
 @WebServlet(name="HelloServlet", urlPatterns={"/HelloServlet"})
 public class HelloServlet extends HttpServlet {
@@ -499,7 +475,7 @@ public class HelloServlet extends HttpServlet {
     //   getServletInfo method
 
     private String sayHello(java.lang.String arg0) {
-        jakarta.tutorial.helloservice.endpoint.Hello port =
+        ee.jakarta.tutorial.helloservice.endpoint.Hello port =
                 service.getHelloPort();
         return port.sayHello(arg0);
     }
@@ -514,11 +490,6 @@ You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the `hello-webclient` application. To build the client, you must
 first have deployed `helloservice-war`, as described in
 link:#BNAYR[Building, Packaging, and Deploying the Service].
-
-The following topics are addressed here:
-
-* link:#CIHHFFEC[To Run the Web Client Using NetBeans IDE]
-* link:#CIHHDCEH[To Run the Web Client Using Maven]
 
 [[CIHHFFEC]][[to-run-the-web-client-using-netbeans-ide]]
 
