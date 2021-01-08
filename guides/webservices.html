@@ -526,19 +526,6 @@ The two types of web services discussed in this section can be
 distinguished as "big" web services and "RESTful" web services.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKCDG">"Big" Web Services</a></p>
-</li>
-<li>
-<p><a href="#GKCAW">RESTful Web Services</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKCDG"></a><a id="big-web-services"></a></p>
 </div>
 <div class="sect3">
@@ -813,35 +800,6 @@ with a request method designator. This section explains how to use
 Jakarta REST to annotate Java classes to create RESTful web services.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GILRU">Developing RESTful Web Services with Jakarta REST</a></p>
-</li>
-<li>
-<p><a href="#GILQB">Overview of a Jakarta REST Application</a></p>
-</li>
-<li>
-<p><a href="#GINPW">The @Path Annotation and URI Path Templates</a></p>
-</li>
-<li>
-<p><a href="#GIPYS">Responding to HTTP Methods and Requests</a></p>
-</li>
-<li>
-<p><a href="#GIPZH">Using @Consumes and @Produces to Customize Requests and
-Responses</a></p>
-</li>
-<li>
-<p><a href="#GIPYW">Extracting Request Parameters</a></p>
-</li>
-<li>
-<p><a href="#CIHEGAGI">Configuring Jakarta REST Applications</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GILRU"></a><a id="developing-restful-web-services-with-jax-rs"></a></p>
 </div>
 <div class="sect3">
@@ -1009,15 +967,15 @@ class that uses Jakarta REST annotations:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.hello</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.hello</span>;
 
-<span class="keyword">import</span> <span class="include">javax.ws.rs.Consumes</span>;
-<span class="keyword">import</span> <span class="include">javax.ws.rs.GET</span>;
-<span class="keyword">import</span> <span class="include">javax.ws.rs.PUT</span>;
-<span class="keyword">import</span> <span class="include">javax.ws.rs.Path</span>;
-<span class="keyword">import</span> <span class="include">javax.ws.rs.Produces</span>;
-<span class="keyword">import</span> <span class="include">javax.ws.rs.core.Context</span>;
-<span class="keyword">import</span> <span class="include">javax.ws.rs.core.UriInfo</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ws.rs.Consumes</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ws.rs.GET</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ws.rs.PUT</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ws.rs.Path</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ws.rs.Produces</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ws.rs.core.Context</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ws.rs.core.UriInfo</span>;
 
 <span class="comment">/**
  * Root resource (exposed at &quot;helloworld&quot; path)
@@ -1299,20 +1257,6 @@ following variable names and values are used in the examples:</p>
 GET, POST, PUT, or DELETE) to which the resource is responding.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GIPXS">The Request Method Designator Annotations</a></p>
-</li>
-<li>
-<p><a href="#GIPZE">Using Entity Providers to Map HTTP Response and Request
-Entity Bodies</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GIPXS"></a><a id="the-request-method-designator-annotations"></a></p>
 </div>
 <div class="sect4">
@@ -1553,19 +1497,6 @@ resource can respond to or produce by using the following annotations:</p>
 <p>By default, a resource class can respond to and produce all MIME media
 types of representations specified in the HTTP request and response
 headers.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GIPXF">The @Produces Annotation</a></p>
-</li>
-<li>
-<p><a href="#GIPYT">The @Consumes Annotation</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GIPXF"></a><a id="the-produces-annotation"></a></p>
@@ -2032,20 +1963,6 @@ descriptor</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CIHFEBJF">Configuring a Jakarta REST Application Using a Subclass of
-Application</a></p>
-</li>
-<li>
-<p><a href="#CIHDHAIJ">Configuring the Base URI in web.xml</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CIHFEBJF"></a><a id="configuring-a-jax-rs-application-using-a-subclass-of-application"></a></p>
 </div>
 <div class="sect4">
@@ -2129,22 +2046,6 @@ steps that are needed to create, build, deploy, and test a very simple
 web application that uses Jakarta REST annotations.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GIPYZ">Creating a Simple RESTful Web Service</a></p>
-</li>
-<li>
-<p><a href="#GJVBC">The rsvp Example Application</a></p>
-</li>
-<li>
-<p><a href="#GIRCI">Real-World Examples</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GIPYZ"></a><a id="creating-a-simple-restful-web-service"></a></p>
 </div>
 <div class="sect3">
@@ -2158,16 +2059,6 @@ method.</p>
 <div class="paragraph">
 <p>You can find a version of this application at
 <code><em>tut-install</em>/examples/jaxrs/hello/</code>.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GIQAA">To Create a RESTful Web Service Using NetBeans IDE</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GIQAA"></a><a id="to-create-a-restful-web-service-using-netbeans-ide"></a></p>
@@ -2193,7 +2084,7 @@ method.</p>
 <p>Under Search enter <code>jaxrs-service</code>, select the <code>jaxrs-service-archetype</code>, and click Next.</p>
 </li>
 <li>
-<p>Under Project Name enter <code>HelloWorldApplication</code>, set the Project Location, and set the Package name to <code>jakarta.tutorial.hello</code>, and click Finish.</p>
+<p>Under Project Name enter <code>HelloWorldApplication</code>, set the Project Location, and set the Package name to <code>ee.jakarta.tutorial.hello</code>, and click Finish.</p>
 <div class="paragraph">
 <p>The project is created.</p>
 </div>
@@ -2275,19 +2166,6 @@ to the event, and the responses to the invite are stored in Apache Derby using J
 are exposed in a stateless session enterprise bean.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJVAW">Components of the rsvp Example Application</a></p>
-</li>
-<li>
-<p><a href="#GKCCA">Running the rsvp Example Application</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GJVAW"></a><a id="components-of-the-rsvp-example-application"></a></p>
 </div>
 <div class="sect4">
@@ -2356,7 +2234,7 @@ and displays the invitee&#8217;s current response and a form to change the
 response.</p>
 </div>
 <div class="paragraph">
-<p>The <code>jakarta.tutorial.rsvp.rest.RsvpApplication</code> class defines the root
+<p>The <code>ee.jakarta.tutorial.rsvp.rest.RsvpApplication</code> class defines the root
 application path for the resources by applying the
 <code>javax.ws.rs.ApplicationPath</code> annotation at the class level.</p>
 </div>
@@ -2402,19 +2280,6 @@ Application"</a>.</p>
 <div class="paragraph">
 <p>Both NetBeans IDE and Maven can be used to deploy and run the <code>rsvp</code>
 example application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CIHEFEHA">To Run the rsvp Example Application Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CIHHHIEI">To Run the rsvp Example Application Using Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CIHEFEHA"></a><a id="to-run-the-rsvp-example-application-using-netbeans-ide"></a></p>
@@ -2606,9 +2471,6 @@ how to access REST resources using the Java programming language.</p>
 Java applications.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="paragraph">
 <p><a id="BABBIHEJ"></a><a id="overview-of-the-client-api"></a></p>
 </div>
 <div class="sect2">
@@ -2617,28 +2479,6 @@ Java applications.</p>
 <p>The Jakarta REST Client API provides a high-level API for accessing any REST
 resources, not just Jakarta REST services. The Client API is defined in the
 <code>javax.ws.rs.client</code> package.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDFCABB">Creating a Basic Client Request Using the Client API</a></p>
-</li>
-<li>
-<p><a href="#CHDHBFHJ">Obtaining the Client Instance</a></p>
-</li>
-<li>
-<p><a href="#CHDDCICC">Setting the Client Target</a></p>
-</li>
-<li>
-<p><a href="#CHDDBFCG">Setting Path Parameters in Targets</a></p>
-</li>
-<li>
-<p><a href="#CHDEFCDB">Invoking the Request</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDFCABB"></a><a id="creating-a-basic-client-request-using-the-client-api"></a></p>
@@ -2903,19 +2743,6 @@ services. This section describes how each example application uses the
 Client API.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BABEDFIG">The Client API in the rsvp Example Application</a></p>
-</li>
-<li>
-<p><a href="#CHDGBGID">The Client API in the customer Example Application</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BABEDFIG"></a><a id="the-client-api-in-the-rsvp-example-application"></a></p>
 </div>
 <div class="sect3">
@@ -3115,19 +2942,6 @@ method is called by passing in a new instance of
 Client API.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDGBBCC">Configuring the Client Request</a></p>
-</li>
-<li>
-<p><a href="#CHDEBIGG">Asynchronous Invocations in the Client API</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDGBBCC"></a><a id="configuring-the-client-request"></a></p>
 </div>
 <div class="sect3">
@@ -3135,22 +2949,6 @@ Client API.</p>
 <div class="paragraph">
 <p>Additional configuration options may be added to the client request
 after it is created but before it is invoked.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDHAFBG">Setting Message Headers in the Client Request</a></p>
-</li>
-<li>
-<p><a href="#CHDHFFDJ">Setting Cookies in the Client Request</a></p>
-</li>
-<li>
-<p><a href="#CHDJEFID">Adding Filters to the Client</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDHAFBG"></a><a id="setting-message-headers-in-the-client-request"></a></p>
@@ -3866,22 +3664,6 @@ parameter</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CIHJAFGI">Using Constraint Annotations on Resource Methods</a></p>
-</li>
-<li>
-<p><a href="#CIHFDCBI">Validating Entity Data</a></p>
-</li>
-<li>
-<p><a href="#CIHCHEFH">Validation Exception Handling and Response Codes</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CIHJAFGI"></a><a id="using-constraint-annotations-on-resource-methods"></a></p>
 </div>
 <div class="sect3">
@@ -4133,19 +3915,6 @@ the corresponding resource.</p>
 <li>
 <p>A subresource locator is used to locate subresources of the
 corresponding resource.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKLAG">Subresource Methods</a></p>
-</li>
-<li>
-<p><a href="#GKRHR">Subresource Locators</a></p>
 </li>
 </ul>
 </div>
@@ -4995,28 +4764,6 @@ specific entity.</p>
 for basic information on building and running sample applications.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKOFO">Overview of the customer Example Application</a></p>
-</li>
-<li>
-<p><a href="#CIHJFEJI">The Customer and Address Entity Classes</a></p>
-</li>
-<li>
-<p><a href="#GKLGT">The CustomerService Class</a></p>
-</li>
-<li>
-<p><a href="#GKQJQ">Using the Jakarta REST Client in the CustomerBean Classes</a></p>
-</li>
-<li>
-<p><a href="#GKQKV">Running the customer Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKOFO"></a><a id="overview-of-the-customer-example-application"></a></p>
 </div>
 <div class="sect3">
@@ -5403,21 +5150,6 @@ status codes, see
 run the <code>customer</code> application.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKQLY">To Build, Package, and Deploy the customer Example Using
-NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GKQJV">To Build, Package, and Deploy the customer Example Using
-Maven</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKQLY"></a><a id="to-build-package-and-deploy-the-customer-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
@@ -5523,7 +5255,7 @@ deployed to GlassFish Server.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

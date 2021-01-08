@@ -640,28 +640,6 @@ to view the application files, or you can use NetBeans IDE.</p>
 <code><em>tut-install</em>/examples/web/jsf/hello1/</code> directory.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#to-view-the-hello1-web-module-using-netbeans-ide">To View the hello1 Web Module Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#packaging-and-deploying-the-hello1-web-module">Packaging and Deploying the hello1 Web Module</a></p>
-</li>
-<li>
-<p><a href="#viewing-deployed-web-modules">Viewing Deployed Web Modules</a></p>
-</li>
-<li>
-<p><a href="#running-the-deployed-hello1-web-module">Running the Deployed hello1 Web Module</a></p>
-</li>
-<li>
-<p><a href="#undeploying-the-hello1-web-module">Undeploying the hello1 Web Module</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GJWTV"></a><a id="to-view-the-hello1-web-module-using-netbeans-ide"></a></p>
 </div>
 <div class="sect3">
@@ -782,7 +760,7 @@ expression provided by the managed bean, and a single button whose
 </div>
 </li>
 <li>
-<p>Expand the Source Packages node, then the <code>jakarta.tutorial.hello1</code>
+<p>Expand the Source Packages node, then the <code>ee.jakarta.tutorial.hello1</code>
 node.</p>
 </li>
 <li>
@@ -798,10 +776,10 @@ name, with the first letter in lowercase (<code>hello.name</code>).</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.hello1</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.hello1</span>;
 
-<span class="keyword">import</span> <span class="include">javax.enterprise.context.RequestScoped</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Named</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.context.RequestScoped</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Named</span>;
 
 <span class="annotation">@Named</span>
 <span class="annotation">@RequestScoped</span>
@@ -1267,22 +1245,6 @@ to view the application files, or you can use NetBeans IDE.</p>
 <code><em>tut-install</em>/examples/web/servlet/hello2/</code> directory.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#mapping-urls-to-web-components">Mapping URLs to Web Components</a></p>
-</li>
-<li>
-<p><a href="#examining-the-hello2-web-module">Examining the hello2 Web Module</a></p>
-</li>
-<li>
-<p><a href="#running-the-hello2-example">Running the hello2 Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNAEP"></a><a id="mapping-urls-to-web-components"></a></p>
 </div>
 <div class="sect3">
@@ -1364,7 +1326,7 @@ application files, or you can use NetBeans IDE.</p>
 </li>
 <li>
 <p>Expand the Source Packages node, then expand the
-<code>jakarta.tutorial.hello2</code> node.</p>
+<code>ee.jakarta.tutorial.hello2</code> node.</p>
 </li>
 <li>
 <p>Double-click the <code>GreetingServlet.java</code> file to view it.</p>
@@ -1462,19 +1424,6 @@ root:</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>hello2</code> example.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJSED">To Run the hello2 Example Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GJSHX">To Run the hello2 Example Using Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GJSED"></a><a id="to-run-the-hello2-example-using-netbeans-ide"></a></p>
@@ -2013,7 +1962,7 @@ file:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">...
-import javax.xml.ws.WebServiceRef;
+import jakarta.xml.ws.WebServiceRef;
 ...
 public <span class="type">class</span> <span class="class">ResponseServlet</span> <span class="directive">extends</span> HTTPServlet {
 <span class="annotation">@WebServiceRef</span>(wsdlLocation=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:8080/helloservice/hello?wsdl</span><span class="delimiter">&quot;</span></span>)
@@ -2053,7 +2002,7 @@ public <span class="type">class</span> <span class="class">ResponseServlet</span
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

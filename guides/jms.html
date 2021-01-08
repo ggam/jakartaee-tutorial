@@ -492,25 +492,6 @@ and where it can be used, and explains how Jakarta Messaging works within the
 Jakarta EE platform.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCDS">What Is Messaging?</a></p>
-</li>
-<li>
-<p><a href="#BNCDT">What Is Jakarta Messaging?</a></p>
-</li>
-<li>
-<p><a href="#BNCDU">When Can You Use Jakarta Messaging?</a></p>
-</li>
-<li>
-<p><a href="#BNCDW">How Does Jakarta Messaging Work with the Jakarta EE Platform?</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNCDS"></a><a id="what-is-messaging"></a></p>
 </div>
 <div class="sect3">
@@ -732,22 +713,6 @@ Jakarta Messaging.</p>
 <p>The next section introduces the Jakarta Messaging programming model. Later
 sections cover more advanced concepts, including the ones you need in
 order to write applications that use message-driven beans.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCDY">Jakarta Messaging Architecture</a></p>
-</li>
-<li>
-<p><a href="#BNCEA">Messaging Styles</a></p>
-</li>
-<li>
-<p><a href="#BNCEG">Message Consumption</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNCDY"></a><a id="jms-api-architecture"></a></p>
@@ -1807,22 +1772,6 @@ documentation. For a list of possible message types, see
 <a href="#BNCEW">Message Bodies</a>.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCET">Message Headers</a></p>
-</li>
-<li>
-<p><a href="#BNCEV">Message Properties</a></p>
-</li>
-<li>
-<p><a href="#BNCEW">Message Bodies</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNCET"></a><a id="message-headers"></a></p>
 </div>
 <div class="sect4">
@@ -2844,34 +2793,6 @@ applications or web applications differs from using it in application
 clients.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDGICJB">Overview of Using Jakarta Messaging</a></p>
-</li>
-<li>
-<p><a href="#BABHFBDH">Creating Resources for Jakarta EE Applications</a></p>
-</li>
-<li>
-<p><a href="#BNCGM">Using Resource Injection in Enterprise Bean or Web
-Components</a></p>
-</li>
-<li>
-<p><a href="#BNCGN">Using Jakarta EE Components to Produce and to Synchronously
-Receive Messages</a></p>
-</li>
-<li>
-<p><a href="#BNCGQ">Using Message-Driven Beans to Receive Messages
-Asynchronously</a></p>
-</li>
-<li>
-<p><a href="#BNCGS">Managing Jakarta Transactions</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDGICJB"></a><a id="overview-of-using-the-jms-api"></a></p>
 </div>
 <div class="sect3">
@@ -3029,19 +2950,6 @@ resources that exist outside of individual applications.</p>
 <div class="paragraph">
 <p>You may use resource injection to inject both administered objects and
 <code>JMSContext</code> objects in Jakarta EE applications.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDCHDIJ">Injecting a ConnectionFactory, Queue, or Topic</a></p>
-</li>
-<li>
-<p><a href="#BABCJBEE">Injecting a JMSContext Object</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDCHDIJ"></a><a id="injecting-a-connectionfactory-queue-or-topic"></a></p>
@@ -3637,9 +3545,6 @@ provider will redeliver the unacknowledged message in the future.</p>
 various kinds of Jakarta EE applications.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="paragraph">
 <p><a id="A1251921"></a><a id="building-and-running-java-message-service-examples"></a></p>
 </div>
 <div class="sect2">
@@ -3812,43 +3717,6 @@ MDBs</a></strong></p></td>
 <div class="paragraph">
 <p>This section shows how to create, package, and run simple Messaging clients
 that are packaged as application clients.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDCEFGA">Overview of Writing Simple Jakarta Messaging Application</a></p>
-</li>
-<li>
-<p><a href="#BNCFD">Starting the Jakarta Messaging Provider</a></p>
-</li>
-<li>
-<p><a href="#GKTJS">Creating Jakarta Messaging Administered Objects</a></p>
-</li>
-<li>
-<p><a href="#BABEEABE">Building All the Simple Examples</a></p>
-</li>
-<li>
-<p><a href="#BABIHCAE">Sending Messages</a></p>
-</li>
-<li>
-<p><a href="#BNCFB">Receiving Messages Synchronously</a></p>
-</li>
-<li>
-<p><a href="#BNCFH">Using a Message Listener for Asynchronous Message Delivery</a></p>
-</li>
-<li>
-<p><a href="#BNCFL">Browsing Messages on a Queue</a></p>
-</li>
-<li>
-<p><a href="#BABDDHHC">Running Multiple Consumers on the Same Destination</a></p>
-</li>
-<li>
-<p><a href="#BNCFX">Acknowledging Messages</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDCEFGA"></a><a id="overview-of-writing-simple-jms-application"></a></p>
@@ -4026,19 +3894,6 @@ application client JAR file. You can build the examples using either
 NetBeans IDE or Maven.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDJEJCD">To Build All the Simple Examples Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDGHJAA">To Build All the Simple Examples Using Maven</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDJEJCD"></a><a id="to-build-all-the-simple-examples-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
@@ -4112,22 +3967,6 @@ directories for the examples.</p>
 <div class="paragraph">
 <p>This section describes how to use a client to send messages. The
 <code>Producer.java</code> client will send messages in all of these examples.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDGHJHH">General Steps Performed in the Example</a></p>
-</li>
-<li>
-<p><a href="#CHDFBABB">The Producer.java Client</a></p>
-</li>
-<li>
-<p><a href="#CHDHIIHE">To Run the Producer Client</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDGHJHH"></a><a id="general-steps-performed-in-the-example"></a></p>
@@ -4369,19 +4208,6 @@ method to consume messages synchronously. This section then explains how
 to run the clients using GlassFish Server.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCFC">The SynchConsumer.java Client</a></p>
-</li>
-<li>
-<p><a href="#BNCFG">To Run the SynchConsumer and Producer Clients</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNCFC"></a><a id="the-synchconsumer.java-client"></a></p>
 </div>
 <div class="sect4">
@@ -4617,20 +4443,6 @@ message-driven bean, shown in later examples in this chapter.</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCFI">Writing the AsynchConsumer.java and TextListener.java
-Clients</a></p>
-</li>
-<li>
-<p><a href="#BNCFK">To Run the AsynchConsumer and Producer Clients</a></p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p><a id="BNCFI"></a><a id="writing-the-asynchconsumer.java-and-textlistener.java-clients"></a></p>
 </div>
@@ -4877,19 +4689,6 @@ to examine messages on a queue, as described in
 <a href="#BNCEY">JMS Queue Browsers</a>. This section then
 explains how to compile, package, and run the example using GlassFish
 Server.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCFM">The MessageBrowser.java Client</a></p>
-</li>
-<li>
-<p><a href="#BNCFN">To Run the QueueBrowser Client</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNCFM"></a><a id="the-messagebrowser.java-client"></a></p>
@@ -5412,19 +5211,6 @@ processing a message received asynchronously.</p>
 features: durable subscriptions and transactions.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCGG">Using Durable Subscriptions</a></p>
-</li>
-<li>
-<p><a href="#BNCGJ">Using Local Transactions</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNCGG"></a><a id="using-durable-subscriptions"></a></p>
 </div>
 <div class="sect3">
@@ -5693,7 +5479,7 @@ although it uses permanent rather than temporary destinations. The
 example consists of three modules, <code>genericsupplier</code>, <code>retailer</code>, and
 <code>vendor</code>, which can be found under the
 tut-install`/examples/jms/transactedexample/` directory. The source code
-can be found in the <code>src/main/java/jakarta.tutorial</code> trees for each
+can be found in the <code>src/main/java/ee.jakarta.tutorial</code> trees for each
 module. The <code>genericsupplier</code> and <code>retailer</code> modules each contain a
 single class, <code>genericsupplier/GenericSupplier.java</code> and
 <code>retailer/Retailer.java</code>, respectively. The <code>vendor</code> module is more
@@ -5711,7 +5497,7 @@ e-commerce application in which the following actions occur.</p>
 <ol class="arabic">
 <li>
 <p>A retailer
-(<code>retailer/src/main/java/jakarta/tutorial/retailer/Retailer.java</code>) sends a
+(<code>retailer/src/main/java/ee/jakarta/tutorial/retailer/Retailer.java</code>) sends a
 <code>MapMessage</code> to a vendor order queue, ordering a quantity of computers,
 and waits for the vendor&#8217;s reply:</p>
 <div class="listingblock">
@@ -5728,7 +5514,7 @@ orderConfirmReceiver = context.createConsumer(retailerConfirmQueue);</code></pre
 </li>
 <li>
 <p>The vendor
-(<code>vendor/src/main/java/jakarta/tutorial/retailer/Vendor.java</code>) receives
+(<code>vendor/src/main/java/ee/jakarta/tutorial/retailer/Vendor.java</code>) receives
 the retailer&#8217;s order message and sends an order message to the supplier
 order topic in one transaction. This Jakarta Messaging transaction uses a single
 session, so you can combine a receive from a queue with a send to a
@@ -5762,7 +5548,7 @@ hard drives.</p>
 </li>
 <li>
 <p>Each supplier
-(<code>genericsupplier/src/main/java/jakarta/tutorial/retailer/GenericSupplier.java</code>)
+(<code>genericsupplier/src/main/java/ee/jakarta/tutorial/retailer/GenericSupplier.java</code>)
 receives the order from the order topic, checks its inventory, and then
 sends the items ordered to the queue named in the order message&#8217;s
 <code>JMSReplyTo</code> field. If it does not have enough of the item in stock, the
@@ -6135,19 +5921,6 @@ asadmin delete-jms-resource jms/OTopic</code></pre>
 <p>This section describes how to use Jakarta Messaging to write applications that
 can handle high volumes of messages robustly. These examples use both
 nondurable and durable shared consumers.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BABIBEAC">Using Shared Nondurable Subscriptions</a></p>
-</li>
-<li>
-<p><a href="#BABEJBHA">Using Shared Durable Subscriptions</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BABIBEAC"></a><a id="using-shared-nondurable-subscriptions"></a></p>
@@ -6609,26 +6382,6 @@ public <span class="type">void</span> getMessage() {
 run the <code>websimplemessage</code> application.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDHEHAB">Creating Resources for the websimplemessage Example</a></p>
-</li>
-<li>
-<p><a href="#CHDBADGA">To Package and Deploy websimplemessage Using NetBeans
-IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDBBBEI">To Package and Deploy websimplemessage Using Maven</a></p>
-</li>
-<li>
-<p><a href="#CHDIFEHC">To Run the websimplemessage Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDHEHAB"></a><a id="creating-resources-for-the-websimplemessage-example"></a></p>
 </div>
 <div class="sect4">
@@ -6959,22 +6712,6 @@ incoming message to a <code>TextMessage</code> and displays the text:</p>
 <code>simplemessage</code> example.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBPR">Creating Resources for the simplemessage Example</a></p>
-</li>
-<li>
-<p><a href="#CHDFBDDA">To Run the simplemessage Example Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#BNBPT">To Run the simplemessage Example Using Maven</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBPR"></a><a id="creating-resources-for-the-simplemessage-example"></a></p>
 </div>
 <div class="sect4">
@@ -7173,20 +6910,6 @@ tut-install`/examples/jms/clientsessionmdb/` directory. Path names in
 this section are relative to this directory.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCGX">Writing the Application Components for the
-clientsessionmdb Example</a></p>
-</li>
-<li>
-<p><a href="#CHDDFAHA">Running the clientsessionmdb Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNCGX"></a><a id="writing-the-application-components-for-the-clientsessionmdb-example"></a></p>
 </div>
 <div class="sect3">
@@ -7361,19 +7084,6 @@ durable subscription.</p>
 <p>This example uses an annotation-defined topic and the preconfigured
 default connection factory <code>java:comp/DefaultJMSConnectionFactory</code>, so
 you do not have to create resources for it.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDGGAIB">To Run clientsessionmdb Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDDDHBE">To Run clientsessionmdb Using Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDGGAIB"></a><a id="to-run-clientsessionmdb-using-netbeans-ide"></a></p>
@@ -7554,23 +7264,6 @@ tut-install`/examples/jms/clientmdbentity/` directory. Path names in
 this section are relative to this directory.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCHG">Overview of the clientmdbentity Example Application</a></p>
-</li>
-<li>
-<p><a href="#BNCHI">Writing the Application Components for the clientmdbentity
-Example</a></p>
-</li>
-<li>
-<p><a href="#CHDEEDJH">Running the clientmdbentity Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNCHG"></a><a id="overview-of-the-clientmdbentity-example-application"></a></p>
 </div>
 <div class="sect3">
@@ -7664,23 +7357,6 @@ entity.</p>
 <div class="paragraph">
 <p>Writing the components of the application involves coding the
 application client, the message-driven beans, and the entity class.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNCHJ">Coding the Application Client: HumanResourceClient.java</a></p>
-</li>
-<li>
-<p><a href="#BNCHK">Coding the Message-Driven Beans for the clientmdbentity
-Example</a></p>
-</li>
-<li>
-<p><a href="#BNCHL">Coding the Entity Class for the clientmdbentity Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNCHJ"></a><a id="coding-the-application-client-humanresourceclient.java"></a></p>
@@ -7872,22 +7548,6 @@ the preconfigured default connection factory
 <code>java:comp/DefaultJMSConnectionFactory</code> and the preconfigured default
 JDBC resource <code>java:comp/DefaultDataSource</code>, you do not need to create
 resources for it.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDIJDEE">To Run clientmdbentity Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDICHGH">To Run clientmdbentity Using Maven</a></p>
-</li>
-<li>
-<p><a href="#CHDCDEEF">Viewing the Application Output</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDIJDEE"></a><a id="to-run-clientmdbentity-using-netbeans-ide"></a></p>
@@ -8102,19 +7762,6 @@ commands. For information, consult the GlassFish Server documentation or
 enter <code>asadmin help</code> command-name.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDFIJBJ">To Create Jakarta Messaging Resources Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDCFADI">To Delete Jakarta Messaging Resources Using NetBeans IDE</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDFIJBJ"></a><a id="to-create-jms-resources-using-netbeans-ide"></a></p>
 </div>
 <div class="sect3">
@@ -8217,7 +7864,7 @@ resource is also deleted. This action removes the connection factory.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

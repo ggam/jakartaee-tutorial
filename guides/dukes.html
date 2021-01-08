@@ -544,7 +544,7 @@ singleton bean</p>
 </div>
 <div class="paragraph">
 <p>The packages of the Duke&#8217;s Bookstore application, located in the
-tut-install`/examples/case-studies/dukes-bookstore/src/main/java/jakarta/tutorial/dukesbookstore/`
+tut-install`/examples/case-studies/dukes-bookstore/src/main/java/ee/jakarta/tutorial/dukesbookstore/`
 directory, are as follows:</p>
 </div>
 <div class="ulist">
@@ -606,32 +606,6 @@ messages</p>
 <div class="paragraph">
 <p>This section provides additional detail regarding the components of the
 Duke&#8217;s Bookstore example and how they interact.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GLQER">The Book Jakarta Persistence Entity</a></p>
-</li>
-<li>
-<p><a href="#GLQEU">Enterprise Beans Used in Duke&#8217;s Bookstore</a></p>
-</li>
-<li>
-<p><a href="#GLQDP">Facelets Pages and Managed Beans Used in Duke&#8217;s Bookstore</a></p>
-</li>
-<li>
-<p><a href="#GLQDX">Custom Components and Other Custom Objects Used in Duke&#8217;s
-Bookstore</a></p>
-</li>
-<li>
-<p><a href="#GLQDG">Properties Files Used in Duke&#8217;s Bookstore</a></p>
-</li>
-<li>
-<p><a href="#GLQED">Deployment Descriptors Used in Duke&#8217;s Bookstore</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GLQER"></a><a id="the-book-java-persistence-api-entity"></a></p>
@@ -798,7 +772,7 @@ bookstore has no more copies of a book that was ordered.</p>
 <div class="paragraph">
 <p>The application uses the following managed beans, which are located in
 the
-<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/jakarta/tutorial/dukesbookstore/web/managedbeans/</code>
+<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/ee/jakarta/tutorial/dukesbookstore/web/managedbeans/</code>
 directory.</p>
 </div>
 <div class="ulist">
@@ -852,7 +826,7 @@ Specifies the name <code>showcart</code>.</p>
 <p>The map and area custom components for Duke&#8217;s Bookstore, along with
 associated renderer, listener, and model classes, are defined in the
 following packages in the
-<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/jakarta/tutorial/dukesbookstore/</code>
+<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/ee/jakarta/tutorial/dukesbookstore/</code>
 directory.</p>
 </div>
 <div class="ulist">
@@ -906,7 +880,7 @@ not specifically tied to the custom components.</p>
 <p>The strings used in the Duke&#8217;s Bookstore application are encapsulated
 into resource bundles to allow the display of localized strings in
 multiple locales. The properties files, located in the
-<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/jakarta/tutorial/dukesbookstore/web/messages/</code>
+<code><em>tut-install</em>/examples/case-studies/dukes-bookstore/src/main/java/ee/jakarta/tutorial/dukesbookstore/web/messages/</code>
 directory, consist of a default file containing English strings and
 three additional files for other locales. The files are as follows:</p>
 </div>
@@ -951,7 +925,7 @@ file:</p>
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;application&gt;</span>
     <span class="tag">&lt;resource-bundle&gt;</span>
         <span class="tag">&lt;base-name&gt;</span>
-            jakarta.tutorial.dukesbookstore.web.messages.Messages
+            ee.jakarta.tutorial.dukesbookstore.web.messages.Messages
         <span class="tag">&lt;/base-name&gt;</span>
         <span class="tag">&lt;var&gt;</span>bundle<span class="tag">&lt;/var&gt;</span>
     <span class="tag">&lt;/resource-bundle&gt;</span>
@@ -1020,22 +994,6 @@ file</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the Duke&#8217;s Bookstore application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GLPQG">To Build and Deploy Duke&#8217;s Bookstore Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GLPQN">To Build and Deploy Duke&#8217;s Bookstore Using Maven</a></p>
-</li>
-<li>
-<p><a href="#BABEHDEG">To Run Duke&#8217;s Bookstore</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GLPQG"></a><a id="to-build-and-deploy-dukes-bookstore-using-netbeans-ide"></a></p>
@@ -1311,34 +1269,6 @@ and guardians, and to generate attendance reports</p>
 out, and record when students are outside at the playground.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKAFJ">Jakarta Persistence Entities Used in the Main Interface</a></p>
-</li>
-<li>
-<p><a href="#GKAFC">Enterprise Beans Used in the Main Interface</a></p>
-</li>
-<li>
-<p><a href="#BCGHHCDA">WebSocket Endpoint Used in the Main Interface</a></p>
-</li>
-<li>
-<p><a href="#GKAET">Facelets Files Used in the Main Interface</a></p>
-</li>
-<li>
-<p><a href="#GKADH">Helper Classes Used in the Main Interface</a></p>
-</li>
-<li>
-<p><a href="#GKADA">Properties Files</a></p>
-</li>
-<li>
-<p><a href="#GKAEV">Deployment Descriptors Used in Duke&#8217;s Tutoring</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKAFJ"></a><a id="java-persistence-api-entities-used-in-the-main-interface"></a></p>
 </div>
 <div class="sect3">
@@ -1446,7 +1376,7 @@ to Create Queries."</a> For information on CDI events, see
 <div class="sect3">
 <h4 id="_websocket_endpoint_used_in_the_main_interface">2.2.3. WebSocket Endpoint Used in the Main Interface</h4>
 <div class="paragraph">
-<p>The <code>jakarta.tutorial.dukestutoring.web.websocket.StatusEndpoint</code> class is
+<p>The <code>ee.jakarta.tutorial.dukestutoring.web.websocket.StatusEndpoint</code> class is
 a WebSocket server endpoint that returns students and their status to
 client endpoints. The <code>StatusEndpoint.updateStatus</code> method is a CDI
 observer method for the <code>StatusEvent</code> event. When a student&#8217;s status
@@ -1583,7 +1513,7 @@ under <code>src/main/resources/</code>.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>jakarta.tutorial/dukestutoring/util/StatusMessages.properties</code>: Strings
+<p><code>ee.jakarta.tutorial/dukestutoring/util/StatusMessages.properties</code>: Strings
 for each of the status types defined in the <code>StatusType</code> enumerated type
 for the default locale. Each supported locale has a property file of the
 form <code>StatusMessages_`locale prefix</code>.properties` containing the
@@ -1609,7 +1539,7 @@ strings for German-speaking locales are located in
 <code>ValidationMessages_de.properties</code>.</p>
 </li>
 <li>
-<p><code>jakarta.tutorial/dukestutoring/web/messages/Messages.properties</code>:
+<p><code>ee.jakarta.tutorial/dukestutoring/web/messages/Messages.properties</code>:
 Strings for the default locale for the main and administration Facelets
 interface. Each supported locale has a property file of the form
 <code>Messages_`locale prefix</code>.properties` containing the localized strings.
@@ -1677,25 +1607,6 @@ students, the students' guardians, and the addresses. The administration
 interface uses many of the same components as the main interface.
 Additional components that are only used in the administration interface
 are described here.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKAEN">Enterprise Beans Used in the Administration Interface</a></p>
-</li>
-<li>
-<p><a href="#GKACB">Facelets Files Used in the Administration Interface</a></p>
-</li>
-<li>
-<p><a href="#BCGHIDEG">CDI Managed Beans Used in the Administration Interface</a></p>
-</li>
-<li>
-<p><a href="#BCGFFFCA">Helper Classes Used in the Administration Interface</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKAEN"></a><a id="enterprise-beans-used-in-the-administration-interface"></a></p>
@@ -1842,16 +1753,6 @@ converter for the <code>Guardian</code> entity class.</p>
 Tutoring application.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKJOA">Running Duke&#8217;s Tutoring</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKJOA"></a><a id="running-dukes-tutoring"></a></p>
 </div>
 <div class="sect3">
@@ -1859,22 +1760,6 @@ Tutoring application.</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run Duke&#8217;s Tutoring.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKJNR">To Build and Deploy Duke&#8217;s Tutoring Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GKJOG">To Build and Deploy Duke&#8217;s Tutoring Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GKJOC">Using Duke&#8217;s Tutoring</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKJNR"></a><a id="to-build-and-deploy-dukes-tutoring-using-netbeans-ide"></a></p>
@@ -3191,21 +3076,6 @@ Server</p>
 <p>You can use NetBeans IDE or Maven to build and deploy Duke&#8217;s Forest.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDJDIFH">To Build and Deploy the Duke&#8217;s Forest Application Using
-NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDEJHBJ">To Build and Deploy the Duke&#8217;s Forest Application Using
-Maven</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDJDIFH"></a><a id="to-build-and-deploy-the-dukes-forest-application-using-netbeans-ide"></a></p>
 </div>
 <div class="sect3">
@@ -3315,25 +3185,6 @@ sign-on (SSO) for the HTTP Service.</p>
 <li>
 <p>As an administrator, creating a new product, customer, group, or
 category</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDBDEHH">To Register as a Duke&#8217;s Store Customer</a></p>
-</li>
-<li>
-<p><a href="#CHDCEJIC">To Purchase Products</a></p>
-</li>
-<li>
-<p><a href="#CHDICAIJ">To Approve Shipment of a Product</a></p>
-</li>
-<li>
-<p><a href="#CHDIFEGC">To Create a New Product</a></p>
 </li>
 </ul>
 </div>
@@ -3512,7 +3363,7 @@ administration page, or click Logout to log out.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

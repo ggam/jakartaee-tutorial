@@ -583,9 +583,8 @@ programmatic security. You can use the built-in implementations of these APIs,
 or define custom implementations.</p>
 </div>
 <div class="paragraph">
-<p>More information on these concepts and mechanismsMore information on these concepts
-and mechanisms can be found in the chapter on security in the Jakarta EE 8
-specification.</p>
+<p>More information on these concepts and mechanisms can be found
+in the chapter on security in the Jakarta EE 8 specification.</p>
 </div>
 <div class="paragraph">
 <p>Other chapters in this Part discuss security requirements in web tier
@@ -881,19 +880,6 @@ following sections discuss the characteristics of the common mechanisms
 that can be used to secure Jakarta EE applications. Each of these
 mechanisms can be used individually or with others to provide protection
 layers based on the specific needs of your implementation.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBWZ">Java SE Security Mechanisms</a></p>
-</li>
-<li>
-<p><a href="#BNBXA">Jakarta EE Security Mechanisms</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNBWZ"></a><a id="java-se-security-mechanisms"></a></p>
@@ -1302,22 +1288,6 @@ portably deployed to any Jakarta EE server.</p>
 <p>In Jakarta EE, the component containers are responsible for providing
 application security. A container provides two types of security:
 declarative and programmatic.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#using-annotations-to-specify-security-information">Using Annotations to Specify Security Information</a></p>
-</li>
-<li>
-<p><a href="#using-deployment-descriptors-for-declarative-security">Using Deployment Descriptors for Declarative Security</a></p>
-</li>
-<li>
-<p><a href="#using-programmatic-security">Using Programmatic Security</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNBXG"></a><a id="using-annotations-to-specify-security-information"></a></p>
@@ -1763,16 +1733,6 @@ principal that allows its credential to be used.</p>
 examples.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBXS">To Add Users to GlassFish Server</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBXS"></a><a id="to-add-users-to-glassfish-server"></a></p>
 </div>
 <div class="sect4">
@@ -1898,8 +1858,8 @@ employee payroll data.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.annotation.security.DeclareRoles</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.security.RolesAllowed</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.annotation.security.DeclareRoles</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.security.RolesAllowed</span>;
 ...
 <span class="annotation">@DeclareRoles</span>({<span class="string"><span class="delimiter">&quot;</span><span class="content">DEPT-ADMIN</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">DIRECTOR</span><span class="delimiter">&quot;</span></span>})
 <span class="annotation">@Stateless</span> <span class="directive">public</span> <span class="type">class</span> <span class="class">PayrollBean</span> <span class="directive">implements</span> Payroll {
@@ -2357,29 +2317,6 @@ or otherwise transfer the application to an application deployer for
 installation into a runtime environment.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#overview-of-securing-web-applications">Overview of Securing Web Applications</a></p>
-</li>
-<li>
-<p><a href="#specifying-security-constraints">Specifying Security Constraints</a></p>
-</li>
-<li>
-<p><a href="#specifying-authentication-mechanisms">Specifying Authentication Mechanisms</a></p>
-</li>
-<li>
-<p><a href="#specifying-an-authentication-mechanism-in-the-deployment-descriptor">Specifying an Authentication Mechanism in the Deployment
-Descriptor</a></p>
-</li>
-<li>
-<p><a href="#declaring-security-roles">Declaring Security Roles</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDBIBHI"></a><a id="overview-of-securing-web-applications"></a></p>
 </div>
 <div class="sect3">
@@ -2810,8 +2747,8 @@ the elements described in <a href="#BNCBM">Specifying a Secure Connection</a>.</
 <div class="sect4">
 <h5 id="_http_basic_authentication">HTTP Basic Authentication</h5>
 <div class="paragraph">
-<p>Specifying HTTP basic authentication requires that the server request a
-user name and password from the web client and verify that the user name
+<p>Specifying HTTP basic authentication requires that the server requests a
+user name and a password from the web client and verifies that the user name
 and password are valid by comparing them against a database of
 authorized users in the specified or default realm.</p>
 </div>
@@ -3102,28 +3039,6 @@ declarative security alone is not sufficient to express the security
 model of the application.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#authenticating-users-programmatically">Authenticating Users Programmatically</a></p>
-</li>
-<li>
-<p><a href="#checking-caller-identity-programmatically">Checking Caller Identity Programmatically</a></p>
-</li>
-<li>
-<p><a href="#testing-access-to-a-resource-programmatically">Testing Access to a Resource Programmatically</a></p>
-</li>
-<li>
-<p><a href="#example-code-for-programmatic-security">Example Code for Programmatic Security</a></p>
-</li>
-<li>
-<p><a href="#declaring-and-linking-role-references">Declaring and Linking Role References</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GIRCJ"></a><a id="authenticating-users-programmatically"></a></p>
 </div>
 <div class="sect3">
@@ -3195,12 +3110,12 @@ methods:</p>
 <span class="keyword">import</span> <span class="include">java.io.IOException</span>;
 <span class="keyword">import</span> <span class="include">java.io.PrintWriter</span>;
 <span class="keyword">import</span> <span class="include">java.math.BigDecimal</span>;
-<span class="keyword">import</span> <span class="include">javax.ejb.EJB</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.ServletException</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.annotation.WebServlet</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.http.HttpServlet</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.http.HttpServletRequest</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.http.HttpServletResponse</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ejb.EJB</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.ServletException</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.annotation.WebServlet</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http.HttpServlet</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http.HttpServletRequest</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http.HttpServletResponse</span>;
 
 <span class="annotation">@WebServlet</span>(name=<span class="string"><span class="delimiter">&quot;</span><span class="content">TutorialServlet</span><span class="delimiter">&quot;</span></span>, urlPatterns={<span class="string"><span class="delimiter">&quot;</span><span class="content">/TutorialServlet</span><span class="delimiter">&quot;</span></span>})
 <span class="directive">public</span> <span class="type">class</span> <span class="class">TutorialServlet</span> <span class="directive">extends</span> HttpServlet {
@@ -3252,8 +3167,8 @@ methods:</p>
 <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">com.example.test</span>;
 
 <span class="keyword">import</span> <span class="include">java.io</span>.*;
-<span class="keyword">import</span> <span class="include">javax.servlet</span>.*;
-<span class="keyword">import</span> <span class="include">javax.servlet.http</span>.*;
+<span class="keyword">import</span> <span class="include">jakarta.servlet</span>.*;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http</span>.*;
 
 <span class="directive">public</span> <span class="type">class</span> <span class="class">TestServlet</span> <span class="directive">extends</span> HttpServlet {
 
@@ -3444,9 +3359,9 @@ purposes of programmatic login. This servlet does the following.</p>
 
 <span class="keyword">import</span> <span class="include">java.io</span>.*;
 <span class="keyword">import</span> <span class="include">java.net</span>.*;
-<span class="keyword">import</span> <span class="include">javax.annotation.security.DeclareRoles</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet</span>.*;
-<span class="keyword">import</span> <span class="include">javax.servlet.http</span>.*;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.security.DeclareRoles</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet</span>.*;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http</span>.*;
 
 <span class="annotation">@DeclareRoles</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">jakartaeeuser</span><span class="delimiter">&quot;</span></span>)
 <span class="directive">public</span> <span class="type">class</span> <span class="class">LoginServlet</span> <span class="directive">extends</span> HttpServlet {
@@ -3581,27 +3496,6 @@ is scoped to the component whose deployment descriptor contains the
 run correctly.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#overview-of-examples-of-securing-web-applications">Overview of Examples of Securing Web Applications</a></p>
-</li>
-<li>
-<p><a href="#to-set-up-your-system-for-running-the-security-examples">To Set Up Your System for Running the Security Examples</a></p>
-</li>
-<li>
-<p><a href="#the-hello2-basicauth-example-basic-authentication-with-a-servlet">The hello2-basicauth Example: Basic Authentication with a
-Servlet</a></p>
-</li>
-<li>
-<p><a href="#the-hello1-formauth-example-form-based-authentication-with-a-javaserver-faces-application">The hello1-formauth Example: Form-Based Authentication
-with a Jakarta Server Faces Application</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDEBCHG"></a><a id="overview-of-examples-of-securing-web-applications"></a></p>
 </div>
 <div class="sect3">
@@ -3625,7 +3519,7 @@ Enterprise Bean with Declarative Security</a></p>
 Securing an Enterprise Bean with Programmatic Security</a></p>
 </li>
 <li>
-<p>Java EE 8 GlassFish samples: <code><a href="https://javaee.github.io/glassfish-samples/" class="bare">https://javaee.github.io/glassfish-samples/</a></code></p>
+<p>Jakarta EE 8 Eclipse GlassFish samples: <code><a href="https://github.com/eclipse-ee4j/glassfish-samples" class="bare">https://github.com/eclipse-ee4j/glassfish-samples</a></code></p>
 </li>
 </ul>
 </div>
@@ -4649,7 +4543,7 @@ annotation:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.annotation.security</span>.*;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.annotation.security</span>.*;
 <span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">RestrictedUsers</span><span class="delimiter">&quot;</span></span>)
 <span class="directive">public</span> <span class="type">class</span> <span class="class">Calculator</span> {
 
@@ -4675,7 +4569,7 @@ annotation:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.annotation.security</span>.*;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.annotation.security</span>.*;
 <span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Users</span><span class="delimiter">&quot;</span></span>)
 <span class="directive">public</span> <span class="type">class</span> <span class="class">Calculator</span> {
     <span class="annotation">@RolesAllowed</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">Administrator</span><span class="delimiter">&quot;</span></span>)
@@ -5078,21 +4972,6 @@ application.</p>
 declarative and programmatic security.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#the-cart-secure-example-securing-an-enterprise-bean-with-declarative-security">The cart-secure Example: Securing an Enterprise Bean with
-Declarative Security</a></p>
-</li>
-<li>
-<p><a href="#the-converter-secure-example-securing-an-enterprise-bean-with-programmatic-security">The converter-secure Example: Securing an Enterprise Bean
-with Programmatic Security</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBZK"></a><a id="the-cart-secure-example-securing-an-enterprise-bean-with-declarative-security"></a></p>
 </div>
 <div class="sect3">
@@ -5161,24 +5040,24 @@ cart-secure Example Using Maven</a>.</p>
 <p>The source code for the original <code>cart</code> application was modified as
 shown in the following code snippet (modifications in bold). The
 resulting file can be found in the file
-<code><em>tut-install</em>/examples/security/cart-secure/cart-secure-ejb/src/main/java/jakarta/tutorial/cart/ejb/CartBean.java</code>.</p>
+<code><em>tut-install</em>/examples/security/cart-secure/cart-secure-ejb/src/main/java/ee/jakarta/tutorial/cart/ejb/CartBean.java</code>.</p>
 </div>
 <div class="paragraph">
 <p>The code snippet is as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.cartsecure.ejb</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.cartsecure.ejb</span>;
 
 <span class="keyword">import</span> <span class="include">java.io.Serializable</span>;
 <span class="keyword">import</span> <span class="include">java.util.ArrayList</span>;
 <span class="keyword">import</span> <span class="include">java.util.List</span>;
-<span class="keyword">import</span> <span class="include">jakarta.tutorial.cart.util.BookException</span>;
-<span class="keyword">import</span> <span class="include">jakarta.tutorial.cart.util.IdVerifier</span>;
-<span class="keyword">import</span> <span class="include">javax.ejb.Remove</span>;
-<span class="keyword">import</span> <span class="include">javax.ejb.Stateful</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.security.DeclareRoles</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.security.RolesAllowed</span>;
+<span class="keyword">import</span> <span class="include">ee.jakarta.tutorial.cart.util.BookException</span>;
+<span class="keyword">import</span> <span class="include">ee.jakarta.tutorial.cart.util.IdVerifier</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ejb.Remove</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ejb.Stateful</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.security.DeclareRoles</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.security.RolesAllowed</span>;
 
 <span class="annotation">@Stateful</span>
 <span class="annotation">@DeclareRoles</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">TutorialUser</span><span class="delimiter">&quot;</span></span>)
@@ -5461,22 +5340,22 @@ of <code>TutorialUser</code>. If the user is in the correct role, the currency
 conversion is computed and displayed. If the user is not in the correct
 role, the computation is not performed, and the application displays the
 result as <code>0</code>. The code example can be found in
-<code><em>tut-install</em>/examples/security/converter-secure/converter-secure-ejb/src/main/java/jakarta/tutorial/converter/ejb/ConverterBean.java</code>.</p>
+<code><em>tut-install</em>/examples/security/converter-secure/converter-secure-ejb/src/main/java/ee/jakarta/tutorial/converter/ejb/ConverterBean.java</code>.</p>
 </div>
 <div class="paragraph">
 <p>The code snippet (with modifications shown in bold) is as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.convertersecure.ejb</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.convertersecure.ejb</span>;
 
 <span class="keyword">import</span> <span class="include">java.math.BigDecimal</span>;
 <span class="keyword">import</span> <span class="include">java.security.Principal</span>;
-<span class="keyword">import</span> <span class="include">javax.ejb.Stateless</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.Resource</span>;
-<span class="keyword">import</span> <span class="include">javax.ejb.SessionContext</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.security.DeclareRoles</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.security.RolesAllowed</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ejb.Stateless</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.Resource</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ejb.SessionContext</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.security.DeclareRoles</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.security.RolesAllowed</span>;
 
 <span class="annotation">@Stateless</span>()
 <span class="annotation">@DeclareRoles</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">TutorialUser</span><span class="delimiter">&quot;</span></span>)
@@ -6437,13 +6316,13 @@ application startup and the credentials are set in the underlying database.</p>
 <span class="keyword">import</span> <span class="include">java.sql.PreparedStatement</span>;
 <span class="keyword">import</span> <span class="include">java.sql.SQLException</span>;
 
-<span class="keyword">import</span> <span class="include">javax.annotation.PostConstruct</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.PreDestroy</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.Resource</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.sql.DataSourceDefinition</span>;
-<span class="keyword">import</span> <span class="include">javax.ejb.Singleton</span>;
-<span class="keyword">import</span> <span class="include">javax.ejb.Startup</span>;
-<span class="keyword">import</span> <span class="include">javax.sql.DataSource</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.PostConstruct</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.PreDestroy</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.Resource</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.sql.DataSourceDefinition</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ejb.Singleton</span>;
+<span class="keyword">import</span> <span class="include">jakarta.ejb.Startup</span>;
+<span class="keyword">import</span> <span class="include">jakarta.sql.DataSource</span>;
 
 <span class="annotation">@Singleton</span>
 <span class="annotation">@Startup</span>
@@ -7149,7 +7028,7 @@ is that a server should provide some kind of reasonable assurance that
 its owner is who you think it is, particularly before receiving any
 sensitive information. It may be useful to think of a certificate as a
 "digital driver&#8217;s license" for an Internet address. The certificate
-states with which company the site is associated, along with some basic
+states which company the site is associated with, along with some basic
 contact information about the site owner or administrator.</p>
 </div>
 <div class="paragraph">
@@ -7484,19 +7363,6 @@ need to add the password option as well:</p>
 <div class="paragraph">
 <p>This section discusses the client authentication and mutual
 authentication mechanisms.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#client-authentication">Client Authentication</a></p>
-</li>
-<li>
-<p><a href="#mutual-authentication">Mutual Authentication</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GLIEQ"></a><a id="client-authentication"></a></p>
@@ -8258,29 +8124,6 @@ server.</p>
 a connection to an EIS resource.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#overview-of-securing-enterprise-information-systems-applications">Overview of Securing Enterprise Information Systems
-Applications</a></p>
-</li>
-<li>
-<p><a href="#container-managed-sign-on">Container-Managed Sign-On</a></p>
-</li>
-<li>
-<p><a href="#component-managed-sign-on">Component-Managed Sign-On</a></p>
-</li>
-<li>
-<p><a href="#configuring-resource-adapter-security">Configuring Resource Adapter Security</a></p>
-</li>
-<li>
-<p><a href="#mapping-an-application-principal-to-eis-principals">Mapping an Application Principal to EIS Principals</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BABBJHIC"></a><a id="overview-of-securing-enterprise-information-systems-applications"></a></p>
 </div>
 <div class="sect3">
@@ -8551,21 +8394,6 @@ deployment descriptor to specify basic authentication and to override
 default principal-to-role mapping.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#specifying-security-for-basic-authentication-in-the-deployment-descriptor">Specifying Security for Basic Authentication in the
-Deployment Descriptor</a></p>
-</li>
-<li>
-<p><a href="#specifying-non-default-principal-to-role-mapping-in-the-deployment-descriptor">Specifying Non-Default Principal-to-Role Mapping in the
-Deployment Descriptor</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNCCM"></a><a id="specifying-security-for-basic-authentication-in-the-deployment-descriptor"></a></p>
 </div>
 <div class="sect3">
@@ -8717,7 +8545,7 @@ Developer&#8217;s Guide:</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

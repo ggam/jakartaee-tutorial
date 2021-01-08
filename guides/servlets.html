@@ -640,9 +640,9 @@ implements two of these interfaces:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.servlet.ServletContextAttributeListener</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.ServletContextListener</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.annotation.WebListener</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.servlet.ServletContextAttributeListener</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.ServletContextListener</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.annotation.WebListener</span>;
 
 <span class="annotation">@WebListener</span>()
 <span class="directive">public</span> <span class="type">class</span> <span class="class">SimpleServletListener</span> <span class="directive">implements</span> ServletContextListener,
@@ -827,8 +827,8 @@ snippet defines a servlet with the URL pattern <code>/report</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.servlet.annotation.WebServlet</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.http.HttpServlet</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.servlet.annotation.WebServlet</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http.HttpServlet</span>;
 
 <span class="annotation">@WebServlet</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">/report</span><span class="delimiter">&quot;</span></span>)
 <span class="directive">public</span> <span class="type">class</span> <span class="class">MoodServlet</span> <span class="directive">extends</span> HttpServlet {
@@ -1124,9 +1124,9 @@ defines a filter, specifying an initialization parameter:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.servlet.Filter</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.annotation.WebFilter</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.annotation.WebInitParam</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.servlet.Filter</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.annotation.WebFilter</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.annotation.WebInitParam</span>;
 
 <span class="annotation">@WebFilter</span>(filterName = <span class="string"><span class="delimiter">&quot;</span><span class="content">TimeOfDayFilter</span><span class="delimiter">&quot;</span></span>,
 urlPatterns = {<span class="string"><span class="delimiter">&quot;</span><span class="content">/*</span><span class="delimiter">&quot;</span></span>},
@@ -2710,19 +2710,6 @@ example shows how to develop a simple application by using the
 servlet, a listener, and a filter.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDEBFCB">Components of the mood Example Application</a></p>
-</li>
-<li>
-<p><a href="#GKCOJ">Running the mood Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDEBFCB"></a><a id="components-of-the-mood-example-application"></a></p>
 </div>
 <div class="sect3">
@@ -2775,19 +2762,6 @@ entries appear in the server log.</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>mood</code> example.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKCOB">To Run the mood Example Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GKCPJ">To Run the mood Example Using Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKCOB"></a><a id="to-run-the-mood-example-using-netbeans-ide"></a></p>
@@ -2935,19 +2909,6 @@ data that results from the download or use of content.</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDFGBGI">Architecture of the fileupload Example Application</a></p>
-</li>
-<li>
-<p><a href="#CHDIHJCI">Running the fileupload Example</a></p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p><a id="CHDFGBGI"></a><a id="architecture-of-the-fileupload-example-application"></a></p>
 </div>
@@ -3151,24 +3112,6 @@ reasons why a file would not be found. The <code>processRequest</code> and
 run the <code>fileupload</code> example.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDGDJCI">To Build, Package, and Deploy the fileupload Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDCFADG">To Build, Package, and Deploy the fileupload Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#CHDDDAAJ">To Run the fileupload Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDGDJCI"></a><a id="to-build-package-and-deploy-the-fileupload-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
@@ -3297,19 +3240,6 @@ tut-install`/examples/web/dukeetf/` directory, demonstrates how to use
 asynchronous processing in a servlet to provide data updates to web
 clients. The example resembles a service that provides periodic updates
 on the price and trading volume of an electronically traded fund (ETF).</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDBBEDA">Architecture of the dukeetf Example Application</a></p>
-</li>
-<li>
-<p><a href="#CHDHBBBI">Running the dukeetf Example Application</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDBBEDA"></a><a id="architecture-of-the-dukeetf-example-application"></a></p>
@@ -3564,20 +3494,6 @@ endpoint.</p>
 using NetBeans IDE and from the command line.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDCGCJD">To Run the dukeetf Example Application Using NetBeans
-IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDHHAFG">To Run the dukeetf Example Application Using Maven</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDCGCJD"></a><a id="to-run-the-dukeetf-example-application-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
@@ -3687,7 +3603,7 @@ price and volume updates simultaneously.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

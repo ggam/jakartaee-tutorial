@@ -484,22 +484,6 @@ sections provide an introduction to JSON syntax, an overview of JSON
 uses, and a description of the most common approaches to generate and
 parse JSON.</p>
 </div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#json-syntax">JSON Syntax</a></p>
-</li>
-<li>
-<p><a href="#uses-of-json">Uses of JSON</a></p>
-</li>
-<li>
-<p><a href="#generating-and-parsing-json-data">Generating and Parsing JSON Data</a></p>
-</li>
-</ul>
-</div>
 <div class="sect3">
 <h4 id="json-syntax">1.1.1. JSON Syntax</h4>
 <div class="paragraph">
@@ -766,25 +750,6 @@ an object model from JSON data, creating an object model from
 application code, navigating an object model, and writing an object
 model to a stream.</p>
 </div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#creating-an-object-model-from-json-data">Creating an Object Model from JSON Data</a></p>
-</li>
-<li>
-<p><a href="#creating-an-object-model-from-application-code">Creating an Object Model from Application Code</a></p>
-</li>
-<li>
-<p><a href="#navigating-an-object-model">Navigating an Object Model</a></p>
-</li>
-<li>
-<p><a href="#writing-an-object-model-to-a-stream">Writing an Object Model to a Stream</a></p>
-</li>
-</ul>
-</div>
 <div class="sect3">
 <h4 id="creating-an-object-model-from-json-data">1.3.1. Creating an Object Model from JSON Data</h4>
 <div class="paragraph">
@@ -794,9 +759,9 @@ data in a text file:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">java.io.FileReader</span>;
-<span class="keyword">import</span> <span class="include">javax.json.Json</span>;
-<span class="keyword">import</span> <span class="include">javax.json.JsonReader</span>;
-<span class="keyword">import</span> <span class="include">javax.json.JsonStructure</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.Json</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.JsonReader</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.JsonStructure</span>;
 ...
 JsonReader reader = Json.createReader(<span class="keyword">new</span> <span class="predefined-type">FileReader</span>(<span class="string"><span class="delimiter">&quot;</span><span class="content">jsondata.txt</span><span class="delimiter">&quot;</span></span>));
 JsonStructure jsonst = reader.read();</code></pre>
@@ -818,8 +783,8 @@ application code:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.json.Json</span>;
-<span class="keyword">import</span> <span class="include">javax.json.JsonObject</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.json.Json</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.JsonObject</span>;
 ...
 JsonObject model = Json.createObjectBuilder()
    .add(<span class="string"><span class="delimiter">&quot;</span><span class="content">firstName</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">Duke</span><span class="delimiter">&quot;</span></span>)
@@ -879,11 +844,11 @@ object model:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.json.JsonValue</span>;
-<span class="keyword">import</span> <span class="include">javax.json.JsonObject</span>;
-<span class="keyword">import</span> <span class="include">javax.json.JsonArray</span>;
-<span class="keyword">import</span> <span class="include">javax.json.JsonNumber</span>;
-<span class="keyword">import</span> <span class="include">javax.json.JsonString</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.json.JsonValue</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.JsonObject</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.JsonArray</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.JsonNumber</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.JsonString</span>;
 ...
 public <span class="directive">static</span> <span class="type">void</span> navigateTree(JsonValue tree, <span class="predefined-type">String</span> key) {
    <span class="keyword">if</span> (key != <span class="predefined-constant">null</span>)
@@ -982,7 +947,7 @@ class as follows:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">java.io.StringWriter</span>;
-<span class="keyword">import</span> <span class="include">javax.json.JsonWriter</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.JsonWriter</span>;
 ...
 StringWriter stWriter = <span class="keyword">new</span> <span class="predefined-type">StringWriter</span>();
 JsonWriter jsonWriter = Json.createWriter(stWriter);
@@ -1020,19 +985,6 @@ automatically:</p>
 <div class="paragraph">
 <p>This section describes two use cases of the streaming API.</p>
 </div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#reading-json-data-using-a-parser">Reading JSON Data Using a Parser</a></p>
-</li>
-<li>
-<p><a href="#writing-json-data-using-a-generator">Writing JSON Data Using a Generator</a></p>
-</li>
-</ul>
-</div>
 <div class="sect3">
 <h4 id="reading-json-data-using-a-parser">1.4.1. Reading JSON Data Using a Parser</h4>
 <div class="paragraph">
@@ -1042,8 +994,8 @@ how to parse JSON data using events:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.json.Json</span>;
-<span class="keyword">import</span> <span class="include">javax.json.stream.JsonParser</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.json.Json</span>;
+<span class="keyword">import</span> <span class="include">jakarta.json.stream.JsonParser</span>;
 ...
 JsonParser parser = Json.createParser(<span class="keyword">new</span> <span class="predefined-type">StringReader</span>(jsonData));
 <span class="keyword">while</span> (parser.hasNext()) {
@@ -1221,19 +1173,6 @@ write JSON data using the object model API.</p>
 <p>The <code>jsonpmodel</code> example application is in the
 tut-install`/examples/web/jsonp/jsonpmodel` directory.</p>
 </div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#components-of-the-jsonpmodel-example-application">Components of the jsonpmodel Example Application</a></p>
-</li>
-<li>
-<p><a href="#running-the-jsonpmodel-example-application">Running the jsonpmodel Example Application</a></p>
-</li>
-</ul>
-</div>
 <div class="sect3">
 <h4 id="components-of-the-jsonpmodel-example-application">1.6.1. Components of the jsonpmodel Example Application</h4>
 <div class="paragraph">
@@ -1282,20 +1221,6 @@ example in <a href="#BABJHEHG">Navigating an Object Model</a>.</p>
 <div class="paragraph">
 <p>This section describes how to run the <code>jsonpmodel</code> example application
 using NetBeans IDE and from the command line.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#to-run-the-jsonpmodel-example-application-using-netbeans-ide">To Run the jsonpmodel Example Application Using
-NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#to-run-the-jsonpmodel-example-application-using-maven">To Run the jsonpmodel Example Application Using Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="sect4">
 <h5 id="to-run-the-jsonpmodel-example-application-using-netbeans-ide">To Run the jsonpmodel Example Application Using NetBeans IDE</h5>
@@ -1408,19 +1333,6 @@ write JSON output using the streaming API.</p>
 <p>The <code>jsonpstreaming</code> example application is in the
 tut-install`/examples/web/jsonp/jsonpstreaming` directory.</p>
 </div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#components-of-the-jsonpstreaming-example-application">Components of the jsonpstreaming Example Application</a></p>
-</li>
-<li>
-<p><a href="#running-the-jsonpstreaming-example-application">Running the jsonpstreaming Example Application</a></p>
-</li>
-</ul>
-</div>
 <div class="sect3">
 <h4 id="components-of-the-jsonpstreaming-example-application">1.7.1. Components of the jsonpstreaming Example Application</h4>
 <div class="paragraph">
@@ -1467,21 +1379,6 @@ Parser</a>.</p>
 <div class="paragraph">
 <p>This section describes how to run the <code>jsonpstreaming</code> example
 application using NetBeans IDE and from the command line.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#to-run-the-jsonpstreaming-example-application-using-netbeans-ide">To Run the jsonpstreaming Example Application Using
-NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#to-run-the-jsonpstreaming-example-application-using-maven">To Run the jsonpstreaming Example Application Using
-Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="sect4">
 <h5 id="to-run-the-jsonpstreaming-example-application-using-netbeans-ide">To Run the jsonpstreaming Example Application Using NetBeans IDE</h5>
@@ -1606,9 +1503,6 @@ in web services and other connected applications. For a brief overview of JSON, 
 binding layer (metadata and runtime) between Java classes and JSON documents. One Jakarta JSON Binding reference
 implementation is Yasson, which is developed through Eclipse.org and is included as part of GlassFish Server.
 You can learn more about Yasson at <a href="https://projects.eclipse.org/projects/ee4j.yasson" class="bare">https://projects.eclipse.org/projects/ee4j.yasson</a>.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
 </div>
 <div class="sect2">
 <h3 id="json-binding-in-the-jakarta-ee-platform">2.1. JSON Binding in the Jakarta EE Platform</h3>
@@ -1747,25 +1641,6 @@ basis for understanding the <a href="jsonb003.html">jsonbbasics Example Applicat
 Refer to the <a href="http://json-b.net/index.html">Jakarta JSON Binding</a> project page for API documentation and a more detailed
 User Guide.</p>
 </div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#creating-a-jasonb-instance">Creating a jasonb Instance</a></p>
-</li>
-<li>
-<p><a href="#using-the-default-mapping">Using the Default Mapping</a></p>
-</li>
-<li>
-<p><a href="#using-customizations">Using Customizations</a></p>
-</li>
-<li>
-<p><a href="#using-annotations">Using Annotations</a></p>
-</li>
-</ul>
-</div>
 <div class="sect3">
 <h4 id="creating-a-jasonb-instance">2.2.1. Creating a jasonb Instance</h4>
 <div class="paragraph">
@@ -1865,19 +1740,6 @@ object.</p>
 <p>The <code>jsonbbasics</code> example application is in the
 <code><em>tut-install</em>/examples/web/jsonb/jsonbbasics</code> directory.</p>
 </div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#components-of-the-jsonbbasics-example-application">Components of the jsonbbasics Example Application</a></p>
-</li>
-<li>
-<p><a href="#running-the-jsonbbasics-example-application-2">Running the jsonbbasics Example Application</a></p>
-</li>
-</ul>
-</div>
 <div class="sect3">
 <h4 id="components-of-the-jsonbbasics-example-application">2.3.1. Components of the jsonbbasics Example Application</h4>
 <div class="paragraph">
@@ -1976,7 +1838,7 @@ from the command line using Maven.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

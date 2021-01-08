@@ -1464,25 +1464,6 @@ described in <a href="#GIQRF">Entity
 Inheritance in the roster Application</a>.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBQO">Abstract Entities</a></p>
-</li>
-<li>
-<p><a href="#BNBQP">Mapped Superclasses</a></p>
-</li>
-<li>
-<p><a href="#BNBQQ">Non-Entity Superclasses</a></p>
-</li>
-<li>
-<p><a href="#BNBQR">Entity Inheritance Mapping Strategies</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBQO"></a><a id="abstract-entities"></a></p>
 </div>
 <div class="sect3">
@@ -1808,19 +1789,6 @@ created, persisted, and removed. The <code>EntityManager</code> interface define
 the methods that are used to interact with the persistence context.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBQY">The EntityManager Interface</a></p>
-</li>
-<li>
-<p><a href="#BNBRJ">Persistence Units</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBQY"></a><a id="the-entitymanager-interface"></a></p>
 </div>
 <div class="sect3">
@@ -1829,34 +1797,6 @@ the methods that are used to interact with the persistence context.</p>
 <p>The <code>EntityManager</code> API creates and removes persistent entity instances,
 finds entities by the entity&#8217;s primary key, and allows queries to be run
 on entities.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBQZ">Container-Managed Entity Managers</a></p>
-</li>
-<li>
-<p><a href="#BNBRA">Application-Managed Entity Managers</a></p>
-</li>
-<li>
-<p><a href="#BNBRB">Finding Entities Using the EntityManager</a></p>
-</li>
-<li>
-<p><a href="#BNBRC">Managing an Entity Instance&#8217;s Lifecycle</a></p>
-</li>
-<li>
-<p><a href="#BNBRD">Persisting Entity Instances</a></p>
-</li>
-<li>
-<p><a href="#BNBRE">Removing Entity Instances</a></p>
-</li>
-<li>
-<p><a href="#BNBRF">Synchronizing Entity Data to the Database</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNBQZ"></a><a id="container-managed-entity-managers"></a></p>
@@ -2639,26 +2579,6 @@ relationships: self-referential, one-to-one, one-to-many, many-to-one,
 and unidirectional relationships.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GIQQR">Self-Referential Relationships</a></p>
-</li>
-<li>
-<p><a href="#GIQSR">One-to-One Relationships</a></p>
-</li>
-<li>
-<p><a href="#GIQTJ">One-to-Many Relationship Mapped to Overlapping Primary and
-Foreign Keys</a></p>
-</li>
-<li>
-<p><a href="#GIQUD">Unidirectional Relationships</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GIQQR"></a><a id="self-referential-relationships"></a></p>
 </div>
 <div class="sect4">
@@ -2817,19 +2737,6 @@ single-valued primary keys, generated primary keys, and compound primary
 keys.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GIQUV">Generated Primary Keys</a></p>
-</li>
-<li>
-<p><a href="#GIQUF">Compound Primary Keys</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GIQUV"></a><a id="generated-primary-keys"></a></p>
 </div>
 <div class="sect4">
@@ -2918,7 +2825,7 @@ encapsulates this primary key.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.order.entity</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.order.entity</span>;
 
 <span class="keyword">import</span> <span class="include">java.io.Serializable</span>;
 
@@ -3446,19 +3353,6 @@ run the <code>order</code> application. First, you will create the database tabl
 in Apache Derby.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GIQSG">To Run the order Example Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GIQTY">To Run the order Example Using Maven</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GIQSG"></a><a id="to-run-the-order-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
@@ -3794,23 +3688,6 @@ language, typesafe queries defined in the business tier of <code>roster</code>, 
 the <code>RequestBean</code> stateful session bean.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJJEX">Metamodel Classes in the roster Application</a></p>
-</li>
-<li>
-<p><a href="#GJJFN">Obtaining a CriteriaBuilder Instance in RequestBean</a></p>
-</li>
-<li>
-<p><a href="#GJJFF">Creating Criteria Queries in RequestBean&#8217;s Business
-Methods</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GJJEX"></a><a id="metamodel-classes-in-the-roster-application"></a></p>
 </div>
 <div class="sect4">
@@ -3980,19 +3857,6 @@ the database tables used by <code>roster</code>. This is done by setting the
 run the <code>roster</code> application.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GIQUG">To Run the roster Example Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GIQSJ">To Run the roster Example Using Maven</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GIQUG"></a><a id="to-run-the-roster-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
@@ -4154,26 +4018,6 @@ Jakarta Bean Validation to validate the
 data stored in the persistent attributes of the entity, as described in
 <a href="#GKAHQ">Validating Persistent Fields and
 Properties</a>.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKAOJ">Bean Validation Constraints in address-book</a></p>
-</li>
-<li>
-<p><a href="#GKANL">Specifying Error Messages for Constraints in address-book</a></p>
-</li>
-<li>
-<p><a href="#GKAON">Validating Contact Input from a Jakarta Server Faces
-Application</a></p>
-</li>
-<li>
-<p><a href="#GKAOP">Running the address-book Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKAOJ"></a><a id="bean-validation-constraints-in-address-book"></a></p>
@@ -4353,19 +4197,6 @@ however.</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>address-book</code> application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKAOD">To Run the address-book Example Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GKANZ">To Run the address-book Example Using Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKAOD"></a><a id="to-run-the-address-book-example-using-netbeans-ide"></a></p>
@@ -4704,19 +4535,6 @@ are ready to learn about the syntax in more detail, see
 <a href="#BNBUF">Full Query Language Syntax</a>.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBTJ">Select Statements</a></p>
-</li>
-<li>
-<p><a href="#BNBTK">Update and Delete Statements</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBTJ"></a><a id="select-statements"></a></p>
 </div>
 <div class="sect3">
@@ -4819,25 +4637,6 @@ application, which is documented in
 <a href="#GIQSQ">The roster Application</a>.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBTM">Simple Queries</a></p>
-</li>
-<li>
-<p><a href="#BNBTQ">Queries That Navigate to Related Entities</a></p>
-</li>
-<li>
-<p><a href="#BNBTW">Queries with Other Conditional Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBUC">Bulk Updates and Deletes</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBTM"></a><a id="simple-queries"></a></p>
 </div>
 <div class="sect3">
@@ -4845,22 +4644,6 @@ application, which is documented in
 <div class="paragraph">
 <p>If you are unfamiliar with the query language, these simple queries are
 a good place to start.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBTN">A Basic Select Query</a></p>
-</li>
-<li>
-<p><a href="#BNBTO">Eliminating Duplicate Values</a></p>
-</li>
-<li>
-<p><a href="#BNBTP">Using Named Parameters</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNBTN"></a><a id="a-basic-select-query"></a></p>
@@ -4971,28 +4754,6 @@ input parameter is <code>:position</code>, the second is <code>:name</code>.</p>
 related entities. These expressions are the primary difference between
 the Jakarta Persistence query language and SQL. Queries navigates to
 related entities, whereas SQL joins tables.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBTR">A Simple Query with Relationships</a></p>
-</li>
-<li>
-<p><a href="#BNBTS">Navigating to Single-Valued Relationship Fields</a></p>
-</li>
-<li>
-<p><a href="#BNBTT">Traversing Relationships with an Input Parameter</a></p>
-</li>
-<li>
-<p><a href="#BNBTU">Traversing Multiple Relationships</a></p>
-</li>
-<li>
-<p><a href="#BNBTV">Navigating According to Related Fields</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNBTR"></a><a id="a-simple-query-with-relationships"></a></p>
@@ -5177,28 +4938,6 @@ expressions. For descriptions of all conditional expressions, see
 <a href="#BNBUU">WHERE Clause</a>.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBTX">The LIKE Expression</a></p>
-</li>
-<li>
-<p><a href="#BNBTY">The IS NULL Expression</a></p>
-</li>
-<li>
-<p><a href="#BNBTZ">The IS EMPTY Expression</a></p>
-</li>
-<li>
-<p><a href="#BNBUA">The BETWEEN Expression</a></p>
-</li>
-<li>
-<p><a href="#BNBUB">Comparison Operators</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBTX"></a><a id="the-like-expression"></a></p>
 </div>
 <div class="sect4">
@@ -5370,19 +5109,6 @@ clause. The <code>WHERE</code> clause in <code>UPDATE</code> and <code>DELETE</c
 same rules as <code>SELECT</code> queries.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBUD">Update Queries</a></p>
-</li>
-<li>
-<p><a href="#BNBUE">Delete Queries</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBUD"></a><a id="update-queries"></a></p>
 </div>
 <div class="sect4">
@@ -5438,37 +5164,6 @@ team.</p>
 Persistence 2.2 specification available at
 <code><a href="https://jakarta.ee/specifications/persistence/2.2/" class="bare">https://jakarta.ee/specifications/persistence/2.2/</a></code>. Much of the following material
 paraphrases or directly quotes the specification.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBUG">BNF Symbols</a></p>
-</li>
-<li>
-<p><a href="#BNBUI">BNF Grammar of the Jakarta Persistence Query Language</a></p>
-</li>
-<li>
-<p><a href="#BNBUJ">FROM Clause</a></p>
-</li>
-<li>
-<p><a href="#BNBUQ">Path Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBUU">WHERE Clause</a></p>
-</li>
-<li>
-<p><a href="#BNBVX">SELECT Clause</a></p>
-</li>
-<li>
-<p><a href="#BNBWD">ORDER BY Clause</a></p>
-</li>
-<li>
-<p><a href="#BNBWE">GROUP BY and HAVING Clauses</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNBUG"></a><a id="bnf-symbols"></a></p>
@@ -5769,28 +5464,6 @@ trim_specification ::= LEADING | TRAILING | BOTH</code></pre>
 <div class="paragraph">
 <p>The <code>FROM</code> clause defines the domain of the query by declaring
 identification variables.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBUK">Identifiers</a></p>
-</li>
-<li>
-<p><a href="#BNBUM">Identification Variables</a></p>
-</li>
-<li>
-<p><a href="#BNBUN">Range Variable Declarations</a></p>
-</li>
-<li>
-<p><a href="#BNBUO">Collection Member Declarations</a></p>
-</li>
-<li>
-<p><a href="#BNBUP">Joins</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNBUK"></a><a id="identifiers"></a></p>
@@ -6156,22 +5829,6 @@ path expressions can appear in any of the main clauses of a query
 SQL, path expressions are extensions not found in SQL.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBUR">Examples of Path Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBUS">Expression Types</a></p>
-</li>
-<li>
-<p><a href="#BNBUT">Navigation</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBUR"></a><a id="examples-of-path-expressions"></a></p>
 </div>
 <div class="sect4">
@@ -6290,58 +5947,6 @@ syntax for the <code>WHERE</code> clause is as follows:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="sql">where_clause ::= <span class="keyword">WHERE</span> conditional_expression</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBUV">Literals</a></p>
-</li>
-<li>
-<p><a href="#BNBVA">Input Parameters</a></p>
-</li>
-<li>
-<p><a href="#BNBVB">Conditional Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBVC">Operators and Their Precedence</a></p>
-</li>
-<li>
-<p><a href="#BNBVE">BETWEEN Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBVF">IN Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBVG">LIKE Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBVI">NULL Comparison Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBVJ">Empty Collection Comparison Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBVK">Collection Member Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBVL">Subqueries</a></p>
-</li>
-<li>
-<p><a href="#BNBVO">Functional Expressions</a></p>
-</li>
-<li>
-<p><a href="#GJJND">Case Expressions</a></p>
-</li>
-<li>
-<p><a href="#BNBVR">NULL Values</a></p>
-</li>
-<li>
-<p><a href="#BNBVU">Equality Semantics</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNBUV"></a><a id="literals"></a></p>
@@ -7328,22 +6933,6 @@ truth values of conditional tests.</p>
 by the query.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNBVY">Return Types</a></p>
-</li>
-<li>
-<p><a href="#BNBWB">The DISTINCT Keyword</a></p>
-</li>
-<li>
-<p><a href="#BNBWC">Constructor Expressions</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNBVY"></a><a id="return-types"></a></p>
 </div>
 <div class="sect4">
@@ -7931,34 +7520,6 @@ Criteria queries set these clauses by using Java programming language
 objects, so the query can be created in a typesafe manner.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJIVS">Creating a Criteria Query</a></p>
-</li>
-<li>
-<p><a href="#GJIVQ">Query Roots</a></p>
-</li>
-<li>
-<p><a href="#GJIUV">Querying Relationships Using Joins</a></p>
-</li>
-<li>
-<p><a href="#GJIVE">Path Navigation in Criteria Queries</a></p>
-</li>
-<li>
-<p><a href="#GJIVI">Restricting Criteria Query Results</a></p>
-</li>
-<li>
-<p><a href="#GJIXE">Managing Criteria Query Results</a></p>
-</li>
-<li>
-<p><a href="#GJIVY">Executing Queries</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GJIVS"></a><a id="creating-a-criteria-query"></a></p>
 </div>
 <div class="sect3">
@@ -8426,19 +7987,6 @@ an entity</p>
 <p>The <code>groupBy</code> method groups the results of a query together according
 to attributes of an entity, and the <code>having</code> method restricts those
 groups according to a condition</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJIWO">Ordering Results</a></p>
-</li>
-<li>
-<p><a href="#GJIXG">Grouping Results</a></p>
 </li>
 </ul>
 </div>
@@ -9289,19 +8837,6 @@ name.</p>
 <p>The created entity graph can be either a fetch graph or a load graph.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BABGEFCG">Fetch Graphs</a></p>
-</li>
-<li>
-<p><a href="#BABHJBHG">Load Graphs</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BABGEFCG"></a><a id="fetch-graphs"></a></p>
 </div>
 <div class="sect4">
@@ -9906,25 +9441,6 @@ setting of the entity manager.</p>
 with the second-level cache programmatically.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDEECCF">Overview of the javax.persistence.Cache Interface</a></p>
-</li>
-<li>
-<p><a href="#GKJDZ">Checking whether an Entity&#8217;s Data Is Cached</a></p>
-</li>
-<li>
-<p><a href="#GKJDQ">Removing an Entity from the Cache</a></p>
-</li>
-<li>
-<p><a href="#GKJDA">Removing All Data from the Cache</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="CHDEECCF"></a><a id="overview-of-the-javax.persistence.cache-interface"></a></p>
 </div>
 <div class="sect4">
@@ -10069,7 +9585,7 @@ cache.evictAll();</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

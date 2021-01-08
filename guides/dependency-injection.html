@@ -1164,7 +1164,7 @@ qualifier type, use the following code:</p>
 <span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy.RUNTIME</span>;
 <span class="keyword">import</span> <span class="include">java.lang.annotation.Target</span>;
 
-<span class="keyword">import</span> <span class="include">javax.inject.Qualifier</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Qualifier</span>;
 
 <span class="annotation">@Qualifier</span>
 <span class="annotation">@Retention</span>(RUNTIME)
@@ -1200,7 +1200,7 @@ as follows:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">greetings</span>;
 
-<span class="keyword">import</span> <span class="include">javax.enterprise.inject.Default</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.inject.Default</span>;
 
 <span class="annotation">@Default</span>
 <span class="directive">public</span> <span class="type">class</span> <span class="class">Greeting</span> {
@@ -1224,7 +1224,7 @@ which you would inject one of the <code>Greeting</code> beans:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.inject.Inject</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.inject.Inject</span>;
 
 <span class="directive">public</span> <span class="type">class</span> <span class="class">Printer</span> {
 
@@ -1239,7 +1239,7 @@ bean. The following code injects the <code>@Informal</code> implementation:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.inject.Inject</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.inject.Inject</span>;
 
 <span class="directive">public</span> <span class="type">class</span> <span class="class">Printer</span> {
 
@@ -1388,8 +1388,8 @@ response mechanism, so the managed bean can be annotated as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.enterprise.context.RequestScoped</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Inject</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.enterprise.context.RequestScoped</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Inject</span>;
 
 <span class="annotation">@RequestScoped</span>
 <span class="directive">public</span> <span class="type">class</span> <span class="class">Printer</span> {
@@ -1415,9 +1415,9 @@ serializable.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.enterprise.context.RequestScoped</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Inject</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Named</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.enterprise.context.RequestScoped</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Inject</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Named</span>;
 
 <span class="annotation">@Named</span>
 <span class="annotation">@RequestScoped</span>
@@ -1464,9 +1464,9 @@ complete. The final code looks like this:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">greetings</span>;
 
-<span class="keyword">import</span> <span class="include">javax.enterprise.context.RequestScoped</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Inject</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Named</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.context.RequestScoped</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Inject</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Named</span>;
 
 <span class="annotation">@Named</span>
 <span class="annotation">@RequestScoped</span>
@@ -1621,21 +1621,6 @@ files, the <code>beans.xml</code> deployment descriptor, if present, must be in 
 <p>CDI managed bean classes and their superclasses support the annotations
 for initializing and for preparing for the destruction of a bean. These
 annotations are defined in Jakarta Annotations (<code><a href="https://jakarta.ee/specifications/annotations/1.3/" class="bare">https://jakarta.ee/specifications/annotations/1.3/</a></code>).</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CIHEHHCH">To Initialize a Managed Bean Using the @PostConstruct
-Annotation</a></p>
-</li>
-<li>
-<p><a href="#CIHBAFAC">To Prepare for the Destruction of a Managed Bean Using
-the @PreDestroy Annotation</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CIHEHHCH"></a><a id="to-initialize-a-managed-bean-using-the-postconstruct-annotation"></a></p>
@@ -1810,19 +1795,6 @@ Examples"</a>, for basic information on installing, building, and running
 the examples.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJBJU">The simplegreeting CDI Example</a></p>
-</li>
-<li>
-<p><a href="#GJCXV">The guessnumber-cdi CDI Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GJBJU"></a><a id="the-simplegreeting-cdi-example"></a></p>
 </div>
 </div>
@@ -1835,22 +1807,6 @@ in a Jakarta Server Faces application. When you run the example, you click a
 button that presents either a formal or an informal greeting, depending
 on how you edited one of the classes. The example includes four source
 files, a Facelets page and template, and configuration files.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJCQS">The simplegreeting Source Files</a></p>
-</li>
-<li>
-<p><a href="#GJDOJ">The Facelets Template and Page</a></p>
-</li>
-<li>
-<p><a href="#GJCYM">Running the simplegreeting Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GJCQS"></a><a id="the-simplegreeting-source-files"></a></p>
@@ -1880,7 +1836,7 @@ and Getter Methods</a></p>
 </div>
 <div class="paragraph">
 <p>The source files are located in the
-<code><em>tut-install</em>/examples/cdi/simplegreeting/src/main/java/jakarta/tutorial/simplegreeting</code>
+<code><em>tut-install</em>/examples/cdi/simplegreeting/src/main/java/ee/jakarta/tutorial/simplegreeting</code>
 directory.</p>
 </div>
 <div class="paragraph">
@@ -2007,24 +1963,6 @@ following location:</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>simplegreeting</code> application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJCXP">To Build, Package, and Run the simplegreeting Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GJCZT">To Build, Package, and Deploy the simplegreeting Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GJCZE">To Run the simplegreeting Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GJCXP"></a><a id="to-build-package-and-run-the-simplegreeting-example-using-netbeans-ide"></a></p>
@@ -2203,22 +2141,6 @@ and configuration files. The configuration files and the template are
 the same as those used for the <code>simplegreeting</code> example.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJDJU">The guessnumber-cdi Source Files</a></p>
-</li>
-<li>
-<p><a href="#GJDON">The Facelets Page</a></p>
-</li>
-<li>
-<p><a href="#GJDPW">Running the guessnumber-cdi Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GJDJU"></a><a id="the-guessnumber-cdi-source-files"></a></p>
 </div>
 <div class="sect3">
@@ -2244,7 +2166,7 @@ the same as those used for the <code>simplegreeting</code> example.</p>
 </div>
 <div class="paragraph">
 <p>The source files are located in the
-<code><em>tut-install</em>/examples/cdi/guessnumber-cdi/src/main/java/jakarta/tutorial/guessnumber</code>
+<code><em>tut-install</em>/examples/cdi/guessnumber-cdi/src/main/java/ee/jakarta/tutorial/guessnumber</code>
 directory.</p>
 </div>
 <div class="paragraph">
@@ -2267,7 +2189,7 @@ directory.</p>
 <span class="keyword">import</span> <span class="include">java.lang.annotation.Retention</span>;
 <span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy.RUNTIME</span>;
 <span class="keyword">import</span> <span class="include">java.lang.annotation.Target</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Qualifier</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Qualifier</span>;
 
 <span class="annotation">@Target</span>({TYPE, METHOD, PARAMETER, FIELD})
 <span class="annotation">@Retention</span>(RUNTIME)
@@ -2292,7 +2214,7 @@ directory.</p>
 <span class="keyword">import</span> <span class="include">java.lang.annotation.Retention</span>;
 <span class="keyword">import</span> <span class="include">static</span> <span class="include">java.lang.annotation.RetentionPolicy.RUNTIME</span>;
 <span class="keyword">import</span> <span class="include">java.lang.annotation.Target</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Qualifier</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Qualifier</span>;
 
 <span class="annotation">@Target</span>({TYPE, METHOD, PARAMETER, FIELD})
 <span class="annotation">@Retention</span>(RUNTIME)
@@ -2319,8 +2241,8 @@ the application:</p>
 <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">guessnumber</span>;
 
 <span class="keyword">import</span> <span class="include">java.io.Serializable</span>;
-<span class="keyword">import</span> <span class="include">javax.enterprise.context.ApplicationScoped</span>;
-<span class="keyword">import</span> <span class="include">javax.enterprise.inject.Produces</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.context.ApplicationScoped</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.inject.Produces</span>;
 
 <span class="annotation">@ApplicationScoped</span>
 <span class="directive">public</span> <span class="type">class</span> <span class="class">Generator</span> <span class="directive">implements</span> <span class="predefined-type">Serializable</span> {
@@ -2388,15 +2310,15 @@ user&#8217;s input is correct</p>
 <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">guessnumber</span>;
 
 <span class="keyword">import</span> <span class="include">java.io.Serializable</span>;
-<span class="keyword">import</span> <span class="include">javax.annotation.PostConstruct</span>;
-<span class="keyword">import</span> <span class="include">javax.enterprise.context.SessionScoped</span>;
-<span class="keyword">import</span> <span class="include">javax.enterprise.inject.Instance</span>;
-<span class="keyword">import</span> <span class="include">javax.faces.application.FacesMessage</span>;
-<span class="keyword">import</span> <span class="include">javax.faces.component.UIComponent</span>;
-<span class="keyword">import</span> <span class="include">javax.faces.component.UIInput</span>;
-<span class="keyword">import</span> <span class="include">javax.faces.context.FacesContext</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Inject</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Named</span>;
+<span class="keyword">import</span> <span class="include">jakarta.annotation.PostConstruct</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.context.SessionScoped</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.inject.Instance</span>;
+<span class="keyword">import</span> <span class="include">jakarta.faces.application.FacesMessage</span>;
+<span class="keyword">import</span> <span class="include">jakarta.faces.component.UIComponent</span>;
+<span class="keyword">import</span> <span class="include">jakarta.faces.component.UIInput</span>;
+<span class="keyword">import</span> <span class="include">jakarta.faces.context.FacesContext</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Inject</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Named</span>;
 
 <span class="annotation">@Named</span>
 <span class="annotation">@SessionScoped</span>
@@ -2581,24 +2503,6 @@ guess is valid is <code>userNumberBean.validateNumberRange</code>.</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>guessnumber-cdi</code> application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJDPS">To Build, Package, and Deploy the guessnumber-cdi Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GJDPR">To Build, Package, and Deploy the guessnumber-cdi Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GJDQB">To Run the guessnumber Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GJDPS"></a><a id="to-build-package-and-deploy-the-guessnumber-cdi-example-using-netbeans-ide"></a></p>
@@ -2862,7 +2766,7 @@ that version is declared as follows in the <code>beans.xml</code> file:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;beans</span> <span class="attribute-name">...</span><span class="tag">&gt;</span>
     <span class="tag">&lt;alternatives&gt;</span>
-        <span class="tag">&lt;class&gt;</span>jakarta.tutorial.encoder.TestCoderImpl<span class="tag">&lt;/class&gt;</span>
+        <span class="tag">&lt;class&gt;</span>ee.jakarta.tutorial.encoder.TestCoderImpl<span class="tag">&lt;/class&gt;</span>
     <span class="tag">&lt;/alternatives&gt;</span>
 <span class="tag">&lt;/beans&gt;</span></code></pre>
 </div>
@@ -3273,10 +3177,10 @@ implements the <code>javax.servlet.ServletContext</code> interface.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.annotation.Resource</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Inject</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.http.HttpServlet</span>;
-<span class="keyword">import</span> <span class="include">javax.transaction.UserTransaction</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.annotation.Resource</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Inject</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http.HttpServlet</span>;
+<span class="keyword">import</span> <span class="include">jakarta.transaction.UserTransaction</span>;
 ...
 public <span class="type">class</span> <span class="class">TransactionServlet</span> <span class="directive">extends</span> HttpServlet {
     <span class="annotation">@Resource</span> UserTransaction transaction;
@@ -3650,7 +3554,7 @@ the <code>LoggedInterceptor</code> class is specified as follows:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;interceptors&gt;</span>
-    <span class="tag">&lt;class&gt;</span>jakarta.tutorial.billpayment.interceptors.LoggedInterceptor<span class="tag">&lt;/class&gt;</span>
+    <span class="tag">&lt;class&gt;</span>ee.jakarta.tutorial.billpayment.interceptors.LoggedInterceptor<span class="tag">&lt;/class&gt;</span>
 <span class="tag">&lt;/interceptors&gt;</span></code></pre>
 </div>
 </div>
@@ -3749,7 +3653,7 @@ file. For example, the <code>CoderDecorator</code> class is specified as follows
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;decorators&gt;</span>
-    <span class="tag">&lt;class&gt;</span>jakarta.tutorial.decorators.CoderDecorator<span class="tag">&lt;/class&gt;</span>
+    <span class="tag">&lt;class&gt;</span>ee.jakarta.tutorial.decorators.CoderDecorator<span class="tag">&lt;/class&gt;</span>
 <span class="tag">&lt;/decorators&gt;</span></code></pre>
 </div>
 </div>
@@ -4122,33 +4026,6 @@ Examples"</a>, for basic information on installing, building, and running
 the examples.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHPU">The encoder Example: Using
-Alternatives</a></p>
-</li>
-<li>
-<p><a href="#GKHPY">The producermethods Example: Using
-a Producer Method to Choose a Bean Implementation</a></p>
-</li>
-<li>
-<p><a href="#GKHRG">The producerfields Example: Using
-Producer Fields to Generate Resources</a></p>
-</li>
-<li>
-<p><a href="#GKHPA">The billpayment Example: Using
-Events and Interceptors</a></p>
-</li>
-<li>
-<p><a href="#GKPAX">The decorators Example: Decorating
-a Bean</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKHPU"></a><a id="the-encoder-example-using-alternatives"></a></p>
 </div>
 </div>
@@ -4163,24 +4040,8 @@ bean, a Facelets page, and configuration files.</p>
 </div>
 <div class="paragraph">
 <p>The source files are located in the
-<code><em>tut-install</em>/examples/cdi/encoder/src/main/java/jakarta/tutorial/encoder/</code>
+<code><em>tut-install</em>/examples/cdi/encoder/src/main/java/ee/jakarta/tutorial/encoder/</code>
 directory.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHQA">The Coder Interface and Implementations</a></p>
-</li>
-<li>
-<p><a href="#GKHPM">The encoder Facelets Page and Managed Bean</a></p>
-</li>
-<li>
-<p><a href="#GKHQQ">Running the encoder Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKHQA"></a><a id="the-coder-interface-and-implementations"></a></p>
@@ -4213,7 +4074,7 @@ values of the arguments. The <code>TestCoderImpl</code> implementation is annota
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">javax.enterprise.inject.Alternative</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.enterprise.inject.Alternative</span>;
 
 <span class="annotation">@Alternative</span>
 <span class="directive">public</span> <span class="type">class</span> <span class="class">TestCoderImpl</span> <span class="directive">implements</span> Coder {
@@ -4234,7 +4095,7 @@ element is commented out:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;beans</span> <span class="attribute-name">...</span><span class="tag">&gt;</span>
     <span class="comment">&lt;!--&lt;alternatives&gt;
-        &lt;class&gt;jakarta.tutorial.encoder.TestCoderImpl&lt;/class&gt;
+        &lt;class&gt;ee.jakarta.tutorial.encoder.TestCoderImpl&lt;/class&gt;
     &lt;/alternatives&gt;--&gt;</span>
 <span class="tag">&lt;/beans&gt;</span></code></pre>
 </div>
@@ -4443,7 +4304,7 @@ element, so that it looks like this:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">&lt;alternatives&gt;
-    &lt;<span class="type">class</span>&gt;<span class="class">jakarta</span>.tutorial.encoder.TestCoderImpl&lt;/<span class="type">class</span>&gt;
+    &lt;<span class="type">class</span>&gt;<span class="class">ee</span>.jakarta.tutorial.encoder.TestCoderImpl&lt;/<span class="type">class</span>&gt;
 &lt;/<span class="class">alternatives</span>&gt;</code></pre>
 </div>
 </div>
@@ -4563,7 +4424,7 @@ element, so that it looks like this:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">&lt;alternatives&gt;
-    &lt;<span class="type">class</span>&gt;<span class="class">jakarta</span>.tutorial.encoder.TestCoderImpl&lt;/<span class="type">class</span>&gt;
+    &lt;<span class="type">class</span>&gt;<span class="class">ee</span>.jakarta.tutorial.encoder.TestCoderImpl&lt;/<span class="type">class</span>&gt;
 &lt;/<span class="class">alternatives</span>&gt;</code></pre>
 </div>
 </div>
@@ -4625,19 +4486,6 @@ interface and two implementations of it, a managed bean, a Facelets
 page, and configuration files. It also contains a qualifier type. When
 you run it, you do not need to edit the <code>beans.xml</code> file and redeploy
 the application to change its behavior.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHRO">Components of the producermethods Example</a></p>
-</li>
-<li>
-<p><a href="#GKHQE">Running the producermethods Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKHRO"></a><a id="components-of-the-producermethods-example"></a></p>
@@ -4745,24 +4593,6 @@ whose selected value is assigned to the property <code>coderBean.coderType</code
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>producermethods</code> application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHPE">To Build, Package, and Deploy the producermethods Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GKHPS">To Build, Package, and Deploy the producermethods Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GKHQG">To Run the producermethods Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKHPE"></a><a id="to-build-package-and-deploy-the-producermethods-example-using-netbeans-ide"></a></p>
@@ -4890,27 +4720,8 @@ page, and a managed bean.</p>
 </div>
 <div class="paragraph">
 <p>The source files are located in the
-<code><em>tut-install</em>/examples/cdi/producerfields/src/main/java/jakarta/tutorial/producerfields/</code>
+<code><em>tut-install</em>/examples/cdi/producerfields/src/main/java/ee/jakarta/tutorial/producerfields/</code>
 directory.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHPP">The Producer Field for the producerfields Example</a></p>
-</li>
-<li>
-<p><a href="#GKHPD">The producerfields Entity and Session Bean</a></p>
-</li>
-<li>
-<p><a href="#GKHPF">The producerfields Facelets Pages and Managed Bean</a></p>
-</li>
-<li>
-<p><a href="#GKHRH">Running the producerfields Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKHPP"></a><a id="the-producer-field-for-the-producerfields-example"></a></p>
@@ -5244,24 +5055,6 @@ Back button returns the user to the <code>index.xhtml</code> page.</p>
 run the <code>producerfields</code> application.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHPB">To Build, Package, and Deploy the producerfields Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GKHRM">To Build, Package, and Deploy the producerfields Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GKHRR">To Run the producerfields Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKHPB"></a><a id="to-build-package-and-deploy-the-producerfields-example-using-netbeans-ide"></a></p>
 </div>
 <div class="sect4">
@@ -5399,33 +5192,8 @@ you created.</p>
 </div>
 <div class="paragraph">
 <p>The source files are located in the
-<code><em>tut-install</em>/examples/cdi/billpayment/src/main/java/jakarta/tutorial/billpayment/</code>
+<code><em>tut-install</em>/examples/cdi/billpayment/src/main/java/ee/jakarta/tutorial/billpayment/</code>
 directory.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDIBGDF">Overview of the billpayment Example</a></p>
-</li>
-<li>
-<p><a href="#GKHOK">The PaymentEvent Event Class</a></p>
-</li>
-<li>
-<p><a href="#GKHRB">The PaymentHandler Event Listener</a></p>
-</li>
-<li>
-<p><a href="#GKHRJ">The billpayment Facelets Pages and Managed Bean</a></p>
-</li>
-<li>
-<p><a href="#GKHRQ">The LoggedInterceptor Interceptor Class</a></p>
-</li>
-<li>
-<p><a href="#GKHPK">Running the billpayment Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDIBGDF"></a><a id="overview-of-the-billpayment-example"></a></p>
@@ -5762,7 +5530,7 @@ of the method being invoked as well as its class.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;interceptors&gt;</span>
-    <span class="tag">&lt;class&gt;</span>jakarta.tutorial.billpayment.interceptor.LoggedInterceptor<span class="tag">&lt;/class&gt;</span>
+    <span class="tag">&lt;class&gt;</span>ee.jakarta.tutorial.billpayment.interceptor.LoggedInterceptor<span class="tag">&lt;/class&gt;</span>
 <span class="tag">&lt;/interceptors&gt;</span></code></pre>
 </div>
 </div>
@@ -5781,24 +5549,6 @@ annotated <code>@Logged</code>, so all their methods are intercepted. In
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>billpayment</code> application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHQS">To Build, Package, and Deploy the billpayment Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GKHPX">To Build, Package, and Deploy the billpayment Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GKHPT">To Run the billpayment Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKHQS"></a><a id="to-build-package-and-deploy-the-billpayment-example-using-netbeans-ide"></a></p>
@@ -5958,24 +5708,8 @@ business logic for a bean.</p>
 </div>
 <div class="paragraph">
 <p>The source files are located in the
-<code><em>tut-install</em>/examples/cdi/decorators/src/main/java/jakarta/tutorial/decorators/</code>
+<code><em>tut-install</em>/examples/cdi/decorators/src/main/java/ee/jakarta/tutorial/decorators/</code>
 directory.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDDDFCI">Overview of the decorators Example</a></p>
-</li>
-<li>
-<p><a href="#GKPAQ">Components of the decorators Example</a></p>
-</li>
-<li>
-<p><a href="#GKPBK">Running the decorators Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDDDFCI"></a><a id="overview-of-the-decorators-example"></a></p>
@@ -6052,10 +5786,10 @@ classes are identical to the versions in the <code>encoder</code> example.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml">    <span class="tag">&lt;decorators&gt;</span>
-        <span class="tag">&lt;class&gt;</span>jakarta.tutorial.decorators.CoderDecorator<span class="tag">&lt;/class&gt;</span>
+        <span class="tag">&lt;class&gt;</span>ee.jakarta.tutorial.decorators.CoderDecorator<span class="tag">&lt;/class&gt;</span>
     <span class="tag">&lt;/decorators&gt;</span>
     <span class="tag">&lt;interceptors&gt;</span>
-        <span class="tag">&lt;class&gt;</span>jakarta.tutorial.decorators.LoggedInterceptor<span class="tag">&lt;/class&gt;</span>
+        <span class="tag">&lt;class&gt;</span>ee.jakarta.tutorial.decorators.LoggedInterceptor<span class="tag">&lt;/class&gt;</span>
     <span class="tag">&lt;/interceptors&gt;</span></code></pre>
 </div>
 </div>
@@ -6068,24 +5802,6 @@ classes are identical to the versions in the <code>encoder</code> example.</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>decorators</code> application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKPAG">To Build, Package, and Deploy the decorators Example Using
-NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GKPAJ">To Build, Package, and Deploy the decorators Example Using
-Maven</a></p>
-</li>
-<li>
-<p><a href="#GKPAN">To Run the decorators Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKPAG"></a><a id="to-build-package-and-deploy-the-decorators-example-using-netbeans-ide"></a></p>
@@ -6203,8 +5919,8 @@ tab. Otherwise, view domain-dir`/logs/server.log`.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">INFO: Entering method: encodeString in <span class="type">class</span> <span class="class">jakarta</span>.tutorial.decorators.CoderBean
-INFO: Entering method: codeString in <span class="type">class</span> <span class="class">jakarta</span>.tutorial.decorators.CoderImpl</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">INFO: Entering method: encodeString in <span class="type">class</span> <span class="class">ee</span>.jakarta.tutorial.decorators.CoderBean
+INFO: Entering method: codeString in <span class="type">class</span> <span class="class">ee</span>.jakarta.tutorial.decorators.CoderImpl</code></pre>
 </div>
 </div>
 </li>
@@ -6218,7 +5934,7 @@ INFO: Entering method: codeString in <span class="type">class</span> <span class
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

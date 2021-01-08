@@ -680,10 +680,10 @@ class also must define a default, public, no-argument constructor.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.helloservice</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.helloservice</span>;
 
-<span class="keyword">import</span> <span class="include">javax.jws.WebService</span>;
-<span class="keyword">import</span> <span class="include">javax.jws.WebMethod</span>;
+<span class="keyword">import</span> <span class="include">jakarta.jws.WebService</span>;
+<span class="keyword">import</span> <span class="include">jakarta.jws.WebMethod</span>;
 
 <span class="annotation">@WebService</span>
 <span class="directive">public</span> <span class="type">class</span> <span class="class">Hello</span> {
@@ -708,20 +708,6 @@ class also must define a default, public, no-argument constructor.</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, and deploy
 the <code>helloservice-war</code> application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNAYS">To Build, Package, and Deploy the Service Using NetBeans
-IDE</a></p>
-</li>
-<li>
-<p><a href="#BNAYT">To Build, Package, and Deploy the Service Using Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNAYS"></a><a id="to-build-package-and-deploy-the-service-using-netbeans-ide"></a></p>
@@ -832,16 +818,6 @@ service.</p>
 endpoint.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNAYW">To Test the Service without a Client</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNAYW"></a><a id="to-test-the-service-without-a-client"></a></p>
 </div>
 <div class="sect4">
@@ -890,19 +866,6 @@ service. The port is created at development time by the <code>wsimport</code> Ma
 goal, which generates JAX-WS portable artifacts based on a WSDL file.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNAYY">Coding the Application Client</a></p>
-</li>
-<li>
-<p><a href="#BNAYZ">Running the Application Client</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNAYY"></a><a id="coding-the-application-client"></a></p>
 </div>
 <div class="sect4">
@@ -919,8 +882,8 @@ which represents the service at the URI of the deployed service&#8217;s WSDL
 file:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.tutorial.helloservice.endpoint.HelloService</span>;
-<span class="keyword">import</span> <span class="include">javax.xml.ws.WebServiceRef</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">ee.jakarta.tutorial.helloservice.endpoint.HelloService</span>;
+<span class="keyword">import</span> <span class="include">jakarta.xml.ws.WebServiceRef</span>;
 
 <span class="directive">public</span> <span class="type">class</span> <span class="class">HelloAppClient</span> {
     <span class="annotation">@WebServiceRef</span>(wsdlLocation =
@@ -934,7 +897,7 @@ file:</p>
 invoking <code>getHelloPort</code> on the service:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">jakarta.tutorial.helloservice.endpoint.Hello port = service.getHelloPort();</code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">ee.jakarta.tutorial.helloservice.endpoint.Hello port = service.getHelloPort();</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -955,15 +918,15 @@ service:</p>
 <div class="paragraph">
 <p>Here is the full source of <code>HelloAppClient.java</code>, which is located in
 the
-<code><em>tut-install</em>/examples/jaxws/hello-appclient/src/main/java/jakarta/tutorial/hello/appclient/</code>
+<code><em>tut-install</em>/examples/jaxws/hello-appclient/src/main/java/ee/jakarta/tutorial/hello/appclient/</code>
 directory:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.hello.appclient</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.hello.appclient</span>;
 
-<span class="keyword">import</span> <span class="include">jakarta.tutorial.helloservice.endpoint.HelloService</span>;
-<span class="keyword">import</span> <span class="include">javax.xml.ws.WebServiceRef</span>;
+<span class="keyword">import</span> <span class="include">ee.jakarta.tutorial.helloservice.endpoint.HelloService</span>;
+<span class="keyword">import</span> <span class="include">jakarta.xml.ws.WebServiceRef</span>;
 
 <span class="directive">public</span> <span class="type">class</span> <span class="class">HelloAppClient</span> {
     <span class="annotation">@WebServiceRef</span>(wsdlLocation =
@@ -978,7 +941,7 @@ directory:</p>
     }
 
     <span class="directive">private</span> <span class="directive">static</span> <span class="predefined-type">String</span> sayHello(java.lang.String arg0) {
-        jakarta.tutorial.helloservice.endpoint.Hello port =
+        ee.jakarta.tutorial.helloservice.endpoint.Hello port =
                 service.getHelloPort();
         <span class="keyword">return</span> port.sayHello(arg0);
     }
@@ -996,16 +959,6 @@ directory:</p>
 run the <code>hello-appclient</code> application. To build the client, you must
 first have deployed <code>helloservice-war</code>, as described in
 <a href="#BNAYR">Building, Packaging, and Deploying the Service</a>.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CIHBGFGA">To Run the Application Client Using NetBeans IDE</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CIHBGFGA"></a><a id="to-run-the-application-client-using-netbeans-ide"></a></p>
@@ -1098,19 +1051,6 @@ Hello, world.</code></pre>
 makes this call through a port.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJYFL">Coding the Servlet</a></p>
-</li>
-<li>
-<p><a href="#GJYGE">Running the Web Client</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GJYFL"></a><a id="coding-the-servlet"></a></p>
 </div>
 <div class="sect4">
@@ -1125,9 +1065,9 @@ makes this call through a port.</p>
 annotation:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">jakarta.tutorial.helloservice.endpoint.HelloService</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">ee.jakarta.tutorial.helloservice.endpoint.HelloService</span>;
 ...
-import javax.xml.ws.WebServiceRef;</code></pre>
+import jakarta.xml.ws.WebServiceRef;</code></pre>
 </div>
 </div>
 </li>
@@ -1149,7 +1089,7 @@ calls the <code>sayHello</code> method on the port:</p>
 <pre class="CodeRay highlight"><code data-lang="java"><span class="directive">private</span> HelloService service;
 ...
 private <span class="predefined-type">String</span> sayHello(java.lang.String arg0) {
-    jakarta.tutorial.helloservice.endpoint.Hello port =
+    ee.jakarta.tutorial.helloservice.endpoint.Hello port =
             service.getHelloPort();
     <span class="keyword">return</span> port.sayHello(arg0);
 }</code></pre>
@@ -1169,22 +1109,22 @@ private <span class="predefined-type">String</span> sayHello(java.lang.String ar
 <div class="paragraph">
 <p>The significant parts of the <code>HelloServlet</code> code follow. The code is
 located in the
-<code><em>tut-install</em>/examples/jaxws/hello-webclient/src/java/jakarta/tutorial/hello/ webclient/</code>
+<code><em>tut-install</em>/examples/jaxws/hello-webclient/src/java/ee/jakarta/tutorial/hello/ webclient/</code>
 directory.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.hello.webclient</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.hello.webclient</span>;
 
-<span class="keyword">import</span> <span class="include">jakarta.tutorial.helloservice.endpoint.HelloService</span>;
+<span class="keyword">import</span> <span class="include">ee.jakarta.tutorial.helloservice.endpoint.HelloService</span>;
 <span class="keyword">import</span> <span class="include">java.io.IOException</span>;
 <span class="keyword">import</span> <span class="include">java.io.PrintWriter</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.ServletException</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.annotation.WebServlet</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.http.HttpServlet</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.http.HttpServletRequest</span>;
-<span class="keyword">import</span> <span class="include">javax.servlet.http.HttpServletResponse</span>;
-<span class="keyword">import</span> <span class="include">javax.xml.ws.WebServiceRef</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.ServletException</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.annotation.WebServlet</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http.HttpServlet</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http.HttpServletRequest</span>;
+<span class="keyword">import</span> <span class="include">jakarta.servlet.http.HttpServletResponse</span>;
+<span class="keyword">import</span> <span class="include">jakarta.xml.ws.WebServiceRef</span>;
 
 <span class="annotation">@WebServlet</span>(name=<span class="string"><span class="delimiter">&quot;</span><span class="content">HelloServlet</span><span class="delimiter">&quot;</span></span>, urlPatterns={<span class="string"><span class="delimiter">&quot;</span><span class="content">/HelloServlet</span><span class="delimiter">&quot;</span></span>})
 <span class="directive">public</span> <span class="type">class</span> <span class="class">HelloServlet</span> <span class="directive">extends</span> HttpServlet {
@@ -1223,7 +1163,7 @@ directory.</p>
     <span class="comment">//   getServletInfo method</span>
 
     <span class="directive">private</span> <span class="predefined-type">String</span> sayHello(java.lang.String arg0) {
-        jakarta.tutorial.helloservice.endpoint.Hello port =
+        ee.jakarta.tutorial.helloservice.endpoint.Hello port =
                 service.getHelloPort();
         <span class="keyword">return</span> port.sayHello(arg0);
     }
@@ -1241,19 +1181,6 @@ directory.</p>
 run the <code>hello-webclient</code> application. To build the client, you must
 first have deployed <code>helloservice-war</code>, as described in
 <a href="#BNAYR">Building, Packaging, and Deploying the Service</a>.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CIHHFFEC">To Run the Web Client Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CIHHDCEH">To Run the Web Client Using Maven</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CIHHFFEC"></a><a id="to-run-the-web-client-using-netbeans-ide"></a></p>
@@ -1649,7 +1576,7 @@ dynamic proxies, and the Dynamic Invocation Interface (DII).</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

@@ -2349,7 +2349,7 @@ declare the prefix for the composite component tag library as</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">xmlns:composite=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://java.sun.com/jsf/composite</span><span class="delimiter">&quot;</span></span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">xmlns:composite=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://xmlns.jcp.org/jsf/composite</span><span class="delimiter">&quot;</span></span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2357,7 +2357,7 @@ declare the prefix for the composite component tag library as</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java">xmlns:cc=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://java.sun.com/jsf/composite</span><span class="delimiter">&quot;</span></span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="java">xmlns:cc=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://xmlns.jcp.org/jsf/composite</span><span class="delimiter">&quot;</span></span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2457,22 +2457,6 @@ Jakarta Server Faces application. The following tasks are usually required:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#creating-a-facelets-application">Creating a Facelets Application</a></p>
-</li>
-<li>
-<p><a href="#configuring-the-application">Configuring the Application</a></p>
-</li>
-<li>
-<p>link:#running-the-guessnumber-jsf-facelets Example[Running the guessnumber-jsf Facelets Example]</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GIQTE"></a><a id="creating-a-facelets-application"></a></p>
 </div>
 <div class="sect3">
@@ -2505,12 +2489,12 @@ random number from 0 to 10 inclusive:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">jakarta.tutorial.guessnumber</span>;
+<pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">ee.jakarta.tutorial.guessnumber</span>;
 
 <span class="keyword">import</span> <span class="include">java.io.Serializable</span>;
 <span class="keyword">import</span> <span class="include">java.util.Random</span>;
-<span class="keyword">import</span> <span class="include">javax.enterprise.context.SessionScoped</span>;
-<span class="keyword">import</span> <span class="include">javax.inject.Named</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.context.SessionScoped</span>;
+<span class="keyword">import</span> <span class="include">jakarta.inject.Named</span>;
 
 <span class="annotation">@Named</span>
 <span class="annotation">@SessionScoped</span>
@@ -2787,24 +2771,6 @@ the user, the default project stage is <code>Production</code>.</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>guessnumber-jsf</code> example.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GJQZL">To Build, Package, and Deploy the guessnumber-jsf Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GJQYU">To Build, Package, and Deploy the guessnumber-jsf Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GJQYX">To Run the guessnumber-jsf Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GJQZL"></a><a id="to-build-package-and-deploy-the-guessnumber-jsf-example-using-netbeans-ide"></a></p>
@@ -3509,30 +3475,6 @@ annotations with <code>@Model</code>).</p>
 tut-install`/examples/web/jsf/hello1-rlc/` directory.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BABGEDEB">Configuring the hello1-rlc Example</a></p>
-</li>
-<li>
-<p><a href="#BABDHCFG">The Facelets Pages for the hello1-rlc Example</a></p>
-</li>
-<li>
-<p><a href="#BABBGFFF">To Build, Package, and Deploy the hello1-rlc Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#BABJAGFB">To Build, Package, and Deploy the hello1-rlc Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#BABFCHEB">To Run the hello1-rlc Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BABGEDEB"></a><a id="configuring-the-hello1-rlc-example"></a></p>
 </div>
 <div class="sect4">
@@ -3569,7 +3511,7 @@ the <code>reply</code> area of the application (<code>/reply/<strong></code>). T
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java">hello1-rlc
     pom.xml
-    src/main/java/jakarta/tutorial/hello1rlc/Hello.java
+    src/main/java/ee/jakarta/tutorial/hello1rlc/Hello.java
     src/main/webapp
         WEB-INF
             faces-config.xml
@@ -4125,23 +4067,6 @@ The pages use both pass-through attributes and pass-through elements.</p>
 tut-install`/examples/web/jsf/reservation/` directory.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BABGCAHH">The Facelets Pages for the reservation Application</a></p>
-</li>
-<li>
-<p><a href="#BABHFCCG">The Managed Bean for the reservation Application</a></p>
-</li>
-<li>
-<p><a href="#BABIHHGC">To Build, Package, and Deploy the reservation Example
-Using NetBeans IDE</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BABGCAHH"></a><a id="the-facelets-pages-for-the-reservation-application"></a></p>
 </div>
 <div class="sect4">
@@ -4590,22 +4515,6 @@ are explained in the next section.</p>
 <p>The EL defines two kinds of expressions: value expressions and method
 expressions. Value expressions can be evaluated to yield a value, and
 method expressions are used to reference a method.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#value-expressions">Value Expressions</a></p>
-</li>
-<li>
-<p><a href="#method-expressions">Method Expressions</a></p>
-</li>
-<li>
-<p><a href="#lambda-expressions">Lambda Expressions</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNAHV"></a><a id="value-expressions"></a></p>
@@ -6528,7 +6437,7 @@ tag is written in a similar way.</p>
              <span class="attribute-name">required</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>
              <span class="attribute-name">requiredMessage</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{bundle.ReqCustomerName}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     <span class="tag">&lt;f:valueChangeListener</span>
-        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.listeners.NameChanged</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.listeners.NameChanged</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
  <span class="tag">&lt;/h:inputText&gt;</span></code></pre>
 </div>
 </div>
@@ -6812,7 +6721,7 @@ an example:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;h:commandLink</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">Duke</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">action</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">bookstore</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     <span class="tag">&lt;f:actionListener</span>
-        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.listeners.LinkBookChangeListener</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.listeners.LinkBookChangeListener</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
     <span class="tag">&lt;h:outputText</span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{bundle.Book201}</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
 /h:commandLink<span class="error">&gt;</span></code></pre>
 </div>
@@ -6981,7 +6890,7 @@ as its last child.</p>
                  <span class="attribute-name">required</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>
                  <span class="attribute-name">requiredMessage</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{bundle.ReqCustomerName}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
          <span class="tag">&lt;f:valueChangeListener</span>
-             <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.listeners.NameChanged</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+             <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.listeners.NameChanged</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
     <span class="tag">&lt;/h:inputText&gt;</span>
     <span class="tag">&lt;h:message</span> <span class="attribute-name">styleClass</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">error-message</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">for</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
 
@@ -7450,7 +7359,7 @@ displayed as a row. Here is an example:</p>
                      <span class="attribute-name">title</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{bundle.ItemQuantity}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
             <span class="tag">&lt;f:validateLongRange</span> <span class="attribute-name">minimum</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">1</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
             <span class="tag">&lt;f:valueChangeListener</span>
-                <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.listeners.QuantityChanged</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
+                <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.listeners.QuantityChanged</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
         <span class="tag">&lt;/h:inputText&gt;</span>
     <span class="tag">&lt;/h:column&gt;</span>
     <span class="tag">&lt;h:column&gt;</span>
@@ -7886,24 +7795,6 @@ parameters are passed from the <code>response.xhtml</code> page, as described in
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>bookmarks</code> example. The source code for this example is in the
 tut-install`/examples/web/jsf/bookmarks/` directory.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#CHDIEHEB">To Build, Package, and Deploy the bookmarks Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#CHDEFJEF">To Build, Package, and Deploy the bookmarks Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#CHDGEBCB">To Run the bookmarks Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="CHDIEHEB"></a><a id="to-build-package-and-deploy-the-bookmarks-example-using-netbeans-ide"></a></p>
@@ -9202,7 +9093,7 @@ component:</p>
              <span class="attribute-name">required</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>
              <span class="attribute-name">requiredMessage</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{bundle.ReqCustomerName}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     <span class="tag">&lt;f:valueChangeListener</span>
-        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.listeners.NameChanged</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.listeners.NameChanged</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
 <span class="tag">&lt;/h:inputText&gt;</span></code></pre>
 </div>
 </div>
@@ -9246,7 +9137,7 @@ listener.</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;h:commandLink</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">Duke</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">action</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">bookstore</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     <span class="tag">&lt;f:actionListener</span>
-        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.listeners.LinkBookChangeListener</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.listeners.LinkBookChangeListener</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
     <span class="tag">&lt;h:outputText</span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{bundle.Book201}</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
 <span class="tag">&lt;/h:commandLink&gt;</span></code></pre>
 </div>
@@ -9809,19 +9700,6 @@ event handlers, and validators.</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNAQN">Creating a Managed Bean</a></p>
-</li>
-<li>
-<p><a href="#BNAQP">Using the EL to Reference Managed Beans</a></p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p><a id="BNAQN"></a><a id="creating-a-managed-bean"></a></p>
 </div>
@@ -11004,7 +10882,7 @@ a value-change event is generated, and the
              <span class="attribute-name">required</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>
              <span class="attribute-name">requiredMessage</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{bundle.ReqCustomerName}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
      <span class="tag">&lt;f:valueChangeListener</span>
-         <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.listeners.NameChanged</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+         <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.listeners.NameChanged</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
 <span class="tag">&lt;/h:inputText&gt;</span></code></pre>
 </div>
 </div>
@@ -11397,25 +11275,6 @@ posts the request to the Jakarta Server Faces lifecycle.</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHVT">Using the event Attribute</a></p>
-</li>
-<li>
-<p><a href="#GKHUZ">Using the execute Attribute</a></p>
-</li>
-<li>
-<p><a href="#GKHWM">Using the immediate Attribute</a></p>
-</li>
-<li>
-<p><a href="#GKHZS">Using the listener Attribute</a></p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p><a id="GKHVT"></a><a id="using-the-event-attribute"></a></p>
 </div>
@@ -12068,41 +11927,12 @@ rather than by form submission.</p>
 tut-install`/examples/web/jsf/ajaxguessnumber/` directory.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKOIJ">The ajaxguessnumber Source Files</a></p>
-</li>
-<li>
-<p><a href="#GKOKE">Running the ajaxguessnumber Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKOIJ"></a><a id="the-ajaxguessnumber-source-files"></a></p>
 </div>
 <div class="sect3">
 <h4 id="_the_ajaxguessnumber_source_files">7.11.1. The ajaxguessnumber Source Files</h4>
 <div class="paragraph">
 <p>The changes to the <code>guessnumber</code> application occur in two source files.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKOFW">The ajaxgreeting.xhtml Facelets Page</a></p>
-</li>
-<li>
-<p><a href="#GKOHN">The UserNumberBean Backing Bean</a></p>
-</li>
-<li>
-<p><a href="#CHDGAIGJ">The DukesNumberBean CDI Managed Bean</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKOFW"></a><a id="the-ajaxgreeting.xhtml-facelets-page"></a></p>
@@ -12230,24 +12060,6 @@ DukesNumberBean dukesNumberBean;</code></pre>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>ajaxguessnumber</code> application.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GLHVU">To Build, Package, and Deploy the ajaxguessnumber Example
-Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GLHVQ">To Build, Package, and Deploy the ajaxguessnumber Example
-Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GLHWE">To Run the ajaxguessnumber Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GLHVU"></a><a id="to-build-package-and-deploy-the-ajaxguessnumber-example-using-netbeans-ide"></a></p>
@@ -12595,25 +12407,6 @@ file, a using page, and a managed bean.</p>
 tut-install`/examples/web/jsf/compositecomponentexample/` directory.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHUU">The Composite Component File</a></p>
-</li>
-<li>
-<p><a href="#GKHVX">The Using Page</a></p>
-</li>
-<li>
-<p><a href="#GKHVQ">The Managed Bean</a></p>
-</li>
-<li>
-<p><a href="#GLECV">Running the compositecomponentexample Example</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GKHUU"></a><a id="the-composite-component-file"></a></p>
 </div>
 <div class="sect3">
@@ -12759,24 +12552,6 @@ IDE</a>.</p>
 <div class="paragraph">
 <p>You can use either NetBeans IDE or Maven to build, package, deploy, and
 run the <code>compositecomponentexample</code> example.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GKHVC">To Build, Package, and Deploy the
-compositecomponentexample Example Using NetBeans IDE</a></p>
-</li>
-<li>
-<p><a href="#GLEAE">To Build, Package, and Deploy the
-compositecomponentexample Example Using Maven</a></p>
-</li>
-<li>
-<p><a href="#GLEEU">To Run the compositecomponentexample Example</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="GKHVC"></a><a id="to-build-package-and-deploy-the-compositecomponentexample-example-using-netbeans-ide"></a></p>
@@ -12989,22 +12764,6 @@ bind custom objects to managed bean properties.</p>
 components and associated renderers. This section helps you to decide
 whether you can use standard components and renderers in your
 application or need a custom component or custom renderer.</p>
-</div>
-<div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNAVI">When to Use a Custom Component</a></p>
-</li>
-<li>
-<p><a href="#BNAVJ">When to Use a Custom Renderer</a></p>
-</li>
-<li>
-<p><a href="#BNAVK">Component, Renderer, and Tag Combinations</a></p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p><a id="BNAVI"></a><a id="when-to-use-a-custom-component"></a></p>
@@ -13269,29 +13028,6 @@ book as well as information about a featured book. The page allows the
 user to add either book (or none) to the shopping cart.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#GLPBD">Why Use Jakarta Server Faces Technology to Implement an Image
-Map?</a></p>
-</li>
-<li>
-<p><a href="#GLPEM">Understanding the Rendered HTML</a></p>
-</li>
-<li>
-<p><a href="#GLPCD">Understanding the Facelets Page</a></p>
-</li>
-<li>
-<p><a href="#GLPBO">Configuring Model Data</a></p>
-</li>
-<li>
-<p><a href="#GLPEL">Summary of the Image Map Application Classes</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="GLPBD"></a><a id="why-use-javaserver-faces-technology-to-implement-an-image-map"></a></p>
 </div>
 <div class="sect3">
@@ -13499,7 +13235,7 @@ corresponding to the South America hotspot:</p>
     ...
     <span class="tag">&lt;managed-bean-name&gt;</span>Book201<span class="tag">&lt;/managed-bean-name&gt;</span>
     <span class="tag">&lt;managed-bean-class&gt;</span>
-        jakarta.tutorial.dukesbookstore.model.ImageArea
+        ee.jakarta.tutorial.dukesbookstore.model.ImageArea
     <span class="tag">&lt;/managed-bean-class&gt;</span>
     <span class="tag">&lt;managed-bean-scope&gt;</span>application<span class="tag">&lt;/managed-bean-scope&gt;</span>
     <span class="tag">&lt;managed-property&gt;</span>
@@ -14841,7 +14577,7 @@ clicking on a region of the image map:</p>
                <span class="attribute-name">immediate</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>
                <span class="attribute-name">action</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">bookstore</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     <span class="tag">&lt;f:actionListener</span>
-        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.listeners.MapBookChangeListener</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+        <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.listeners.MapBookChangeListener</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
     <span class="tag">&lt;bookstore:area</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">map1</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">value</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#{Book201}</span><span class="delimiter">&quot;</span></span>
                     <span class="attribute-name">onmouseover</span>=<span class="string"><span class="delimiter">&quot;</span>resources/images/book_201.jpg<span class="delimiter">&quot;</span></span>
                     <span class="attribute-name">onmouseout</span>=<span class="string"><span class="delimiter">&quot;</span>resources/images/book_all.jpg<span class="delimiter">&quot;</span></span>
@@ -16642,7 +16378,7 @@ shown in <a href="#CHDIHDCD">Figure 16-1</a> might look like this:</p>
         flow-b-flow.xml
         next_b1.xhtml
         next_b2.xhtml
-src/main/java/jakarta/tutorial/flowexample
+src/main/java/ee/jakarta/tutorial/flowexample
             FlowA.java
             Flow_a_Bean.java
             Flow_b_Bean.java</code></pre>
@@ -16928,7 +16664,7 @@ stylesheet and an image):</p>
         joinFlow-flow.xml
         joinFlow.xhtml
         joinFlow2.xhtml
-src/main/java/jakarta/tutorial/checkoutmodule
+src/main/java/ee/jakarta/tutorial/checkoutmodule
             CheckoutBean.java
             CheckoutFlow.java
             CheckoutFlowBean.java
@@ -17135,11 +16871,11 @@ the flow. The class for the checkout flow is called <code>CheckoutFlow.java</cod
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">import</span> <span class="include">java.io.Serializable</span>;
-<span class="keyword">import</span> <span class="include">javax.enterprise.inject.Produces</span>;
-<span class="keyword">import</span> <span class="include">javax.faces.flow.Flow</span>;
-<span class="keyword">import</span> <span class="include">javax.faces.flow.builder.FlowBuilder</span>;
-<span class="keyword">import</span> <span class="include">javax.faces.flow.builder.FlowBuilderParameter</span>;
-<span class="keyword">import</span> <span class="include">javax.faces.flow.builder.FlowDefinition</span>;
+<span class="keyword">import</span> <span class="include">jakarta.enterprise.inject.Produces</span>;
+<span class="keyword">import</span> <span class="include">jakarta.faces.flow.Flow</span>;
+<span class="keyword">import</span> <span class="include">jakarta.faces.flow.builder.FlowBuilder</span>;
+<span class="keyword">import</span> <span class="include">jakarta.faces.flow.builder.FlowBuilderParameter</span>;
+<span class="keyword">import</span> <span class="include">jakarta.faces.flow.builder.FlowDefinition</span>;
 
 <span class="type">class</span> <span class="class">CheckoutFlow</span> <span class="directive">implements</span> <span class="predefined-type">Serializable</span> {
 
@@ -17989,7 +17725,7 @@ messages for the Duke&#8217;s Bookstore case study application:</p>
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;application&gt;</span>
     <span class="tag">&lt;resource-bundle&gt;</span>
         <span class="tag">&lt;base-name&gt;</span>
-            jakarta.tutorial.dukesbookstore.web.messages.Messages
+            ee.jakarta.tutorial.dukesbookstore.web.messages.Messages
         <span class="tag">&lt;/base-name&gt;</span>
         <span class="tag">&lt;var&gt;</span>bundle<span class="tag">&lt;/var&gt;</span>
     <span class="tag">&lt;/resource-bundle&gt;</span>
@@ -19889,7 +19625,7 @@ configuration file. The setting for Duke&#8217;s Bookstore looks like this:</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;resource-bundle&gt;</span>
     <span class="tag">&lt;base-name&gt;</span>
-        jakarta.tutorial.dukesbookstore.web.messages.Messages
+        ee.jakarta.tutorial.dukesbookstore.web.messages.Messages
     <span class="tag">&lt;/base-name&gt;</span>
     <span class="tag">&lt;var&gt;</span>bundle<span class="tag">&lt;/var&gt;</span>
 <span class="tag">&lt;/resource-bundle&gt;</span></code></pre>
@@ -19907,7 +19643,7 @@ string appropriate for the selected locale:</p>
 <pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> <span class="predefined-type">String</span> toString(<span class="predefined-type">Locale</span> locale) {
     <span class="predefined-type">ResourceBundle</span> res =
         <span class="predefined-type">ResourceBundle</span>.getBundle(
-            <span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.web.messages.Messages</span><span class="delimiter">&quot;</span></span>, locale);
+            <span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.web.messages.Messages</span><span class="delimiter">&quot;</span></span>, locale);
     <span class="keyword">return</span> res.getString(name() + <span class="string"><span class="delimiter">&quot;</span><span class="content">.string</span><span class="delimiter">&quot;</span></span>);
 }</code></pre>
 </div>
@@ -19919,7 +19655,7 @@ according to the locale stored in <code>FacesContext</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;f:loadBundle</span> <span class="attribute-name">basename</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">jakarta.tutorial.dukesbookstore.web.messages.Messages</span><span class="delimiter">&quot;</span></span>
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;f:loadBundle</span> <span class="attribute-name">basename</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">ee.jakarta.tutorial.dukesbookstore.web.messages.Messages</span><span class="delimiter">&quot;</span></span>
     <span class="attribute-name">var</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">bundle</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span></code></pre>
 </div>
 </div>
@@ -20050,19 +19786,6 @@ could be converted as follows:</p>
 <p>The following sections describe character sets and character encodings.</p>
 </div>
 <div class="paragraph">
-<p>The following topics are addressed here:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#BNAYC">Character Sets</a></p>
-</li>
-<li>
-<p><a href="#BNAYD">Character Encoding</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p><a id="BNAYC"></a><a id="character-sets"></a></p>
 </div>
 <div class="sect3">
@@ -20141,7 +19864,7 @@ default encoding must explicitly set a different encoding.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>

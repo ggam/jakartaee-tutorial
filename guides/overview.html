@@ -452,7 +452,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_jakarta_ee_application_assembly_and_deployment">1.7. Jakarta EE Application Assembly and Deployment</a></li>
 <li><a href="#_jakarta_ee_apis">1.8. Jakarta EE APIs</a></li>
 <li><a href="#_jakarta_ee_8_apis_in_the_java_platform_standard_edition_8">1.9. Jakarta EE 8 APIs in the Java Platform, Standard Edition 8</a></li>
-<li><a href="#_glassfish_server_tools">1.10. GlassFish Server Tools</a></li>
+<li><a href="#_eclipse_glassfish_server_tools">1.10. Eclipse GlassFish Server Tools</a></li>
 </ul>
 </li>
 <li><a href="#_using_the_tutorial_examples">2. Using the Tutorial Examples</a>
@@ -574,17 +574,17 @@ creating your own solutions.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#java-api-for-json-binding">Jakarta JSON Binding</a></p>
+<p><a href="#jakarta-json-binding">Jakarta JSON Binding</a></p>
 </li>
 <li>
-<p><a href="#jakarta-ee-security-api">Jakarta Security</a></p>
+<p><a href="#jakarta-security">Jakarta Security</a></p>
 </li>
 </ul>
 </div>
 </li>
 <li>
 <p>New object model improvements for JSON Processing (see
-<a href="#java-api-for-json-processing">Jakarta JSON Processing</a> for details), including support for the following:</p>
+<a href="#jakarta-json-processing">Jakarta JSON Processing</a> for details), including support for the following:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -600,20 +600,19 @@ creating your own solutions.</p>
 </div>
 </li>
 <li>
-<p>New features for RESTful web services (see <a href="#java-api-for-restful-web-services">Jakarta RESTful Web Services</a> for details)</p>
+<p>New features for RESTful web services (see <a href="#jakarta-restful-web-services">Jakarta RESTful Web Services</a> for details)</p>
 </li>
 <li>
-<p>New features for servlets (see
-<a href="#java-servlet-technology">Jakarta Servlet Technology</a> for details)</p>
+<p>New features for servlets (see <a href="#jakarta-servlet-technology">Jakarta Servlet Technology</a> for details)</p>
 </li>
 <li>
-<p>New features for Jakarta Server Faces components (see <a href="#javaserver-faces-technology">Jakarta Server Faces Technology</a> for details)</p>
+<p>New features for Jakarta Server Faces components (see <a href="#jakarta-faces-technology">Jakarta Server Faces Technology</a> for details)</p>
 </li>
 <li>
-<p>New Contexts and Dependency Injection features (see <a href="#contexts-and-dependency-injection-for-jakarta-ee">Jakarta Contexts and Dependency Injection</a> for details)</p>
+<p>New Contexts and Dependency Injection features (see <a href="#jakarta-context-and-dependency-injection">Jakarta Contexts and Dependency Injection</a> for details)</p>
 </li>
 <li>
-<p>New JavaBean validation features (see <a href="#bean-validation">Bean Validation</a> for details)</p>
+<p>New Jakarta Bean Validation features (see <a href="#jakarta-bean-validation">Jakarta Bean Validation</a> for details)</p>
 </li>
 </ul>
 </div>
@@ -756,7 +755,7 @@ with other components.</p>
 <p>Application clients and applets are components that run on the client.</p>
 </li>
 <li>
-<p>Jakarta Servlet, Jakarta Server Faces, and Jakarta Server Pages technology
+<p>Jakarta Servlet, Jakarta Faces, and Jakarta Server Pages technology
 components are web components that run on the server.</p>
 </li>
 <li>
@@ -917,11 +916,11 @@ the web tier.</p>
 <h4 id="_web_components">1.4.4. Web Components</h4>
 <div class="paragraph">
 <p>Jakarta EE web components are either servlets or web pages created using
-Jakarta Server Faces technology and/or Jakarta Server Pages technology. Servlets
+Jakarta Faces technology and/or Jakarta Server Pages technology. Servlets
 are Java programming language classes that dynamically process requests
-and construct responses. Jakarta Server pages are text-based documents that execute
+and construct responses. Jakarta Server Pages are text-based documents that execute
 as servlets but allow a more natural approach to creating static
-content. Jakarta Server Faces technology builds on servlets and Jakarta Server Pages
+content. Jakarta Faces technology builds on servlets and Jakarta Server Pages
 technology and provides a user interface component framework for web
 applications.</p>
 </div>
@@ -1076,8 +1075,8 @@ Jakarta EE containers, as illustrated in <a href="#BNABR">Figure 1-5</a>.</p>
 server provides enterprise and web containers.</p>
 </li>
 <li>
-<p>Enterprise bean container: Manages the execution of enterprise beans for Jakarta EE
-applications. Enterprise beans and their container run on the Jakarta EE
+<p>Jakarta Enterprise Bean container: Manages the execution of enterprise beans for Jakarta EE
+applications. Jakarta Enterprise Beans and their container run on the Jakarta EE
 server.</p>
 </li>
 <li>
@@ -1212,7 +1211,7 @@ remote service and the resulting response</p>
 format for describing network services. The description includes the
 name of the service, the location of the service, and ways to
 communicate with the service. WSDL service descriptions can be published
-on the Web. GlassFish Server provides a tool for generating the WSDL
+on the Web. Eclipse GlassFish Server provides a tool for generating the WSDL
 specification of a web service that uses remote procedure calls to
 communicate with clients.</p>
 </div>
@@ -1285,10 +1284,10 @@ asynchronously. Commonly, these are Jakarta Messaging messages.</p>
 </div>
 <div class="paragraph">
 <p>The Jakarta EE 8 platform requires Jakarta Enterprise Beans 3.2 and
-Interceptors 1.2.</p>
+Jakarta Interceptors 1.2.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACM"></a><a id="java-servlet-technology"></a></p>
+<p><a id="BNACM"></a><a id="jakarta-servlet-technology"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1318,14 +1317,14 @@ the following:</p>
 <p>The Jakarta EE 8 platform requires Servlet 4.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACP"></a><a id="javaserver-faces-technology"></a></p>
+<p><a id="BNACP"></a><a id="jakarta-faces-technology"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_jakarta_server_faces_technology">1.8.3. Jakarta Server Faces Technology</h4>
+<h4 id="_jakarta_faces_technology">1.8.3. Jakarta Faces Technology</h4>
 <div class="paragraph">
-<p>Jakarta Server Faces technology is a user interface framework for building
-web applications. The main components of Jakarta Server Faces technology are
+<p>Jakarta Faces technology is a user interface framework for building
+web applications. The main components of Jakarta Faces technology are
 as follows:</p>
 </div>
 <div class="ulist">
@@ -1365,7 +1364,7 @@ stored in a model object to types that can be represented in a view.</p>
 <p>Page navigation configuration</p>
 </li>
 <li>
-<p>Expression Language</p>
+<p>Jakarta Expression Language</p>
 </li>
 </ul>
 </div>
@@ -1374,7 +1373,7 @@ stored in a model object to types that can be represented in a view.</p>
 XML-based configuration files.</p>
 </div>
 <div class="paragraph">
-<p>In the Jakarta EE 8 platform, new features of Jakarta Server Faces technology
+<p>In the Jakarta EE 8 platform, new features of Jakarta Faces technology
 include the following:</p>
 </div>
 <div class="ulist">
@@ -1386,7 +1385,7 @@ include the following:</p>
 <p>Class-level bean validation via the new <code>&lt;f:validateWholeBean&gt;</code> tag</p>
 </li>
 <li>
-<p>A CDI-compatible <code>@ManagedProperty</code> annotation</p>
+<p>A Jakarta Contexts and Dependency Injection compatible <code>@ManagedProperty</code> annotation</p>
 </li>
 <li>
 <p>Enhanced component search expression framework</p>
@@ -1394,15 +1393,15 @@ include the following:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The Jakarta EE 8 platform requires Jakarta Server Faces 2.3 and Jakarta Expression
+<p>The Jakarta EE 8 platform requires Jakarta Faces 2.3 and Jakarta Expression
 Language 3.0.</p>
 </div>
 <div class="paragraph">
-<p>For an excellent summary of what&#8217;s new in Jakarta Server Faces 2.3,
+<p>For an excellent summary of what&#8217;s new in Jakarta Faces 2.3,
 see <code><a href="https://javaserverfaces.github.io/users.html" class="bare">https://javaserverfaces.github.io/users.html</a></code>.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACN"></a><a id="javaserver-pages-technology"></a></p>
+<p><a id="BNACN"></a><a id="jakarta-server-pages-technology"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1434,13 +1433,13 @@ with earlier releases but recommends the use of Facelets as the display
 technology in new applications.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACO"></a><a id="javaserver-pages-standard-tag-library"></a></p>
+<p><a id="BNACO"></a><a id="jakarta-standard-tag-library"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_jakarta_server_pages_standard_tag_library">1.8.5. Jakarta Server Pages Standard Tag Library</h4>
+<h4 id="_jakarta_standard_tag_library">1.8.5. Jakarta Standard Tag Library</h4>
 <div class="paragraph">
-<p>The Jakarta Server Pages Standard Tag Library encapsulates core
+<p>The Jakarta Standard Tag Library encapsulates core
 functionality common to many Jakarta Server Pages applications. Instead of mixing tags
 from numerous vendors in your Jakarta Server Pages applications, you use a single,
 standard set of tags. This standardization allows you to deploy your
@@ -1456,23 +1455,23 @@ accessing databases using SQL, and tags for commonly used functions.</p>
 <p>The Jakarta EE 8 platform requires Jakarta Standard Tag Library 1.2.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNADB"></a><a id="java-persistence-api"></a></p>
+<p><a id="BNADB"></a><a id="jakarta-persistence"></a></p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_jakarta_persistence">1.8.6. Jakarta Persistence</h4>
 <div class="paragraph">
-<p>Jakarta persistence is a Java standards–based solution for
+<p>Jakarta Persistence is a Java standards–based solution for
 persistence. Persistence uses an object/relational mapping approach to
 bridge the gap between an object-oriented model and a relational
-database. The Java Persistence API can also be used in Java SE
+database. The Jakarta Persistence can also be used in Java SE
 applications outside of the Jakarta EE environment. Jakarta Persistence
 consists of the following areas:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The Jakarta Persistence API</p>
+<p>The Jakarta Persistence</p>
 </li>
 <li>
 <p>The query language</p>
@@ -1486,7 +1485,7 @@ consists of the following areas:</p>
 <p>The Jakarta EE 8 platform requires Jakarta Persistence 2.2.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACR"></a><a id="java-transaction-api"></a></p>
+<p><a id="BNACR"></a><a id="jakarta-transactions"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1498,7 +1497,7 @@ auto commit to handle transaction commits and rollbacks. An auto commit
 means that any other applications that are viewing data will see the
 updated data after each database read or write operation. However, if
 your application performs two separate database access operations that
-depend on each other, you will want to use the Jakarta Transactions API to demarcate
+depend on each other, you will want to use the Jakarta Transactions to demarcate
 where the entire transaction, including both operations, begins, rolls
 back, and commits.</p>
 </div>
@@ -1506,7 +1505,7 @@ back, and commits.</p>
 <p>The Jakarta EE 8 platform requires Jakarta Transactions 1.2.</p>
 </div>
 <div class="paragraph">
-<p><a id="GIRBT"></a><a id="java-api-for-restful-web-services"></a></p>
+<p><a id="GIRBT"></a><a id="jakarta-restful-web-services"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1536,7 +1535,8 @@ along with required libraries.</p>
 </div>
 </li>
 <li>
-<p>Support for Jakarta JSON Binding objects, and improved integration with CDI, Servlet, and Bean Validation technologies</p>
+<p>Support for Jakarta JSON Binding objects, and improved integration with Jakarta Contexts and Dependency Injection,
+Jakarta Servlet, and Jakarta Bean Validation technologies</p>
 </li>
 </ul>
 </div>
@@ -1544,26 +1544,26 @@ along with required libraries.</p>
 <p>The Jakarta EE 8 platform requires Jakarta RESTful Web Services 2.1.</p>
 </div>
 <div class="paragraph">
-<p><a id="GJXSD"></a><a id="managed-beans"></a></p>
+<p><a id="GJXSD"></a><a id="jakarta-managed-beans"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_managed_beans">1.8.9. Managed Beans</h4>
+<h4 id="_jakarta_managed_beans">1.8.9. Jakarta Managed Beans</h4>
 <div class="paragraph">
-<p>Managed Beans, lightweight container-managed objects (POJOs) with
+<p>Jakarta Managed Beans, lightweight container-managed objects (POJOs) with
 minimal requirements, support a small set of basic services, such as
 resource injection, lifecycle callbacks, and interceptors. Managed Beans
-represent a generalization of the managed beans specified by Jakarta Server
-Faces technology and can be used anywhere in a Jakarta EE application, not
+represent a generalization of the managed beans specified by Jakarta Faces
+technology and can be used anywhere in a Jakarta EE application, not
 just in web modules.</p>
 </div>
 <div class="paragraph">
-<p>The Managed Beans specification is part of the Jakarta EE 8 platform
-specification. The Jakarta EE 8 platform requires Managed Beans
+<p>The Jakarta Managed Beans specification is part of the Jakarta EE 8 platform
+specification. The Jakarta EE 8 platform requires Jakarta Managed Beans
 1.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="GJXVO"></a><a id="contexts-and-dependency-injection-for-jakarta-ee"></a></p>
+<p><a id="GJXVO"></a><a id="jakarta-context-and-dependency-injection"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1571,7 +1571,7 @@ specification. The Jakarta EE 8 platform requires Managed Beans
 <div class="paragraph">
 <p>Jakarta Contexts and Dependency Injection (CDI) defines a set of
 contextual services, provided by Jakarta EE containers, that make it easy
-for developers to use enterprise beans along with Jakarta Server Faces
+for developers to use enterprise beans along with Jakarta Faces
 technology in web applications. Designed for use with stateful objects,
 CDI also has many broader uses, allowing developers a great deal of
 flexibility to integrate different kinds of components in a loosely
@@ -1597,10 +1597,10 @@ coupled but typesafe way.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The Jakarta EE 8 platform requires CDI 2.0.</p>
+<p>The Jakarta EE 8 platform requires Jakarta Contexts and Dependency Injection 2.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="GJXVG"></a><a id="dependency-injection-for-java"></a></p>
+<p><a id="GJXVG"></a><a id="jakarta-dependency-injection"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1618,20 +1618,20 @@ application.</p>
 <p>The Jakarta EE 8 platform requires Jakarta Dependency Injection 1.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="GJXTY"></a><a id="bean-validation"></a></p>
+<p><a id="GJXTY"></a><a id="jakarta-bean-validation"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_bean_validation">1.8.12. Bean Validation</h4>
+<h4 id="_jakarta_bean_validation">1.8.12. Jakarta Bean Validation</h4>
 <div class="paragraph">
-<p>The Bean Validation specification defines a metadata model and API for
+<p>The Jakarta Bean Validation specification defines a metadata model and API for
 validating data in JavaBeans components. Instead of distributing
 validation of data over several layers, such as the browser and the
 server side, you can define the validation constraints in one place and
 share them across the different layers.</p>
 </div>
 <div class="paragraph">
-<p>In the Jakarta EE 8 platform, new Bean Validation features include the following:</p>
+<p>In the Jakarta EE 8 platform, new Jakarta Bean Validation features include the following:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1639,15 +1639,15 @@ share them across the different layers.</p>
 <p>Support for new features in Java SE 8, such as the Date-Time API</p>
 </li>
 <li>
-<p>Addition of new built-in Bean Validation constraints</p>
+<p>Addition of new built-in Jakarta Bean Validation constraints</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The Jakarta EE 8 platform requires Bean Validation 2.0.</p>
+<p>The Jakarta EE 8 platform requires Jakarta Bean Validation 2.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACQ"></a><a id="java-message-service-api"></a></p>
+<p><a id="BNACQ"></a><a id="jakarta-messaging"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1662,7 +1662,7 @@ reliable, and asynchronous.</p>
 <p>The Jakarta EE 8 platform requires Jakarta Messaging 2.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACZ"></a><a id="jakarta-ee-connector-architecture"></a></p>
+<p><a id="BNACZ"></a><a id="jakarta-connectors"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1683,8 +1683,8 @@ secure, scalable, and message-based transactional integration of Jakarta EE
 platform-based web services with existing EISs that can be either
 synchronous or asynchronous. Existing applications and EISs integrated
 through the Jakarta Connectors into the Jakarta EE platform can
-be exposed as XML-based web services by using JAX-WS and Jakarta EE
-component models. Thus JAX-WS and the Jakarta Connectors are
+be exposed as XML-based web services by using Jakarta XML Web Services and Jakarta EE
+component models. Thus Jakarta XML Web Services and the Jakarta Connectors are
 complementary technologies for enterprise application integration (EAI)
 and end-to-end business integration.</p>
 </div>
@@ -1692,7 +1692,7 @@ and end-to-end business integration.</p>
 <p>The Jakarta EE 8 platform requires Jakarta Connectors 1.7.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACS"></a><a id="javamail-api"></a></p>
+<p><a id="BNACS"></a><a id="jakarta-mail"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1720,7 +1720,7 @@ that allows application components to send Internet mail.</p>
 <p>The Jakarta EE 8 platform requires Jakarta Mail 1.6.</p>
 </div>
 <div class="paragraph">
-<p><a id="GIRBE"></a><a id="java-authorization-contract-for-containers"></a></p>
+<p><a id="GIRBE"></a><a id="jakarta-authorization"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1744,7 +1744,7 @@ of roles.</p>
 <p>The Jakarta EE 8 platform requires Jakarta Authorization 1.5.</p>
 </div>
 <div class="paragraph">
-<p><a id="GIRGP"></a><a id="java-authentication-service-provider-interface-for-containers"></a></p>
+<p><a id="GIRGP"></a><a id="jakarta-authentication"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1768,7 +1768,7 @@ as a result of the message authentication.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="jakarta-ee-security-api">1.8.18. Jakarta Security</h4>
+<h4 id="jakarta-security">1.8.18. Jakarta Security</h4>
 <div class="paragraph">
 <p>Jakarta Security specification defines portable, plug-in interfaces for
 HTTP authentication and identity stores, and an injectable SecurityContext interface
@@ -1801,7 +1801,7 @@ for default group-to-role mapping, and defines a principal type called
 <p>The Jakarta EE 8 platform requires Jakarta Security 1.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="CJAHDJBJ"></a><a id="java-api-for-websocket"></a></p>
+<p><a id="CJAHDJBJ"></a><a id="jakarta-websocket"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1817,7 +1817,7 @@ lifecycle callback methods.</p>
 <p>The Jakarta EE 8 platform requires Jakarta WebSocket 1.1.</p>
 </div>
 <div class="paragraph">
-<p><a id="CJAGIEEI"></a><a id="java-api-for-json-processing"></a></p>
+<p><a id="CJAGIEEI"></a><a id="jakarta-json-processing"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1865,7 +1865,7 @@ model.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="java-api-for-json-binding">1.8.21. Jakarta JSON Binding</h4>
+<h4 id="jakarta-json-binding">1.8.21. Jakarta JSON Binding</h4>
 <div class="paragraph">
 <p>Jakarta JSON Binding provides a binding layer for converting Java objects to and from JSON messages. Jakarta JSON Binding also supports the ability to customize the default mapping process used in this binding layer through the use of Java annotations for a given field, JavaBean property, type or package, or by providing an implementation of a property naming strategy.</p>
 </div>
@@ -1873,7 +1873,7 @@ model.</p>
 <p>Jakarta JSON Binding is new to the Jakarta EE 8 platform. The Jakarta EE 8 platform requires Jakarta JSON Binding 1.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="CJAFGFCJ"></a><a id="concurrency-utilities-for-jakarta-ee"></a></p>
+<p><a id="CJAFGFCJ"></a><a id="jakarta-concurrency"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1888,7 +1888,7 @@ executor service, managed thread factory, and context service.</p>
 <p>The Jakarta EE 8 platform requires Jakarta Concurrency 1.0.</p>
 </div>
 <div class="paragraph">
-<p><a id="CJAJHGIH"></a><a id="batch-applications-for-the-java-platform"></a></p>
+<p><a id="CJAJHGIH"></a><a id="jakarta-batch"></a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1991,14 +1991,14 @@ component&#8217;s naming environment is stored directly in the environment
 naming context or in any of its direct or indirect subcontexts.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACT"></a><a id="javabeans-activation-framework"></a></p>
+<p><a id="BNACT"></a><a id="jakarta-activation"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_javabeans_activation_framework">1.9.3. JavaBeans Activation Framework</h4>
+<h4 id="_jakarta_activation">1.9.3. Jakarta Activation</h4>
 <div class="paragraph">
-<p>The JavaBeans Activation Framework (JAF) is used by the JavaMail API.
-JAF provides standard services to determine the type of an arbitrary
+<p>The Jakarta Activation is used by the Jakarta Mail.
+Jakarta Activation provides standard services to determine the type of an arbitrary
 piece of data, encapsulate access to it, discover the operations
 available on it, and create the appropriate JavaBeans component to
 perform those operations.</p>
@@ -2034,56 +2034,56 @@ You can find information on the W3C schema at
 <div class="paragraph">
 <p>The Java Architecture for XML Binding (JAXB) provides a convenient way
 to bind an XML schema to a representation in Java language programs.
-JAXB can be used independently or in combination with JAX-WS, in which
+JAXB can be used independently or in combination with Jakarta XML Web Services, in which
 case it provides a standard data binding for web service messages. All
-Jakarta EE application client containers, web containers, and EJB
+Jakarta EE application client containers, web containers, and Jakarta Enterprise Beans
 containers support the JAXB API.</p>
 </div>
 <div class="paragraph">
 <p>The Jakarta EE 8 platform requires JAXB 2.2.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACV"></a><a id="java-api-for-xml-web-services"></a></p>
+<p><a id="BNACV"></a><a id="jakarta-xml-web-services"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_java_api_for_xml_web_services">1.9.6. Java API for XML Web Services</h4>
+<h4 id="_jakarta_xml_web_services">1.9.6. Jakarta XML Web Services</h4>
 <div class="paragraph">
-<p>The Java API for XML Web Services (JAX-WS) specification provides
+<p>The Jakarta XML Web Services specification provides
 support for web services that use the JAXB API for binding XML data to
-Java objects. The JAX-WS specification defines client APIs for accessing
+Java objects. The Jakarta XML Web Services specification defines client APIs for accessing
 web services as well as techniques for implementing web service
 endpoints. The Implementing Enterprise Web Services specification
-describes the deployment of JAX-WS-based services and clients. The EJB
-and Java Servlet specifications also describe aspects of such
-deployment. JAX-WS-based applications can be deployed using any of these
+describes the deployment of Jakarta XML Web Services based services and clients. The Jakarta Enterprise Beans
+and Jakarta Servlet specifications also describe aspects of such
+deployment. Jakarta XML Web Services based applications can be deployed using any of these
 deployment models.</p>
 </div>
 <div class="paragraph">
-<p>The JAX-WS specification describes the support for message handlers that
+<p>The Jakarta XML Web Services specification describes the support for message handlers that
 can process message requests and responses. In general, these message
 handlers execute in the same container and with the same privileges and
-execution context as the JAX-WS client or endpoint component with which
+execution context as the Jakarta XML Web Services client or endpoint component with which
 they are associated. These message handlers have access to the same JNDI
 namespace as their associated component. Custom serializers and
 deserializers, if supported, are treated in the same way as message
 handlers.</p>
 </div>
 <div class="paragraph">
-<p>The Jakarta EE 8 platform requires JAX-WS 2.2.</p>
+<p>The Jakarta EE 8 platform requires Jakarta XML Web Services 2.2.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNACX"></a><a id="soap-with-attachments-api-for-java"></a></p>
+<p><a id="BNACX"></a><a id="jakarta-soap-with-attachments"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_soap_with_attachments_api_for_java">1.9.7. SOAP with Attachments API for Java</h4>
+<h4 id="_jakarta_soap_with_attachments">1.9.7. Jakarta SOAP with Attachments</h4>
 <div class="paragraph">
-<p>The SOAP with Attachments API for Java (SAAJ) is a low-level API on
-which JAX-WS depends. SAAJ enables the production and consumption of
+<p>The Jakarta SOAP with Attachments is a low-level API on
+which Jakarta XML Web Services depends. Jakarta SOAP with Attachments enables the production and consumption of
 messages that conform to the SOAP 1.1 and 1.2 specifications and the
-SOAP with Attachments note. Most developers do not use the SAAJ API,
-instead using the higher-level JAX-WS API.</p>
+Jakarta SOAP with Attachments note. Most developers do not use the Jakarta SOAP with Attachments,
+instead using the higher-level Jakarta XML Web Services API.</p>
 </div>
 <div class="paragraph">
 <p><a id="BNADD"></a><a id="java-authentication-and-authorization-service"></a></p>
@@ -2102,42 +2102,41 @@ Authentication Module (PAM) framework, which extends the Java platform
 security architecture to support user-based authorization.</p>
 </div>
 <div class="paragraph">
-<p><a id="sthref12"></a><a id="common-annotations-for-the-java-platform"></a></p>
+<p><a id="sthref12"></a><a id="jakarta-annotations"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_common_annotations_for_the_java_platform">1.9.9. Common Annotations for the Java Platform</h4>
+<h4 id="_jakarta_annotations">1.9.9. Jakarta Annotations</h4>
 <div class="paragraph">
 <p>Annotations enable a declarative style of programming in the Java
 platform.</p>
 </div>
 <div class="paragraph">
-<p>The Jakarta EE 8 platform requires Common Annotations for the Java Platform
-1.2.</p>
+<p>The Jakarta EE 8 platform requires Jakarta Annotations 1.2.</p>
 </div>
 <div class="paragraph">
-<p><a id="BNADF"></a><a id="glassfish-server-tools"></a></p>
+<p><a id="BNADF"></a><a id="eclipse-glassfish-server-tools"></a></p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_glassfish_server_tools">1.10. GlassFish Server Tools</h3>
+<h3 id="_eclipse_glassfish_server_tools">1.10. Eclipse GlassFish Server Tools</h3>
 <div class="paragraph">
-<p>GlassFish Server is a compliant implementation of the Jakarta EE
+<p>Eclipse GlassFish Server is a compliant implementation of the Jakarta EE
 platform. In addition to supporting all the APIs described in the
-previous sections, GlassFish Server includes a number of Jakarta EE tools
+previous sections, Eclipse GlassFish Server includes a number of Jakarta EE tools
 that are not part of the Jakarta EE platform but are provided as a
 convenience to the developer.</p>
 </div>
 <div class="paragraph">
-<p>This section briefly summarizes the tools that make up GlassFish Server.
-Instructions for starting and stopping GlassFish Server, starting the
+<p>This section briefly summarizes the tools that make up Eclipse GlassFish Server.
+Instructions for starting and stopping Eclipse GlassFish Server, starting the
 Administration Console, and starting and stopping Apache Derby are
 in <a href="#GFIUD">Chapter 2, "Using the Tutorial
 Examples"</a>.</p>
 </div>
 <div class="paragraph">
-<p>GlassFish Server contains the tools listed in <a href="#BNADH">Table 1-1</a>.
+<p>Eclipse GlassFish Server contains the tools listed in <a href="#BNADH">Table 1-1</a>.
 Basic usage information for many of the tools appears throughout the
 tutorial. For detailed information, see the online help in the GUI
 tools.</p>
@@ -2146,7 +2145,7 @@ tools.</p>
 <p><a id="sthref13"></a><a id="BNADH"></a></p>
 </div>
 <div class="paragraph">
-<p><strong>Table 1-1 GlassFish Server Tools</strong></p>
+<p><strong>Table 1-1 Eclipse GlassFish Server Tools</strong></p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 85%;">
 <colgroup>
@@ -2162,13 +2161,13 @@ tools.</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Administration Console</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A web-based GUI GlassFish Server administration utility. Used to stop
-GlassFish Server and to manage users, resources, and applications.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A web-based GUI Eclipse GlassFish Server administration utility. Used to stop
+Eclipse GlassFish Server and to manage users, resources, and applications.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>asadmin</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A command-line GlassFish Server administration utility. Used
-to start and stop GlassFish Server and to manage users, resources, and
+<td class="tableblock halign-left valign-top"><p class="tableblock">A command-line Eclipse GlassFish Server administration utility. Used
+to start and stop Eclipse GlassFish Server and to manage users, resources, and
 applications.</p></td>
 </tr>
 <tr>
@@ -2180,7 +2179,7 @@ client JAR file.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>capture-schema</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A command-line tool to extract schema information
-from a database, producing a schema file that GlassFish Server can use
+from a database, producing a schema file that Eclipse GlassFish Server can use
 for container-managed persistence.</p></td>
 </tr>
 <tr>
@@ -2204,7 +2203,7 @@ namespace referenced in your Java classes.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>wsimport</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A command-line tool to generate JAX-WS portable artifacts
+<td class="tableblock halign-left valign-top"><p class="tableblock">A command-line tool to generate Jakarta XML Web Services portable artifacts
 for a given WSDL file. After generation, these artifacts can be packaged
 in a WAR file with the WSDL and schema documents, along with the
 endpoint implementation, and then deployed.</p></td>
@@ -2212,7 +2211,7 @@ endpoint implementation, and then deployed.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>wsgen</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A command-line tool to read a web service endpoint class and
-generate all the required JAX-WS portable artifacts for web service
+generate all the required Jakarta XML Web Services portable artifacts for web service
 deployment and invocation.</p></td>
 </tr>
 </tbody>
@@ -2232,7 +2231,7 @@ and run the tutorial examples.</p>
 </div>
 <div class="paragraph">
 <p>For additional samples, see the GlassFish samples at
-<a href="https://github.com/javaee/glassfish-samples/tree/master/ws/javaee8" class="bare">https://github.com/javaee/glassfish-samples/tree/master/ws/javaee8</a></p>
+<a href="https://github.com/eclipse-ee4j/glassfish-samples/tree/master/ws/javaee8" class="bare">https://github.com/eclipse-ee4j/glassfish-samples/tree/master/ws/javaee8</a></p>
 </div>
 <div class="paragraph">
 <p><a id="GEXAJ"></a><a id="required-software"></a></p>
@@ -2248,13 +2247,13 @@ and run the tutorial examples.</p>
 <p><a href="#java-platform-standard-edition">Java Platform, Standard Edition</a></p>
 </li>
 <li>
-<p><a href="#jakarta-ee-8-software-development-kit">Jakarta EE 8 Software Development Kit</a></p>
+<p><a href="#eclipse-glassfish-server">Eclipse Glassfish Server</a></p>
 </li>
 <li>
 <p><a href="#sdk-installation-tips">GlassFish Server Installation Tips</a></p>
 </li>
 <li>
-<p><a href="#jakarta-ee-8-tutorial-component">Jakarta EE 8 Tutorial Component</a></p>
+<p><a href="#jakarta-ee-8-tutorial-examples">Jakarta EE 8 Tutorial Examples</a></p>
 </li>
 <li>
 <p><a href="#netbeans-ide">NetBeans IDE</a></p>
@@ -2271,17 +2270,16 @@ and run the tutorial examples.</p>
 <h4 id="_java_platform_standard_edition">2.1.1. Java Platform, Standard Edition</h4>
 <div class="paragraph">
 <p>To build, deploy, and run the examples, you need a copy of the Java
-Platform, Standard Edition Development Kit (JDK). You must use JDK 7
-Update 65 or above or JDK 8 Update 20 or above. You can download JDK
+Platform, Standard Edition Development Kit (JDK). You must use JDK 8 Update 20 or above. You can download JDK
 software from
 <code><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" class="bare">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></code>.</p>
 </div>
 <div class="paragraph">
-<p><a id="GEXAB"></a><a id="jakarta-ee-8-software-development-kit"></a></p>
+<p><a id="GEXAB"></a><a id="eclipse-glassfish-server"></a></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_jakarta_ee_8_software_development_kit">2.1.2. Jakarta EE 8 Software Development Kit</h4>
+<h4 id="_eclipse_glassfish_server">2.1.2. Eclipse Glassfish Server</h4>
 <div class="paragraph">
 <p>GlassFish Server 5.1 is targeted as the build and
 runtime environment for the tutorial examples. To build, deploy, and run
@@ -2319,15 +2317,14 @@ as-install/bin</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><a id="GEXBA"></a><a id="jakarta-ee-8-tutorial-component"></a></p>
+<p><a id="GEXBA"></a><a id="jakarta-ee-8-tutorial-examples"></a></p>
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_jakarta_ee_8_tutorial_component">2.1.3. Jakarta EE 8 Tutorial Component</h4>
+<h4 id="_jakarta_ee_8_tutorial_examples">2.1.3. Jakarta EE 8 Tutorial Examples</h4>
 <div class="paragraph">
-<p>The tutorial component, including the documentation and example source,
-is contained in GlassFish Server.</p>
+<p>The tutorial example codes are located at <a href="https://github.com/eclipse-ee4j/jakartaee-tutorial-examples" class="bare">https://github.com/eclipse-ee4j/jakartaee-tutorial-examples</a>.</p>
 </div>
 <div class="paragraph">
 <p><a id="GEXAZ"></a><a id="netbeans-ide"></a></p>
@@ -2344,7 +2341,7 @@ package, deploy, and run the tutorial examples from within NetBeans IDE.</p>
 <div class="paragraph">
 <p>To run the tutorial examples, you need the latest version of NetBeans
 IDE. You can download NetBeans IDE from
-<code><a href="https://netbeans.apache.org/downloads/index.html" class="bare">https://netbeans.apache.org/downloads/index.html</a></code>. Make sure that you download
+<code><a href="https://netbeans.apache.org/download/index.html" class="bare">https://netbeans.apache.org/download/index.html</a></code>. Make sure that you download
 the Jakarta EE bundle.</p>
 </div>
 <div class="paragraph">
@@ -2888,7 +2885,7 @@ application deployment or execution.</p>
 <h4 id="_using_the_server_log">2.9.1. Using the Server Log</h4>
 <div class="paragraph">
 <p>One way to debug applications is to look at the server log in
-domain-dir`/logs/server.log`. The log contains output from GlassFish
+<code><em>domain-dir</em>/logs/server.log</code>. The log contains output from GlassFish
 Server and your applications. You can log messages from any Java class
 in your application with <code>System.out.println</code> and the Java Logging APIs
 (documented at
@@ -3510,7 +3507,7 @@ is available to all applications using a lookup procedure.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-04-26 19:19:24 UTC
+Last updated 2021-01-08 17:03:44 UTC
 </div>
 </div>
 <style>
